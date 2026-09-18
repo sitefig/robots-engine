@@ -1,0 +1,11 @@
+{
+  "domain": "claude.ai",
+  "robots_url": "https://claude.ai/robots.txt",
+  "final_url": "https://claude.ai/robots.txt",
+  "http_status": 200,
+  "bytes": 281,
+  "fetched_at": "2026-09-18T09:44:00.000Z",
+  "redirects": 0,
+  "unavailable": false,
+  "html": false
+}

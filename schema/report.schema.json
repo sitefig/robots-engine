@@ -1,0 +1,1274 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "report.schema.json",
+  "title": "sus.bot robots.txt report",
+  "description": "Machine-readable output of the susbot robots.txt engine (sus.bot). Version 1.2.0. Human-readable strings (messages, labels, reasons) are in the language given by `language`; enum values are not translated.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "generatedAt",
+    "language",
+    "tool",
+    "source",
+    "summary",
+    "groups",
+    "rules",
+    "sitemaps",
+    "directives",
+    "issues",
+    "crawlers",
+    "aiStatus",
+    "security",
+    "securityCategories",
+    "recon",
+    "raw"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2}$"
+    },
+    "tool": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "vendor",
+        "url",
+        "version"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "vendor": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "siteUrl",
+        "robotsUrl",
+        "finalUrl",
+        "fetchedVia",
+        "httpStatus",
+        "contentType",
+        "bytes",
+        "truncated",
+        "redirects",
+        "redirectLimit"
+      ],
+      "properties": {
+        "siteUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "robotsUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "finalUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fetchedVia": {
+          "enum": [
+            "direct",
+            "proxy",
+            "pasted",
+            "example"
+          ]
+        },
+        "httpStatus": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "contentType": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bytes": {
+          "type": "integer"
+        },
+        "truncated": {
+          "type": "boolean"
+        },
+        "redirects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "from",
+              "status",
+              "to"
+            ],
+            "properties": {
+              "from": {
+                "type": "string"
+              },
+              "status": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "to": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "redirectLimit": {
+          "type": "boolean"
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "groups",
+        "rules",
+        "sitemaps",
+        "issues",
+        "securityFindings",
+        "reconFindings",
+        "defaultPolicy",
+        "aiTraining",
+        "platform"
+      ],
+      "properties": {
+        "groups": {
+          "type": "integer"
+        },
+        "rules": {
+          "type": "integer"
+        },
+        "sitemaps": {
+          "type": "integer"
+        },
+        "issues": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "errors",
+            "warnings",
+            "notes"
+          ],
+          "properties": {
+            "errors": {
+              "type": "integer"
+            },
+            "warnings": {
+              "type": "integer"
+            },
+            "notes": {
+              "type": "integer"
+            }
+          }
+        },
+        "securityFindings": {
+          "type": "integer"
+        },
+        "reconFindings": {
+          "type": "integer"
+        },
+        "defaultPolicy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "hasStarGroup",
+            "verdict",
+            "allowRules",
+            "disallowRules"
+          ],
+          "properties": {
+            "hasStarGroup": {
+              "type": "boolean"
+            },
+            "verdict": {
+              "$ref": "#/$defs/verdict"
+            },
+            "allowRules": {
+              "type": "integer"
+            },
+            "disallowRules": {
+              "type": "integer"
+            }
+          }
+        },
+        "aiTraining": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "blocked",
+            "total"
+          ],
+          "properties": {
+            "blocked": {
+              "type": "integer"
+            },
+            "total": {
+              "type": "integer"
+            }
+          }
+        },
+        "platform": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "index",
+          "userAgents",
+          "tokens",
+          "startLine",
+          "endLine",
+          "crawlDelay",
+          "rules"
+        ],
+        "properties": {
+          "index": {
+            "type": "integer"
+          },
+          "userAgents": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tokens": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "startLine": {
+            "type": "integer"
+          },
+          "endLine": {
+            "type": "integer"
+          },
+          "crawlDelay": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "rules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/rule"
+            }
+          }
+        }
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "group",
+          "userAgents",
+          "type",
+          "path",
+          "line",
+          "notes"
+        ],
+        "properties": {
+          "group": {
+            "type": "integer"
+          },
+          "userAgents": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "type": {
+            "enum": [
+              "allow",
+              "disallow"
+            ]
+          },
+          "path": {
+            "type": "string"
+          },
+          "line": {
+            "type": "integer"
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "sitemaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "url",
+          "line",
+          "valid",
+          "notes"
+        ],
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "line": {
+            "type": "integer"
+          },
+          "valid": {
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "directives": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "host",
+        "cleanParams"
+      ],
+      "properties": {
+        "host": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "line"
+          ],
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "line": {
+              "type": "integer"
+            }
+          }
+        },
+        "cleanParams": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "params",
+              "path",
+              "line",
+              "valid"
+            ],
+            "properties": {
+              "params": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "path": {
+                "type": "string"
+              },
+              "line": {
+                "type": "integer"
+              },
+              "valid": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "level",
+          "kind",
+          "id",
+          "line",
+          "message"
+        ],
+        "properties": {
+          "level": {
+            "enum": [
+              "error",
+              "warning",
+              "info"
+            ]
+          },
+          "kind": {
+            "enum": [
+              "syntax",
+              "seo-trap",
+              "sitemap",
+              "fetch",
+              "lint"
+            ]
+          },
+          "id": {
+            "type": "string",
+            "description": "Stable identifier of the message, independent of language."
+          },
+          "line": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "crawlers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "category",
+          "categoryLabel",
+          "tokens",
+          "note",
+          "groupUsed",
+          "ownGroup",
+          "verdict",
+          "rootAllowed",
+          "allowRules",
+          "disallowRules",
+          "crawlDelay"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "category": {
+            "enum": [
+              "search",
+              "ai-training",
+              "ai-search",
+              "social",
+              "seo"
+            ]
+          },
+          "categoryLabel": {
+            "type": "string"
+          },
+          "tokens": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "groupUsed": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ownGroup": {
+            "type": "boolean"
+          },
+          "verdict": {
+            "$ref": "#/$defs/verdict"
+          },
+          "rootAllowed": {
+            "type": "boolean"
+          },
+          "allowRules": {
+            "type": "integer"
+          },
+          "disallowRules": {
+            "type": "integer"
+          },
+          "crawlDelay": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "aiStatus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "headline",
+        "callout",
+        "groups"
+      ],
+      "properties": {
+        "headline": {
+          "type": "string"
+        },
+        "callout": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "state",
+            "text"
+          ],
+          "properties": {
+            "state": {
+              "enum": [
+                "ok",
+                "info",
+                "warning",
+                "error"
+              ]
+            },
+            "text": {
+              "type": "string"
+            }
+          }
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "category",
+              "label",
+              "counts",
+              "crawlers"
+            ],
+            "properties": {
+              "category": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "counts": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "open",
+                  "partial",
+                  "blocked"
+                ],
+                "properties": {
+                  "open": {
+                    "type": "integer"
+                  },
+                  "partial": {
+                    "type": "integer"
+                  },
+                  "blocked": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "crawlers": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "name",
+                    "verdict",
+                    "groupUsed",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "verdict": {
+                      "$ref": "#/$defs/verdict"
+                    },
+                    "groupUsed": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "explanation": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "security": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "line",
+          "userAgents",
+          "category",
+          "severity",
+          "reason"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "line": {
+            "type": "integer"
+          },
+          "userAgents": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "category": {
+            "enum": [
+              "admin",
+              "staging",
+              "backups",
+              "secrets",
+              "api",
+              "data"
+            ]
+          },
+          "severity": {
+            "$ref": "#/$defs/severity"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "securityCategories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label",
+          "advice"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "advice": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "recon": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stack",
+        "tech",
+        "cloud",
+        "hosts",
+        "api",
+        "data",
+        "extensions",
+        "comments"
+      ],
+      "properties": {
+        "stack": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "primary",
+            "detections"
+          ],
+          "properties": {
+            "primary": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "required": [
+                "name",
+                "kind",
+                "confidence"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "kind": {
+                  "type": "string"
+                },
+                "confidence": {
+                  "$ref": "#/$defs/confidence"
+                }
+              }
+            },
+            "detections": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "name",
+                  "kind",
+                  "confidence",
+                  "score",
+                  "evidence"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "type": "string"
+                  },
+                  "confidence": {
+                    "$ref": "#/$defs/confidence"
+                  },
+                  "score": {
+                    "type": "integer"
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/$defs/lineText"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tech": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "cloud": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "provider",
+              "kind",
+              "host",
+              "bucket",
+              "url",
+              "line",
+              "source",
+              "risk"
+            ],
+            "properties": {
+              "provider": {
+                "type": "string"
+              },
+              "kind": {
+                "enum": [
+                  "storage",
+                  "cdn",
+                  "hosting",
+                  "platform"
+                ]
+              },
+              "host": {
+                "type": "string"
+              },
+              "bucket": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "url": {
+                "type": "string"
+              },
+              "line": {
+                "type": "integer"
+              },
+              "source": {
+                "enum": [
+                  "sitemap",
+                  "host",
+                  "rule",
+                  "comment"
+                ]
+              },
+              "risk": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "hosts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "hosts",
+            "paths"
+          ],
+          "properties": {
+            "hosts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "host",
+                  "relation",
+                  "env",
+                  "sources"
+                ],
+                "properties": {
+                  "host": {
+                    "type": "string"
+                  },
+                  "relation": {
+                    "enum": [
+                      "subdomain",
+                      "external",
+                      "ip"
+                    ]
+                  },
+                  "env": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "sources": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "line",
+                        "source",
+                        "text"
+                      ],
+                      "properties": {
+                        "line": {
+                          "type": "integer"
+                        },
+                        "source": {
+                          "type": "string"
+                        },
+                        "text": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "paths": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "path",
+                  "line",
+                  "hint"
+                ],
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "line": {
+                    "type": "integer"
+                  },
+                  "hint": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "api": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "path",
+              "line",
+              "kind",
+              "version"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "line": {
+                "type": "integer"
+              },
+              "kind": {
+                "enum": [
+                  "graphql",
+                  "docs",
+                  "gateway",
+                  "rpc",
+                  "ops"
+                ]
+              },
+              "version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "data": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "feeds",
+            "portals",
+            "search"
+          ],
+          "properties": {
+            "feeds": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/pathKind"
+              }
+            },
+            "portals": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/pathKind"
+              }
+            },
+            "search": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "paths",
+                "params"
+              ],
+              "properties": {
+                "paths": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "path",
+                      "line"
+                    ],
+                    "properties": {
+                      "path": {
+                        "type": "string"
+                      },
+                      "line": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                },
+                "params": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "name",
+                      "role",
+                      "lines"
+                    ],
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "role": {
+                        "enum": [
+                          "search",
+                          "filter",
+                          "tracking",
+                          "other"
+                        ]
+                      },
+                      "lines": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "extensions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "ext",
+              "category",
+              "label",
+              "risk",
+              "tech",
+              "count",
+              "examples"
+            ],
+            "properties": {
+              "ext": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "risk": {
+                "$ref": "#/$defs/severity"
+              },
+              "tech": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "count": {
+                "type": "integer"
+              },
+              "examples": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "path",
+                    "line"
+                  ],
+                  "properties": {
+                    "path": {
+                      "type": "string"
+                    },
+                    "line": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "comments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "value",
+              "line",
+              "comment",
+              "note"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "email",
+                  "person",
+                  "ticket",
+                  "date",
+                  "ip",
+                  "url",
+                  "vendor",
+                  "note"
+                ]
+              },
+              "value": {
+                "type": "string"
+              },
+              "line": {
+                "type": "integer"
+              },
+              "comment": {
+                "type": "string"
+              },
+              "note": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "raw": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "verdict": {
+      "enum": [
+        "open",
+        "partial",
+        "blocked"
+      ]
+    },
+    "severity": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "path",
+        "line"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "allow",
+            "disallow"
+          ]
+        },
+        "path": {
+          "type": "string"
+        },
+        "line": {
+          "type": "integer"
+        }
+      }
+    },
+    "lineText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "line",
+        "text"
+      ],
+      "properties": {
+        "line": {
+          "type": "integer"
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    },
+    "pathKind": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "line",
+        "kind"
+      ],
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "line": {
+          "type": "integer"
+        },
+        "kind": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "domain": "spotify.com",
+  "robots_url": "https://spotify.com/robots.txt",
+  "final_url": "https://www.spotify.com/robots.txt",
+  "http_status": 200,
+  "bytes": 592,
+  "fetched_at": "2026-09-17T12:11:39.000Z",
+  "redirects": 1,
+  "unavailable": false,
+  "html": false
+}

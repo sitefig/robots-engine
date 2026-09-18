@@ -1,0 +1,11 @@
+{
+  "domain": "goldmansachs.com",
+  "robots_url": "https://goldmansachs.com/robots.txt",
+  "final_url": "https://www.goldmansachs.com/robots.txt",
+  "http_status": 200,
+  "bytes": 635,
+  "fetched_at": "2026-09-18T09:44:01.000Z",
+  "redirects": 1,
+  "unavailable": false,
+  "html": true
+}

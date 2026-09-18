@@ -1,0 +1,78 @@
+# Composite GitHub Action: audit a site's robots.txt with susbot.
+#
+#   - uses: sitefig/robots@main
+#     with:
+#       url: https://example.com
+#       config: .github/robots-audit.toml   # optional
+#       fail-on: warning                    # never | error | warning
+#       fail-on-security: high              # never | high | medium | low
+#       format: markdown                    # json | markdown | html | csv | summary
+#       output: robots-audit.md             # optional file, also uploadable as an artifact
+#
+# The report is printed to the job log (and to the step summary in Markdown
+# form); a non-zero exit fails the job when findings reach the thresholds.
+
+name: susbot robots.txt audit
+description: Lint a robots.txt, check crawler access, security exposure and reconnaissance leaks, and fail the job on findings.
+branding:
+  icon: shield
+  color: purple
+
+inputs:
+  url:
+    description: Site URL (https://example.com) or a path to a robots.txt in the repository
+    required: true
+  config:
+    description: Path to a TOML config merged over the built-in rules
+    required: false
+    default: ""
+  format:
+    description: json, markdown, html, csv or summary
+    required: false
+    default: summary
+  output:
+    description: Write the report to this file instead of only printing it
+    required: false
+    default: ""
+  fail-on:
+    description: Fail when an issue at this level or worse exists (never, error, warning)
+    required: false
+    default: never
+  fail-on-security:
+    description: Fail when a security finding at this severity or worse exists (never, high, medium, low)
+    required: false
+    default: never
+  lang:
+    description: Language of the messages (two-letter EU code)
+    required: false
+    default: en
+  access-check:
+    description: Also refetch the file with every crawler's real User-Agent and report differences
+    required: false
+    default: "false"
+
+runs:
+  using: composite
+  steps:
+    - uses: dtolnay/rust-toolchain@stable
+    - uses: Swatinem/rust-cache@v2
+      with:
+        workspaces: ${{ github.action_path }}
+    - name: Build susbot
+      shell: bash
+      run: cargo build --release -p susbot-cli --manifest-path "${{ github.action_path }}/Cargo.toml"
+    - name: Audit
+      shell: bash
+      run: |
+        set -eu
+        BIN="${{ github.action_path }}/target/release/susbot"
+        ARGS=("${{ inputs.url }}" --format "${{ inputs.format }}" --fail-on "${{ inputs.fail-on }}" --fail-on-security "${{ inputs.fail-on-security }}" --lang "${{ inputs.lang }}" --locale-dir "${{ github.action_path }}/locales")
+        [ -n "${{ inputs.config }}" ] && ARGS+=(--config "${{ inputs.config }}")
+        [ "${{ inputs.access-check }}" = "true" ] && ARGS+=(--access-check)
+        set +e
+        "$BIN" "${ARGS[@]}" | tee susbot-report.txt
+        STATUS=${PIPESTATUS[0]}
+        set -e
+        [ -n "${{ inputs.output }}" ] && cp susbot-report.txt "${{ inputs.output }}"
+        if [ "${{ inputs.format }}" = markdown ]; then cat susbot-report.txt >> "$GITHUB_STEP_SUMMARY"; fi
+        exit $STATUS

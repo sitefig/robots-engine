@@ -1,0 +1,110 @@
+# Kitchen-sink robots.txt: every mistake and leak this analyser knows about, in one file.
+# Maintained by Jane Doe for the SEO team. Updated by dave@company.com on 2019-03-12
+# Generated automatically by Akamai Edge / Fastly, WordPress + Yoast SEO
+# Temporary fix for TICKET-4921: do not index the new checkout until the campaign launch
+# Unhide /v2-redesign/ after 2099-10-01 launch event, see https://wiki.corp.example.com/robots
+# Origin server 10.0.0.12 bypasses the WAF. Old site still at old-site.example.com (ticket #1234)
+
+Disallow: /orphan-rule-before-any-user-agent/
+Crawl-delay: 5
+this line has no colon and is ignored
+
+User-agent: *
+Dissallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /xmlrpc.php
+Disallow: /*add-to-cart=*
+Disallow: /my-account/
+Disallow: /_next/
+Disallow: /telescope/
+Disallow: /admin/
+Disallow: /Admin/
+Disallow: /cpanel/
+Disallow: /staging/
+Disallow: /dev/
+Disallow: /beta/
+Disallow: /v2/
+Disallow: /v2-redesign/
+Disallow: /new-site/
+Disallow: /backup/
+Disallow: /*.sql$
+Disallow: /*.bak$
+Disallow: /*.log$
+Disallow: /*.zip$
+Disallow: /*.pdf$
+Disallow: /static/*.js.map
+Disallow: /.env
+Disallow: /.git/
+Disallow: /secrets/
+Disallow: /api/internal/
+Disallow: /api/v1/
+Disallow: /v1/users/
+Disallow: /graphql
+Disallow: /graphiql
+Disallow: /swagger/
+Disallow: /openapi.json
+Disallow: /actuator/
+Disallow: /uploads/
+Disallow: /*.csv$
+Disallow: /feeds/google-merchant.xml
+Disallow: /exports/inventory-daily.json
+Disallow: /partner-discount/
+Disallow: /vip-wholesale/
+Disallow: /influencer-landing/
+Disallow: /*?search=
+Disallow: /catalogsearch/*
+Disallow: /*?sort_by=
+Disallow: /*?utm_source=
+Disallow: /shop
+Disallow: /blog
+Disallow: /blog/post
+Disallow: /blog/post
+Disallow: /robots.txt
+Disallow: https://beta.example.com/checkout/
+Disallow: admin-without-leading-slash
+Disallow:
+Crawl-delay: fast
+Crawl-delay: 10
+Noindex: /old-page/
+Host: dev-portal.example.com
+Host: example.com
+Clean-param: utm_source&utm_medium /articles/
+Clean-param: bad param extra
+Foo: bar
+
+User-agent: Googlebot
+Allow: /x
+Disallow: /x
+Disallow: /y
+Allow: /y/public
+Disallow: /y/public/private
+
+User-agent: Googlebot-Image
+Disallow:
+
+useragent: GPTBot
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /private/
+
+User-agent: /not-a-token
+Disallow: /nothing/
+
+User-agent:
+Disallow: /also-nothing/
+
+Sitemap: http://www.example.com/sitemap.xml
+Sitemap: https://sitemaps.example.com/products.xml
+Sitemap: https://staging.example.com/sitemap.xml
+Sitemap: https://cdn-vendor.net/sitemap.xml
+Sitemap: https://my-company-assets.s3.amazonaws.com/sitemaps/sitemap.xml
+Sitemap: https://d111111abcdef8.cloudfront.net/sitemaps/sitemap.xml
+Sitemap: https://storage.googleapis.com/company-bucket/sitemap.xml
+Sitemap: https://company.blob.core.windows.net/public/sitemap.xml
+Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://www.example.com/sitemap.xml
+Sitemap: /relative-sitemap.xml

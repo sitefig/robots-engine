@@ -1,0 +1,11 @@
+{
+  "domain": "shein.com",
+  "robots_url": "https://shein.com/robots.txt",
+  "final_url": "https://www.shein.com/robots.txt",
+  "http_status": 200,
+  "bytes": 279,
+  "fetched_at": "2026-09-18T09:44:01.000Z",
+  "redirects": 1,
+  "unavailable": false,
+  "html": false
+}

@@ -1,0 +1,66 @@
+User-agent: *
+
+# FR product legislation pages
+Disallow: */web/pages/*
+
+# Shared Boards Exclusion
+Disallow: */shared-board/*
+
+# Form Exclusions
+Disallow: */security-issues*
+Disallow: */report-a-legal-concern*
+
+# no-results-page
+Disallow: */discover/no-results-page/*
+
+# Legacy PDP
+Disallow: */Prod/*
+
+# ScrollTo
+Disallow: *scrollTo=
+Disallow: *scrollto=
+
+User-agent: AdsBot-Google
+
+# Block unnecessary requests to bag API
+Disallow: /api/commerce/bag/*/total
+
+#Shared Boards Exceptions
+User-agent: Twitterbot
+User-agent: Snapbot
+Allow: */shared-board/*
+
+# Sitemap Index Files
+Sitemap: https://www.asos.com/sitemap.xml
+Sitemap: https://www.asos.com/product-sitemap-index-COM.xml
+Sitemap: https://www.asos.com/facet-sitemap-index-com.xml
+Sitemap: https://www.asos.com/au/sitemap.xml
+Sitemap: https://www.asos.com/au/product-sitemap-index-AU.xml
+Sitemap: https://www.asos.com/au/facet-sitemap-index-au.xml
+Sitemap: https://www.asos.com/dk/sitemap.xml
+Sitemap: https://www.asos.com/dk/product-sitemap-index-DK.xml
+Sitemap: https://www.asos.com/dk/facet-sitemap-index-dk.xml
+Sitemap: https://www.asos.com/de/sitemap.xml
+Sitemap: https://www.asos.com/de/product-sitemap-index-DE.xml
+Sitemap: https://www.asos.com/de/facet-sitemap-index-de.xml
+Sitemap: https://www.asos.com/es/sitemap.xml
+Sitemap: https://www.asos.com/es/product-sitemap-index-ES.xml
+Sitemap: https://www.asos.com/es/facet-sitemap-index-es.xml
+Sitemap: https://www.asos.com/fr/sitemap.xml
+Sitemap: https://www.asos.com/fr/product-sitemap-index-FR.xml
+Sitemap: https://www.asos.com/fr/facet-sitemap-index-fr.xml
+Sitemap: https://www.asos.com/it/sitemap.xml
+Sitemap: https://www.asos.com/it/product-sitemap-index-IT.xml
+Sitemap: https://www.asos.com/it/facet-sitemap-index-it.xml
+Sitemap: https://www.asos.com/nl/sitemap.xml
+Sitemap: https://www.asos.com/nl/product-sitemap-index-NL.xml
+Sitemap: https://www.asos.com/nl/facet-sitemap-index-nl.xml
+Sitemap: https://www.asos.com/pl/sitemap.xml
+Sitemap: https://www.asos.com/pl/product-sitemap-index-PL.xml
+Sitemap: https://www.asos.com/pl/facet-sitemap-index-pl.xml
+Sitemap: https://www.asos.com/se/sitemap.xml
+Sitemap: https://www.asos.com/se/product-sitemap-index-SE.xml
+Sitemap: https://www.asos.com/se/facet-sitemap-index-se.xml
+Sitemap: https://www.asos.com/us/sitemap.xml
+Sitemap: https://www.asos.com/us/product-sitemap-index-US.xml
+Sitemap: https://www.asos.com/us/facet-sitemap-index-us.xml

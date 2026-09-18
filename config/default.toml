@@ -1,0 +1,1175 @@
+# Default rules for the susbot robots.txt engine (sus.bot).
+#
+# Every check, crawler and signature the engine knows about lives in this
+# file. A user config (`--config my.toml` on the CLI, or pasted in the
+# browser's Rules panel) is merged on top: scalar values and tables override,
+# arrays replace the default array wholesale. To extend a list, copy it from
+# here and add to it. Regular expressions use Rust `fancy-regex` syntax
+# (JavaScript-like, lookaround supported); prefix with (?i) for
+# case-insensitive matching.
+#
+# Text values that look like dictionary keys (security.reason.admin) are
+# translated through the locale; anything else is shown as written, so custom
+# entries can carry plain text.
+
+[tool]
+name = "sus.bot"
+vendor = "Sitefig"
+url = "https://sus.bot"
+
+# ---------------------------------------------------------------- rules
+# Any finding can be silenced by id, or given another level.
+[rules]
+disabled = []            # e.g. ["seo.caseSensitive", "parser.noSitemap"]
+
+[rules.levels]           # id = "error" | "warning" | "info"
+# "seo.trailingSlash" = "info"
+
+# ---------------------------------------------------------------- checks
+[checks]
+seo_traps = true         # trailing-slash trap, self-block, case notes, shadowed rules
+sitemaps = true          # protocol, cross-domain, duplicate sitemap lines
+absolute_urls = true     # Allow/Disallow with an absolute URL
+security = true          # sensitive Disallow paths
+
+[checks.recon]
+cms = true
+cloud = true
+hosts = true
+api = true
+data = true
+extensions = true
+comments = true
+
+# ---------------------------------------------------------------- crawlers
+[crawlers]
+categories = ["search", "ai-training", "ai-search", "social", "seo"]
+ai_categories = ["ai-training", "ai-search"]   # first one is the "AI training" group of the status card
+browser_ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+
+# tokens: product tokens the crawler looks for, most specific first.
+# ua: the real User-Agent for the access check; omit for control tokens that never fetch.
+[[crawlers.list]]
+name = "Googlebot"
+tokens = ["googlebot"]
+category = "search"
+ua = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+
+[[crawlers.list]]
+name = "Googlebot-Image"
+tokens = ["googlebot-image", "googlebot"]
+category = "search"
+ua = "Googlebot-Image/1.0"
+
+[[crawlers.list]]
+name = "Bingbot"
+tokens = ["bingbot"]
+category = "search"
+ua = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/116.0.1938.76 Safari/537.36"
+
+[[crawlers.list]]
+name = "DuckDuckBot"
+tokens = ["duckduckbot"]
+category = "search"
+ua = "DuckDuckBot/1.1; (+http://duckduckgo.com/duckduckbot.html)"
+
+[[crawlers.list]]
+name = "Applebot"
+tokens = ["applebot"]
+category = "search"
+ua = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15 (Applebot/0.1; +http://www.apple.com/go/applebot)"
+
+[[crawlers.list]]
+name = "YandexBot"
+tokens = ["yandexbot", "yandex"]
+category = "search"
+ua = "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
+
+[[crawlers.list]]
+name = "Baiduspider"
+tokens = ["baiduspider"]
+category = "search"
+ua = "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"
+
+[[crawlers.list]]
+name = "PetalBot"
+tokens = ["petalbot"]
+category = "search"
+ua = "Mozilla/5.0 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)"
+
+[[crawlers.list]]
+name = "GPTBot"
+tokens = ["gptbot"]
+category = "ai-training"
+ua = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.2; +https://openai.com/gptbot)"
+note = "agents.note.gptbot"
+
+[[crawlers.list]]
+name = "ClaudeBot"
+tokens = ["claudebot", "anthropic-ai"]
+category = "ai-training"
+ua = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)"
+note = "agents.note.claudebot"
+
+[[crawlers.list]]
+name = "Google-Extended"
+tokens = ["google-extended"]
+category = "ai-training"
+note = "agents.note.googleExtended"
+
+[[crawlers.list]]
+name = "Applebot-Extended"
+tokens = ["applebot-extended", "applebot"]
+category = "ai-training"
+note = "agents.note.applebotExtended"
+
+[[crawlers.list]]
+name = "CCBot"
+tokens = ["ccbot"]
+category = "ai-training"
+ua = "CCBot/2.0 (https://commoncrawl.org/faq/)"
+note = "agents.note.ccbot"
+
+[[crawlers.list]]
+name = "Bytespider"
+tokens = ["bytespider"]
+category = "ai-training"
+ua = "Mozilla/5.0 (Linux; Android 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; Bytespider; spider-feedback@bytedance.com)"
+note = "agents.note.bytespider"
+
+[[crawlers.list]]
+name = "meta-externalagent"
+tokens = ["meta-externalagent"]
+category = "ai-training"
+ua = "meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)"
+note = "agents.note.metaExternalagent"
+
+[[crawlers.list]]
+name = "Amazonbot"
+tokens = ["amazonbot"]
+category = "ai-training"
+ua = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Amazonbot/0.1; +https://developer.amazon.com/support/amazonbot)"
+note = "agents.note.amazonbot"
+
+[[crawlers.list]]
+name = "Diffbot"
+tokens = ["diffbot"]
+category = "ai-training"
+ua = "Mozilla/5.0 (compatible; Diffbot/1.0; +https://www.diffbot.com/)"
+note = "agents.note.diffbot"
+
+[[crawlers.list]]
+name = "cohere-ai"
+tokens = ["cohere-ai"]
+category = "ai-training"
+note = "agents.note.cohere"
+
+[[crawlers.list]]
+name = "Omgilibot"
+tokens = ["omgilibot", "omgili", "webzio"]
+category = "ai-training"
+ua = "omgili/0.5 +http://omgili.com"
+note = "agents.note.omgilibot"
+
+[[crawlers.list]]
+name = "OAI-SearchBot (SearchGPT)"
+tokens = ["oai-searchbot"]
+category = "ai-search"
+ua = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot"
+note = "agents.note.oaiSearchbot"
+
+[[crawlers.list]]
+name = "ChatGPT-User"
+tokens = ["chatgpt-user"]
+category = "ai-search"
+ua = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot"
+note = "agents.note.chatgptUser"
+
+[[crawlers.list]]
+name = "Claude-SearchBot"
+tokens = ["claude-searchbot"]
+category = "ai-search"
+ua = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-SearchBot/1.0; +https://www.anthropic.com/claude-searchbot)"
+note = "agents.note.claudeSearchbot"
+
+[[crawlers.list]]
+name = "Claude-User"
+tokens = ["claude-user"]
+category = "ai-search"
+ua = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)"
+note = "agents.note.claudeUser"
+
+[[crawlers.list]]
+name = "PerplexityBot"
+tokens = ["perplexitybot"]
+category = "ai-search"
+ua = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)"
+note = "agents.note.perplexitybot"
+
+[[crawlers.list]]
+name = "Perplexity-User"
+tokens = ["perplexity-user"]
+category = "ai-search"
+ua = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)"
+note = "agents.note.perplexityUser"
+
+[[crawlers.list]]
+name = "DuckAssistBot"
+tokens = ["duckassistbot"]
+category = "ai-search"
+ua = "Mozilla/5.0 (compatible; DuckAssistBot/1.0; +http://duckduckgo.com/duckassistbot.html)"
+note = "agents.note.duckassistbot"
+
+[[crawlers.list]]
+name = "YouBot"
+tokens = ["youbot"]
+category = "ai-search"
+ua = "Mozilla/5.0 (compatible; YouBot (+http://www.you.com))"
+note = "agents.note.youbot"
+
+[[crawlers.list]]
+name = "facebookexternalhit"
+tokens = ["facebookexternalhit"]
+category = "social"
+ua = "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)"
+
+[[crawlers.list]]
+name = "Twitterbot"
+tokens = ["twitterbot"]
+category = "social"
+ua = "Twitterbot/1.0"
+
+[[crawlers.list]]
+name = "LinkedInBot"
+tokens = ["linkedinbot"]
+category = "social"
+ua = "LinkedInBot/1.0 (compatible; Mozilla/5.0; Apache-HttpClient +http://www.linkedin.com)"
+
+[[crawlers.list]]
+name = "AhrefsBot"
+tokens = ["ahrefsbot"]
+category = "seo"
+ua = "Mozilla/5.0 (compatible; AhrefsBot/7.0; +http://ahrefs.com/robot/)"
+
+[[crawlers.list]]
+name = "SemrushBot"
+tokens = ["semrushbot"]
+category = "seo"
+ua = "Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)"
+
+[[crawlers.list]]
+name = "MJ12bot"
+tokens = ["mj12bot"]
+category = "seo"
+ua = "Mozilla/5.0 (compatible; MJ12bot/v1.4.8; http://mj12bot.com/)"
+
+# ---------------------------------------------------------------- security
+# Disallow paths that advertise sensitive locations. `keywords` match on
+# path-segment boundaries (so /administration-guide does not hit "admin");
+# `pattern` is a raw regex against the lowercased path with a trailing "$"
+# removed. The highest severity signature wins per rule.
+[security]
+ignore = []              # regexes; matching Disallow paths are not reported
+
+[[security.categories]]
+id = "admin"
+label = "security.category.admin.label"
+advice = "security.category.admin.advice"
+
+[[security.categories]]
+id = "staging"
+label = "security.category.staging.label"
+advice = "security.category.staging.advice"
+
+[[security.categories]]
+id = "backups"
+label = "security.category.backups.label"
+advice = "security.category.backups.advice"
+
+[[security.categories]]
+id = "secrets"
+label = "security.category.secrets.label"
+advice = "security.category.secrets.advice"
+
+[[security.categories]]
+id = "api"
+label = "security.category.api.label"
+advice = "security.category.api.advice"
+
+[[security.categories]]
+id = "data"
+label = "security.category.data.label"
+advice = "security.category.data.advice"
+
+[[security.signatures]]
+category = "admin"
+severity = "medium"
+reason = "security.reason.admin"
+keywords = ["admin", "administrator", "wp-admin", "wp-login.php", "cpanel", "whm", "phpmyadmin", "pma", "adminer", "adminer.php", "manager", "console", "controlpanel", "control-panel", "cms", "backend", "back-office", "backoffice", "panel", "umbraco", "typo3", "user/login", "wp-login"]
+
+[[security.signatures]]
+category = "staging"
+severity = "medium"
+reason = "security.reason.staging"
+keywords = ["staging", "stage", "stg", "dev", "develop", "development", "test", "testing", "tests", "qa", "uat", "beta", "alpha", "sandbox", "preprod", "pre-prod", "preview", "demo", "old", "old-site", "new-site", "tmp", "temp"]
+
+[[security.signatures]]
+category = "staging"
+severity = "low"
+reason = "security.reason.versioned"
+pattern = '(?:^|/)v[0-9]+(?:/|$|\*|\.)'
+
+[[security.signatures]]
+category = "secrets"
+severity = "high"
+reason = "security.reason.configFile"
+pattern = '(?:^|/)(?:\.env[a-z0-9_.-]*|\.git|\.svn|\.hg|\.htaccess|\.htpasswd|\.aws|\.ssh|\.docker|\.idea|\.vscode|wp-config\.php|config\.php|configuration\.php|settings\.py|appsettings\.json|web\.config|\.ds_store|id_rsa|composer\.json|package\.json)(?:/|$|\*|\.)'
+
+[[security.signatures]]
+category = "secrets"
+severity = "high"
+reason = "security.reason.secrets"
+keywords = ["secret", "secrets", "credentials", "creds", "keys", "private-keys", "certs", "certificates", "passwords", "password", "tokens", "vault"]
+
+[[security.signatures]]
+category = "backups"
+severity = "high"
+reason = "security.reason.backupDir"
+keywords = ["backup", "backups", "bak", "bkp", "dump", "dumps", "db", "database", "databases", "sql", "archive", "archives", "snapshots"]
+
+[[security.signatures]]
+category = "backups"
+severity = "high"
+reason = "security.reason.backupFile"
+pattern = '\.(?:sql|bak|old|orig|save|swp|zip|tar|gz|tgz|bz2|7z|rar|dump)(?:\*|/|$)'
+
+[[security.signatures]]
+category = "api"
+severity = "medium"
+reason = "security.reason.api"
+keywords = ["api/internal", "api/private", "api/admin", "api/debug", "internal", "internal-api", "private-api", "debug", "_debug", "actuator", "swagger", "swagger-ui", "api-docs", "openapi", "graphql", "graphiql", "metrics", "phpinfo", "phpinfo.php", "server-status", "server-info", "trace", "elmah.axd", "_profiler", "telescope", "horizon", "__debug__"]
+pattern = '(?:^|/)api/v[0-9]+/internal(?:/|$|\*|\.)'
+
+[[security.signatures]]
+category = "data"
+severity = "low"
+reason = "security.reason.data"
+keywords = ["uploads", "upload", "files", "documents", "invoices", "exports", "export", "reports", "customers", "users", "members", "accounts", "orders", "logs", "log", "private", "confidential", "internal-docs", "intranet", "hr", "payroll"]
+
+# ---------------------------------------------------------------- recon: platform fingerprints
+# strong: nearly unique to the product (2 points each); weak: suggestive (1);
+# comments: matched against "#" comments (3). Weak-only evidence needs two hits.
+[recon.cms]
+disabled = []            # signature names to skip
+platform_kinds = ["cms", "ecommerce", "hosting", "forum", "wiki"]   # kinds eligible as the "primary" platform
+
+[[recon.cms.signatures]]
+name = "WordPress"
+kind = "cms"
+strong = ['^/wp-admin', '^/wp-includes', '^/wp-content', '^/wp-json', '^/xmlrpc\.php', '^/wp-login\.php']
+weak = ['^/\*?\?s=', '^/feed', '/trackback', '/comments/feed', '\?replytocom=']
+comments = ['wordpress', 'yoast', 'rank math', 'all in one seo', 'aioseo', 'seopress']
+
+[[recon.cms.signatures]]
+name = "Drupal"
+kind = "cms"
+strong = ['^/core/', '^/user/register', '^/user/password', '^/node/add', '^/misc/', '^/profiles/', '^/install\.php', '^/update\.php', '^/changelog\.txt', '^/install\.txt', '^/filter/tips', '^/\?q=admin', '^/core/install\.php']
+weak = ['^/admin', '^/user/login', '^/modules/', '^/themes/', '^/scripts/', '^/includes/', '^/sites/default']
+comments = ['drupal']
+
+[[recon.cms.signatures]]
+name = "Joomla"
+kind = "cms"
+strong = ['^/administrator', '^/components/', '^/libraries/', '^/plugins/', '^/templates/', '^/cli/', '^/layouts/', '^/language/', '^/media/jui']
+weak = ['^/modules/', '^/cache/', '^/images/', '^/includes/', '^/tmp/', '^/logs/']
+comments = ['joomla']
+
+[[recon.cms.signatures]]
+name = "TYPO3"
+kind = "cms"
+strong = ['^/typo3/', '^/typo3conf/', '^/typo3temp/', '^/fileadmin/']
+weak = ['^/uploads/']
+comments = ['typo3']
+
+[[recon.cms.signatures]]
+name = "Craft CMS"
+kind = "cms"
+strong = ['^/cpresources/', '^/craft/']
+weak = ['^/admin']
+comments = ['craft cms']
+
+[[recon.cms.signatures]]
+name = "Ghost"
+kind = "cms"
+strong = ['^/ghost/', '^/p/', '^/email/']
+weak = ['^/members/', '^/rss/']
+comments = ['ghost']
+
+[[recon.cms.signatures]]
+name = "HubSpot CMS"
+kind = "cms"
+strong = ['^/_hcms/', '^/hs/', '^/hs-fs/', '^/hubfs/', '^/hs-search-results']
+weak = []
+comments = ['hubspot']
+
+[[recon.cms.signatures]]
+name = "Umbraco"
+kind = "cms"
+strong = ['^/umbraco/', '^/umbraco_client/']
+weak = []
+comments = ['umbraco']
+
+[[recon.cms.signatures]]
+name = "Sitecore"
+kind = "cms"
+strong = ['^/sitecore/', '^/sitecore modules/', '^/-/media/', '^/~/media/']
+weak = []
+comments = ['sitecore']
+
+[[recon.cms.signatures]]
+name = "Adobe Experience Manager"
+kind = "cms"
+strong = ['^/content/dam/', '^/etc\.clientlibs/', '^/etc/clientlibs/', '^/libs/granite', '^/crx/', '^/system/console', '^/bin/wcm']
+weak = ['^/libs/', '^/apps/', '^/etc/', '^/content/']
+comments = ['adobe experience manager', '\baem\b']
+
+[[recon.cms.signatures]]
+name = "Kentico"
+kind = "cms"
+strong = ['^/cmspages/', '^/cmsmodules/', '^/cmsadmincontrols/']
+weak = []
+comments = ['kentico']
+
+[[recon.cms.signatures]]
+name = "Sitefinity"
+kind = "cms"
+strong = ['^/sitefinity/']
+weak = []
+comments = ['sitefinity']
+
+[[recon.cms.signatures]]
+name = "DNN (DotNetNuke)"
+kind = "cms"
+strong = ['^/desktopmodules/', '^/portals/', '^/js/dnn']
+weak = ['^/providers/']
+comments = ['dotnetnuke', '\bdnn\b']
+
+[[recon.cms.signatures]]
+name = "Concrete CMS"
+kind = "cms"
+strong = ['^/concrete/', '^/application/files/']
+weak = []
+comments = ['concrete5', 'concrete cms']
+
+[[recon.cms.signatures]]
+name = "1C-Bitrix"
+kind = "cms"
+strong = ['^/bitrix/', 'bitrix_', '^/personal/', '^/upload/iblock']
+weak = []
+comments = ['bitrix']
+
+[[recon.cms.signatures]]
+name = "MODX"
+kind = "cms"
+strong = ['^/connectors/', '^/manager/assets']
+weak = ['^/manager/', '^/core/']
+comments = ['modx']
+
+[[recon.cms.signatures]]
+name = "Blogger"
+kind = "cms"
+strong = ['^/search/label', '^/feeds/posts']
+weak = ['^/search$', '^/search\?']
+comments = ['blogger', 'blogspot']
+
+[[recon.cms.signatures]]
+name = "Shopify"
+kind = "ecommerce"
+strong = ['^/checkouts?/', '^/carts?/', '^/recommendations/products', '^/policies/', 'collections/\*\+', 'collections/.*sort_by', 'products/.*variant=', '^/\.well-known/shopify', '^/apple-app-site-association']
+weak = ['^/account', '^/cart$', '^/orders', '^/search', '^/\d+/checkouts']
+comments = ['shopify']
+
+[[recon.cms.signatures]]
+name = "WooCommerce"
+kind = "ecommerce"
+strong = ['add-to-cart=', '^/my-account', '^/wp-content/uploads/wc-', '^/\?wc-ajax']
+weak = ['^/cart', '^/checkout', '^/shop/']
+comments = ['woocommerce']
+
+[[recon.cms.signatures]]
+name = "Magento / Adobe Commerce"
+kind = "ecommerce"
+strong = ['^/catalogsearch/', '^/checkout/cart', '^/customer/account', '^/static/frontend', '^/media/catalog', '^/sales/guest', '^/wishlist/', '^/review/product', '___store=', '___from_store=', '^/catalog/product_compare', '^/sendfriend']
+weak = ['^/checkout', '^/customer', '^/catalog/', '^/downloader/', '^/var/']
+comments = ['magento', 'adobe commerce']
+
+[[recon.cms.signatures]]
+name = "PrestaShop"
+kind = "ecommerce"
+strong = ['orderby=', 'orderway=', '^/order-confirmation', '^/order-opc', '^/addresses', '^/identity', '^/guest-tracking', '^/password-recovery', '^/img/p/', '^/module/']
+weak = ['^/cart', '^/order', '^/authentication', '^/discount', '^/modules/']
+comments = ['prestashop']
+
+[[recon.cms.signatures]]
+name = "BigCommerce"
+kind = "ecommerce"
+strong = ['^/cart\.php', '^/checkout\.php', '^/finishorder\.php', '^/orderstatus\.php', '^/postreview\.php', '^/productimage\.php', '^/productupdates\.php', '^/remote\.php', '^/viewfile\.php', '^/wishlist\.php', '^/account\.php', '^/giftcertificates\.php']
+weak = ['^/login\.php', '^/search\.php']
+comments = ['bigcommerce']
+
+[[recon.cms.signatures]]
+name = "OpenCart"
+kind = "ecommerce"
+strong = ['route=account', 'route=checkout', 'route=product/search', '^/index\.php\?route=']
+weak = ['^/catalog/', '^/system/', '^/image/cache']
+comments = ['opencart']
+
+[[recon.cms.signatures]]
+name = "Salesforce Commerce Cloud"
+kind = "ecommerce"
+strong = ['^/on/demandware\.store', 'demandware\.static', '^/dw/']
+weak = ['^/s/']
+comments = ['demandware', 'salesforce commerce']
+
+[[recon.cms.signatures]]
+name = "SAP Commerce (Hybris)"
+kind = "ecommerce"
+strong = ['^/_ui/', '^/medias/', 'yacceleratorstorefront', 'storefront/']
+weak = []
+comments = ['hybris', 'sap commerce']
+
+[[recon.cms.signatures]]
+name = "Odoo"
+kind = "ecommerce"
+strong = ['^/web/login', '^/web/database', '^/odoo/', '^/web/signup', '^/shop/cart', '^/web/content', '^/website/']
+weak = ['^/web/', '^/shop/']
+comments = ['odoo']
+
+[[recon.cms.signatures]]
+name = "Squarespace"
+kind = "hosting"
+strong = ['format=json-pretty', 'format=page-context', 'format=main-content', 'reversepaginate=', '^/commerce/digital-download', '^/universal/']
+weak = ['^/config$', 'format=json', 'format=ical', 'author=', '^/account\$']
+comments = ['squarespace']
+
+[[recon.cms.signatures]]
+name = "Wix"
+kind = "hosting"
+strong = ['^/_api/', '^/_partials', '^/pro-gallery-webapp', '^/_serverless', '^/_wix']
+weak = []
+comments = ['\bwix\b']
+
+[[recon.cms.signatures]]
+name = "Webflow"
+kind = "hosting"
+strong = []
+weak = ['^/\?_escaped_fragment_']
+comments = ['webflow']
+
+[[recon.cms.signatures]]
+name = "Weebly"
+kind = "hosting"
+strong = ['^/ajax/api/']
+weak = []
+comments = ['weebly']
+
+[[recon.cms.signatures]]
+name = "phpBB"
+kind = "forum"
+strong = ['^/viewtopic\.php', '^/viewforum\.php', '^/posting\.php', '^/ucp\.php', '^/memberlist\.php', '^/adm/']
+weak = ['^/search\.php']
+comments = ['phpbb']
+
+[[recon.cms.signatures]]
+name = "XenForo"
+kind = "forum"
+strong = ['^/whats-new/', '^/find-new/', '^/conversations/', '^/goto/', '^/login/two-step', '^/inline-mod']
+weak = ['^/account/', '^/attachments/', '^/posts/', '^/members/']
+comments = ['xenforo']
+
+[[recon.cms.signatures]]
+name = "Discourse"
+kind = "forum"
+strong = ['^/latest\?', '^/user-badges', '^/uploads/short-url', '^/session', '^/t/\*/\*/print', '^/badges']
+weak = ['^/u/', '^/admin/plugins']
+comments = ['discourse']
+
+[[recon.cms.signatures]]
+name = "vBulletin"
+kind = "forum"
+strong = ['showthread\.php', 'forumdisplay\.php', 'newreply\.php', 'newthread\.php', '^/clientscript/', '^/cpstyles/']
+weak = ['member\.php']
+comments = ['vbulletin']
+
+[[recon.cms.signatures]]
+name = "MediaWiki"
+kind = "wiki"
+strong = ['^/wiki/special:', 'title=special:', '^/w/index\.php', '^/w/api\.php', '^/wiki/talk:', '^/index\.php\?title=']
+weak = ['^/w/']
+comments = ['mediawiki']
+
+[[recon.cms.signatures]]
+name = "Next.js"
+kind = "framework"
+strong = ['^/_next/']
+weak = []
+comments = ['next\.js', 'nextjs']
+
+[[recon.cms.signatures]]
+name = "Nuxt"
+kind = "framework"
+strong = ['^/_nuxt/', '^/__nuxt']
+weak = []
+comments = ['nuxt']
+
+[[recon.cms.signatures]]
+name = "Gatsby"
+kind = "framework"
+strong = ['^/page-data/', '^/static/d/']
+weak = []
+comments = ['gatsby']
+
+[[recon.cms.signatures]]
+name = "SvelteKit"
+kind = "framework"
+strong = ['^/_app/immutable']
+weak = []
+comments = ['sveltekit']
+
+[[recon.cms.signatures]]
+name = "Angular"
+kind = "framework"
+strong = []
+weak = ['^/ngsw', '^/ngsw-worker\.js']
+comments = ['angular']
+
+[[recon.cms.signatures]]
+name = "Laravel"
+kind = "backend"
+strong = ['^/telescope', '^/horizon', '^/nova', '^/_ignition', '^/_debugbar', '^/livewire']
+weak = []
+comments = ['laravel']
+
+[[recon.cms.signatures]]
+name = "Django"
+kind = "backend"
+strong = ['^/static/admin/', '^/__debug__']
+weak = ['^/admin/login', '^/media/', '^/static/']
+comments = ['django']
+
+[[recon.cms.signatures]]
+name = "Ruby on Rails"
+kind = "backend"
+strong = ['^/rails/active_storage', '^/rails/', '^/cable$']
+weak = ['^/assets/']
+comments = ['rails']
+
+[[recon.cms.signatures]]
+name = "ASP.NET"
+kind = "backend"
+strong = ['^/elmah\.axd', '^/trace\.axd', '^/scriptresource\.axd', '^/webresource\.axd', '^/signalr']
+weak = ['\.aspx', '\.ashx', '\.asmx', '^/bundles/']
+comments = ['asp\.net', 'aspnet']
+
+[[recon.cms.signatures]]
+name = "Spring Boot"
+kind = "backend"
+strong = ['^/actuator']
+weak = ['^/swagger-ui', '^/error$']
+comments = ['spring boot']
+
+# ---------------------------------------------------------------- recon: cloud hosts
+# host: regex against the lowercased hostname. bucket: how to extract the
+# bucket/account name, alternatives separated by "|" (first non-empty wins):
+#   host:N      capture group N of the host regex
+#   segment:N   Nth path segment (1-based)
+#   path:REGEX  capture group 1 of REGEX matched against the path
+#   a + b       both, joined with " / "
+[recon.cloud]
+
+[[recon.cloud.providers]]
+provider = "AWS S3"
+kind = "storage"
+host = '^(?:([a-z0-9.-]+)\.)?s3(?:[.-](?:website[.-])?[a-z0-9-]+)?(?:\.dualstack)?\.amazonaws\.com$'
+bucket = "host:1|segment:1"
+
+[[recon.cloud.providers]]
+provider = "Amazon CloudFront"
+kind = "cdn"
+host = '^([a-z0-9]+)\.cloudfront\.net$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Google Cloud Storage"
+kind = "storage"
+host = '^storage\.(?:googleapis|cloud\.google)\.com$'
+bucket = "segment:1"
+
+[[recon.cloud.providers]]
+provider = "Google Cloud Storage"
+kind = "storage"
+host = '^([a-z0-9._-]+)\.storage\.googleapis\.com$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Firebase Hosting"
+kind = "hosting"
+host = '^([a-z0-9-]+)\.(?:web\.app|firebaseapp\.com)$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Azure Blob Storage"
+kind = "storage"
+host = '^([a-z0-9]+)\.blob\.core\.windows\.net$'
+bucket = "host:1 + segment:1"
+
+[[recon.cloud.providers]]
+provider = "Azure App Service"
+kind = "hosting"
+host = '^([a-z0-9-]+)\.azurewebsites\.net$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Azure Static Web Apps"
+kind = "hosting"
+host = '^([a-z0-9-]+)\.azurestaticapps\.net$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Azure CDN / Front Door"
+kind = "cdn"
+host = '^([a-z0-9-]+)\.(?:azureedge|azurefd)\.net$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "DigitalOcean Spaces"
+kind = "storage"
+host = '^(?:([a-z0-9.-]+)\.)?([a-z0-9]+)\.(?:cdn\.)?digitaloceanspaces\.com$'
+bucket = "host:1|segment:1"
+
+[[recon.cloud.providers]]
+provider = "Backblaze B2"
+kind = "storage"
+host = '^(?:f\d+|s3\.[a-z0-9-]+|[a-z0-9.-]+\.s3\.[a-z0-9-]+)\.backblazeb2\.com$'
+bucket = "path:^/file/([^/]+)|segment:1"
+
+[[recon.cloud.providers]]
+provider = "Cloudflare R2"
+kind = "storage"
+host = '^(?:([a-z0-9-]+)\.)?(?:r2\.dev|r2\.cloudflarestorage\.com)$'
+bucket = "host:1|segment:1"
+
+[[recon.cloud.providers]]
+provider = "Cloudflare Pages"
+kind = "hosting"
+host = '^([a-z0-9-]+)\.pages\.dev$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Wasabi"
+kind = "storage"
+host = '^(?:([a-z0-9.-]+)\.)?s3(?:\.[a-z0-9-]+)?\.wasabisys\.com$'
+bucket = "host:1|segment:1"
+
+[[recon.cloud.providers]]
+provider = "Linode Object Storage"
+kind = "storage"
+host = '^(?:([a-z0-9.-]+)\.)?[a-z0-9-]+\.linodeobjects\.com$'
+bucket = "host:1|segment:1"
+
+[[recon.cloud.providers]]
+provider = "Alibaba Cloud OSS"
+kind = "storage"
+host = '^(?:([a-z0-9-]+)\.)?oss-[a-z0-9-]+(?:-internal)?\.aliyuncs\.com$'
+bucket = "host:1|segment:1"
+
+[[recon.cloud.providers]]
+provider = "Oracle Object Storage"
+kind = "storage"
+host = '^objectstorage\.[a-z0-9-]+\.oraclecloud\.com$'
+bucket = "path:/b/([^/]+)"
+
+[[recon.cloud.providers]]
+provider = "Supabase Storage"
+kind = "storage"
+host = '^([a-z0-9]+)\.supabase\.co$'
+bucket = "path:/object/[^/]+/([^/]+)|host:1"
+
+[[recon.cloud.providers]]
+provider = "Vercel Blob"
+kind = "storage"
+host = '^([a-z0-9]+)\.public\.blob\.vercel-storage\.com$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Vercel"
+kind = "hosting"
+host = '^([a-z0-9-]+)\.vercel\.app$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Netlify"
+kind = "hosting"
+host = '^([a-z0-9-]+)\.netlify\.(?:app|com)$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "GitHub Pages"
+kind = "hosting"
+host = '^([a-z0-9-]+)\.github\.io$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "GitHub raw content"
+kind = "hosting"
+host = '^raw\.githubusercontent\.com$'
+bucket = "path:^/([^/]+/[^/]+)"
+
+[[recon.cloud.providers]]
+provider = "Heroku"
+kind = "hosting"
+host = '^([a-z0-9-]+)\.herokuapp\.com$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Render"
+kind = "hosting"
+host = '^([a-z0-9-]+)\.onrender\.com$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Fly.io"
+kind = "hosting"
+host = '^([a-z0-9-]+)\.fly\.dev$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Fastly"
+kind = "cdn"
+host = '^([a-z0-9.-]+)\.(?:global\.(?:ssl|prod)\.)?fastly\.net$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Akamai"
+kind = "cdn"
+host = '^([a-z0-9.-]+)\.(?:akamaihd|akamaized|edgekey|edgesuite)\.net$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Cloudinary"
+kind = "cdn"
+host = '^res\.cloudinary\.com$'
+bucket = "segment:1"
+
+[[recon.cloud.providers]]
+provider = "imgix"
+kind = "cdn"
+host = '^([a-z0-9-]+)\.imgix\.net$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "KeyCDN"
+kind = "cdn"
+host = '^([a-z0-9-]+)\.kxcdn\.com$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Bunny CDN"
+kind = "cdn"
+host = '^([a-z0-9-]+)\.b-cdn\.net$'
+bucket = "host:1"
+
+[[recon.cloud.providers]]
+provider = "Shopify CDN"
+kind = "platform"
+host = '^cdn\.shopify\.com$'
+bucket = 'path:/s/files/1/(\d+/\d+/\d+)'
+
+[[recon.cloud.providers]]
+provider = "Squarespace CDN"
+kind = "platform"
+host = '^(?:static\d*|images)\.squarespace(?:-cdn)?\.com$'
+bucket = "segment:1"
+
+[[recon.cloud.providers]]
+provider = "Wix static"
+kind = "platform"
+host = '^static\.wixstatic\.com$'
+bucket = "none"
+
+[[recon.cloud.providers]]
+provider = "HubSpot files"
+kind = "platform"
+host = '^(?:\d+\.)?(?:fs1\.)?hubspotusercontent[a-z0-9-]*\.net$|^cdn2\.hubspot\.net$'
+bucket = "segment:1"
+
+[[recon.cloud.providers]]
+provider = "BigCommerce CDN"
+kind = "platform"
+host = '^cdn\d*\.bigcommerce\.com$'
+bucket = 'path:/s-([a-z0-9]+)'
+
+# ---------------------------------------------------------------- recon: other hosts and environments
+[recon.hosts]
+env_labels = '^(?:staging|stage|stg|dev|devel|develop|development|test|testing|tst|qa|uat|beta|alpha|preprod|pre-prod|preview|sandbox|demo|internal|intranet|corp|vpn|admin|api|cdn|static|assets|media|img|images|old|new|legacy|next|canary|labs?|preview-\w+|\w+-staging|\w+-dev|\w+-test|dev-\w+|staging-\w+|test-\w+|old-\w+|new-\w+|legacy-\w+|v\d+)$'
+env_label_fallback = 'staging|dev|test|beta|uat|sandbox|preprod'
+env_paths = '^(?:staging|stage|stg|dev|test|testing|qa|uat|beta|alpha|preprod|preview|sandbox|demo|old|old-site|oldsite|new|new-site|newsite|redesign|relaunch|rebrand|legacy|archive|v\d+-[a-z0-9-]+|\d{4}-site|site-\d{4}|next|migration|temp|tmp)$'
+env_path_hint = 'redesign|relaunch|new-site|old-site|staging'
+
+# ---------------------------------------------------------------- recon: API endpoints (first match wins)
+[recon.api]
+
+[[recon.api.signatures]]
+kind = "graphql"
+pattern = '(^|/)(graphql|graphiql|altair|voyager|graphql-playground|playground)(/|$|\?)'
+
+[[recon.api.signatures]]
+kind = "docs"
+pattern = '(^|/)(swagger[^/]*|openapi[^/]*|api-docs|apidocs|api_docs|redoc|rapidoc|scalar|docs/api|api/docs|api/documentation|__schema|schema\.json|wsdl|[^/]+\.wsdl)(/|$|\?)'
+
+[[recon.api.signatures]]
+kind = "ops"
+pattern = '(^|/)(actuator|health|healthz|healthcheck|ready|readyz|livez|metrics|prometheus|status|server-status|server-info|debug|_debug|__debug__|_profiler|telescope|horizon|phpinfo(\.php)?|env|info|trace|elmah\.axd|nginx_status)(/|$|\?)'
+
+[[recon.api.signatures]]
+kind = "rpc"
+pattern = '(^|/)(rpc|jsonrpc|json-rpc|xmlrpc(\.php)?|soap|ws|wss|websocket|socket\.io|sockjs|signalr|hub|hubs|cable|realtime|pubsub|sse|events|stream)(/|$|\?)'
+
+[[recon.api.signatures]]
+kind = "gateway"
+pattern = '(^|/)(api|apis|_api|api-internal|internal-api|rest|restapi|rest-api|services?|webservices?|gateway|endpoints?|webhooks?|oauth2?|auth|token|v\d+|ajax|_ajax|ajax-api|odata|feed-api|graph)(/|$|\?)'
+
+# ---------------------------------------------------------------- recon: data feeds, portals and search
+[recon.data]
+feed_words = '^(?:feed|feeds|rss|atom|export|exports|dump|dumps|report|reports|reporting|inventory|stock|stocks|pricelist|price-list|prices|pricing|catalog\.xml|catalogue\.xml|products\.json|products\.xml|collections\.json|merchant|google-merchant|shopping-feed|shoppingfeed|datafeed|data-feed|datafeeds|feed\.xml|feed\.json|sitemap-products\.xml|bulk|bulk-export|download-all|api-export)$'
+feed_file = '\.(?:csv|tsv|xlsx?|json|xml|ndjson|parquet)\$?$'
+feed_hint = 'feed|export|inventory|merchant|pricelist|price-list|catalog|report|dump'
+feed_file_wildcard = '\*\.(?:csv|tsv|xlsx?)\$?$'
+portal_words = '^(?:partner|partners|partner-[a-z0-9-]+|wholesale|wholesaler|wholesalers|vip|vip-[a-z0-9-]+|affiliate|affiliates|influencer|influencers|influencer-[a-z0-9-]+|reseller|resellers|dealer|dealers|distributor|distributors|trade|trade-only|b2b|employee|employees|staff|staff-only|intranet|press|press-kit|presskit|media-kit|investor|investors|ir|members-only|member-only|exclusive|discount|discounts|promo|promos|coupon|coupons|voucher|vouchers|preorder|pre-order|early-access|earlyaccess|insider|insiders|loyalty|rewards|ambassador|ambassadors|creator|creators|corporate|enterprise|friends-and-family|friends-family|secret-sale|private-sale|flash-sale|outlet|clearance|beta-program)$'
+search_segments = '^(?:search|searches|catalogsearch|suche|recherche|buscar|busqueda|zoeken|cerca|ricerca|szukaj|sok|haku|find|results|search-results|searchresults|s|q)$'
+search_keys = ["s", "q", "query", "search", "searchterm", "search_term", "search-term", "keyword", "keywords", "term", "k", "srch", "text", "find", "kw", "searchtext", "search_query", "searchquery", "sq", "qs"]
+filter_keys = ["filter", "filters", "sort", "sort_by", "sortby", "order", "orderby", "order_by", "orderway", "dir", "direction", "limit", "per_page", "page", "p", "pagenum", "start", "offset", "view", "mode", "layout", "display", "color", "colour", "size", "price", "min_price", "max_price", "brand", "category", "cat", "tag", "tags", "rating", "instock", "availability"]
+feed_fallback = "recon.data.feed.file"      # label when no feed_kinds pattern matches
+portal_fallback = "recon.data.portal.other"  # label when no portal_kinds pattern matches
+tracking_keys = '^(?:utm_|gclid|fbclid|msclkid|dclid|mc_|ref$|referrer$|affiliate|aff_|campaign|source$|medium$|sessionid|sid$|phpsessid|jsessionid|cid$|clickid)'
+
+# Feed and portal descriptions: first matching pattern wins; `label` is a dictionary key or plain text.
+[[recon.data.feed_kinds]]
+pattern = 'merchant|shopping-feed|google'
+label = "recon.data.feed.merchant"
+[[recon.data.feed_kinds]]
+pattern = 'inventory|stock'
+label = "recon.data.feed.inventory"
+[[recon.data.feed_kinds]]
+pattern = 'price'
+label = "recon.data.feed.prices"
+[[recon.data.feed_kinds]]
+pattern = 'report'
+label = "recon.data.feed.reports"
+[[recon.data.feed_kinds]]
+pattern = 'export|dump|bulk|download-all'
+label = "recon.data.feed.export"
+[[recon.data.feed_kinds]]
+pattern = 'products?\.(?:json|xml)|collections\.json|catalog'
+label = "recon.data.feed.catalogue"
+[[recon.data.feed_kinds]]
+pattern = 'rss|atom|feed'
+label = "recon.data.feed.content"
+
+[[recon.data.portal_kinds]]
+pattern = 'partner|reseller|dealer|distributor|trade|b2b|wholesale|corporate|enterprise'
+label = "recon.data.portal.trade"
+[[recon.data.portal_kinds]]
+pattern = 'vip|exclusive|insider|early|loyalty|reward|ambassador|creator|influencer|affiliate'
+label = "recon.data.portal.vip"
+[[recon.data.portal_kinds]]
+pattern = 'discount|promo|coupon|voucher|sale|outlet|clearance|friends'
+label = "recon.data.portal.discounts"
+[[recon.data.portal_kinds]]
+pattern = 'employee|staff|intranet'
+label = "recon.data.portal.employee"
+[[recon.data.portal_kinds]]
+pattern = 'press|media-kit|investor|^ir$'
+label = "recon.data.portal.press"
+[[recon.data.portal_kinds]]
+pattern = 'preorder|pre-order|beta'
+label = "recon.data.portal.unreleased"
+
+# ---------------------------------------------------------------- recon: file extensions
+# Later entries win for an extension listed twice (".ts" is source, not video).
+[recon.extensions]
+
+[[recon.extensions.groups]]
+exts = ["sql", "bak", "old", "orig", "save", "swp", "dump", "backup", "tmp", "temp", "sql.gz", "sql.zip", "mdb", "sqlite", "sqlite3", "db"]
+category = "backup"
+label = "recon.ext.label.backups"
+risk = "high"
+
+[[recon.extensions.groups]]
+exts = ["log", "logs", "out", "err", "trace"]
+category = "logs"
+label = "recon.ext.label.logs"
+risk = "high"
+
+[[recon.extensions.groups]]
+exts = ["env", "ini", "conf", "config", "cfg", "yml", "yaml", "toml", "properties", "htaccess", "htpasswd", "pem", "key", "crt", "cer", "p12", "pfx", "jks", "kdbx", "ovpn", "pgpass", "npmrc", "netrc"]
+category = "config"
+label = "recon.ext.label.config"
+risk = "high"
+
+[[recon.extensions.groups]]
+exts = ["map"]
+category = "source"
+label = "recon.ext.label.sourceMaps"
+risk = "high"
+
+[[recon.extensions.groups]]
+exts = ["git", "gitignore", "svn", "hg", "ds_store"]
+category = "source"
+label = "recon.ext.label.vcs"
+risk = "high"
+
+[[recon.extensions.groups]]
+exts = ["tsx", "jsx", "scss", "sass", "less", "vue", "svelte", "coffee", "lock"]
+category = "source"
+label = "recon.ext.label.source"
+risk = "medium"
+
+[[recon.extensions.groups]]
+exts = ["pdf"]
+category = "docs"
+label = "recon.ext.label.pdf"
+risk = "medium"
+
+[[recon.extensions.groups]]
+exts = ["doc", "docx", "xls", "xlsx", "ppt", "pptx", "odt", "ods", "odp", "rtf", "pages", "numbers", "key"]
+category = "docs"
+label = "recon.ext.label.office"
+risk = "medium"
+
+[[recon.extensions.groups]]
+exts = ["csv", "tsv", "json", "xml", "ndjson", "parquet", "avro"]
+category = "data"
+label = "recon.ext.label.data"
+risk = "medium"
+
+[[recon.extensions.groups]]
+exts = ["zip", "tar", "gz", "tgz", "bz2", "7z", "rar", "xz", "iso", "war", "jar", "ear"]
+category = "archives"
+label = "recon.ext.label.archives"
+risk = "medium"
+
+[[recon.extensions.groups]]
+exts = ["exe", "msi", "apk", "ipa", "dmg", "deb", "rpm", "bin", "dll", "so", "pkg"]
+category = "binaries"
+label = "recon.ext.label.binaries"
+risk = "medium"
+
+[[recon.extensions.groups]]
+exts = ["php", "phtml", "php3", "php4", "php5", "inc"]
+category = "server"
+label = "recon.ext.label.php"
+risk = "low"
+tech = "recon.ext.tech.php"
+
+[[recon.extensions.groups]]
+exts = ["asp", "aspx", "ashx", "asmx", "axd", "cshtml", "vbhtml"]
+category = "server"
+label = "recon.ext.label.aspnet"
+risk = "low"
+tech = "recon.ext.tech.aspnet"
+
+[[recon.extensions.groups]]
+exts = ["jsp", "jspx", "do", "action", "jsf", "xhtml", "faces"]
+category = "server"
+label = "recon.ext.label.java"
+risk = "low"
+tech = "recon.ext.tech.java"
+
+[[recon.extensions.groups]]
+exts = ["cfm", "cfc", "cfml"]
+category = "server"
+label = "recon.ext.label.coldfusion"
+risk = "low"
+tech = "recon.ext.tech.coldfusion"
+
+[[recon.extensions.groups]]
+exts = ["cgi", "pl"]
+category = "server"
+label = "recon.ext.label.perl"
+risk = "low"
+tech = "recon.ext.tech.perl"
+
+[[recon.extensions.groups]]
+exts = ["py", "pyc", "wsgi"]
+category = "server"
+label = "recon.ext.label.python"
+risk = "low"
+tech = "recon.ext.tech.python"
+
+[[recon.extensions.groups]]
+exts = ["rb", "erb", "rhtml"]
+category = "server"
+label = "recon.ext.label.ruby"
+risk = "low"
+tech = "recon.ext.tech.ruby"
+
+[[recon.extensions.groups]]
+exts = ["tpl", "twig", "liquid", "hbs", "mustache", "ejs", "njk"]
+category = "server"
+label = "recon.ext.label.templates"
+risk = "low"
+tech = "recon.ext.tech.templates"
+
+[[recon.extensions.groups]]
+exts = ["swf", "fla", "flv"]
+category = "legacy"
+label = "recon.ext.label.flash"
+risk = "low"
+tech = "recon.ext.tech.flash"
+
+[[recon.extensions.groups]]
+exts = ["jpg", "jpeg", "png", "gif", "svg", "webp", "avif", "ico", "bmp", "tif", "tiff", "heic", "psd", "ai", "eps", "raw"]
+category = "media"
+label = "recon.ext.label.images"
+risk = "low"
+
+[[recon.extensions.groups]]
+exts = ["mp4", "mp3", "webm", "mov", "avi", "wav", "ogg", "m4a", "m4v", "mkv", "m3u8"]
+category = "media"
+label = "recon.ext.label.media"
+risk = "low"
+
+[[recon.extensions.groups]]
+exts = ["woff", "woff2", "ttf", "eot", "otf"]
+category = "media"
+label = "recon.ext.label.fonts"
+risk = "low"
+
+[[recon.extensions.groups]]
+exts = ["html", "htm", "css", "js", "mjs", "txt", "md"]
+category = "web"
+label = "recon.ext.label.web"
+risk = "low"
+
+[[recon.extensions.groups]]
+exts = ["ts"]
+category = "source"
+label = "recon.ext.label.source"
+risk = "medium"
+
+# ---------------------------------------------------------------- recon: comments
+# These parse the comment text itself (English keywords stay English).
+[recon.comments]
+email = '(?i)[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}'
+person = '(?i)\b(?:updated|maintained|created|edited|modified|written|managed|owned|added|reviewed|approved|generated|last (?:updated|edited|modified|changed))\s+by[:\s]+([^\n,.;(#]{2,60}?)(?=\s+(?:on|at|for|in|via|-|–|\d)|[,.;(]|$)'
+person_deny = '(?i)^(?:the|a|an|our|this|automatic|automatically|script|bot|tool|system)\b'
+jira = '\b([A-Z][A-Z0-9]{1,9}-\d{1,6})\b'
+jira_deny = '^(?:UTF|ISO|RFC|HTTP|HTTPS|SHA|MD|AES|TLS|SSL|IPV|RSS|XML|HTML|CSS|JSON|API|ID|URL|OS|GPT|ECMA|IEEE|OAUTH|PCI|DSS|ES|X|WIN|MAC|IE|COVID|GDPR|SOC|OWASP|CVE|CWE|UUID|GUID|HEX|B|KB|MB|GB|TB|GMT|UTC|CET|EST|PST|US|EU|UK|CA|DE|FR|NL|BE|W|H)-'
+ticket_word = '(?i)\b(?:ticket|issue|bug|task|case|story|epic|incident|inc|change|cr|pr|mr)\s*(?:#|no\.?|number)?\s*(\d{2,7})\b'
+iso_date = '\b(20\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])\b'
+slash_date = '(?<![\d.])(\d{1,2})[/.](\d{1,2})[/.]((?:19|20)?\d{2})(?![\d.])'
+text_date = '(?i)\b(?:(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s+\d{1,2}(?:st|nd|rd|th)?,?\s+20\d{2}|\d{1,2}(?:st|nd|rd|th)?\s+(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?,?\s+20\d{2}|(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s+20\d{2}|q[1-4]\s+20\d{2})\b'
+ip = '\b(?:(?:25[0-5]|2[0-4]\d|1?\d?\d)\.){3}(?:25[0-5]|2[0-4]\d|1?\d?\d)\b'
+vendors = '(?i)\b(akamai|fastly|cloudflare|cloudfront|imperva|incapsula|sucuri|wordfence|yoast|rank ?math|all in one seo|aioseo|seopress|squarespace|wix|shopify|bigcommerce|magento|prestashop|woocommerce|hubspot|netlify|vercel|wordpress|drupal|joomla|webflow|ghost|contentful|sanity|storyblok|sitecore|adobe experience manager|\baem\b|salesforce|demandware|hybris|sap commerce|screaming ?frog|semrush|ahrefs|botify|lumar|deepcrawl|oncrawl|siteimprove|searchmetrics|conductor|brightedge|seoclarity|nginx|apache|iis|varnish|kubernetes|terraform|ansible|jenkins|github|gitlab|bitbucket|jira|confluence|asana|trello|slack|notion|zendesk|intercom|optimizely|launchdarkly|segment|google tag manager|gtm|adobe launch|tealium|ensighten)\b'
+notes = "(?i)\\b(todo|fixme|hack|temporary|temp fix|quick fix|workaround|do not index|don'?t index|noindex until|until|launch|launching|go[- ]live|campaign|remove (?:after|before|when|once)|delete (?:after|before)|unhide|hidden|hide|secret|internal(?: only)?|staging|migration|migrating|redesign|relaunch|deprecated|legacy|embargo|nda|confidential|not public|unreleased|coming soon|pre-?release|beta)\\b"

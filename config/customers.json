@@ -1,0 +1,9 @@
+[
+  {
+    "domain": "example.com",
+    "name": "Example Corp",
+    "enabled": false,
+    "notify_email": "security@example.com",
+    "webhook_url": ""
+  }
+]

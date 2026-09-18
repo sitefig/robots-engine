@@ -1,0 +1,11 @@
+{
+  "domain": "openai.com",
+  "robots_url": "https://openai.com/robots.txt",
+  "final_url": "https://openai.com/robots.txt",
+  "http_status": 200,
+  "bytes": 98,
+  "fetched_at": "2026-09-17T12:11:39.000Z",
+  "redirects": 0,
+  "unavailable": false,
+  "html": false
+}

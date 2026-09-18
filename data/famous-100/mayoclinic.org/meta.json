@@ -1,0 +1,11 @@
+{
+  "domain": "mayoclinic.org",
+  "robots_url": "https://mayoclinic.org/robots.txt",
+  "final_url": "https://www.mayoclinic.org/robots.txt",
+  "http_status": 403,
+  "bytes": 384,
+  "fetched_at": "2026-09-17T12:11:42.000Z",
+  "redirects": 1,
+  "unavailable": true,
+  "html": true
+}

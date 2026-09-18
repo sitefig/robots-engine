@@ -1,0 +1,19 @@
+[package]
+name = "susbot-core"
+description = "robots.txt analysis engine: parser, RFC 9309 matcher, lint checks, security and reconnaissance findings, exports"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+basic-toml.workspace = true
+regex.workspace = true
+fancy-regex = { version = "0.14", default-features = false, features = ["std"] }
+url.workspace = true
+idna_adapter.workspace = true
+
+[dev-dependencies]
+jsonschema = { version = "0.26", default-features = false }

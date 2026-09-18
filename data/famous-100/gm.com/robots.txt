@@ -1,0 +1,248 @@
+# Allow GSA crawler
+User-agent: gsa-crawler
+Crawl-delay: 1
+Disallow: /alumni
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow Google Bot
+User-agent: Googlebot
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow Google Extended Bot
+User-agent: Google-Extended
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow Google Image Bot
+User-agent: Googlebot-Image
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow Bing Bot
+User-agent: Bingbot
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow MSN Bot
+User-agent: msnbot
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow Apple Bot
+User-agent: Applebot
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow DuckDuckGo Bot
+User-agent: DuckDuckBot
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow Yahoo
+User-Agent: Slurp
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow Facebook Bot
+User-agent: facebookexternalhit
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow Twitterbot
+User-agent: Twitterbot
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow LinkedIn Bot
+User-agent: LinkedInBot
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow Baidu Bot
+User-agent: Baiduspider
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow BlueSky
+User-agent: Bluesky Cardyb
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow BlueSky
+User-agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Bluesky Cardyb; +mailto:support@bsky.app) Chrome/W.X.Y.Z Safari/537.36
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow SiteimproveBot
+User-agent: SiteimproveBot
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow SiteimproveBot-Crawler
+User-agent: SiteimproveBot-Crawler
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow SiteImprove SiteCheck
+User-agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0) SiteCheck-sitecrawl by Siteimprove.com
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow SiteImprove LinkCheck
+User-agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0) LinkCheck by Siteimprove.com
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow SiteImprove Image size
+User-agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0) Image size by Siteimprove.com
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow SiteImprove CSS Validator
+User-agent: CSS Validator: Jigsaw/2.3.0 W3C_CSS_Validator_JFouffa/2.0
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow AHREFS Bot
+User-agent: AhrefsBot
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow Screaming Frog Spider
+User-agent: Screaming Frog SEO Spider
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Allow BlueSky
+User-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+Crawl-delay: 10
+Disallow: /*/no_search/
+Disallow: */_jcr_content/
+Disallow: *.js
+Disallow: *.modal.*
+Disallow: *.print.*
+Disallow: *.filter.*
+
+# Disallow MegaIndex
+User-agent: megaindex
+Crawl-delay: 10
+Disallow: /
+
+
+# v040225d

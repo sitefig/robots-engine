@@ -1,0 +1,188 @@
+#    Updated 8/18/2026
+
+
+User-agent: *
+Disallow: /shop/*DNC-9
+Disallow: /shop/*/SELECT_A_VALUE/*
+Disallow: /shop/merch/*/c1*
+Disallow: /shop/*?skuId=*?page=*
+Disallow: *?scrollToReview=true
+Disallow: *?sort=
+Disallow: /shop/review-submission?
+Disallow: /search/
+Disallow: /pharmacy/-/guest/
+Disallow: /account/
+Disallow: *skuId=undefined
+Disallow: /shop/*-prodid-*-reviewspage=*
+Disallow: /shop/ecdeals/
+Disallow: /ruicket-of-Graue-on-Withou-when-Frogge-name-nors
+Disallow: /dtnbQ6/ZTBFC/_UmDT/8A/ip1ErGmh/JRJeM1UD/cw/NrXAhbSAMC
+Disallow: /E4P_a/YX/r/C/ji3CEsUHAwX/k3uD2Vr2iVNi/IXh6AQ/Pkp8PzQP/dFEB
+Disallow: /C9tlD9kNnEhpUxb6qPKHVXrm/mYibtk0c/Hls2Ag/F0B9R/j0cVwEC
+Disallow: /VP3t9hzFjJ7jYJDGI20QCWWyPe8/p33bhcrkOk/Gwx5YCEoDgg/c05yVWp/QMlIB
+Disallow: /PY7esa8TwwjCyFit31nQQaMSivo/J5G5VXmJOh/JgdX/eHkVW1k-/CzMB
+Disallow: /XIDb-EXj7zMM/B_lekU/pRui-Q/k3Eh0GJNiXar/M3MLaQE/SiAzeRtY/UA0C
+Disallow: /hv0-ZP/GDet/uE/Dufb/jxIo_-0Yk_U/3Vr3f2fbuS/C0QIeWs8Bw/P1B/9WjdlFU8B
+Disallow: /9OvYv/bvi/Q32E/5X/xkWfjM/OSh5NrX03N/OTsqAg/ExlVSTl/JPGsB
+Disallow: /10qp84/FCpI/Q/n/NJIDA4QYT_u9/paEcXpzrOpiL/GgtVdzEC/PRMuR/y96Lw8C
+Disallow: /4t6EnE/xS/ip/WeDO/1FRVAb3ZuQEpg/EzkObrwk/CW89H103/PH/kdOnkKYUoB
+Disallow: /8qrdX/UpMBb/CvIIPa/SLLc/fYfOpJQkii/XGQeKQE/TWp0/aCp-QyEB
+Disallow: /U4L5ItBNmk/yW/jCKRLgmg/i77uthfp/SV9d/Yh4_dB/9NdXsB
+Disallow: /MHTz/h4wp/GoH/iiE/pwBQ/uOk1QJGD/RV89Lg/MnJmZ/DwWZSEB
+Disallow: /l-uqol_Zk/B/UotR-Dwg/D7h3VNpXL3/BiFFdwE/HUARLS/IWBzkB
+Disallow: /El7NQ246EbUlA75lRw/LuVarmLm/ACR4OywxBA/cAQ2Dx/RNdUEB
+Disallow: /YQxyl/xd/fef/Vv/FQ5F3-GK/X3uODwwL9cY3/CjgEQVEoKw8/PyZb/dDNdIAcC
+Disallow: /z4FaQ9P0/5T4JDhF/w1KqI3K/lM/GE7XkbrfuVJE/LFhk/dGNS/DnIEEBkB
+Disallow: /FtXhDE/e_/E-/ioVS/8nIDB8O7Pt/bOY7Sz6w/d2pDGSk/ITZ/fSHlsPSgB
+Disallow: /MmAIudx28W82FAlSKOfk/J35VXbSL3u/K1JQKC4AQg/WWd/GdjFrOXwB
+Disallow: /X3d79g8MgQeKbR-CbA/9DmEQhtGD9Em/AB5YVy8/ZB4PSX0S/WXwB
+Disallow: /hFaffu/J/m/SSvuac_tpKbK/9mfOkcwmOXYG/ag8GYDNC/FB9IVE1/BXQ0C
+Disallow: /DkKg/ADEK/JVFV/1p/5i0g/YV9utGzbDa/RXBNdDwu/JCVl/elY9OFIB
+Disallow: /hWT_ISxM-91w/JPlzIDjx_l/j1/G3zOpNLL5u/YxxmKQ/YCQpQiZ/2GHoB
+Disallow: /YKOspNoSB/s/m/DGuBkXIafhBMAQO8/3Ja9QLkbiGhi/TiMYOnwD/LHYiTRh/1PlYB
+Disallow: /-M0_zFbMRi0_W_NBTruMP8_f/YQYztQrm/RiwSbRYqUQ/cTxnCjdN/bHQB
+Disallow: /kqo4m1O8zoM6223CvWZ4zFQx8kI/cOaEbrfNX7/DQdKdDY/GjZKTR/4REV8B
+Disallow: /8qc6dHZMy6Tk5/-iDD0K6G/mY5ak4/t5S7tVr0OtOS/QwpAMw/OgE/pD2ZOXRUB
+Disallow: /yQ5kkXfSF_jCR/7w8C2OB/cJ0z58g/3cY1S4f0Dur1/AzUnIzcUNQ/bSE3S/SYpFxAB
+Disallow: /te_F02qb_/Rh/teskOtg/aXpOrmJzG9/TnBr/eW/g9JwNGTycB
+Disallow: /gJ1TC3/OJnM/XM1V/f1kt/UbTyEsQyo/QOaVQkXV/WDcTJw/BhR/GaiYHTmU
+Disallow: /s44a8buR4827j/ms/gLtWHbN_2qSk/Eba5VXkt/CiR9aQ1H/BRE6bxVN/XnY
+Disallow: /o3OIk8P_SgTG/Wd/JvR328bFqM/w77zttVwr5/ATs5MA/GBZjC0/ojBU4
+Disallow: /K04zbK/91w/I-z/YNgS2h-5/ErErQG0S/b0Rn/CDc-U/yBnd3s
+Disallow: /QxtH_QcSxhbqXUhyWA/5fk3hpwbN1/QTcvXmg7/Okd/FHDENAD4
+Disallow: /YJYLtcMKv/4/gCEjuBsQ/7LiGSXcza9Oh/UEtAAzo/Cwx7Iw9/RJC4
+Disallow: /uRnFBaFDOcfJR50H4YD34OHkU2g/at7DtbmXa13D/dSdYAlNnRw/YwEu/AyoFcXw
+Disallow: /UY7LyQSskbVt2el-2gxxQialoCg/7z1hhmXck7/QD9g/WjB0amE/2eAMB
+Disallow: /kd7Jxj/rk5O-/xNq-o/Eg/OJc5hVGc/Ty5sDFsCOg/ZHlnPD/0uN30
+Disallow: /RFMJ/29Qz/tvL/w9H/EvUw/5NVYwLwhtak9/UFlZ/RU/kyangfTQE
+Disallow: /3xUGvhXL6WkFU10AMMKh/3mGuDpfXD9/QRgwWis/RA57/eBtbAwMB
+Disallow: /Cgtx5vGkgHUNgqIPtdLN/9it1zphQ5EEf/SQgqJ1wMBA/GG/FcKVkNOgIB
+Disallow: /drFywG/Uk/0J/1yC9/GEiKCi_T55/iJO1pXbpk93b/T2MwUgIy/NF5nd/0JKETI
+Disallow: /m/DJlAwnYz5dYR8Ia1rpXt/iY5tcDS0/Z0xzNEUp/UhZsKmd/jRWA
+Disallow: /vUItUx9gsTr5/BhI455O26e/wi/t3iihLNLb3/XUd3R1VALg/QEMNfSED/XmU
+Disallow: /bizcontent/email/
+Disallow: /bizcontent/navarro/
+Disallow: /bizcontent/storeevents/
+Disallow: /bizcontent/target/
+Disallow: /bizcontent/vitaminshop/
+Disallow: /care1on1/
+Disallow: /checkout/
+Disallow: /retail-locator/*
+Disallow: /clinic-locator/cliniclocator-city.jsp?stateId=*
+Disallow: /content/care1on1
+Disallow: /content/employee/
+Disallow: /dynamic-store/
+Disallow: /extracare-cvs/rxrewards/dashboard
+Disallow: /extracare-cvs/beautyclub/dashboard
+Disallow: /minuteclinic/clinic-locator/view-list.jsp?_requestid=*
+Disallow: /minuteclinic/mc-app-home/
+Disallow: /minuteclinic/vaccine-lookup/
+Disallow: /minuteclinic/visit-manager/*
+Disallow: /mobile/care1on1/
+Disallow: /otchs/*/shop*
+Disallow: /otchs/*/order-history*
+Disallow: /otchs/*/account*
+Disallow: /otchs/*/checkout*
+Disallow: /otchs/*/order-confirmation*
+Disallow: /photo/empty-shopping-cart
+Disallow: /photo/error*
+Disallow: /photo/library/
+Disallow: /photo/offerdetails
+Disallow: /photo/teamsnap
+Disallow: /photo/store-common-lockup/
+Disallow: /photo/create/builder
+Disallow: /photo/design-editor
+Disallow: /photo/print-editor
+Disallow: /photo/projects
+Disallow: /photo/auth/
+Disallow: /photo/youraccount
+Disallow: /photo/loginto
+Disallow: /photo/*?icid=
+Disallow: /photo/*?open_in_app=
+Disallow: /promo/promoLandingTemplate.jsp?promoLandingId=care1on1
+Disallow: /shop/deals/
+Disallow: /shop/otchs/
+Disallow: /shop/content/shop/
+Disallow: /shop/content/shop/brand-shop/
+Disallow: /shop/content/*/shop/
+Disallow: /shop/brand-shop/*/shop/
+Disallow: /shop/shop/
+Disallow: /shop/content/content/
+Disallow: /shop/premierhttps*
+Disallow: /shop/burtsearch/
+Disallow: /shop/*&prev=search*
+Disallow: /store-locator/add-favorite-popup
+Disallow: /store-locator/cvs-pharmacy-locations/*%5C
+Disallow: /cms/
+Disallow: /optical/checkout/
+
+#Allow
+Allow: /*.css
+Allow: /*.js
+Allow: /*.min.js
+Allow: /*.pdf
+Allow: /bizcontent/
+Allow: /minuteclinic/
+Allow: /pharmacy/
+Allow: /photo/
+Allow: /shop/
+Allow: /shop/content/
+Allow: /shop/content/article/
+
+User-agent: AdsBot-Google
+Allow: /
+User-agent: Googlebot-image
+Allow: /
+User-agent: Yandex
+Disallow:
+User-agent: Prerender
+Disallow: /shop/
+User-agent: CCBot
+Disallow: /druginfo
+User-agent: ChatGPT-User
+Disallow: /druginfo
+User-agent: GPTBot
+Disallow: /druginfo
+User-agent: anthropic-ai
+Disallow: /druginfo
+User-agent: Google-Extended
+Disallow: /druginfo
+User-agent: ClaudeBot
+Disallow: /druginfo
+User-agent: Claude-Web
+Disallow: /druginfo
+User-agent: cohere-ai
+Disallow: /druginfo
+
+Sitemap: https://www.cvs.com/sitemap/sitemap-index.xml
+
+#
+#
+#
+#
+#                 %%%%%%%%%%%%                      ,%%%%%%%%%%%/
+#              /%%%%%%%%%%%%%%%%*                 %%%%%%%%%%%%%%%%%
+#            %%%%%%%%%%%%%%%%%%%%%%            *%%%%%%%%%%%%%%%%%%%%%(
+#         /%%%%%%%%%%%%%%%%%%%%%%%%%%/       %%%%%%%%%%%%%%%%%%%%%%%%%%%
+#       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  *%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%(
+#    /%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%(
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%(
+#  #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%,
+#    /%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.
+#       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%(
+#         *%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.
+#            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%/
+#              *%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.
+#                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%/
+#                   *%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#                      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%/
+#                        ,%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.
+#                           %%%%%%%%%%%%%%%%%%%%%%%%%%*
+#                             ,%%%%%%%%%%%%%%%%%%%%%
+#                                #%%%%%%%%%%%%%%%*
+#                                  ,%%%%%%%%%%%
+#                                     #%%%%%*
+#                                       .%

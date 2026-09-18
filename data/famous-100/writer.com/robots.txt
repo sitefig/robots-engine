@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /*?s=
+Disallow: /aint/
+Disallow: /book/
+Disallow: /downloads/
+Disallow: /feedback/
+Disallow: /hp/
+Disallow: /lp/
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow:
+
+Sitemap: https://writer.com/sitemap_index.xml
+# ---------------------------
+# END YOAST BLOCK

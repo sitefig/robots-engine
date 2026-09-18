@@ -1,0 +1,36 @@
+# Allow social media bots to unfurl our share links on /g/ permalinks.
+# Each User-agent block is independent per the robots.txt spec, so the
+# Disallow: /g/ in the * block below does not affect these named bots —
+# they need an explicit Allow here to crawl /g/ for unfurl metadata.
+User-agent: Discordbot
+Allow: /g/
+
+User-agent: facebookexternalhit
+Allow: /g/
+
+User-agent: LinkedInBot
+Allow: /g/
+
+User-agent: Twitterbot
+Allow: /g/
+
+User-agent: Googlebot
+Allow: /g/
+
+# Default crawler policy.
+# Allow the marketing surface (everything served by ideogram-ai/website).
+# Disallow app surfaces owned by ideogram-ai/ui:
+#   /api/  — REST endpoints. Do not Allow /api/learn or /api/pricing; those
+#            marketing dups were retired. Top-level /api-* 301s in nginx.
+#   /g/    — generation permalinks (too many, low search value; social-bot
+#            allow rules above carve out the unfurling case)
+#   /t/    — gallery / feed / explore
+#   /u/    — user profile pages
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /g/
+Disallow: /t/
+Disallow: /u/
+
+Sitemap: https://ideogram.ai/sitemap-index.xml

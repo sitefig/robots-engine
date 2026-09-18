@@ -1,0 +1,11 @@
+{
+  "domain": "pfizer.com",
+  "robots_url": "https://pfizer.com/robots.txt",
+  "final_url": "https://www.pfizer.com/robots.txt",
+  "http_status": 200,
+  "bytes": 1764,
+  "fetched_at": "2026-09-18T09:44:01.000Z",
+  "redirects": 1,
+  "unavailable": false,
+  "html": false
+}

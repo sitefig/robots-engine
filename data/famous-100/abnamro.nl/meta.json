@@ -1,0 +1,11 @@
+{
+  "domain": "abnamro.nl",
+  "robots_url": "https://abnamro.nl/robots.txt",
+  "final_url": "https://www.abnamro.nl/robots.txt",
+  "http_status": 200,
+  "bytes": 952,
+  "fetched_at": "2026-09-18T09:44:01.000Z",
+  "redirects": 1,
+  "unavailable": false,
+  "html": false
+}

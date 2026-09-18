@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /pbc/
+Disallow: /forms/
+Disallow: /pdf/
+Disallow: /cip/
+Disallow: /dam/deutschebank/de/shared/files/
+Disallow: /dam/deutschebank/de/shared/trxm/pdf/tb-gutscheine/
+Disallow: /dam/deutschebank/de/shared/miles-and-more/
+Disallow: /dam/deutschebank/de/shared/pdf/mitarbeiterfiliale/
+
+User-agent: DBSearch
+Disallow: /css/
+
+Sitemap: https://www.deutsche-bank.de/sitemap.xml 
+

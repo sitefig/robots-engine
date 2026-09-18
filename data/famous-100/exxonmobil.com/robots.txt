@@ -1,0 +1,28 @@
+User-agent: *
+Disallow: /api
+Disallow: /Xomfl
+Disallow: /sitecore
+Disallow: /basestocks/brexit
+Disallow: /data privacy_fr.pdf
+Disallow: /data privacy_en.pdf
+Disallow: /data privacy_es.pdf
+Disallow: /media/global/exxonmobil/
+Disallow: /license agreement_en.pdf
+Disallow: /license agreement_es.pdf
+Disallow: /license agreement_fr.pdf
+
+Sitemap: https://www.exxonmobil.com/sitemap.xml
+Sitemap: https://www.exxonmobil.com/wax/sitemap.xml
+Sitemap: https://www.exxonmobil.com/en/wax/sitemap.xml
+Sitemap: https://www.exxonmobil.com/marine/sitemap.xml
+Sitemap: https://www.exxonmobil.com/asphalt/sitemap.xml
+Sitemap: https://www.exxonmobil.com/whiteoil/sitemap.xml
+Sitemap: https://www.exxonmobil.com/aviation/sitemap.xml
+Sitemap: https://www.exxonmobil.com/en/marine/sitemap.xml
+Sitemap: https://www.exxonmobil.com/en/asphalt/sitemap.xml
+Sitemap: https://www.exxonmobil.com/basestocks/sitemap.xml
+Sitemap: https://www.exxonmobil.com/en/whiteoil/sitemap.xml
+Sitemap: https://www.exxonmobil.com/en/aviation/sitemap.xml
+Sitemap: https://www.exxonmobil.com/en/basestocks/sitemap.xml
+Sitemap: https://www.exxonmobil.com/wholesale-fuels/sitemap.xml
+Sitemap: https://www.exxonmobil.com/en/wholesale-fuels/sitemap.xml

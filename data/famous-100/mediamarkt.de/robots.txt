@@ -1,0 +1,184 @@
+Sitemap: https://www.mediamarkt.de/sitemaps/sitemap-index.xml
+
+Sitemap: https://www.mediamarkt.de/sitemaps/magazin-deals-angebote.xml
+
+User-Agent: *
+Disallow: /cdn-cgi/bm/cv/
+Disallow: /cdn-cgi/challenge-platform/
+Disallow: /rde_server/
+Disallow: /cdn-cgi/images/trace/
+Disallow: /cdn-cgi/rum
+Disallow: /cdn-cgi/scripts/
+Disallow: /cdn-cgi/styles/
+Disallow: /cdn-cgi/zaraz/
+Disallow: /api/v1/graphql?operationName=GetPaidBundles
+Disallow: /api/v1/graphql?operationName=GetFreeBundles
+Disallow: /api/v1/msg
+Disallow: /api/v1/mms-sst
+Disallow: /api/v1/partners/
+Disallow: /*shopfallback*
+Disallow: /*MultiChannelMARepairStatusResult*
+Disallow: *de/product/*-weltmusik-cd*
+Disallow: *de/product/*-jazz-cd*
+Disallow: *de/product/*-blues-cd*
+Disallow: *de/product/*-klassik-cd*
+Disallow: *de/product/*-oper-cd*
+Disallow: *de/product/*-folklore-cd*
+Disallow: *de/product/*-country-cd*
+Disallow: *de/product/*-heavy-metal-cd*
+Disallow: *de/product/*-kinder-cd*
+Disallow: *de/list/*_*
+Disallow: /mcs/marketinfo/*
+Disallow: /public/setCookie/
+Disallow: */myaccount/auth*
+
+Allow: /de/product/_bibi-tina-folge-101-%C3%A4rger-mit-dem-grafen-h%C3%B6rspiel-kinder-cd-2694761.html
+Allow: /de/product/_keith-jarrett-budapest-concert-jazz-blues-cd-2683284.html
+Allow: /de/product/_gregory-porter-all-rise-jazz-blues-cd-2628384.html
+Allow: /de/product/_sarah-contradiction-of-happiness-buechi-the-paintress-jazz-blues-cd-2750814.html
+Allow: /de/product/_tony-bennett-and-lady-gaga-love-for-sale-limitierte-deluxe-edition-cd-2755391.html
+Allow: /de/product/_signum-saxophone-quartet-echoes-klassik-cd-2716145.html
+Allow: /de/product/_luciano-pavarotti-pavarotti-the-greatest-hits-oper-cd-2551158.html
+Allow: /de/product/_r%C3%A4uberzivil-tiefensch%C3%A4rfe-pop-international-cd-1957190.html
+Allow: /de/product/_versengold-funkenflug-folk-folklore-cd-2301612.html
+Allow: /de/product/_judas-priest-redeemer-of-souls-rock-international-cd-1849380.html
+Allow: /de/product/_powerwolf-call-of-the-wild-2cd-mediabook-exkl-anh%C3%A4nger-heavy-metal-cd-merchandising-2728783.html
+Allow: /de/product/_rage-the-refuge-years-album-box-fan-box-heavy-metal-cd-2066128.html
+Allow: /de/product/_die-kleine-schnecke-monika-h%C3%A4uschen-55-warum-sind-kuckuckskinder-so-frech-h%C3%B6rspiel-kinder-cd-2615552.html
+
+User-agent: AdsBot-Google
+User-agent: Googlebot-Image
+User-agent: Storebot-Google
+Allow: /
+
+# allowing ai crawlers
+
+# OpenAI
+User-agent: ChatGPT-User
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: Operator
+Allow: /
+
+# Anthropic
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Google
+User-agent: Google-CloudVertexBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta
+User-agent: Meta-ExternalAgent
+Allow: /
+User-agent: Meta-ExternalFetcher
+Allow: /
+User-agent: Manus-User
+Allow: /
+
+# Perplexity
+User-agent: Perplexity-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+# ByteDance
+User-agent: Bytespider
+Allow: /
+User-agent: TikTokSpider
+Allow: /
+
+# disallowing ai crawlers
+
+# Meta
+User-agent: FacebookBot
+Disallow: /
+
+# Mistral
+User-agent: MistralAI-User
+Disallow: /
+
+# Amazon
+User-agent: Amazonbot
+Disallow: /
+
+# Huawei
+User-agent: PanguBot
+Disallow: /
+
+# SINA Corporation
+User-agent: iaskspider
+Disallow: /
+
+# Timpi
+User-agent: Timpibot
+Disallow: /
+
+# Allen Institute
+User-agent: AI2Bot
+Disallow: /
+
+# Common Crawl
+User-agent: CCBot
+Disallow: /
+
+# Diffbot Inc
+User-agent: Diffbot
+Disallow: /
+
+# Cohere
+User-agent: cohere-ai
+Disallow: /
+
+# DigitalOcean
+User-agent: DigitalOceanGenAICrawler
+Disallow: /
+
+# Sidetrade
+User-agent: Sidetrade
+Disallow: /
+
+# ISS (Security)
+User-agent: ISSCyberRiskCrawler
+Disallow: /
+
+# Image Processing Tools
+User-agent: img2dataset
+Disallow: /
+User-agent: imgproxy
+Disallow: /
+
+# Forum Crawler Service
+User-agent: omgili
+Disallow: /
+
+# Unknown
+User-agent: Cotoyogi
+Disallow: /
+User-agent: FriendlyCrawler
+Disallow: /
+User-agent: NovaAct
+Disallow: /
+User-agent: YouBot
+Disallow: /
+User-agent: aiHitBot
+Disallow: /

@@ -1,0 +1,15 @@
+# -----------------------------
+# Global rules (apply to all crawlers)
+# -----------------------------
+User-agent: *
+Allow: /
+
+# -----------------------------
+# Google (block AI training only)
+# -----------------------------
+User-agent: Google-Extended
+Disallow: /
+
+Sitemap: https://docs.together.ai/sitemap.xml
+
+Sitemap: https://www.together.ai/sitemap.xml

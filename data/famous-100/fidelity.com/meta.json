@@ -1,0 +1,11 @@
+{
+  "domain": "fidelity.com",
+  "robots_url": "https://fidelity.com/robots.txt",
+  "final_url": "https://www.fidelity.com/robots.txt",
+  "http_status": 200,
+  "bytes": 12403,
+  "fetched_at": "2026-09-18T09:49:18.000Z",
+  "redirects": 1,
+  "unavailable": false,
+  "html": false
+}

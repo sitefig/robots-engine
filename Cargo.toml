@@ -1,0 +1,25 @@
+[workspace]
+resolver = "2"
+members = ["crates/core", "crates/wasm", "crates/cli"]
+
+[workspace.package]
+version = "2.0.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/sitefig/robots"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+basic-toml = "0.1"
+regex = { version = "1", default-features = false, features = ["std", "perf-inline", "unicode-perl", "unicode-case"] }
+url = "2"
+# Pin the small unicode-rs IDNA backend; the ICU4X one adds ~700 KB to the WASM bundle.
+idna_adapter = "=1.1.0"
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"

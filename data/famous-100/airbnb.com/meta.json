@@ -1,0 +1,11 @@
+{
+  "domain": "airbnb.com",
+  "robots_url": "https://airbnb.com/robots.txt",
+  "final_url": "https://www.airbnb.com/robots.txt",
+  "http_status": 200,
+  "bytes": 24175,
+  "fetched_at": "2026-09-17T12:11:40.000Z",
+  "redirects": 1,
+  "unavailable": false,
+  "html": false
+}

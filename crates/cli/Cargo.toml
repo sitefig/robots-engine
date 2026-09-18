@@ -1,0 +1,20 @@
+[package]
+name = "susbot-cli"
+description = "Command-line robots.txt audit for CI and GitHub Actions"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "susbot"
+path = "src/main.rs"
+
+[dependencies]
+susbot-core = { path = "../core" }
+serde.workspace = true
+serde_json.workspace = true
+clap = { version = "4", features = ["derive"] }
+ureq = { version = "2", default-features = false, features = ["tls"] }
+url.workspace = true
+flate2 = "1"

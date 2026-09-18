@@ -1,0 +1,11 @@
+{
+  "domain": "zoom.us",
+  "robots_url": "https://zoom.us/robots.txt",
+  "final_url": "https://zoom.us/robots.txt",
+  "http_status": 200,
+  "bytes": 2005,
+  "fetched_at": "2026-09-17T12:11:39.000Z",
+  "redirects": 0,
+  "unavailable": false,
+  "html": false
+}

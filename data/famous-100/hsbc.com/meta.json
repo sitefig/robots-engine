@@ -1,0 +1,11 @@
+{
+  "domain": "hsbc.com",
+  "robots_url": "https://hsbc.com/robots.txt",
+  "final_url": "https://www.hsbc.com/robots.txt",
+  "http_status": 200,
+  "bytes": 24,
+  "fetched_at": "2026-09-18T09:47:03.000Z",
+  "redirects": 2,
+  "unavailable": false,
+  "html": false
+}

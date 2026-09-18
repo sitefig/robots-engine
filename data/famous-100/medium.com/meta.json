@@ -1,0 +1,11 @@
+{
+  "domain": "medium.com",
+  "robots_url": "https://medium.com/robots.txt",
+  "final_url": "https://medium.com/robots.txt",
+  "http_status": 200,
+  "bytes": 884,
+  "fetched_at": "2026-09-17T12:11:38.000Z",
+  "redirects": 0,
+  "unavailable": false,
+  "html": false
+}

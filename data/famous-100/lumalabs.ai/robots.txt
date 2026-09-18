@@ -1,0 +1,21 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /captures
+Disallow: /capture
+Disallow: /dashboard
+Disallow: /me
+
+# Sitemaps
+Sitemap: https://lumalabs.ai/sitemap.xml
+Sitemap: https://lumalabs.ai/authors/sitemap.xml
+Sitemap: https://lumalabs.ai/case-studies/sitemap.xml
+Sitemap: https://lumalabs.ai/changelog/sitemap.xml
+Sitemap: https://lumalabs.ai/comparison/sitemap.xml
+Sitemap: https://lumalabs.ai/create/sitemap.xml
+Sitemap: https://lumalabs.ai/learning-center/sitemap.xml
+Sitemap: https://lumalabs.ai/legal/sitemap.xml
+Sitemap: https://lumalabs.ai/news/sitemap.xml
+Sitemap: https://lumalabs.ai/reframe/sitemap.xml
+Sitemap: https://lumalabs.ai/use-case/sitemap.xml
+Sitemap: https://lumalabs.ai/video-to-video/sitemap.xml

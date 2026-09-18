@@ -1,0 +1,11 @@
+{
+  "domain": "facebook.com",
+  "robots_url": "https://facebook.com/robots.txt",
+  "final_url": "https://facebook.com/robots.txt",
+  "http_status": 200,
+  "bytes": 35223,
+  "fetched_at": "2026-09-17T12:11:38.000Z",
+  "redirects": 0,
+  "unavailable": false,
+  "html": false
+}

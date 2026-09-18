@@ -1,0 +1,11 @@
+{
+  "domain": "exxonmobil.com",
+  "robots_url": "https://exxonmobil.com/robots.txt",
+  "final_url": "https://www.exxonmobil.com/robots.txt",
+  "http_status": 200,
+  "bytes": 1228,
+  "fetched_at": "2026-09-18T09:49:18.000Z",
+  "redirects": 1,
+  "unavailable": false,
+  "html": false
+}

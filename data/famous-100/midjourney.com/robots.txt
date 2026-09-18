@@ -1,0 +1,214 @@
+# www.midjourney.com — robots.txt
+# Last reviewed: 2026-05-14
+#
+# Policy summary:
+# - Open to verified search & social bots (Googlebot, Bingbot, Twitterbot, etc.) — default.
+# - Auth-gated routes and tool surfaces disallowed to save crawl budget.
+# - /jobs/{id} image pages disallowed entirely — internal policy decision.
+# - AI training bots blocked. AI retrieval/citation bots allowed (so we can show up in
+#   ChatGPT, Perplexity, Gemini citations without being used as training data).
+# - Sitemap pointer at the bottom.
+#
+# Note: robots.txt is a polite request. Bad actors ignore it. For absolute blocking,
+# layer Cloudflare WAF rules on top.
+
+# ============================================================================
+# DEFAULT — all bots not specifically named below
+# ============================================================================
+
+User-agent: *
+Allow: /
+
+# Auth-only & tool surfaces — these waste crawl budget today (GSC shows /imagine,
+# /account, /editor each absorbing 500K–800K weekly impressions to a login wall).
+Disallow: /api/
+Disallow: /auth/
+Disallow: /account
+Disallow: /preferences
+Disallow: /checkout/
+Disallow: /editor/
+Disallow: /organize/
+Disallow: /imagine
+Disallow: /personalize
+Disallow: /app/
+
+# Image detail pages — internal policy: do not expose the full /jobs/ corpus
+# to crawlers. Existing indexed pages will fall out of SERPs over weeks.
+Disallow: /jobs/
+
+# Allow CSS/JS/fonts so crawlers can render SSR'd content & SPA hydration.
+# Without these, Google may see incomplete pages and downgrade rendering quality.
+Allow: /*.css
+Allow: /*.js
+Allow: /*.woff2
+
+# ============================================================================
+# AI TRAINING BOTS — fully blocked
+# These bots crawl primarily to feed LLM training datasets. Blocking here prevents
+# our content (including /home marketing copy, /explore descriptions, blog posts)
+# from entering future model training corpora.
+# ============================================================================
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: cohere-training-data-crawler
+Disallow: /
+
+# Amazon — Rufus (shopping AI) and Alexa retrieval. Training-vs-retrieval split is
+# opaque, and image-platform referral value from Amazon AI products is negligible.
+User-agent: Amazonbot
+Disallow: /
+
+# You.com — small AI search engine with similar training-retrieval ambiguity.
+User-agent: YouBot
+Disallow: /
+
+# Google's training opt-out token. This is a "rules-only" directive (not a real
+# User-Agent string) — adding this tells Google to keep crawling normally for
+# Search but to NOT use our content for Gemini, Vertex AI Search, or other AI products.
+User-agent: Google-Extended
+Disallow: /
+
+# Apple's training opt-out token. Same shape as Google-Extended — Applebot still
+# crawls for Apple Intelligence retrieval/citations; Applebot-Extended blocks training.
+User-agent: Applebot-Extended
+Disallow: /
+
+# Meta's training opt-out token.
+User-agent: meta-externalagent
+Disallow: /
+
+# ============================================================================
+# COMMERCIAL CRAWLERS — crawl-budget protection
+# Not AI-training; these are commercial scrapers that feed paid backlink/keyword
+# indexes (Ahrefs, Semrush, etc.). We leave Ahrefs and Semrush ALLOWED because the
+# growth team uses those tools internally — blocking them would create a blind
+# spot in our own SEO data. MJ12bot (Majestic) and DataForSeoBot blocked because
+# we don't use those products internally, and they consume meaningful crawl bandwidth.
+# ============================================================================
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# ============================================================================
+# AI RETRIEVAL / CITATION BOTS — allowed
+# These bots crawl to support live answers in ChatGPT, Perplexity, Bing Copilot,
+# Claude, etc. Being allowed here lets us appear as cited sources, which drives
+# referral traffic from those products.
+# ============================================================================
+
+# OpenAI — search index for ChatGPT Search citations
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /account
+Disallow: /preferences
+Disallow: /checkout/
+Disallow: /editor/
+Disallow: /organize/
+Disallow: /imagine
+Disallow: /personalize
+Disallow: /app/
+Disallow: /jobs/
+
+# OpenAI — real-time fetch when a ChatGPT user clicks "browse" or invokes web tool
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /account
+Disallow: /preferences
+Disallow: /checkout/
+Disallow: /editor/
+Disallow: /organize/
+Disallow: /imagine
+Disallow: /personalize
+Disallow: /app/
+Disallow: /jobs/
+
+# Perplexity — search index for Perplexity citations
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /account
+Disallow: /preferences
+Disallow: /checkout/
+Disallow: /editor/
+Disallow: /organize/
+Disallow: /imagine
+Disallow: /personalize
+Disallow: /app/
+Disallow: /jobs/
+
+# Perplexity — real-time fetch when a Perplexity user submits a query
+User-agent: Perplexity-User
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /account
+Disallow: /preferences
+Disallow: /checkout/
+Disallow: /editor/
+Disallow: /organize/
+Disallow: /imagine
+Disallow: /personalize
+Disallow: /app/
+Disallow: /jobs/
+
+# Anthropic — Claude's retrieval bot (Anthropic's documented policy is search/index only,
+# not training). The training opt-out is the `anthropic-ai` block above.
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /account
+Disallow: /preferences
+Disallow: /checkout/
+Disallow: /editor/
+Disallow: /organize/
+Disallow: /imagine
+Disallow: /personalize
+Disallow: /app/
+Disallow: /jobs/
+
+# ============================================================================
+# Sitemap
+# ============================================================================
+
+Sitemap: https://www.midjourney.com/sitemap.xml
