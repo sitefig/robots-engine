@@ -5,7 +5,7 @@ members = ["crates/core", "crates/wasm", "crates/cli"]
 [workspace.package]
 version = "2.0.0"
 edition = "2021"
-license = "MIT"
+license = "PolyForm-Noncommercial-1.0.0"
 repository = "https://github.com/sitefig/robots"
 
 [workspace.dependencies]
