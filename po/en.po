@@ -1,0 +1,2939 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sus.bot\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "page.title"
+msgid "sus.bot | robots.txt checker"
+msgstr "sus.bot | robots.txt checker"
+
+msgctxt "page.description"
+msgid "Free robots.txt checker. Fetch any site's robots.txt, see which search engines and AI crawlers are allowed or blocked, test paths against the rules, and check how the server responds to different user-agents."
+msgstr "Free robots.txt checker. Fetch any site's robots.txt, see which search engines and AI crawlers are allowed or blocked, test paths against the rules, and check how the server responds to different user-agents."
+
+msgctxt "page.skip"
+msgid "Skip to content"
+msgstr "Skip to content"
+
+msgctxt "page.h1"
+msgid "Check which crawlers your robots.txt lets in"
+msgstr "Check which crawlers your robots.txt lets in"
+
+msgctxt "page.themeLabel"
+msgid "Colour theme"
+msgstr "Colour theme"
+
+msgctxt "page.theme.system"
+msgid "System"
+msgstr "System"
+
+msgctxt "page.theme.light"
+msgid "Light"
+msgstr "Light"
+
+msgctxt "page.theme.dark"
+msgid "Dark"
+msgstr "Dark"
+
+msgctxt "page.langLabel"
+msgid "Language"
+msgstr "Language"
+
+msgctxt "page.intro"
+msgid "Enter a website. sus.bot fetches its <code>robots.txt</code> and shows which pages each search engine and AI crawler may visit. It also lists the paths the file reveals to anyone who reads it. The check runs in your browser and is free."
+msgstr "Enter a website. sus.bot fetches its <code>robots.txt</code> and shows which pages each search engine and AI crawler may visit. It also lists the paths the file reveals to anyone who reads it. The check runs in your browser and is free."
+
+msgctxt "page.urlLabel"
+msgid "Website URL"
+msgstr "Website URL"
+
+msgctxt "page.urlPlaceholder"
+msgid "example.com"
+msgstr "example.com"
+
+msgctxt "page.analyse"
+msgid "Analyse"
+msgstr "Analyse"
+
+msgctxt "page.urlHint"
+msgid "We fetch <code>/robots.txt</code> from the site's origin. Paths and query strings are ignored."
+msgstr "We fetch <code>/robots.txt</code> from the site's origin. Paths and query strings are ignored."
+
+msgctxt "page.pasteSummary"
+msgid "Paste a robots.txt instead"
+msgstr "Paste a robots.txt instead"
+
+msgctxt "page.pasteLabel"
+msgid "robots.txt contents"
+msgstr "robots.txt contents"
+
+msgctxt "page.analysePasted"
+msgid "Analyse pasted text"
+msgstr "Analyse pasted text"
+
+msgctxt "page.loadExample"
+msgid "Load the kitchen-sink example"
+msgstr "Load the kitchen-sink example"
+
+msgctxt "page.aiStatus"
+msgid "AI scraping status"
+msgstr "AI scraping status"
+
+msgctxt "page.agents"
+msgid "Crawler access"
+msgstr "Crawler access"
+
+msgctxt "page.agentsIntro"
+msgid "Resolved per crawler with RFC 9309 matching: the most specific group wins, then the longest rule, and ties go to <code>Allow</code>."
+msgstr "Resolved per crawler with RFC 9309 matching: the most specific group wins, then the longest rule, and ties go to <code>Allow</code>."
+
+msgctxt "page.tester"
+msgid "Test a path"
+msgstr "Test a path"
+
+msgctxt "page.access"
+msgid "Real access by user-agent"
+msgstr "Real access by user-agent"
+
+msgctxt "page.accessIntro"
+msgid "Request the file again through the proxy with each crawler's real user-agent string. A different status or body means the server treats that crawler differently (bot blocking, WAF rules, cloaking)."
+msgstr "Request the file again through the proxy with each crawler's real user-agent string. A different status or body means the server treats that crawler differently (bot blocking, WAF rules, cloaking)."
+
+msgctxt "page.issues"
+msgid "Issues"
+msgstr "Issues"
+
+msgctxt "page.security"
+msgid "Security notes"
+msgstr "Security notes"
+
+msgctxt "page.securityIntro"
+msgid "Disallow rules that point at places attackers look for first. This checks what the file reveals, not whether the paths exist or are protected."
+msgstr "Disallow rules that point at places attackers look for first. This checks what the file reveals, not whether the paths exist or are protected."
+
+msgctxt "page.recon"
+msgid "Reconnaissance"
+msgstr "Reconnaissance"
+
+msgctxt "page.reconIntro"
+msgid "What a stranger learns about this site from the file alone: the platform it runs on, cloud buckets, other hostnames, API entry points, data feeds, file types, and notes left in comments. Nothing here is fetched or probed; it is read straight from the text."
+msgstr "What a stranger learns about this site from the file alone: the platform it runs on, cloud buckets, other hostnames, API entry points, data feeds, file types, and notes left in comments. Nothing here is fetched or probed; it is read straight from the text."
+
+msgctxt "page.sitemaps"
+msgid "Sitemaps"
+msgstr "Sitemaps"
+
+msgctxt "page.raw"
+msgid "File contents"
+msgstr "File contents"
+
+msgctxt "page.footerRfc"
+msgid "Rule matching follows <a href=\"https://www.rfc-editor.org/rfc/rfc9309\" rel=\"noopener\">RFC 9309</a> and Google's published crawler behaviour."
+msgstr "Rule matching follows <a href=\"https://www.rfc-editor.org/rfc/rfc9309\" rel=\"noopener\">RFC 9309</a> and Google's published crawler behaviour."
+
+msgctxt "page.footerBy"
+msgid "A free tool by <a href=\"https://sitefig.eu\" rel=\"noopener\">Sitefig</a>."
+msgstr "A free tool by <a href=\"https://sitefig.eu\" rel=\"noopener\">Sitefig</a>."
+
+msgctxt "page.noscript"
+msgid "This tool runs entirely in your browser and needs JavaScript."
+msgstr "This tool runs entirely in your browser and needs JavaScript."
+
+msgctxt "enum.level.error"
+msgid "Error"
+msgstr "Error"
+
+msgctxt "enum.level.warning"
+msgid "Warning"
+msgstr "Warning"
+
+msgctxt "enum.level.info"
+msgid "Note"
+msgstr "Note"
+
+msgctxt "enum.verdict.open"
+msgid "Allowed"
+msgstr "Allowed"
+
+msgctxt "enum.verdict.partial"
+msgid "Restricted"
+msgstr "Restricted"
+
+msgctxt "enum.verdict.blocked"
+msgid "Blocked"
+msgstr "Blocked"
+
+msgctxt "enum.kind.syntax"
+msgid "Syntax"
+msgstr "Syntax"
+
+msgctxt "enum.kind.seo-trap"
+msgid "SEO trap"
+msgstr "SEO trap"
+
+msgctxt "enum.kind.sitemap"
+msgid "Sitemap"
+msgstr "Sitemap"
+
+msgctxt "enum.kind.fetch"
+msgid "Fetch"
+msgstr "Fetch"
+
+msgctxt "enum.kind.lint"
+msgid "Lint"
+msgstr "Lint"
+
+msgctxt "enum.severity.high"
+msgid "high"
+msgstr "high"
+
+msgctxt "enum.severity.medium"
+msgid "medium"
+msgstr "medium"
+
+msgctxt "enum.severity.low"
+msgid "low"
+msgstr "low"
+
+msgctxt "enum.confidence.high"
+msgid "high"
+msgstr "high"
+
+msgctxt "enum.confidence.medium"
+msgid "medium"
+msgstr "medium"
+
+msgctxt "enum.confidence.low"
+msgid "low"
+msgstr "low"
+
+msgctxt "enum.risk.high"
+msgid "high"
+msgstr "high"
+
+msgctxt "enum.risk.medium"
+msgid "medium"
+msgstr "medium"
+
+msgctxt "enum.risk.low"
+msgid "low"
+msgstr "low"
+
+msgctxt "enum.role.search"
+msgid "search"
+msgstr "search"
+
+msgctxt "enum.role.filter"
+msgid "filter"
+msgstr "filter"
+
+msgctxt "enum.role.tracking"
+msgid "tracking"
+msgstr "tracking"
+
+msgctxt "enum.role.other"
+msgid "other"
+msgstr "other"
+
+msgctxt "enum.relation.subdomain"
+msgid "same domain"
+msgstr "same domain"
+
+msgctxt "enum.relation.ip"
+msgid "IP address"
+msgstr "IP address"
+
+msgctxt "enum.relation.external"
+msgid "other domain"
+msgstr "other domain"
+
+msgctxt "enum.source.comment"
+msgid "comment"
+msgstr "comment"
+
+msgctxt "parser.tooLarge"
+msgid "The file is {kib} KiB. Crawlers only read the first 500 KiB and ignore the rest."
+msgstr "The file is {kib} KiB. Crawlers only read the first 500 KiB and ignore the rest."
+
+msgctxt "parser.bom"
+msgid "The file starts with a UTF-8 byte-order mark. Most parsers strip it, but saving without one is safer."
+msgstr "The file starts with a UTF-8 byte-order mark. Most parsers strip it, but saving without one is safer."
+
+msgctxt "parser.notFieldValue"
+msgid "Line is not in \"field: value\" form and is ignored."
+msgstr "Line is not in \"field: value\" form and is ignored."
+
+msgctxt "parser.misspelling"
+msgid "\"{raw}\" is read as \"{field}\". Google tolerates the misspelling; other crawlers may not."
+msgstr "\"{raw}\" is read as \"{field}\". Google tolerates the misspelling; other crawlers may not."
+
+msgctxt "parser.emptyUserAgent"
+msgid "Empty User-agent value. This group matches no crawler."
+msgstr "Empty User-agent value. This group matches no crawler."
+
+msgctxt "parser.invalidToken"
+msgid "\"{value}\" is not a valid product token. This group matches no crawler."
+msgstr "\"{value}\" is not a valid product token. This group matches no crawler."
+
+msgctxt "parser.tokenTail"
+msgid "Only \"{token}\" is used for matching. The rest of \"{value}\" is ignored."
+msgstr "Only \"{token}\" is used for matching. The rest of \"{value}\" is ignored."
+
+msgctxt "parser.ruleBeforeAgent"
+msgid "{directive} appears before any User-agent line and is ignored."
+msgstr "{directive} appears before any User-agent line and is ignored."
+
+msgctxt "parser.emptyAllow"
+msgid "Empty Allow has no effect."
+msgstr "Empty Allow has no effect."
+
+msgctxt "parser.emptyDisallow"
+msgid "Empty Disallow means \"allow everything\" and has no effect."
+msgstr "Empty Disallow means \"allow everything\" and has no effect."
+
+msgctxt "parser.pathNoSlash"
+msgid "Path \"{value}\" does not start with \"/\" and will never match. Did you mean \"/{value}\"?"
+msgstr "Path \"{value}\" does not start with \"/\" and will never match. Did you mean \"/{value}\"?"
+
+msgctxt "parser.crawlDelayBeforeAgent"
+msgid "Crawl-delay appears before any User-agent line and is ignored."
+msgstr "Crawl-delay appears before any User-agent line and is ignored."
+
+msgctxt "parser.crawlDelayNaN"
+msgid "Crawl-delay \"{value}\" is not a number."
+msgstr "Crawl-delay \"{value}\" is not a number."
+
+msgctxt "parser.crawlDelayDuplicate"
+msgid "Duplicate Crawl-delay in this group. The first one is kept."
+msgstr "Duplicate Crawl-delay in this group. The first one is kept."
+
+msgctxt "parser.crawlDelayNonStandard"
+msgid "Crawl-delay is not part of RFC 9309. Bing honours it; Google and Yandex ignore it."
+msgstr "Crawl-delay is not part of RFC 9309. Bing honours it; Google and Yandex ignore it."
+
+msgctxt "parser.sitemapInvalid"
+msgid "Sitemap value \"{value}\" is not an absolute http(s) URL."
+msgstr "Sitemap value \"{value}\" is not an absolute http(s) URL."
+
+msgctxt "parser.hostDuplicate"
+msgid "Duplicate Host. The first one is kept."
+msgstr "Duplicate Host. The first one is kept."
+
+msgctxt "parser.hostObsolete"
+msgid "Host was a Yandex-only directive for naming the main mirror. Yandex dropped it in 2018; no crawler uses it now. Redirect to the preferred hostname instead."
+msgstr "Host was a Yandex-only directive for naming the main mirror. Yandex dropped it in 2018; no crawler uses it now. Redirect to the preferred hostname instead."
+
+msgctxt "parser.cleanParamMalformed"
+msgid "Clean-param is malformed. Expected \"Clean-param: p1&p2 /path-prefix\" with parameter names made of letters, digits, \"_\", \"-\" and \".\"."
+msgstr "Clean-param is malformed. Expected \"Clean-param: p1&p2 /path-prefix\" with parameter names made of letters, digits, \"_\", \"-\" and \".\"."
+
+msgctxt "parser.cleanParamTooLong"
+msgid "Clean-param is longer than {max} characters, the limit Yandex accepts."
+msgstr "Clean-param is longer than {max} characters, the limit Yandex accepts."
+
+msgctxt "parser.cleanParamInfo"
+msgid "Clean-param is a Yandex-only directive. Yandex ignores the listed query parameters when crawling; other crawlers ignore the directive."
+msgstr "Clean-param is a Yandex-only directive. Yandex ignores the listed query parameters when crawling; other crawlers ignore the directive."
+
+msgctxt "parser.noindex"
+msgid "Noindex in robots.txt is not supported by any major search engine. Use a robots meta tag or X-Robots-Tag header instead."
+msgstr "Noindex in robots.txt is not supported by any major search engine. Use a robots meta tag or X-Robots-Tag header instead."
+
+msgctxt "parser.unknownDirective"
+msgid "Unknown directive \"{field}\" is ignored."
+msgstr "Unknown directive \"{field}\" is ignored."
+
+msgctxt "parser.noRules"
+msgid "No rules found. Every crawler may access everything."
+msgstr "No rules found. Every crawler may access everything."
+
+msgctxt "parser.emptyGroup"
+msgid "This group has no rules, so matching crawlers may access everything."
+msgstr "This group has no rules, so matching crawlers may access everything."
+
+msgctxt "parser.tokenRepeated"
+msgid "\"{token}\" appears in {n} groups. RFC 9309 merges their rules; some older crawlers only use the first."
+msgstr "\"{token}\" appears in {n} groups. RFC 9309 merges their rules; some older crawlers only use the first."
+
+msgctxt "parser.starBlocksAll"
+msgid "The \"*\" group disallows the whole site. Every crawler without its own group is blocked entirely."
+msgstr "The \"*\" group disallows the whole site. Every crawler without its own group is blocked entirely."
+
+msgctxt "parser.noSitemap"
+msgid "No Sitemap line. Optional, but it helps crawlers discover URLs."
+msgstr "No Sitemap line. Optional, but it helps crawlers discover URLs."
+
+msgctxt "seo.trailingSlash.allow"
+msgid "Trailing slash trap: \"{path}\" is a prefix, so it also allows {path}s, {path}-old and {path}2. Did you mean \"{path}/\" for the directory, or \"{path}$\" for only that URL?"
+msgstr "Trailing slash trap: \"{path}\" is a prefix, so it also allows {path}s, {path}-old and {path}2. Did you mean \"{path}/\" for the directory, or \"{path}$\" for only that URL?"
+
+msgctxt "seo.trailingSlash.disallow"
+msgid "Trailing slash trap: \"{path}\" is a prefix, so it also blocks {path}s, {path}-old and {path}2. Did you mean \"{path}/\" for the directory, or \"{path}$\" for only that URL?"
+msgstr "Trailing slash trap: \"{path}\" is a prefix, so it also blocks {path}s, {path}-old and {path}2. Did you mean \"{path}/\" for the directory, or \"{path}$\" for only that URL?"
+
+msgctxt "seo.selfBlock"
+msgid "Self-block: \"Disallow: {path}\" matches /robots.txt. Google always fetches robots.txt regardless, but other crawlers may honour this and stop reading your rules altogether."
+msgstr "Self-block: \"Disallow: {path}\" matches /robots.txt. Google always fetches robots.txt regardless, but other crawlers may honour this and stop reading your rules altogether."
+
+msgctxt "seo.caseSensitive"
+msgid "Case-sensitive: \"{path}\" only matches URLs with exactly this casing. \"{lower}\" would not match. Check the site's real URL casing."
+msgstr "Case-sensitive: \"{path}\" only matches URLs with exactly this casing. \"{lower}\" would not match. Check the site's real URL casing."
+
+msgctxt "seo.duplicate"
+msgid "Duplicate: \"{rule}\" repeats line {line}{scope}."
+msgstr "Duplicate: \"{rule}\" repeats line {line}{scope}."
+
+msgctxt "seo.redundant"
+msgid "Redundant: \"{rule}\" never takes effect because \"{winner}\" on line {line} already covers every path it matches{scope}."
+msgstr "Redundant: \"{rule}\" never takes effect because \"{winner}\" on line {line} already covers every path it matches{scope}."
+
+msgctxt "seo.overridden"
+msgid "Overridden: \"{rule}\" never wins because \"{winner}\" on line {line} takes precedence on every path it matches{scope}."
+msgstr "Overridden: \"{rule}\" never wins because \"{winner}\" on line {line} takes precedence on every path it matches{scope}."
+
+msgctxt "seo.mergedScope"
+msgid " (rules for \"{token}\" are merged across groups)"
+msgstr " (rules for \"{token}\" are merged across groups)"
+
+msgctxt "sitemap.duplicate"
+msgid "Duplicate Sitemap: this URL is already listed on line {line}."
+msgstr "Duplicate Sitemap: this URL is already listed on line {line}."
+
+msgctxt "sitemap.protocolMismatch"
+msgid "Protocol mismatch: the site is served over https but this sitemap is listed as http. Crawlers will hit a redirect on every fetch, or an insecure copy. Use {url}."
+msgstr "Protocol mismatch: the site is served over https but this sitemap is listed as http. Crawlers will hit a redirect on every fetch, or an insecure copy. Use {url}."
+
+msgctxt "sitemap.httpsOnHttp"
+msgid "The sitemap is https but the site was reached over http. Fine if the site redirects to https; otherwise list the sitemap with the protocol the site actually uses."
+msgstr "The sitemap is https but the site was reached over http. Fine if the site redirects to https; otherwise list the sitemap with the protocol the site actually uses."
+
+msgctxt "sitemap.crossDomain"
+msgid "Cross-domain sitemap: hosted on {host}, not {site}. Google only accepts it if both sites are verified by the same owner in Search Console (cross-site submission). Other search engines may ignore it."
+msgstr "Cross-domain sitemap: hosted on {host}, not {site}. Google only accepts it if both sites are verified by the same owner in Search Console (cross-site submission). Other search engines may ignore it."
+
+msgctxt "sitemap.otherSubdomain"
+msgid "The sitemap is on a different host of the same domain ({host}). Listing it here is what allows it to contain {site} URLs, so this is fine."
+msgstr "The sitemap is on a different host of the same domain ({host}). Listing it here is what allows it to contain {site} URLs, so this is fine."
+
+msgctxt "lint.absoluteUrl"
+msgid "\"{rule}\" is an absolute URL. Rules must be paths, so this never matches anything. It also publishes the hostname."
+msgstr "\"{rule}\" is an absolute URL. Rules must be paths, so this never matches anything. It also publishes the hostname."
+
+msgctxt "lint.absoluteUrl.hint"
+msgid "\"{rule}\" is an absolute URL. Rules must be paths, so this never matches anything. Did you mean \"{path}\"? It also publishes the hostname."
+msgstr "\"{rule}\" is an absolute URL. Rules must be paths, so this never matches anything. Did you mean \"{path}\"? It also publishes the hostname."
+
+msgctxt "fetch.warn.redirectLimit"
+msgid "More than five redirects. RFC 9309 lets crawlers give up at that point, and Google then treats the file as a 404: no restrictions."
+msgstr "More than five redirects. RFC 9309 lets crawlers give up at that point, and Google then treats the file as a 404: no restrictions."
+
+msgctxt "fetch.warn.redirectSameSite"
+msgid "robots.txt redirected to {host}. A www/non-www or https redirect like this is fine; crawlers follow it."
+msgstr "robots.txt redirected to {host}. A www/non-www or https redirect like this is fine; crawlers follow it."
+
+msgctxt "fetch.warn.redirectOtherHost"
+msgid "robots.txt redirected to a different host, {to}. Crawlers apply the file they land on as this site's robots.txt, so {from} is governed by {to}'s rules."
+msgstr "robots.txt redirected to a different host, {to}. Crawlers apply the file they land on as this site's robots.txt, so {from} is governed by {to}'s rules."
+
+msgctxt "fetch.warn.notRobotsPath"
+msgid "The redirect ended at {path}, not /robots.txt. Crawlers still parse whatever they received as robots.txt."
+msgstr "The redirect ended at {path}, not /robots.txt. Crawlers still parse whatever they received as robots.txt."
+
+msgctxt "fetch.error.empty"
+msgid "Enter a website URL."
+msgstr "Enter a website URL."
+
+msgctxt "fetch.error.invalidUrl"
+msgid "\"{input}\" is not a valid URL."
+msgstr "\"{input}\" is not a valid URL."
+
+msgctxt "fetch.error.unsupportedProtocol"
+msgid "Only http and https URLs are supported."
+msgstr "Only http and https URLs are supported."
+
+msgctxt "fetch.error.notHostname"
+msgid "\"{host}\" does not look like a hostname."
+msgstr "\"{host}\" does not look like a hostname."
+
+msgctxt "fetch.error.directTimeout"
+msgid "Direct fetch timed out."
+msgstr "Direct fetch timed out."
+
+msgctxt "fetch.error.cors"
+msgid "Direct fetch was blocked. The site does not send CORS headers for robots.txt."
+msgstr "Direct fetch was blocked. The site does not send CORS headers for robots.txt."
+
+msgctxt "fetch.error.noProxy"
+msgid "The proxy is not configured. Set WORKER_URL in js/config.js."
+msgstr "The proxy is not configured. Set WORKER_URL in js/config.js."
+
+msgctxt "fetch.error.proxyTimeout"
+msgid "The proxy did not answer in time."
+msgstr "The proxy did not answer in time."
+
+msgctxt "fetch.error.proxyUnreachable"
+msgid "Could not reach the proxy."
+msgstr "Could not reach the proxy."
+
+msgctxt "fetch.error.proxyUnreadable"
+msgid "The proxy returned an unreadable response (HTTP {status})."
+msgstr "The proxy returned an unreadable response (HTTP {status})."
+
+msgctxt "fetch.error.rateLimited"
+msgid "Too many requests: the proxy is rate-limited right now. Wait a minute and try again."
+msgstr "Too many requests: the proxy is rate-limited right now. Wait a minute and try again."
+
+msgctxt "fetch.error.paused"
+msgid "The proxy is switched off at the moment, so only sites that send CORS headers can be fetched. Paste the robots.txt instead."
+msgstr "The proxy is switched off at the moment, so only sites that send CORS headers can be fetched. Paste the robots.txt instead."
+
+msgctxt "fetch.error.originRefused"
+msgid "The proxy refused this page's origin. Add it to ALLOWED_ORIGINS in worker/wrangler.toml."
+msgstr "The proxy refused this page's origin. Add it to ALLOWED_ORIGINS in worker/wrangler.toml."
+
+msgctxt "fetch.error.proxy"
+msgid "Proxy error (HTTP {status}). {detail}"
+msgstr "Proxy error (HTTP {status}). {detail}"
+
+msgctxt "fetch.error.noProxyFallback"
+msgid "{reason} No proxy is configured, so the file cannot be read. Paste its contents instead."
+msgstr "{reason} No proxy is configured, so the file cannot be read. Paste its contents instead."
+
+msgctxt "fetch.error.couldNotFetch"
+msgid "Could not fetch {url}. {reason}"
+msgstr "Could not fetch {url}. {reason}"
+
+msgctxt "security.reconWarning"
+msgid "Security note: Disallow lines are publicly visible and often scanned by attackers for reconnaissance. robots.txt is not access control. Anything listed here should be protected by authentication, removed from the web root, or marked noindex with an HTTP header instead."
+msgstr "Security note: Disallow lines are publicly visible and often scanned by attackers for reconnaissance. robots.txt is not access control. Anything listed here should be protected by authentication, removed from the web root, or marked noindex with an HTTP header instead."
+
+msgctxt "security.category.admin.label"
+msgid "Admin / internal"
+msgstr "Admin / internal"
+
+msgctxt "security.category.admin.advice"
+msgid "Protect with authentication and send an X-Robots-Tag: noindex header. Listing it here only advertises where the login is."
+msgstr "Protect with authentication and send an X-Robots-Tag: noindex header. Listing it here only advertises where the login is."
+
+msgctxt "security.category.staging.label"
+msgid "Staging / dev"
+msgstr "Staging / dev"
+
+msgctxt "security.category.staging.advice"
+msgid "Take staging and test environments off the public internet, or restrict them by IP or login. Use a noindex header rather than robots.txt."
+msgstr "Take staging and test environments off the public internet, or restrict them by IP or login. Use a noindex header rather than robots.txt."
+
+msgctxt "security.category.backups.label"
+msgid "Backups & archives"
+msgstr "Backups & archives"
+
+msgctxt "security.category.backups.advice"
+msgid "Backups and archives should not be reachable over HTTP at all. Move them outside the web root and verify the URL returns 404."
+msgstr "Backups and archives should not be reachable over HTTP at all. Move them outside the web root and verify the URL returns 404."
+
+msgctxt "security.category.secrets.label"
+msgid "Secrets & config"
+msgstr "Secrets & config"
+
+msgctxt "security.category.secrets.advice"
+msgid "Configuration files, version-control folders and credentials must never be web-accessible. Block them at the server and check they return 403 or 404."
+msgstr "Configuration files, version-control folders and credentials must never be web-accessible. Block them at the server and check they return 403 or 404."
+
+msgctxt "security.category.api.label"
+msgid "Private APIs & debug"
+msgstr "Private APIs & debug"
+
+msgctxt "security.category.api.advice"
+msgid "Internal APIs and debug endpoints need authentication or a network allowlist. Crawlers are not the threat here; scripted scanners are."
+msgstr "Internal APIs and debug endpoints need authentication or a network allowlist. Crawlers are not the threat here; scripted scanners are."
+
+msgctxt "security.category.data.label"
+msgid "User data & uploads"
+msgstr "User data & uploads"
+
+msgctxt "security.category.data.advice"
+msgid "Turn off directory listing and make sure private files require a login. A Disallow only asks polite crawlers to look away."
+msgstr "Turn off directory listing and make sure private files require a login. A Disallow only asks polite crawlers to look away."
+
+msgctxt "security.reason.admin"
+msgid "Administrative interface"
+msgstr "Administrative interface"
+
+msgctxt "security.reason.staging"
+msgid "Non-production environment"
+msgstr "Non-production environment"
+
+msgctxt "security.reason.versioned"
+msgid "Versioned path, often an old or unreleased version"
+msgstr "Versioned path, often an old or unreleased version"
+
+msgctxt "security.reason.configFile"
+msgid "Configuration, version control or credential file"
+msgstr "Configuration, version control or credential file"
+
+msgctxt "security.reason.secrets"
+msgid "Secrets or credentials location"
+msgstr "Secrets or credentials location"
+
+msgctxt "security.reason.backupDir"
+msgid "Backup or database dump location"
+msgstr "Backup or database dump location"
+
+msgctxt "security.reason.backupFile"
+msgid "Backup or archive file type"
+msgstr "Backup or archive file type"
+
+msgctxt "security.reason.api"
+msgid "Internal API or debug endpoint"
+msgstr "Internal API or debug endpoint"
+
+msgctxt "security.reason.data"
+msgid "User data, uploads or exports"
+msgstr "User data, uploads or exports"
+
+msgctxt "agents.category.search"
+msgid "Search engines"
+msgstr "Search engines"
+
+msgctxt "agents.category.ai-training"
+msgid "AI training / LLMs"
+msgstr "AI training / LLMs"
+
+msgctxt "agents.category.ai-search"
+msgid "AI search / citations"
+msgstr "AI search / citations"
+
+msgctxt "agents.category.social"
+msgid "Social previews"
+msgstr "Social previews"
+
+msgctxt "agents.category.seo"
+msgid "SEO tools"
+msgstr "SEO tools"
+
+msgctxt "agents.note.gptbot"
+msgid "OpenAI model training."
+msgstr "OpenAI model training."
+
+msgctxt "agents.note.claudebot"
+msgid "Anthropic model training. Also honours the older \"anthropic-ai\" token."
+msgstr "Anthropic model training. Also honours the older \"anthropic-ai\" token."
+
+msgctxt "agents.note.googleExtended"
+msgid "Control token for Gemini training. Not a crawler; Googlebot fetches the pages."
+msgstr "Control token for Gemini training. Not a crawler; Googlebot fetches the pages."
+
+msgctxt "agents.note.applebotExtended"
+msgid "Control token for Apple model training. Applebot fetches the pages."
+msgstr "Control token for Apple model training. Applebot fetches the pages."
+
+msgctxt "agents.note.ccbot"
+msgid "Common Crawl. Its archive is a major training source for many models."
+msgstr "Common Crawl. Its archive is a major training source for many models."
+
+msgctxt "agents.note.bytespider"
+msgid "ByteDance / TikTok."
+msgstr "ByteDance / TikTok."
+
+msgctxt "agents.note.metaExternalagent"
+msgid "Meta model training."
+msgstr "Meta model training."
+
+msgctxt "agents.note.amazonbot"
+msgid "Amazon, used for Alexa and model training."
+msgstr "Amazon, used for Alexa and model training."
+
+msgctxt "agents.note.diffbot"
+msgid "Structured-data extraction and knowledge graph."
+msgstr "Structured-data extraction and knowledge graph."
+
+msgctxt "agents.note.cohere"
+msgid "Control token for Cohere model training."
+msgstr "Control token for Cohere model training."
+
+msgctxt "agents.note.omgilibot"
+msgid "Webz.io, which resells crawled data for training."
+msgstr "Webz.io, which resells crawled data for training."
+
+msgctxt "agents.note.oaiSearchbot"
+msgid "ChatGPT search index. Not used for training."
+msgstr "ChatGPT search index. Not used for training."
+
+msgctxt "agents.note.chatgptUser"
+msgid "Fetches pages on a user's request inside ChatGPT."
+msgstr "Fetches pages on a user's request inside ChatGPT."
+
+msgctxt "agents.note.claudeSearchbot"
+msgid "Anthropic search index. Not used for training."
+msgstr "Anthropic search index. Not used for training."
+
+msgctxt "agents.note.claudeUser"
+msgid "Fetches pages on a user's request inside Claude."
+msgstr "Fetches pages on a user's request inside Claude."
+
+msgctxt "agents.note.perplexitybot"
+msgid "Perplexity search index."
+msgstr "Perplexity search index."
+
+msgctxt "agents.note.perplexityUser"
+msgid "Fetches pages on a user's request inside Perplexity."
+msgstr "Fetches pages on a user's request inside Perplexity."
+
+msgctxt "agents.note.duckassistbot"
+msgid "DuckDuckGo AI answers."
+msgstr "DuckDuckGo AI answers."
+
+msgctxt "agents.note.youbot"
+msgid "You.com search."
+msgstr "You.com search."
+
+msgctxt "ai.noGroup"
+msgid "No matching group, so everything is allowed."
+msgstr "No matching group, so everything is allowed."
+
+msgctxt "ai.ownGroup"
+msgid "Has its own \"{token}\" group."
+msgstr "Has its own \"{token}\" group."
+
+msgctxt "ai.starGroup"
+msgid "Falls back to the \"*\" group."
+msgstr "Falls back to the \"*\" group."
+
+msgctxt "ai.headline"
+msgid "{label}: {blocked} of {total} blocked"
+msgstr "{label}: {blocked} of {total} blocked"
+
+msgctxt "ai.callout.none"
+msgid "No AI training crawlers are configured."
+msgstr "No AI training crawlers are configured."
+
+msgctxt "ai.callout.allBlocked"
+msgid "Every known AI training crawler is blocked."
+msgstr "Every known AI training crawler is blocked."
+
+msgctxt "ai.callout.noneRestricted"
+msgid "No AI training crawler is restricted. Content on this site may be used for model training."
+msgstr "No AI training crawler is restricted. Content on this site may be used for model training."
+
+msgctxt "ai.callout.noneNamed"
+msgid "No AI training crawler is addressed by name; all of them follow the default \"*\" rules. Content may be used for model training."
+msgstr "No AI training crawler is addressed by name; all of them follow the default \"*\" rules. Content may be used for model training."
+
+msgctxt "ai.callout.uneven"
+msgid "AI training crawlers are treated unevenly. Still allowed or only partly restricted: {list}."
+msgstr "AI training crawlers are treated unevenly. Still allowed or only partly restricted: {list}."
+
+msgctxt "recon.cms.kind.cms"
+msgid "CMS"
+msgstr "CMS"
+
+msgctxt "recon.cms.kind.ecommerce"
+msgid "E-commerce platform"
+msgstr "E-commerce platform"
+
+msgctxt "recon.cms.kind.hosting"
+msgid "Hosted site builder"
+msgstr "Hosted site builder"
+
+msgctxt "recon.cms.kind.forum"
+msgid "Forum / community"
+msgstr "Forum / community"
+
+msgctxt "recon.cms.kind.wiki"
+msgid "Wiki"
+msgstr "Wiki"
+
+msgctxt "recon.cms.kind.framework"
+msgid "Front-end framework"
+msgstr "Front-end framework"
+
+msgctxt "recon.cms.kind.backend"
+msgid "Backend framework"
+msgstr "Backend framework"
+
+msgctxt "recon.cloud.kind.storage"
+msgid "Object storage"
+msgstr "Object storage"
+
+msgctxt "recon.cloud.kind.cdn"
+msgid "CDN"
+msgstr "CDN"
+
+msgctxt "recon.cloud.kind.hosting"
+msgid "Hosting"
+msgstr "Hosting"
+
+msgctxt "recon.cloud.kind.platform"
+msgid "Platform CDN"
+msgstr "Platform CDN"
+
+msgctxt "recon.cloud.risk.storage"
+msgid "Bucket and account names can be probed for public listing, read or write permissions."
+msgstr "Bucket and account names can be probed for public listing, read or write permissions."
+
+msgctxt "recon.cloud.risk.cdn"
+msgid "Reveals the CDN vendor and distribution or account identifier."
+msgstr "Reveals the CDN vendor and distribution or account identifier."
+
+msgctxt "recon.cloud.risk.hosting"
+msgid "Reveals the hosting provider and project name, often for a non-production copy."
+msgstr "Reveals the hosting provider and project name, often for a non-production copy."
+
+msgctxt "recon.cloud.risk.platform"
+msgid "Confirms the site platform and its asset store."
+msgstr "Confirms the site platform and its asset store."
+
+msgctxt "recon.hosts.privateIp"
+msgid "private IP"
+msgstr "private IP"
+
+msgctxt "recon.api.kind.graphql"
+msgid "GraphQL"
+msgstr "GraphQL"
+
+msgctxt "recon.api.kind.docs"
+msgid "API docs & schemas"
+msgstr "API docs & schemas"
+
+msgctxt "recon.api.kind.gateway"
+msgid "API gateways & endpoints"
+msgstr "API gateways & endpoints"
+
+msgctxt "recon.api.kind.rpc"
+msgid "RPC & realtime"
+msgstr "RPC & realtime"
+
+msgctxt "recon.api.kind.ops"
+msgid "Health, metrics & debug"
+msgstr "Health, metrics & debug"
+
+msgctxt "recon.api.note.graphql"
+msgid "Introspection may expose the whole schema; playgrounds often lack authentication."
+msgstr "Introspection may expose the whole schema; playgrounds often lack authentication."
+
+msgctxt "recon.api.note.docs"
+msgid "Interactive docs and OpenAPI files list every endpoint and parameter."
+msgstr "Interactive docs and OpenAPI files list every endpoint and parameter."
+
+msgctxt "recon.api.note.gateway"
+msgid "Raw entry points to test for missing authentication and rate limits."
+msgstr "Raw entry points to test for missing authentication and rate limits."
+
+msgctxt "recon.api.note.rpc"
+msgid "Legacy RPC and realtime endpoints are frequent sources of unauthenticated methods."
+msgstr "Legacy RPC and realtime endpoints are frequent sources of unauthenticated methods."
+
+msgctxt "recon.api.note.ops"
+msgid "Operational endpoints can leak config, environment variables and internal hostnames."
+msgstr "Operational endpoints can leak config, environment variables and internal hostnames."
+
+msgctxt "recon.data.feed.merchant"
+msgid "Shopping / merchant feed"
+msgstr "Shopping / merchant feed"
+
+msgctxt "recon.data.feed.inventory"
+msgid "Inventory or stock data"
+msgstr "Inventory or stock data"
+
+msgctxt "recon.data.feed.prices"
+msgid "Price list"
+msgstr "Price list"
+
+msgctxt "recon.data.feed.reports"
+msgid "Reports"
+msgstr "Reports"
+
+msgctxt "recon.data.feed.export"
+msgid "Bulk export"
+msgstr "Bulk export"
+
+msgctxt "recon.data.feed.catalogue"
+msgid "Product catalogue feed"
+msgstr "Product catalogue feed"
+
+msgctxt "recon.data.feed.content"
+msgid "Content feed"
+msgstr "Content feed"
+
+msgctxt "recon.data.feed.file"
+msgid "Data file"
+msgstr "Data file"
+
+msgctxt "recon.data.portal.trade"
+msgid "Trade or partner portal"
+msgstr "Trade or partner portal"
+
+msgctxt "recon.data.portal.vip"
+msgid "VIP, affiliate or influencer programme"
+msgstr "VIP, affiliate or influencer programme"
+
+msgctxt "recon.data.portal.discounts"
+msgid "Hidden discounts or sales"
+msgstr "Hidden discounts or sales"
+
+msgctxt "recon.data.portal.employee"
+msgid "Employee-only area"
+msgstr "Employee-only area"
+
+msgctxt "recon.data.portal.press"
+msgid "Press or investor material"
+msgstr "Press or investor material"
+
+msgctxt "recon.data.portal.unreleased"
+msgid "Unreleased products or programmes"
+msgstr "Unreleased products or programmes"
+
+msgctxt "recon.data.portal.other"
+msgid "Restricted portal"
+msgstr "Restricted portal"
+
+msgctxt "recon.ext.label.backups"
+msgid "Backups & database files"
+msgstr "Backups & database files"
+
+msgctxt "recon.ext.label.logs"
+msgid "Log files"
+msgstr "Log files"
+
+msgctxt "recon.ext.label.config"
+msgid "Config, keys & certificates"
+msgstr "Config, keys & certificates"
+
+msgctxt "recon.ext.label.sourceMaps"
+msgid "Source maps (original front-end source)"
+msgstr "Source maps (original front-end source)"
+
+msgctxt "recon.ext.label.vcs"
+msgid "Version control & system files"
+msgstr "Version control & system files"
+
+msgctxt "recon.ext.label.source"
+msgid "Unbuilt source files"
+msgstr "Unbuilt source files"
+
+msgctxt "recon.ext.label.pdf"
+msgid "PDF documents (brochures, invoices, contracts)"
+msgstr "PDF documents (brochures, invoices, contracts)"
+
+msgctxt "recon.ext.label.office"
+msgid "Office documents"
+msgstr "Office documents"
+
+msgctxt "recon.ext.label.data"
+msgid "Structured data files"
+msgstr "Structured data files"
+
+msgctxt "recon.ext.label.archives"
+msgid "Archives & packages"
+msgstr "Archives & packages"
+
+msgctxt "recon.ext.label.binaries"
+msgid "Executables & installers"
+msgstr "Executables & installers"
+
+msgctxt "recon.ext.label.php"
+msgid "PHP"
+msgstr "PHP"
+
+msgctxt "recon.ext.label.aspnet"
+msgid "ASP.NET"
+msgstr "ASP.NET"
+
+msgctxt "recon.ext.label.java"
+msgid "Java (JSP / Struts / JSF)"
+msgstr "Java (JSP / Struts / JSF)"
+
+msgctxt "recon.ext.label.coldfusion"
+msgid "ColdFusion"
+msgstr "ColdFusion"
+
+msgctxt "recon.ext.label.perl"
+msgid "Perl / CGI"
+msgstr "Perl / CGI"
+
+msgctxt "recon.ext.label.python"
+msgid "Python"
+msgstr "Python"
+
+msgctxt "recon.ext.label.ruby"
+msgid "Ruby"
+msgstr "Ruby"
+
+msgctxt "recon.ext.label.templates"
+msgid "Template files"
+msgstr "Template files"
+
+msgctxt "recon.ext.label.flash"
+msgid "Flash (legacy)"
+msgstr "Flash (legacy)"
+
+msgctxt "recon.ext.label.images"
+msgid "Images"
+msgstr "Images"
+
+msgctxt "recon.ext.label.media"
+msgid "Audio & video"
+msgstr "Audio & video"
+
+msgctxt "recon.ext.label.fonts"
+msgid "Fonts"
+msgstr "Fonts"
+
+msgctxt "recon.ext.label.web"
+msgid "Plain web files"
+msgstr "Plain web files"
+
+msgctxt "recon.ext.tech.php"
+msgid "PHP"
+msgstr "PHP"
+
+msgctxt "recon.ext.tech.aspnet"
+msgid "ASP.NET"
+msgstr "ASP.NET"
+
+msgctxt "recon.ext.tech.java"
+msgid "Java"
+msgstr "Java"
+
+msgctxt "recon.ext.tech.coldfusion"
+msgid "ColdFusion"
+msgstr "ColdFusion"
+
+msgctxt "recon.ext.tech.perl"
+msgid "Perl or CGI"
+msgstr "Perl or CGI"
+
+msgctxt "recon.ext.tech.python"
+msgid "Python"
+msgstr "Python"
+
+msgctxt "recon.ext.tech.ruby"
+msgid "Ruby"
+msgstr "Ruby"
+
+msgctxt "recon.ext.tech.templates"
+msgid "Server-side templates"
+msgstr "Server-side templates"
+
+msgctxt "recon.ext.tech.flash"
+msgid "Legacy Flash content"
+msgstr "Legacy Flash content"
+
+msgctxt "recon.comments.kind.email"
+msgid "Email addresses"
+msgstr "Email addresses"
+
+msgctxt "recon.comments.kind.person"
+msgid "People"
+msgstr "People"
+
+msgctxt "recon.comments.kind.ticket"
+msgid "Ticket / issue references"
+msgstr "Ticket / issue references"
+
+msgctxt "recon.comments.kind.date"
+msgid "Dates"
+msgstr "Dates"
+
+msgctxt "recon.comments.kind.ip"
+msgid "IP addresses"
+msgstr "IP addresses"
+
+msgctxt "recon.comments.kind.url"
+msgid "URLs"
+msgstr "URLs"
+
+msgctxt "recon.comments.kind.vendor"
+msgid "Vendors & tools"
+msgstr "Vendors & tools"
+
+msgctxt "recon.comments.kind.note"
+msgid "Intent notes"
+msgstr "Intent notes"
+
+msgctxt "recon.comments.value.email"
+msgid "Targets for phishing; reveals naming convention for staff addresses."
+msgstr "Targets for phishing; reveals naming convention for staff addresses."
+
+msgctxt "recon.comments.value.person"
+msgid "Names the people who maintain the site."
+msgstr "Names the people who maintain the site."
+
+msgctxt "recon.comments.value.ticket"
+msgid "Reveals the issue tracker and project keys."
+msgstr "Reveals the issue tracker and project keys."
+
+msgctxt "recon.comments.value.date"
+msgid "Timelines for launches, embargoes and stale rules."
+msgstr "Timelines for launches, embargoes and stale rules."
+
+msgctxt "recon.comments.value.ip"
+msgid "Internal or origin addresses that bypass the CDN or WAF."
+msgstr "Internal or origin addresses that bypass the CDN or WAF."
+
+msgctxt "recon.comments.value.url"
+msgid "Extra hosts and tools referenced by the maintainers."
+msgstr "Extra hosts and tools referenced by the maintainers."
+
+msgctxt "recon.comments.value.vendor"
+msgid "Third-party stack: CDN, WAF, SEO plugins, build tools."
+msgstr "Third-party stack: CDN, WAF, SEO plugins, build tools."
+
+msgctxt "recon.comments.value.note"
+msgid "Why a rule exists, often what it hides and for how long."
+msgstr "Why a rule exists, often what it hides and for how long."
+
+msgctxt "recon.comments.ip.private"
+msgid "private range"
+msgstr "private range"
+
+msgctxt "recon.comments.ip.public"
+msgid "public address"
+msgstr "public address"
+
+msgctxt "recon.comments.date.yearsAhead"
+msgid "{n} year ahead: an upcoming launch or embargo"
+msgid_plural "{n} years ahead: an upcoming launch or embargo"
+msgstr[0] "{n} year ahead: an upcoming launch or embargo"
+msgstr[1] "{n} years ahead: an upcoming launch or embargo"
+
+msgctxt "recon.comments.date.daysAhead"
+msgid "{n} day ahead: an upcoming launch or embargo"
+msgid_plural "{n} days ahead: an upcoming launch or embargo"
+msgstr[0] "{n} day ahead: an upcoming launch or embargo"
+msgstr[1] "{n} days ahead: an upcoming launch or embargo"
+
+msgctxt "recon.comments.date.yearsOld"
+msgid "{n} year old"
+msgid_plural "{n} years old"
+msgstr[0] "{n} year old"
+msgstr[1] "{n} years old"
+
+msgctxt "md.title"
+msgid "robots.txt audit: {host}"
+msgstr "robots.txt audit: {host}"
+
+msgctxt "md.pasted"
+msgid "pasted robots.txt"
+msgstr "pasted robots.txt"
+
+msgctxt "md.byline"
+msgid "Generated {date} with {tool} by [{vendor}]({url})."
+msgstr "Generated {date} with {tool} by [{vendor}]({url})."
+
+msgctxt "md.h.glance"
+msgid "At a glance"
+msgstr "At a glance"
+
+msgctxt "md.h.actions"
+msgid "Recommended actions"
+msgstr "Recommended actions"
+
+msgctxt "md.h.crawlers"
+msgid "AI and search crawler access"
+msgstr "AI and search crawler access"
+
+msgctxt "md.h.issues"
+msgid "Issues to fix"
+msgstr "Issues to fix"
+
+msgctxt "md.h.security"
+msgid "Security exposure"
+msgstr "Security exposure"
+
+msgctxt "md.h.recon"
+msgid "What the file reveals"
+msgstr "What the file reveals"
+
+msgctxt "md.h.sitemaps"
+msgid "Sitemaps"
+msgstr "Sitemaps"
+
+msgctxt "md.lineRef"
+msgid "line {n}"
+msgstr "line {n}"
+
+msgctxt "md.file"
+msgid "file"
+msgstr "file"
+
+msgctxt "md.none"
+msgid "none"
+msgstr "none"
+
+msgctxt "md.groups"
+msgid "{n} group"
+msgid_plural "{n} groups"
+msgstr[0] "{n} group"
+msgstr[1] "{n} groups"
+
+msgctxt "md.sitemaps"
+msgid "{n} sitemap"
+msgid_plural "{n} sitemaps"
+msgstr[0] "{n} sitemap"
+msgstr[1] "{n} sitemaps"
+
+msgctxt "md.sensitivePaths"
+msgid "{n} sensitive-looking path"
+msgid_plural "{n} sensitive-looking paths"
+msgstr[0] "{n} sensitive-looking path"
+msgstr[1] "{n} sensitive-looking paths"
+
+msgctxt "md.informationalNotes"
+msgid "{n} informational note"
+msgid_plural "{n} informational notes"
+msgstr[0] "{n} informational note"
+msgstr[1] "{n} informational notes"
+
+msgctxt "md.lowFindings"
+msgid "{n} low-severity finding"
+msgid_plural "{n} low-severity findings"
+msgstr[0] "{n} low-severity finding"
+msgstr[1] "{n} low-severity findings"
+
+msgctxt "md.syntaxErrors"
+msgid "{n} syntax error"
+msgid_plural "{n} syntax errors"
+msgstr[0] "{n} syntax error"
+msgstr[1] "{n} syntax errors"
+
+msgctxt "md.prefixRules"
+msgid "{n} prefix rule"
+msgid_plural "{n} prefix rules"
+msgstr[0] "{n} prefix rule"
+msgstr[1] "{n} prefix rules"
+
+msgctxt "md.rules"
+msgid "{n} rule"
+msgid_plural "{n} rules"
+msgstr[0] "{n} rule"
+msgstr[1] "{n} rules"
+
+msgctxt "md.absoluteRules"
+msgid "{n} absolute-URL rule"
+msgid_plural "{n} absolute-URL rules"
+msgstr[0] "{n} absolute-URL rule"
+msgstr[1] "{n} absolute-URL rules"
+
+msgctxt "md.paths"
+msgid "{n} path"
+msgid_plural "{n} paths"
+msgstr[0] "{n} path"
+msgstr[1] "{n} paths"
+
+msgctxt "md.sitemapLines"
+msgid "{n} Sitemap line"
+msgid_plural "{n} Sitemap lines"
+msgstr[0] "{n} Sitemap line"
+msgstr[1] "{n} Sitemap lines"
+
+msgctxt "md.where"
+msgid " (line {lines})"
+msgid_plural " (lines {lines})"
+msgstr[0] " (line {lines})"
+msgstr[1] " (lines {lines})"
+
+msgctxt "md.whereMore"
+msgid " (lines {lines} and more)"
+msgstr " (lines {lines} and more)"
+
+msgctxt "md.glance.fetched"
+msgid "HTTP {status}, {kib} KiB, fetched {via}"
+msgstr "HTTP {status}, {kib} KiB, fetched {via}"
+
+msgctxt "md.glance.viaProxy"
+msgid "through the proxy"
+msgstr "through the proxy"
+
+msgctxt "md.glance.viaDirect"
+msgid "directly"
+msgstr "directly"
+
+msgctxt "md.glance.example"
+msgid "example file"
+msgstr "example file"
+
+msgctxt "md.glance.pasted"
+msgid "pasted text"
+msgstr "pasted text"
+
+msgctxt "md.glance.policy"
+msgid "{verdict} ({disallow} disallow, {allow} allow)"
+msgstr "{verdict} ({disallow} disallow, {allow} allow)"
+
+msgctxt "md.glance.noStar"
+msgid "No `*` group, so everything is allowed"
+msgstr "No `*` group, so everything is allowed"
+
+msgctxt "md.glance.source"
+msgid "**Source:** {source} ({fetched})"
+msgstr "**Source:** {source} ({fetched})"
+
+msgctxt "md.glance.rules"
+msgid "**Rules:** {rules} in {groups}, {sitemaps}"
+msgstr "**Rules:** {rules} in {groups}, {sitemaps}"
+
+msgctxt "md.glance.default"
+msgid "**Default policy** for crawlers without their own group: {policy}"
+msgstr "**Default policy** for crawlers without their own group: {policy}"
+
+msgctxt "md.glance.issues"
+msgid "**Issues:** {errors} errors, {warnings} warnings, {notes} notes"
+msgstr "**Issues:** {errors} errors, {warnings} warnings, {notes} notes"
+
+msgctxt "md.glance.security"
+msgid "**Security:** {paths} exposed"
+msgstr "**Security:** {paths} exposed"
+
+msgctxt "md.glance.ai"
+msgid "**AI training crawlers blocked:** {blocked} of {total}"
+msgstr "**AI training crawlers blocked:** {blocked} of {total}"
+
+msgctxt "md.glance.platform"
+msgid "**Platform detected:** {name}"
+msgstr "**Platform detected:** {name}"
+
+msgctxt "md.table.crawler"
+msgid "Crawler"
+msgstr "Crawler"
+
+msgctxt "md.table.type"
+msgid "Type"
+msgstr "Type"
+
+msgctxt "md.table.access"
+msgid "Access"
+msgstr "Access"
+
+msgctxt "md.table.groupUsed"
+msgid "Group used"
+msgstr "Group used"
+
+msgctxt "md.table.where"
+msgid "Where"
+msgstr "Where"
+
+msgctxt "md.table.level"
+msgid "Level"
+msgstr "Level"
+
+msgctxt "md.table.kind"
+msgid "Kind"
+msgstr "Kind"
+
+msgctxt "md.table.issue"
+msgid "Issue"
+msgstr "Issue"
+
+msgctxt "md.table.rule"
+msgid "Rule"
+msgstr "Rule"
+
+msgctxt "md.table.category"
+msgid "Category"
+msgstr "Category"
+
+msgctxt "md.table.severity"
+msgid "Severity"
+msgstr "Severity"
+
+msgctxt "md.table.why"
+msgid "Why it matters"
+msgstr "Why it matters"
+
+msgctxt "md.crawlers.allAllowed"
+msgid "**{label}:** all allowed."
+msgstr "**{label}:** all allowed."
+
+msgctxt "md.crawlers.some"
+msgid "**{label}:** {bits}."
+msgstr "**{label}:** {bits}."
+
+msgctxt "md.crawlers.blocked"
+msgid "blocked: {list}"
+msgstr "blocked: {list}"
+
+msgctxt "md.crawlers.restricted"
+msgid "restricted: {list}"
+msgstr "restricted: {list}"
+
+msgctxt "md.issues.none"
+msgid "No errors or warnings."
+msgstr "No errors or warnings."
+
+msgctxt "md.issues.notesInFull"
+msgid "{notes} in the full report."
+msgstr "{notes} in the full report."
+
+msgctxt "md.issues.plusNotes"
+msgid "Plus {notes}, listed in the full report."
+msgstr "Plus {notes}, listed in the full report."
+
+msgctxt "md.security.none"
+msgid "No Disallow rule points at a commonly sensitive location."
+msgstr "No Disallow rule points at a commonly sensitive location."
+
+msgctxt "md.security.intro"
+msgid "Disallow lines are public and are routinely scanned for reconnaissance. robots.txt is not access control; anything below needs authentication, removal from the web root, or a noindex header instead."
+msgstr "Disallow lines are public and are routinely scanned for reconnaissance. robots.txt is not access control; anything below needs authentication, removal from the web root, or a noindex header instead."
+
+msgctxt "md.security.plusLow"
+msgid "Plus {findings} (uploads, user data) in the full report."
+msgstr "Plus {findings} (uploads, user data) in the full report."
+
+msgctxt "md.recon.platform"
+msgid "**Platform:** {name} ({confidence} confidence)"
+msgstr "**Platform:** {name} ({confidence} confidence)"
+
+msgctxt "md.recon.also"
+msgid "**Also detected:** {list}"
+msgstr "**Also detected:** {list}"
+
+msgctxt "md.recon.tech"
+msgid "**Server-side technology:** {list}"
+msgstr "**Server-side technology:** {list}"
+
+msgctxt "md.recon.cloud"
+msgid "**Cloud storage and CDNs:** {list}"
+msgstr "**Cloud storage and CDNs:** {list}"
+
+msgctxt "md.recon.envHosts"
+msgid "**Non-production or internal hosts:** {list}"
+msgstr "**Non-production or internal hosts:** {list}"
+
+msgctxt "md.recon.otherHosts"
+msgid "**Other hosts mentioned:** {list}"
+msgstr "**Other hosts mentioned:** {list}"
+
+msgctxt "md.recon.envPaths"
+msgid "**Paths that look like another environment or redesign:** {list}"
+msgstr "**Paths that look like another environment or redesign:** {list}"
+
+msgctxt "md.recon.api"
+msgid "**API endpoints and docs:** {list}"
+msgstr "**API endpoints and docs:** {list}"
+
+msgctxt "md.recon.feeds"
+msgid "**Data feeds and exports:** {list}"
+msgstr "**Data feeds and exports:** {list}"
+
+msgctxt "md.recon.portals"
+msgid "**Restricted portals:** {list}"
+msgstr "**Restricted portals:** {list}"
+
+msgctxt "md.recon.search"
+msgid "**Internal search:** {list}"
+msgstr "**Internal search:** {list}"
+
+msgctxt "md.recon.riskyExt"
+msgid "**High-risk file types referenced:** {list}"
+msgstr "**High-risk file types referenced:** {list}"
+
+msgctxt "md.recon.comments"
+msgid "**In comments:** {list}"
+msgstr "**In comments:** {list}"
+
+msgctxt "md.recon.nothing"
+msgid "Nothing notable. The file reveals little beyond its rules."
+msgstr "Nothing notable. The file reveals little beyond its rules."
+
+msgctxt "md.comments.emails"
+msgid "{n} email address"
+msgid_plural "{n} email addresses"
+msgstr[0] "{n} email address"
+msgstr[1] "{n} email addresses"
+
+msgctxt "md.comments.names"
+msgid "{n} name"
+msgid_plural "{n} names"
+msgstr[0] "{n} name"
+msgstr[1] "{n} names"
+
+msgctxt "md.comments.tickets"
+msgid "{n} ticket reference"
+msgid_plural "{n} ticket references"
+msgstr[0] "{n} ticket reference"
+msgstr[1] "{n} ticket references"
+
+msgctxt "md.comments.ips"
+msgid "{n} IP address"
+msgid_plural "{n} IP addresses"
+msgstr[0] "{n} IP address"
+msgstr[1] "{n} IP addresses"
+
+msgctxt "md.comments.dates"
+msgid "{n} date"
+msgid_plural "{n} dates"
+msgstr[0] "{n} date"
+msgstr[1] "{n} dates"
+
+msgctxt "md.comments.vendors"
+msgid "vendors ({list})"
+msgstr "vendors ({list})"
+
+msgctxt "md.comments.notes"
+msgid "intent notes ({list})"
+msgstr "intent notes ({list})"
+
+msgctxt "md.sitemaps.none"
+msgid "No Sitemap line. Optional, but it helps crawlers discover URLs."
+msgstr "No Sitemap line. Optional, but it helps crawlers discover URLs."
+
+msgctxt "md.actions.redirectChain"
+msgid "Fix the redirect chain on /robots.txt: crawlers give up after five hops and treat the file as missing."
+msgstr "Fix the redirect chain on /robots.txt: crawlers give up after five hops and treat the file as missing."
+
+msgctxt "md.actions.serverError"
+msgid "Fix the server error on /robots.txt. Google treats 5xx as \"disallow everything\" for up to 30 days."
+msgstr "Fix the server error on /robots.txt. Google treats 5xx as \"disallow everything\" for up to 30 days."
+
+msgctxt "md.actions.syntaxErrors"
+msgid "Fix {errors} that make lines ignored{where}."
+msgstr "Fix {errors} that make lines ignored{where}."
+
+msgctxt "md.actions.trailingSlash"
+msgid "Decide whether {rules} should end in \"/\" (directory) or \"$\" (exact URL); as written they also match longer paths{where}."
+msgstr "Decide whether {rules} should end in \"/\" (directory) or \"$\" (exact URL); as written they also match longer paths{where}."
+
+msgctxt "md.actions.selfBlock"
+msgid "Remove the rule that matches /robots.txt itself{where}."
+msgstr "Remove the rule that matches /robots.txt itself{where}."
+
+msgctxt "md.actions.deadRules"
+msgid "Remove {rules} that never take effect{where}."
+msgstr "Remove {rules} that never take effect{where}."
+
+msgctxt "md.actions.absoluteUrl"
+msgid "Rewrite {rules} as paths{where}."
+msgstr "Rewrite {rules} as paths{where}."
+
+msgctxt "md.actions.noSlash"
+msgid "Add the leading \"/\" to {paths} that can never match{where}."
+msgstr "Add the leading \"/\" to {paths} that can never match{where}."
+
+msgctxt "md.actions.protocol"
+msgid "List sitemaps with https URLs{where}."
+msgstr "List sitemaps with https URLs{where}."
+
+msgctxt "md.actions.crossDomain"
+msgid "Verify cross-domain sitemap ownership in Search Console, or move {sitemaps} onto this domain{where}."
+msgstr "Verify cross-domain sitemap ownership in Search Console, or move {sitemaps} onto this domain{where}."
+
+msgctxt "md.actions.relativeSitemap"
+msgid "Make {lines} absolute URLs{where}."
+msgstr "Make {lines} absolute URLs{where}."
+
+msgctxt "md.actions.addSitemap"
+msgid "Add a Sitemap line pointing at the XML sitemap."
+msgstr "Add a Sitemap line pointing at the XML sitemap."
+
+msgctxt "md.actions.noindex"
+msgid "Move noindex out of robots.txt into a robots meta tag or X-Robots-Tag header; no search engine honours it here."
+msgstr "Move noindex out of robots.txt into a robots meta tag or X-Robots-Tag header; no search engine honours it here."
+
+msgctxt "md.actions.crawlDelay"
+msgid "Treat Crawl-delay as Bing-only; use Search Console crawl settings for Google."
+msgstr "Treat Crawl-delay as Bing-only; use Search Console crawl settings for Google."
+
+msgctxt "md.actions.starBlocked"
+msgid "Confirm that blocking the whole site for every crawler without its own group is intended."
+msgstr "Confirm that blocking the whole site for every crawler without its own group is intended."
+
+msgctxt "md.actions.security"
+msgid "{label}: {advice} Paths: {paths}{more}."
+msgstr "{label}: {advice} Paths: {paths}{more}."
+
+msgctxt "md.actions.more"
+msgid " and {n} more"
+msgstr " and {n} more"
+
+msgctxt "md.actions.aiUneven"
+msgid "Decide on one AI-training policy. Still allowed or only partly restricted: {list}."
+msgstr "Decide on one AI-training policy. Still allowed or only partly restricted: {list}."
+
+msgctxt "md.actions.aiDecide"
+msgid "Decide whether AI training crawlers (GPTBot, ClaudeBot, CCBot and others) should be allowed; none is restricted today."
+msgstr "Decide whether AI training crawlers (GPTBot, ClaudeBot, CCBot and others) should be allowed; none is restricted today."
+
+msgctxt "md.actions.buckets"
+msgid "Check permissions on the cloud buckets named in the file: {list}."
+msgstr "Check permissions on the cloud buckets named in the file: {list}."
+
+msgctxt "md.actions.envHosts"
+msgid "Remove non-production hostnames from the file and put those environments behind authentication: {list}."
+msgstr "Remove non-production hostnames from the file and put those environments behind authentication: {list}."
+
+msgctxt "md.actions.personal"
+msgid "Strip names, email addresses, IPs and ticket IDs from comments; the file is public."
+msgstr "Strip names, email addresses, IPs and ticket IDs from comments; the file is public."
+
+msgctxt "md.actions.bom"
+msgid "Save the file as UTF-8 without a byte-order mark."
+msgstr "Save the file as UTF-8 without a byte-order mark."
+
+msgctxt "md.actions.none"
+msgid "No action needed. The file is clean."
+msgstr "No action needed. The file is clean."
+
+msgctxt "csv.tab.rules"
+msgid "Rules"
+msgstr "Rules"
+
+msgctxt "csv.tab.sitemaps"
+msgid "Sitemaps & HTTP"
+msgstr "Sitemaps & HTTP"
+
+msgctxt "csv.tab.issues"
+msgid "Warnings & traps"
+msgstr "Warnings & traps"
+
+msgctxt "csv.tab.recon"
+msgid "Recon & leaks"
+msgstr "Recon & leaks"
+
+msgctxt "csv.line"
+msgid "Line"
+msgstr "Line"
+
+msgctxt "csv.notes"
+msgid "Notes"
+msgstr "Notes"
+
+msgctxt "csv.tagged.sheet"
+msgid "Sheet"
+msgstr "Sheet"
+
+msgctxt "csv.tagged.item"
+msgid "Item"
+msgstr "Item"
+
+msgctxt "csv.tagged.type"
+msgid "Type"
+msgstr "Type"
+
+msgctxt "csv.tagged.value"
+msgid "Value"
+msgstr "Value"
+
+msgctxt "csv.tagged.status"
+msgid "Status"
+msgstr "Status"
+
+msgctxt "csv.rules.userAgents"
+msgid "User-agents"
+msgstr "User-agents"
+
+msgctxt "csv.rules.group"
+msgid "Group"
+msgstr "Group"
+
+msgctxt "csv.rules.type"
+msgid "Rule type"
+msgstr "Rule type"
+
+msgctxt "csv.rules.path"
+msgid "Path"
+msgstr "Path"
+
+msgctxt "csv.sitemaps.kind"
+msgid "Kind"
+msgstr "Kind"
+
+msgctxt "csv.sitemaps.url"
+msgid "URL"
+msgstr "URL"
+
+msgctxt "csv.sitemaps.status"
+msgid "Status"
+msgstr "Status"
+
+msgctxt "csv.sitemaps.contentType"
+msgid "Content type"
+msgstr "Content type"
+
+msgctxt "csv.issues.level"
+msgid "Level"
+msgstr "Level"
+
+msgctxt "csv.issues.kind"
+msgid "Kind"
+msgstr "Kind"
+
+msgctxt "csv.issues.message"
+msgid "Message"
+msgstr "Message"
+
+msgctxt "csv.recon.category"
+msgid "Category"
+msgstr "Category"
+
+msgctxt "csv.recon.item"
+msgid "Item"
+msgstr "Item"
+
+msgctxt "csv.recon.detail"
+msgid "Detail"
+msgstr "Detail"
+
+msgctxt "csv.group"
+msgid "group {n}"
+msgstr "group {n}"
+
+msgctxt "csv.source.http"
+msgid "HTTP {status}"
+msgstr "HTTP {status}"
+
+msgctxt "csv.source.example"
+msgid "example"
+msgstr "example"
+
+msgctxt "csv.source.pasted"
+msgid "pasted"
+msgstr "pasted"
+
+msgctxt "csv.source.via"
+msgid "fetched via {via}"
+msgstr "fetched via {via}"
+
+msgctxt "csv.source.redirects"
+msgid "redirects: {chain}"
+msgstr "redirects: {chain}"
+
+msgctxt "csv.source.redirectLimit"
+msgid "redirect limit reached"
+msgstr "redirect limit reached"
+
+msgctxt "csv.source.truncated"
+msgid "body truncated at 512 KiB"
+msgstr "body truncated at 512 KiB"
+
+msgctxt "csv.validUrl"
+msgid "valid URL"
+msgstr "valid URL"
+
+msgctxt "csv.invalidUrl"
+msgid "invalid URL"
+msgstr "invalid URL"
+
+msgctxt "csv.level.error"
+msgid "error"
+msgstr "error"
+
+msgctxt "csv.level.warning"
+msgid "warning"
+msgstr "warning"
+
+msgctxt "csv.level.info"
+msgid "note"
+msgstr "note"
+
+msgctxt "csv.cat.platform"
+msgid "Platform"
+msgstr "Platform"
+
+msgctxt "csv.cat.tech"
+msgid "Server technology"
+msgstr "Server technology"
+
+msgctxt "csv.cat.cloud"
+msgid "Cloud"
+msgstr "Cloud"
+
+msgctxt "csv.cat.host"
+msgid "Host"
+msgstr "Host"
+
+msgctxt "csv.cat.envPath"
+msgid "Environment path"
+msgstr "Environment path"
+
+msgctxt "csv.cat.api"
+msgid "API"
+msgstr "API"
+
+msgctxt "csv.cat.feed"
+msgid "Data feed"
+msgstr "Data feed"
+
+msgctxt "csv.cat.portal"
+msgid "Portal"
+msgstr "Portal"
+
+msgctxt "csv.cat.searchPath"
+msgid "Search path"
+msgstr "Search path"
+
+msgctxt "csv.cat.param"
+msgid "Query parameter"
+msgstr "Query parameter"
+
+msgctxt "csv.cat.ext"
+msgid "File type"
+msgstr "File type"
+
+msgctxt "csv.cat.comment"
+msgid "Comment"
+msgstr "Comment"
+
+msgctxt "csv.cat.security"
+msgid "Security"
+msgstr "Security"
+
+msgctxt "csv.detail.confidence"
+msgid "{kind}, {confidence} confidence"
+msgstr "{kind}, {confidence} confidence"
+
+msgctxt "csv.detail.fromExtensions"
+msgid "from file extensions"
+msgstr "from file extensions"
+
+msgctxt "csv.detail.bucket"
+msgid ", bucket/id {bucket}"
+msgstr ", bucket/id {bucket}"
+
+msgctxt "csv.detail.sourceLine"
+msgid "{source} line {line}"
+msgstr "{source} line {line}"
+
+msgctxt "csv.detail.internalSearch"
+msgid "internal search"
+msgstr "internal search"
+
+msgctxt "csv.detail.lines"
+msgid "lines {lines}"
+msgstr "lines {lines}"
+
+msgctxt "csv.detail.extRisk"
+msgid "{label} ({risk} risk)"
+msgstr "{label} ({risk} risk)"
+
+msgctxt "csv.detail.ruleCount"
+msgid "{n} rule"
+msgid_plural "{n} rules"
+msgstr[0] "{n} rule"
+msgstr[1] "{n} rules"
+
+msgctxt "csv.detail.severity"
+msgid "{category}, {severity} severity"
+msgstr "{category}, {severity} severity"
+
+msgctxt "ui.done"
+msgid "Done"
+msgstr "Done"
+
+msgctxt "ui.failed"
+msgid "Failed"
+msgstr "Failed"
+
+msgctxt "ui.bytes.b"
+msgid "{n} B"
+msgstr "{n} B"
+
+msgctxt "ui.bytes.kib"
+msgid "{n} KiB"
+msgstr "{n} KiB"
+
+msgctxt "ui.ms"
+msgid "{n} ms"
+msgstr "{n} ms"
+
+msgctxt "ui.seconds"
+msgid "{n} s"
+msgstr "{n} s"
+
+msgctxt "ui.line"
+msgid "line {n}"
+msgstr "line {n}"
+
+msgctxt "ui.file"
+msgid "file"
+msgstr "file"
+
+msgctxt "ui.none"
+msgid "none"
+msgstr "none"
+
+msgctxt "ui.scrollTable"
+msgid "{title}: table, scrolls sideways"
+msgstr "{title}: table, scrolls sideways"
+
+msgctxt "ui.allowed"
+msgid "Allowed"
+msgstr "Allowed"
+
+msgctxt "ui.blocked"
+msgid "Blocked"
+msgstr "Blocked"
+
+msgctxt "ui.open"
+msgid "Open"
+msgstr "Open"
+
+msgctxt "ui.status.fetching"
+msgid "Fetching robots.txt…"
+msgstr "Fetching robots.txt…"
+
+msgctxt "ui.status.viaProxy"
+msgid "Direct fetch blocked by CORS. Fetching through the proxy…"
+msgstr "Direct fetch blocked by CORS. Fetching through the proxy…"
+
+msgctxt "ui.status.fetched"
+msgid "Fetched via {via}, HTTP {status}, {size}, {ms}"
+msgstr "Fetched via {via}, HTTP {status}, {size}, {ms}"
+
+msgctxt "ui.via.proxy"
+msgid "proxy"
+msgstr "proxy"
+
+msgctxt "ui.via.direct"
+msgid "direct request"
+msgstr "direct request"
+
+msgctxt "ui.status.unexpected"
+msgid "Unexpected error: {message}"
+msgstr "Unexpected error: {message}"
+
+msgctxt "ui.status.example"
+msgid "Analysed example, checks assume the site is {url}"
+msgstr "Analysed example, checks assume the site is {url}"
+
+msgctxt "ui.status.pasted"
+msgid "Analysed pasted text, {size}"
+msgstr "Analysed pasted text, {size}"
+
+msgctxt "ui.status.loadingExample"
+msgid "Loading example…"
+msgstr "Loading example…"
+
+msgctxt "ui.status.exampleFailed"
+msgid "Could not load the example: {message}"
+msgstr "Could not load the example: {message}"
+
+msgctxt "ui.status.pasteFirst"
+msgid "Paste some robots.txt text first."
+msgstr "Paste some robots.txt text first."
+
+msgctxt "ui.summary.redirectLimit.title"
+msgid "Too many redirects"
+msgstr "Too many redirects"
+
+msgctxt "ui.summary.redirectLimit.body"
+msgid "The file was not reached within five redirects. Google treats this as a missing robots.txt: no restrictions. Fix the redirect chain."
+msgstr "The file was not reached within five redirects. Google treats this as a missing robots.txt: no restrictions. Fix the redirect chain."
+
+msgctxt "ui.summary.notFound.title"
+msgid "No robots.txt found"
+msgstr "No robots.txt found"
+
+msgctxt "ui.summary.notFound.body"
+msgid "The server answered HTTP {status}. Crawlers treat a missing robots.txt as \"everything allowed\"."
+msgstr "The server answered HTTP {status}. Crawlers treat a missing robots.txt as \"everything allowed\"."
+
+msgctxt "ui.summary.clientError.body"
+msgid "Google treats any 4xx response as \"no restrictions\". Most other crawlers do the same."
+msgstr "Google treats any 4xx response as \"no restrictions\". Most other crawlers do the same."
+
+msgctxt "ui.summary.serverError.title"
+msgid "Server error, HTTP {status}"
+msgstr "Server error, HTTP {status}"
+
+msgctxt "ui.summary.serverError.body"
+msgid "Google treats 5xx responses as a temporary \"disallow everything\" for up to 30 days, then as no restrictions. Other crawlers vary."
+msgstr "Google treats 5xx responses as a temporary \"disallow everything\" for up to 30 days, then as no restrictions. Other crawlers vary."
+
+msgctxt "ui.summary.unexpectedStatus.title"
+msgid "Unexpected HTTP {status}"
+msgstr "Unexpected HTTP {status}"
+
+msgctxt "ui.summary.unexpectedStatus.body"
+msgid "The body was ignored because the response was not a success."
+msgstr "The body was ignored because the response was not a success."
+
+msgctxt "ui.summary.html.title"
+msgid "The server returned HTML"
+msgstr "The server returned HTML"
+
+msgctxt "ui.summary.html.body"
+msgid "Content type is \"{type}\". This is probably a soft-404 page rather than a robots.txt. Crawlers may still try to parse it and usually find no rules."
+msgstr "Content type is \"{type}\". This is probably a soft-404 page rather than a robots.txt. Crawlers may still try to parse it and usually find no rules."
+
+msgctxt "ui.summary.empty.title"
+msgid "Empty robots.txt"
+msgstr "Empty robots.txt"
+
+msgctxt "ui.summary.empty.body"
+msgid "No rules. Every crawler may access everything."
+msgstr "No rules. Every crawler may access everything."
+
+msgctxt "ui.summary.noStar.title"
+msgid "No \"*\" group"
+msgstr "No \"*\" group"
+
+msgctxt "ui.summary.noStar.body"
+msgid "Crawlers without a group of their own may access everything."
+msgstr "Crawlers without a group of their own may access everything."
+
+msgctxt "ui.summary.allBlocked.title"
+msgid "Everything blocked by default"
+msgstr "Everything blocked by default"
+
+msgctxt "ui.summary.allBlocked.body"
+msgid "The \"*\" group disallows the whole site. Only crawlers with their own group can get in."
+msgstr "The \"*\" group disallows the whole site. Only crawlers with their own group can get in."
+
+msgctxt "ui.summary.open.title"
+msgid "No restrictions by default"
+msgstr "No restrictions by default"
+
+msgctxt "ui.summary.open.body"
+msgid "The \"*\" group has no Disallow rules that apply."
+msgstr "The \"*\" group has no Disallow rules that apply."
+
+msgctxt "ui.summary.restricted.title"
+msgid "Restricted by default"
+msgstr "Restricted by default"
+
+msgctxt "ui.summary.restricted.body"
+msgid "The \"*\" group has {disallow} Disallow and {allow} Allow rules. Test paths below to see what they cover."
+msgstr "The \"*\" group has {disallow} Disallow and {allow} Allow rules. Test paths below to see what they cover."
+
+msgctxt "ui.defs.source"
+msgid "Source"
+msgstr "Source"
+
+msgctxt "ui.source.proxy"
+msgid "Proxy"
+msgstr "Proxy"
+
+msgctxt "ui.source.direct"
+msgid "Direct fetch"
+msgstr "Direct fetch"
+
+msgctxt "ui.source.pasted"
+msgid "Pasted text"
+msgstr "Pasted text"
+
+msgctxt "ui.defs.url"
+msgid "URL"
+msgstr "URL"
+
+msgctxt "ui.defs.redirects"
+msgid "Redirects"
+msgstr "Redirects"
+
+msgctxt "ui.defs.status"
+msgid "HTTP status"
+msgstr "HTTP status"
+
+msgctxt "ui.defs.contentType"
+msgid "Content type"
+msgstr "Content type"
+
+msgctxt "ui.defs.notSent"
+msgid "not sent"
+msgstr "not sent"
+
+msgctxt "ui.defs.size"
+msgid "Size"
+msgstr "Size"
+
+msgctxt "ui.defs.truncated"
+msgid " (truncated)"
+msgstr " (truncated)"
+
+msgctxt "ui.defs.groups"
+msgid "Groups"
+msgstr "Groups"
+
+msgctxt "ui.defs.rules"
+msgid "Rules"
+msgstr "Rules"
+
+msgctxt "ui.defs.sitemaps"
+msgid "Sitemaps"
+msgstr "Sitemaps"
+
+msgctxt "ui.defs.host"
+msgid "Host (Yandex, obsolete)"
+msgstr "Host (Yandex, obsolete)"
+
+msgctxt "ui.defs.cleanParam"
+msgid "Clean-param (Yandex)"
+msgstr "Clean-param (Yandex)"
+
+msgctxt "ui.defs.directives"
+msgid "{n} directive"
+msgid_plural "{n} directives"
+msgstr[0] "{n} directive"
+msgstr[1] "{n} directives"
+
+msgctxt "ui.defs.issues"
+msgid "Issues"
+msgstr "Issues"
+
+msgctxt "ui.defs.issueCounts"
+msgid "{errors} errors, {warnings} warnings"
+msgstr "{errors} errors, {warnings} warnings"
+
+msgctxt "ui.export.sheetSelect"
+msgid "Sheet to copy"
+msgstr "Sheet to copy"
+
+msgctxt "ui.export.allSheets"
+msgid "All sheets, tagged"
+msgstr "All sheets, tagged"
+
+msgctxt "ui.export.audit.title"
+msgid "Client audit"
+msgstr "Client audit"
+
+msgctxt "ui.export.audit.note"
+msgid "An executive summary with recommended actions. Paste the Markdown into Notion, Google Docs or a ticket; the rich-text copy keeps headings and tables in email and Docs."
+msgstr "An executive summary with recommended actions. Paste the Markdown into Notion, Google Docs or a ticket; the rich-text copy keeps headings and tables in email and Docs."
+
+msgctxt "ui.export.audit.copyMd"
+msgid "Copy audit summary (Markdown)"
+msgstr "Copy audit summary (Markdown)"
+
+msgctxt "ui.export.audit.copyRich"
+msgid "Copy as rich text"
+msgstr "Copy as rich text"
+
+msgctxt "ui.export.audit.downloadMd"
+msgid "Download .md"
+msgstr "Download .md"
+
+msgctxt "ui.export.audit.downloadHtml"
+msgid "Download .html"
+msgstr "Download .html"
+
+msgctxt "ui.export.sheet.title"
+msgid "Spreadsheet"
+msgstr "Spreadsheet"
+
+msgctxt "ui.export.sheet.note"
+msgid "Four sheets: rules, sitemaps and HTTP status, warnings and traps, recon and asset leaks. Copy a sheet and paste straight into Google Sheets or Excel, or download CSV files."
+msgstr "Four sheets: rules, sitemaps and HTTP status, warnings and traps, recon and asset leaks. Copy a sheet and paste straight into Google Sheets or Excel, or download CSV files."
+
+msgctxt "ui.export.sheet.copy"
+msgid "Copy for Google Sheets"
+msgstr "Copy for Google Sheets"
+
+msgctxt "ui.export.sheet.downloadTagged"
+msgid "Download all sheets (tagged CSV)"
+msgstr "Download all sheets (tagged CSV)"
+
+msgctxt "ui.export.sheet.downloadFiles"
+msgid "Download 4 CSV files"
+msgstr "Download 4 CSV files"
+
+msgctxt "ui.export.json.title"
+msgid "JSON for your tools"
+msgstr "JSON for your tools"
+
+msgctxt "ui.export.json.note"
+msgid "The full analysis as one JSON document. It declares its schema, so dashboards and scripts can validate it: {link}."
+msgstr "The full analysis as one JSON document. It declares its schema, so dashboards and scripts can validate it: {link}."
+
+msgctxt "ui.export.json.download"
+msgid "Download .json"
+msgstr "Download .json"
+
+msgctxt "ui.export.json.copy"
+msgid "Copy JSON"
+msgstr "Copy JSON"
+
+msgctxt "ui.export.share.title"
+msgid "Share"
+msgstr "Share"
+
+msgctxt "ui.export.share.live"
+msgid "A link that re-runs this analysis live. The robots.txt is fetched again when opened, so results reflect the file at that time."
+msgstr "A link that re-runs this analysis live. The robots.txt is fetched again when opened, so results reflect the file at that time."
+
+msgctxt "ui.export.share.noLive"
+msgid "Links can only re-run analyses of a fetched URL. Pasted text and examples have no live source to link to."
+msgstr "Links can only re-run analyses of a fetched URL. Pasted text and examples have no live source to link to."
+
+msgctxt "ui.export.share.copy"
+msgid "Copy link"
+msgstr "Copy link"
+
+msgctxt "ui.ai.legend"
+msgid "Blocked means the whole site is disallowed for that crawler. Restricted means some paths are disallowed. Hover a pill for details."
+msgstr "Blocked means the whole site is disallowed for that crawler. Restricted means some paths are disallowed. Hover a pill for details."
+
+msgctxt "ui.chain.redirect"
+msgid "redirect"
+msgstr "redirect"
+
+msgctxt "ui.chain.stopped"
+msgid "stopped"
+msgstr "stopped"
+
+msgctxt "ui.agents.th.crawler"
+msgid "Crawler"
+msgstr "Crawler"
+
+msgctxt "ui.agents.th.type"
+msgid "Type"
+msgstr "Type"
+
+msgctxt "ui.agents.th.group"
+msgid "Group used"
+msgstr "Group used"
+
+msgctxt "ui.agents.th.rules"
+msgid "Rules"
+msgstr "Rules"
+
+msgctxt "ui.agents.th.root"
+msgid "Root /"
+msgstr "Root /"
+
+msgctxt "ui.agents.th.verdict"
+msgid "Verdict"
+msgstr "Verdict"
+
+msgctxt "ui.agents.th.delay"
+msgid "Crawl-delay"
+msgstr "Crawl-delay"
+
+msgctxt "ui.agents.ruleCounts"
+msgid "{disallow} disallow, {allow} allow"
+msgstr "{disallow} disallow, {allow} allow"
+
+msgctxt "ui.agents.filterLabel"
+msgid "Filter by crawler type"
+msgstr "Filter by crawler type"
+
+msgctxt "ui.agents.all"
+msgid "All"
+msgstr "All"
+
+msgctxt "ui.agents.counts"
+msgid "{open} open, {partial} restricted, {blocked} blocked"
+msgstr "{open} open, {partial} restricted, {blocked} blocked"
+
+msgctxt "ui.tester.crawler"
+msgid "Crawler"
+msgstr "Crawler"
+
+msgctxt "ui.tester.path"
+msgid "Path or URL"
+msgstr "Path or URL"
+
+msgctxt "ui.tester.generic"
+msgid "Generic crawler (* group)"
+msgstr "Generic crawler (* group)"
+
+msgctxt "ui.tester.custom"
+msgid "Custom product token…"
+msgstr "Custom product token…"
+
+msgctxt "ui.tester.customLabel"
+msgid "Custom product token"
+msgstr "Custom product token"
+
+msgctxt "ui.tester.customPlaceholder"
+msgid "e.g. mybot"
+msgstr "e.g. mybot"
+
+msgctxt "ui.tester.pathPlaceholder"
+msgid "/path?query=1 or a full URL"
+msgstr "/path?query=1 or a full URL"
+
+msgctxt "ui.tester.examples"
+msgid "Example paths"
+msgstr "Example paths"
+
+msgctxt "ui.tester.enterToken"
+msgid "Enter a product token, for example the name your crawler uses in robots.txt."
+msgstr "Enter a product token, for example the name your crawler uses in robots.txt."
+
+msgctxt "ui.tester.noGroup"
+msgid "No matching group and no \"*\" group, so everything is allowed."
+msgstr "No matching group and no \"*\" group, so everything is allowed."
+
+msgctxt "ui.tester.ownGroup"
+msgid "Using the \"{token}\" group."
+msgstr "Using the \"{token}\" group."
+
+msgctxt "ui.tester.starGroup"
+msgid "No group of its own. Using the \"*\" group."
+msgstr "No group of its own. Using the \"*\" group."
+
+msgctxt "ui.tester.always"
+msgid "robots.txt itself is always allowed, whatever the rules say."
+msgstr "robots.txt itself is always allowed, whatever the rules say."
+
+msgctxt "ui.tester.matched"
+msgid "Matched rule: {rule} {line}"
+msgstr "Matched rule: {rule} {line}"
+
+msgctxt "ui.tester.noMatch"
+msgid "No rule matches this path, so it is allowed by default."
+msgstr "No rule matches this path, so it is allowed by default."
+
+msgctxt "ui.tester.cleanParam"
+msgid "Clean-param: Yandex ignores {params} and crawls this as {path}."
+msgstr "Clean-param: Yandex ignores {params} and crawls this as {path}."
+
+msgctxt "ui.tester.verdict"
+msgid "{verdict}: {path}"
+msgstr "{verdict}: {path}"
+
+msgctxt "ui.tester.crawlDelay"
+msgid "Crawl-delay: {n} s"
+msgstr "Crawl-delay: {n} s"
+
+msgctxt "ui.access.pastedOnly"
+msgid "Not available for pasted text. Fetch a URL to run this check."
+msgstr "Not available for pasted text. Fetch a URL to run this check."
+
+msgctxt "ui.access.noProxy"
+msgid "The proxy is not configured. Deploy the Cloudflare Worker in worker/ and set WORKER_URL in js/config.js to enable this check."
+msgstr "The proxy is not configured. Deploy the Cloudflare Worker in worker/ and set WORKER_URL in js/config.js to enable this check."
+
+msgctxt "ui.access.run"
+msgid "Run check"
+msgstr "Run check"
+
+msgctxt "ui.access.runAgain"
+msgid "Run again"
+msgstr "Run again"
+
+msgctxt "ui.access.requests"
+msgid "{count} requests to the site, {concurrency} at a time."
+msgstr "{count} requests to the site, {concurrency} at a time."
+
+msgctxt "ui.access.baseline"
+msgid "Browser (baseline)"
+msgstr "Browser (baseline)"
+
+msgctxt "ui.access.queued"
+msgid "queued"
+msgstr "queued"
+
+msgctxt "ui.access.fetching"
+msgid "fetching…"
+msgstr "fetching…"
+
+msgctxt "ui.access.th.ua"
+msgid "User-agent"
+msgstr "User-agent"
+
+msgctxt "ui.access.th.status"
+msgid "HTTP status"
+msgstr "HTTP status"
+
+msgctxt "ui.access.th.size"
+msgid "Size"
+msgstr "Size"
+
+msgctxt "ui.access.th.time"
+msgid "Time"
+msgstr "Time"
+
+msgctxt "ui.access.th.diff"
+msgid "Body vs browser"
+msgstr "Body vs browser"
+
+msgctxt "ui.access.noBaseline"
+msgid "no baseline"
+msgstr "no baseline"
+
+msgctxt "ui.access.statusDiffers"
+msgid "status differs"
+msgstr "status differs"
+
+msgctxt "ui.access.bodyDiffers"
+msgid "body differs"
+msgstr "body differs"
+
+msgctxt "ui.access.same"
+msgid "same"
+msgstr "same"
+
+msgctxt "ui.access.rateLimited"
+msgid "rate limited"
+msgstr "rate limited"
+
+msgctxt "ui.access.error"
+msgid "error"
+msgstr "error"
+
+msgctxt "ui.issues.none"
+msgid "No issues found."
+msgstr "No issues found."
+
+msgctxt "ui.security.noneFound"
+msgid "No Disallow rule points at a commonly sensitive location."
+msgstr "No Disallow rule points at a commonly sensitive location."
+
+msgctxt "ui.security.noRules"
+msgid "No Disallow rules to review."
+msgstr "No Disallow rules to review."
+
+msgctxt "ui.security.th.rule"
+msgid "Rule"
+msgstr "Rule"
+
+msgctxt "ui.security.th.line"
+msgid "Line"
+msgstr "Line"
+
+msgctxt "ui.security.th.category"
+msgid "Category"
+msgstr "Category"
+
+msgctxt "ui.security.th.severity"
+msgid "Severity"
+msgstr "Severity"
+
+msgctxt "ui.security.th.why"
+msgid "Why it matters"
+msgstr "Why it matters"
+
+msgctxt "ui.security.group"
+msgid " (group: {agents})"
+msgstr " (group: {agents})"
+
+msgctxt "ui.security.exposed"
+msgid "{n} sensitive-looking path exposed"
+msgid_plural "{n} sensitive-looking paths exposed"
+msgstr[0] "{n} sensitive-looking path exposed"
+msgstr[1] "{n} sensitive-looking paths exposed"
+
+msgctxt "ui.security.counts"
+msgid "{high} high, {medium} medium, {low} low, out of {total} Disallow rules"
+msgstr "{high} high, {medium} medium, {low} low, out of {total} Disallow rules"
+
+msgctxt "ui.security.whatToDo"
+msgid "What to do instead"
+msgstr "What to do instead"
+
+msgctxt "ui.recon.nothing"
+msgid "Nothing found."
+msgstr "Nothing found."
+
+msgctxt "ui.recon.stack"
+msgid "Platform & tech stack"
+msgstr "Platform & tech stack"
+
+msgctxt "ui.recon.confidence"
+msgid "{confidence} confidence"
+msgstr "{confidence} confidence"
+
+msgctxt "ui.recon.techHints"
+msgid "Server-side hints from file extensions: {list}"
+msgstr "Server-side hints from file extensions: {list}"
+
+msgctxt "ui.recon.clues"
+msgid "{n} clue"
+msgid_plural "{n} clues"
+msgstr[0] "{n} clue"
+msgstr[1] "{n} clues"
+
+msgctxt "ui.recon.cloud"
+msgid "Cloud storage, CDNs & hosting"
+msgstr "Cloud storage, CDNs & hosting"
+
+msgctxt "ui.recon.th.provider"
+msgid "Provider"
+msgstr "Provider"
+
+msgctxt "ui.recon.th.bucket"
+msgid "Bucket / ID"
+msgstr "Bucket / ID"
+
+msgctxt "ui.recon.th.host"
+msgid "Host"
+msgstr "Host"
+
+msgctxt "ui.recon.th.source"
+msgid "Source"
+msgstr "Source"
+
+msgctxt "ui.recon.hosts"
+msgid "Other hosts & environments"
+msgstr "Other hosts & environments"
+
+msgctxt "ui.recon.hostnames"
+msgid "Hostnames mentioned"
+msgstr "Hostnames mentioned"
+
+msgctxt "ui.recon.envPaths"
+msgid "Paths that look like another environment or a redesign"
+msgstr "Paths that look like another environment or a redesign"
+
+msgctxt "ui.recon.ownHost"
+msgid "Own-host filtering needs the site URL, so pasted text lists every host."
+msgstr "Own-host filtering needs the site URL, so pasted text lists every host."
+
+msgctxt "ui.recon.api"
+msgid "API endpoints & docs"
+msgstr "API endpoints & docs"
+
+msgctxt "ui.recon.data"
+msgid "Data feeds, portals & search"
+msgstr "Data feeds, portals & search"
+
+msgctxt "ui.recon.feeds"
+msgid "Feeds & exports"
+msgstr "Feeds & exports"
+
+msgctxt "ui.recon.portals"
+msgid "Restricted portals & programmes"
+msgstr "Restricted portals & programmes"
+
+msgctxt "ui.recon.search"
+msgid "Internal search"
+msgstr "Internal search"
+
+msgctxt "ui.recon.params"
+msgid "Query parameters the site recognises"
+msgstr "Query parameters the site recognises"
+
+msgctxt "ui.recon.ext"
+msgid "File types"
+msgstr "File types"
+
+msgctxt "ui.recon.th.type"
+msgid "Type"
+msgstr "Type"
+
+msgctxt "ui.recon.th.suggests"
+msgid "What it suggests"
+msgstr "What it suggests"
+
+msgctxt "ui.recon.th.risk"
+msgid "Risk"
+msgstr "Risk"
+
+msgctxt "ui.recon.th.rules"
+msgid "Rules"
+msgstr "Rules"
+
+msgctxt "ui.recon.th.examples"
+msgid "Examples"
+msgstr "Examples"
+
+msgctxt "ui.recon.comments"
+msgid "Notes in comments"
+msgstr "Notes in comments"
+
+msgctxt "ui.recon.total"
+msgid "{n} finding across {categories} categories."
+msgid_plural "{n} findings across {categories} categories."
+msgstr[0] "{n} finding across {categories} categories."
+msgstr[1] "{n} findings across {categories} categories."
+
+msgctxt "ui.recon.quiet"
+msgid "Nothing notable. The file reveals little beyond its rules."
+msgstr "Nothing notable. The file reveals little beyond its rules."
+
+msgctxt "ui.sitemaps.none"
+msgid "No Sitemap lines."
+msgstr "No Sitemap lines."
+
+msgctxt "ui.sitemaps.needUrl"
+msgid "Protocol and cross-domain checks need the site URL, so they are skipped for pasted text."
+msgstr "Protocol and cross-domain checks need the site URL, so they are skipped for pasted text."
+
+msgctxt "ui.raw.nothing"
+msgid "Nothing to show."
+msgstr "Nothing to show."
+
+msgctxt "ui.raw.copy"
+msgid "Copy"
+msgstr "Copy"
+
+msgctxt "ui.raw.copied"
+msgid "Copied"
+msgstr "Copied"
+
+msgctxt "ui.raw.copyFailed"
+msgid "Copy failed"
+msgstr "Copy failed"
+
+msgctxt "ui.raw.openOriginal"
+msgid "Open original"
+msgstr "Open original"
+
+msgctxt "page.navLabel"
+msgid "Main"
+msgstr "Main"
+
+msgctxt "page.nav.cli"
+msgid "CLI"
+msgstr "CLI"
+
+msgctxt "page.nav.gallery"
+msgid "Gallery"
+msgstr "Gallery"
+
+msgctxt "page.nav.extension"
+msgid "Extension"
+msgstr "Extension"
+
+msgctxt "page.nav.pricing"
+msgid "Pricing"
+msgstr "Pricing"
+
+msgctxt "page.verdict"
+msgid "Verdict"
+msgstr "Verdict"
+
+msgctxt "page.promo.title"
+msgid "Get a message when a robots.txt changes"
+msgstr "Get a message when a robots.txt changes"
+
+msgctxt "page.promo.body"
+msgid "Monitoring checks your sites and your competitors' sites every six hours. When a file changes, you get a message in Slack, Discord or Teams with the lines that changed and the crawlers it affects."
+msgstr "Monitoring checks your sites and your competitors' sites every six hours. When a file changes, you get a message in Slack, Discord or Teams with the lines that changed and the crawlers it affects."
+
+msgctxt "page.promo.cta"
+msgid "See monitoring plans"
+msgstr "See monitoring plans"
+
+msgctxt "page.promo.sample"
+msgid "Browse the change history of {tracked} large sites"
+msgstr "Browse the change history of {tracked} large sites"
+
+msgctxt "page.promo.diffLabel"
+msgid "Example message"
+msgstr "Example message"
+
+msgctxt "page.aiWatch.title"
+msgid "New AI crawlers appear often"
+msgstr "New AI crawlers appear often"
+
+msgctxt "page.aiWatch.body"
+msgid "When a new AI crawler shows up, we add it to the list and check your file again."
+msgstr "When a new AI crawler shows up, we add it to the list and check your file again."
+
+msgctxt "page.aiWatch.agents"
+msgid "AI agents checked"
+msgstr "AI agents checked"
+
+msgctxt "page.aiWatch.rate"
+msgid "Tracked sites blocking GPTBot"
+msgstr "Tracked sites blocking GPTBot"
+
+msgctxt "page.aiWatch.rateValue"
+msgid "{pct}% of {n}"
+msgstr "{pct}% of {n}"
+
+msgctxt "page.aiWatch.cta"
+msgid "Watch for new AI crawlers"
+msgstr "Watch for new AI crawlers"
+
+msgctxt "page.testerIntro"
+msgid "Check any path or URL against any user-agent."
+msgstr "Check any path or URL against any user-agent."
+
+msgctxt "page.regression.title"
+msgid "Find out when a release changes your robots.txt"
+msgstr "Find out when a release changes your robots.txt"
+
+msgctxt "page.regression.body"
+msgid "Monitoring runs these checks again and tells you when a sensitive path or a syntax error appears in your file."
+msgstr "Monitoring runs these checks again and tells you when a sensitive path or a syntax error appears in your file."
+
+msgctxt "page.regression.cta"
+msgid "Set up monitoring"
+msgstr "Set up monitoring"
+
+msgctxt "page.pricing.title"
+msgid "Pricing"
+msgstr "Pricing"
+
+msgctxt "page.pricing.body"
+msgid "The checker is free. Monitoring is a paid plan."
+msgstr "The checker is free. Monitoring is a paid plan."
+
+msgctxt "page.pricing.cycleLabel"
+msgid "Billing period"
+msgstr "Billing period"
+
+msgctxt "page.pricing.monthly"
+msgid "Monthly"
+msgstr "Monthly"
+
+msgctxt "page.pricing.annual"
+msgid "Yearly, 2 months free"
+msgstr "Yearly, 2 months free"
+
+msgctxt "page.pricing.footnote"
+msgid "Prices exclude VAT. Paid plans are not open yet."
+msgstr "Prices exclude VAT. Paid plans are not open yet."
+
+msgctxt "page.cli.title"
+msgid "Command line and GitHub Action"
+msgstr "Command line and GitHub Action"
+
+msgctxt "page.cli.body"
+msgid "Run the same checks in your terminal or in CI. The build can fail when a rule changes."
+msgstr "Run the same checks in your terminal or in CI. The build can fail when a rule changes."
+
+msgctxt "page.cli.link"
+msgid "Read the CLI instructions"
+msgstr "Read the CLI instructions"
+
+msgctxt "page.gallery.title"
+msgid "robots.txt files of large sites"
+msgstr "robots.txt files of large sites"
+
+msgctxt "page.gallery.body"
+msgid "We fetch the robots.txt of {tracked} large sites every day and keep every version."
+msgstr "We fetch the robots.txt of {tracked} large sites every day and keep every version."
+
+msgctxt "page.gallery.link"
+msgid "Browse the files"
+msgstr "Browse the files"
+
+msgctxt "page.extension.title"
+msgid "Browser extension"
+msgstr "Browser extension"
+
+msgctxt "page.extension.body"
+msgid "Shows whether the page you are on may be crawled. It is not released yet."
+msgstr "Shows whether the page you are on may be crawled. It is not released yet."
+
+msgctxt "page.footerLocal"
+msgid "The analysis runs in your browser. Recently checked sites are stored in this browser only."
+msgstr "The analysis runs in your browser. Recently checked sites are stored in this browser only."
+
+msgctxt "ui.defs.declared"
+msgid "{n} declared"
+msgid_plural "{n} declared"
+msgstr[0] "{n} declared"
+msgstr[1] "{n} declared"
+
+msgctxt "ui.export.quick.audit"
+msgid "Copy audit summary"
+msgstr "Copy audit summary"
+
+msgctxt "ui.export.quick.json"
+msgid "Download JSON"
+msgstr "Download JSON"
+
+msgctxt "ui.export.quick.sheets"
+msgid "Copy for Google Sheets"
+msgstr "Copy for Google Sheets"
+
+msgctxt "ui.export.more"
+msgid "More export options"
+msgstr "More export options"
+
+msgctxt "ui.ai.checked"
+msgid "{n} known AI agent checked"
+msgid_plural "{n} known AI agents checked"
+msgstr[0] "{n} known AI agent checked"
+msgstr[1] "{n} known AI agents checked"
+
+msgctxt "ui.ai.blockedLabel"
+msgid "{label} blocked"
+msgstr "{label} blocked"
+
+msgctxt "ui.agents.meta"
+msgid "{shown} of {total} crawlers shown, {blocked} blocked"
+msgstr "{shown} of {total} crawlers shown, {blocked} blocked"
+
+msgctxt "ui.agents.local"
+msgid "Worked out in your browser."
+msgstr "Worked out in your browser."
+
+msgctxt "ui.agents.cli"
+msgid "The CLI prints the same table."
+msgstr "The CLI prints the same table."
+
+msgctxt "ui.issues.meta"
+msgid "{errors} errors, {warnings} warnings, {notes} notes"
+msgstr "{errors} errors, {warnings} warnings, {notes} notes"
+
+msgctxt "ui.security.lead"
+msgid "{rule}: {reason}."
+msgstr "{rule}: {reason}."
+
+msgctxt "ui.security.where"
+msgid "line {line}, {category}"
+msgstr "line {line}, {category}"
+
+msgctxt "ui.recon.details"
+msgid "Details"
+msgstr "Details"
+
+msgctxt "ui.recon.items"
+msgid "{n} finding"
+msgid_plural "{n} findings"
+msgstr[0] "{n} finding"
+msgstr[1] "{n} findings"
+
+msgctxt "ui.plan.soon"
+msgid "Coming soon"
+msgstr "Coming soon"
+
+msgctxt "ui.plan.perMonth"
+msgid "/mo"
+msgstr "/mo"
+
+msgctxt "ui.plan.perMonthAnnual"
+msgid "/mo, billed yearly"
+msgstr "/mo, billed yearly"
+
+msgctxt "ui.plan.free.name"
+msgid "Free"
+msgstr "Free"
+
+msgctxt "ui.plan.free.blurb"
+msgid "The analyser, the CLI and the GitHub Action, unlimited, no account."
+msgstr "The analyser, the CLI and the GitHub Action, unlimited, no account."
+
+msgctxt "ui.plan.free.f1"
+msgid "Unlimited analyses"
+msgstr "Unlimited analyses"
+
+msgctxt "ui.plan.free.f2"
+msgid "CLI and GitHub Action"
+msgstr "CLI and GitHub Action"
+
+msgctxt "ui.plan.free.f3"
+msgid "JSON, CSV and Markdown export"
+msgstr "JSON, CSV and Markdown export"
+
+msgctxt "ui.plan.free.f4"
+msgid "Famous robots.txt gallery"
+msgstr "Famous robots.txt gallery"
+
+msgctxt "ui.plan.free.cta"
+msgid "You're using it"
+msgstr "You're using it"
+
+msgctxt "ui.plan.extension.name"
+msgid "Extension"
+msgstr "Extension"
+
+msgctxt "ui.plan.extension.blurb"
+msgid "Crawlability verdicts on every page you browse."
+msgstr "Crawlability verdicts on every page you browse."
+
+msgctxt "ui.plan.extension.f1"
+msgid "Verdict per page in the toolbar"
+msgstr "Verdict per page in the toolbar"
+
+msgctxt "ui.plan.extension.f2"
+msgid "Live AI crawler status"
+msgstr "Live AI crawler status"
+
+msgctxt "ui.plan.extension.f3"
+msgid "One click to add a domain to monitoring"
+msgstr "One click to add a domain to monitoring"
+
+msgctxt "ui.plan.extension.f4"
+msgid "Chrome, Firefox and Edge"
+msgstr "Chrome, Firefox and Edge"
+
+msgctxt "ui.plan.extension.cta"
+msgid "Add the extension"
+msgstr "Add the extension"
+
+msgctxt "ui.plan.scheduler.name"
+msgid "Monitoring"
+msgstr "Monitoring"
+
+msgctxt "ui.plan.scheduler.blurb"
+msgid "Regular re-audits of your sites and your competitors', with diffs."
+msgstr "Regular re-audits of your sites and your competitors', with diffs."
+
+msgctxt "ui.plan.scheduler.f1"
+msgid "25 sites monitored"
+msgstr "25 sites monitored"
+
+msgctxt "ui.plan.scheduler.f2"
+msgid "Change alerts in Slack, Discord or Teams"
+msgstr "Change alerts in Slack, Discord or Teams"
+
+msgctxt "ui.plan.scheduler.f3"
+msgid "Full history of every change"
+msgstr "Full history of every change"
+
+msgctxt "ui.plan.scheduler.f4"
+msgid "10 competitor domains"
+msgstr "10 competitor domains"
+
+msgctxt "ui.plan.scheduler.f5"
+msgid "AI crawler registry watch"
+msgstr "AI crawler registry watch"
+
+msgctxt "ui.plan.scheduler.cta"
+msgid "Start monitoring"
+msgstr "Start monitoring"
+
+msgctxt "ui.plan.agency.name"
+msgid "Agency"
+msgstr "Agency"
+
+msgctxt "ui.plan.agency.blurb"
+msgid "Client portfolios, competitor sets and white-label reports."
+msgstr "Client portfolios, competitor sets and white-label reports."
+
+msgctxt "ui.plan.agency.f1"
+msgid "250 sites, hourly checks"
+msgstr "250 sites, hourly checks"
+
+msgctxt "ui.plan.agency.f2"
+msgid "Unlimited competitor sets"
+msgstr "Unlimited competitor sets"
+
+msgctxt "ui.plan.agency.f3"
+msgid "Scheduled white-label reports"
+msgstr "Scheduled white-label reports"
+
+msgctxt "ui.plan.agency.f4"
+msgid "API and webhooks"
+msgstr "API and webhooks"
+
+msgctxt "ui.plan.agency.f5"
+msgid "Shared workspaces"
+msgstr "Shared workspaces"
+
+msgctxt "ui.plan.agency.cta"
+msgid "Talk to us"
+msgstr "Talk to us"
+
+msgctxt "ui.extension.link"
+msgid "Get the extension"
+msgstr "Get the extension"
+
+msgctxt "ui.showAll"
+msgid "Show all {n}"
+msgid_plural "Show all {n}"
+msgstr[0] "Show all {n}"
+msgstr[1] "Show all {n}"
+
+msgctxt "ui.summary.meta"
+msgid "{size}, read in {ms}"
+msgstr "{size}, read in {ms}"
+
+msgctxt "ui.ai.ofTotal"
+msgid "{n} of {total}"
+msgstr "{n} of {total}"
+
+msgctxt "ui.recent.label"
+msgid "Recently checked:"
+msgstr "Recently checked:"
+
+msgctxt "ui.recent.clear"
+msgid "Clear list"
+msgstr "Clear list"
+
+msgctxt "ui.recent.from"
+msgid "You came from:"
+msgstr "You came from:"

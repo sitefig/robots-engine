@@ -273,14 +273,17 @@
   "recon.comments.ip.public": "adresse publique",
   "recon.comments.date.yearsAhead": {
     "one": "dans {n} an : un lancement ou un embargo à venir",
+    "many": "dans {n} ans : un lancement ou un embargo à venir",
     "other": "dans {n} ans : un lancement ou un embargo à venir"
   },
   "recon.comments.date.daysAhead": {
     "one": "dans {n} jour : un lancement ou un embargo à venir",
+    "many": "dans {n} jours : un lancement ou un embargo à venir",
     "other": "dans {n} jours : un lancement ou un embargo à venir"
   },
   "recon.comments.date.yearsOld": {
     "one": "vieux de {n} an",
+    "many": "vieux de {n} ans",
     "other": "vieux de {n} ans"
   },
   "md.title": "Audit robots.txt : {host}",
@@ -298,50 +301,62 @@
   "md.none": "aucun",
   "md.groups": {
     "one": "{n} groupe",
+    "many": "{n} groupes",
     "other": "{n} groupes"
   },
   "md.sitemaps": {
     "one": "{n} sitemap",
+    "many": "{n} sitemaps",
     "other": "{n} sitemaps"
   },
   "md.sensitivePaths": {
     "one": "{n} chemin d'apparence sensible",
+    "many": "{n} chemins d'apparence sensible",
     "other": "{n} chemins d'apparence sensible"
   },
   "md.informationalNotes": {
     "one": "{n} note informative",
+    "many": "{n} notes informatives",
     "other": "{n} notes informatives"
   },
   "md.lowFindings": {
     "one": "{n} constat de faible gravité",
+    "many": "{n} constats de faible gravité",
     "other": "{n} constats de faible gravité"
   },
   "md.syntaxErrors": {
     "one": "{n} erreur de syntaxe",
+    "many": "{n} erreurs de syntaxe",
     "other": "{n} erreurs de syntaxe"
   },
   "md.prefixRules": {
     "one": "{n} règle de préfixe",
+    "many": "{n} règles de préfixe",
     "other": "{n} règles de préfixe"
   },
   "md.rules": {
     "one": "{n} règle",
+    "many": "{n} règles",
     "other": "{n} règles"
   },
   "md.absoluteRules": {
     "one": "{n} règle à URL absolue",
+    "many": "{n} règles à URL absolue",
     "other": "{n} règles à URL absolue"
   },
   "md.paths": {
     "one": "{n} chemin",
+    "many": "{n} chemins",
     "other": "{n} chemins"
   },
   "md.sitemapLines": {
     "one": "{n} ligne Sitemap",
+    "many": "{n} lignes Sitemap",
     "other": "{n} lignes Sitemap"
   },
   "md.where": {
     "one": " (ligne {lines})",
+    "many": " (lignes {lines})",
     "other": " (lignes {lines})"
   },
   "md.whereMore": " (lignes {lines} et suivantes)",
@@ -397,22 +412,27 @@
   "md.recon.nothing": "Rien de notable. Le fichier révèle peu de choses au-delà de ses règles.",
   "md.comments.emails": {
     "one": "{n} adresse e-mail",
+    "many": "{n} adresses e-mail",
     "other": "{n} adresses e-mail"
   },
   "md.comments.names": {
     "one": "{n} nom",
+    "many": "{n} noms",
     "other": "{n} noms"
   },
   "md.comments.tickets": {
     "one": "{n} référence de ticket",
+    "many": "{n} références de tickets",
     "other": "{n} références de tickets"
   },
   "md.comments.ips": {
     "one": "{n} adresse IP",
+    "many": "{n} adresses IP",
     "other": "{n} adresses IP"
   },
   "md.comments.dates": {
     "one": "{n} date",
+    "many": "{n} dates",
     "other": "{n} dates"
   },
   "md.comments.vendors": "fournisseurs ({list})",
@@ -502,6 +522,7 @@
   "csv.detail.extRisk": "{label} (risque {risk})",
   "csv.detail.ruleCount": {
     "one": "{n} règle",
+    "many": "{n} règles",
     "other": "{n} règles"
   },
   "csv.detail.severity": "{category}, gravité {severity}",
@@ -568,6 +589,7 @@
   "ui.defs.cleanParam": "Clean-param (Yandex)",
   "ui.defs.directives": {
     "one": "{n} directive",
+    "many": "{n} directives",
     "other": "{n} directives"
   },
   "ui.defs.issues": "Problèmes",
@@ -655,6 +677,7 @@
   "ui.security.group": " (groupe : {agents})",
   "ui.security.exposed": {
     "one": "{n} chemin d'apparence sensible exposé",
+    "many": "{n} chemins d'apparence sensible exposés",
     "other": "{n} chemins d'apparence sensible exposés"
   },
   "ui.security.counts": "{high} élevée, {medium} moyenne, {low} faible, sur {total} règles Disallow",
@@ -665,6 +688,7 @@
   "ui.recon.techHints": "Indices côté serveur d'après les extensions de fichiers : {list}",
   "ui.recon.clues": {
     "one": "{n} indice",
+    "many": "{n} indices",
     "other": "{n} indices"
   },
   "ui.recon.cloud": "Stockage cloud, CDN et hébergement",
@@ -691,6 +715,7 @@
   "ui.recon.comments": "Notes dans les commentaires",
   "ui.recon.total": {
     "one": "{n} constat dans {categories} catégories.",
+    "many": "{n} constats dans {categories} catégories.",
     "other": "{n} constats dans {categories} catégories."
   },
   "ui.recon.quiet": "Rien de notable. Le fichier révèle peu de choses au-delà de ses règles.",
@@ -739,6 +764,7 @@
   "page.footerLocal": "L'analyse se fait dans votre navigateur. Les sites vérifiés récemment sont conservés dans ce navigateur uniquement.",
   "ui.defs.declared": {
     "one": "{n} déclaré",
+    "many": "{n} déclarés",
     "other": "{n} déclarés"
   },
   "ui.export.quick.audit": "Copier le résumé d'audit",
@@ -747,6 +773,7 @@
   "ui.export.more": "Autres options d'export",
   "ui.ai.checked": {
     "one": "{n} agent d'IA connu vérifié",
+    "many": "{n} agents d'IA connus vérifiés",
     "other": "{n} agents d'IA connus vérifiés"
   },
   "ui.ai.blockedLabel": "{label} bloqués",
@@ -759,6 +786,7 @@
   "ui.recon.details": "Détails",
   "ui.recon.items": {
     "one": "{n} élément",
+    "many": "{n} éléments",
     "other": "{n} éléments"
   },
   "ui.plan.soon": "Bientôt",
@@ -797,6 +825,7 @@
   "ui.extension.link": "Obtenir l'extension",
   "ui.showAll": {
     "one": "Afficher les {n}",
+    "many": "Afficher les {n}",
     "other": "Afficher les {n}"
   },
   "ui.summary.meta": "{size}, lu en {ms}",

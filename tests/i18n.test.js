@@ -1,7 +1,7 @@
 import { test, after } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { t, setLocale, setEnglish, getLocale, formatNumber, LANGUAGES, DEFAULT_LANG } from '../js/i18n.js';
+import { t, setLocale, setEnglish, getLocale, formatNumber, LANGUAGES, DEFAULT_LANG } from '../src/client/i18n.ts';
 
 const en = JSON.parse(readFileSync(new URL('../locales/en.json', import.meta.url), 'utf8'));
 setEnglish(en);

@@ -3,7 +3,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readdirSync, readFileSync } from 'node:fs';
-import { LANGUAGES } from '../js/i18n.js';
+import { LANGUAGES } from '../src/client/i18n.ts';
 
 const LOCALE_DIR = new URL('../locales/', import.meta.url);
 const codes = readdirSync(LOCALE_DIR).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5));
@@ -54,7 +54,7 @@ test('every dictionary key referenced in the source exists in English', () => {
     if (d.name.endsWith('.rs')) text = text.split('#[cfg(test)]')[0]; // unit tests use made-up keys
     return [[rel, text]];
   });
-  const src = [...walk('js', ['.js']), ...walk('tools', ['.js', '.html']), ...walk('crates', ['.rs']), ...walk('config', ['.toml'])];
+  const src = [...walk('src', ['.ts']), ...walk('tools', ['.ts']), ...walk('crates', ['.rs']), ...walk('config', ['.toml'])];
   const keys = Object.keys(en);
   const exists = (key) => keys.includes(key) || keys.some((k) => k.startsWith(`${key}.`));
   const hasPrefix = (prefix) => keys.some((k) => k.startsWith(prefix));
@@ -80,8 +80,10 @@ test('every dictionary key referenced in the source exists in English', () => {
     for (const m of text.matchAll(/^\s*(?:label|advice|reason|note|tech|feed_fallback|portal_fallback) = "([a-z]+\.[A-Za-z0-9.]+)"/gm)) {
       assert.ok(exists(m[1]), `${name}: config key ${m[1]} has no dictionary entry`);
     }
-    for (const m of text.matchAll(/\{\{\{?([a-z]+\.[A-Za-z0-9_.]+)\}?\}\}/g)) {
-      assert.ok(exists(m[1]), `${name}: template key ${m[1]} has no dictionary entry`);
+    // page components: e('page.x'), raw('page.x'), text('page.x')
+    for (const m of text.matchAll(/\b(?:e|raw|text)\(\s*'([a-z]+(?:\.[A-Za-z0-9-]+)+)'/g)) {
+      checked.add(m[1]);
+      assert.ok(exists(m[1]), `${name}: page key ${m[1]} has no dictionary entry`);
     }
   }
   assert.ok(checked.size > 100, 'the scan found the t() calls');
