@@ -803,5 +803,20 @@
   "ui.ai.ofTotal": "{n} of {total}",
   "ui.recent.label": "Recently checked:",
   "ui.recent.clear": "Clear list",
-  "ui.recent.from": "You came from:"
+  "ui.recent.from": "You came from:",
+  "page.footer.navLabel": "Site links",
+  "page.footer.product": "Product",
+  "page.footer.resources": "Resources",
+  "page.footer.company": "Company",
+  "page.footer.check": "Check a site",
+  "page.footer.history": "Change history",
+  "page.footer.schema": "Report format",
+  "page.footer.source": "Source code",
+  "page.footer.press": "Press kit",
+  "page.footer.licence": "Licence",
+  "page.brandMenu.label": "sus.bot logo files",
+  "page.brandMenu.dark": "Logo for dark backgrounds (SVG)",
+  "page.brandMenu.light": "Logo for light backgrounds (SVG)",
+  "page.brandMenu.icon": "Icon (SVG)",
+  "page.brandMenu.press": "Open the press kit"
 }

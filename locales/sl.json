@@ -94,5 +94,20 @@
     "other": "Preverjeni znani agenti UI: {n}"
   },
   "ui.ai.blockedLabel": "{label}: blokirano",
-  "ui.ai.ofTotal": "{n} od {total}"
+  "ui.ai.ofTotal": "{n} od {total}",
+  "page.footer.navLabel": "Povezave spletnega mesta",
+  "page.footer.product": "Izdelek",
+  "page.footer.resources": "Viri",
+  "page.footer.company": "Podjetje",
+  "page.footer.check": "Preveri spletno mesto",
+  "page.footer.history": "Zgodovina sprememb",
+  "page.footer.schema": "Oblika poročila",
+  "page.footer.source": "Izvorna koda",
+  "page.footer.press": "Gradivo za medije",
+  "page.footer.licence": "Licenca",
+  "page.brandMenu.label": "Datoteke logotipa sus.bot",
+  "page.brandMenu.dark": "Logotip za temna ozadja (SVG)",
+  "page.brandMenu.light": "Logotip za svetla ozadja (SVG)",
+  "page.brandMenu.icon": "Ikona (SVG)",
+  "page.brandMenu.press": "Odpri gradivo za medije"
 }

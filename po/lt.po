@@ -2995,3 +2995,63 @@ msgstr ""
 msgctxt "ui.recent.from"
 msgid "You came from:"
 msgstr ""
+
+msgctxt "page.footer.navLabel"
+msgid "Site links"
+msgstr "Svetainės nuorodos"
+
+msgctxt "page.footer.product"
+msgid "Product"
+msgstr "Produktas"
+
+msgctxt "page.footer.resources"
+msgid "Resources"
+msgstr "Ištekliai"
+
+msgctxt "page.footer.company"
+msgid "Company"
+msgstr "Įmonė"
+
+msgctxt "page.footer.check"
+msgid "Check a site"
+msgstr "Patikrinti svetainę"
+
+msgctxt "page.footer.history"
+msgid "Change history"
+msgstr "Pakeitimų istorija"
+
+msgctxt "page.footer.schema"
+msgid "Report format"
+msgstr "Ataskaitos formatas"
+
+msgctxt "page.footer.source"
+msgid "Source code"
+msgstr "Pirminis kodas"
+
+msgctxt "page.footer.press"
+msgid "Press kit"
+msgstr "Spaudos rinkinys"
+
+msgctxt "page.footer.licence"
+msgid "Licence"
+msgstr "Licencija"
+
+msgctxt "page.brandMenu.label"
+msgid "sus.bot logo files"
+msgstr "sus.bot logotipo failai"
+
+msgctxt "page.brandMenu.dark"
+msgid "Logo for dark backgrounds (SVG)"
+msgstr "Logotipas tamsiam fonui (SVG)"
+
+msgctxt "page.brandMenu.light"
+msgid "Logo for light backgrounds (SVG)"
+msgstr "Logotipas šviesiam fonui (SVG)"
+
+msgctxt "page.brandMenu.icon"
+msgid "Icon (SVG)"
+msgstr "Piktograma (SVG)"
+
+msgctxt "page.brandMenu.press"
+msgid "Open the press kit"
+msgstr "Atidaryti spaudos rinkinį"

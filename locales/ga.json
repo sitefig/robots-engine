@@ -95,5 +95,20 @@
     "other": "Gníomhairí AI aitheanta seiceáilte: {n}"
   },
   "ui.ai.blockedLabel": "{label}: blocáilte",
-  "ui.ai.ofTotal": "{n} as {total}"
+  "ui.ai.ofTotal": "{n} as {total}",
+  "page.footer.navLabel": "Naisc an tsuímh",
+  "page.footer.product": "Táirge",
+  "page.footer.resources": "Acmhainní",
+  "page.footer.company": "Comhlacht",
+  "page.footer.check": "Seiceáil suíomh",
+  "page.footer.history": "Stair na n-athruithe",
+  "page.footer.schema": "Formáid na tuarascála",
+  "page.footer.source": "Cód foinseach",
+  "page.footer.press": "Pacáiste preasa",
+  "page.footer.licence": "Ceadúnas",
+  "page.brandMenu.label": "Comhaid lógó sus.bot",
+  "page.brandMenu.dark": "Lógó do chúlraí dorcha (SVG)",
+  "page.brandMenu.light": "Lógó do chúlraí geala (SVG)",
+  "page.brandMenu.icon": "Deilbhín (SVG)",
+  "page.brandMenu.press": "Oscail an pacáiste preasa"
 }

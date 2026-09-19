@@ -832,5 +832,20 @@
   "ui.ai.ofTotal": "{n} de {total}",
   "ui.recent.label": "Revisados hace poco:",
   "ui.recent.clear": "Vaciar la lista",
-  "ui.recent.from": "Vienes de:"
+  "ui.recent.from": "Vienes de:",
+  "page.footer.navLabel": "Enlaces del sitio",
+  "page.footer.product": "Producto",
+  "page.footer.resources": "Recursos",
+  "page.footer.company": "Empresa",
+  "page.footer.check": "Comprobar un sitio",
+  "page.footer.history": "Historial de cambios",
+  "page.footer.schema": "Formato del informe",
+  "page.footer.source": "Código fuente",
+  "page.footer.press": "Kit de prensa",
+  "page.footer.licence": "Licencia",
+  "page.brandMenu.label": "Archivos del logo de sus.bot",
+  "page.brandMenu.dark": "Logo para fondos oscuros (SVG)",
+  "page.brandMenu.light": "Logo para fondos claros (SVG)",
+  "page.brandMenu.icon": "Icono (SVG)",
+  "page.brandMenu.press": "Abrir el kit de prensa"
 }

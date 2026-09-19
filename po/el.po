@@ -2937,3 +2937,63 @@ msgstr ""
 msgctxt "ui.recent.from"
 msgid "You came from:"
 msgstr ""
+
+msgctxt "page.footer.navLabel"
+msgid "Site links"
+msgstr "Σύνδεσμοι ιστότοπου"
+
+msgctxt "page.footer.product"
+msgid "Product"
+msgstr "Προϊόν"
+
+msgctxt "page.footer.resources"
+msgid "Resources"
+msgstr "Πόροι"
+
+msgctxt "page.footer.company"
+msgid "Company"
+msgstr "Εταιρεία"
+
+msgctxt "page.footer.check"
+msgid "Check a site"
+msgstr "Έλεγχος ιστότοπου"
+
+msgctxt "page.footer.history"
+msgid "Change history"
+msgstr "Ιστορικό αλλαγών"
+
+msgctxt "page.footer.schema"
+msgid "Report format"
+msgstr "Μορφή αναφοράς"
+
+msgctxt "page.footer.source"
+msgid "Source code"
+msgstr "Πηγαίος κώδικας"
+
+msgctxt "page.footer.press"
+msgid "Press kit"
+msgstr "Υλικό τύπου"
+
+msgctxt "page.footer.licence"
+msgid "Licence"
+msgstr "Άδεια"
+
+msgctxt "page.brandMenu.label"
+msgid "sus.bot logo files"
+msgstr "Αρχεία λογοτύπου sus.bot"
+
+msgctxt "page.brandMenu.dark"
+msgid "Logo for dark backgrounds (SVG)"
+msgstr "Λογότυπο για σκούρο φόντο (SVG)"
+
+msgctxt "page.brandMenu.light"
+msgid "Logo for light backgrounds (SVG)"
+msgstr "Λογότυπο για ανοιχτό φόντο (SVG)"
+
+msgctxt "page.brandMenu.icon"
+msgid "Icon (SVG)"
+msgstr "Εικονίδιο (SVG)"
+
+msgctxt "page.brandMenu.press"
+msgid "Open the press kit"
+msgstr "Άνοιγμα υλικού τύπου"

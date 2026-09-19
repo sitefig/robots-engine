@@ -2937,3 +2937,63 @@ msgstr ""
 msgctxt "ui.recent.from"
 msgid "You came from:"
 msgstr ""
+
+msgctxt "page.footer.navLabel"
+msgid "Site links"
+msgstr "Връзки в сайта"
+
+msgctxt "page.footer.product"
+msgid "Product"
+msgstr "Продукт"
+
+msgctxt "page.footer.resources"
+msgid "Resources"
+msgstr "Ресурси"
+
+msgctxt "page.footer.company"
+msgid "Company"
+msgstr "Компания"
+
+msgctxt "page.footer.check"
+msgid "Check a site"
+msgstr "Проверете сайт"
+
+msgctxt "page.footer.history"
+msgid "Change history"
+msgstr "История на промените"
+
+msgctxt "page.footer.schema"
+msgid "Report format"
+msgstr "Формат на отчета"
+
+msgctxt "page.footer.source"
+msgid "Source code"
+msgstr "Изходен код"
+
+msgctxt "page.footer.press"
+msgid "Press kit"
+msgstr "Материали за медии"
+
+msgctxt "page.footer.licence"
+msgid "Licence"
+msgstr "Лиценз"
+
+msgctxt "page.brandMenu.label"
+msgid "sus.bot logo files"
+msgstr "Файлове с логото на sus.bot"
+
+msgctxt "page.brandMenu.dark"
+msgid "Logo for dark backgrounds (SVG)"
+msgstr "Лого за тъмен фон (SVG)"
+
+msgctxt "page.brandMenu.light"
+msgid "Logo for light backgrounds (SVG)"
+msgstr "Лого за светъл фон (SVG)"
+
+msgctxt "page.brandMenu.icon"
+msgid "Icon (SVG)"
+msgstr "Икона (SVG)"
+
+msgctxt "page.brandMenu.press"
+msgid "Open the press kit"
+msgstr "Отворете материалите за медии"

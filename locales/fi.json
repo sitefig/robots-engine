@@ -92,5 +92,20 @@
     "other": "Tarkistettuja tunnettuja tekoälyagentteja: {n}"
   },
   "ui.ai.blockedLabel": "{label}: estetty",
-  "ui.ai.ofTotal": "{n} / {total}"
+  "ui.ai.ofTotal": "{n} / {total}",
+  "page.footer.navLabel": "Sivuston linkit",
+  "page.footer.product": "Tuote",
+  "page.footer.resources": "Resurssit",
+  "page.footer.company": "Yritys",
+  "page.footer.check": "Tarkista sivusto",
+  "page.footer.history": "Muutoshistoria",
+  "page.footer.schema": "Raportin muoto",
+  "page.footer.source": "Lähdekoodi",
+  "page.footer.press": "Mediamateriaali",
+  "page.footer.licence": "Lisenssi",
+  "page.brandMenu.label": "sus.bot-logotiedostot",
+  "page.brandMenu.dark": "Logo tummalle taustalle (SVG)",
+  "page.brandMenu.light": "Logo vaalealle taustalle (SVG)",
+  "page.brandMenu.icon": "Kuvake (SVG)",
+  "page.brandMenu.press": "Avaa mediamateriaali"
 }

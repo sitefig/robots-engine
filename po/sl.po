@@ -2995,3 +2995,63 @@ msgstr ""
 msgctxt "ui.recent.from"
 msgid "You came from:"
 msgstr ""
+
+msgctxt "page.footer.navLabel"
+msgid "Site links"
+msgstr "Povezave spletnega mesta"
+
+msgctxt "page.footer.product"
+msgid "Product"
+msgstr "Izdelek"
+
+msgctxt "page.footer.resources"
+msgid "Resources"
+msgstr "Viri"
+
+msgctxt "page.footer.company"
+msgid "Company"
+msgstr "Podjetje"
+
+msgctxt "page.footer.check"
+msgid "Check a site"
+msgstr "Preveri spletno mesto"
+
+msgctxt "page.footer.history"
+msgid "Change history"
+msgstr "Zgodovina sprememb"
+
+msgctxt "page.footer.schema"
+msgid "Report format"
+msgstr "Oblika poročila"
+
+msgctxt "page.footer.source"
+msgid "Source code"
+msgstr "Izvorna koda"
+
+msgctxt "page.footer.press"
+msgid "Press kit"
+msgstr "Gradivo za medije"
+
+msgctxt "page.footer.licence"
+msgid "Licence"
+msgstr "Licenca"
+
+msgctxt "page.brandMenu.label"
+msgid "sus.bot logo files"
+msgstr "Datoteke logotipa sus.bot"
+
+msgctxt "page.brandMenu.dark"
+msgid "Logo for dark backgrounds (SVG)"
+msgstr "Logotip za temna ozadja (SVG)"
+
+msgctxt "page.brandMenu.light"
+msgid "Logo for light backgrounds (SVG)"
+msgstr "Logotip za svetla ozadja (SVG)"
+
+msgctxt "page.brandMenu.icon"
+msgid "Icon (SVG)"
+msgstr "Ikona (SVG)"
+
+msgctxt "page.brandMenu.press"
+msgid "Open the press kit"
+msgstr "Odpri gradivo za medije"

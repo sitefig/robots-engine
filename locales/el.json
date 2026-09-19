@@ -92,5 +92,20 @@
     "other": "Γνωστοί AI agents που ελέγχθηκαν: {n}"
   },
   "ui.ai.blockedLabel": "{label}: μπλοκαρισμένοι",
-  "ui.ai.ofTotal": "{n} από {total}"
+  "ui.ai.ofTotal": "{n} από {total}",
+  "page.footer.navLabel": "Σύνδεσμοι ιστότοπου",
+  "page.footer.product": "Προϊόν",
+  "page.footer.resources": "Πόροι",
+  "page.footer.company": "Εταιρεία",
+  "page.footer.check": "Έλεγχος ιστότοπου",
+  "page.footer.history": "Ιστορικό αλλαγών",
+  "page.footer.schema": "Μορφή αναφοράς",
+  "page.footer.source": "Πηγαίος κώδικας",
+  "page.footer.press": "Υλικό τύπου",
+  "page.footer.licence": "Άδεια",
+  "page.brandMenu.label": "Αρχεία λογοτύπου sus.bot",
+  "page.brandMenu.dark": "Λογότυπο για σκούρο φόντο (SVG)",
+  "page.brandMenu.light": "Λογότυπο για ανοιχτό φόντο (SVG)",
+  "page.brandMenu.icon": "Εικονίδιο (SVG)",
+  "page.brandMenu.press": "Άνοιγμα υλικού τύπου"
 }

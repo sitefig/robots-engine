@@ -2937,3 +2937,63 @@ msgstr ""
 msgctxt "ui.recent.from"
 msgid "You came from:"
 msgstr ""
+
+msgctxt "page.footer.navLabel"
+msgid "Site links"
+msgstr "Links på webstedet"
+
+msgctxt "page.footer.product"
+msgid "Product"
+msgstr "Produkt"
+
+msgctxt "page.footer.resources"
+msgid "Resources"
+msgstr "Ressourcer"
+
+msgctxt "page.footer.company"
+msgid "Company"
+msgstr "Virksomhed"
+
+msgctxt "page.footer.check"
+msgid "Check a site"
+msgstr "Tjek et websted"
+
+msgctxt "page.footer.history"
+msgid "Change history"
+msgstr "Ændringshistorik"
+
+msgctxt "page.footer.schema"
+msgid "Report format"
+msgstr "Rapportformat"
+
+msgctxt "page.footer.source"
+msgid "Source code"
+msgstr "Kildekode"
+
+msgctxt "page.footer.press"
+msgid "Press kit"
+msgstr "Pressemateriale"
+
+msgctxt "page.footer.licence"
+msgid "Licence"
+msgstr "Licens"
+
+msgctxt "page.brandMenu.label"
+msgid "sus.bot logo files"
+msgstr "sus.bot-logofiler"
+
+msgctxt "page.brandMenu.dark"
+msgid "Logo for dark backgrounds (SVG)"
+msgstr "Logo til mørk baggrund (SVG)"
+
+msgctxt "page.brandMenu.light"
+msgid "Logo for light backgrounds (SVG)"
+msgstr "Logo til lys baggrund (SVG)"
+
+msgctxt "page.brandMenu.icon"
+msgid "Icon (SVG)"
+msgstr "Ikon (SVG)"
+
+msgctxt "page.brandMenu.press"
+msgid "Open the press kit"
+msgstr "Åbn pressematerialet"

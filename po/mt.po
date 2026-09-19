@@ -3024,3 +3024,63 @@ msgstr ""
 msgctxt "ui.recent.from"
 msgid "You came from:"
 msgstr ""
+
+msgctxt "page.footer.navLabel"
+msgid "Site links"
+msgstr "Links tas-sit"
+
+msgctxt "page.footer.product"
+msgid "Product"
+msgstr "Prodott"
+
+msgctxt "page.footer.resources"
+msgid "Resources"
+msgstr "Riżorsi"
+
+msgctxt "page.footer.company"
+msgid "Company"
+msgstr "Kumpanija"
+
+msgctxt "page.footer.check"
+msgid "Check a site"
+msgstr "Iċċekkja sit"
+
+msgctxt "page.footer.history"
+msgid "Change history"
+msgstr "Storja tal-bidliet"
+
+msgctxt "page.footer.schema"
+msgid "Report format"
+msgstr "Format tar-rapport"
+
+msgctxt "page.footer.source"
+msgid "Source code"
+msgstr "Kodiċi sors"
+
+msgctxt "page.footer.press"
+msgid "Press kit"
+msgstr "Kit għall-istampa"
+
+msgctxt "page.footer.licence"
+msgid "Licence"
+msgstr "Liċenzja"
+
+msgctxt "page.brandMenu.label"
+msgid "sus.bot logo files"
+msgstr "Fajls tal-logo ta' sus.bot"
+
+msgctxt "page.brandMenu.dark"
+msgid "Logo for dark backgrounds (SVG)"
+msgstr "Logo għal sfondi skuri (SVG)"
+
+msgctxt "page.brandMenu.light"
+msgid "Logo for light backgrounds (SVG)"
+msgstr "Logo għal sfondi ċari (SVG)"
+
+msgctxt "page.brandMenu.icon"
+msgid "Icon (SVG)"
+msgstr "Ikona (SVG)"
+
+msgctxt "page.brandMenu.press"
+msgid "Open the press kit"
+msgstr "Iftaħ il-kit għall-istampa"

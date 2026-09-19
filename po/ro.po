@@ -2966,3 +2966,63 @@ msgstr ""
 msgctxt "ui.recent.from"
 msgid "You came from:"
 msgstr ""
+
+msgctxt "page.footer.navLabel"
+msgid "Site links"
+msgstr "Linkuri site"
+
+msgctxt "page.footer.product"
+msgid "Product"
+msgstr "Produs"
+
+msgctxt "page.footer.resources"
+msgid "Resources"
+msgstr "Resurse"
+
+msgctxt "page.footer.company"
+msgid "Company"
+msgstr "Companie"
+
+msgctxt "page.footer.check"
+msgid "Check a site"
+msgstr "Verificați un site"
+
+msgctxt "page.footer.history"
+msgid "Change history"
+msgstr "Istoricul modificărilor"
+
+msgctxt "page.footer.schema"
+msgid "Report format"
+msgstr "Formatul raportului"
+
+msgctxt "page.footer.source"
+msgid "Source code"
+msgstr "Cod sursă"
+
+msgctxt "page.footer.press"
+msgid "Press kit"
+msgstr "Kit de presă"
+
+msgctxt "page.footer.licence"
+msgid "Licence"
+msgstr "Licență"
+
+msgctxt "page.brandMenu.label"
+msgid "sus.bot logo files"
+msgstr "Fișierele logo sus.bot"
+
+msgctxt "page.brandMenu.dark"
+msgid "Logo for dark backgrounds (SVG)"
+msgstr "Logo pentru fundaluri închise (SVG)"
+
+msgctxt "page.brandMenu.light"
+msgid "Logo for light backgrounds (SVG)"
+msgstr "Logo pentru fundaluri deschise (SVG)"
+
+msgctxt "page.brandMenu.icon"
+msgid "Icon (SVG)"
+msgstr "Pictogramă (SVG)"
+
+msgctxt "page.brandMenu.press"
+msgid "Open the press kit"
+msgstr "Deschideți kitul de presă"

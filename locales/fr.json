@@ -832,5 +832,20 @@
   "ui.ai.ofTotal": "{n} sur {total}",
   "ui.recent.label": "Vérifiés récemment :",
   "ui.recent.clear": "Vider la liste",
-  "ui.recent.from": "Vous venez de :"
+  "ui.recent.from": "Vous venez de :",
+  "page.footer.navLabel": "Liens du site",
+  "page.footer.product": "Produit",
+  "page.footer.resources": "Ressources",
+  "page.footer.company": "Entreprise",
+  "page.footer.check": "Vérifier un site",
+  "page.footer.history": "Historique des changements",
+  "page.footer.schema": "Format du rapport",
+  "page.footer.source": "Code source",
+  "page.footer.press": "Kit presse",
+  "page.footer.licence": "Licence",
+  "page.brandMenu.label": "Fichiers du logo sus.bot",
+  "page.brandMenu.dark": "Logo pour fond sombre (SVG)",
+  "page.brandMenu.light": "Logo pour fond clair (SVG)",
+  "page.brandMenu.icon": "Icône (SVG)",
+  "page.brandMenu.press": "Ouvrir le kit presse"
 }

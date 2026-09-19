@@ -92,5 +92,20 @@
     "other": "Kendte AI-agenter tjekket: {n}"
   },
   "ui.ai.blockedLabel": "{label}: blokeret",
-  "ui.ai.ofTotal": "{n} af {total}"
+  "ui.ai.ofTotal": "{n} af {total}",
+  "page.footer.navLabel": "Links på webstedet",
+  "page.footer.product": "Produkt",
+  "page.footer.resources": "Ressourcer",
+  "page.footer.company": "Virksomhed",
+  "page.footer.check": "Tjek et websted",
+  "page.footer.history": "Ændringshistorik",
+  "page.footer.schema": "Rapportformat",
+  "page.footer.source": "Kildekode",
+  "page.footer.press": "Pressemateriale",
+  "page.footer.licence": "Licens",
+  "page.brandMenu.label": "sus.bot-logofiler",
+  "page.brandMenu.dark": "Logo til mørk baggrund (SVG)",
+  "page.brandMenu.light": "Logo til lys baggrund (SVG)",
+  "page.brandMenu.icon": "Ikon (SVG)",
+  "page.brandMenu.press": "Åbn pressematerialet"
 }

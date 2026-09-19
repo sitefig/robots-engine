@@ -94,5 +94,20 @@
     "other": "Kontrolovaných známých AI agentů: {n}"
   },
   "ui.ai.blockedLabel": "{label}: blokováno",
-  "ui.ai.ofTotal": "{n} z {total}"
+  "ui.ai.ofTotal": "{n} z {total}",
+  "page.footer.navLabel": "Odkazy webu",
+  "page.footer.product": "Produkt",
+  "page.footer.resources": "Zdroje",
+  "page.footer.company": "Společnost",
+  "page.footer.check": "Zkontrolovat web",
+  "page.footer.history": "Historie změn",
+  "page.footer.schema": "Formát zprávy",
+  "page.footer.source": "Zdrojový kód",
+  "page.footer.press": "Tiskové materiály",
+  "page.footer.licence": "Licence",
+  "page.brandMenu.label": "Soubory loga sus.bot",
+  "page.brandMenu.dark": "Logo pro tmavé pozadí (SVG)",
+  "page.brandMenu.light": "Logo pro světlé pozadí (SVG)",
+  "page.brandMenu.icon": "Ikona (SVG)",
+  "page.brandMenu.press": "Otevřít tiskové materiály"
 }

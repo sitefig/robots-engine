@@ -92,5 +92,20 @@
     "other": "Kända AI-agenter kontrollerade: {n}"
   },
   "ui.ai.blockedLabel": "{label}: blockerade",
-  "ui.ai.ofTotal": "{n} av {total}"
+  "ui.ai.ofTotal": "{n} av {total}",
+  "page.footer.navLabel": "Webbplatslänkar",
+  "page.footer.product": "Produkt",
+  "page.footer.resources": "Resurser",
+  "page.footer.company": "Företag",
+  "page.footer.check": "Kontrollera en webbplats",
+  "page.footer.history": "Ändringshistorik",
+  "page.footer.schema": "Rapportformat",
+  "page.footer.source": "Källkod",
+  "page.footer.press": "Pressmaterial",
+  "page.footer.licence": "Licens",
+  "page.brandMenu.label": "sus.bot-logofiler",
+  "page.brandMenu.dark": "Logotyp för mörk bakgrund (SVG)",
+  "page.brandMenu.light": "Logotyp för ljus bakgrund (SVG)",
+  "page.brandMenu.icon": "Ikon (SVG)",
+  "page.brandMenu.press": "Öppna pressmaterialet"
 }

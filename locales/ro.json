@@ -93,5 +93,20 @@
     "other": "Agenți AI cunoscuți verificați: {n}"
   },
   "ui.ai.blockedLabel": "{label}: blocați",
-  "ui.ai.ofTotal": "{n} din {total}"
+  "ui.ai.ofTotal": "{n} din {total}",
+  "page.footer.navLabel": "Linkuri site",
+  "page.footer.product": "Produs",
+  "page.footer.resources": "Resurse",
+  "page.footer.company": "Companie",
+  "page.footer.check": "Verificați un site",
+  "page.footer.history": "Istoricul modificărilor",
+  "page.footer.schema": "Formatul raportului",
+  "page.footer.source": "Cod sursă",
+  "page.footer.press": "Kit de presă",
+  "page.footer.licence": "Licență",
+  "page.brandMenu.label": "Fișierele logo sus.bot",
+  "page.brandMenu.dark": "Logo pentru fundaluri închise (SVG)",
+  "page.brandMenu.light": "Logo pentru fundaluri deschise (SVG)",
+  "page.brandMenu.icon": "Pictogramă (SVG)",
+  "page.brandMenu.press": "Deschideți kitul de presă"
 }

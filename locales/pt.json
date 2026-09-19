@@ -93,5 +93,20 @@
     "other": "Agentes de IA conhecidos verificados: {n}"
   },
   "ui.ai.blockedLabel": "{label}: bloqueados",
-  "ui.ai.ofTotal": "{n} de {total}"
+  "ui.ai.ofTotal": "{n} de {total}",
+  "page.footer.navLabel": "Ligações do site",
+  "page.footer.product": "Produto",
+  "page.footer.resources": "Recursos",
+  "page.footer.company": "Empresa",
+  "page.footer.check": "Verificar um site",
+  "page.footer.history": "Histórico de alterações",
+  "page.footer.schema": "Formato do relatório",
+  "page.footer.source": "Código-fonte",
+  "page.footer.press": "Kit de imprensa",
+  "page.footer.licence": "Licença",
+  "page.brandMenu.label": "Ficheiros do logótipo sus.bot",
+  "page.brandMenu.dark": "Logótipo para fundos escuros (SVG)",
+  "page.brandMenu.light": "Logótipo para fundos claros (SVG)",
+  "page.brandMenu.icon": "Ícone (SVG)",
+  "page.brandMenu.press": "Abrir o kit de imprensa"
 }

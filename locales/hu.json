@@ -92,5 +92,20 @@
     "other": "Ellenőrzött ismert AI-ügynökök: {n}"
   },
   "ui.ai.blockedLabel": "{label}: tiltva",
-  "ui.ai.ofTotal": "{n} / {total}"
+  "ui.ai.ofTotal": "{n} / {total}",
+  "page.footer.navLabel": "Oldal hivatkozásai",
+  "page.footer.product": "Termék",
+  "page.footer.resources": "Források",
+  "page.footer.company": "Cég",
+  "page.footer.check": "Oldal ellenőrzése",
+  "page.footer.history": "Változástörténet",
+  "page.footer.schema": "Jelentésformátum",
+  "page.footer.source": "Forráskód",
+  "page.footer.press": "Sajtóanyag",
+  "page.footer.licence": "Licenc",
+  "page.brandMenu.label": "sus.bot logófájlok",
+  "page.brandMenu.dark": "Logó sötét háttérre (SVG)",
+  "page.brandMenu.light": "Logó világos háttérre (SVG)",
+  "page.brandMenu.icon": "Ikon (SVG)",
+  "page.brandMenu.press": "Sajtóanyag megnyitása"
 }

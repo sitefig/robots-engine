@@ -94,5 +94,20 @@
     "other": "Sprawdzone znane agenty AI: {n}"
   },
   "ui.ai.blockedLabel": "{label}: zablokowane",
-  "ui.ai.ofTotal": "{n} z {total}"
+  "ui.ai.ofTotal": "{n} z {total}",
+  "page.footer.navLabel": "Linki w witrynie",
+  "page.footer.product": "Produkt",
+  "page.footer.resources": "Zasoby",
+  "page.footer.company": "Firma",
+  "page.footer.check": "Sprawdź witrynę",
+  "page.footer.history": "Historia zmian",
+  "page.footer.schema": "Format raportu",
+  "page.footer.source": "Kod źródłowy",
+  "page.footer.press": "Materiały prasowe",
+  "page.footer.licence": "Licencja",
+  "page.brandMenu.label": "Pliki logo sus.bot",
+  "page.brandMenu.dark": "Logo na ciemne tło (SVG)",
+  "page.brandMenu.light": "Logo na jasne tło (SVG)",
+  "page.brandMenu.icon": "Ikona (SVG)",
+  "page.brandMenu.press": "Otwórz materiały prasowe"
 }

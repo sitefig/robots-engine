@@ -2937,3 +2937,63 @@ msgstr "Clear list"
 msgctxt "ui.recent.from"
 msgid "You came from:"
 msgstr "You came from:"
+
+msgctxt "page.footer.navLabel"
+msgid "Site links"
+msgstr "Site links"
+
+msgctxt "page.footer.product"
+msgid "Product"
+msgstr "Product"
+
+msgctxt "page.footer.resources"
+msgid "Resources"
+msgstr "Resources"
+
+msgctxt "page.footer.company"
+msgid "Company"
+msgstr "Company"
+
+msgctxt "page.footer.check"
+msgid "Check a site"
+msgstr "Check a site"
+
+msgctxt "page.footer.history"
+msgid "Change history"
+msgstr "Change history"
+
+msgctxt "page.footer.schema"
+msgid "Report format"
+msgstr "Report format"
+
+msgctxt "page.footer.source"
+msgid "Source code"
+msgstr "Source code"
+
+msgctxt "page.footer.press"
+msgid "Press kit"
+msgstr "Press kit"
+
+msgctxt "page.footer.licence"
+msgid "Licence"
+msgstr "Licence"
+
+msgctxt "page.brandMenu.label"
+msgid "sus.bot logo files"
+msgstr "sus.bot logo files"
+
+msgctxt "page.brandMenu.dark"
+msgid "Logo for dark backgrounds (SVG)"
+msgstr "Logo for dark backgrounds (SVG)"
+
+msgctxt "page.brandMenu.light"
+msgid "Logo for light backgrounds (SVG)"
+msgstr "Logo for light backgrounds (SVG)"
+
+msgctxt "page.brandMenu.icon"
+msgid "Icon (SVG)"
+msgstr "Icon (SVG)"
+
+msgctxt "page.brandMenu.press"
+msgid "Open the press kit"
+msgstr "Open the press kit"

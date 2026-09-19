@@ -803,5 +803,20 @@
   "ui.ai.ofTotal": "{n} von {total}",
   "ui.recent.label": "Zuletzt geprüft:",
   "ui.recent.clear": "Liste leeren",
-  "ui.recent.from": "Sie kamen von:"
+  "ui.recent.from": "Sie kamen von:",
+  "page.footer.navLabel": "Seitenlinks",
+  "page.footer.product": "Produkt",
+  "page.footer.resources": "Ressourcen",
+  "page.footer.company": "Unternehmen",
+  "page.footer.check": "Website prüfen",
+  "page.footer.history": "Änderungsverlauf",
+  "page.footer.schema": "Berichtsformat",
+  "page.footer.source": "Quellcode",
+  "page.footer.press": "Pressematerial",
+  "page.footer.licence": "Lizenz",
+  "page.brandMenu.label": "sus.bot-Logodateien",
+  "page.brandMenu.dark": "Logo für dunkle Hintergründe (SVG)",
+  "page.brandMenu.light": "Logo für helle Hintergründe (SVG)",
+  "page.brandMenu.icon": "Symbol (SVG)",
+  "page.brandMenu.press": "Pressematerial öffnen"
 }

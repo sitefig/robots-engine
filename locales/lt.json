@@ -94,5 +94,20 @@
     "other": "Patikrinta žinomų DI agentų: {n}"
   },
   "ui.ai.blockedLabel": "{label}: užblokuota",
-  "ui.ai.ofTotal": "{n} iš {total}"
+  "ui.ai.ofTotal": "{n} iš {total}",
+  "page.footer.navLabel": "Svetainės nuorodos",
+  "page.footer.product": "Produktas",
+  "page.footer.resources": "Ištekliai",
+  "page.footer.company": "Įmonė",
+  "page.footer.check": "Patikrinti svetainę",
+  "page.footer.history": "Pakeitimų istorija",
+  "page.footer.schema": "Ataskaitos formatas",
+  "page.footer.source": "Pirminis kodas",
+  "page.footer.press": "Spaudos rinkinys",
+  "page.footer.licence": "Licencija",
+  "page.brandMenu.label": "sus.bot logotipo failai",
+  "page.brandMenu.dark": "Logotipas tamsiam fonui (SVG)",
+  "page.brandMenu.light": "Logotipas šviesiam fonui (SVG)",
+  "page.brandMenu.icon": "Piktograma (SVG)",
+  "page.brandMenu.press": "Atidaryti spaudos rinkinį"
 }

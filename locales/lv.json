@@ -93,5 +93,20 @@
     "other": "Pārbaudīti zināmi MI aģenti: {n}"
   },
   "ui.ai.blockedLabel": "{label}: bloķēti",
-  "ui.ai.ofTotal": "{n} no {total}"
+  "ui.ai.ofTotal": "{n} no {total}",
+  "page.footer.navLabel": "Vietnes saites",
+  "page.footer.product": "Produkts",
+  "page.footer.resources": "Resursi",
+  "page.footer.company": "Uzņēmums",
+  "page.footer.check": "Pārbaudīt vietni",
+  "page.footer.history": "Izmaiņu vēsture",
+  "page.footer.schema": "Pārskata formāts",
+  "page.footer.source": "Pirmkods",
+  "page.footer.press": "Preses materiāli",
+  "page.footer.licence": "Licence",
+  "page.brandMenu.label": "sus.bot logotipa faili",
+  "page.brandMenu.dark": "Logotips tumšam fonam (SVG)",
+  "page.brandMenu.light": "Logotips gaišam fonam (SVG)",
+  "page.brandMenu.icon": "Ikona (SVG)",
+  "page.brandMenu.press": "Atvērt preses materiālus"
 }

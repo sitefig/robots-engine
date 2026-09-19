@@ -93,5 +93,20 @@
     "other": "Provjereno poznatih AI agenata: {n}"
   },
   "ui.ai.blockedLabel": "{label}: blokirano",
-  "ui.ai.ofTotal": "{n} od {total}"
+  "ui.ai.ofTotal": "{n} od {total}",
+  "page.footer.navLabel": "Poveznice stranice",
+  "page.footer.product": "Proizvod",
+  "page.footer.resources": "Resursi",
+  "page.footer.company": "Tvrtka",
+  "page.footer.check": "Provjerite stranicu",
+  "page.footer.history": "Povijest promjena",
+  "page.footer.schema": "Format izvješća",
+  "page.footer.source": "Izvorni kod",
+  "page.footer.press": "Materijali za medije",
+  "page.footer.licence": "Licencija",
+  "page.brandMenu.label": "Datoteke logotipa sus.bot",
+  "page.brandMenu.dark": "Logotip za tamnu pozadinu (SVG)",
+  "page.brandMenu.light": "Logotip za svijetlu pozadinu (SVG)",
+  "page.brandMenu.icon": "Ikona (SVG)",
+  "page.brandMenu.press": "Otvorite materijale za medije"
 }

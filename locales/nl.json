@@ -803,5 +803,20 @@
   "ui.ai.ofTotal": "{n} van {total}",
   "ui.recent.label": "Recent gecontroleerd:",
   "ui.recent.clear": "Lijst wissen",
-  "ui.recent.from": "Je kwam van:"
+  "ui.recent.from": "Je kwam van:",
+  "page.footer.navLabel": "Sitelinks",
+  "page.footer.product": "Product",
+  "page.footer.resources": "Bronnen",
+  "page.footer.company": "Bedrijf",
+  "page.footer.check": "Site controleren",
+  "page.footer.history": "Wijzigingsgeschiedenis",
+  "page.footer.schema": "Rapportformaat",
+  "page.footer.source": "Broncode",
+  "page.footer.press": "Perskit",
+  "page.footer.licence": "Licentie",
+  "page.brandMenu.label": "sus.bot-logobestanden",
+  "page.brandMenu.dark": "Logo voor donkere achtergronden (SVG)",
+  "page.brandMenu.light": "Logo voor lichte achtergronden (SVG)",
+  "page.brandMenu.icon": "Pictogram (SVG)",
+  "page.brandMenu.press": "Perskit openen"
 }

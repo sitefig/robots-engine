@@ -92,5 +92,20 @@
     "other": "Kontrollitud tuntud tehisintellekti agente: {n}"
   },
   "ui.ai.blockedLabel": "{label}: blokeeritud",
-  "ui.ai.ofTotal": "{n} / {total}"
+  "ui.ai.ofTotal": "{n} / {total}",
+  "page.footer.navLabel": "Saidi lingid",
+  "page.footer.product": "Toode",
+  "page.footer.resources": "Materjalid",
+  "page.footer.company": "Ettevõte",
+  "page.footer.check": "Kontrolli saiti",
+  "page.footer.history": "Muudatuste ajalugu",
+  "page.footer.schema": "Aruande vorming",
+  "page.footer.source": "Lähtekood",
+  "page.footer.press": "Pressimaterjalid",
+  "page.footer.licence": "Litsents",
+  "page.brandMenu.label": "sus.bot logofailid",
+  "page.brandMenu.dark": "Logo tumedale taustale (SVG)",
+  "page.brandMenu.light": "Logo heledale taustale (SVG)",
+  "page.brandMenu.icon": "Ikoon (SVG)",
+  "page.brandMenu.press": "Ava pressimaterjalid"
 }

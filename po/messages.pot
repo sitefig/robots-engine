@@ -2936,3 +2936,63 @@ msgstr ""
 msgctxt "ui.recent.from"
 msgid "You came from:"
 msgstr ""
+
+msgctxt "page.footer.navLabel"
+msgid "Site links"
+msgstr ""
+
+msgctxt "page.footer.product"
+msgid "Product"
+msgstr ""
+
+msgctxt "page.footer.resources"
+msgid "Resources"
+msgstr ""
+
+msgctxt "page.footer.company"
+msgid "Company"
+msgstr ""
+
+msgctxt "page.footer.check"
+msgid "Check a site"
+msgstr ""
+
+msgctxt "page.footer.history"
+msgid "Change history"
+msgstr ""
+
+msgctxt "page.footer.schema"
+msgid "Report format"
+msgstr ""
+
+msgctxt "page.footer.source"
+msgid "Source code"
+msgstr ""
+
+msgctxt "page.footer.press"
+msgid "Press kit"
+msgstr ""
+
+msgctxt "page.footer.licence"
+msgid "Licence"
+msgstr ""
+
+msgctxt "page.brandMenu.label"
+msgid "sus.bot logo files"
+msgstr ""
+
+msgctxt "page.brandMenu.dark"
+msgid "Logo for dark backgrounds (SVG)"
+msgstr ""
+
+msgctxt "page.brandMenu.light"
+msgid "Logo for light backgrounds (SVG)"
+msgstr ""
+
+msgctxt "page.brandMenu.icon"
+msgid "Icon (SVG)"
+msgstr ""
+
+msgctxt "page.brandMenu.press"
+msgid "Open the press kit"
+msgstr ""

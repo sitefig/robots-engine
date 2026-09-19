@@ -832,5 +832,20 @@
   "ui.ai.ofTotal": "{n} su {total}",
   "ui.recent.label": "Controllati di recente:",
   "ui.recent.clear": "Svuota l'elenco",
-  "ui.recent.from": "Arrivi da:"
+  "ui.recent.from": "Arrivi da:",
+  "page.footer.navLabel": "Link del sito",
+  "page.footer.product": "Prodotto",
+  "page.footer.resources": "Risorse",
+  "page.footer.company": "Azienda",
+  "page.footer.check": "Controlla un sito",
+  "page.footer.history": "Cronologia delle modifiche",
+  "page.footer.schema": "Formato del report",
+  "page.footer.source": "Codice sorgente",
+  "page.footer.press": "Kit stampa",
+  "page.footer.licence": "Licenza",
+  "page.brandMenu.label": "File del logo sus.bot",
+  "page.brandMenu.dark": "Logo per sfondi scuri (SVG)",
+  "page.brandMenu.light": "Logo per sfondi chiari (SVG)",
+  "page.brandMenu.icon": "Icona (SVG)",
+  "page.brandMenu.press": "Apri il kit stampa"
 }

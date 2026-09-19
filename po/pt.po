@@ -2966,3 +2966,63 @@ msgstr ""
 msgctxt "ui.recent.from"
 msgid "You came from:"
 msgstr ""
+
+msgctxt "page.footer.navLabel"
+msgid "Site links"
+msgstr "Ligações do site"
+
+msgctxt "page.footer.product"
+msgid "Product"
+msgstr "Produto"
+
+msgctxt "page.footer.resources"
+msgid "Resources"
+msgstr "Recursos"
+
+msgctxt "page.footer.company"
+msgid "Company"
+msgstr "Empresa"
+
+msgctxt "page.footer.check"
+msgid "Check a site"
+msgstr "Verificar um site"
+
+msgctxt "page.footer.history"
+msgid "Change history"
+msgstr "Histórico de alterações"
+
+msgctxt "page.footer.schema"
+msgid "Report format"
+msgstr "Formato do relatório"
+
+msgctxt "page.footer.source"
+msgid "Source code"
+msgstr "Código-fonte"
+
+msgctxt "page.footer.press"
+msgid "Press kit"
+msgstr "Kit de imprensa"
+
+msgctxt "page.footer.licence"
+msgid "Licence"
+msgstr "Licença"
+
+msgctxt "page.brandMenu.label"
+msgid "sus.bot logo files"
+msgstr "Ficheiros do logótipo sus.bot"
+
+msgctxt "page.brandMenu.dark"
+msgid "Logo for dark backgrounds (SVG)"
+msgstr "Logótipo para fundos escuros (SVG)"
+
+msgctxt "page.brandMenu.light"
+msgid "Logo for light backgrounds (SVG)"
+msgstr "Logótipo para fundos claros (SVG)"
+
+msgctxt "page.brandMenu.icon"
+msgid "Icon (SVG)"
+msgstr "Ícone (SVG)"
+
+msgctxt "page.brandMenu.press"
+msgid "Open the press kit"
+msgstr "Abrir o kit de imprensa"

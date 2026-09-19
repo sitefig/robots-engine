@@ -95,5 +95,20 @@
     "other": "Aġenti tal-AI magħrufa ċċekkjati: {n}"
   },
   "ui.ai.blockedLabel": "{label}: imblukkati",
-  "ui.ai.ofTotal": "{n} minn {total}"
+  "ui.ai.ofTotal": "{n} minn {total}",
+  "page.footer.navLabel": "Links tas-sit",
+  "page.footer.product": "Prodott",
+  "page.footer.resources": "Riżorsi",
+  "page.footer.company": "Kumpanija",
+  "page.footer.check": "Iċċekkja sit",
+  "page.footer.history": "Storja tal-bidliet",
+  "page.footer.schema": "Format tar-rapport",
+  "page.footer.source": "Kodiċi sors",
+  "page.footer.press": "Kit għall-istampa",
+  "page.footer.licence": "Liċenzja",
+  "page.brandMenu.label": "Fajls tal-logo ta' sus.bot",
+  "page.brandMenu.dark": "Logo għal sfondi skuri (SVG)",
+  "page.brandMenu.light": "Logo għal sfondi ċari (SVG)",
+  "page.brandMenu.icon": "Ikona (SVG)",
+  "page.brandMenu.press": "Iftaħ il-kit għall-istampa"
 }
