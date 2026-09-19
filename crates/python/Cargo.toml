@@ -1,0 +1,36 @@
+# Python bindings and CLI, built into the `susbot` package on PyPI with
+# maturin (see pyproject.toml next to this file). Not published on crates.io.
+[package]
+publish = false
+name = "susbot-python"
+description = "Python bindings and CLI for the susbot robots.txt engine"
+version = "2.0.1"
+edition = "2021"
+license = "PolyForm-Noncommercial-1.0.0"
+repository = "https://github.com/sitefig/robots"
+homepage = "https://sus.bot/"
+
+[lib]
+name = "_susbot"
+crate-type = ["cdylib"]
+
+[dependencies]
+susbot-core = { path = "../core", version = "2.0.1" }
+susbot-cli = { path = "../cli", version = "2.0.1" }
+serde_json = "1"
+# abi3: one wheel per platform for every CPython from 3.10 on.
+pyo3 = { version = "0.29", features = ["abi3-py310"] }
+
+[features]
+# maturin turns this on (tool.maturin.features); plain `cargo check` leaves it off.
+extension-module = ["pyo3/extension-module"]
+
+# Its own workspace, like crates/susbot: excluded from the root one so
+# `cargo test --workspace` never needs a Python interpreter.
+[workspace]
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+strip = true

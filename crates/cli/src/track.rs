@@ -8,7 +8,6 @@ use crate::net::{fetch_robots, iso_now, send_webhook, today};
 use clap::Args;
 use serde::{Deserialize, Serialize};
 use std::path::{Path, PathBuf};
-use std::process::ExitCode;
 use std::sync::Arc;
 use susbot_core::analyser::Verdict;
 use susbot_core::diff::{diff_analyses, SemanticDiff};
@@ -186,7 +185,7 @@ fn analyse(text: &str, origin: &str, engine: &Arc<Engine>, locale: &Arc<Locale>)
     Analysis::with_engine(text, Options { site_url: Some(format!("{origin}/robots.txt")), now: Some(iso_now()), ..Default::default() }, Arc::clone(engine), Arc::clone(locale))
 }
 
-pub fn run(cli: &TrackArgs) -> Result<ExitCode, String> {
+pub fn run(cli: &TrackArgs) -> Result<u8, String> {
     let raw = std::fs::read_to_string(&cli.config).map_err(|e| format!("{}: {e}", cli.config.display()))?;
     let sites: Vec<SiteEntry> = serde_json::from_str(&raw).map_err(|e| format!("{}: {e}", cli.config.display()))?;
     let rules = match &cli.rules {
@@ -334,7 +333,7 @@ pub fn run(cli: &TrackArgs) -> Result<ExitCode, String> {
         std::fs::create_dir_all(&cli.data_dir).map_err(|e| e.to_string())?;
         std::fs::write(&readme, leaderboard(&cli.title, &cols, &rows)).map_err(|e| e.to_string())?;
     }
-    Ok(ExitCode::SUCCESS)
+    Ok(0)
 }
 
 fn icon(v: Verdict) -> &'static str {

@@ -1,17 +1,27 @@
 [package]
 name = "susbot-cli"
-description = "Command-line robots.txt audit for CI and GitHub Actions"
+description = "robots.txt checker for the command line and CI: which search engines and AI crawlers a site lets in, lint findings, exposed paths, diffs (sus.bot)"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
 repository.workspace = true
+homepage.workspace = true
+authors.workspace = true
+readme = "README.md"
+# Tests read files from the repository (examples, schema), so they stay out of the package.
+exclude = ["tests/"]
+keywords = ["robots-txt", "crawler", "seo", "ai", "audit"]
+categories = ["command-line-utilities", "web-programming", "development-tools"]
+
+[lib]
+path = "src/lib.rs"
 
 [[bin]]
 name = "susbot"
 path = "src/main.rs"
 
 [dependencies]
-susbot-core = { path = "../core" }
+susbot-core = { path = "../core", version = "2.0.1" }
 serde.workspace = true
 serde_json.workspace = true
 clap = { version = "4", features = ["derive"] }

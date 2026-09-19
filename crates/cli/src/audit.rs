@@ -4,7 +4,6 @@ use crate::net::{fetch_robots, iso_now};
 use clap::{Args, ValueEnum};
 use std::io::Read;
 use std::path::PathBuf;
-use std::process::ExitCode;
 use susbot_core::model::Level;
 use susbot_core::{Analysis, Options};
 
@@ -128,10 +127,10 @@ fn access_check(origin: &str, analysis: &Analysis, timeout: u64) -> String {
     lines.join("\n")
 }
 
-pub fn run(cli: &AuditArgs) -> Result<ExitCode, String> {
+pub fn run(cli: &AuditArgs) -> Result<u8, String> {
     if cli.print_default_config {
         print!("{}", susbot_core::config::DEFAULT_TOML);
-        return Ok(ExitCode::SUCCESS);
+        return Ok(0);
     }
     if cli.target.is_empty() {
         return Err("a target is required: a URL, a file, or - for stdin".into());
@@ -231,5 +230,5 @@ pub fn run(cli: &AuditArgs) -> Result<ExitCode, String> {
         Severity::Medium => matches!(worst_sec, Some(0) | Some(1)),
         Severity::Low => worst_sec.is_some(),
     };
-    Ok(if fail_issue || fail_sec { ExitCode::from(1) } else { ExitCode::SUCCESS })
+    Ok(if fail_issue || fail_sec { 1 } else { 0 })
 }

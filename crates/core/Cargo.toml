@@ -5,6 +5,13 @@ version.workspace = true
 edition.workspace = true
 license.workspace = true
 repository.workspace = true
+homepage.workspace = true
+authors.workspace = true
+readme = "README.md"
+# Tests read files from the repository (examples, schema), so they stay out of the package.
+exclude = ["tests/"]
+keywords = ["robots-txt", "crawler", "seo", "rfc9309", "parser"]
+categories = ["parser-implementations", "web-programming"]
 
 [dependencies]
 serde.workspace = true

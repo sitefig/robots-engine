@@ -1,4 +1,5 @@
 [package]
+publish = false
 name = "susbot-wasm"
 description = "Browser bindings for the susbot robots.txt engine"
 version.workspace = true

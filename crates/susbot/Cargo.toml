@@ -1,0 +1,29 @@
+[package]
+name = "susbot"
+version = "2.0.1"
+edition = "2021"
+description = "robots.txt checker for the command line and CI (sus.bot). Installs the same `susbot` program as the susbot-cli crate."
+license = "PolyForm-Noncommercial-1.0.0"
+repository = "https://github.com/sitefig/robots"
+homepage = "https://sus.bot/"
+authors = ["Sitefig <https://sitefig.eu/>"]
+readme = "README.md"
+keywords = ["robots-txt", "crawler", "seo", "ai", "audit"]
+categories = ["command-line-utilities", "web-programming", "development-tools"]
+
+[[bin]]
+name = "susbot"
+path = "src/main.rs"
+
+[dependencies]
+susbot-cli = { path = "../cli", version = "2.0.1" }
+
+# Its own workspace: see the exclude in the root Cargo.toml.
+[workspace]
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"

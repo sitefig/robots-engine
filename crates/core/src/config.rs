@@ -8,7 +8,7 @@ use fancy_regex::Regex;
 use serde::{Deserialize, Serialize};
 use std::collections::{HashMap, HashSet};
 
-pub const DEFAULT_TOML: &str = include_str!("../../../config/default.toml");
+pub const DEFAULT_TOML: &str = include_str!("../data/default.toml");
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Tool {

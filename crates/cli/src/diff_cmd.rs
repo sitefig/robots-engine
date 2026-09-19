@@ -2,7 +2,6 @@
 
 use clap::{Args, ValueEnum};
 use std::path::PathBuf;
-use std::process::ExitCode;
 use susbot_core::diff::diff_analyses;
 use susbot_core::{Analysis, Options};
 
@@ -39,7 +38,7 @@ pub struct DiffArgs {
     pub fail_on_change: bool,
 }
 
-pub fn run(cli: &DiffArgs) -> Result<ExitCode, String> {
+pub fn run(cli: &DiffArgs) -> Result<u8, String> {
     let old_text = std::fs::read_to_string(&cli.old_file).map_err(|e| format!("{}: {e}", cli.old_file.display()))?;
     let new_text = std::fs::read_to_string(&cli.new_file).map_err(|e| format!("{}: {e}", cli.new_file.display()))?;
     let config = match &cli.config {
@@ -55,5 +54,5 @@ pub fn run(cli: &DiffArgs) -> Result<ExitCode, String> {
         DiffFormat::Json => println!("{}", serde_json::to_string_pretty(&diff).map_err(|e| e.to_string())?),
         DiffFormat::Markdown => print!("{}", diff.to_markdown(&cli.domain)),
     }
-    Ok(if cli.fail_on_change && diff.is_changed { ExitCode::from(1) } else { ExitCode::SUCCESS })
+    Ok(if cli.fail_on_change && diff.is_changed { 1 } else { 0 })
 }

@@ -27,7 +27,8 @@ export function english(): Dictionary {
 /** Every generated file as { relative path: content }. */
 export function outputs(): Record<string, string> {
   const en = english();
-  const out: Record<string, string> = { 'locales/en.json': json(en) };
+  // crates/core embeds its own copy so it can be published on crates.io.
+  const out: Record<string, string> = { 'locales/en.json': json(en), 'crates/core/data/en.json': json(en) };
   for (const code of Object.keys(LANGUAGES)) {
     if (code === 'en') continue;
     out[`locales/${code}.json`] = json(toDictionary(code, readPo(code)));

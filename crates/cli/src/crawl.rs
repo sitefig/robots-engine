@@ -11,7 +11,6 @@ use serde::Serialize;
 use std::collections::{BTreeMap, VecDeque};
 use std::io::{BufRead, Write};
 use std::path::PathBuf;
-use std::process::ExitCode;
 use std::sync::{Arc, Mutex};
 use susbot_core::i18n::Locale;
 use susbot_core::{Analysis, Engine, Options};
@@ -139,7 +138,7 @@ struct Summary {
     generated_at: String,
 }
 
-pub fn run(cli: &CrawlArgs) -> Result<ExitCode, String> {
+pub fn run(cli: &CrawlArgs) -> Result<u8, String> {
     let domains = read_domains(&cli.input)?;
     let domains: Vec<String> = domains.into_iter().skip(cli.offset).take(cli.limit.unwrap_or(usize::MAX)).collect();
     let total = domains.len();
@@ -198,5 +197,5 @@ pub fn run(cli: &CrawlArgs) -> Result<ExitCode, String> {
         std::fs::write(p, serde_json::to_string_pretty(&summary).unwrap() + "\n").map_err(|e| format!("{}: {e}", p.display()))?;
     }
     eprintln!("wrote {} ({} fetched, {} unreachable)", cli.out.display(), summary.fetched, summary.unreachable);
-    Ok(ExitCode::SUCCESS)
+    Ok(0)
 }

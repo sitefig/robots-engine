@@ -9,7 +9,7 @@ use std::collections::HashMap;
 use std::sync::LazyLock;
 
 pub const DEFAULT_LANG: &str = "en";
-const EN_JSON: &str = include_str!("../../../locales/en.json");
+const EN_JSON: &str = include_str!("../data/en.json");
 
 #[derive(Debug, Clone)]
 pub enum Entry {

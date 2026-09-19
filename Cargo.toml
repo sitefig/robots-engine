@@ -1,12 +1,18 @@
 [workspace]
 resolver = "2"
 members = ["crates/core", "crates/wasm", "crates/cli"]
+# The `susbot` crate only claims the short name on crates.io and installs the
+# same binary as susbot-cli; it has its own workspace so the two binaries
+# named `susbot` never build into the same target directory.
+exclude = ["crates/susbot"]
 
 [workspace.package]
-version = "2.0.0"
+version = "2.0.1"
 edition = "2021"
 license = "PolyForm-Noncommercial-1.0.0"
 repository = "https://github.com/sitefig/robots"
+homepage = "https://sus.bot/"
+authors = ["Sitefig <https://sitefig.eu/>"]
 
 [workspace.dependencies]
 serde = { version = "1", features = ["derive"] }
