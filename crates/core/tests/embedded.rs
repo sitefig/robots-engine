@@ -32,4 +32,5 @@ fn licences_match_the_repository() {
     same("../cli/LICENSE.md", "../../LICENSE.md", "cp LICENSE.md crates/cli/LICENSE.md");
     same("../susbot/LICENSE.md", "../../LICENSE.md", "cp LICENSE.md crates/susbot/LICENSE.md");
     same("../python/LICENSE.md", "../../LICENSE.md", "cp LICENSE.md crates/python/LICENSE.md");
+    same("../../npm/susbot/LICENSE.md", "../../LICENSE.md", "cp LICENSE.md npm/susbot/LICENSE.md");
 }

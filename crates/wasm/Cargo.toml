@@ -14,3 +14,7 @@ crate-type = ["cdylib"]
 susbot-core = { path = "../core" }
 wasm-bindgen = "0.2.128"
 serde_json.workspace = true
+
+[features]
+# Diff bindings for the npm package (scripts/build-npm.sh); the site leaves them out.
+diff = []

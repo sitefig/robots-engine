@@ -88,6 +88,22 @@ impl Analysis {
     }
 }
 
+/// Semantic diff of two analyses built with the same options, as JSON. Only
+/// in the npm package (feature `diff`): the site does not diff and its
+/// bundle stays about 50 KB smaller without it.
+#[cfg(feature = "diff")]
+#[wasm_bindgen(js_name = diffJson)]
+pub fn diff_json(old: &Analysis, new: &Analysis) -> String {
+    serde_json::to_string(&susbot_core::diff::diff_analyses(&old.inner, &new.inner)).unwrap()
+}
+
+/// The semantic diff rendered as Markdown for `domain`.
+#[cfg(feature = "diff")]
+#[wasm_bindgen(js_name = diffMarkdown)]
+pub fn diff_markdown(old: &Analysis, new: &Analysis, domain: &str) -> String {
+    susbot_core::diff::diff_analyses(&old.inner, &new.inner).to_markdown(domain)
+}
+
 /// The embedded default configuration, TOML text.
 #[wasm_bindgen(js_name = defaultConfig)]
 pub fn default_config() -> String {
