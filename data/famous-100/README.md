@@ -1,28 +1,28 @@
 # Tracked domains: AI crawler leaderboard
 
-*Updated 2026-09-18. Snapshots are in one directory per domain; git history is the change log.*
+*Updated 2026-09-19. Snapshots are in one directory per domain; git history is the change log.*
 
 | Crawler | Blocked | Restricted | Open |
 | --- | ---: | ---: | ---: |
-| GPTBot | 21 (11%) | 127 | 48 |
-| ClaudeBot | 29 (15%) | 121 | 46 |
-| Google-Extended | 20 (10%) | 132 | 44 |
-| Applebot-Extended | 25 (13%) | 127 | 44 |
-| CCBot | 32 (16%) | 120 | 44 |
-| Bytespider | 32 (16%) | 120 | 44 |
-| meta-externalagent | 21 (11%) | 129 | 46 |
-| Amazonbot | 21 (11%) | 127 | 48 |
-| Diffbot | 26 (13%) | 126 | 44 |
-| cohere-ai | 25 (13%) | 126 | 45 |
-| Omgilibot | 26 (13%) | 126 | 44 |
-| OAI-SearchBot (SearchGPT) | 13 (7%) | 137 | 46 |
-| ChatGPT-User | 14 (7%) | 136 | 46 |
-| Claude-SearchBot | 18 (9%) | 133 | 45 |
-| Claude-User | 19 (10%) | 132 | 45 |
-| PerplexityBot | 19 (10%) | 131 | 46 |
-| Perplexity-User | 17 (9%) | 133 | 46 |
-| DuckAssistBot | 17 (9%) | 135 | 44 |
-| YouBot | 21 (11%) | 130 | 45 |
+| GPTBot | 21 (11%) | 125 | 49 |
+| ClaudeBot | 29 (15%) | 119 | 47 |
+| Google-Extended | 20 (10%) | 130 | 45 |
+| Applebot-Extended | 25 (13%) | 125 | 45 |
+| CCBot | 32 (16%) | 118 | 45 |
+| Bytespider | 32 (16%) | 118 | 45 |
+| meta-externalagent | 21 (11%) | 127 | 47 |
+| Amazonbot | 21 (11%) | 125 | 49 |
+| Diffbot | 26 (13%) | 124 | 45 |
+| cohere-ai | 25 (13%) | 124 | 46 |
+| Omgilibot | 26 (13%) | 124 | 45 |
+| OAI-SearchBot (SearchGPT) | 13 (7%) | 135 | 47 |
+| ChatGPT-User | 14 (7%) | 134 | 47 |
+| Claude-SearchBot | 18 (9%) | 131 | 46 |
+| Claude-User | 19 (10%) | 130 | 46 |
+| PerplexityBot | 19 (10%) | 129 | 47 |
+| Perplexity-User | 17 (9%) | 131 | 47 |
+| DuckAssistBot | 17 (9%) | 133 | 45 |
+| YouBot | 21 (11%) | 128 | 46 |
 
 | Domain | Category | GPTBot | ClaudeBot | Google-Extended | Applebot-Extended | CCBot | Bytespider | meta-externalagent | Amazonbot | Diffbot | cohere-ai | Omgilibot | OAI-SearchBot (SearchGPT) | ChatGPT-User | Claude-SearchBot | Claude-User | PerplexityBot | Perplexity-User | DuckAssistBot | YouBot | Issues | Sensitive paths |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---: | ---: |
@@ -153,7 +153,7 @@
 | [Intel (intel.com)](./intel.com/robots.txt) (HTML page) | tech | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | 0 | 0 |
 | [AMD (amd.com)](./amd.com/robots.txt) | tech | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 0 |
 | [Cisco (cisco.com)](./cisco.com/robots.txt) (HTML page) | tech | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | 0 | 0 |
-| [Dell (dell.com)](./dell.com/robots.txt) | tech | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 188 | 22 |
+| [Dell (dell.com)](./dell.com/robots.txt) | tech | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 188 | 15 |
 | [HP (hp.com)](./hp.com/robots.txt) | tech | Open | Open | Open | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Open | Open | Open | Open | Open | Open | Restricted | Restricted | 12 | 0 |
 | [Samsung (samsung.com)](./samsung.com/robots.txt) | tech | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 1 |
 | [Sony (sony.com)](./sony.com/robots.txt) (HTML page) | tech | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | 0 | 0 |
@@ -193,7 +193,6 @@
 | [Cdiscount (cdiscount.com)](./cdiscount.com/robots.txt) | ecommerce | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 14 | 3 |
 | [Fnac (fnac.com)](./fnac.com/robots.txt) (HTML page) | ecommerce | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | 0 | 0 |
 | [Mercado Libre (mercadolibre.com)](./mercadolibre.com/robots.txt) | ecommerce | Blocked | Blocked | Restricted | Restricted | Restricted | Restricted | Restricted | Blocked | Restricted | Restricted | Restricted | Restricted | Blocked | Restricted | Blocked | Blocked | Blocked | Restricted | Restricted | 0 | 0 |
-| [Flipkart (flipkart.com)](./flipkart.com/robots.txt) | ecommerce | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 3 | 1 |
 | [JD.com (jd.com)](./jd.com/robots.txt) | ecommerce | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 0 |
 | [Alibaba (alibaba.com)](./alibaba.com/robots.txt) | ecommerce | Blocked | Restricted | Blocked | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 0 |
 | [Chewy (chewy.com)](./chewy.com/robots.txt) | ecommerce | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Blocked | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 25 | 0 |
@@ -216,7 +215,7 @@
 | [BNP Paribas (bnpparibas.com)](./bnpparibas.com/robots.txt) (HTML page) | finance | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | 0 | 0 |
 | [Deutsche Bank (deutsche-bank.de)](./deutsche-bank.de/robots.txt) | finance | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 1 |
 | [ING (ing.com)](./ing.com/robots.txt) | finance | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 0 |
-| [ABN AMRO (abnamro.nl)](./abnamro.nl/robots.txt) | finance | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 1 | 3 |
+| [ABN AMRO (abnamro.nl)](./abnamro.nl/robots.txt) | finance | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | 1 | 0 |
 | [KBC (kbc.be)](./kbc.be/robots.txt) | finance | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 0 |
 | [Belfius (belfius.be)](./belfius.be/robots.txt) | finance | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 40 | 4 |
 | [UBS (ubs.com)](./ubs.com/robots.txt) (HTML page) | finance | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | 0 | 0 |

@@ -1,5 +1,40 @@
 User-agent: *
+#NewCo launch entries
+Disallow: */learn/lp/
+Disallow: */campaign/lp/
+Disallow: */legal/lp/
+Disallow: */shop/alienware/gaming$
+Disallow: */shop/alienware/gaming/*
+Disallow: */shop/alienware/gaming?r=*
+Disallow: */shop/deals/dc$
+Disallow: */shop/deals/dc
+Disallow: */shop/deals/*dc?appliedRefinements=*
+Disallow: */shop/deals/*dc?appliedrefinements=*
+Disallow: */shop/*/ar/*/appref=*
+Disallow: */sac/*/*/*/appref=*
+Disallow: */shop/dell-parts/partsbytype/*
+Disallow: */shop/dell-parts/ar/*/platform=*
+Disallow: */shop/*/*/apd/*/*/-
 
+#OldCo launch entries
+Disallow: */spd/*
+Disallow: */lp/
+Disallow: */gaming/alienware
+Disallow: */shop/deals
+Disallow: */shop/deals/*/*?appliedRefinements=*
+Disallow: */shop/deals/*/*?appliedrefinements=*
+Disallow: */shop/*/ar/*
+Disallow: */ar/*/*?appliedRefinements=*
+Disallow: */shop/*/sac/*
+Disallow: */sac/*/*/*?appliedRefinements=*
+Disallow: */shop/accessories$
+Disallow: */shop/electronics$
+Disallow: */shop/partsforyourdell$
+Disallow: */shop/partsbytype/*
+Disallow: */shop/pfydresults/*
+Disallow: */shop/*/apd/*
+Disallow: */shop/*/scr/*
+Disallow: */shop/compare?*
 #Temporary launch entries
 Disallow: /csbapi/unified-communication/*
 Disallow: *.less$
@@ -989,45 +1024,6 @@ Disallow: */blog/*/testing/
 Disallow: */blog/*/teammembers/
 Disallow: */blog/*/gobig
 
-#Perspectives
-Disallow: */perspectives/
-Allow: /en-uk/perspectives/
-Allow: /en-au/perspectives/
-Allow: /en-ca/perspectives/
-Allow: /en-hk/perspectives/
-Allow: /en-in/perspectives/
-Allow: /en-ie/perspectives/
-Allow: /en-my/perspectives/
-Allow: /en-nz/perspectives/
-Allow: /en-sg/perspectives/
-Allow: /en-us/perspectives/
-Allow:/fr-ca/perspectives/
-Allow:/zh-cn/perspectives/
-Allow:/ja-jp/perspectives/
-Allow:/de-de/perspectives/
-Allow:/fr-fr/perspectives/
-Allow:/sv-se/perspectives/
-Allow:/es-es/perspectives/
-Allow:/de-ch/perspectives/
-Allow:/fr-ch/perspectives/
-Allow:/pt-br/perspectives/
-Allow:/nl-nl/perspectives/
-Allow:/de-at/perspectives/
-Allow:/nl-be/perspectives/
-Allow:/fr-be/perspectives/
-Allow:/da-dk/perspectives/
-Allow:/it-it/perspectives/
-Allow:/no-no/perspectives/
-Allow:/pl-pl/perspectives/
-Allow:/zh-hk/perspectives/
-Allow:/zh-tw/perspectives/
-Allow:/ko-kr/perspectives/
-Disallow: */perspectives/*.php$
-Disallow: */perspectives/*/configuration-page.htm
-Disallow: */perspectives/*/testing/
-Disallow: */perspectives/*/teammembers/
-Disallow: */perspectives/*/gobig
-
 #Community
 Disallow: /community/en/topics/community-events
 Disallow: /community/en/topics/leaderboard
@@ -1064,7 +1060,6 @@ Allow: /support/*/zh-tw/
 Allow: /support/*/zh-hk/
 Allow: /support/*/en-hk/
 Allow: /zh-cn/dt/
-Allow: /zh-cn/perspectives/
 Allow: /zh-cn/blog/
 Disallow: /zh-cn/dt/*.php$
 Disallow: /zh-cn/dt/*/configuration-page.htm
@@ -1076,33 +1071,12 @@ Disallow: /zh-cn/blog/*/configuration-page.htm
 Disallow: /zh-cn/blog/*/testing/
 Disallow: /zh-cn/blog/*/teammembers/
 Disallow: /zh-cn/blog/*/gobig
-Disallow: /zh-cn/perspectives/*.php$
-Disallow: /zh-cn/perspectives/*/configuration-page.htm
-Disallow: /zh-cn/perspectives/*/testing/
-Disallow: /zh-cn/perspectives/*/teammembers/
-Disallow: /zh-cn/perspectives/*/gobig
 Disallow: /zh-cn/corporate/newsroom-test.htm
 Disallow: /zh-cn/corporate/karen-quintos.htm
 Disallow: /zh-cn/shop//sf/xps-2-in-1
 Allow: /community/zh/
 Disallow: /support/kbdoc/*/000287599
-Allow: /cn-ccp-pages-sitemap.xml.gz
-Allow: /cn-encoded-pages-sitemap.xml.gz
-Allow: /cn-learn-pages-sitemap.xml.gz
-Allow: /cn-pd-pages-sitemap.xml.gz
-Allow: /cn-snp-pages-sitemap.xml.gz
-Allow: /cn-sr-sitemap.xml
-Allow: /cn-sr-sitemap.xml.gz
-Allow: /cn-support-pages-sitemap.xml.gz
-Allow: /cn-video-sitemap.xml
-Allow: /cn-video-sitemap.xml.gz
-Allow: /image-cn-apd-sitemap.xml.gz
-Allow: /image-cn-sc-sitemap.xml.gz
-Allow: /image-cn-sf-sitemap.xml.gz
-Allow: /image-cn-spd-sitemap.xml.gz
-Allow: /index-cn-sitemap.xml.gz
-Allow: /mpn-cn-sitemap.xml.gz
-Allow: /partner-cn-sitemap.xml.gz
+
 User-agent: Sogou web spider
 Disallow: /
 Allow: /zh-cn
@@ -1125,7 +1099,6 @@ Allow: /support/*/zh-hk/
 Allow: /support/*/en-hk/
 Disallow: /zh-cn/outlet/*?
 Allow: /zh-cn/dt/
-Allow: /zh-cn/perspectives/
 Allow: /zh-cn/blog/
 Disallow: /zh-cn/dt/*.php$
 Disallow: /zh-cn/dt/*/configuration-page.htm
@@ -1137,33 +1110,12 @@ Disallow: /zh-cn/blog/*/configuration-page.htm
 Disallow: /zh-cn/blog/*/testing/
 Disallow: /zh-cn/blog/*/teammembers/
 Disallow: /zh-cn/blog/*/gobig
-Disallow: /zh-cn/perspectives/*.php$
-Disallow: /zh-cn/perspectives/*/configuration-page.htm
-Disallow: /zh-cn/perspectives/*/testing/
-Disallow: /zh-cn/perspectives/*/teammembers/
-Disallow: /zh-cn/perspectives/*/gobig
 Disallow: /zh-cn/corporate/newsroom-test.htm
 Disallow: /zh-cn/corporate/karen-quintos.htm
 Disallow: /zh-cn/shop//sf/xps-2-in-1
 Allow: /community/zh/
 Disallow: /support/kbdoc/*/000287599
-Allow: /cn-ccp-pages-sitemap.xml.gz
-Allow: /cn-encoded-pages-sitemap.xml.gz
-Allow: /cn-learn-pages-sitemap.xml.gz
-Allow: /cn-pd-pages-sitemap.xml.gz
-Allow: /cn-snp-pages-sitemap.xml.gz
-Allow: /cn-sr-sitemap.xml
-Allow: /cn-sr-sitemap.xml.gz
-Allow: /cn-support-pages-sitemap.xml.gz
-Allow: /cn-video-sitemap.xml
-Allow: /cn-video-sitemap.xml.gz
-Allow: /image-cn-apd-sitemap.xml.gz
-Allow: /image-cn-sc-sitemap.xml.gz
-Allow: /image-cn-sf-sitemap.xml.gz
-Allow: /image-cn-spd-sitemap.xml.gz
-Allow: /index-cn-sitemap.xml.gz
-Allow: /mpn-cn-sitemap.xml.gz
-Allow: /partner-cn-sitemap.xml.gz
+
 User-agent: Sogou inst spider
 Disallow: /
 Allow: /zh-cn
@@ -1186,7 +1138,6 @@ Allow: /support/*/zh-hk/
 Allow: /support/*/en-hk/
 Disallow: /zh-cn/outlet/*?
 Allow: /zh-cn/dt/
-Allow: /zh-cn/perspectives/
 Allow: /zh-cn/blog/
 Disallow: /zh-cn/dt/*.php$
 Disallow: /zh-cn/dt/*/configuration-page.htm
@@ -1198,33 +1149,12 @@ Disallow: /zh-cn/blog/*/configuration-page.htm
 Disallow: /zh-cn/blog/*/testing/
 Disallow: /zh-cn/blog/*/teammembers/
 Disallow: /zh-cn/blog/*/gobig
-Disallow: /zh-cn/perspectives/*.php$
-Disallow: /zh-cn/perspectives/*/configuration-page.htm
-Disallow: /zh-cn/perspectives/*/testing/
-Disallow: /zh-cn/perspectives/*/teammembers/
-Disallow: /zh-cn/perspectives/*/gobig
 Disallow: /zh-cn/corporate/newsroom-test.htm
 Disallow: /zh-cn/corporate/karen-quintos.htm
 Disallow: /zh-cn/shop//sf/xps-2-in-1
 Allow: /community/zh/
 Disallow: /support/kbdoc/*/000287599
-Allow: /cn-ccp-pages-sitemap.xml.gz
-Allow: /cn-encoded-pages-sitemap.xml.gz
-Allow: /cn-learn-pages-sitemap.xml.gz
-Allow: /cn-pd-pages-sitemap.xml.gz
-Allow: /cn-snp-pages-sitemap.xml.gz
-Allow: /cn-sr-sitemap.xml
-Allow: /cn-sr-sitemap.xml.gz
-Allow: /cn-support-pages-sitemap.xml.gz
-Allow: /cn-video-sitemap.xml
-Allow: /cn-video-sitemap.xml.gz
-Allow: /image-cn-apd-sitemap.xml.gz
-Allow: /image-cn-sc-sitemap.xml.gz
-Allow: /image-cn-sf-sitemap.xml.gz
-Allow: /image-cn-spd-sitemap.xml.gz
-Allow: /index-cn-sitemap.xml.gz
-Allow: /mpn-cn-sitemap.xml.gz
-Allow: /partner-cn-sitemap.xml.gz
+
 User-agent: Sogou spider2
 Disallow: /
 Allow: /zh-cn
@@ -1247,7 +1177,6 @@ Allow: /support/*/zh-hk/
 Allow: /support/*/en-hk/
 Disallow: /zh-cn/outlet/*?
 Allow: /zh-cn/dt/
-Allow: /zh-cn/perspectives/
 Allow: /zh-cn/blog/
 Disallow: /zh-cn/dt/*.php$
 Disallow: /zh-cn/dt/*/configuration-page.htm
@@ -1259,33 +1188,12 @@ Disallow: /zh-cn/blog/*/configuration-page.htm
 Disallow: /zh-cn/blog/*/testing/
 Disallow: /zh-cn/blog/*/teammembers/
 Disallow: /zh-cn/blog/*/gobig
-Disallow: /zh-cn/perspectives/*.php$
-Disallow: /zh-cn/perspectives/*/configuration-page.htm
-Disallow: /zh-cn/perspectives/*/testing/
-Disallow: /zh-cn/perspectives/*/teammembers/
-Disallow: /zh-cn/perspectives/*/gobig
 Disallow: /zh-cn/corporate/newsroom-test.htm
 Disallow: /zh-cn/corporate/karen-quintos.htm
 Disallow: /zh-cn/shop//sf/xps-2-in-1
 Allow: /community/zh/
 Disallow: /support/kbdoc/*/000287599
-Allow: /cn-ccp-pages-sitemap.xml.gz
-Allow: /cn-encoded-pages-sitemap.xml.gz
-Allow: /cn-learn-pages-sitemap.xml.gz
-Allow: /cn-pd-pages-sitemap.xml.gz
-Allow: /cn-snp-pages-sitemap.xml.gz
-Allow: /cn-sr-sitemap.xml
-Allow: /cn-sr-sitemap.xml.gz
-Allow: /cn-support-pages-sitemap.xml.gz
-Allow: /cn-video-sitemap.xml
-Allow: /cn-video-sitemap.xml.gz
-Allow: /image-cn-apd-sitemap.xml.gz
-Allow: /image-cn-sc-sitemap.xml.gz
-Allow: /image-cn-sf-sitemap.xml.gz
-Allow: /image-cn-spd-sitemap.xml.gz
-Allow: /index-cn-sitemap.xml.gz
-Allow: /mpn-cn-sitemap.xml.gz
-Allow: /partner-cn-sitemap.xml.gz
+
 User-agent: HaoSouSpider
 Disallow: /
 Allow: /zh-cn
@@ -1308,7 +1216,6 @@ Allow: /support/*/zh-hk/
 Allow: /support/*/en-hk/
 Disallow: /zh-cn/outlet/*?
 Allow: /zh-cn/dt/
-Allow: /zh-cn/perspectives/
 Allow: /zh-cn/blog/
 Disallow: /zh-cn/dt/*.php$
 Disallow: /zh-cn/dt/*/configuration-page.htm
@@ -1320,33 +1227,11 @@ Disallow: /zh-cn/blog/*/configuration-page.htm
 Disallow: /zh-cn/blog/*/testing/
 Disallow: /zh-cn/blog/*/teammembers/
 Disallow: /zh-cn/blog/*/gobig
-Disallow: /zh-cn/perspectives/*.php$
-Disallow: /zh-cn/perspectives/*/configuration-page.htm
-Disallow: /zh-cn/perspectives/*/testing/
-Disallow: /zh-cn/perspectives/*/teammembers/
-Disallow: /zh-cn/perspectives/*/gobig
 Disallow: /zh-cn/corporate/newsroom-test.htm
 Disallow: /zh-cn/corporate/karen-quintos.htm
 Disallow: /zh-cn/shop//sf/xps-2-in-1
 Allow: /community/zh/
 Disallow: /support/kbdoc/*/000287599
-Allow: /cn-ccp-pages-sitemap.xml.gz
-Allow: /cn-encoded-pages-sitemap.xml.gz
-Allow: /cn-learn-pages-sitemap.xml.gz
-Allow: /cn-pd-pages-sitemap.xml.gz
-Allow: /cn-snp-pages-sitemap.xml.gz
-Allow: /cn-sr-sitemap.xml
-Allow: /cn-sr-sitemap.xml.gz
-Allow: /cn-support-pages-sitemap.xml.gz
-Allow: /cn-video-sitemap.xml
-Allow: /cn-video-sitemap.xml.gz
-Allow: /image-cn-apd-sitemap.xml.gz
-Allow: /image-cn-sc-sitemap.xml.gz
-Allow: /image-cn-sf-sitemap.xml.gz
-Allow: /image-cn-spd-sitemap.xml.gz
-Allow: /index-cn-sitemap.xml.gz
-Allow: /mpn-cn-sitemap.xml.gz
-Allow: /partner-cn-sitemap.xml.gz
 User-agent: Bytespider
 Disallow: /community/*=es
 Disallow: /community/*=de
@@ -1386,7 +1271,6 @@ Allow: /support/*/zh-hk/
 Allow: /support/*/en-hk/
 Disallow: /zh-cn/outlet/*?
 Allow: /zh-cn/dt/
-Allow: /zh-cn/perspectives/
 Allow: /zh-cn/blog/
 Disallow: /zh-cn/dt/*.php$
 Disallow: /zh-cn/dt/*/configuration-page.htm
@@ -1398,33 +1282,11 @@ Disallow: /zh-cn/blog/*/configuration-page.htm
 Disallow: /zh-cn/blog/*/testing/
 Disallow: /zh-cn/blog/*/teammembers/
 Disallow: /zh-cn/blog/*/gobig
-Disallow: /zh-cn/perspectives/*.php$
-Disallow: /zh-cn/perspectives/*/configuration-page.htm
-Disallow: /zh-cn/perspectives/*/testing/
-Disallow: /zh-cn/perspectives/*/teammembers/
-Disallow: /zh-cn/perspectives/*/gobig
 Disallow: /zh-cn/corporate/newsroom-test.htm
 Disallow: /zh-cn/corporate/karen-quintos.htm
 Disallow: /zh-cn/shop//sf/xps-2-in-1
 Allow: /community/zh/
 Disallow: /support/kbdoc/*/000287599
-Allow: /cn-ccp-pages-sitemap.xml.gz
-Allow: /cn-encoded-pages-sitemap.xml.gz
-Allow: /cn-learn-pages-sitemap.xml.gz
-Allow: /cn-pd-pages-sitemap.xml.gz
-Allow: /cn-snp-pages-sitemap.xml.gz
-Allow: /cn-sr-sitemap.xml
-Allow: /cn-sr-sitemap.xml.gz
-Allow: /cn-support-pages-sitemap.xml.gz
-Allow: /cn-video-sitemap.xml
-Allow: /cn-video-sitemap.xml.gz
-Allow: /image-cn-apd-sitemap.xml.gz
-Allow: /image-cn-sc-sitemap.xml.gz
-Allow: /image-cn-sf-sitemap.xml.gz
-Allow: /image-cn-spd-sitemap.xml.gz
-Allow: /index-cn-sitemap.xml.gz
-Allow: /mpn-cn-sitemap.xml.gz
-Allow: /partner-cn-sitemap.xml.gz
 
 Sitemap: https://www.dell.com/index-sr-sitemap.xml.gz
 Sitemap: https://www.dell.com/index-deals-href-sitemap.xml.gz
@@ -1436,4 +1298,4 @@ Sitemap: https://www.dell.com/index-video-xml-sitemap.xml.gz
 Sitemap: https://www.dell.com/index-downloads-dell-pdfs-sitemap.xml.gz
 Sitemap: https://www.dell.com/index-dt-sitemap.xml.gz
 
-# Last Modified on 2026 Sep 8th, 8:47 AM CST
+# Last Modified on 2026 Sep 18th, 9:00pm CST
