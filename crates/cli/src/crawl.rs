@@ -22,7 +22,7 @@ pub struct CrawlArgs {
     #[arg(short, long)]
     pub input: PathBuf,
     /// Output file (gzip-compressed JSON Lines)
-    #[arg(short, long, default_value = "open-robots.jsonl.gz")]
+    #[arg(short, long, default_value = "susbot-census.jsonl.gz")]
     pub out: PathBuf,
     /// Summary JSON with counts per crawler verdict, platform and status
     #[arg(long)]
