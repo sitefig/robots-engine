@@ -1,4 +1,4 @@
-# susbot
+# @sitefig/susbot
 
 The npm package of [sus.bot](https://sus.bot/), a robots.txt checker. It tells you which search engines and AI crawlers a site lets in, what is wrong with the file, and which paths it gives away.
 
@@ -8,9 +8,11 @@ It contains two things, both built from the Rust engine behind sus.bot:
 - a JavaScript API over the same engine compiled to WebAssembly, for Node and browsers.
 
 ```
-npm install susbot          # the API, plus the command in node_modules/.bin
+npm install @sitefig/susbot   # the API, plus the command in node_modules/.bin
 npx susbot https://example.com
 ```
+
+The package is `@sitefig/susbot` because npm holds the bare name `susbot` too close to older packages; the command it installs is `susbot`.
 
 ## Command line
 
@@ -26,7 +28,7 @@ It is the same program as `cargo install susbot` and `pip install susbot`. Exit 
 ## JavaScript
 
 ```js
-import { Analysis, diff } from 'susbot';
+import { Analysis, diff } from '@sitefig/susbot';
 
 const text = await (await fetch('https://example.com/robots.txt')).text();
 const a = new Analysis(text, { siteUrl: 'https://example.com/' });

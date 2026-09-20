@@ -1,5 +1,5 @@
 {
-  "name": "susbot",
+  "name": "@sitefig/susbot",
   "version": "2.0.1",
   "description": "robots.txt checker: which search engines and AI crawlers a site lets in, lint findings, exposed paths and diffs (sus.bot). WebAssembly engine for Node and browsers, plus the susbot command.",
   "keywords": ["robots.txt", "robots", "crawler", "seo", "ai", "gptbot", "rfc9309", "audit", "webassembly", "cli"],
@@ -9,6 +9,9 @@
     "type": "git",
     "url": "git+https://github.com/sitefig/robots.git",
     "directory": "npm/susbot"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "PolyForm-Noncommercial-1.0.0",
   "author": "Sitefig (https://sitefig.eu/)",

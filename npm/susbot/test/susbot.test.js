@@ -15,6 +15,7 @@ const pkg = JSON.parse(readFileSync(new URL('../package.json', import.meta.url),
 
 test('version matches the package', () => {
   assert.equal(susbot.version(), pkg.version);
+  assert.equal(pkg.name, '@sitefig/susbot');
 });
 
 test('access', () => {
