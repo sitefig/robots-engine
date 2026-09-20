@@ -20,6 +20,8 @@ println!("{}", analysis.report_json_pretty());
 
 Source, schema and configuration reference: [github.com/sitefig/robots](https://github.com/sitefig/robots).
 
+- The same tool elsewhere: [susbot on PyPI](https://pypi.org/project/susbot/), [@sitefig/susbot on npm](https://www.npmjs.com/package/@sitefig/susbot)
+
 ## Licence
 
 [PolyForm Noncommercial 1.0.0](LICENSE.md): free for noncommercial use. Commercial use needs a licence from [Sitefig](https://sitefig.eu/).

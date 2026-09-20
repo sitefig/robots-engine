@@ -43,6 +43,7 @@ susbot.diff(old, a)                      # crawler verdict flips, new sensitive 
 ## Links
 
 - Website: [sus.bot](https://sus.bot/)
+- The same tool elsewhere: [susbot on crates.io](https://crates.io/crates/susbot), [@sitefig/susbot on npm](https://www.npmjs.com/package/@sitefig/susbot)
 - Source, GitHub Action and issues: [github.com/sitefig/robots](https://github.com/sitefig/robots)
 
 ## Licence

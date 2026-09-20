@@ -9,6 +9,8 @@ susbot https://example.com
 
 This crate installs the same `susbot` program as [susbot-cli](https://crates.io/crates/susbot-cli), where the usage is documented. Source and GitHub Action: [github.com/sitefig/robots](https://github.com/sitefig/robots).
 
+- The same tool elsewhere: [susbot on PyPI](https://pypi.org/project/susbot/), [@sitefig/susbot on npm](https://www.npmjs.com/package/@sitefig/susbot)
+
 ## Licence
 
 [PolyForm Noncommercial 1.0.0](LICENSE.md): free for noncommercial use. Commercial use needs a licence from [Sitefig](https://sitefig.eu/).

@@ -40,6 +40,7 @@ Reports are in English by default. For another EU language, pass `--lang` with `
 - Website: [sus.bot](https://sus.bot/)
 - GitHub Action and source: [github.com/sitefig/robots](https://github.com/sitefig/robots)
 - The engine on its own: [susbot-core](https://crates.io/crates/susbot-core)
+- The same tool elsewhere: [susbot on PyPI](https://pypi.org/project/susbot/), [@sitefig/susbot on npm](https://www.npmjs.com/package/@sitefig/susbot)
 
 ## Licence
 
