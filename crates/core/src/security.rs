@@ -22,16 +22,22 @@ pub fn severity_rank(s: &str) -> u8 {
     match s {
         "high" => 0,
         "medium" => 1,
-        _ => 2,
+        "low" => 2,
+        _ => 3,
     }
 }
 
 /// One finding per Disallow rule that matches a signature, highest severity
 /// first, then by line. The highest-severity signature wins per rule.
-pub fn find_sensitive_paths(model: &Model, engine: &Engine, locale: &Locale) -> Vec<Finding> {
+///
+/// `platform` is the detected platform (medium or high confidence). A path
+/// that belongs to that platform's stock robots.txt is kept, but as a note:
+/// every site on the platform publishes it, so it discloses nothing.
+pub fn find_sensitive_paths(model: &Model, engine: &Engine, locale: &Locale, platform: Option<&str>) -> Vec<Finding> {
     if !engine.config.checks.security {
         return Vec::new();
     }
+    let defaults = platform.and_then(|p| engine.cms_defaults(p));
     let mut findings = Vec::new();
     for group in &model.groups {
         let agents: Vec<String> = group.agents.iter().map(|a| a.raw.clone()).collect();
@@ -52,7 +58,13 @@ pub fn find_sensitive_paths(model: &Model, engine: &Engine, locale: &Locale) -> 
                 .filter(|s| s.regexes.iter().any(|re| re.is_match(&p).unwrap_or(false)))
                 .min_by_key(|s| severity_rank(&s.severity));
             if let Some(s) = best {
-                findings.push(Finding { path: rule.path.clone(), line: rule.line, agents: agents.clone(), category: s.category.clone(), severity: s.severity.clone(), reason: locale.s(&s.reason) });
+                let stock = defaults.map(|d| d.contains(&p)).unwrap_or(false);
+                let (severity, reason) = if stock {
+                    ("info".to_string(), locale.t("security.reason.platformDefault", &crate::params! {"platform" => platform.unwrap_or("")}))
+                } else {
+                    (s.severity.clone(), locale.s(&s.reason))
+                };
+                findings.push(Finding { path: rule.path.clone(), line: rule.line, agents: agents.clone(), category: s.category.clone(), severity, reason });
             }
         }
     }

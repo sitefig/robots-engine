@@ -108,6 +108,9 @@ pub fn tab_rows(r: &Report, engine: &Engine, l: &Locale) -> Tabs {
     for d in &rec.stack.detections {
         rows.push(vec![cat("platform"), d.name.clone(), l.t("csv.detail.confidence", &params! {"kind" => l.s(&format!("recon.cms.kind.{}", d.kind)), "confidence" => l.s(&format!("enum.confidence.{}", d.confidence))}), opt(d.evidence.first().map(|e| e.line)), join(&d.evidence.iter().map(|e| e.text.clone()).collect::<Vec<_>>())]);
     }
+    for g in &rec.generators {
+        rows.push(vec![cat("generator"), g.name.clone(), l.s("recon.generators.note"), g.line.to_string(), g.comment.clone()]);
+    }
     for t in &rec.tech {
         rows.push(vec![cat("tech"), t.clone(), l.s("csv.detail.fromExtensions"), String::new(), String::new()]);
     }

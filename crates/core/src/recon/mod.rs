@@ -8,6 +8,7 @@ pub mod cms;
 pub mod comments;
 pub mod data;
 pub mod extensions;
+pub mod generators;
 pub mod hosts;
 
 use crate::config::Engine;
@@ -18,6 +19,7 @@ use serde::Serialize;
 #[derive(Debug, Clone, Serialize, Default)]
 pub struct Recon {
     pub stack: cms::Stack,
+    pub generators: Vec<generators::Generator>,
     pub tech: Vec<String>,
     pub cloud: Vec<cloud::CloudAsset>,
     pub hosts: hosts::Hosts,
@@ -30,6 +32,7 @@ pub struct Recon {
 #[derive(Debug, Clone, Serialize)]
 pub struct Counts {
     pub stack: usize,
+    pub generators: usize,
     pub cloud: usize,
     pub hosts: usize,
     pub api: usize,
@@ -40,10 +43,10 @@ pub struct Counts {
 
 impl Counts {
     pub fn total(&self) -> usize {
-        self.stack + self.cloud + self.hosts + self.api + self.data + self.extensions + self.comments
+        self.stack + self.generators + self.cloud + self.hosts + self.api + self.data + self.extensions + self.comments
     }
     pub fn categories(&self) -> usize {
-        [self.stack, self.cloud, self.hosts, self.api, self.data, self.extensions, self.comments].iter().filter(|c| **c > 0).count()
+        [self.stack, self.generators, self.cloud, self.hosts, self.api, self.data, self.extensions, self.comments].iter().filter(|c| **c > 0).count()
     }
 }
 
@@ -55,6 +58,7 @@ pub fn recon(model: &Model, site_url: Option<&str>, engine: &Engine, locale: &Lo
     hosts.hosts.retain(|h| url::Url::parse(&format!("https://{}/", h.host)).ok().and_then(|u| cloud::classify_host(&u, engine)).is_none());
     Recon {
         stack: if c.cms { cms::detect_stack(model, engine) } else { cms::Stack::default() },
+        generators: if c.generators { generators::find_generators(model, engine) } else { Vec::new() },
         cloud: if c.cloud { cloud::find_cloud_assets(model, engine, locale) } else { Vec::new() },
         hosts,
         api: if c.api { api::find_api_endpoints(model, engine) } else { Vec::new() },
@@ -68,6 +72,7 @@ pub fn recon(model: &Model, site_url: Option<&str>, engine: &Engine, locale: &Lo
 pub fn counts(r: &Recon) -> Counts {
     Counts {
         stack: r.stack.detections.len(),
+        generators: r.generators.len(),
         cloud: r.cloud.len(),
         hosts: r.hosts.hosts.len() + r.hosts.paths.len(),
         api: r.api.len(),

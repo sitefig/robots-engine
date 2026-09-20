@@ -144,6 +144,8 @@ pub enum WarningKind {
     Fetch,
     #[serde(rename = "lint")]
     Lint,
+    #[serde(rename = "security")]
+    Security,
 }
 
 impl WarningKind {
@@ -154,6 +156,7 @@ impl WarningKind {
             WarningKind::Sitemap => "sitemap",
             WarningKind::Fetch => "fetch",
             WarningKind::Lint => "lint",
+            WarningKind::Security => "security",
         }
     }
 }

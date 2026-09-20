@@ -12,7 +12,7 @@ use crate::recon::{self, Recon};
 use crate::security::{find_sensitive_paths, Finding};
 use serde::Serialize;
 
-pub const SCHEMA_VERSION: &str = "1.2.0";
+pub const SCHEMA_VERSION: &str = "1.3.0";
 
 #[derive(Debug, Clone, Serialize)]
 pub struct ToolInfo {
@@ -197,7 +197,10 @@ pub struct ReportInput<'a> {
 pub fn build_report(input: ReportInput, engine: &Engine, locale: &Locale) -> Report {
     let model = input.model;
     let rec = recon::recon(model, input.site_url, engine, locale, input.today);
-    let security = find_sensitive_paths(model, engine, locale);
+    // The platform, when it is certain enough, tells the security check which
+    // paths are the platform's own boilerplate.
+    let platform = rec.stack.primary.as_ref().filter(|p| p.confidence != "low").map(|p| p.name.as_str());
+    let security = find_sensitive_paths(model, engine, locale, platform);
     let ai = ai_status(model, engine, locale);
     let notes = |line: u32| -> Vec<String> { model.warnings.iter().filter(|w| w.line == Some(line)).map(|w| w.message.clone()).collect() };
 

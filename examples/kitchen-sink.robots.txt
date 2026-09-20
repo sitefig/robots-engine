@@ -108,3 +108,31 @@ Sitemap: https://company.blob.core.windows.net/public/sitemap.xml
 Sitemap: https://www.example.com/sitemap.xml
 Sitemap: https://www.example.com/sitemap.xml
 Sitemap: /relative-sitemap.xml
+
+# ---------------------------------------------------------------- generated tail
+# Start Yoast block
+# The lines below are what plugins, themes and copy-paste leave behind.
+User-agent: *
+Disallow: /*?
+Disallow: /js/
+Disallow: /images/
+Disallow: /page#section
+Disallow: /my folder/
+Disallow: /\.git
+Disallow: /uber-uns/ünd-mehr/
+Disallow: *
+Disallow: /changelog.txt
+Disallow: /cron.php
+Disallow: /cgi-bin/
+Disallow: /xmlrpc.php
+Disallow: /vendor/
+Crawl-delay: 120
+LLM-Policy: https://www.example.com/llm-policy.json
+Content-Signal: search=yes, ai-train=no
+Noarchive: /
+Request-rate: 1/10s
+https://www.example.com/sitemap-bare.xml
+Sitemap: http://www.DomainNamehere.com/sitemap.aspx
+# Disallow: /retired-section/
+# END YOAST BLOCKDisallow: */cache/ionos-performance/
+# *** Total size saved: 12% by WP Super Cache

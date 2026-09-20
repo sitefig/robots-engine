@@ -127,3 +127,69 @@ fn rule_overrides_and_disabled_checks() {
     assert!(!w.iter().any(|x| x.id == "sitemap.protocolMismatch"));
     assert_eq!(w.iter().find(|x| x.id == "seo.trailingSlash").unwrap().level, Level::Info);
 }
+
+#[test]
+fn what_the_star_group_blocks_for_everyone() {
+    let e = engine();
+    let ids = |text: &str| run_checks(&model(text), None, &e, &en()).into_iter().map(|w| w.id).collect::<Vec<_>>();
+    assert!(ids("User-agent: *\nDisallow: /*?\n").contains(&"seo.queryStringBlock".to_string()));
+    assert!(ids("User-agent: *\nDisallow: /js/\n").contains(&"seo.assetBlock".to_string()));
+    assert!(ids("User-agent: *\nDisallow: /*.css\n").contains(&"seo.cssJsBlock".to_string()));
+    assert!(ids("User-agent: *\nDisallow: /images/\n").contains(&"seo.imageBlock".to_string()));
+    // A rule aimed at one named crawler is a choice, not a trap.
+    assert!(!ids("User-agent: AhrefsBot\nDisallow: /*?\n").contains(&"seo.queryStringBlock".to_string()));
+    assert!(!ids("User-agent: *\nAllow: /images/\n").contains(&"seo.imageBlock".to_string()));
+}
+
+#[test]
+fn the_trailing_slash_trap_is_a_warning_only_with_siblings() {
+    let e = engine();
+    let level = |text: &str| run_checks(&model(text), None, &e, &en()).into_iter().find(|w| w.id == "seo.trailingSlash").map(|w| w.level);
+    // /shop and /shop-old in one file: the prefix really does catch siblings.
+    assert_eq!(level("User-agent: *\nDisallow: /shop\nDisallow: /shop-old\n"), Some(Level::Warning));
+    // On its own it is how most platforms write a directory rule.
+    assert_eq!(level("User-agent: *\nDisallow: /shop\n"), Some(Level::Info));
+}
+
+#[test]
+fn a_legacy_bad_bot_list_is_reported_once() {
+    let e = engine();
+    let names = ["WebCopier", "HTTrack", "EmailSiphon", "WebZIP", "Teleport", "TeleportPro", "Zeus", "WebStripper", "SiteSnagger", "Offline Explorer", "NetAnts"];
+    let text: String = names.iter().map(|n| format!("User-agent: {n}\nDisallow: /\n")).collect();
+    let w = run_checks(&model(&text), None, &e, &en());
+    let hits: Vec<&susbot_core::model::Warning> = w.iter().filter(|x| x.id == "lint.legacyBadBots").collect();
+    assert_eq!(hits.len(), 1);
+    assert!(hits[0].message.contains("11"));
+    // Blocking one or two named tools is not a copied block list.
+    let few = run_checks(&model("User-agent: HTTrack\nDisallow: /\n"), None, &e, &en());
+    assert!(!few.iter().any(|x| x.id == "lint.legacyBadBots"));
+}
+
+#[test]
+fn how_the_file_was_served() {
+    use susbot_core::fetch::{fetch_warnings, FetchInfo};
+    let base = |status: u16, content_type: &str, text: &str| FetchInfo {
+        source: "cli".into(),
+        robots_url: "https://example.com/robots.txt".into(),
+        final_url: "https://example.com/robots.txt".into(),
+        status,
+        status_text: None,
+        content_type: (!content_type.is_empty()).then(|| content_type.to_string()),
+        bytes: text.len(),
+        truncated: false,
+        redirects: vec![],
+        redirect_limit: false,
+        text: text.into(),
+    };
+    let ids = |f: FetchInfo| fetch_warnings(&f, &en()).into_iter().map(|w| w.id).collect::<Vec<_>>();
+    assert!(ids(base(503, "text/plain", "")).contains(&"fetch.warn.serverError".to_string()));
+    assert!(ids(base(429, "text/plain", "")).contains(&"fetch.warn.rateLimited".to_string()));
+    assert!(ids(base(403, "text/plain", "")).contains(&"fetch.warn.forbidden".to_string()));
+    assert!(ids(base(200, "text/html", "User-agent: *\n")).contains(&"fetch.warn.contentType".to_string()));
+    assert!(ids(base(200, "", "User-agent: *\n")).contains(&"fetch.warn.contentTypeMissing".to_string()));
+    assert!(ids(base(200, "text/html", "<!DOCTYPE html>\n<html><body>Not found</body></html>")).contains(&"fetch.warn.htmlBody".to_string()));
+    // A file served correctly says nothing.
+    assert_eq!(ids(base(200, "text/plain; charset=utf-8", "User-agent: *\nDisallow: /a\n")), Vec::<String>::new());
+    // A status finding still appears when the body is unusable.
+    assert!(ids(base(500, "text/html", "<html>error</html>")).contains(&"fetch.warn.serverError".to_string()));
+}

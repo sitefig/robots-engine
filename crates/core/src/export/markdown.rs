@@ -152,6 +152,10 @@ impl<'a> Md<'a> {
             items.push(self.l.t("md.recon.platform", &params! {"name" => p.name, "confidence" => self.l.s(&format!("enum.confidence.{}", p.confidence))}));
         }
         let primary_name = rec.stack.primary.as_ref().map(|p| p.name.as_str());
+        if !rec.generators.is_empty() {
+            let names: Vec<String> = rec.generators.iter().map(|g| g.name.clone()).collect();
+            items.push(self.l.t("md.recon.generators", &params! {"list" => list(names)}));
+        }
         let others: Vec<String> = rec.stack.detections.iter().filter(|d| Some(d.name.as_str()) != primary_name).map(|d| format!("{} ({})", d.name, self.l.s(&format!("recon.cms.kind.{}", d.kind)))).collect();
         if !others.is_empty() {
             items.push(self.l.t("md.recon.also", &params! {"list" => list(others)}));

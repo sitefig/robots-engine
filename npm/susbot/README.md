@@ -23,7 +23,7 @@ npx susbot diff old.txt new.txt                    # what changed, crawler by cr
 npx susbot --help
 ```
 
-It is the same program as `cargo install susbot` and `pip install susbot`. Exit codes: 0 on success, 1 when a `--fail-on` or `--fail-on-security` threshold is met, 2 on errors. npm installs the binary for your platform as an optional dependency (`susbot-linux-x64`, `susbot-darwin-arm64` and so on); installs with `--omit=optional` get the API only.
+It is the same program as `cargo install susbot` and `pip install susbot`. Exit codes: 0 on success, 1 when a `--fail-on` or `--fail-on-security` threshold is met, 2 on errors. npm installs the binary for your platform as an optional dependency (`@sitefig/susbot-linux-x64`, `@sitefig/susbot-darwin-arm64` and so on); installs with `--omit=optional` get the API only.
 
 ## JavaScript
 

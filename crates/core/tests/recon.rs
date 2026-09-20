@@ -150,3 +150,17 @@ fn aggregator_and_counts() {
     let r = recon(&m, Some(SITE), &off, &en(), None);
     assert!(r.stack.detections.is_empty() && r.comments.is_empty() && r.cloud.len() == 1);
 }
+
+#[test]
+fn the_tool_that_wrote_the_file() {
+    let e = engine();
+    let m = model("# Start Yoast block\nUser-agent: *\nDisallow: /a\n# End Yoast block\n");
+    let r = susbot_core::recon::generators::find_generators(&m, &e);
+    assert_eq!(r.len(), 1);
+    assert_eq!(r[0].name, "Yoast SEO");
+    assert_eq!(r[0].line, 1);
+    // Each tool is named once, however many comments it leaves.
+    let shopify = model("# we use Shopify as our ecommerce platform\nUser-agent: *\nDisallow: /cart\n# we use Shopify as our ecommerce platform\n");
+    assert_eq!(susbot_core::recon::generators::find_generators(&shopify, &e).len(), 1);
+    assert!(susbot_core::recon::generators::find_generators(&model("User-agent: *\nDisallow: /a\n"), &e).is_empty());
+}

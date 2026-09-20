@@ -12,7 +12,11 @@ use crate::url_util::{root_domain, strip_www};
 use url::Url;
 
 /// "Disallow: /shop" is a prefix, so it also hits /shopping and /shop-locator.
+/// A warning when the file itself shows the prefix has siblings (another rule
+/// continues the same path), a note otherwise: most CMS defaults write their
+/// paths without the slash and mean exactly that one directory.
 pub fn trailing_slash_traps(model: &Model, w: &mut Warner) {
+    let all: Vec<&Rule> = model.groups.iter().flat_map(|g| g.rules.iter()).collect();
     for group in &model.groups {
         for rule in &group.rules {
             let p = &rule.path;
@@ -23,8 +27,46 @@ pub fn trailing_slash_traps(model: &Model, w: &mut Warner) {
             if last.is_empty() || last.contains('.') {
                 continue;
             }
+            let sibling = all.iter().any(|r| {
+                let q = &r.path;
+                q.len() > p.len() && q.starts_with(p.as_str()) && !q[p.len()..].starts_with('/')
+            });
+            let level = if sibling { Level::Warning } else { Level::Info };
             let variant = if rule.rule_type == RuleType::Allow { "allow" } else { "disallow" };
-            w.push_variant(Level::Warning, Some(rule.line), "seo.trailingSlash", &params! {"path" => p}, variant);
+            w.push_variant(level, Some(rule.line), "seo.trailingSlash", &params! {"path" => p}, variant);
+        }
+    }
+}
+
+/// Rules of every group that the `*` token is in: what a crawler without its
+/// own group has to follow.
+fn star_rules(model: &Model) -> Vec<&Rule> {
+    model.groups.iter().filter(|g| g.agents.iter().any(|a| a.token == "*")).flat_map(|g| g.rules.iter()).filter(|r| r.rule_type == RuleType::Disallow && !r.path.is_empty()).collect()
+}
+
+/// What the `*` group blocks for everyone: query strings, assets, images.
+/// Only the `*` group, because a rule aimed at one named crawler is a choice.
+pub fn broad_blocks(model: &Model, w: &mut Warner) {
+    const QUERY: [&str; 6] = ["/*?", "/*?*", "/?*", "*?", "*?*", "/*?$"];
+    const ASSET_DIRS: [&str; 4] = ["/js/", "/css/", "/js", "/css"];
+    const IMAGE_DIRS: [&str; 6] = ["/images/", "/images", "/img/", "/image/", "/wp-content/uploads/", "/uploads/"];
+    const IMAGE_FILES: [&str; 9] = [".jpg$", ".jpeg$", ".png$", ".gif$", ".webp$", "*.jpg", "*.png", "*.jpeg", "*.gif"];
+    for rule in star_rules(model) {
+        let p = rule.path.to_lowercase();
+        if QUERY.contains(&p.as_str()) {
+            w.push(Level::Warning, Some(rule.line), "seo.queryStringBlock", &params! {"path" => rule.path});
+            continue;
+        }
+        if ASSET_DIRS.contains(&p.as_str()) {
+            w.push(Level::Warning, Some(rule.line), "seo.assetBlock", &params! {"path" => rule.path});
+            continue;
+        }
+        if p.ends_with(".css") || p.ends_with(".js") || p.ends_with(".css$") || p.ends_with(".js$") {
+            w.push(Level::Warning, Some(rule.line), "seo.cssJsBlock", &params! {"path" => rule.path});
+            continue;
+        }
+        if IMAGE_DIRS.contains(&p.as_str()) || IMAGE_FILES.iter().any(|s| p.ends_with(s)) {
+            w.push(Level::Info, Some(rule.line), "seo.imageBlock", &params! {"path" => rule.path});
         }
     }
 }
@@ -142,7 +184,34 @@ pub fn seo_traps(model: &Model, locale: &Locale) -> Vec<Warning> {
     trailing_slash_traps(model, &mut w);
     self_blocks(model, &mut w);
     case_notes(model, &mut w);
+    broad_blocks(model, &mut w);
     shadowed_rules(model, &mut w);
+    w.out
+}
+
+/// Block lists of 1990s offline downloaders and e-mail harvesters, copied
+/// from site to site for decades. None of those tools read robots.txt.
+pub fn legacy_bad_bots(model: &Model, engine: &Engine, locale: &Locale) -> Vec<Warning> {
+    const THRESHOLD: usize = 10;
+    let legacy = &engine.legacy_tokens;
+    if legacy.is_empty() {
+        return Vec::new();
+    }
+    let mut w = Warner::new(locale, WarningKind::Lint);
+    let mut hits: Vec<String> = Vec::new();
+    let mut first_line = None;
+    for group in &model.groups {
+        for agent in &group.agents {
+            let name = agent.raw.trim().to_lowercase();
+            if legacy.contains(&name) && !hits.contains(&name) {
+                hits.push(name);
+                first_line.get_or_insert(agent.line);
+            }
+        }
+    }
+    if hits.len() >= THRESHOLD {
+        w.push(Level::Info, first_line, "lint.legacyBadBots", &params! {"n" => hits.len()});
+    }
     w.out
 }
 
@@ -212,6 +281,9 @@ pub fn run_checks(model: &Model, site_url: Option<&str>, engine: &Engine, locale
     }
     if engine.config.checks.absolute_urls {
         out.extend(absolute_rule_check(model, locale));
+    }
+    if engine.config.checks.seo_traps {
+        out.extend(legacy_bad_bots(model, engine, locale));
     }
     out
 }

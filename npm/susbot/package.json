@@ -1,8 +1,19 @@
 {
   "name": "@sitefig/susbot",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "robots.txt checker: which search engines and AI crawlers a site lets in, lint findings, exposed paths and diffs (sus.bot). WebAssembly engine for Node and browsers, plus the susbot command.",
-  "keywords": ["robots.txt", "robots", "crawler", "seo", "ai", "gptbot", "rfc9309", "audit", "webassembly", "cli"],
+  "keywords": [
+    "robots.txt",
+    "robots",
+    "crawler",
+    "seo",
+    "ai",
+    "gptbot",
+    "rfc9309",
+    "audit",
+    "webassembly",
+    "cli"
+  ],
   "homepage": "https://sus.bot/",
   "bugs": "https://github.com/sitefig/robots/issues",
   "repository": {
@@ -33,15 +44,24 @@
   "bin": {
     "susbot": "bin/susbot.js"
   },
-  "files": ["bin/", "lib/", "wasm/", "node.js", "web.js", "index.d.ts", "README.md", "LICENSE.md"],
+  "files": [
+    "bin/",
+    "lib/",
+    "wasm/",
+    "node.js",
+    "web.js",
+    "index.d.ts",
+    "README.md",
+    "LICENSE.md"
+  ],
   "engines": {
     "node": ">=18"
   },
   "optionalDependencies": {
-    "susbot-darwin-arm64": "2.0.1",
-    "susbot-darwin-x64": "2.0.1",
-    "susbot-linux-arm64": "2.0.1",
-    "susbot-linux-x64": "2.0.1",
-    "susbot-win32-x64": "2.0.1"
+    "@sitefig/susbot-darwin-arm64": "2.1.0",
+    "@sitefig/susbot-darwin-x64": "2.1.0",
+    "@sitefig/susbot-linux-arm64": "2.1.0",
+    "@sitefig/susbot-linux-x64": "2.1.0",
+    "@sitefig/susbot-win32-x64": "2.1.0"
   }
 }

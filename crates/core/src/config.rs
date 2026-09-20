@@ -28,6 +28,8 @@ pub struct RulesCfg {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct ReconChecks {
     pub cms: bool,
+    #[serde(default = "yes")]
+    pub generators: bool,
     pub cloud: bool,
     pub hosts: bool,
     pub api: bool,
@@ -43,6 +45,10 @@ pub struct Checks {
     pub absolute_urls: bool,
     pub security: bool,
     pub recon: ReconChecks,
+}
+
+fn yes() -> bool {
+    true
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -62,6 +68,10 @@ pub struct Crawlers {
     pub ai_categories: Vec<String>,
     pub browser_ua: String,
     pub list: Vec<Crawler>,
+    /// Offline downloaders and harvesters from 1990s block lists. They never
+    /// read robots.txt; a file naming ten of them is copied boilerplate.
+    #[serde(default)]
+    pub legacy_tokens: Vec<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -100,6 +110,10 @@ pub struct CmsSignature {
     pub weak: Vec<String>,
     #[serde(default)]
     pub comments: Vec<String>,
+    /// Paths of this platform's stock robots.txt. A security finding on one
+    /// of them discloses nothing the platform does not publish itself.
+    #[serde(default)]
+    pub defaults: Vec<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -108,6 +122,15 @@ pub struct CmsCfg {
     pub disabled: Vec<String>,
     pub platform_kinds: Vec<String>,
     pub signatures: Vec<CmsSignature>,
+}
+
+/// A tool that writes robots.txt, recognised by the comment it leaves.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct GeneratorSignature {
+    pub name: String,
+    pub comments: Vec<String>,
+    #[serde(default)]
+    pub url: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -204,6 +227,8 @@ pub struct CommentsCfg {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct ReconCfg {
     pub cms: CmsCfg,
+    #[serde(default)]
+    pub generators: Vec<GeneratorSignature>,
     pub cloud: CloudCfg,
     pub hosts: HostsCfg,
     pub api: ApiCfg,
@@ -277,6 +302,13 @@ pub struct CompiledCms {
     pub kind: String,
     pub strong: Vec<Regex>,
     pub weak: Vec<Regex>,
+    pub comments: Vec<Regex>,
+    pub defaults: HashSet<String>,
+}
+
+pub struct CompiledGenerator {
+    pub name: String,
+    pub url: Option<String>,
     pub comments: Vec<Regex>,
 }
 
@@ -356,6 +388,7 @@ pub struct Engine {
     pub security: Vec<CompiledSecurity>,
     pub security_ignore: Vec<Regex>,
     pub cms: Vec<CompiledCms>,
+    pub generators: Vec<CompiledGenerator>,
     pub cloud: Vec<CompiledProvider>,
     pub hosts: CompiledHosts,
     pub api: Vec<CompiledApi>,
@@ -364,6 +397,7 @@ pub struct Engine {
     pub comments: CompiledComments,
     pub disabled_ids: HashSet<String>,
     pub level_overrides: HashMap<String, Level>,
+    pub legacy_tokens: HashSet<String>,
 }
 
 impl Engine {
@@ -407,7 +441,14 @@ impl Engine {
                 strong: s.strong.iter().map(|p| compile(p, &what)).collect::<Result<_, _>>()?,
                 weak: s.weak.iter().map(|p| compile(p, &what)).collect::<Result<_, _>>()?,
                 comments: s.comments.iter().map(|p| compile(p, &what)).collect::<Result<_, _>>()?,
+                defaults: s.defaults.iter().map(|d| d.trim_end_matches('$').to_lowercase()).collect(),
             });
+        }
+
+        let mut generators = Vec::new();
+        for g in &config.recon.generators {
+            let what = format!("recon.generators ({})", g.name);
+            generators.push(CompiledGenerator { name: g.name.clone(), url: g.url.clone(), comments: g.comments.iter().map(|p| compile(p, &what)).collect::<Result<_, _>>()? });
         }
 
         let mut cloud = Vec::new();
@@ -477,7 +518,14 @@ impl Engine {
             }
         }
 
-        Ok(Engine { config, security, security_ignore, cms, cloud, hosts, api, data, extensions, comments, disabled_ids, level_overrides })
+        let legacy_tokens = config.crawlers.legacy_tokens.iter().map(|t| t.to_lowercase()).collect();
+
+        Ok(Engine { config, security, security_ignore, cms, generators, cloud, hosts, api, data, extensions, comments, disabled_ids, level_overrides, legacy_tokens })
+    }
+
+    /// Stock robots.txt paths of a platform, for the security suppression.
+    pub fn cms_defaults(&self, name: &str) -> Option<&HashSet<String>> {
+        self.cms.iter().find(|c| c.name == name).map(|c| &c.defaults)
     }
 
     /// Category label key for a security category id.
@@ -519,7 +567,9 @@ mod tests {
     #[test]
     fn defaults_compile() {
         let e = Engine::default_engine();
-        assert_eq!(e.config.crawlers.list.len(), 33);
+        assert!(e.config.crawlers.list.len() >= 130, "the crawler list covers what real files name");
+        assert!(e.generators.len() >= 15);
+        assert!(e.legacy_tokens.len() >= 100);
         assert!(e.cms.len() > 40);
         assert!(e.cloud.len() > 30);
     }

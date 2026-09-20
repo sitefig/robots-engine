@@ -6,7 +6,7 @@
 // <binaries-dir> holds one CLI build per platform, named susbot-<platform>-<arch>
 // (".exe" on Windows), as the release workflow uploads them. <out-dir> gets
 // susbot/ (the main package: npm/susbot plus its generated wasm/) and one
-// susbot-<platform>-<arch>/ per binary. Every package gets the version of the
+// susbot-<platform>-<arch>/ per binary, published as @sitefig/susbot-<platform>-<arch>. Every package gets the version of the
 // root Cargo.toml; it fails when npm/susbot/package.json disagrees or a
 // platform listed in optionalDependencies has no binary.
 import { readFileSync, writeFileSync, mkdirSync, cpSync, rmSync, existsSync, chmodSync, readdirSync } from 'node:fs';
@@ -34,12 +34,14 @@ mkdirSync(outDir, { recursive: true });
 const available = new Set(readdirSync(binDir));
 for (const [name, want] of Object.entries(main.optionalDependencies)) {
   if (want !== version) fail(`optionalDependencies.${name} is ${want}, expected ${version}`);
-  const [, platform, arch] = name.match(/^susbot-([a-z0-9]+)-([a-z0-9]+)$/);
+  const [, platform, arch] = name.match(/^@sitefig\/susbot-([a-z0-9]+)-([a-z0-9]+)$/);
   const exe = platform === 'win32' ? '.exe' : '';
-  if (!available.has(`${name}${exe}`)) fail(`no binary ${name}${exe} in ${binDir}`);
-  const dir = join(outDir, name);
+  const binary = `susbot-${platform}-${arch}${exe}`;
+  if (!available.has(binary)) fail(`no binary ${binary} in ${binDir}`);
+  // The folder keeps the unscoped spelling; package.json carries the scope.
+  const dir = join(outDir, `susbot-${platform}-${arch}`);
   mkdirSync(join(dir, 'bin'), { recursive: true });
-  cpSync(join(binDir, `${name}${exe}`), join(dir, 'bin', `susbot${exe}`));
+  cpSync(join(binDir, binary), join(dir, 'bin', `susbot${exe}`));
   chmodSync(join(dir, 'bin', `susbot${exe}`), 0o755);
   cpSync(new URL('LICENSE.md', mainDir), join(dir, 'LICENSE.md'));
   writeFileSync(
@@ -53,6 +55,7 @@ for (const [name, want] of Object.entries(main.optionalDependencies)) {
         repository: main.repository,
         license: main.license,
         author: main.author,
+        publishConfig: { access: 'public' },
         os: [platform],
         cpu: [arch],
         files: ['bin/', 'LICENSE.md'],
@@ -62,7 +65,7 @@ for (const [name, want] of Object.entries(main.optionalDependencies)) {
       2,
     ) + '\n',
   );
-  writeFileSync(join(dir, 'README.md'), `# ${name}\n\nThe prebuilt \`susbot\` binary for ${platform}-${arch}. Install [susbot](https://www.npmjs.com/package/susbot) instead; npm picks this package for your platform.\n`);
+  writeFileSync(join(dir, 'README.md'), `# ${name}\n\nThe prebuilt \`susbot\` binary for ${platform}-${arch}. Install [@sitefig/susbot](https://www.npmjs.com/package/@sitefig/susbot) instead; npm picks this package for your platform.\n`);
   console.log(`${name}@${version}`);
 }
 

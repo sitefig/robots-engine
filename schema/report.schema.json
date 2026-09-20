@@ -463,7 +463,8 @@
               "seo-trap",
               "sitemap",
               "fetch",
-              "lint"
+              "lint",
+              "security"
             ]
           },
           "id": {
@@ -506,13 +507,8 @@
             "type": "string"
           },
           "category": {
-            "enum": [
-              "search",
-              "ai-training",
-              "ai-search",
-              "social",
-              "seo"
-            ]
+            "type": "string",
+            "description": "Crawler category id from the configuration; the built-in ones are search, ai-training, ai-search, ai-scraper, social, seo, ads, archive, marketing, scraper and retired."
           },
           "categoryLabel": {
             "type": "string"
@@ -692,14 +688,8 @@
             }
           },
           "category": {
-            "enum": [
-              "admin",
-              "staging",
-              "backups",
-              "secrets",
-              "api",
-              "data"
-            ]
+            "type": "string",
+            "description": "Security category id from the configuration; the built-in ones are admin, staging, backups, secrets, api, data, version, maintenance and server."
           },
           "severity": {
             "$ref": "#/$defs/severity"
@@ -738,6 +728,7 @@
       "additionalProperties": false,
       "required": [
         "stack",
+        "generators",
         "tech",
         "cloud",
         "hosts",
@@ -810,6 +801,37 @@
                     }
                   }
                 }
+              }
+            }
+          }
+        },
+        "generators": {
+          "type": "array",
+          "description": "Tools that wrote the file, recognised by the comment they leave.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "url",
+              "line",
+              "comment"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "url": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "line": {
+                "type": "integer"
+              },
+              "comment": {
+                "type": "string"
               }
             }
           }
@@ -1201,7 +1223,8 @@
       "enum": [
         "high",
         "medium",
-        "low"
+        "low",
+        "info"
       ]
     },
     "confidence": {

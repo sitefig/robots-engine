@@ -34,6 +34,7 @@ security = true          # sensitive Disallow paths
 
 [checks.recon]
 cms = true
+generators = true         # the tool that wrote the file, from its comment
 cloud = true
 hosts = true
 api = true
@@ -43,9 +44,27 @@ comments = true
 
 # ---------------------------------------------------------------- crawlers
 [crawlers]
-categories = ["search", "ai-training", "ai-search", "social", "seo"]
+categories = ["search", "ai-training", "ai-search", "ai-scraper", "social", "seo", "ads", "archive", "marketing", "scraper", "retired"]
 ai_categories = ["ai-training", "ai-search"]   # first one is the "AI training" group of the status card
 browser_ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+
+# Offline downloaders and e-mail harvesters from 1990s block lists. None of
+# them read robots.txt; a file naming ten or more is copied boilerplate.
+legacy_tokens = [
+  "alexibot", "asterias", "backdoorbot", "black hole", "blackwidow", "blowfish", "botalot", "builtbottough", "bullseye", "bunnyslippers", "cheesebot",
+  "cherrypicker", "cherrypickerelite", "cherrypickerse", "chinaclaw", "copyrightcheck", "cosmos", "crescent", "custo", "dittospyder",
+  "download ninja", "ecatch", "eirgrabber", "emailcollector", "emailsiphon", "emailwolf", "erocrawler", "extractorpro", "eyenetie",
+  "flaming attackbot", "flashget", "foobot", "getright", "go!zilla", "go-ahead-got-it", "grabnet", "grafula", "harvest", "hloader", "hmview",
+  "httrack", "humanlinks", "infonavirobot", "interget", "iron33", "jennybot", "jetcar", "kenjin spider", "keyword density", "larbin", "leechftp",
+  "lexibot", "libweb", "linkextractorpro", "linkscan", "linkwalker", "lwp-trivial", "mata hari", "microsoft url control", "microsoft.url.control",
+  "miixpc", "mister pix", "moget", "msiecrawler", "navroad", "nearsite", "netants", "netmechanic", "netspider", "netzip", "nicerspro", "npbot",
+  "obot", "octopus", "offline explorer", "openbot", "openfind", "pagegrabber", "pavuk", "pcbrowser", "propowerbot", "prowebwalker", "psbot",
+  "queryn metasearch", "radiation retriever 1.1", "realdownload", "reget", "repomonkey", "robozilla", "sitesnagger", "smartdownload", "spankbot",
+  "spanner", "superhttp", "suzuran", "szukacz", "takeout", "teleport", "teleportpro", "telesoft", "the intraformant", "thenomad", "titan", "tocrawl",
+  "true_robot", "turingos", "url control", "url_spider_pro", "urly warning", "vci", "voideye", "web image collector", "webauto", "webbandit",
+  "webcopier", "webenhancer", "webfetch", "webleacher", "webreaper", "websauger", "website quester", "webster pro", "webstripper", "webwhacker",
+  "webzip", "widow", "www-collector-e", "wwwoffle", "xenu", "xenu's", "zeus", "zeus link scout", "zyborg",
+]
 
 # tokens: product tokens the crawler looks for, most specific first.
 # ua: the real User-Agent for the access check; omit for control tokens that never fetch.
@@ -263,13 +282,552 @@ tokens = ["mj12bot"]
 category = "seo"
 ua = "Mozilla/5.0 (compatible; MJ12bot/v1.4.8; http://mj12bot.com/)"
 
+# From the CC-MAIN-2026-34 analysis of 36 million robots.txt files: crawlers
+# that real files name but the list did not cover.
+# (section B5: the 78-row table plus the 25 tokens in the paragraph after it.)
+
+[[crawlers.list]]
+name = "DotBot"
+tokens = ["dotbot"]
+category = "seo"
+ua = "Mozilla/5.0 (compatible; DotBot/1.2; +https://opensiteexplorer.org/dotbot)"
+
+[[crawlers.list]]
+name = "AdsBot-Google"
+tokens = ["adsbot-google"]
+category = "ads"
+ua = "Mozilla/5.0 (compatible; AdsBot-Google; +http://www.google.com/adsbot.html)"
+
+[[crawlers.list]]
+name = "AdsBot-Google-Mobile"
+tokens = ["adsbot-google-mobile", "adsbot-google"]
+category = "ads"
+
+[[crawlers.list]]
+name = "BLEXBot"
+tokens = ["blexbot"]
+category = "seo"
+ua = "Mozilla/5.0 (compatible; BLEXBot/1.0; +http://webmeup-crawler.com/)"
+
+[[crawlers.list]]
+name = "Mediapartners-Google"
+tokens = ["mediapartners-google"]
+category = "ads"
+ua = "Mediapartners-Google"
+
+[[crawlers.list]]
+name = "MSNBot"
+tokens = ["msnbot"]
+category = "search"
+
+[[crawlers.list]]
+name = "ia_archiver"
+tokens = ["ia_archiver"]
+category = "archive"
+
+[[crawlers.list]]
+name = "Slurp"
+tokens = ["slurp"]
+category = "search"
+ua = "Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)"
+
+[[crawlers.list]]
+name = "Rogerbot"
+tokens = ["rogerbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "Claude-Web"
+tokens = ["claude-web"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "Facebookbot"
+tokens = ["facebookbot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "Exabot"
+tokens = ["exabot"]
+category = "search"
+ua = "Mozilla/5.0 (compatible; Exabot/3.0; +http://www.exabot.com/go/robot)"
+
+[[crawlers.list]]
+name = "SemrushBot-SA"
+tokens = ["semrushbot-sa", "semrushbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "DataForSeoBot"
+tokens = ["dataforseobot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "GoogleOther"
+tokens = ["googleother"]
+category = "ai-training"
+ua = "Mozilla/5.0 (compatible; GoogleOther)"
+
+[[crawlers.list]]
+name = "ImageSiftBot"
+tokens = ["imagesiftbot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "SiteAuditBot"
+tokens = ["siteauditbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "Barkrowler"
+tokens = ["barkrowler"]
+category = "seo"
+
+[[crawlers.list]]
+name = "SerpstatBot"
+tokens = ["serpstatbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "AhrefsSiteAudit"
+tokens = ["ahrefssiteaudit"]
+category = "seo"
+
+[[crawlers.list]]
+name = "MegaIndex"
+tokens = ["megaindex.ru"]
+category = "seo"
+
+[[crawlers.list]]
+name = "SeznamBot"
+tokens = ["seznambot", "seznam"]
+category = "search"
+ua = "Mozilla/5.0 (compatible; SeznamBot/3.2; +http://napoveda.seznam.cz/en/seznambot-intro/)"
+
+[[crawlers.list]]
+name = "Gigabot"
+tokens = ["gigabot"]
+category = "search"
+
+[[crawlers.list]]
+name = "SpBot"
+tokens = ["spbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "Pinterest"
+tokens = ["pinterest"]
+category = "social"
+ua = "Pinterest/0.2 (+https://www.pinterest.com/bot.html)"
+
+[[crawlers.list]]
+name = "Scrapy"
+tokens = ["scrapy"]
+category = "scraper"
+
+[[crawlers.list]]
+name = "meta-externalfetcher"
+tokens = ["meta-externalfetcher"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "TimpiBot"
+tokens = ["timpibot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "ZoomInfoBot"
+tokens = ["zoominfobot"]
+category = "marketing"
+
+[[crawlers.list]]
+name = "AI2Bot"
+tokens = ["ai2bot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "Yeti"
+tokens = ["yeti"]
+category = "search"
+ua = "Yeti/1.1 (+http://naver.me/spd)"
+
+[[crawlers.list]]
+name = "archive.org_bot"
+tokens = ["archive.org_bot"]
+category = "archive"
+ua = "Mozilla/5.0 (compatible; archive.org_bot +http://archive.org/details/archive.org_bot)"
+
+[[crawlers.list]]
+name = "VelenPublicWebCrawler"
+tokens = ["velenpublicwebcrawler"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "Googlebot-News"
+tokens = ["googlebot-news", "googlebot"]
+category = "search"
+
+[[crawlers.list]]
+name = "Sistrix"
+tokens = ["sistrix"]
+category = "seo"
+
+[[crawlers.list]]
+name = "Googlebot-Video"
+tokens = ["googlebot-video", "googlebot"]
+category = "search"
+
+[[crawlers.list]]
+name = "360Spider"
+tokens = ["360spider"]
+category = "search"
+
+[[crawlers.list]]
+name = "Webzio-Extended"
+tokens = ["webzio-extended", "webzio"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "SEOkicks"
+tokens = ["seokicks"]
+category = "seo"
+
+[[crawlers.list]]
+name = "ICC-Crawler"
+tokens = ["icc-crawler"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "SEOkicks-Robot"
+tokens = ["seokicks-robot", "seokicks"]
+category = "seo"
+
+[[crawlers.list]]
+name = "img2dataset"
+tokens = ["img2dataset"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "AI2Bot-Dolma"
+tokens = ["ai2bot-dolma", "ai2bot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "FriendlyCrawler"
+tokens = ["friendlycrawler"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "Kangaroo Bot"
+tokens = ["kangaroo"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "iAskSpider"
+tokens = ["iaskspider"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "YandexImages"
+tokens = ["yandeximages", "yandex"]
+category = "search"
+
+[[crawlers.list]]
+name = "Sidetrade Indexer Bot"
+tokens = ["sidetrade"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "Sogou"
+tokens = ["sogou"]
+category = "search"
+
+[[crawlers.list]]
+name = "Screaming Frog SEO Spider"
+tokens = ["screaming"]
+category = "seo"
+
+[[crawlers.list]]
+name = "NaverBot"
+tokens = ["naverbot"]
+category = "search"
+
+[[crawlers.list]]
+name = "Pinterestbot"
+tokens = ["pinterestbot", "pinterest"]
+category = "social"
+
+[[crawlers.list]]
+name = "MistralAI-User"
+tokens = ["mistralai-user"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Google-CloudVertexBot"
+tokens = ["google-cloudvertexbot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "PanguBot"
+tokens = ["pangubot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "Cohere-Training-Data-Crawler"
+tokens = ["cohere-training-data-crawler"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "TikTokSpider"
+tokens = ["tiktokspider"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "AdIdxBot"
+tokens = ["adidxbot"]
+category = "ads"
+ua = "Mozilla/5.0 (compatible; adidxbot/2.0; +http://www.bing.com/bingbot.htm)"
+
+[[crawlers.list]]
+name = "LinkdexBot"
+tokens = ["linkdexbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "LinkpadBot"
+tokens = ["linkpadbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "Qwantify"
+tokens = ["qwantify"]
+category = "search"
+
+[[crawlers.list]]
+name = "Slackbot"
+tokens = ["slackbot"]
+category = "social"
+ua = "Slackbot-LinkExpanding 1.0 (+https://api.slack.com/robots)"
+
+[[crawlers.list]]
+name = "XoviBot"
+tokens = ["xovibot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "Storebot-Google"
+tokens = ["storebot-google"]
+category = "search"
+ua = "Mozilla/5.0 (compatible; Storebot-Google/1.0)"
+
+[[crawlers.list]]
+name = "PhindBot"
+tokens = ["phindbot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "FirecrawlAgent"
+tokens = ["firecrawlagent"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "MojeekBot"
+tokens = ["mojeekbot"]
+category = "search"
+
+[[crawlers.list]]
+name = "WhatsApp"
+tokens = ["whatsapp"]
+category = "social"
+
+[[crawlers.list]]
+name = "TelegramBot"
+tokens = ["telegrambot"]
+category = "social"
+ua = "TelegramBot (like TwitterBot)"
+
+[[crawlers.list]]
+name = "Discordbot"
+tokens = ["discordbot"]
+category = "social"
+ua = "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com/)"
+
+[[crawlers.list]]
+name = "CocCocBot"
+tokens = ["coccocbot"]
+category = "search"
+ua = "Mozilla/5.0 (compatible; coccocbot-web/1.0; +http://help.coccoc.com/searchengine)"
+
+[[crawlers.list]]
+name = "Brightbot"
+tokens = ["brightbot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "Qwantbot"
+tokens = ["qwantbot"]
+category = "search"
+
+[[crawlers.list]]
+name = "Daum"
+tokens = ["daum"]
+category = "search"
+
+[[crawlers.list]]
+name = "Seznam"
+tokens = ["seznam"]
+category = "search"
+
+[[crawlers.list]]
+name = "Novellum"
+tokens = ["novellum"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "CloudflareBrowserRenderingCrawler"
+tokens = ["cloudflarebrowserrenderingcrawler"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Gemini-Deep-Research"
+tokens = ["gemini-deep-research"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "GoogleOther-Image"
+tokens = ["googleother-image", "googleother"]
+category = "ai-training"
+ua = "Mozilla/5.0 (compatible; GoogleOther-Image)"
+
+[[crawlers.list]]
+name = "GoogleOther-Video"
+tokens = ["googleother-video", "googleother"]
+category = "ai-training"
+ua = "Mozilla/5.0 (compatible; GoogleOther-Video)"
+
+[[crawlers.list]]
+name = "amzn-SearchBot"
+tokens = ["amzn-searchbot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "NerdyBot"
+tokens = ["nerdybot"]
+category = "archive"
+
+[[crawlers.list]]
+name = "TurnitinBot"
+tokens = ["turnitinbot"]
+category = "scraper"
+
+[[crawlers.list]]
+name = "Nutch"
+tokens = ["nutch"]
+category = "scraper"
+
+[[crawlers.list]]
+name = "Heritrix"
+tokens = ["heritrix"]
+category = "archive"
+
+[[crawlers.list]]
+name = "SemrushBot-BA"
+tokens = ["semrushbot-ba", "semrushbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "SemrushBot-SI"
+tokens = ["semrushbot-si", "semrushbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "SemrushBot-SWA"
+tokens = ["semrushbot-swa", "semrushbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "SemrushBot-CT"
+tokens = ["semrushbot-ct", "semrushbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "SemrushBot-COUB"
+tokens = ["semrushbot-coub", "semrushbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "SemrushBot-OCOB"
+tokens = ["semrushbot-ocob", "semrushbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "SemrushBot-BM"
+tokens = ["semrushbot-bm", "semrushbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "SplitSignalBot"
+tokens = ["splitsignalbot"]
+category = "seo"
+
+[[crawlers.list]]
+name = "SERankingBacklinksBot"
+tokens = ["serankingbacklinksbot"]
+category = "ads"
+
+[[crawlers.list]]
+name = "Grapeshot"
+tokens = ["grapeshot"]
+category = "ads"
+
+[[crawlers.list]]
+name = "AmazonAdBot"
+tokens = ["amazonadbot"]
+category = "ads"
+
+[[crawlers.list]]
+name = "meta-externalads"
+tokens = ["meta-externalads"]
+category = "ads"
+
+[[crawlers.list]]
+name = "Googlebot-Mobile"
+tokens = ["googlebot-mobile", "googlebot"]
+category = "retired"
+note = "Retired: Google merged mobile crawling into Googlebot in 2019."
+
+[[crawlers.list]]
+name = "BingPreview"
+tokens = ["bingpreview"]
+category = "retired"
+note = "Retired: Bing folded link-preview fetching into Bingbot."
+
+[[crawlers.list]]
+name = "Twiceler"
+tokens = ["twiceler"]
+category = "retired"
+note = "Retired: Cuil, the search engine Twiceler crawled for, shut down in 2010."
+
+[[crawlers.list]]
+name = "Teoma"
+tokens = ["teoma"]
+category = "retired"
+note = "Retired: Ask.com discontinued the Teoma search technology and its crawler."
+
 # ---------------------------------------------------------------- security
 # Disallow paths that advertise sensitive locations. `keywords` match on
 # path-segment boundaries (so /administration-guide does not hit "admin");
 # `pattern` is a raw regex against the lowercased path with a trailing "$"
 # removed. The highest severity signature wins per rule.
 [security]
-ignore = []              # regexes; matching Disallow paths are not reported
+# Regexes; matching Disallow paths are not reported. These are platform
+# defaults that every site on the platform publishes, so they disclose nothing.
+ignore = [
+  '(?:^|/)pro-gallery-webapp(?:/|$)',   # Wix platform default, on 2.9 million sites
+  '^/cdn-cgi/',                          # Cloudflare infrastructure
+  '^/\\.well-known/',                      # RFC 8615 well-known URIs
+  '^/(?:index\\.php/|\\?q=)?user/password/?$',  # Drupal and Joomla password reset
+]
 
 [[security.categories]]
 id = "admin"
@@ -301,6 +859,21 @@ id = "data"
 label = "security.category.data.label"
 advice = "security.category.data.advice"
 
+[[security.categories]]
+id = "version"
+label = "security.category.version.label"
+advice = "security.category.version.advice"
+
+[[security.categories]]
+id = "maintenance"
+label = "security.category.maintenance.label"
+advice = "security.category.maintenance.advice"
+
+[[security.categories]]
+id = "server"
+label = "security.category.server.label"
+advice = "security.category.server.advice"
+
 [[security.signatures]]
 category = "admin"
 severity = "medium"
@@ -317,7 +890,9 @@ keywords = ["staging", "stage", "stg", "dev", "develop", "development", "test", 
 category = "staging"
 severity = "low"
 reason = "security.reason.versioned"
-pattern = '(?:^|/)v[0-9]+(?:/|$|\*|\.)'
+# Only a leading version segment, or one right after /api/: "v1" deeper in a
+# path is a platform's own widget route, not a staging copy.
+pattern = '^/(?:api/)?v[0-9]+(?:/|$|\*|\.)'
 
 [[security.signatures]]
 category = "secrets"
@@ -354,7 +929,49 @@ pattern = '(?:^|/)api/v[0-9]+/internal(?:/|$|\*|\.)'
 category = "data"
 severity = "low"
 reason = "security.reason.data"
-keywords = ["uploads", "upload", "files", "documents", "invoices", "exports", "export", "reports", "customers", "users", "members", "accounts", "orders", "logs", "log", "private", "confidential", "internal-docs", "intranet", "hr", "payroll"]
+keywords = ["uploads", "upload", "files", "documents", "invoices", "exports", "export", "reports", "customers", "users", "members", "accounts", "orders", "logs", "log", "private", "confidential", "internal-docs", "intranet", "hr", "payroll", "var"]
+
+[[security.signatures]]
+category = "version"
+severity = "medium"
+reason = "security.reason.versionFile"
+pattern = '(?:^|/)(?:changelog\.txt|install\.txt|install\.(?:mysql|pgsql|sqlite)\.txt|upgrade\.txt|maintainers\.txt|readme\.(?:html|md|txt))(?:/|$|\*)'
+
+[[security.signatures]]
+category = "version"
+severity = "low"
+reason = "security.reason.licenseFile"
+pattern = '(?:^|/)license\.txt(?:/|$|\*)'
+
+[[security.signatures]]
+category = "maintenance"
+severity = "medium"
+reason = "security.reason.maintenanceScript"
+pattern = '(?:^|/)(?:cron|install|update|upgrade|setup)\.php(?:/|$|\*)'
+
+[[security.signatures]]
+category = "server"
+severity = "low"
+reason = "security.reason.cgiBin"
+keywords = ["cgi-bin", "cgi", "fcgi-bin"]
+
+[[security.signatures]]
+category = "api"
+severity = "medium"
+reason = "security.reason.xmlrpc"
+pattern = '(?:^|/)xmlrpc\.php(?:/|$|\*)'
+
+[[security.signatures]]
+category = "api"
+severity = "low"
+reason = "security.reason.restApi"
+keywords = ["wp-json", "rest", "jsonapi"]
+
+[[security.signatures]]
+category = "secrets"
+severity = "medium"
+reason = "security.reason.dependencies"
+keywords = ["vendor", "node_modules", "bower_components"]
 
 # ---------------------------------------------------------------- recon: platform fingerprints
 # strong: nearly unique to the product (2 points each); weak: suggestive (1);
@@ -369,6 +986,7 @@ kind = "cms"
 strong = ['^/wp-admin', '^/wp-includes', '^/wp-content', '^/wp-json', '^/xmlrpc\.php', '^/wp-login\.php']
 weak = ['^/\*?\?s=', '^/feed', '/trackback', '/comments/feed', '\?replytocom=']
 comments = ['wordpress', 'yoast', 'rank math', 'all in one seo', 'aioseo', 'seopress']
+defaults = ["/wp-admin/", "/wp-login.php", "/readme.html", "/wp-includes/", "/xmlrpc.php"]
 
 [[recon.cms.signatures]]
 name = "Drupal"
@@ -376,6 +994,7 @@ kind = "cms"
 strong = ['^/core/', '^/user/register', '^/user/password', '^/node/add', '^/misc/', '^/profiles/', '^/install\.php', '^/update\.php', '^/changelog\.txt', '^/install\.txt', '^/filter/tips', '^/\?q=admin', '^/core/install\.php']
 weak = ['^/admin', '^/user/login', '^/modules/', '^/themes/', '^/scripts/', '^/includes/', '^/sites/default']
 comments = ['drupal']
+defaults = ["/core/", "/profiles/", "/readme.md", "/composer/metapackage/readme.txt", "/composer/plugin/projectmessage/readme.md", "/composer/plugin/scaffold/readme.md", "/composer/plugin/vendorhardening/readme.txt", "/composer/template/readme.txt", "/modules/readme.txt", "/sites/readme.txt", "/themes/readme.txt", "/web.config", "/admin/", "/comment/reply/", "/filter/tips", "/node/add/", "/search/", "/user/register", "/user/password", "/user/login", "/user/logout", "/media/oembed", "/index.php/admin/", "/index.php/comment/reply/", "/index.php/filter/tips", "/index.php/node/add/", "/index.php/search/", "/index.php/user/password", "/index.php/user/register", "/index.php/user/login", "/index.php/user/logout", "/index.php/media/oembed", "/changelog.txt", "/cron.php", "/install.mysql.txt", "/install.pgsql.txt", "/install.php", "/install.sqlite.txt", "/install.txt", "/license.txt", "/maintainers.txt", "/update.php", "/upgrade.txt", "/xmlrpc.php", "/scripts/", "/misc/", "/admin", "/?q=admin/", "/?q=user/login/", "/?q=user/password/", "/?q=user/register/", "/?q=user/logout/", "/?q=comment/reply/", "/?q=filter/tips/", "/?q=node/add/", "/?q=search/", "/filter/tips/"]
 
 [[recon.cms.signatures]]
 name = "Joomla"
@@ -383,6 +1002,7 @@ kind = "cms"
 strong = ['^/administrator', '^/components/', '^/libraries/', '^/plugins/', '^/templates/', '^/cli/', '^/layouts/', '^/language/', '^/media/jui']
 weak = ['^/modules/', '^/cache/', '^/images/', '^/includes/', '^/tmp/', '^/logs/']
 comments = ['joomla']
+defaults = ["/administrator/", "/api/", "/bin/", "/cache/", "/cli/", "/components/", "/includes/", "/installation/", "/language/", "/layouts/", "/libraries/", "/logs/", "/modules/", "/plugins/", "/tmp/"]
 
 [[recon.cms.signatures]]
 name = "TYPO3"
@@ -488,6 +1108,7 @@ kind = "ecommerce"
 strong = ['^/checkouts?/', '^/carts?/', '^/recommendations/products', '^/policies/', 'collections/\*\+', 'collections/.*sort_by', 'products/.*variant=', '^/\.well-known/shopify', '^/apple-app-site-association']
 weak = ['^/account', '^/cart$', '^/orders', '^/search', '^/\d+/checkouts']
 comments = ['shopify']
+defaults = ["/admin", "/cart", "/orders", "/checkouts/", "/checkout", "/account", "/*/cart", "/*/orders", "/*/checkouts/", "/*/checkout", "/*/account", "/carts", "/services/login_with_shop", "/*/policies/", "/policies/"]
 
 [[recon.cms.signatures]]
 name = "WooCommerce"
@@ -495,6 +1116,7 @@ kind = "ecommerce"
 strong = ['add-to-cart=', '^/my-account', '^/wp-content/uploads/wc-', '^/\?wc-ajax']
 weak = ['^/cart', '^/checkout', '^/shop/']
 comments = ['woocommerce']
+defaults = ["/wp-content/uploads/wc-logs/", "/wp-content/uploads/woocommerce_uploads/", "/wp-content/uploads/woocommerce_transient_files/"]
 
 [[recon.cms.signatures]]
 name = "Magento / Adobe Commerce"
@@ -502,6 +1124,7 @@ kind = "ecommerce"
 strong = ['^/catalogsearch/', '^/checkout/cart', '^/customer/account', '^/static/frontend', '^/media/catalog', '^/sales/guest', '^/wishlist/', '^/review/product', '___store=', '___from_store=', '^/catalog/product_compare', '^/sendfriend']
 weak = ['^/checkout', '^/customer', '^/catalog/', '^/downloader/', '^/var/']
 comments = ['magento', 'adobe commerce']
+defaults = ["/admin/", "/checkout/", "/customer/", "/catalogsearch/", "/review/", "/app/", "/lib/", "/var/", "/downloader/"]
 
 [[recon.cms.signatures]]
 name = "PrestaShop"
@@ -509,6 +1132,7 @@ kind = "ecommerce"
 strong = ['orderby=', 'orderway=', '^/order-confirmation', '^/order-opc', '^/addresses', '^/identity', '^/guest-tracking', '^/password-recovery', '^/img/p/', '^/module/']
 weak = ['^/cart', '^/order', '^/authentication', '^/discount', '^/modules/']
 comments = ['prestashop']
+defaults = ["/modules/", "/classes/", "/config/", "/download/", "/mails/", "/tools/", "/translations/", "/upload/"]
 
 [[recon.cms.signatures]]
 name = "BigCommerce"
@@ -677,6 +1301,145 @@ kind = "backend"
 strong = ['^/actuator']
 weak = ['^/swagger-ui', '^/error$']
 comments = ['spring boot']
+
+# findings-spec-CC-MAIN-2026-34.md, section B6: Platform fingerprints (recon.cms) to add
+#
+# kind judgement calls (platform_kinds in default.toml is
+# ["cms", "ecommerce", "hosting", "forum", "wiki"], the kinds eligible to be
+# picked as the "primary" platform):
+# - Tilda and CM4all are hosted site builders (like Wix/Squarespace/Weebly in
+#   the existing config), so they keep kind = "hosting".
+# - Shopware and Tiendanube/Nuvemshop are storefront platforms, kind = "ecommerce".
+# - EmpireCMS is a content-management system, kind = "cms".
+# - HestiaCP/VestaCP is a hosting-control-panel default file and Cloudflare's
+#   managed robots.txt is a proxy-injected notice: neither says anything about
+#   the site's own platform, so both get kind = "backend" (already used in
+#   default.toml for non-platform infrastructure signatures such as Laravel,
+#   Django, Rails, ASP.NET, Spring Boot) rather than a platform_kinds value,
+#   so they are never picked as the detected "primary" platform.
+
+[[recon.cms.signatures]]
+name = "Tilda"
+kind = "hosting"
+strong = ['^/tilda/']
+weak = []
+comments = ['tilda']
+
+[[recon.cms.signatures]]
+name = "Shopware"
+kind = "ecommerce"
+strong = ['^/widgets/', '^/checkout/']
+weak = []
+comments = ['shopware']
+
+[[recon.cms.signatures]]
+name = "CM4all"
+kind = "hosting"
+strong = ['^/\.cm4all/']
+weak = []
+comments = []
+
+[[recon.cms.signatures]]
+name = "Tiendanube / Nuvemshop"
+kind = "ecommerce"
+strong = []
+weak = []
+comments = ['tiendanube', 'nuvemshop']
+
+[[recon.cms.signatures]]
+name = "EmpireCMS"
+kind = "cms"
+strong = []
+weak = []
+comments = ['robots\.txt for empirecms']
+
+[[recon.cms.signatures]]
+name = "HestiaCP / VestaCP"
+kind = "backend"
+strong = []
+weak = []
+comments = ['hestiacp autogenerated', 'vestacp autogenerated']
+
+[[recon.cms.signatures]]
+name = "Cloudflare managed robots.txt"
+kind = "backend"
+strong = []
+weak = []
+comments = ['as a condition of accessing this website', 'content-signal = yes']
+
+# ---------------------------------------------------------------- recon: generators
+# The tool that wrote the file, recognised by the comment it leaves.
+# findings-spec-CC-MAIN-2026-34.md, section B7: Generators (comment fingerprints)
+# worth a recon card. Regexes match the lowercased comment text; literal "."
+# characters in the fingerprint (e.g. "robots.txt") are escaped as "\.".
+
+[[recon.generators]]
+name = "Yoast SEO"
+comments = ['start yoast block']
+
+[[recon.generators]]
+name = "WPForms"
+comments = ['start wpforms block']
+
+[[recon.generators]]
+name = "Wix SEO Tools"
+comments = ['go to seo tools > robots\.txt editor']
+
+[[recon.generators]]
+name = "Cloudflare Content Signals"
+comments = ['as a condition of accessing this website']
+
+[[recon.generators]]
+name = "Shopify agent notice (UCP/MCP)"
+comments = ['agents should use ucp/mcp']
+
+[[recon.generators]]
+name = "Shopify"
+comments = ['we use shopify as our ecommerce platform']
+
+[[recon.generators]]
+name = "Joomla default"
+comments = ['if the joomla site is installed within a folder']
+
+[[recon.generators]]
+name = "Drupal default"
+comments = ['this file is to prevent the crawling and indexing of certain parts']
+
+[[recon.generators]]
+name = "PrestaShop"
+comments = ['generated by prestashop']
+
+[[recon.generators]]
+name = "Virtual Robots.txt (WP plugin)"
+comments = ['virtual robots\.txt']
+
+[[recon.generators]]
+name = "nuxt-robots"
+comments = ['nuxt-robots']
+
+[[recon.generators]]
+name = "Termly"
+comments = ['termly scanner']
+
+[[recon.generators]]
+name = "GRP"
+comments = ['generated by grp']
+
+[[recon.generators]]
+name = "Simple Robots.txt"
+comments = ['simple robots\.txt']
+
+[[recon.generators]]
+name = "HestiaCP / VestaCP"
+comments = ['autogenerated robots\.txt']
+
+[[recon.generators]]
+name = "Tiendanube"
+comments = ['we use tiendanube']
+
+[[recon.generators]]
+name = "EmpireCMS"
+comments = ['robots\.txt for empirecms']
 
 # ---------------------------------------------------------------- recon: cloud hosts
 # host: regex against the lowercased hostname. bucket: how to extract the

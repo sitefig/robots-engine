@@ -2997,3 +2997,267 @@ msgstr "Pictogram (SVG)"
 msgctxt "page.brandMenu.press"
 msgid "Open the press kit"
 msgstr "Perskit openen"
+
+msgctxt "parser.utf16"
+msgid "The file is UTF-16 encoded. RFC 9309 requires UTF-8, and many crawlers will not find a single valid line. Save it as UTF-8."
+msgstr "Het bestand is UTF-16-gecodeerd. RFC 9309 vereist UTF-8, en veel crawlers vinden dan geen enkele geldige regel. Sla het op als UTF-8."
+
+msgctxt "parser.htmlFragment"
+msgid "HTML markup (\"{tag}\") found in robots.txt. It usually comes from a theme, plugin or cache layer. Those lines are invalid and can break the directive next to them."
+msgstr "HTML-opmaak (\"{tag}\") aangetroffen in robots.txt. Dit komt meestal van een thema, plugin of cachelaag. Die regels zijn ongeldig en kunnen de directive ernaast breken."
+
+msgctxt "parser.pluginOutput"
+msgid "A caching or minification plugin has appended its output to robots.txt. Exclude /robots.txt from that plugin."
+msgstr "Een cache- of minificatieplugin heeft zijn uitvoer aan robots.txt toegevoegd. Sluit /robots.txt uit bij die plugin."
+
+msgctxt "parser.serverErrorOutput"
+msgid "robots.txt contains a server error message, such as a PHP warning or a stack trace. It can reveal file paths on the server and it breaks the lines around it."
+msgstr "robots.txt bevat een serverfoutmelding, zoals een PHP-waarschuwing of een stack trace. Dit kan bestandspaden op de server prijsgeven en breekt de regels eromheen."
+
+msgctxt "parser.invalidUtf8"
+msgid "The file is not valid UTF-8. RFC 9309 requires UTF-8; the characters that could not be decoded are lost."
+msgstr "Het bestand is geen geldige UTF-8. RFC 9309 vereist UTF-8; de tekens die niet konden worden gedecodeerd, gaan verloren."
+
+msgctxt "parser.longLine"
+msgid "Line is {chars} characters long. A line that long is generated, not written, and some crawlers truncate it."
+msgstr "De regel is {chars} tekens lang. Zo'n lange regel is gegenereerd, niet handmatig geschreven, en sommige crawlers knippen hem af."
+
+msgctxt "parser.gluedComment"
+msgid "\"{directive}\" is part of a comment because a line break is missing before it, so crawlers ignore this rule."
+msgstr "\"{directive}\" maakt deel uit van een opmerking omdat er vóór deze regel een regeleinde ontbreekt, waardoor crawlers deze regel negeren."
+
+msgctxt "lint.commentedRule"
+msgid "This line is a commented-out \"{directive}\" rule and has no effect."
+msgstr "Deze regel is een uitgecommentarieerde \"{directive}\"-regel en heeft geen effect."
+
+msgctxt "parser.invisibleChar"
+msgid "An invisible character sits in front of a directive name. Crawlers read the name as unknown and skip the line. Retype the line."
+msgstr "Er staat een onzichtbaar teken vóór een directivenaam. Crawlers herkennen de naam niet en slaan de regel over. Typ de regel opnieuw."
+
+msgctxt "parser.homoglyph"
+msgid "\"{field}\" is written with a letter from another alphabet that looks the same. Crawlers do not recognise the directive. Retype it in plain Latin letters."
+msgstr "\"{field}\" is geschreven met een letter uit een ander alfabet die er hetzelfde uitziet. Crawlers herkennen de directive niet. Typ hem opnieuw in gewone Latijnse letters."
+
+msgctxt "parser.fullwidthColon"
+msgid "A full-width colon is used instead of \":\". Crawlers only accept the plain colon."
+msgstr "Er wordt een dubbelbrede dubbele punt gebruikt in plaats van \":\". Crawlers accepteren alleen de gewone dubbele punt."
+
+msgctxt "parser.junkBeforeField"
+msgid "\"{junk}\" sits before \"{field}\". Crawlers read the whole name, so the directive is ignored. Remove what comes before it."
+msgstr "\"{junk}\" staat vóór \"{field}\". Crawlers lezen de hele naam, dus de directive wordt genegeerd. Verwijder wat ervoor staat."
+
+msgctxt "parser.hashInValue"
+msgid "\"{value}\" is cut at \"#\", because \"#\" starts a comment. The rule applies to \"{truncated}\". Remove the fragment; URL fragments are never sent to the server."
+msgstr "\"{value}\" wordt afgekapt bij \"#\", omdat \"#\" een opmerking start. De regel geldt voor \"{truncated}\". Verwijder het fragment; URL-fragmenten worden nooit naar de server gestuurd."
+
+msgctxt "parser.placeholder"
+msgid "\"{value}\" still contains the template placeholder \"{placeholder}\"."
+msgstr "\"{value}\" bevat nog de sjabloonplaceholder \"{placeholder}\"."
+
+msgctxt "parser.crawlDelayHigh"
+msgid "Crawl-delay of {seconds} seconds allows about {pages} pages a day. Bing honours this; large sites will not be crawled fully."
+msgstr "Crawl-delay van {seconds} seconden staat ongeveer {pages} pagina's per dag toe. Bing respecteert dit; grote sites worden dan niet volledig gecrawld."
+
+msgctxt "parser.wildcardOnly"
+msgid "\"Disallow: {value}\" is not RFC 9309. Google reads it as \"block everything\", other crawlers read it as a literal path. Write \"Disallow: /\" if you mean the whole site."
+msgstr "\"Disallow: {value}\" is geen RFC 9309. Google leest dit als \"alles blokkeren\", andere crawlers lezen het als een letterlijk pad. Schrijf \"Disallow: /\" als je de hele site bedoelt."
+
+msgctxt "parser.spaceInPath"
+msgid "\"{value}\" contains a space. URLs never contain raw spaces; use %20 or split the rule."
+msgstr "\"{value}\" bevat een spatie. URL's bevatten nooit een letterlijke spatie; gebruik %20 of splits de regel."
+
+msgctxt "parser.regexSyntax"
+msgid "\"{value}\" uses regular-expression syntax. robots.txt only supports \"*\" and \"$\", so the other characters match literally."
+msgstr "\"{value}\" gebruikt reguliere-expressiesyntaxis. robots.txt ondersteunt alleen \"*\" en \"$\", dus de andere tekens matchen letterlijk."
+
+msgctxt "parser.nonAsciiPath"
+msgid "\"{value}\" contains non-ASCII characters. RFC 9309 matches percent-encoded paths; most crawlers encode it for you, some do not."
+msgstr "\"{value}\" bevat niet-ASCII-tekens. RFC 9309 matcht percent-gecodeerde paden; de meeste crawlers coderen dit voor je, sommige niet."
+
+msgctxt "parser.bareUrl"
+msgid "This line is only a URL and is ignored. If this is your sitemap, write \"Sitemap: {url}\"."
+msgstr "Deze regel is alleen een URL en wordt genegeerd. Is dit je sitemap, schrijf dan \"Sitemap: {url}\"."
+
+msgctxt "parser.metaRobots"
+msgid "\"{field}\" is a meta-robots value, not a robots.txt directive. Use a meta robots tag or the X-Robots-Tag header instead."
+msgstr "\"{field}\" is een meta-robotswaarde, geen robots.txt-directive. Gebruik in plaats daarvan een meta-robotstag of de X-Robots-Tag-header."
+
+msgctxt "parser.aiDirective"
+msgid "\"{field}\" is a proposed AI-policy extension, not part of RFC 9309. Crawlers that follow the standard ignore it. Use User-agent groups for the AI crawlers you want to block."
+msgstr "\"{field}\" is een voorgestelde AI-beleidsextensie en geen onderdeel van RFC 9309. Crawlers die de standaard volgen, negeren dit. Gebruik User-agent-groepen voor de AI-crawlers die je wilt blokkeren."
+
+msgctxt "parser.nonStandardDirective"
+msgid "\"{field}\" is not part of RFC 9309. A few crawlers once honoured it; today it is ignored."
+msgstr "\"{field}\" maakt geen deel uit van RFC 9309. Een paar crawlers respecteerden dit ooit; tegenwoordig wordt het genegeerd."
+
+msgctxt "parser.contentSignal"
+msgid "Content-Signal states how this site may be used ({value}). It is Cloudflare's extension, not part of RFC 9309, and only the crawlers that support it will follow it."
+msgstr "Content-Signal geeft aan hoe deze site mag worden gebruikt ({value}). Dit is een extensie van Cloudflare, geen onderdeel van RFC 9309, en alleen crawlers die dit ondersteunen, volgen het."
+
+msgctxt "parser.contentSignalInvalid"
+msgid "Content-Signal is malformed at {parts}. Each entry is search, ai-input or ai-train, set to yes or no."
+msgstr "Content-Signal is onjuist opgemaakt bij {parts}. Elk item is search, ai-input of ai-train, ingesteld op yes of no."
+
+msgctxt "parser.notFieldValue.hint"
+msgid "Line has no \":\" between a directive and its value. Did you mean \"{field}\"?"
+msgstr "De regel heeft geen \":\" tussen een directive en zijn waarde. Bedoelde je \"{field}\"?"
+
+msgctxt "security.injectedCode"
+msgid "robots.txt contains script, iframe or hidden-link markup. That is a common sign that the site or a plugin has been compromised for SEO spam. Check the server for malicious code."
+msgstr "robots.txt bevat script-, iframe- of verborgen-linkopmaak. Dat is vaak een teken dat de site of een plugin is gecompromitteerd voor SEO-spam. Controleer de server op kwaadaardige code."
+
+msgctxt "seo.queryStringBlock"
+msgid "\"Disallow: {path}\" blocks every URL with a query string for all crawlers, including paginated, filtered and tracked landing pages."
+msgstr "\"Disallow: {path}\" blokkeert voor alle crawlers elke URL met een querystring, inclusief gepagineerde, gefilterde en getrackte landingspagina's."
+
+msgctxt "seo.assetBlock"
+msgid "\"Disallow: {path}\" blocks scripts or styles. Search engines need them to render the page."
+msgstr "\"Disallow: {path}\" blokkeert scripts of stijlen. Zoekmachines hebben ze nodig om de pagina te renderen."
+
+msgctxt "seo.cssJsBlock"
+msgid "\"Disallow: {path}\" blocks CSS or JavaScript files. Search engines render the page before they judge it, and a page without its assets looks broken to them."
+msgstr "\"Disallow: {path}\" blokkeert CSS- of JavaScript-bestanden. Zoekmachines renderen de pagina voordat ze hem beoordelen, en een pagina zonder zijn assets lijkt voor hen kapot."
+
+msgctxt "seo.imageBlock"
+msgid "\"Disallow: {path}\" keeps images out of image search for all crawlers."
+msgstr "\"Disallow: {path}\" houdt afbeeldingen voor alle crawlers buiten het zoeken naar afbeeldingen."
+
+msgctxt "lint.legacyBadBots"
+msgid "This file blocks {n} old scrapers and e-mail harvesters that never obeyed robots.txt. The list has no effect; block them at the server if you need to."
+msgstr "Dit bestand blokkeert {n} oude scrapers en e-mailharvesters die nooit robots.txt hebben gerespecteerd. De lijst heeft geen effect; blokkeer ze zo nodig op de server."
+
+msgctxt "fetch.warn.serverError"
+msgid "robots.txt answered {status}. Google treats a server error as \"block everything\" and stops crawling the site while it lasts."
+msgstr "robots.txt antwoordde met {status}. Google behandelt een serverfout als \"alles blokkeren\" en stopt met het crawlen van de site zolang dit duurt."
+
+msgctxt "fetch.warn.rateLimited"
+msgid "robots.txt answered 429 Too Many Requests. Google treats that like a server error and stops crawling the site while it lasts."
+msgstr "robots.txt antwoordde met 429 Too Many Requests. Google behandelt dit als een serverfout en stopt met het crawlen van de site zolang dit duurt."
+
+msgctxt "fetch.warn.forbidden"
+msgid "robots.txt answered {status}. Crawlers treat that as \"no restrictions\" and crawl everything."
+msgstr "robots.txt antwoordde met {status}. Crawlers behandelen dit als \"geen beperkingen\" en crawlen alles."
+
+msgctxt "fetch.warn.contentType"
+msgid "robots.txt is served as {type}. Serve it as text/plain; some crawlers ignore other types."
+msgstr "robots.txt wordt geserveerd als {type}. Serveer het als text/plain; sommige crawlers negeren andere typen."
+
+msgctxt "fetch.warn.contentTypeMissing"
+msgid "robots.txt is served without a Content-Type header. Serve it as text/plain."
+msgstr "robots.txt wordt geserveerd zonder Content-Type-header. Serveer het als text/plain."
+
+msgctxt "fetch.warn.htmlBody"
+msgid "An HTML page is served at /robots.txt with status 200. Crawlers find no rules, and a missing robots.txt is treated as \"crawl everything\"."
+msgstr "Op /robots.txt wordt een HTML-pagina geserveerd met status 200. Crawlers vinden geen regels, en een ontbrekende robots.txt wordt behandeld als \"alles crawlen\"."
+
+msgctxt "security.category.version.label"
+msgid "Version disclosure"
+msgstr "Versie-informatie"
+
+msgctxt "security.category.version.advice"
+msgid "These files name the software and its version, which is the first thing an attacker looks for. Delete them from the server instead of hiding them here."
+msgstr "Deze bestanden noemen de software en de versie ervan, het eerste waar een aanvaller naar zoekt. Verwijder ze van de server in plaats van ze hier te verbergen."
+
+msgctxt "security.category.maintenance.label"
+msgid "Maintenance scripts"
+msgstr "Onderhoudsscripts"
+
+msgctxt "security.category.maintenance.advice"
+msgid "Installers and update scripts must not be reachable after setup. Remove them, or restrict them by IP address."
+msgstr "Installatie- en updatescripts mogen na installatie niet bereikbaar zijn. Verwijder ze, of beperk de toegang op IP-adres."
+
+msgctxt "security.category.server.label"
+msgid "Server internals"
+msgstr "Interne serveronderdelen"
+
+msgctxt "security.category.server.advice"
+msgid "These paths belong to the server, not the site. If nothing runs there, remove the rule; it only points at them."
+msgstr "Deze paden horen bij de server, niet bij de site. Als er niets draait, verwijder dan de regel; die wijst er alleen maar naar."
+
+msgctxt "security.reason.versionFile"
+msgid "File that names the software version"
+msgstr "Bestand dat de softwareversie noemt"
+
+msgctxt "security.reason.licenseFile"
+msgid "Licence file that identifies the software"
+msgstr "Licentiebestand dat de software identificeert"
+
+msgctxt "security.reason.maintenanceScript"
+msgid "Installer or update script"
+msgstr "Installatie- of updatescript"
+
+msgctxt "security.reason.cgiBin"
+msgid "Server script directory"
+msgstr "Serverscriptmap"
+
+msgctxt "security.reason.xmlrpc"
+msgid "XML-RPC endpoint, a common brute-force target"
+msgstr "XML-RPC-endpoint, een veelvoorkomend doelwit voor brute force"
+
+msgctxt "security.reason.restApi"
+msgid "Public REST API endpoint"
+msgstr "Openbaar REST-API-endpoint"
+
+msgctxt "security.reason.dependencies"
+msgid "Dependency directory that reveals the libraries in use"
+msgstr "Dependency-map die de gebruikte bibliotheken prijsgeeft"
+
+msgctxt "security.reason.platformDefault"
+msgid "Default path of {platform}, published by every site on it"
+msgstr "Standaardpad van {platform}, gepubliceerd door elke site erop"
+
+msgctxt "enum.kind.security"
+msgid "Security"
+msgstr "Beveiliging"
+
+msgctxt "enum.severity.info"
+msgid "note"
+msgstr "opmerking"
+
+msgctxt "agents.category.ads"
+msgid "Advertising"
+msgstr "Advertenties"
+
+msgctxt "agents.category.archive"
+msgid "Archives"
+msgstr "Archieven"
+
+msgctxt "agents.category.marketing"
+msgid "Marketing and sales data"
+msgstr "Marketing- en verkoopdata"
+
+msgctxt "agents.category.scraper"
+msgid "Scrapers"
+msgstr "Scrapers"
+
+msgctxt "agents.category.ai-scraper"
+msgid "AI scraping services"
+msgstr "AI-scrapingdiensten"
+
+msgctxt "agents.category.retired"
+msgid "Retired crawlers"
+msgstr "Verouderde crawlers"
+
+msgctxt "ui.recon.generators"
+msgid "Written by"
+msgstr "Geschreven door"
+
+msgctxt "ui.recon.th.generator"
+msgid "Tool"
+msgstr "Tool"
+
+msgctxt "ui.recon.th.comment"
+msgid "Comment"
+msgstr "Opmerking"
+
+msgctxt "recon.generators.note"
+msgid "The file was generated. Change it where the tool is configured, not by hand, or the next save overwrites it."
+msgstr "Het bestand is gegenereerd. Wijzig het waar de tool is geconfigureerd, niet met de hand, anders overschrijft de volgende opslag het weer."
+
+msgctxt "md.recon.generators"
+msgid "Written by {list}. Change the file where that tool is configured; editing it by hand is overwritten on the next save."
+msgstr "Geschreven door {list}. Pas het bestand aan waar die tool is ingesteld; een handmatige wijziging wordt bij de volgende keer opslaan overschreven."
+
+msgctxt "csv.cat.generator"
+msgid "Generator"
+msgstr "Generator"

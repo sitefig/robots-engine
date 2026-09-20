@@ -48,10 +48,46 @@ impl FetchInfo {
     }
 }
 
+/// The media type of the response, without parameters.
+fn media_type(f: &FetchInfo) -> Option<String> {
+    let ct = f.content_type.as_ref()?;
+    let t = ct.split(';').next().unwrap_or("").trim().to_lowercase();
+    if t.is_empty() {
+        None
+    } else {
+        Some(t)
+    }
+}
+
+/// Findings about the answer itself: status, media type and body.
+fn response_warnings(f: &FetchInfo, locale: &Locale, out: &mut Vec<Warning>) {
+    let w = |level, id: &str, p: &crate::i18n::Params| warning(locale, WarningKind::Fetch, level, None, id, p, None);
+    // Google treats a 5xx or 429 robots.txt as "disallow everything" while it lasts.
+    if (500..600).contains(&f.status) {
+        out.push(w(Level::Error, "fetch.warn.serverError", &params! {"status" => f.status}));
+    } else if f.status == 429 {
+        out.push(w(Level::Warning, "fetch.warn.rateLimited", &[]));
+    } else if f.status == 401 || f.status == 403 {
+        out.push(w(Level::Info, "fetch.warn.forbidden", &params! {"status" => f.status}));
+    }
+    if !(200..300).contains(&f.status) {
+        return;
+    }
+    match media_type(f) {
+        Some(t) if t == "text/plain" => {}
+        Some(t) => out.push(w(Level::Warning, "fetch.warn.contentType", &params! {"type" => t})),
+        None => out.push(w(Level::Warning, "fetch.warn.contentTypeMissing", &[])),
+    }
+    if crate::parser::looks_like_html_page(&f.text) {
+        out.push(w(Level::Error, "fetch.warn.htmlBody", &[]));
+    }
+}
+
 /// Findings about the redirect chain and the final URL.
 pub fn fetch_warnings(f: &FetchInfo, locale: &Locale) -> Vec<Warning> {
     let mut out = Vec::new();
     let w = |level, id: &str, p: &crate::i18n::Params| warning(locale, WarningKind::Fetch, level, None, id, p, None);
+    response_warnings(f, locale, &mut out);
     if f.redirect_limit {
         out.push(w(Level::Error, "fetch.warn.redirectLimit", &[]));
         return out;
