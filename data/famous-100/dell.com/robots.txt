@@ -1,40 +1,21 @@
 User-agent: *
 #NewCo launch entries
+Disallow: */shopping/
 Disallow: */learn/lp/
 Disallow: */campaign/lp/
 Disallow: */legal/lp/
-Disallow: */shop/alienware/gaming$
-Disallow: */shop/alienware/gaming/*
-Disallow: */shop/alienware/gaming?r=*
-Disallow: */shop/deals/dc$
-Disallow: */shop/deals/dc
-Disallow: */shop/deals/*dc?appliedRefinements=*
-Disallow: */shop/deals/*dc?appliedrefinements=*
 Disallow: */shop/*/ar/*/appref=*
-Disallow: */sac/*/*/*/appref=*
-Disallow: */shop/dell-parts/partsbytype/*
-Disallow: */shop/dell-parts/ar/*/platform=*
 Disallow: */shop/*/*/apd/*/*/-
 
 #OldCo launch entries
 Disallow: */spd/*
 Disallow: */lp/
-Disallow: */gaming/alienware
-Disallow: */shop/deals
-Disallow: */shop/deals/*/*?appliedRefinements=*
-Disallow: */shop/deals/*/*?appliedrefinements=*
 Disallow: */shop/*/ar/*
 Disallow: */ar/*/*?appliedRefinements=*
-Disallow: */shop/*/sac/*
-Disallow: */sac/*/*/*?appliedRefinements=*
-Disallow: */shop/accessories$
-Disallow: */shop/electronics$
-Disallow: */shop/partsforyourdell$
-Disallow: */shop/partsbytype/*
-Disallow: */shop/pfydresults/*
 Disallow: */shop/*/apd/*
 Disallow: */shop/*/scr/*
-Disallow: */shop/compare?*
+
+
 #Temporary launch entries
 Disallow: /csbapi/unified-communication/*
 Disallow: *.less$
@@ -54,7 +35,6 @@ Disallow: *cacheKey
 
 
 #Shop
-Disallow: /en-gb
 Allow: /*/ar/4009?appliedRefinements=2828
 Allow: /en-ph/*/sc/
 Allow: /en-vn/*/sc/
@@ -1298,4 +1278,4 @@ Sitemap: https://www.dell.com/index-video-xml-sitemap.xml.gz
 Sitemap: https://www.dell.com/index-downloads-dell-pdfs-sitemap.xml.gz
 Sitemap: https://www.dell.com/index-dt-sitemap.xml.gz
 
-# Last Modified on 2026 Sep 18th, 9:00pm CST
+# Last Modified on 2026 Sep 19th, 10:00pm CST
