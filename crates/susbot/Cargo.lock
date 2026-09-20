@@ -482,14 +482,14 @@ checksum = "13c2bddecc57b384dee18652358fb23172facb8a2c51ccc10d74c157bdea3292"
 
 [[package]]
 name = "susbot"
-version = "2.1.0"
+version = "2.2.0"
 dependencies = [
  "susbot-cli",
 ]
 
 [[package]]
 name = "susbot-cli"
-version = "2.1.0"
+version = "2.2.0"
 dependencies = [
  "clap",
  "flate2",
@@ -502,7 +502,7 @@ dependencies = [
 
 [[package]]
 name = "susbot-core"
-version = "2.1.0"
+version = "2.2.0"
 dependencies = [
  "basic-toml",
  "fancy-regex",

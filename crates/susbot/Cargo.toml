@@ -1,6 +1,6 @@
 [package]
 name = "susbot"
-version = "2.1.0"
+version = "2.2.0"
 edition = "2021"
 description = "robots.txt checker for the command line and CI (sus.bot). Installs the same `susbot` program as the susbot-cli crate."
 license = "PolyForm-Noncommercial-1.0.0"
@@ -16,7 +16,7 @@ name = "susbot"
 path = "src/main.rs"
 
 [dependencies]
-susbot-cli = { path = "../cli", version = "2.1.0" }
+susbot-cli = { path = "../cli", version = "2.2.0" }
 
 # Its own workspace: see the exclude in the root Cargo.toml.
 [workspace]

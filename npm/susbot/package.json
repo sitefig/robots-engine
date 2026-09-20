@@ -1,6 +1,6 @@
 {
   "name": "@sitefig/susbot",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "robots.txt checker: which search engines and AI crawlers a site lets in, lint findings, exposed paths and diffs (sus.bot). WebAssembly engine for Node and browsers, plus the susbot command.",
   "keywords": [
     "robots.txt",
@@ -58,10 +58,10 @@
     "node": ">=18"
   },
   "optionalDependencies": {
-    "@sitefig/susbot-darwin-arm64": "2.1.0",
-    "@sitefig/susbot-darwin-x64": "2.1.0",
-    "@sitefig/susbot-linux-arm64": "2.1.0",
-    "@sitefig/susbot-linux-x64": "2.1.0",
-    "@sitefig/susbot-win32-x64": "2.1.0"
+    "@sitefig/susbot-darwin-arm64": "2.2.0",
+    "@sitefig/susbot-darwin-x64": "2.2.0",
+    "@sitefig/susbot-linux-arm64": "2.2.0",
+    "@sitefig/susbot-linux-x64": "2.2.0",
+    "@sitefig/susbot-win32-x64": "2.2.0"
   }
 }
