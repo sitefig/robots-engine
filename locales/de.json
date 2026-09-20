@@ -884,5 +884,6 @@
   "ui.recon.th.comment": "Kommentar",
   "recon.generators.note": "Die Datei wurde generiert. Ändern Sie sie dort, wo das Tool konfiguriert ist, nicht von Hand, sonst überschreibt sie das nächste Speichern.",
   "md.recon.generators": "Geschrieben von {list}. Ändern Sie die Datei dort, wo dieses Werkzeug eingestellt wird; Änderungen von Hand werden beim nächsten Speichern überschrieben.",
-  "csv.cat.generator": "Generator"
+  "csv.cat.generator": "Generator",
+  "page.footer.bot": "Der Crawler"
 }

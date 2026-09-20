@@ -34,6 +34,12 @@ pub fn agent(timeout: u64) -> ureq::Agent {
 /// Fetch `<origin>/robots.txt`, following up to five redirects by hand so the
 /// chain is reported, reading at most 512 KiB. Network failures are `Err`;
 /// any HTTP answer, including 4xx/5xx, is `Ok` with the status inside.
+/// What we send when the fetch is ours: the named crawler string from the
+/// config, or the browser one when a user config dropped it.
+pub fn our_ua(c: &susbot_core::config::Crawlers) -> &str {
+    c.bot_ua.as_deref().unwrap_or(&c.browser_ua)
+}
+
 pub fn fetch_robots(origin: &str, ua: &str, timeout: u64) -> Result<FetchInfo, String> {
     match fetch_robots_at(origin, ua, timeout) {
         // Some apex hosts (hsbc.com) accept no connections at all while

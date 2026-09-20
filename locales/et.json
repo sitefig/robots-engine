@@ -107,5 +107,6 @@
   "page.brandMenu.dark": "Logo tumedale taustale (SVG)",
   "page.brandMenu.light": "Logo heledale taustale (SVG)",
   "page.brandMenu.icon": "Ikoon (SVG)",
-  "page.brandMenu.press": "Ava pressimaterjalid"
+  "page.brandMenu.press": "Ava pressimaterjalid",
+  "page.footer.bot": "Robot"
 }

@@ -108,5 +108,6 @@
   "page.brandMenu.dark": "Logotip za tamnu pozadinu (SVG)",
   "page.brandMenu.light": "Logotip za svijetlu pozadinu (SVG)",
   "page.brandMenu.icon": "Ikona (SVG)",
-  "page.brandMenu.press": "Otvorite materijale za medije"
+  "page.brandMenu.press": "Otvorite materijale za medije",
+  "page.footer.bot": "Robot"
 }

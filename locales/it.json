@@ -913,5 +913,6 @@
   "ui.recon.th.comment": "Commento",
   "recon.generators.note": "Il file è stato generato. Modificalo dove lo strumento è configurato, non a mano, altrimenti il salvataggio successivo lo sovrascrive.",
   "md.recon.generators": "Scritto da {list}. Modifica il file dove è configurato quello strumento; una modifica a mano viene sovrascritta al salvataggio successivo.",
-  "csv.cat.generator": "Generatore"
+  "csv.cat.generator": "Generatore",
+  "page.footer.bot": "Il crawler"
 }

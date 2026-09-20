@@ -107,5 +107,6 @@
   "page.brandMenu.dark": "Logó sötét háttérre (SVG)",
   "page.brandMenu.light": "Logó világos háttérre (SVG)",
   "page.brandMenu.icon": "Ikon (SVG)",
-  "page.brandMenu.press": "Sajtóanyag megnyitása"
+  "page.brandMenu.press": "Sajtóanyag megnyitása",
+  "page.footer.bot": "A robot"
 }

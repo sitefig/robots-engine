@@ -200,7 +200,7 @@ pub fn run(cli: &TrackArgs) -> Result<u8, String> {
     let mut rows: Vec<Row> = Vec::new();
     let enabled: Vec<SiteEntry> = sites.iter().filter(|s| s.enabled).cloned().collect();
     eprintln!("tracking {} domain(s){}", enabled.len(), if cli.dry_run { " (dry run)" } else { "" });
-    let fetched = fetch_all(&enabled, &engine.config.crawlers.browser_ua, cli.timeout, cli.concurrency);
+    let fetched = fetch_all(&enabled, crate::net::our_ua(&engine.config.crawlers), cli.timeout, cli.concurrency);
 
     for (site, fetch_result) in enabled.iter().zip(fetched) {
         outcome.checked += 1;

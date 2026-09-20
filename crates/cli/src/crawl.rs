@@ -88,7 +88,7 @@ pub fn read_domains(path: &PathBuf) -> Result<Vec<String>, String> {
 fn audit_one(domain: &str, engine: &Arc<Engine>, locale: &Arc<Locale>, timeout: u64) -> Record {
     let origin = format!("https://{domain}");
     let fetched_at = iso_now();
-    let f = match fetch_robots(&origin, &engine.config.crawlers.browser_ua, timeout) {
+    let f = match fetch_robots(&origin, crate::net::our_ua(&engine.config.crawlers), timeout) {
         Ok(f) => f,
         Err(e) => {
             return Record { domain: domain.into(), fetched_at, ok: false, error: Some(e), status: 0, final_url: String::new(), redirects: 0, bytes: 0, hash: String::new(), groups: 0, rules: 0, sitemaps: 0, errors: 0, warnings: 0, security_findings: 0, platform: None, crawlers: BTreeMap::new(), ai_training_blocked: 0, ai_training_total: 0 };

@@ -884,5 +884,6 @@
   "ui.recon.th.comment": "Opmerking",
   "recon.generators.note": "Het bestand is gegenereerd. Wijzig het waar de tool is geconfigureerd, niet met de hand, anders overschrijft de volgende opslag het weer.",
   "md.recon.generators": "Geschreven door {list}. Pas het bestand aan waar die tool is ingesteld; een handmatige wijziging wordt bij de volgende keer opslaan overschreven.",
-  "csv.cat.generator": "Generator"
+  "csv.cat.generator": "Generator",
+  "page.footer.bot": "De crawler"
 }

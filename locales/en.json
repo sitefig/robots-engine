@@ -884,5 +884,6 @@
   "ui.recon.th.comment": "Comment",
   "recon.generators.note": "The file was generated. Change it where the tool is configured, not by hand, or the next save overwrites it.",
   "md.recon.generators": "Written by {list}. Change the file where that tool is configured; editing it by hand is overwritten on the next save.",
-  "csv.cat.generator": "Generator"
+  "csv.cat.generator": "Generator",
+  "page.footer.bot": "The crawler"
 }

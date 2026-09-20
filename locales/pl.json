@@ -109,5 +109,6 @@
   "page.brandMenu.dark": "Logo na ciemne tło (SVG)",
   "page.brandMenu.light": "Logo na jasne tło (SVG)",
   "page.brandMenu.icon": "Ikona (SVG)",
-  "page.brandMenu.press": "Otwórz materiały prasowe"
+  "page.brandMenu.press": "Otwórz materiały prasowe",
+  "page.footer.bot": "Robot"
 }

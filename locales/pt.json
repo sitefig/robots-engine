@@ -108,5 +108,6 @@
   "page.brandMenu.dark": "Logótipo para fundos escuros (SVG)",
   "page.brandMenu.light": "Logótipo para fundos claros (SVG)",
   "page.brandMenu.icon": "Ícone (SVG)",
-  "page.brandMenu.press": "Abrir o kit de imprensa"
+  "page.brandMenu.press": "Abrir o kit de imprensa",
+  "page.footer.bot": "O robô"
 }

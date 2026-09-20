@@ -3261,3 +3261,7 @@ msgstr "Geschreven door {list}. Pas het bestand aan waar die tool is ingesteld; 
 msgctxt "csv.cat.generator"
 msgid "Generator"
 msgstr "Generator"
+
+msgctxt "page.footer.bot"
+msgid "The crawler"
+msgstr "De crawler"

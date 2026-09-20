@@ -913,5 +913,6 @@
   "ui.recon.th.comment": "Comentario",
   "recon.generators.note": "El archivo se generó automáticamente. Cámbialo donde se configura la herramienta, no a mano, o el próximo guardado lo sobrescribirá.",
   "md.recon.generators": "Escrito por {list}. Cambia el archivo donde se configura esa herramienta; una edición a mano se sobrescribe al guardar la próxima vez.",
-  "csv.cat.generator": "Generador"
+  "csv.cat.generator": "Generador",
+  "page.footer.bot": "El rastreador"
 }

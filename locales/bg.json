@@ -107,5 +107,6 @@
   "page.brandMenu.dark": "Лого за тъмен фон (SVG)",
   "page.brandMenu.light": "Лого за светъл фон (SVG)",
   "page.brandMenu.icon": "Икона (SVG)",
-  "page.brandMenu.press": "Отворете материалите за медии"
+  "page.brandMenu.press": "Отворете материалите за медии",
+  "page.footer.bot": "Роботът"
 }

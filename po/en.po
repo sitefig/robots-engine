@@ -3261,3 +3261,7 @@ msgstr "Written by {list}. Change the file where that tool is configured; editin
 msgctxt "csv.cat.generator"
 msgid "Generator"
 msgstr "Generator"
+
+msgctxt "page.footer.bot"
+msgid "The crawler"
+msgstr "The crawler"

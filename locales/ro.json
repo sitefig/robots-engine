@@ -108,5 +108,6 @@
   "page.brandMenu.dark": "Logo pentru fundaluri închise (SVG)",
   "page.brandMenu.light": "Logo pentru fundaluri deschise (SVG)",
   "page.brandMenu.icon": "Pictogramă (SVG)",
-  "page.brandMenu.press": "Deschideți kitul de presă"
+  "page.brandMenu.press": "Deschideți kitul de presă",
+  "page.footer.bot": "Robotul"
 }

@@ -107,5 +107,6 @@
   "page.brandMenu.dark": "Logo til mørk baggrund (SVG)",
   "page.brandMenu.light": "Logo til lys baggrund (SVG)",
   "page.brandMenu.icon": "Ikon (SVG)",
-  "page.brandMenu.press": "Åbn pressematerialet"
+  "page.brandMenu.press": "Åbn pressematerialet",
+  "page.footer.bot": "Crawleren"
 }

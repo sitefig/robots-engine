@@ -110,5 +110,6 @@
   "page.brandMenu.dark": "Logo għal sfondi skuri (SVG)",
   "page.brandMenu.light": "Logo għal sfondi ċari (SVG)",
   "page.brandMenu.icon": "Ikona (SVG)",
-  "page.brandMenu.press": "Iftaħ il-kit għall-istampa"
+  "page.brandMenu.press": "Iftaħ il-kit għall-istampa",
+  "page.footer.bot": "Ir-robot"
 }

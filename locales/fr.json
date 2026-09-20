@@ -913,5 +913,6 @@
   "ui.recon.th.comment": "Commentaire",
   "recon.generators.note": "Ce fichier a été généré. Modifiez-le à l'endroit où l'outil est configuré, pas à la main, sinon le prochain enregistrement l'écrasera.",
   "md.recon.generators": "Écrit par {list}. Modifiez le fichier là où cet outil est configuré ; une modification à la main est écrasée au prochain enregistrement.",
-  "csv.cat.generator": "Générateur"
+  "csv.cat.generator": "Générateur",
+  "page.footer.bot": "Le robot"
 }

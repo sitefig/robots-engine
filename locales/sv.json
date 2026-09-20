@@ -107,5 +107,6 @@
   "page.brandMenu.dark": "Logotyp för mörk bakgrund (SVG)",
   "page.brandMenu.light": "Logotyp för ljus bakgrund (SVG)",
   "page.brandMenu.icon": "Ikon (SVG)",
-  "page.brandMenu.press": "Öppna pressmaterialet"
+  "page.brandMenu.press": "Öppna pressmaterialet",
+  "page.footer.bot": "Sökroboten"
 }

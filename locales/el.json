@@ -107,5 +107,6 @@
   "page.brandMenu.dark": "Λογότυπο για σκούρο φόντο (SVG)",
   "page.brandMenu.light": "Λογότυπο για ανοιχτό φόντο (SVG)",
   "page.brandMenu.icon": "Εικονίδιο (SVG)",
-  "page.brandMenu.press": "Άνοιγμα υλικού τύπου"
+  "page.brandMenu.press": "Άνοιγμα υλικού τύπου",
+  "page.footer.bot": "Το ρομπότ"
 }

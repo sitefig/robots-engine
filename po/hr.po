@@ -3290,3 +3290,7 @@ msgstr ""
 msgctxt "csv.cat.generator"
 msgid "Generator"
 msgstr ""
+
+msgctxt "page.footer.bot"
+msgid "The crawler"
+msgstr "Robot"

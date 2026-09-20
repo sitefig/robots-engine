@@ -3290,3 +3290,7 @@ msgstr "Escrito por {list}. Cambia el archivo donde se configura esa herramienta
 msgctxt "csv.cat.generator"
 msgid "Generator"
 msgstr "Generador"
+
+msgctxt "page.footer.bot"
+msgid "The crawler"
+msgstr "El rastreador"

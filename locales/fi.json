@@ -107,5 +107,6 @@
   "page.brandMenu.dark": "Logo tummalle taustalle (SVG)",
   "page.brandMenu.light": "Logo vaalealle taustalle (SVG)",
   "page.brandMenu.icon": "Kuvake (SVG)",
-  "page.brandMenu.press": "Avaa mediamateriaali"
+  "page.brandMenu.press": "Avaa mediamateriaali",
+  "page.footer.bot": "Indeksointirobotti"
 }

@@ -108,5 +108,6 @@
   "page.brandMenu.dark": "Logotips tumšam fonam (SVG)",
   "page.brandMenu.light": "Logotips gaišam fonam (SVG)",
   "page.brandMenu.icon": "Ikona (SVG)",
-  "page.brandMenu.press": "Atvērt preses materiālus"
+  "page.brandMenu.press": "Atvērt preses materiālus",
+  "page.footer.bot": "Robots"
 }

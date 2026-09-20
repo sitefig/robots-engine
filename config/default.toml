@@ -47,6 +47,10 @@ comments = true
 categories = ["search", "ai-training", "ai-search", "ai-scraper", "social", "seo", "ads", "archive", "marketing", "scraper", "retired"]
 ai_categories = ["ai-training", "ai-search"]   # first one is the "AI training" group of the status card
 browser_ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+# What we send when we fetch a robots.txt on our own account (the census
+# crawl and the tracking runs). It names itself and links the page that
+# explains it, as a crawler should; see src/site/bot.md.
+bot_ua = "Mozilla/5.0 (compatible; susbot/2.2; +https://sus.bot/bot/)"
 
 # Offline downloaders and e-mail harvesters from 1990s block lists. None of
 # them read robots.txt; a file naming ten or more is copied boilerplate.

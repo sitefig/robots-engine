@@ -67,6 +67,10 @@ pub struct Crawlers {
     pub categories: Vec<String>,
     pub ai_categories: Vec<String>,
     pub browser_ua: String,
+    /// What the crawl and tracking runs send; named, with a link to the page
+    /// that explains them. Falls back to the browser string when unset.
+    #[serde(default)]
+    pub bot_ua: Option<String>,
     pub list: Vec<Crawler>,
     /// Offline downloaders and harvesters from 1990s block lists. They never
     /// read robots.txt; a file naming ten of them is copied boilerplate.

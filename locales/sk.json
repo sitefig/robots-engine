@@ -109,5 +109,6 @@
   "page.brandMenu.dark": "Logo na tmavé pozadie (SVG)",
   "page.brandMenu.light": "Logo na svetlé pozadie (SVG)",
   "page.brandMenu.icon": "Ikona (SVG)",
-  "page.brandMenu.press": "Otvoriť tlačové materiály"
+  "page.brandMenu.press": "Otvoriť tlačové materiály",
+  "page.footer.bot": "Robot"
 }

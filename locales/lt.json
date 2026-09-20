@@ -109,5 +109,6 @@
   "page.brandMenu.dark": "Logotipas tamsiam fonui (SVG)",
   "page.brandMenu.light": "Logotipas šviesiam fonui (SVG)",
   "page.brandMenu.icon": "Piktograma (SVG)",
-  "page.brandMenu.press": "Atidaryti spaudos rinkinį"
+  "page.brandMenu.press": "Atidaryti spaudos rinkinį",
+  "page.footer.bot": "Robotas"
 }

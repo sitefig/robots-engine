@@ -3261,3 +3261,7 @@ msgstr "Geschrieben von {list}. Ändern Sie die Datei dort, wo dieses Werkzeug e
 msgctxt "csv.cat.generator"
 msgid "Generator"
 msgstr "Generator"
+
+msgctxt "page.footer.bot"
+msgid "The crawler"
+msgstr "Der Crawler"
