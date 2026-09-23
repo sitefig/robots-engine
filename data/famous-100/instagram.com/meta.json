@@ -3,9 +3,9 @@
   "robots_url": "https://instagram.com/robots.txt",
   "final_url": "https://www.instagram.com/robots.txt",
   "http_status": 200,
-  "bytes": 524288,
-  "fetched_at": "2026-09-17T12:11:38.000Z",
+  "bytes": 6258,
+  "fetched_at": "2026-09-21T08:53:53.000Z",
   "redirects": 1,
   "unavailable": false,
-  "html": true
+  "html": false
 }

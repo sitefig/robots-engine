@@ -3,9 +3,9 @@
   "robots_url": "https://jnj.com/robots.txt",
   "final_url": "https://www.jnj.com/robots.txt",
   "http_status": 200,
-  "bytes": 557,
-  "fetched_at": "2026-09-18T09:44:01.000Z",
+  "bytes": 2340,
+  "fetched_at": "2026-09-21T08:53:59.000Z",
   "redirects": 1,
   "unavailable": false,
-  "html": true
+  "html": false
 }

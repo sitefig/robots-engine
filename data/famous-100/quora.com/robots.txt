@@ -11,6 +11,8 @@
 
 User-agent: AASA-Bot
 Disallow: /ajax/
+Disallow: /*_POST$
+Disallow: /*_POST/
 Disallow: /@async
 Disallow: /*/@async
 Disallow: /log/
@@ -58,8 +60,6 @@ Disallow: /invite/
 Disallow: /widgets/content_iframe/
 Disallow: /widgets/content_js/
 Disallow: /_/
-Disallow: /*_POST$
-Disallow: /*_POST/
 Disallow: /webnode2/
 Disallow: /anonymous/
 Disallow: /q/*/admin_log
@@ -75,6 +75,8 @@ Disallow: /topic/*/Rss
 
 User-agent: Amazonbot
 Disallow: /ajax/
+Disallow: /*_POST$
+Disallow: /*_POST/
 Disallow: /@async
 Disallow: /*/@async
 Disallow: /log/
@@ -122,8 +124,6 @@ Disallow: /invite/
 Disallow: /widgets/content_iframe/
 Disallow: /widgets/content_js/
 Disallow: /_/
-Disallow: /*_POST$
-Disallow: /*_POST/
 Disallow: /webnode2/
 Disallow: /anonymous/
 Disallow: /q/*/admin_log
@@ -139,7 +139,10 @@ Disallow: /topic/*/Rss
 
 User-agent: Googlebot
 Allow: */answer/ix_/
+Allow: /sitemap/collections/answer/
 Disallow: /ajax/
+Disallow: /*_POST$
+Disallow: /*_POST/
 Disallow: /@async
 Disallow: /*/@async
 Disallow: /log/
@@ -187,8 +190,6 @@ Disallow: /invite/
 Disallow: /widgets/content_iframe/
 Disallow: /widgets/content_js/
 Disallow: /_/
-Disallow: /*_POST$
-Disallow: /*_POST/
 Disallow: /webnode2/
 Disallow: /anonymous/
 Disallow: /q/*/admin_log
@@ -207,6 +208,8 @@ Disallow: */answers/
 
 User-agent: Google-Extended
 Disallow: /ajax/
+Disallow: /*_POST$
+Disallow: /*_POST/
 Disallow: /@async
 Disallow: /*/@async
 Disallow: /log/
@@ -254,8 +257,6 @@ Disallow: /invite/
 Disallow: /widgets/content_iframe/
 Disallow: /widgets/content_js/
 Disallow: /_/
-Disallow: /*_POST$
-Disallow: /*_POST/
 Disallow: /webnode2/
 Disallow: /anonymous/
 Disallow: /q/*/admin_log
@@ -271,6 +272,8 @@ Disallow: /topic/*/Rss
 
 User-agent: Facebot
 Disallow: /ajax/
+Disallow: /*_POST$
+Disallow: /*_POST/
 Disallow: /@async
 Disallow: /*/@async
 Disallow: /log/
@@ -318,8 +321,6 @@ Disallow: /invite/
 Disallow: /widgets/content_iframe/
 Disallow: /widgets/content_js/
 Disallow: /_/
-Disallow: /*_POST$
-Disallow: /*_POST/
 Disallow: /webnode2/
 Disallow: /anonymous/
 Disallow: /q/*/admin_log
@@ -335,6 +336,8 @@ Disallow: /topic/*/Rss
 
 User-agent: Applebot
 Disallow: /ajax/
+Disallow: /*_POST$
+Disallow: /*_POST/
 Disallow: /@async
 Disallow: /*/@async
 Disallow: /log/
@@ -382,8 +385,6 @@ Disallow: /invite/
 Disallow: /widgets/content_iframe/
 Disallow: /widgets/content_js/
 Disallow: /_/
-Disallow: /*_POST$
-Disallow: /*_POST/
 Disallow: /webnode2/
 Disallow: /anonymous/
 Disallow: /q/*/admin_log
@@ -399,6 +400,8 @@ Disallow: /topic/*/Rss
 
 User-agent: Twitterbot
 Disallow: /ajax/
+Disallow: /*_POST$
+Disallow: /*_POST/
 Disallow: /@async
 Disallow: /*/@async
 Disallow: /log/
@@ -446,8 +449,6 @@ Disallow: /invite/
 Disallow: /widgets/content_iframe/
 Disallow: /widgets/content_js/
 Disallow: /_/
-Disallow: /*_POST$
-Disallow: /*_POST/
 Disallow: /webnode2/
 Disallow: /anonymous/
 Disallow: /q/*/admin_log
@@ -463,6 +464,8 @@ Disallow: /topic/*/Rss
 
 User-agent: LinkedInBot
 Disallow: /ajax/
+Disallow: /*_POST$
+Disallow: /*_POST/
 Disallow: /@async
 Disallow: /*/@async
 Disallow: /log/
@@ -510,8 +513,6 @@ Disallow: /invite/
 Disallow: /widgets/content_iframe/
 Disallow: /widgets/content_js/
 Disallow: /_/
-Disallow: /*_POST$
-Disallow: /*_POST/
 Disallow: /webnode2/
 Disallow: /anonymous/
 Disallow: /q/*/admin_log
@@ -527,6 +528,8 @@ Disallow: /topic/*/Rss
 
 User-agent: Feedly
 Disallow: /ajax/
+Disallow: /*_POST$
+Disallow: /*_POST/
 Disallow: /@async
 Disallow: /*/@async
 Disallow: /log/
@@ -574,8 +577,6 @@ Disallow: /invite/
 Disallow: /widgets/content_iframe/
 Disallow: /widgets/content_js/
 Disallow: /_/
-Disallow: /*_POST$
-Disallow: /*_POST/
 Disallow: /webnode2/
 Disallow: /anonymous/
 Disallow: /q/*/admin_log
@@ -591,6 +592,8 @@ Disallow: /topic/*/Rss
 
 User-agent: Pingdom
 Disallow: /ajax/
+Disallow: /*_POST$
+Disallow: /*_POST/
 Disallow: /@async
 Disallow: /*/@async
 Disallow: /log/
@@ -638,8 +641,6 @@ Disallow: /invite/
 Disallow: /widgets/content_iframe/
 Disallow: /widgets/content_js/
 Disallow: /_/
-Disallow: /*_POST$
-Disallow: /*_POST/
 Disallow: /webnode2/
 Disallow: /anonymous/
 Disallow: /q/*/admin_log
@@ -762,6 +763,8 @@ Allow: /login/
 Allow: /signup$
 Disallow: /
 Disallow: /ajax/
+Disallow: /*_POST$
+Disallow: /*_POST/
 Disallow: /@async
 Disallow: /*/@async
 Disallow: /log/
@@ -809,8 +812,6 @@ Disallow: /invite/
 Disallow: /widgets/content_iframe/
 Disallow: /widgets/content_js/
 Disallow: /_/
-Disallow: /*_POST$
-Disallow: /*_POST/
 Disallow: /webnode2/
 Disallow: /anonymous/
 Disallow: /q/*/admin_log

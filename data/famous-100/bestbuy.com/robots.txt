@@ -1,0 +1,435 @@
+# --------------------------------------------------
+# BEST BUY OFFICIAL ENTERPRISE ROBOTS.TXT
+# Optimized for search engines, AI discovery, ads, and crawl control
+# --------------------------------------------------
+
+# ==================================================
+# BUCKET 1: AI SEARCH & DISCOVERY BOT ACCESS
+# Allows conversational answer engines to securely access clean landing pages.
+# Mirrors explicit production parameters to protect long-tail revenue.
+# ==================================================
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Perplexity-User
+User-agent: GPTBot
+User-agent: Claude-User
+User-agent: Claudebot
+User-agent: PerplexityBot
+User-agent: Applebot
+User-agent: Google-Extended
+User-agent: Gemeni-AI
+User-agent: Gemini-Deep-Research
+User-agent: AmazonBot
+
+Allow: /site/
+Allow: /discover-learn/
+
+# System Application Blockouts
+Disallow: /nex/
+Disallow: /m/e/*
+Disallow: /browse-api/*
+Disallow: /api/*.json
+Disallow: /availability/*
+Disallow: /cart
+Disallow: /cart/*
+Disallow: /cartitems/*
+Disallow: /fulfillment/*
+Disallow: /location/*
+Disallow: /pricing/*
+Disallow: /productfulfillment/*
+Disallow: /profile/*
+Disallow: /services/plans/*
+Disallow: /services/shoppingscheduler*
+Disallow: /site/builder/*
+Disallow: /site/modals/*
+Disallow: /site/dni/*
+Disallow: /site/offerbuilder/*
+
+# User Dynamic Input Paths
+Disallow: /site/questions/submission*
+Disallow: /site/answers/submission*
+Disallow: /site/reviews/submission*
+
+# Production-Safe Explicit Tab Fragments
+Disallow: /*template=_gameDetailsTab
+Disallow: /*template=_movieDetailsTab
+Disallow: /*template=_musicDetailsTab
+Disallow: /*template=_softwareDetailsTab
+Disallow: /*template=_accessoriesTab
+Disallow: /*template=_castAndCrewTab
+Disallow: /*template=_editorialTab
+Disallow: /*template=_episodesTab
+Disallow: /*template=_protectionAndServicesTab
+Disallow: /*template=_specificationsTab
+Disallow: /*template=_featuresSpoke
+Disallow: /*template=_buyingOptionsNewTab
+
+# Production-Safe Explicit Core Facet Controls (Brand/Category left open)
+Disallow: *armodelformat_facet*
+Disallow: *awardtype_facet*
+Disallow: *awardwinner_facet*
+Disallow: *awardyear_facet*
+Disallow: *blenderfunctions_facet*
+Disallow: *boxdesign_facet*
+Disallow: *cast_facet*
+Disallow: *cleaningpathwidthrange_facet*
+Disallow: *consumerlifestage_facet*
+Disallow: *decade_facet*
+Disallow: *defrosttype_facet*
+Disallow: *departmentid_facet*
+Disallow: *depthtype_facet*
+Disallow: *displayport_facet*
+Disallow: *doorstylesv_facet*
+Disallow: *drawertype_facet*
+Disallow: *dynamiccategory_facet*
+Disallow: *effectivemegapixels_facet*
+Disallow: *flashmodesmv_facet*
+Disallow: *framematerialmv_facet*
+Disallow: *giftcardthemesv_facet*
+Disallow: *handletype_facet*
+Disallow: *headsetstylesv_facet*
+Disallow: *heatingsource_facet*
+Disallow: *imagesensorsize_facet*
+Disallow: *imagesensortype11_facet*
+Disallow: *includedcolors_facet*
+Disallow: *inkmodelcompatibilitymv_facet*
+Disallow: *internalorexternal_facet*
+Disallow: *laptopuse_facet*
+Disallow: *lengthofcable_facet*
+Disallow: *mattressmaterial_facet*
+Disallow: *maximumsensitivity_facet*
+Disallow: *minfocallengthrange_facet*
+Disallow: *mobileinternalmemory_facet*
+Disallow: *monitorresponsetimerange_facet*
+Disallow: *monitorsnumberofusb30typecports_facet*
+Disallow: *monitorsnumberofusb31typecports_facet*
+Disallow: *mountmaterial_facet*
+Disallow: *networkingcabletype_facet*
+Disallow: *numberofbedroomsef_facet*
+Disallow: *numberofburnerssv_facet*
+Disallow: *numberofbuttons_facet*
+Disallow: *numberofdryingcycles_facet*
+Disallow: *numberoffanspeedssv_facet*
+Disallow: *numberofhdmiinputssv_facet*
+Disallow: *numberoflanports_facet*
+Disallow: *numberofspeakers_facet*
+Disallow: *numberofspeedssv_facet*
+Disallow: *numberofthunderbolt_ports_facet*
+Disallow: *numberofwashrinsecycle_facet*
+Disallow: *papersize_facet*
+Disallow: *playbackformatsmv_facet*
+Disallow: *productcategories_facet*
+Disallow: *screensizediagonalrange_facet*
+Disallow: *securityconnectivity_facet*
+Disallow: *securityresolution_facet*
+Disallow: *securitystoragetype_facet*
+Disallow: *softwareformat_facet*
+Disallow: *sqbprocessormodel_facet*
+Disallow: *sqbtotalstoragecapacity_facet*
+Disallow: *stringtype_facet*
+Disallow: *subclassid_facet*
+Disallow: *subgenre_facet*
+Disallow: *thruthedoordispenser_facet*
+Disallow: *toastingslotssv_facet*
+Disallow: *totaltechdeals_facet*
+Disallow: *touchscreentype_facet*
+Disallow: *transferrate_facet*
+Disallow: *transistorsize_facet*
+Disallow: *transmitterdistance_facet*
+Disallow: *treeheight_facet*
+Disallow: *treelightbulbcolor_facet*
+Disallow: *tubfinishmv_facet*
+Disallow: *varyinganglescreen_facet*
+Disallow: *vendorcollection_facet*
+Disallow: *videomemory_facet*
+Disallow: *viewfindertypemv_facet*
+Disallow: *virtualrealitycompatibility_facet*
+Disallow: *wanportssv_facet*
+Disallow: *wearingstyle_facet*
+Disallow: *currentprice2_facet*
+Disallow: *customerreviews_facet*Customer*Rating*5*
+Disallow: *customerreviews_facet*Customer*Rating*4*
+Disallow: *customerreviews_facet*Customer*Rating*3*
+Disallow: *customerreviews_facet*Customer*Rating*2*
+Disallow: *customerreviews_facet*Customer*Rating*1*
+Disallow: *soldout_facet*
+Disallow: */site/promo/*?*_facet*
+Disallow: */product/list/*
+Disallow: */awacs-ingestor/*
+
+# Exact Pagination Safeguards
+Disallow: *cp=1*
+Disallow: *cp=20*
+Disallow: *cp=6*
+Disallow: *cp=7*
+Disallow: *cp=8*
+Disallow: *cp=9*
+Disallow: *?*page=*&page=*$
+
+# Malformed URL Traps (Universal Protection)
+Disallow: *==$
+Disallow: */-?
+Disallow: */undefined$
+Disallow: */null$
+Disallow: *javascript:winopengld*
+
+# ==================================================
+# BUCKET 2: AI TRAINING / DATA INGESTION FIREWALL
+# Completely blocks models from scraping copy assets for foundational training.
+# ==================================================
+User-agent: GPTBot-Web
+User-agent: CCBot
+User-agent: Anthropic-AI
+User-agent: Claude-Web
+User-agent: Bytespider
+Disallow: /[1.1]
+
+# ==================================================
+# BUCKET 3: UNIFIED WEB ENGINES & UNIVERSAL DEFAULTS
+# Consolidated grouping ensures zero functional divergence between indexing bots.
+# ==================================================
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: Slurp
+User-agent: *
+
+# Standard Asset Pathways
+Allow: /~assets/
+Allow: /discover-learn/
+
+# Core System Blockouts
+Disallow: /nex/
+Disallow: /m/e/*
+Disallow: /site/builder/*
+Disallow: /browse-api/*
+Disallow: /api/*.json
+Disallow: /availability/*
+Disallow: /cart
+Disallow: /cart/*
+Disallow: /cartitems/*
+Disallow: /fulfillment/*
+Disallow: /location/*
+Disallow: /pricing/*
+Disallow: /productfulfillment/*
+Disallow: /profile/*
+Disallow: /site/modals/*
+Disallow: /services/plans/*
+Disallow: /site/dni/*
+Disallow: /site/offerbuilder/*
+Disallow: /services/shoppingscheduler*
+
+# Staging, Internal Test, & Promotional Exclusion Matrices
+Disallow: /site/clp/test-page/*
+Disallow: /site/test-page/*
+Disallow: /site/misc/test-pages/*
+Disallow: /site/offer/*
+Disallow: /site/compare?skus=*
+Disallow: /site/clp/conditional-offers/*
+Disallow: /site/total-tech-support/*
+Disallow: /site/clp/annette-test-listing/*
+Disallow: /site/shop-view-test-page/*
+Disallow: /site/clp/test/*
+Disallow: /site/test-cloud-ready/*
+Disallow: /site/clp/mystery-rewards-certificate/pcmcat1524134875052.c?id=pcmcat1524134875052
+Disallow: /purchasehistory/gift-receipt*
+Disallow: /contact-us?*
+Disallow: /ease/email
+Disallow: /ihc/invoice*
+Disallow: /identity/newAccount?*
+Disallow: /identity/signin?*
+Disallow: /identity/signin/forgotPassword?*
+Disallow: /dossier/service/appointment/*/*-*
+Disallow: /dossier/service/appointment/search?*
+Disallow: */product-selector/*
+Disallow: */email-subscription/*
+
+# Legacy Template Controller Protections (Parameter Strictness Maintained)
+Disallow: /site/olspage.jsp?id=pcat17098*
+Disallow: /site/olstemplatemapper.jsp?id=pcat17098*
+Disallow: /site/olspage.jsp?id=pcat17089*
+Disallow: /site/olstemplatemapper.jsp?id=pcat17089*
+Disallow: /site/olspage.jsp?id=cat13503*
+Disallow: /site/olstemplatemapper.jsp?id=cat13503*
+Disallow: /site/olspage.jsp?id=pcat17007*
+Disallow: /site/olstemplatemapper.jsp?id=pcat17007*
+Disallow: /site/olspage.jsp?id=pcat17408*
+Disallow: /site/olstemplatemapper.jsp?id=pcat17408*
+Disallow: /site/olspage.jsp?id=cat12091*
+Disallow: /site/olstemplatemapper.jsp?id=cat12091*
+Disallow: /site/olspage.jsp?id=pcat17005*
+Disallow: /site/olstemplatemapper.jsp?id=pcat17005*
+Disallow: /site/olspage.jsp?id=cat12076*
+Disallow: /site/olstemplatemapper.jsp?id=cat12076*
+Disallow: /site/olspage.jsp?id=cat12080*
+Disallow: /site/olstemplatemapper.jsp?id=cat12080*
+Disallow: /site/olspage.jsp?id=cat12101*
+Disallow: /site/olstemplatemapper.jsp?id=cat12101*
+Disallow: /site/olstemplatemapper.jsp?id=pcat17006*
+Disallow: /site/olspage.jsp?id=pcat17006*
+Disallow: */site/olspage.jsp*
+
+# Asynchronous Layout Fragment Controls
+Disallow: /*template=_gameDetailsTab
+Disallow: /*template=_movieDetailsTab
+Disallow: /*template=_musicDetailsTab
+Disallow: /*template=_softwareDetailsTab
+Disallow: /*template=_accessoriesTab
+Disallow: /*template=_castAndCrewTab
+Disallow: /*template=_editorialTab
+Disallow: /*template=_episodesTab
+Disallow: /*template=_protectionAndServicesTab
+Disallow: /*template=_specificationsTab
+Disallow: /*template=_featuresSpoke
+Disallow: /*template=_buyingOptionsNewTab
+
+# User Input Paths
+Disallow: /site/questions/submission*
+Disallow: /site/answers/submission*
+Disallow: /site/reviews/submission*
+
+# Granular Facet Exclusions
+Disallow: *armodelformat_facet*
+Disallow: *awardtype_facet*
+Disallow: *awardwinner_facet*
+Disallow: *awardyear_facet*
+Disallow: *blenderfunctions_facet*
+Disallow: *boxdesign_facet*
+Disallow: *cast_facet*
+Disallow: *cleaningpathwidthrange_facet*
+Disallow: *consumerlifestage_facet*
+Disallow: *decade_facet*
+Disallow: *defrosttype_facet*
+Disallow: *departmentid_facet*
+Disallow: *depthtype_facet*
+Disallow: *displayport_facet*
+Disallow: *doorstylesv_facet*
+Disallow: *drawertype_facet*
+Disallow: *dynamiccategory_facet*
+Disallow: *effectivemegapixels_facet*
+Disallow: *flashmodesmv_facet*
+Disallow: *framematerialmv_facet*
+Disallow: *giftcardthemesv_facet*
+Disallow: *handletype_facet*
+Disallow: *headsetstylesv_facet*
+Disallow: *heatingsource_facet*
+Disallow: *imagesensorsize_facet*
+Disallow: *imagesensortype11_facet*
+Disallow: *includedcolors_facet*
+Disallow: *inkmodelcompatibilitymv_facet*
+Disallow: *internalorexternal_facet*
+Disallow: *laptopuse_facet*
+Disallow: *lengthofcable_facet*
+Disallow: *mattressmaterial_facet*
+Disallow: *maximumsensitivity_facet*
+Disallow: *minfocallengthrange_facet*
+Disallow: *mobileinternalmemory_facet*
+Disallow: *monitorresponsetimerange_facet*
+Disallow: *monitorsnumberofusb30typecports_facet*
+Disallow: *monitorsnumberofusb31typecports_facet*
+Disallow: *mountmaterial_facet*
+Disallow: *networkingcabletype_facet*
+Disallow: *numberofbedroomsef_facet*
+Disallow: *numberofburnerssv_facet*
+Disallow: *numberofbuttons_facet*
+Disallow: *numberofdryingcycles_facet*
+Disallow: *numberoffanspeedssv_facet*
+Disallow: *numberofhdmiinputssv_facet*
+Disallow: *numberoflanports_facet*
+Disallow: *numberofspeakers_facet*
+Disallow: *numberofspeedssv_facet*
+Disallow: *numberofthunderbolt_ports_facet*
+Disallow: *numberofwashrinsecycle_facet*
+Disallow: *papersize_facet*
+Disallow: *playbackformatsmv_facet*
+Disallow: *productcategories_facet*
+Disallow: *screensizediagonalrange_facet*
+Disallow: *securityconnectivity_facet*
+Disallow: *securityresolution_facet*
+Disallow: *securitystoragetype_facet*
+Disallow: *softwareformat_facet*
+Disallow: *sqbprocessormodel_facet*
+Disallow: *sqbtotalstoragecapacity_facet*
+Disallow: *stringtype_facet*
+Disallow: *subclassid_facet*
+Disallow: *subgenre_facet*
+Disallow: *thruthedoordispenser_facet*
+Disallow: *toastingslotssv_facet*
+Disallow: *totaltechdeals_facet*
+Disallow: *touchscreentype_facet*
+Disallow: *transferrate_facet*
+Disallow: *transistorsize_facet*
+Disallow: *transmitterdistance_facet*
+Disallow: *treeheight_facet*
+Disallow: *treelightbulbcolor_facet*
+Disallow: *tubfinishmv_facet*
+Disallow: *varyinganglescreen_facet*
+Disallow: *vendorcollection_facet*
+Disallow: *videomemory_facet*
+Disallow: *viewfindertypemv_facet*
+Disallow: *virtualrealitycompatibility_facet*
+Disallow: *wanportssv_facet*
+Disallow: *wearingstyle_facet*
+Disallow: *currentprice2_facet*
+Disallow: *customerreviews_facet*Customer*Rating*5*
+Disallow: *customerreviews_facet*Customer*Rating*4*
+Disallow: *customerreviews_facet*Customer*Rating*3*
+Disallow: *customerreviews_facet*Customer*Rating*2*
+Disallow: *customerreviews_facet*Customer*Rating*1*
+Disallow: *soldout_facet*
+Disallow: */site/promo/*?*_facet*
+Disallow: */product/list/*
+
+# Pagination Crawl Trap Controls
+Disallow: *cp=1*
+Disallow: *cp=20*
+Disallow: *cp=6*
+Disallow: *cp=7*
+Disallow: *cp=8*
+Disallow: *cp=9*
+Disallow: *?*page=*&page=*$
+
+# Malformed URL Traps
+Disallow: *==$
+Disallow: */-?
+Disallow: */undefined$
+Disallow: */null$
+Disallow: *javascript:winopengld*
+
+# ==================================================
+# BUCKET 4: PAID SEARCH / ADS / MEDIA BOTS
+# Leaves pathways unobstructed for digital advertising synchronization.
+# ==================================================
+User-agent: AdsBot-Google
+User-agent: Googlebot-Image
+User-agent: Mediapartners-Google
+User-agent: Google-Display-Ads-Bot
+Disallow:
+
+# ==================================================
+# BUCKET 5: BLOCKED AGGRESSIVE THIRD-PARTY AGGREGATORS / TOOLS
+# Absolute block to preserve server performance and block unauthorized scrapers.
+# ==================================================
+User-agent: GetIntentCrawler 
+User-agent: DotBot 
+User-agent: MJ12bot 
+User-agent: thesis-research-bot 
+User-agent: TerraCotta
+User-agent: BigSurAI
+User-agent: MyCentralAIScraper
+Disallow: / [2.1]
+
+# ==================================================
+# DATA SITEMAPS
+# ==================================================
+Sitemap: https://sitemaps.bestbuy.com/sitemaps_discover_learn.xml
+Sitemap: https://sitemaps.bestbuy.com/sitemaps_pdp.xml
+Sitemap: https://sitemaps.bestbuy.com/sitemaps_promos.xml
+Sitemap: https://sitemaps.bestbuy.com/sitemaps_qna.xml
+Sitemap: https://sitemaps.bestbuy.com/sitemaps_rnr.xml
+Sitemap: https://sitemaps.bestbuy.com/sitemaps_search_plps.xml
+Sitemap: https://sitemaps.bestbuy.com/sitemaps_standalone_qa.xml
+Sitemap: https://sitemaps.bestbuy.com/sitemaps_browse_plps.xml
+Sitemap: https://sitemaps.bestbuy.com/sitemaps_manually_curated_pages.xml
+Sitemap: https://sitemaps.bestbuy.com/sitemaps_combos.xml
+Sitemap: https://sitemaps.bestbuy.com/sitemaps_bsin.xml

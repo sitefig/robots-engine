@@ -1,20 +1,9 @@
 User-agent: *
-#NewCo launch entries
-Disallow: */shopping/
-Disallow: */learn/lp/
-Disallow: */campaign/lp/
-Disallow: */legal/lp/
+#launch entries
 Disallow: */shop/*/ar/*/appref=*
-Disallow: */shop/*/*/apd/*/*/-
-
-#OldCo launch entries
-Disallow: */spd/*
-Disallow: */lp/
+Disallow: */sac/*/*/*/appref=*
 Disallow: */shop/*/ar/*
-Disallow: */ar/*/*?appliedRefinements=*
 Disallow: */shop/*/apd/*
-Disallow: */shop/*/scr/*
-
 
 #Temporary launch entries
 Disallow: /csbapi/unified-communication/*
@@ -57,7 +46,7 @@ Disallow: *pr_rd_page=*
 Disallow: *bvstate=
 
 #Support
-Disallow: /support/en-gb
+
 Disallow: /support/kbdoc/*/000287599
 Disallow: /support/incidents-online/*/contactus/product/
 Disallow: /support/ips/
@@ -1238,8 +1227,7 @@ Allow: /support/*/cn/zh/
 Allow: /support/*/tw/zh/
 Allow: /support/*/hk/zh/
 Allow: /learn/hk/zh/
-Allow: /learn/tw/zh/
-Allow: /*&c=cn&*
+Allow: /learn/tw/zh/Allow: /*&c=cn&*
 Allow: /*?c=cn&*
 Allow: /*&c=tw&*
 Allow: /*?c=tw&*
@@ -1278,4 +1266,4 @@ Sitemap: https://www.dell.com/index-video-xml-sitemap.xml.gz
 Sitemap: https://www.dell.com/index-downloads-dell-pdfs-sitemap.xml.gz
 Sitemap: https://www.dell.com/index-dt-sitemap.xml.gz
 
-# Last Modified on 2026 Sep 19th, 10:00pm CST
+# Last Modified on 2026 Sep 22nd, 6am CST

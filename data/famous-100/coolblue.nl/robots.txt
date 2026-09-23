@@ -1,5 +1,5 @@
 
-# Last refreshed: 2026-09-18T04:00:07.603Z
+# Last refreshed: 2026-09-23T04:00:07.200Z
 
 User-Agent: *
 
@@ -9,6 +9,8 @@ Sitemap: https://sitemaps.coolblue.nl/www.coolblue.nl/en/products_1.xml
 
 # Sitemap directories
 Sitemap: https://sitemaps.coolblue.nl/www.coolblue.nl/custom.xml
+Sitemap: https://www.coolblue.nl/vacatures/sitemap.xml
+Sitemap: https://www.coolblue.nl/en/vacancies/sitemap.xml
 Sitemap: https://sitemaps.coolblue.nl/www.coolblue.nl/nl/pages_advice_1.xml
 Sitemap: https://sitemaps.coolblue.nl/www.coolblue.nl/nl/pages_advice_2.xml
 Sitemap: https://sitemaps.coolblue.nl/www.coolblue.nl/nl/pages_corporate_1.xml

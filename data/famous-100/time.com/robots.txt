@@ -83,6 +83,9 @@ Disallow: /time_tout/*
 Disallow: /uncategorized
 Disallow: /time_cover_hub
 
+User-Agent: BomboraBot
+Allow: /
+
 Sitemap: https://time.com/sitemap.xml
 Sitemap: https://time.com/news-sitemap.xml
 Sitemap: https://time.com/branded-content-sitemap.xml
