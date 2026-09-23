@@ -1,0 +1,68 @@
+# Twice a year (and on demand): audit the robots.txt of the top domains and
+# publish the dataset as a GitHub Release (gzip JSON Lines plus a summary),
+# so the repository itself stays small. Input defaults to the Tranco list.
+#
+# Runs for a few hours at 64 parallel fetches; the job timeout is the guard.
+# The repository is public, so runner minutes are free.
+
+name: sus.bot census
+
+on:
+  schedule:
+    - cron: '0 6 1 1,7 *'   # 1 January and 1 July, 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: Number of domains to audit
+        default: '100000'
+      concurrency:
+        description: Parallel fetches
+        default: '64'
+      source:
+        description: URL of a zip containing a CSV of "rank,domain" lines
+        default: 'https://tranco-list.eu/top-1m.csv.zip'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: susbot-census
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo build --release -p susbot-cli --locked
+      - name: Fetch the domain list
+        env:
+          SOURCE: ${{ github.event.inputs.source || 'https://tranco-list.eu/top-1m.csv.zip' }}
+        run: |
+          set -eu
+          curl -sSL "$SOURCE" -o list.zip
+          unzip -o -q list.zip
+          ls -la *.csv
+      - name: Crawl
+        env:
+          LIMIT: ${{ github.event.inputs.limit || '100000' }}
+          CONCURRENCY: ${{ github.event.inputs.concurrency || '64' }}
+        run: |
+          set -eu
+          TAG="susbot-census-$(date -u +%Y)-H$(( ($(date -u +%-m) - 1) / 6 + 1 ))"
+          echo "TAG=$TAG" >> "$GITHUB_ENV"
+          ./target/release/susbot crawl --input top-1m.csv --limit "$LIMIT" --concurrency "$CONCURRENCY" --timeout 10 \
+            --out "$TAG.jsonl.gz" --summary "$TAG.summary.json"
+          { echo "## $TAG"; echo; echo '```json'; cat "$TAG.summary.json"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -eu
+          gh release create "$TAG" "$TAG.jsonl.gz" "$TAG.summary.json" \
+            --title "sus.bot census $TAG" \
+            --notes "robots.txt audit of the top domains: one JSON Lines record per domain (status, rules, sitemaps, issues, security findings, platform, crawler verdicts). Produced by \`susbot crawl\` (https://sus.bot). Load with DuckDB: \`SELECT * FROM read_json_auto('$TAG.jsonl.gz')\`." \
+            || gh release upload "$TAG" "$TAG.jsonl.gz" "$TAG.summary.json" --clobber

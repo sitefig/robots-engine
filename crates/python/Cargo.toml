@@ -7,7 +7,7 @@ description = "Python bindings and CLI for the susbot robots.txt engine"
 version = "2.2.0"
 edition = "2021"
 license = "PolyForm-Noncommercial-1.0.0"
-repository = "https://github.com/sitefig/robots"
+repository = "https://github.com/sitefig/robots-engine"
 homepage = "https://sus.bot/"
 
 [lib]

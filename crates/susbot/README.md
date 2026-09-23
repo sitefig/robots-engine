@@ -7,7 +7,7 @@ cargo install susbot
 susbot https://example.com
 ```
 
-This crate installs the same `susbot` program as [susbot-cli](https://crates.io/crates/susbot-cli), where the usage is documented. Source and GitHub Action: [github.com/sitefig/robots](https://github.com/sitefig/robots).
+This crate installs the same `susbot` program as [susbot-cli](https://crates.io/crates/susbot-cli), where the usage is documented. Source and GitHub Action: [github.com/sitefig/robots-engine](https://github.com/sitefig/robots-engine).
 
 - The same tool elsewhere: [susbot on PyPI](https://pypi.org/project/susbot/), [@sitefig/susbot on npm](https://www.npmjs.com/package/@sitefig/susbot)
 

@@ -18,7 +18,7 @@ println!("{}", analysis.report_json_pretty());
 # Ok::<(), String>(())
 ```
 
-Source, schema and configuration reference: [github.com/sitefig/robots](https://github.com/sitefig/robots).
+Source, schema and configuration reference: [github.com/sitefig/robots-engine](https://github.com/sitefig/robots-engine).
 
 - The same tool elsewhere: [susbot on PyPI](https://pypi.org/project/susbot/), [@sitefig/susbot on npm](https://www.npmjs.com/package/@sitefig/susbot)
 

@@ -1,6 +1,6 @@
 # Composite GitHub Action: audit a site's robots.txt with susbot.
 #
-#   - uses: sitefig/robots@main
+#   - uses: sitefig/robots-engine@main
 #     with:
 #       url: https://example.com
 #       config: .github/robots-audit.toml   # optional

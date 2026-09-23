@@ -4,9 +4,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { PLURAL_FORMS, categories, pluralIndex, nplurals, parsePo, writePo, toDictionary, merge } from '../src/lib/po.ts';
+import { PLURAL_FORMS, categories, pluralIndex, nplurals, parsePo, writePo, toDictionary, merge } from '../tools/po.ts';
 import { outputs } from '../tools/i18n.ts';
-import { LANGUAGES } from '../src/client/i18n.ts';
+import { LANGUAGES } from '../tools/languages.ts';
 
 test('every language has Plural-Forms that pick the same CLDR category as Intl', () => {
   const ns = [...Array(2001).keys(), 1e6, 2e6, 1000001, 1100000];

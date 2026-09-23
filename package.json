@@ -1,0 +1,16 @@
+{
+  "name": "susbot-engine",
+  "private": true,
+  "type": "module",
+  "description": "The sus.bot engine: the Rust crates, the CLI, the GitHub Action, the Python and npm packages, and the translations they all share.",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "scripts": {
+    "test": "node tools/i18n.ts check && node --test tests/*.test.js",
+    "test:all": "cargo test --workspace && npm test",
+    "i18n": "node tools/i18n.ts build",
+    "i18n:sync": "node tools/i18n.ts sync",
+    "cli": "cargo run -q -p susbot-cli --release --",
+    "build:wasm": "./scripts/build-wasm.sh",
+    "build:npm-wasm": "./scripts/build-npm-wasm.sh"
+  }
+}

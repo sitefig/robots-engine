@@ -49,7 +49,7 @@ In Node the engine loads on import. In browsers and bundlers, call `await init()
 
 - Website: [sus.bot](https://sus.bot/)
 - The same tool elsewhere: [susbot on crates.io](https://crates.io/crates/susbot), [susbot on PyPI](https://pypi.org/project/susbot/)
-- Source, GitHub Action and issues: [github.com/sitefig/robots](https://github.com/sitefig/robots)
+- Source, GitHub Action and issues: [github.com/sitefig/robots-engine](https://github.com/sitefig/robots-engine)
 
 ## Licence
 

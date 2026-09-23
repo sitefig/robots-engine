@@ -1,0 +1,13 @@
+target/
+node_modules/
+npm/susbot/wasm/
+src/client/wasm/
+__pycache__/
+.venv/
+.pytest_cache/
+crates/python/python/susbot/*.so
+crates/python/python/susbot/*.pyd
+.env
+.env.*
+*.log
+.DS_Store

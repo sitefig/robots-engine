@@ -1,0 +1,68 @@
+# Every six hours: monitor customer domains and alert on change.
+#
+# The customer list and its snapshots live in a PRIVATE repository so
+# customer names never appear here. Two secrets:
+#   CUSTOMERS_REPO        owner/name of the private repo (contains
+#                         customers.json; snapshots go to data/ inside it)
+#   CUSTOMERS_DEPLOY_KEY  the private half of a deploy key added to that repo
+#                         with write access (a repo-scoped credential that is
+#                         tied to no person and never expires)
+# Optional: CUSTOMER_WEBHOOK, a fallback chat webhook; each site entry may set
+# its own webhook_url. Without CUSTOMERS_REPO the run uses config/customers.json
+# from this repo (the placeholder list) and keeps state in the job only.
+
+name: Monitor customers
+
+on:
+  schedule:
+    - cron: '41 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: monitor-customers
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      # `secrets` cannot be read in a step's `if`, so it is mapped here.
+      CUSTOMERS_REPO: ${{ secrets.CUSTOMERS_REPO }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo build --release -p susbot-cli --locked
+      - name: Check out the private customer repository
+        if: env.CUSTOMERS_REPO != ''
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ secrets.CUSTOMERS_REPO }}
+          ssh-key: ${{ secrets.CUSTOMERS_DEPLOY_KEY }}
+          path: customers
+      - name: Monitor
+        env:
+          CUSTOMER_WEBHOOK: ${{ secrets.CUSTOMER_WEBHOOK }}
+        run: |
+          set -eu
+          mkdir -p out
+          if [ -n "${CUSTOMERS_REPO:-}" ]; then CFG=customers/customers.json; DATA=customers/data; else CFG=config/customers.json; DATA=out/data; fi
+          ARGS=(track --config "$CFG" --data-dir "$DATA" --summary-out out/summary.md --changed-out out/changed.txt --title "Monitored domains")
+          [ -n "${CUSTOMER_WEBHOOK:-}" ] && ARGS+=(--webhook "$CUSTOMER_WEBHOOK")
+          ./target/release/susbot "${ARGS[@]}"
+          cat out/summary.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit snapshots to the private repository
+        if: env.CUSTOMERS_REPO != ''
+        working-directory: customers
+        run: |
+          set -eu
+          git add data
+          if git diff --cached --quiet; then echo "no snapshot changes"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "monitor: $(date -u +%FT%H:%MZ) $(tr '\n' ' ' < ../out/changed.txt)"
+          git push

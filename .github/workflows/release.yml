@@ -1,0 +1,301 @@
+# Builds and publishes the packages of a release when a version tag is pushed:
+#
+#   git tag v2.0.1 && git push origin v2.0.1
+#
+# - PyPI `susbot` (crates/python: bindings plus the susbot command), wheels
+#   for Linux, macOS and Windows and the sdist.
+# - npm `susbot` (npm/susbot: the WebAssembly engine as a JavaScript API plus
+#   the susbot command) and one `susbot-<platform>-<arch>` package per native
+#   CLI binary, which the main package lists as optional dependencies.
+#
+# PyPI trusts this workflow by name (trusted publishing for repository
+# sitefig/robots-engine, workflow release.yml), so no token is stored for it. npm
+# publishes with the NPM_TOKEN secret until trusted publishing is set up on
+# the npm packages.
+# Versions already on a registry are skipped, so a failed run can be re-run.
+# A manual run builds and tests everything but publishes nothing.
+# The crates.io release stays manual; see CLAUDE.md.
+
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  check-version:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: The tag matches every crate version
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          set -eu
+          tag="${GITHUB_REF_NAME#v}"
+          for f in Cargo.toml crates/python/Cargo.toml crates/susbot/Cargo.toml npm/susbot/package.json; do
+            v=$(grep -m1 -E '^ *"?version"? ?[=:] ?"' "$f" | cut -d'"' -f2)
+            [ "${f##*.}" = json ] && v=$(grep -m1 -E '^  "version": "' "$f" | cut -d'"' -f4)
+            echo "$f: $v"
+            [ "$v" = "$tag" ] || { echo "::error file=$f::version $v does not match tag v$tag"; exit 1; }
+          done
+
+  wheels:
+    needs: check-version
+    name: wheel ${{ matrix.os }} ${{ matrix.target }}${{ matrix.manylinux == 'musllinux_1_2' && ' musl' || '' }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { os: ubuntu-latest, target: x86_64, manylinux: auto, test: true }
+          # Native ARM runner: the manylinux2014 cross compiler cannot build ring.
+          - { os: ubuntu-24.04-arm, target: aarch64, manylinux: auto, test: true }
+          - { os: ubuntu-latest, target: x86_64, manylinux: musllinux_1_2 }
+          - { os: ubuntu-latest, target: aarch64, manylinux: musllinux_1_2 }
+          - { os: macos-latest, target: aarch64, test: true }
+          - { os: macos-latest, target: x86_64 }
+          - { os: windows-latest, target: x64, test: true }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: PyO3/maturin-action@v1
+        with:
+          working-directory: crates/python
+          target: ${{ matrix.target }}
+          manylinux: ${{ matrix.manylinux || '' }}
+          args: --release --locked --out dist
+      - name: Test the wheel
+        if: matrix.test
+        shell: bash
+        working-directory: crates/python
+        run: |
+          set -eu
+          python -m pip install pytest
+          python -m pip install --no-index --find-links dist susbot
+          susbot --version
+          # Run the tests against the installed wheel, not the source tree.
+          cp -r tests "$RUNNER_TEMP/tests" && cd "$RUNNER_TEMP" && SUSBOT_REPO="$GITHUB_WORKSPACE" python -m pytest -q tests
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wheel-${{ matrix.os }}-${{ matrix.target }}-${{ matrix.manylinux || 'native' }}
+          path: crates/python/dist/*.whl
+          if-no-files-found: error
+
+  sdist:
+    needs: check-version
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: PyO3/maturin-action@v1
+        with:
+          working-directory: crates/python
+          command: sdist
+          args: --out dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sdist
+          path: crates/python/dist/*.tar.gz
+          if-no-files-found: error
+
+  publish:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [wheels, sdist]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      id-token: write   # trusted publishing
+    steps:
+      # Only the Python artifacts: the CLI binaries of the npm packages share
+      # this run, and twine refuses anything that is not a wheel or an sdist.
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: wheel-*
+          path: dist
+          merge-multiple: true
+      - uses: actions/download-artifact@v4
+        with:
+          name: sdist
+          path: dist
+      - run: ls -l dist
+      - uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          skip-existing: true
+
+  cli:
+    # Native CLI binaries for the npm platform packages. Linux builds are
+    # static (musl), so one package per architecture runs on every distro.
+    needs: check-version
+    name: cli ${{ matrix.npm }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { os: ubuntu-latest, target: x86_64-unknown-linux-musl, npm: linux-x64, test: true }
+          - { os: ubuntu-24.04-arm, target: aarch64-unknown-linux-musl, npm: linux-arm64, test: true }
+          - { os: macos-latest, target: aarch64-apple-darwin, npm: darwin-arm64, test: true }
+          - { os: macos-latest, target: x86_64-apple-darwin, npm: darwin-x64 }
+          - { os: windows-latest, target: x86_64-pc-windows-msvc, npm: win32-x64, test: true }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+      - if: contains(matrix.target, 'musl')
+        run: sudo apt-get update -q && sudo apt-get install -yq musl-tools
+      - run: cargo build --release --locked -p susbot-cli --target ${{ matrix.target }}
+      - name: Name the binary after its npm package
+        shell: bash
+        run: |
+          set -eu
+          ext=""; [ "${{ runner.os }}" = Windows ] && ext=".exe"
+          mkdir -p bins
+          cp "target/${{ matrix.target }}/release/susbot$ext" "bins/susbot-${{ matrix.npm }}$ext"
+          if [ "${{ matrix.test }}" = true ]; then "bins/susbot-${{ matrix.npm }}$ext" --version; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cli-${{ matrix.npm }}
+          path: bins/*
+          if-no-files-found: error
+
+  npm-pack:
+    # The WebAssembly engine with the diff bindings, the package tests, then
+    # every package assembled and installed from its tarball as a user would.
+    needs: cli
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - name: Install wasm-bindgen and wasm-opt
+        run: |
+          set -eu
+          WBG=$(grep -oE 'wasm-bindgen = "[0-9.]+"' crates/wasm/Cargo.toml | grep -oE '[0-9.]+')
+          curl -sSL "https://github.com/rustwasm/wasm-bindgen/releases/download/${WBG}/wasm-bindgen-${WBG}-x86_64-unknown-linux-musl.tar.gz" | tar xz
+          sudo mv "wasm-bindgen-${WBG}-x86_64-unknown-linux-musl/wasm-bindgen" /usr/local/bin/
+          curl -sSL https://github.com/WebAssembly/binaryen/releases/download/version_119/binaryen-version_119-x86_64-linux.tar.gz | tar xz
+          sudo mv binaryen-version_119/bin/wasm-opt /usr/local/bin/
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: cli-*
+          path: bins
+          merge-multiple: true
+      - run: chmod +x bins/* && ls -l bins
+      - run: ./scripts/build-npm-wasm.sh
+      - run: node --test npm/susbot/test/*.test.js
+        env:
+          SUSBOT_BINARY: ${{ github.workspace }}/bins/susbot-linux-x64
+      - run: node scripts/npm-pack.mjs bins npm-out
+      - name: Pack and install like a user
+        run: |
+          set -eu
+          mkdir -p tarballs try
+          for d in npm-out/*/; do (cd "$d" && npm pack -q --pack-destination "$GITHUB_WORKSPACE/tarballs"); done
+          ls -l tarballs
+          cd try
+          echo '{"name":"try","private":true,"type":"module"}' > package.json
+          npm install --no-audit --no-fund ../tarballs/sitefig-susbot-linux-x64-*.tgz ../tarballs/sitefig-susbot-2*.tgz
+          npx susbot --version
+          node -e "import('@sitefig/susbot').then((m) => { if (new m.Analysis('User-agent: GPTBot\nDisallow: /\n').allowed('GPTBot', '/')) process.exit(1); })"
+      # A manual run cannot publish, so it checks the credential instead: a
+      # release should not be the first time the token is found to be wrong.
+      - name: Check the npm token can publish
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          set -eu
+          if [ -z "$NPM_TOKEN" ]; then
+            echo "::warning::No NPM_TOKEN secret; a tag release will need trusted publishing instead."
+            exit 0
+          fi
+          who=$(curl -sS -H "Authorization: Bearer $NPM_TOKEN" https://registry.npmjs.org/-/whoami | node -p "JSON.parse(require('fs').readFileSync(0,'utf8')).username" 2>/dev/null || true)
+          [ -n "$who" ] || { echo "::error::The NPM_TOKEN secret is not accepted by npm."; exit 1; }
+          echo "npm accepts the token as $who"
+          for d in npm-out/*/; do
+            name=$(node -p "require('./$d/package.json').name")
+            version=$(node -p "require('./$d/package.json').version")
+            npm view "$name@$version" version >/dev/null 2>&1 && echo "$name@$version is already on npm" || echo "$name@$version would be published"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: npm-packages
+          path: npm-out
+          if-no-files-found: error
+
+  publish-npm:
+    # Publishes with the NPM_TOKEN secret. Trusted publishing (no token)
+    # would be better, but npm only accepts a trusted publisher from an
+    # account whose second factor the CLI can answer, which this account
+    # cannot; publishing with the token is unaffected. Set the repository
+    # variable NPM_TRUSTED_PUBLISHING to "true" once trust is configured in
+    # the npmjs.com package settings, and the token is then ignored.
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: npm-pack
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      id-token: write   # trusted publishing and provenance
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+      # Trusted publishing needs npm 11.5.1 or later.
+      - run: npm install -g npm@11 && npm --version
+      - uses: actions/download-artifact@v4
+        with:
+          name: npm-packages
+          path: npm-out
+      - name: Check there is a way to authenticate
+        env:
+          TOKEN: ${{ secrets.NPM_TOKEN }}
+          TRUSTED: ${{ vars.NPM_TRUSTED_PUBLISHING }}
+        run: |
+          set -eu
+          if [ -z "$TOKEN" ] && [ "$TRUSTED" != true ]; then
+            echo "::error::Set the NPM_TOKEN secret, or configure trusted publishing and set the NPM_TRUSTED_PUBLISHING variable to true."
+            exit 1
+          fi
+      - name: Publish the platform packages, then @sitefig/susbot
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          set -eu
+          publish() {
+            name=$(node -p "require('./$1/package.json').name")
+            version=$(node -p "require('./$1/package.json').version")
+            if npm view "$name@$version" version >/dev/null 2>&1; then
+              echo "$name@$version is already published"
+            else
+              (cd "$1" && chmod +x bin/* 2>/dev/null || true; npm publish --access public)
+            fi
+          }
+          for d in npm-out/susbot-*/; do publish "${d%/}"; done
+          publish npm-out/susbot
+      - name: Say what is on npm now
+        run: |
+          set -eu
+          for d in npm-out/*/; do
+            name=$(node -p "require('./$d/package.json').name")
+            echo "$name -> $(npm view "$name" version)"
+          done

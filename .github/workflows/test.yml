@@ -1,0 +1,81 @@
+# Runs the engine test suites on every push and pull request: the Rust
+# workspace, the Python package, the npm package and the translations.
+
+name: Tests
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/**'          # daily tracking snapshots, committed by famous-100.yml
+  pull_request:
+
+# Cost guards: a superseded run is cancelled, and no job can run away.
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo test --workspace --locked
+      - run: cargo build -p susbot-cli --release --locked
+      - run: ./target/release/susbot examples/kitchen-sink.robots.txt --site-url https://www.example.com/robots.txt --format json > /dev/null
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm test   # translations: po round trip, locale consistency, referenced keys
+      # The thin `susbot` crate (its own workspace) still builds and runs.
+      - run: cargo run --locked --manifest-path crates/susbot/Cargo.toml -- --version
+  python:
+    # The Python package (crates/python): bindings and the susbot command,
+    # built with maturin into a virtualenv and tested with pytest.
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: crates/python
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          set -eu
+          python -m venv .venv
+          . .venv/bin/activate
+          pip install "maturin>=1.9,<2" pytest
+          cd crates/python
+          maturin develop --locked
+          pytest -q tests
+  npm:
+    # The npm package (npm/susbot): the WebAssembly engine with the diff
+    # bindings, its JavaScript API and the command shim over a debug CLI.
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - uses: Swatinem/rust-cache@v2
+      - name: Install wasm-bindgen
+        run: |
+          set -eu
+          WBG=$(grep -oE 'wasm-bindgen = "[0-9.]+"' crates/wasm/Cargo.toml | grep -oE '[0-9.]+')
+          curl -sSL "https://github.com/rustwasm/wasm-bindgen/releases/download/${WBG}/wasm-bindgen-${WBG}-x86_64-unknown-linux-musl.tar.gz" | tar xz
+          sudo mv "wasm-bindgen-${WBG}-x86_64-unknown-linux-musl/wasm-bindgen" /usr/local/bin/
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: ./scripts/build-npm-wasm.sh
+      - run: cargo build --locked -p susbot-cli
+      - run: node --test npm/susbot/test/*.test.js
+        env:
+          SUSBOT_BINARY: ${{ github.workspace }}/target/debug/susbot

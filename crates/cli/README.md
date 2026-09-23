@@ -33,12 +33,12 @@ susbot crawl --input domains.csv --out audit.jsonl.gz   # audit a list of domain
 
 Exit codes: 0 when all is well, 1 when findings reach `--fail-on` or `--fail-on-security`, 2 on fetch or configuration errors.
 
-Reports are in English by default. For another EU language, pass `--lang` with `--locale-dir` pointing at the `locales` folder of the [repository](https://github.com/sitefig/robots).
+Reports are in English by default. For another EU language, pass `--lang` with `--locale-dir` pointing at the `locales` folder of the [repository](https://github.com/sitefig/robots-engine).
 
 ## More
 
 - Website: [sus.bot](https://sus.bot/)
-- GitHub Action and source: [github.com/sitefig/robots](https://github.com/sitefig/robots)
+- GitHub Action and source: [github.com/sitefig/robots-engine](https://github.com/sitefig/robots-engine)
 - The engine on its own: [susbot-core](https://crates.io/crates/susbot-core)
 - The same tool elsewhere: [susbot on PyPI](https://pypi.org/project/susbot/), [@sitefig/susbot on npm](https://www.npmjs.com/package/@sitefig/susbot)
 

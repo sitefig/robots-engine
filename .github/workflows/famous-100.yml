@@ -1,0 +1,59 @@
+# Daily: fetch the robots.txt of the tracked domains (200: media, social, tech,
+# AI, Fortune 500, e-commerce, banks), diff against the
+# snapshots in data/famous-100, commit what changed, publish the digest in the
+# job summary and (optionally) post changes to a chat webhook. Git history of
+# data/famous-100 is the public change log; README.md there is the leaderboard.
+#
+# Secrets (optional): ALERT_WEBHOOK, a Slack or Discord incoming webhook URL.
+
+name: Track famous domains
+
+on:
+  schedule:
+    - cron: '17 3 * * *'   # 03:17 UTC daily (off the hour to avoid the crowd)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: track-famous-100
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo build --release -p susbot-cli --locked
+      - name: Track
+        env:
+          ALERT_WEBHOOK: ${{ secrets.ALERT_WEBHOOK }}
+        run: |
+          set -eu
+          mkdir -p out
+          ARGS=(track --config config/famous-100.json --data-dir data/famous-100
+                --summary-out out/summary.md --social-out out/social.md --changed-out out/changed.txt
+                --git-base-url "https://github.com/${GITHUB_REPOSITORY}/tree/main/data/famous-100/"
+                --title "Tracked domains: AI crawler leaderboard")
+          [ -n "${ALERT_WEBHOOK:-}" ] && ARGS+=(--webhook "$ALERT_WEBHOOK" --webhook-high-impact-only)
+          ./target/release/susbot "${ARGS[@]}"
+          cat out/summary.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit snapshots
+        run: |
+          set -eu
+          git add data/famous-100
+          if git diff --cached --quiet; then echo "no snapshot changes"; exit 0; fi
+          CHANGED=$(tr '\n' ' ' < out/changed.txt)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "famous-100: $(date -u +%F) ${CHANGED:-seed}"
+          git push
+      - uses: actions/upload-artifact@v4
+        with:
+          name: social-drafts
+          path: out/social.md
+          retention-days: 14

@@ -12,8 +12,8 @@
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { LANGUAGES } from '../src/client/i18n.ts';
-import { parsePo, writePo, toDictionary, englishFromPo, merge, headersFor, type Dictionary, type PoFile } from '../src/lib/po.ts';
+import { LANGUAGES } from './languages.ts';
+import { parsePo, writePo, toDictionary, englishFromPo, merge, headersFor, type Dictionary, type PoFile } from './po.ts';
 
 const ROOT = new URL('../', import.meta.url);
 const path = (rel: string) => fileURLToPath(new URL(rel, ROOT));
