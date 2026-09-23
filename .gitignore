@@ -1,7 +1,7 @@
 target/
 node_modules/
 npm/susbot/wasm/
-src/client/wasm/
+dist/
 __pycache__/
 .venv/
 .pytest_cache/
