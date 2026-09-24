@@ -13,8 +13,4 @@ Sitemap: https://www.datadoghq.com/de/sitemap.xml
 Sitemap: https://www.datadoghq.com/it/sitemap.xml
 Sitemap: https://www.datadoghq.com/ko/sitemap.xml
 Sitemap: https://www.datadoghq.com/pt/sitemap.xml
-Sitemap: https://www.datadoghq.com/products/sitemap.xml
-Sitemap: https://www.datadoghq.com/community/sitemap.xml
-Sitemap: https://www.datadoghq.com/page/sitemap.xml
-Sitemap: https://www.datadoghq.com/newsletter/sitemap.xml
 

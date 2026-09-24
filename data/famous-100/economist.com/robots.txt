@@ -130,6 +130,7 @@ Disallow: /assets/infographic/
 Disallow: /search/
 Disallow: /search?q=
 Disallow: /graphql
+Disallow: /api
 Disallow: /subscribe/getstarted/
 Disallow: /checkout
 Disallow: /switch*

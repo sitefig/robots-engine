@@ -77,3 +77,13 @@ Disallow: /*store/top-rated-products/*
 Disallow: /i/api/*
 Disallow: /gcp/300000414/regulatedinformation
 Disallow: /img/wsproduct/sku/*
+
+
+Sitemap: https://www.aliexpress.com/sitemap/en-https-item-item-2026-P0-sitemap-index.xml
+Sitemap: https://www.aliexpress.com/sitemap/en-https-item-item-2026-P1-sitemap-index.xml
+Sitemap: https://www.aliexpress.com/sitemap/en-https-wholesale-2025-w-commercial-local-sitemap-index.xml
+Sitemap: https://www.aliexpress.com/sitemap/en-https-wholesale-2025-w-informational-localsitemap-index.xml
+Sitemap: https://www.aliexpress.com/sitemap/en-https-wholesale-2025-w-brand-local-sitemap-index.xml
+Sitemap: https://www.aliexpress.com/sitemap/en-https-wholesale-2025-p-transactional-local-sitemap-index.xml
+Sitemap: https://www.aliexpress.com/sitemap/en-https-mlh-2026-sitemap-index.xml
+Sitemap: https://www.aliexpress.com/sitemap/en-https-spot-2026-sitemap-index.xml

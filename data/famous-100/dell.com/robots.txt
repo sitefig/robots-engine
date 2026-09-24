@@ -1,9 +1,5 @@
 User-agent: *
-#launch entries
-Disallow: */shop/*/ar/*/appref=*
-Disallow: */sac/*/*/*/appref=*
-Disallow: */shop/*/ar/*
-Disallow: */shop/*/apd/*
+
 
 #Temporary launch entries
 Disallow: /csbapi/unified-communication/*
@@ -1266,4 +1262,4 @@ Sitemap: https://www.dell.com/index-video-xml-sitemap.xml.gz
 Sitemap: https://www.dell.com/index-downloads-dell-pdfs-sitemap.xml.gz
 Sitemap: https://www.dell.com/index-dt-sitemap.xml.gz
 
-# Last Modified on 2026 Sep 22nd, 6am CST
+# Last Modified on 2026 Sep 23rd, 6am CST

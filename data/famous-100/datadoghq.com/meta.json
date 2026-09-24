@@ -3,8 +3,8 @@
   "robots_url": "https://datadoghq.com/robots.txt",
   "final_url": "https://www.datadoghq.com/robots.txt",
   "http_status": 200,
-  "bytes": 748,
-  "fetched_at": "2026-09-23T08:32:57.000Z",
+  "bytes": 525,
+  "fetched_at": "2026-09-24T08:29:04.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false

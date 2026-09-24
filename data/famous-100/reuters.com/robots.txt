@@ -119,6 +119,7 @@ Disallow: /pt/
 Disallow: /de/
 Disallow: /latam/
 Disallow: /account/subscribe/payment
+Disallow: /*/site-search/
 
 User-agent: Applebot-Extended
 Disallow: /
