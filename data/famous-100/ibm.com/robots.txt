@@ -63,6 +63,7 @@ Disallow: /zshowcase
 Disallow: /widgets-admin
 Disallow: /w3
 Disallow: /mintlify-assets
+Disallow: /industries/federal/fedcat/ibm-automation-services-for-government
 # Disallow: /multimedia
 
 sitemap: https://www.ibm.com/content/sitemap/href-sitemap-index.xml

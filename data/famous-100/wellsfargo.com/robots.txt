@@ -16,4 +16,6 @@ Disallow: *FPID*
 Allow: /search/exit
 Disallow: /credit-cards/documents/
 Disallow: /es/credit-cards/documents/
+Disallow: /biz/business-credit/agreements/
+Disallow: /biz/business-credit/credit-cards/
 Sitemap: https://www.wellsfargo.com/seo-sitemap/wellsfargositemap_index.xml
