@@ -76,6 +76,8 @@ User-agent: SeekrBot
 User-agent: SemrushBot-OCOB
 User-agent: SemrushBot-SWA
 User-agent: SeznamHomepageCrawler
+User-agent: ShapBot
+User-agent: Shap-User
 User-agent: Sidetrade indexer bot
 User-agent: TaraGroup Intelligence Bot
 User-agent: Timpibot
@@ -127,7 +129,3 @@ Disallow: /web.projects/
 Disallow: /webview/
 User-agent: Googlebot-News
 Disallow: /sponsor
-User-agent: ShapBot
-Disallow: /
-User-agent: Shap-User
-Disallow: /
