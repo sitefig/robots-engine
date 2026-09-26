@@ -904,5 +904,9 @@
   "sales.watch.f1": "Competitors side by side, per crawler",
   "sales.watch.f2": "Slack, Teams, SMS, webhook, on call",
   "sales.watch.f3": "Reports you can send to a client",
-  "sales.watch.cta": "See what that costs"
+  "sales.watch.cta": "See what that costs",
+  "sales.after.errors": "The errors above are in force now, in the first file a crawler reads. Each one is listed with its fix. What this page cannot show you is the next change, which usually arrives with a deploy.",
+  "sales.after.training": "Every AI crawler above is allowed to read this site. If nobody decided that, it is the kind of thing that changes without anyone noticing.",
+  "sales.after.warnings": "Nothing here is broken today, but the warnings above are how it starts. A robots.txt gets worse one line at a time, and nobody reads it between deploys.",
+  "sales.after.clean": "This file is in good order today. The next deploy, plugin upgrade or theme edit is the one to worry about, and watching it is what that takes."
 }

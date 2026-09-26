@@ -3265,3 +3265,95 @@ msgstr "Generator"
 msgctxt "page.footer.bot"
 msgid "The crawler"
 msgstr "Der Crawler"
+
+msgctxt "sales.title"
+msgid "Now keep it that way"
+msgstr ""
+
+msgctxt "sales.body"
+msgid "A robots.txt changes when someone deploys, upgrades a plugin or edits a theme. One line can cut a site out of Google or hand every AI crawler the whole archive. You have the picture for today; these are the three ways to keep it."
+msgstr ""
+
+msgctxt "sales.free.title"
+msgid "Free account, free forever"
+msgstr ""
+
+msgctxt "sales.free.body"
+msgid "Watch one domain and get told when its robots.txt changes. No card, no trial that expires, no call with anyone."
+msgstr ""
+
+msgctxt "sales.free.f1"
+msgid "One domain, checked every day"
+msgstr ""
+
+msgctxt "sales.free.f2"
+msgid "An email when the file changes, with what it does to each crawler"
+msgstr ""
+
+msgctxt "sales.free.f3"
+msgid "The full report and its history, kept"
+msgstr ""
+
+msgctxt "sales.free.cta"
+msgid "Create a free account"
+msgstr ""
+
+msgctxt "sales.free.note"
+msgid "Email and a password, or Google. Nothing else is asked."
+msgstr ""
+
+msgctxt "sales.self.title"
+msgid "Or do it yourself"
+msgstr ""
+
+msgctxt "sales.self.body"
+msgid "The engine is a command, a GitHub Action and a package. Same checks as this page, running on your machine or in your pipeline, failing the build when the file breaks."
+msgstr ""
+
+msgctxt "sales.self.claude"
+msgid "Claude can run it for you: install the command and ask it to audit a domain, or wire the Action into your repository."
+msgstr ""
+
+msgctxt "sales.self.cta"
+msgid "Read the command line docs"
+msgstr ""
+
+msgctxt "sales.watch.title"
+msgid "Or have us watch the market"
+msgstr ""
+
+msgctxt "sales.watch.body"
+msgid "Your domains and your competitors', checked as often as every quarter of an hour, with the alert going wherever your team already reads."
+msgstr ""
+
+msgctxt "sales.watch.f1"
+msgid "Competitors side by side, per crawler"
+msgstr ""
+
+msgctxt "sales.watch.f2"
+msgid "Slack, Teams, SMS, webhook, on call"
+msgstr ""
+
+msgctxt "sales.watch.f3"
+msgid "Reports you can send to a client"
+msgstr ""
+
+msgctxt "sales.watch.cta"
+msgid "See what that costs"
+msgstr ""
+
+msgctxt "sales.after.errors"
+msgid "The errors above are in force now, in the first file a crawler reads. Each one is listed with its fix. What this page cannot show you is the next change, which usually arrives with a deploy."
+msgstr ""
+
+msgctxt "sales.after.training"
+msgid "Every AI crawler above is allowed to read this site. If nobody decided that, it is the kind of thing that changes without anyone noticing."
+msgstr ""
+
+msgctxt "sales.after.warnings"
+msgid "Nothing here is broken today, but the warnings above are how it starts. A robots.txt gets worse one line at a time, and nobody reads it between deploys."
+msgstr ""
+
+msgctxt "sales.after.clean"
+msgid "This file is in good order today. The next deploy, plugin upgrade or theme edit is the one to worry about, and watching it is what that takes."
+msgstr ""
