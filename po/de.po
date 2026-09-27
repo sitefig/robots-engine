@@ -1911,87 +1911,87 @@ msgid "Paste some robots.txt text first."
 msgstr "Fügen Sie zuerst robots.txt-Text ein."
 
 msgctxt "ui.summary.redirectLimit.title"
-msgid "Too many redirects"
+msgid "The file sends crawlers in circles"
 msgstr "Zu viele Weiterleitungen"
 
 msgctxt "ui.summary.redirectLimit.body"
-msgid "The file was not reached within five redirects. Google treats this as a missing robots.txt: no restrictions. Fix the redirect chain."
+msgid "Too many redirects to follow, so Google gives up and treats your site as having no instructions at all. The chain needs shortening."
 msgstr "Die Datei wurde innerhalb von fünf Weiterleitungen nicht erreicht. Google behandelt das wie eine fehlende robots.txt: keine Einschränkungen. Beheben Sie die Weiterleitungskette."
 
 msgctxt "ui.summary.notFound.title"
-msgid "No robots.txt found"
+msgid "There is no robots.txt at all"
 msgstr "Keine robots.txt gefunden"
 
 msgctxt "ui.summary.notFound.body"
-msgid "The server answered HTTP {status}. Crawlers treat a missing robots.txt as \"everything allowed\"."
+msgid "Crawlers take a missing file as permission to read the whole site, AI crawlers included. If you want any say over that, the file has to exist."
 msgstr "Der Server hat mit HTTP {status} geantwortet. Crawler behandeln eine fehlende robots.txt als „alles erlaubt“."
 
 msgctxt "ui.summary.clientError.body"
-msgid "Google treats any 4xx response as \"no restrictions\". Most other crawlers do the same."
+msgid "The file could not be read, and crawlers take that as permission to read everything. Nothing you put in the file is being obeyed."
 msgstr "Google behandelt jede 4xx-Antwort als „keine Einschränkungen“. Die meisten anderen Crawler ebenso."
 
 msgctxt "ui.summary.serverError.title"
-msgid "Server error, HTTP {status}"
+msgid "Your server is failing to hand the file over"
 msgstr "Serverfehler, HTTP {status}"
 
 msgctxt "ui.summary.serverError.body"
-msgid "Google treats 5xx responses as a temporary \"disallow everything\" for up to 30 days, then as no restrictions. Other crawlers vary."
+msgid "Google reads this as \"stay away from the whole site\" for up to a month, and your pages start dropping out of search while it lasts. Whoever runs the server needs to know today."
 msgstr "Google behandelt 5xx-Antworten bis zu 30 Tage lang als vorübergehendes „alles sperren“, danach als keine Einschränkungen. Andere Crawler verhalten sich unterschiedlich."
 
 msgctxt "ui.summary.unexpectedStatus.title"
-msgid "Unexpected HTTP {status}"
+msgid "The file could not be read"
 msgstr "Unerwartetes HTTP {status}"
 
 msgctxt "ui.summary.unexpectedStatus.body"
-msgid "The body was ignored because the response was not a success."
+msgid "The server gave an answer crawlers will not accept, so whatever the file says is being ignored."
 msgstr "Der Inhalt wurde ignoriert, weil die Antwort kein Erfolg war."
 
 msgctxt "ui.summary.html.title"
-msgid "The server returned HTML"
+msgid "That is a web page, not a robots.txt"
 msgstr "Der Server hat HTML geliefert"
 
 msgctxt "ui.summary.html.body"
-msgid "Content type is \"{type}\". This is probably a soft-404 page rather than a robots.txt. Crawlers may still try to parse it and usually find no rules."
+msgid "The server answered with a page instead of the file, usually a \"not found\" page dressed up. Crawlers find no instructions in it, so nothing you wrote is in force."
 msgstr "Der Content-Type ist „{type}“. Das ist wahrscheinlich eine Soft-404-Seite und keine robots.txt. Crawler versuchen sie trotzdem zu parsen und finden meist keine Regeln."
 
 msgctxt "ui.summary.empty.title"
-msgid "Empty robots.txt"
+msgid "The file is empty, so nothing is being asked"
 msgstr "Leere robots.txt"
 
 msgctxt "ui.summary.empty.body"
-msgid "No rules. Every crawler may access everything."
+msgid "An empty file means every crawler may read everything. If you expected it to block something, that instruction is not here."
 msgstr "Keine Regeln. Jeder Crawler darf auf alles zugreifen."
 
 msgctxt "ui.summary.noStar.title"
-msgid "No \"*\" group"
+msgid "No general instruction, so most crawlers do as they please"
 msgstr "Keine „*“-Gruppe"
 
 msgctxt "ui.summary.noStar.body"
-msgid "Crawlers without a group of their own may access everything."
+msgid "The file only speaks to crawlers it names. Everyone else, including most AI crawlers, reads that as permission to take the lot."
 msgstr "Crawler ohne eigene Gruppe dürfen auf alles zugreifen."
 
 msgctxt "ui.summary.allBlocked.title"
-msgid "Everything blocked by default"
+msgid "Your whole site is closed to search engines"
 msgstr "Standardmäßig alles blockiert"
 
 msgctxt "ui.summary.allBlocked.body"
-msgid "The \"*\" group disallows the whole site. Only crawlers with their own group can get in."
+msgid "The file tells every crawler to stay out of everything. Google, Bing and the rest will drop the pages they already have. Only a crawler named separately further down gets in."
 msgstr "Die „*“-Gruppe sperrt die gesamte Website. Nur Crawler mit eigener Gruppe kommen hinein."
 
 msgctxt "ui.summary.open.title"
-msgid "No restrictions by default"
+msgid "Everything is open to everyone"
 msgstr "Standardmäßig keine Einschränkungen"
 
 msgctxt "ui.summary.open.body"
-msgid "The \"*\" group has no Disallow rules that apply."
+msgid "Nothing in this file holds any crawler back. That is fine if you meant it, and worth deciding if you did not: it includes the AI crawlers listed below."
 msgstr "Die „*“-Gruppe hat keine wirksamen Disallow-Regeln."
 
 msgctxt "ui.summary.restricted.title"
-msgid "Restricted by default"
+msgid "Parts of your site are hidden"
 msgstr "Standardmäßig eingeschränkt"
 
 msgctxt "ui.summary.restricted.body"
-msgid "The \"*\" group has {disallow} Disallow and {allow} Allow rules. Test paths below to see what they cover."
+msgid "{disallow} things are kept out of search and {allow} are let back in. Check below that the hidden ones are the ones you meant, and nothing you sell is among them."
 msgstr "Die „*“-Gruppe hat {disallow} Disallow- und {allow} Allow-Regeln. Testen Sie unten Pfade, um zu sehen, was sie abdecken."
 
 msgctxt "ui.defs.source"
@@ -3375,19 +3375,19 @@ msgid "What the colours mean"
 msgstr "Was die Farben bedeuten"
 
 msgctxt "ui.legend.ok"
-msgid "Open to every crawler"
+msgid "Open to everyone"
 msgstr "Für alle Crawler offen"
 
 msgctxt "ui.legend.info"
-msgid "Some crawlers restricted"
+msgid "Parts are hidden"
 msgstr "Einige Crawler eingeschränkt"
 
 msgctxt "ui.legend.warning"
-msgid "Served oddly, or not found"
+msgid "Could not be read properly"
 msgstr "Seltsam ausgeliefert oder nicht gefunden"
 
 msgctxt "ui.legend.error"
-msgid "Blocked, or the server failed"
+msgid "Shut out, or the server failed"
 msgstr "Blockiert, oder der Server hat versagt"
 
 msgctxt "ui.legend.current"
@@ -3441,3 +3441,89 @@ msgstr "Alle Crawler anzeigen"
 msgctxt "ui.agents.showFewer"
 msgid "Show fewer crawlers"
 msgstr "Weniger Crawler anzeigen"
+
+msgctxt "ui.defs.technical"
+msgid "Technical details"
+msgstr ""
+
+msgctxt "ui.plain.search"
+msgid "Search engines"
+msgstr ""
+
+msgctxt "ui.plain.search.open"
+msgid "Can read the whole site"
+msgstr ""
+
+msgctxt "ui.plain.search.partial"
+msgid "Kept out of some of it"
+msgstr ""
+
+msgctxt "ui.plain.search.blocked"
+msgid "Shut out of the entire site"
+msgstr ""
+
+msgctxt "ui.plain.ai"
+msgid "AI crawlers"
+msgstr ""
+
+msgctxt "ui.plain.ai.open"
+msgid "Free to train on everything here"
+msgstr ""
+
+msgctxt "ui.plain.ai.partial"
+msgid "Some allowed, some not"
+msgstr ""
+
+msgctxt "ui.plain.ai.blocked"
+msgid "All turned away"
+msgstr ""
+
+msgctxt "ui.plain.sitemap"
+msgid "Where your pages are"
+msgstr ""
+
+msgctxt "ui.plain.sitemap.none"
+msgid "Not stated, so new pages are found by chance"
+msgstr ""
+
+msgctxt "ui.plain.sitemap.some"
+msgid "A sitemap points the way"
+msgid_plural "{n} sitemaps point the way"
+msgstr[0] ""
+msgstr[1] ""
+
+msgctxt "ui.plain.problems"
+msgid "Costing you"
+msgstr ""
+
+msgctxt "ui.plain.problems.none"
+msgid "Nothing we can find"
+msgstr ""
+
+msgctxt "ui.plain.problems.some"
+msgid "{errors} to fix now, {warnings} worth a look"
+msgstr ""
+
+msgctxt "ui.plain.rules"
+msgid "Instructions in the file"
+msgstr ""
+
+msgctxt "ui.plain.rules.none"
+msgid "None, so nothing is being asked of anyone"
+msgstr ""
+
+msgctxt "ui.plain.rules.some"
+msgid "{n}"
+msgstr ""
+
+msgctxt "ui.plain.search.serverFail"
+msgid "Being turned away while the server fails"
+msgstr ""
+
+msgctxt "ui.plain.ai.unknown"
+msgid "Cannot be told anything until the file loads"
+msgstr ""
+
+msgctxt "ui.plain.rules.unread"
+msgid "The file could not be read, so none are in force"
+msgstr ""
