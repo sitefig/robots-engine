@@ -1,56 +1,56 @@
 # Tracked domains: AI crawler leaderboard
 
-*Updated 2026-09-26. Snapshots are in one directory per domain; git history is the change log.*
+*Updated 2026-09-27. Snapshots are in one directory per domain; git history is the change log.*
 
 | Crawler | Blocked | Restricted | Open |
 | --- | ---: | ---: | ---: |
-| GPTBot | 23 (12%) | 123 | 49 |
-| ClaudeBot | 31 (16%) | 117 | 47 |
-| Google-Extended | 21 (11%) | 128 | 46 |
-| Applebot-Extended | 27 (14%) | 124 | 44 |
-| CCBot | 33 (17%) | 117 | 45 |
-| Bytespider | 33 (17%) | 118 | 44 |
-| meta-externalagent | 23 (12%) | 127 | 45 |
-| Amazonbot | 23 (12%) | 125 | 47 |
-| Diffbot | 27 (14%) | 124 | 44 |
-| cohere-ai | 26 (13%) | 125 | 44 |
-| Omgilibot | 27 (14%) | 124 | 44 |
-| OAI-SearchBot (SearchGPT) | 14 (7%) | 136 | 45 |
-| ChatGPT-User | 15 (8%) | 134 | 46 |
-| Claude-SearchBot | 20 (10%) | 130 | 45 |
-| Claude-User | 21 (11%) | 129 | 45 |
-| PerplexityBot | 20 (10%) | 129 | 46 |
-| Perplexity-User | 19 (10%) | 130 | 46 |
-| DuckAssistBot | 19 (10%) | 132 | 44 |
-| YouBot | 23 (12%) | 128 | 44 |
-| Claude-Web | 23 (12%) | 127 | 45 |
-| Facebookbot | 21 (11%) | 131 | 43 |
-| GoogleOther | 15 (8%) | 136 | 44 |
-| ImageSiftBot | 19 (10%) | 132 | 44 |
-| meta-externalfetcher | 16 (8%) | 134 | 45 |
-| TimpiBot | 22 (11%) | 129 | 44 |
-| AI2Bot | 18 (9%) | 133 | 44 |
-| VelenPublicWebCrawler | 14 (7%) | 137 | 44 |
-| Webzio-Extended | 18 (9%) | 133 | 44 |
-| ICC-Crawler | 15 (8%) | 136 | 44 |
-| img2dataset | 16 (8%) | 135 | 44 |
-| AI2Bot-Dolma | 19 (10%) | 132 | 44 |
-| FriendlyCrawler | 16 (8%) | 135 | 44 |
-| Kangaroo Bot | 15 (8%) | 136 | 44 |
-| iAskSpider | 16 (8%) | 135 | 44 |
-| Sidetrade Indexer Bot | 14 (7%) | 137 | 44 |
-| MistralAI-User | 18 (9%) | 133 | 44 |
-| Google-CloudVertexBot | 18 (9%) | 132 | 45 |
-| PanguBot | 19 (10%) | 132 | 44 |
-| Cohere-Training-Data-Crawler | 17 (9%) | 134 | 44 |
-| TikTokSpider | 11 (6%) | 138 | 46 |
-| PhindBot | 13 (7%) | 138 | 44 |
-| Brightbot | 17 (9%) | 134 | 44 |
-| Novellum | 10 (5%) | 141 | 44 |
-| Gemini-Deep-Research | 14 (7%) | 137 | 44 |
-| GoogleOther-Image | 15 (8%) | 136 | 44 |
-| GoogleOther-Video | 15 (8%) | 136 | 44 |
-| amzn-SearchBot | 14 (7%) | 136 | 45 |
+| GPTBot | 23 (12%) | 122 | 49 |
+| ClaudeBot | 31 (16%) | 116 | 47 |
+| Google-Extended | 21 (11%) | 127 | 46 |
+| Applebot-Extended | 27 (14%) | 123 | 44 |
+| CCBot | 33 (17%) | 116 | 45 |
+| Bytespider | 33 (17%) | 117 | 44 |
+| meta-externalagent | 23 (12%) | 126 | 45 |
+| Amazonbot | 23 (12%) | 124 | 47 |
+| Diffbot | 27 (14%) | 123 | 44 |
+| cohere-ai | 26 (13%) | 124 | 44 |
+| Omgilibot | 27 (14%) | 123 | 44 |
+| OAI-SearchBot (SearchGPT) | 14 (7%) | 135 | 45 |
+| ChatGPT-User | 15 (8%) | 133 | 46 |
+| Claude-SearchBot | 20 (10%) | 129 | 45 |
+| Claude-User | 21 (11%) | 128 | 45 |
+| PerplexityBot | 20 (10%) | 128 | 46 |
+| Perplexity-User | 19 (10%) | 129 | 46 |
+| DuckAssistBot | 19 (10%) | 131 | 44 |
+| YouBot | 23 (12%) | 127 | 44 |
+| Claude-Web | 23 (12%) | 126 | 45 |
+| Facebookbot | 21 (11%) | 130 | 43 |
+| GoogleOther | 15 (8%) | 135 | 44 |
+| ImageSiftBot | 19 (10%) | 131 | 44 |
+| meta-externalfetcher | 16 (8%) | 133 | 45 |
+| TimpiBot | 22 (11%) | 128 | 44 |
+| AI2Bot | 18 (9%) | 132 | 44 |
+| VelenPublicWebCrawler | 14 (7%) | 136 | 44 |
+| Webzio-Extended | 18 (9%) | 132 | 44 |
+| ICC-Crawler | 15 (8%) | 135 | 44 |
+| img2dataset | 16 (8%) | 134 | 44 |
+| AI2Bot-Dolma | 19 (10%) | 131 | 44 |
+| FriendlyCrawler | 16 (8%) | 134 | 44 |
+| Kangaroo Bot | 15 (8%) | 135 | 44 |
+| iAskSpider | 16 (8%) | 134 | 44 |
+| Sidetrade Indexer Bot | 14 (7%) | 136 | 44 |
+| MistralAI-User | 18 (9%) | 132 | 44 |
+| Google-CloudVertexBot | 18 (9%) | 131 | 45 |
+| PanguBot | 19 (10%) | 131 | 44 |
+| Cohere-Training-Data-Crawler | 17 (9%) | 133 | 44 |
+| TikTokSpider | 11 (6%) | 137 | 46 |
+| PhindBot | 13 (7%) | 137 | 44 |
+| Brightbot | 17 (9%) | 133 | 44 |
+| Novellum | 10 (5%) | 140 | 44 |
+| Gemini-Deep-Research | 14 (7%) | 136 | 44 |
+| GoogleOther-Image | 15 (8%) | 135 | 44 |
+| GoogleOther-Video | 15 (8%) | 135 | 44 |
+| amzn-SearchBot | 14 (7%) | 135 | 45 |
 
 | Domain | Category | GPTBot | ClaudeBot | Google-Extended | Applebot-Extended | CCBot | Bytespider | meta-externalagent | Amazonbot | Diffbot | cohere-ai | Omgilibot | OAI-SearchBot (SearchGPT) | ChatGPT-User | Claude-SearchBot | Claude-User | PerplexityBot | Perplexity-User | DuckAssistBot | YouBot | Claude-Web | Facebookbot | GoogleOther | ImageSiftBot | meta-externalfetcher | TimpiBot | AI2Bot | VelenPublicWebCrawler | Webzio-Extended | ICC-Crawler | img2dataset | AI2Bot-Dolma | FriendlyCrawler | Kangaroo Bot | iAskSpider | Sidetrade Indexer Bot | MistralAI-User | Google-CloudVertexBot | PanguBot | Cohere-Training-Data-Crawler | TikTokSpider | PhindBot | Brightbot | Novellum | Gemini-Deep-Research | GoogleOther-Image | GoogleOther-Video | amzn-SearchBot | Issues | Sensitive paths |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---: | ---: |
@@ -203,7 +203,6 @@
 | [Berkshire Hathaway (berkshirehathaway.com)](./berkshirehathaway.com/robots.txt) (HTML page) | enterprise | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | 0 | 0 |
 | [AT&T (att.com)](./att.com/robots.txt) | enterprise | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 4 | 4 |
 | [Verizon (verizon.com)](./verizon.com/robots.txt) | enterprise | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 0 |
-| [Ford (ford.com)](./ford.com/robots.txt) | enterprise | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 1 | 0 |
 | [General Motors (gm.com)](./gm.com/robots.txt) (HTML page) | enterprise | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | 0 | 0 |
 | [Boeing (boeing.com)](./boeing.com/robots.txt) | enterprise | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 0 |
 | [Pfizer (pfizer.com)](./pfizer.com/robots.txt) | enterprise | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 7 |
