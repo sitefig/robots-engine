@@ -28,17 +28,13 @@ msgctxt "page.themeLabel"
 msgid "Colour theme"
 msgstr "Colour theme"
 
-msgctxt "page.theme.system"
-msgid "System"
-msgstr "System"
+msgctxt "ui.theme.toLight"
+msgid "Switch to the light theme"
+msgstr "Switch to the light theme"
 
-msgctxt "page.theme.light"
-msgid "Light"
-msgstr "Light"
-
-msgctxt "page.theme.dark"
-msgid "Dark"
-msgstr "Dark"
+msgctxt "ui.theme.toDark"
+msgid "Switch to the dark theme"
+msgstr "Switch to the dark theme"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -51,10 +47,6 @@ msgstr "Enter a website. sus.bot fetches its <code>robots.txt</code> and shows w
 msgctxt "page.urlLabel"
 msgid "Website URL"
 msgstr "Website URL"
-
-msgctxt "page.urlPlaceholder"
-msgid "example.com"
-msgstr "example.com"
 
 msgctxt "page.analyse"
 msgid "Analyse"
@@ -3357,3 +3349,47 @@ msgstr "Nothing here is broken today, but the warnings above are how it starts. 
 msgctxt "sales.after.clean"
 msgid "This file is in good order today. The next deploy, plugin upgrade or theme edit is the one to worry about, and watching it is what that takes."
 msgstr "This file is in good order today. The next deploy, plugin upgrade or theme edit is the one to worry about, and watching it is what that takes."
+
+msgctxt "ui.export.locked.badge"
+msgid "With a free account"
+msgstr "With a free account"
+
+msgctxt "ui.export.locked.cta"
+msgid "Create a free account"
+msgstr "Create a free account"
+
+msgctxt "ui.export.locked.note"
+msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
+msgstr "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
+
+msgctxt "ui.export.free.badge"
+msgid "No account needed"
+msgstr "No account needed"
+
+msgctxt "ui.export.share.title2"
+msgid "A link to this check"
+msgstr "A link to this check"
+
+msgctxt "ui.legend.label"
+msgid "What the colours mean"
+msgstr "What the colours mean"
+
+msgctxt "ui.legend.ok"
+msgid "Open to every crawler"
+msgstr "Open to every crawler"
+
+msgctxt "ui.legend.info"
+msgid "Some crawlers restricted"
+msgstr "Some crawlers restricted"
+
+msgctxt "ui.legend.warning"
+msgid "Served oddly, or not found"
+msgstr "Served oddly, or not found"
+
+msgctxt "ui.legend.error"
+msgid "Blocked, or the server failed"
+msgstr "Blocked, or the server failed"
+
+msgctxt "ui.legend.current"
+msgid "this report"
+msgstr "this report"

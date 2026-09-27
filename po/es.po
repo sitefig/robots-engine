@@ -28,17 +28,13 @@ msgctxt "page.themeLabel"
 msgid "Colour theme"
 msgstr "Tema de color"
 
-msgctxt "page.theme.system"
-msgid "System"
-msgstr "Sistema"
+msgctxt "ui.theme.toLight"
+msgid "Switch to the light theme"
+msgstr ""
 
-msgctxt "page.theme.light"
-msgid "Light"
-msgstr "Claro"
-
-msgctxt "page.theme.dark"
-msgid "Dark"
-msgstr "Oscuro"
+msgctxt "ui.theme.toDark"
+msgid "Switch to the dark theme"
+msgstr ""
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -51,10 +47,6 @@ msgstr "Introduce un sitio web. sus.bot descarga su <code>robots.txt</code> y mu
 msgctxt "page.urlLabel"
 msgid "Website URL"
 msgstr "URL del sitio web"
-
-msgctxt "page.urlPlaceholder"
-msgid "example.com"
-msgstr "example.com"
 
 msgctxt "page.analyse"
 msgid "Analyse"
@@ -3385,4 +3377,48 @@ msgstr ""
 
 msgctxt "sales.after.clean"
 msgid "This file is in good order today. The next deploy, plugin upgrade or theme edit is the one to worry about, and watching it is what that takes."
+msgstr ""
+
+msgctxt "ui.export.locked.badge"
+msgid "With a free account"
+msgstr ""
+
+msgctxt "ui.export.locked.cta"
+msgid "Create a free account"
+msgstr ""
+
+msgctxt "ui.export.locked.note"
+msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
+msgstr ""
+
+msgctxt "ui.export.free.badge"
+msgid "No account needed"
+msgstr ""
+
+msgctxt "ui.export.share.title2"
+msgid "A link to this check"
+msgstr ""
+
+msgctxt "ui.legend.label"
+msgid "What the colours mean"
+msgstr ""
+
+msgctxt "ui.legend.ok"
+msgid "Open to every crawler"
+msgstr ""
+
+msgctxt "ui.legend.info"
+msgid "Some crawlers restricted"
+msgstr ""
+
+msgctxt "ui.legend.warning"
+msgid "Served oddly, or not found"
+msgstr ""
+
+msgctxt "ui.legend.error"
+msgid "Blocked, or the server failed"
+msgstr ""
+
+msgctxt "ui.legend.current"
+msgid "this report"
 msgstr ""
