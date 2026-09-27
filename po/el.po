@@ -30,11 +30,11 @@ msgstr "Χρωματικό θέμα"
 
 msgctxt "ui.theme.toLight"
 msgid "Switch to the light theme"
-msgstr ""
+msgstr "Εναλλαγή σε φωτεινό θέμα"
 
 msgctxt "ui.theme.toDark"
 msgid "Switch to the dark theme"
-msgstr ""
+msgstr "Εναλλαγή σε σκούρο θέμα"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -3352,11 +3352,11 @@ msgstr ""
 
 msgctxt "ui.export.locked.badge"
 msgid "With a free account"
-msgstr ""
+msgstr "Με δωρεάν λογαριασμό"
 
 msgctxt "ui.export.locked.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Δημιουργία δωρεάν λογαριασμού"
 
 msgctxt "ui.export.locked.note"
 msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
@@ -3364,7 +3364,7 @@ msgstr ""
 
 msgctxt "ui.export.free.badge"
 msgid "No account needed"
-msgstr ""
+msgstr "Δεν χρειάζεται λογαριασμός"
 
 msgctxt "ui.export.share.title2"
 msgid "A link to this check"
@@ -3372,64 +3372,72 @@ msgstr ""
 
 msgctxt "ui.legend.label"
 msgid "What the colours mean"
-msgstr ""
+msgstr "Τι σημαίνουν τα χρώματα"
 
 msgctxt "ui.legend.ok"
 msgid "Open to every crawler"
-msgstr ""
+msgstr "Ανοιχτό σε κάθε crawler"
 
 msgctxt "ui.legend.info"
 msgid "Some crawlers restricted"
-msgstr ""
+msgstr "Ορισμένα crawler περιορισμένα"
 
 msgctxt "ui.legend.warning"
 msgid "Served oddly, or not found"
-msgstr ""
+msgstr "Παραδόθηκε παράξενα, ή δεν βρέθηκε"
 
 msgctxt "ui.legend.error"
 msgid "Blocked, or the server failed"
-msgstr ""
+msgstr "Αποκλεισμένο, ή ο διακομιστής απέτυχε"
 
 msgctxt "ui.legend.current"
 msgid "this report"
-msgstr ""
+msgstr "αυτή η αναφορά"
 
 msgctxt "ui.consent.title"
 msgid "Before you start: analytics"
-msgstr ""
+msgstr "Πριν ξεκινήσετε: στατιστικά"
 
 msgctxt "ui.consent.body"
 msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
-msgstr ""
+msgstr "Θα θέλαμε να μετράμε τις επισκέψεις με το Google Analytics, το οποίο τοποθετεί cookies στο πρόγραμμα περιήγησής σας και στέλνει στην Google τη σελίδα στην οποία βρίσκεστε. Δεν χρειάζεται για τον έλεγχο ενός robots.txt, άρα η επιλογή είναι δική σας, και ο έλεγχος λειτουργεί ακριβώς το ίδιο και στις δύο περιπτώσεις."
 
 msgctxt "ui.consent.never"
 msgid "The address you check is never sent to Google, whichever you choose."
-msgstr ""
+msgstr "Η διεύθυνση που ελέγχετε δεν στέλνεται ποτέ στην Google, ό,τι κι αν επιλέξετε."
 
 msgctxt "ui.consent.accept"
 msgid "Allow analytics"
-msgstr ""
+msgstr "Να επιτρέπονται τα στατιστικά"
 
 msgctxt "ui.consent.reject"
 msgid "No analytics"
-msgstr ""
+msgstr "Χωρίς στατιστικά"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
-msgstr ""
+msgstr "Τι συλλέγουμε, και πώς να το αλλάξετε"
 
 msgctxt "ui.consent.footer"
 msgid "Analytics choice"
-msgstr ""
+msgstr "Επιλογή για τα στατιστικά"
 
 msgctxt "ui.consent.saved.granted"
 msgid "Analytics allowed. You can change this from the footer at any time."
-msgstr ""
+msgstr "Τα στατιστικά επιτρέπονται. Μπορείτε να το αλλάξετε ανά πάσα στιγμή από το υποσέλιδο."
 
 msgctxt "ui.consent.saved.denied"
 msgid "No analytics. You can change this from the footer at any time."
-msgstr ""
+msgstr "Χωρίς στατιστικά. Μπορείτε να το αλλάξετε ανά πάσα στιγμή από το υποσέλιδο."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
-msgstr ""
+msgstr "Απόρρητο"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Εμφάνιση όλων των crawler"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Εμφάνιση λιγότερων crawler"

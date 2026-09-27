@@ -30,11 +30,11 @@ msgstr "Krāsu motīvs"
 
 msgctxt "ui.theme.toLight"
 msgid "Switch to the light theme"
-msgstr ""
+msgstr "Pārslēgties uz gaišo tēmu"
 
 msgctxt "ui.theme.toDark"
 msgid "Switch to the dark theme"
-msgstr ""
+msgstr "Pārslēgties uz tumšo tēmu"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -3381,11 +3381,11 @@ msgstr ""
 
 msgctxt "ui.export.locked.badge"
 msgid "With a free account"
-msgstr ""
+msgstr "Ar bezmaksas kontu"
 
 msgctxt "ui.export.locked.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Izveidot bezmaksas kontu"
 
 msgctxt "ui.export.locked.note"
 msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
@@ -3393,7 +3393,7 @@ msgstr ""
 
 msgctxt "ui.export.free.badge"
 msgid "No account needed"
-msgstr ""
+msgstr "Konts nav vajadzīgs"
 
 msgctxt "ui.export.share.title2"
 msgid "A link to this check"
@@ -3401,64 +3401,72 @@ msgstr ""
 
 msgctxt "ui.legend.label"
 msgid "What the colours mean"
-msgstr ""
+msgstr "Ko nozīmē krāsas"
 
 msgctxt "ui.legend.ok"
 msgid "Open to every crawler"
-msgstr ""
+msgstr "Atvērts visiem rāpuļiem"
 
 msgctxt "ui.legend.info"
 msgid "Some crawlers restricted"
-msgstr ""
+msgstr "Daži rāpuļi ierobežoti"
 
 msgctxt "ui.legend.warning"
 msgid "Served oddly, or not found"
-msgstr ""
+msgstr "Piegādāts dīvaini vai nav atrasts"
 
 msgctxt "ui.legend.error"
 msgid "Blocked, or the server failed"
-msgstr ""
+msgstr "Bloķēts vai serveris neizdevās"
 
 msgctxt "ui.legend.current"
 msgid "this report"
-msgstr ""
+msgstr "šis ziņojums"
 
 msgctxt "ui.consent.title"
 msgid "Before you start: analytics"
-msgstr ""
+msgstr "Pirms sākat: analītika"
 
 msgctxt "ui.consent.body"
 msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
-msgstr ""
+msgstr "Mēs vēlētos skaitīt apmeklējumus ar Google Analytics, kas ievieto sīkdatnes jūsu pārlūkā un nosūta Google lapu, kurā esat. Robots.txt pārbaudei tā nav vajadzīga, tāpēc izvēle ir jūsu, un pārbaude abos gadījumos darbojas tieši tāpat."
 
 msgctxt "ui.consent.never"
 msgid "The address you check is never sent to Google, whichever you choose."
-msgstr ""
+msgstr "Adrese, kuru pārbaudāt, nekad netiek nosūtīta Google, lai ko jūs izvēlētos."
 
 msgctxt "ui.consent.accept"
 msgid "Allow analytics"
-msgstr ""
+msgstr "Atļaut analītiku"
 
 msgctxt "ui.consent.reject"
 msgid "No analytics"
-msgstr ""
+msgstr "Bez analītikas"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
-msgstr ""
+msgstr "Ko mēs vācam un kā to mainīt"
 
 msgctxt "ui.consent.footer"
 msgid "Analytics choice"
-msgstr ""
+msgstr "Analītikas izvēle"
 
 msgctxt "ui.consent.saved.granted"
 msgid "Analytics allowed. You can change this from the footer at any time."
-msgstr ""
+msgstr "Analītika atļauta. Jūs to varat mainīt jebkurā laikā kājenē."
 
 msgctxt "ui.consent.saved.denied"
 msgid "No analytics. You can change this from the footer at any time."
-msgstr ""
+msgstr "Bez analītikas. Jūs to varat mainīt jebkurā laikā kājenē."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
-msgstr ""
+msgstr "Privātums"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Rādīt visus rāpuļus"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Rādīt mazāk rāpuļu"

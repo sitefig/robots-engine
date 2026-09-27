@@ -30,11 +30,11 @@ msgstr "Temă de culoare"
 
 msgctxt "ui.theme.toLight"
 msgid "Switch to the light theme"
-msgstr ""
+msgstr "Comută pe tema deschisă"
 
 msgctxt "ui.theme.toDark"
 msgid "Switch to the dark theme"
-msgstr ""
+msgstr "Comută pe tema întunecată"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -3381,11 +3381,11 @@ msgstr ""
 
 msgctxt "ui.export.locked.badge"
 msgid "With a free account"
-msgstr ""
+msgstr "Cu un cont gratuit"
 
 msgctxt "ui.export.locked.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Creați un cont gratuit"
 
 msgctxt "ui.export.locked.note"
 msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
@@ -3393,7 +3393,7 @@ msgstr ""
 
 msgctxt "ui.export.free.badge"
 msgid "No account needed"
-msgstr ""
+msgstr "Nu e nevoie de cont"
 
 msgctxt "ui.export.share.title2"
 msgid "A link to this check"
@@ -3401,64 +3401,72 @@ msgstr ""
 
 msgctxt "ui.legend.label"
 msgid "What the colours mean"
-msgstr ""
+msgstr "Ce înseamnă culorile"
 
 msgctxt "ui.legend.ok"
 msgid "Open to every crawler"
-msgstr ""
+msgstr "Deschis tuturor roboților"
 
 msgctxt "ui.legend.info"
 msgid "Some crawlers restricted"
-msgstr ""
+msgstr "Unii roboți restricționați"
 
 msgctxt "ui.legend.warning"
 msgid "Served oddly, or not found"
-msgstr ""
+msgstr "Livrat ciudat sau nu a fost găsit"
 
 msgctxt "ui.legend.error"
 msgid "Blocked, or the server failed"
-msgstr ""
+msgstr "Blocat sau serverul a eșuat"
 
 msgctxt "ui.legend.current"
 msgid "this report"
-msgstr ""
+msgstr "acest raport"
 
 msgctxt "ui.consent.title"
 msgid "Before you start: analytics"
-msgstr ""
+msgstr "Înainte să începeți: analiză"
 
 msgctxt "ui.consent.body"
 msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
-msgstr ""
+msgstr "Am vrea să numărăm vizitele cu Google Analytics, care pune cookie-uri în browserul dumneavoastră și trimite Google pagina pe care sunteți. Nu este necesar pentru a verifica un robots.txt, deci alegerea este a dumneavoastră, iar verificarea funcționează exact la fel în ambele cazuri."
 
 msgctxt "ui.consent.never"
 msgid "The address you check is never sent to Google, whichever you choose."
-msgstr ""
+msgstr "Adresa pe care o verificați nu este trimisă niciodată către Google, orice alegeți."
 
 msgctxt "ui.consent.accept"
 msgid "Allow analytics"
-msgstr ""
+msgstr "Permite analiza"
 
 msgctxt "ui.consent.reject"
 msgid "No analytics"
-msgstr ""
+msgstr "Fără analiză"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
-msgstr ""
+msgstr "Ce colectăm și cum vă răzgândiți"
 
 msgctxt "ui.consent.footer"
 msgid "Analytics choice"
-msgstr ""
+msgstr "Alegerea privind analiza"
 
 msgctxt "ui.consent.saved.granted"
 msgid "Analytics allowed. You can change this from the footer at any time."
-msgstr ""
+msgstr "Analiză permisă. Puteți schimba oricând din subsol."
 
 msgctxt "ui.consent.saved.denied"
 msgid "No analytics. You can change this from the footer at any time."
-msgstr ""
+msgstr "Fără analiză. Puteți schimba oricând din subsol."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
-msgstr ""
+msgstr "Confidențialitate"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Arată toți roboții"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Arată mai puțini roboți"

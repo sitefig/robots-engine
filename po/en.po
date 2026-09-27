@@ -3433,3 +3433,11 @@ msgstr "No analytics. You can change this from the footer at any time."
 msgctxt "ui.privacy.title"
 msgid "Privacy"
 msgstr "Privacy"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Show all crawlers"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Show fewer crawlers"

@@ -30,11 +30,11 @@ msgstr "Väriteema"
 
 msgctxt "ui.theme.toLight"
 msgid "Switch to the light theme"
-msgstr ""
+msgstr "Vaihda vaaleaan teemaan"
 
 msgctxt "ui.theme.toDark"
 msgid "Switch to the dark theme"
-msgstr ""
+msgstr "Vaihda tummaan teemaan"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -3352,11 +3352,11 @@ msgstr ""
 
 msgctxt "ui.export.locked.badge"
 msgid "With a free account"
-msgstr ""
+msgstr "Maksuttomalla tilillä"
 
 msgctxt "ui.export.locked.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Luo maksuton tili"
 
 msgctxt "ui.export.locked.note"
 msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
@@ -3364,7 +3364,7 @@ msgstr ""
 
 msgctxt "ui.export.free.badge"
 msgid "No account needed"
-msgstr ""
+msgstr "Tiliä ei tarvita"
 
 msgctxt "ui.export.share.title2"
 msgid "A link to this check"
@@ -3372,64 +3372,72 @@ msgstr ""
 
 msgctxt "ui.legend.label"
 msgid "What the colours mean"
-msgstr ""
+msgstr "Mitä värit tarkoittavat"
 
 msgctxt "ui.legend.ok"
 msgid "Open to every crawler"
-msgstr ""
+msgstr "Avoin kaikille roboteille"
 
 msgctxt "ui.legend.info"
 msgid "Some crawlers restricted"
-msgstr ""
+msgstr "Joitakin robotteja rajoitettu"
 
 msgctxt "ui.legend.warning"
 msgid "Served oddly, or not found"
-msgstr ""
+msgstr "Toimitettu oudosti tai ei löytynyt"
 
 msgctxt "ui.legend.error"
 msgid "Blocked, or the server failed"
-msgstr ""
+msgstr "Estetty tai palvelin epäonnistui"
 
 msgctxt "ui.legend.current"
 msgid "this report"
-msgstr ""
+msgstr "tämä raportti"
 
 msgctxt "ui.consent.title"
 msgid "Before you start: analytics"
-msgstr ""
+msgstr "Ennen kuin aloitat: analytiikka"
 
 msgctxt "ui.consent.body"
 msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
-msgstr ""
+msgstr "Haluaisimme laskea vierailut Google Analyticsilla, joka asettaa evästeitä selaimeesi ja lähettää Googlelle sivun, jolla olet. Sitä ei tarvita robots.txt-tiedoston tarkistamiseen, joten valinta on sinun, ja tarkistus toimii täsmälleen samoin kummassakin tapauksessa."
 
 msgctxt "ui.consent.never"
 msgid "The address you check is never sent to Google, whichever you choose."
-msgstr ""
+msgstr "Tarkistamaasi osoitetta ei koskaan lähetetä Googlelle, kummin tahansa valitset."
 
 msgctxt "ui.consent.accept"
 msgid "Allow analytics"
-msgstr ""
+msgstr "Salli analytiikka"
 
 msgctxt "ui.consent.reject"
 msgid "No analytics"
-msgstr ""
+msgstr "Ei analytiikkaa"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
-msgstr ""
+msgstr "Mitä keräämme ja miten muutat valintaasi"
 
 msgctxt "ui.consent.footer"
 msgid "Analytics choice"
-msgstr ""
+msgstr "Analytiikkavalinta"
 
 msgctxt "ui.consent.saved.granted"
 msgid "Analytics allowed. You can change this from the footer at any time."
-msgstr ""
+msgstr "Analytiikka sallittu. Voit muuttaa tätä milloin tahansa alatunnisteesta."
 
 msgctxt "ui.consent.saved.denied"
 msgid "No analytics. You can change this from the footer at any time."
-msgstr ""
+msgstr "Ei analytiikkaa. Voit muuttaa tätä milloin tahansa alatunnisteesta."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
-msgstr ""
+msgstr "Tietosuoja"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Näytä kaikki robotit"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Näytä vähemmän robotteja"

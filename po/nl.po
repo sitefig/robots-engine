@@ -30,11 +30,11 @@ msgstr "Kleurthema"
 
 msgctxt "ui.theme.toLight"
 msgid "Switch to the light theme"
-msgstr ""
+msgstr "Naar het lichte thema"
 
 msgctxt "ui.theme.toDark"
 msgid "Switch to the dark theme"
-msgstr ""
+msgstr "Naar het donkere thema"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -3260,176 +3260,184 @@ msgstr "De crawler"
 
 msgctxt "sales.title"
 msgid "Now keep it that way"
-msgstr ""
+msgstr "Houd het nu zo"
 
 msgctxt "sales.body"
 msgid "A robots.txt changes when someone deploys, upgrades a plugin or edits a theme. One line can cut a site out of Google or hand every AI crawler the whole archive. You have the picture for today; these are the three ways to keep it."
-msgstr ""
+msgstr "Een robots.txt verandert als iemand deployt, een plugin bijwerkt of een thema aanpast. Eén regel kan een site uit Google halen of elke AI-crawler het hele archief geven. Je hebt het beeld van vandaag; zo houd je het."
 
 msgctxt "sales.free.title"
 msgid "Free account, free forever"
-msgstr ""
+msgstr "Gratis account, voor altijd gratis"
 
 msgctxt "sales.free.body"
 msgid "Watch one domain and get told when its robots.txt changes. No card, no trial that expires, no call with anyone."
-msgstr ""
+msgstr "Volg één domein en hoor het wanneer zijn robots.txt verandert. Geen kaart, geen proefperiode die verloopt, geen gesprek met wie dan ook."
 
 msgctxt "sales.free.f1"
 msgid "One domain, checked every day"
-msgstr ""
+msgstr "Eén domein, elke dag gecontroleerd"
 
 msgctxt "sales.free.f2"
 msgid "An email when the file changes, with what it does to each crawler"
-msgstr ""
+msgstr "Een e-mail als het bestand verandert, met wat het doet met elke crawler"
 
 msgctxt "sales.free.f3"
 msgid "The full report and its history, kept"
-msgstr ""
+msgstr "Het volledige rapport en zijn geschiedenis, bewaard"
 
 msgctxt "sales.free.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Maak een gratis account"
 
 msgctxt "sales.free.note"
 msgid "Email and a password, or Google. Nothing else is asked."
-msgstr ""
+msgstr "E-mail en een wachtwoord, of Google. Meer wordt niet gevraagd."
 
 msgctxt "sales.self.title"
 msgid "Or do it yourself"
-msgstr ""
+msgstr "Of doe het zelf"
 
 msgctxt "sales.self.body"
 msgid "The engine is a command, a GitHub Action and a package. Same checks as this page, running on your machine or in your pipeline, failing the build when the file breaks."
-msgstr ""
+msgstr "De engine is een commando, een GitHub Action en een pakket. Dezelfde controles als deze pagina, op je eigen machine of in je pipeline, en de build faalt als het bestand stuk is."
 
 msgctxt "sales.self.claude"
 msgid "Claude can run it for you: install the command and ask it to audit a domain, or wire the Action into your repository."
-msgstr ""
+msgstr "Claude kan het voor je uitvoeren: installeer het commando en vraag om een audit van een domein, of zet de Action in je repository."
 
 msgctxt "sales.self.cta"
 msgid "Read the command line docs"
-msgstr ""
+msgstr "Lees de documentatie van de opdrachtregel"
 
 msgctxt "sales.watch.title"
 msgid "Or have us watch the market"
-msgstr ""
+msgstr "Of laat ons de markt volgen"
 
 msgctxt "sales.watch.body"
 msgid "Your domains and your competitors', checked as often as every quarter of an hour, with the alert going wherever your team already reads."
-msgstr ""
+msgstr "Jouw domeinen en die van je concurrenten, tot elk kwartier gecontroleerd, met de melding daar waar je team al leest."
 
 msgctxt "sales.watch.f1"
 msgid "Competitors side by side, per crawler"
-msgstr ""
+msgstr "Concurrenten naast elkaar, per crawler"
 
 msgctxt "sales.watch.f2"
 msgid "Slack, Teams, SMS, webhook, on call"
-msgstr ""
+msgstr "Slack, Teams, sms, webhook, wachtdienst"
 
 msgctxt "sales.watch.f3"
 msgid "Reports you can send to a client"
-msgstr ""
+msgstr "Rapporten die je naar een klant kunt sturen"
 
 msgctxt "sales.watch.cta"
 msgid "See what that costs"
-msgstr ""
+msgstr "Bekijk wat dat kost"
 
 msgctxt "sales.after.errors"
 msgid "The errors above are in force now, in the first file a crawler reads. Each one is listed with its fix. What this page cannot show you is the next change, which usually arrives with a deploy."
-msgstr ""
+msgstr "De fouten hierboven gelden nu, in het eerste bestand dat een crawler leest. Bij elke staat de oplossing. Wat deze pagina je niet kan laten zien is de volgende wijziging, en die komt meestal met een deploy."
 
 msgctxt "sales.after.training"
 msgid "Every AI crawler above is allowed to read this site. If nobody decided that, it is the kind of thing that changes without anyone noticing."
-msgstr ""
+msgstr "Elke AI-crawler hierboven mag deze site lezen. Als niemand dat besloten heeft, is het precies het soort ding dat verandert zonder dat iemand het merkt."
 
 msgctxt "sales.after.warnings"
 msgid "Nothing here is broken today, but the warnings above are how it starts. A robots.txt gets worse one line at a time, and nobody reads it between deploys."
-msgstr ""
+msgstr "Vandaag is hier niets stuk, maar zo begint het, met de waarschuwingen hierboven. Een robots.txt wordt regel voor regel slechter, en tussen deploys leest niemand hem."
 
 msgctxt "sales.after.clean"
 msgid "This file is in good order today. The next deploy, plugin upgrade or theme edit is the one to worry about, and watching it is what that takes."
-msgstr ""
+msgstr "Dit bestand is vandaag in orde. De volgende deploy, plugin-update of themawijziging is waar je je zorgen over maakt, en daarvoor moet je het volgen."
 
 msgctxt "ui.export.locked.badge"
 msgid "With a free account"
-msgstr ""
+msgstr "Met een gratis account"
 
 msgctxt "ui.export.locked.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Maak een gratis account"
 
 msgctxt "ui.export.locked.note"
 msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
-msgstr ""
+msgstr "Deze exports staan in je account, dat voor altijd gratis is en een e-mailadres en een wachtwoord vraagt. Het rapport op deze pagina blijft in beide gevallen gratis en volledig."
 
 msgctxt "ui.export.free.badge"
 msgid "No account needed"
-msgstr ""
+msgstr "Geen account nodig"
 
 msgctxt "ui.export.share.title2"
 msgid "A link to this check"
-msgstr ""
+msgstr "Een link naar deze controle"
 
 msgctxt "ui.legend.label"
 msgid "What the colours mean"
-msgstr ""
+msgstr "Wat de kleuren betekenen"
 
 msgctxt "ui.legend.ok"
 msgid "Open to every crawler"
-msgstr ""
+msgstr "Open voor elke crawler"
 
 msgctxt "ui.legend.info"
 msgid "Some crawlers restricted"
-msgstr ""
+msgstr "Sommige crawlers beperkt"
 
 msgctxt "ui.legend.warning"
 msgid "Served oddly, or not found"
-msgstr ""
+msgstr "Vreemd geleverd, of niet gevonden"
 
 msgctxt "ui.legend.error"
 msgid "Blocked, or the server failed"
-msgstr ""
+msgstr "Geblokkeerd, of de server faalde"
 
 msgctxt "ui.legend.current"
 msgid "this report"
-msgstr ""
+msgstr "dit rapport"
 
 msgctxt "ui.consent.title"
 msgid "Before you start: analytics"
-msgstr ""
+msgstr "Voordat je begint: statistieken"
 
 msgctxt "ui.consent.body"
 msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
-msgstr ""
+msgstr "We willen bezoeken graag tellen met Google Analytics. Dat plaatst cookies in je browser en stuurt Google de pagina waar je bent. Het is niet nodig om een robots.txt te controleren, dus jij kiest, en de controle werkt in beide gevallen precies hetzelfde."
 
 msgctxt "ui.consent.never"
 msgid "The address you check is never sent to Google, whichever you choose."
-msgstr ""
+msgstr "Het adres dat je controleert gaat nooit naar Google, wat je ook kiest."
 
 msgctxt "ui.consent.accept"
 msgid "Allow analytics"
-msgstr ""
+msgstr "Statistieken toestaan"
 
 msgctxt "ui.consent.reject"
 msgid "No analytics"
-msgstr ""
+msgstr "Geen statistieken"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
-msgstr ""
+msgstr "Wat we verzamelen, en hoe je het intrekt"
 
 msgctxt "ui.consent.footer"
 msgid "Analytics choice"
-msgstr ""
+msgstr "Keuze over statistieken"
 
 msgctxt "ui.consent.saved.granted"
 msgid "Analytics allowed. You can change this from the footer at any time."
-msgstr ""
+msgstr "Statistieken toegestaan. Je kunt dit altijd wijzigen via de voettekst."
 
 msgctxt "ui.consent.saved.denied"
 msgid "No analytics. You can change this from the footer at any time."
-msgstr ""
+msgstr "Geen statistieken. Je kunt dit altijd wijzigen via de voettekst."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
-msgstr ""
+msgstr "Privacy"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Alle crawlers tonen"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Minder crawlers tonen"

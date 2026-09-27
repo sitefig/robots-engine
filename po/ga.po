@@ -30,11 +30,11 @@ msgstr "Téama datha"
 
 msgctxt "ui.theme.toLight"
 msgid "Switch to the light theme"
-msgstr ""
+msgstr "Athraigh go dtí an téama sorcha"
 
 msgctxt "ui.theme.toDark"
 msgid "Switch to the dark theme"
-msgstr ""
+msgstr "Athraigh go dtí an téama dorcha"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -3439,11 +3439,11 @@ msgstr ""
 
 msgctxt "ui.export.locked.badge"
 msgid "With a free account"
-msgstr ""
+msgstr "Le cuntas saor in aisce"
 
 msgctxt "ui.export.locked.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Cruthaigh cuntas saor in aisce"
 
 msgctxt "ui.export.locked.note"
 msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
@@ -3451,7 +3451,7 @@ msgstr ""
 
 msgctxt "ui.export.free.badge"
 msgid "No account needed"
-msgstr ""
+msgstr "Níl cuntas riachtanach"
 
 msgctxt "ui.export.share.title2"
 msgid "A link to this check"
@@ -3459,64 +3459,72 @@ msgstr ""
 
 msgctxt "ui.legend.label"
 msgid "What the colours mean"
-msgstr ""
+msgstr "Brí na ndathanna"
 
 msgctxt "ui.legend.ok"
 msgid "Open to every crawler"
-msgstr ""
+msgstr "Oscailte do gach crawler"
 
 msgctxt "ui.legend.info"
 msgid "Some crawlers restricted"
-msgstr ""
+msgstr "Srian ar roinnt crawlers"
 
 msgctxt "ui.legend.warning"
 msgid "Served oddly, or not found"
-msgstr ""
+msgstr "Freastalaíodh go haisteach, nó gan aimsiú"
 
 msgctxt "ui.legend.error"
 msgid "Blocked, or the server failed"
-msgstr ""
+msgstr "Bactha, nó theip an freastalaí"
 
 msgctxt "ui.legend.current"
 msgid "this report"
-msgstr ""
+msgstr "an tuairisc seo"
 
 msgctxt "ui.consent.title"
 msgid "Before you start: analytics"
-msgstr ""
+msgstr "Sula dtosaíonn tú: anailís"
 
 msgctxt "ui.consent.body"
 msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
-msgstr ""
+msgstr "Ba mhaith linn cuairteanna a chomhaireamh le Google Analytics, a chuireann fianáin i do bhrabhsálaí agus a sheolann an leathanach ar a bhfuil tú chuig Google. Níl sé riachtanach chun robots.txt a sheiceáil, mar sin is é do rogha féin é, agus oibríonn an tseiceáil díreach mar an gcéanna sa dá chás."
 
 msgctxt "ui.consent.never"
 msgid "The address you check is never sent to Google, whichever you choose."
-msgstr ""
+msgstr "Ní sheoltar an seoladh a sheiceálann tú chuig Google riamh, cibé rogha a dhéanann tú."
 
 msgctxt "ui.consent.accept"
 msgid "Allow analytics"
-msgstr ""
+msgstr "Ceadaigh anailís"
 
 msgctxt "ui.consent.reject"
 msgid "No analytics"
-msgstr ""
+msgstr "Gan anailís"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
-msgstr ""
+msgstr "Cad a bhailímid, agus conas é a athrú"
 
 msgctxt "ui.consent.footer"
 msgid "Analytics choice"
-msgstr ""
+msgstr "Rogha anailíse"
 
 msgctxt "ui.consent.saved.granted"
 msgid "Analytics allowed. You can change this from the footer at any time."
-msgstr ""
+msgstr "Anailís ceadaithe. Is féidir leat é a athrú ag am ar bith ón bhfonóta."
 
 msgctxt "ui.consent.saved.denied"
 msgid "No analytics. You can change this from the footer at any time."
-msgstr ""
+msgstr "Gan anailís. Is féidir leat é a athrú ag am ar bith ón bhfonóta."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
-msgstr ""
+msgstr "Príobháideachas"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Taispeáin gach crawler"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Taispeáin níos lú crawlers"

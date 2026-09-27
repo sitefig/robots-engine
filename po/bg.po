@@ -30,11 +30,11 @@ msgstr "Цветова тема"
 
 msgctxt "ui.theme.toLight"
 msgid "Switch to the light theme"
-msgstr ""
+msgstr "Към светлата тема"
 
 msgctxt "ui.theme.toDark"
 msgid "Switch to the dark theme"
-msgstr ""
+msgstr "Към тъмната тема"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -3352,11 +3352,11 @@ msgstr ""
 
 msgctxt "ui.export.locked.badge"
 msgid "With a free account"
-msgstr ""
+msgstr "С безплатен профил"
 
 msgctxt "ui.export.locked.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Създайте безплатен профил"
 
 msgctxt "ui.export.locked.note"
 msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
@@ -3364,7 +3364,7 @@ msgstr ""
 
 msgctxt "ui.export.free.badge"
 msgid "No account needed"
-msgstr ""
+msgstr "Не е нужен профил"
 
 msgctxt "ui.export.share.title2"
 msgid "A link to this check"
@@ -3372,64 +3372,72 @@ msgstr ""
 
 msgctxt "ui.legend.label"
 msgid "What the colours mean"
-msgstr ""
+msgstr "Какво значат цветовете"
 
 msgctxt "ui.legend.ok"
 msgid "Open to every crawler"
-msgstr ""
+msgstr "Отворен за всички роботи"
 
 msgctxt "ui.legend.info"
 msgid "Some crawlers restricted"
-msgstr ""
+msgstr "Някои роботи с ограничения"
 
 msgctxt "ui.legend.warning"
 msgid "Served oddly, or not found"
-msgstr ""
+msgstr "Обслужен странно или не е намерен"
 
 msgctxt "ui.legend.error"
 msgid "Blocked, or the server failed"
-msgstr ""
+msgstr "Блокиран или сървърът се провали"
 
 msgctxt "ui.legend.current"
 msgid "this report"
-msgstr ""
+msgstr "този отчет"
 
 msgctxt "ui.consent.title"
 msgid "Before you start: analytics"
-msgstr ""
+msgstr "Преди да започнете: анализ"
 
 msgctxt "ui.consent.body"
 msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
-msgstr ""
+msgstr "Бихме искали да броим посещенията с Google Analytics, който поставя бисквитки в браузъра ви и изпраща на Google страницата, на която сте. Не е нужен за проверка на robots.txt, така че изборът е ваш, а проверката работи по същия начин и в двата случая."
 
 msgctxt "ui.consent.never"
 msgid "The address you check is never sent to Google, whichever you choose."
-msgstr ""
+msgstr "Адресът, който проверявате, никога не се изпраща на Google, каквото и да изберете."
 
 msgctxt "ui.consent.accept"
 msgid "Allow analytics"
-msgstr ""
+msgstr "Разреши анализа"
 
 msgctxt "ui.consent.reject"
 msgid "No analytics"
-msgstr ""
+msgstr "Без анализ"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
-msgstr ""
+msgstr "Какво събираме и как да размислите"
 
 msgctxt "ui.consent.footer"
 msgid "Analytics choice"
-msgstr ""
+msgstr "Избор за анализа"
 
 msgctxt "ui.consent.saved.granted"
 msgid "Analytics allowed. You can change this from the footer at any time."
-msgstr ""
+msgstr "Анализът е разрешен. Може да го промените по всяко време от долния колонтитул."
 
 msgctxt "ui.consent.saved.denied"
 msgid "No analytics. You can change this from the footer at any time."
-msgstr ""
+msgstr "Без анализ. Може да го промените по всяко време от долния колонтитул."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
-msgstr ""
+msgstr "Поверителност"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Покажи всички роботи"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Покажи по-малко роботи"

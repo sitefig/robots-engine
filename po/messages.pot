@@ -3432,3 +3432,11 @@ msgstr ""
 msgctxt "ui.privacy.title"
 msgid "Privacy"
 msgstr ""
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr ""
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr ""

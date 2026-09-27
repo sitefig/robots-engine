@@ -30,11 +30,11 @@ msgstr "Tema de cor"
 
 msgctxt "ui.theme.toLight"
 msgid "Switch to the light theme"
-msgstr ""
+msgstr "Mudar para o tema claro"
 
 msgctxt "ui.theme.toDark"
 msgid "Switch to the dark theme"
-msgstr ""
+msgstr "Mudar para o tema escuro"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -3381,11 +3381,11 @@ msgstr ""
 
 msgctxt "ui.export.locked.badge"
 msgid "With a free account"
-msgstr ""
+msgstr "Com uma conta gratuita"
 
 msgctxt "ui.export.locked.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Criar uma conta gratuita"
 
 msgctxt "ui.export.locked.note"
 msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
@@ -3393,7 +3393,7 @@ msgstr ""
 
 msgctxt "ui.export.free.badge"
 msgid "No account needed"
-msgstr ""
+msgstr "Não é preciso conta"
 
 msgctxt "ui.export.share.title2"
 msgid "A link to this check"
@@ -3401,64 +3401,72 @@ msgstr ""
 
 msgctxt "ui.legend.label"
 msgid "What the colours mean"
-msgstr ""
+msgstr "O que significam as cores"
 
 msgctxt "ui.legend.ok"
 msgid "Open to every crawler"
-msgstr ""
+msgstr "Aberto a todos os rastreadores"
 
 msgctxt "ui.legend.info"
 msgid "Some crawlers restricted"
-msgstr ""
+msgstr "Alguns rastreadores restringidos"
 
 msgctxt "ui.legend.warning"
 msgid "Served oddly, or not found"
-msgstr ""
+msgstr "Servido de forma estranha, ou não encontrado"
 
 msgctxt "ui.legend.error"
 msgid "Blocked, or the server failed"
-msgstr ""
+msgstr "Bloqueado, ou o servidor falhou"
 
 msgctxt "ui.legend.current"
 msgid "this report"
-msgstr ""
+msgstr "este relatório"
 
 msgctxt "ui.consent.title"
 msgid "Before you start: analytics"
-msgstr ""
+msgstr "Antes de começar: estatísticas"
 
 msgctxt "ui.consent.body"
 msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
-msgstr ""
+msgstr "Gostaríamos de contar as visitas com o Google Analytics, que coloca cookies no seu navegador e envia ao Google a página em que está. Não é necessário para verificar um robots.txt, por isso a escolha é sua, e a verificação funciona exactamente da mesma forma nos dois casos."
 
 msgctxt "ui.consent.never"
 msgid "The address you check is never sent to Google, whichever you choose."
-msgstr ""
+msgstr "O endereço que verifica nunca é enviado ao Google, qualquer que seja a sua escolha."
 
 msgctxt "ui.consent.accept"
 msgid "Allow analytics"
-msgstr ""
+msgstr "Permitir estatísticas"
 
 msgctxt "ui.consent.reject"
 msgid "No analytics"
-msgstr ""
+msgstr "Sem estatísticas"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
-msgstr ""
+msgstr "O que recolhemos, e como mudar de ideias"
 
 msgctxt "ui.consent.footer"
 msgid "Analytics choice"
-msgstr ""
+msgstr "Escolha sobre estatísticas"
 
 msgctxt "ui.consent.saved.granted"
 msgid "Analytics allowed. You can change this from the footer at any time."
-msgstr ""
+msgstr "Estatísticas permitidas. Pode alterar isto em qualquer momento no fundo da página."
 
 msgctxt "ui.consent.saved.denied"
 msgid "No analytics. You can change this from the footer at any time."
-msgstr ""
+msgstr "Sem estatísticas. Pode alterar isto em qualquer momento no fundo da página."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
-msgstr ""
+msgstr "Privacidade"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Mostrar todos os rastreadores"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Mostrar menos rastreadores"

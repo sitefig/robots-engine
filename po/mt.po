@@ -30,11 +30,11 @@ msgstr "Tema tal-kulur"
 
 msgctxt "ui.theme.toLight"
 msgid "Switch to the light theme"
-msgstr ""
+msgstr "Aqleb għat-tema ċara"
 
 msgctxt "ui.theme.toDark"
 msgid "Switch to the dark theme"
-msgstr ""
+msgstr "Aqleb għat-tema skura"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -3439,11 +3439,11 @@ msgstr ""
 
 msgctxt "ui.export.locked.badge"
 msgid "With a free account"
-msgstr ""
+msgstr "B’kont bla ħlas"
 
 msgctxt "ui.export.locked.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Oħloq kont bla ħlas"
 
 msgctxt "ui.export.locked.note"
 msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
@@ -3451,7 +3451,7 @@ msgstr ""
 
 msgctxt "ui.export.free.badge"
 msgid "No account needed"
-msgstr ""
+msgstr "Ma hemmx bżonn kont"
 
 msgctxt "ui.export.share.title2"
 msgid "A link to this check"
@@ -3459,64 +3459,72 @@ msgstr ""
 
 msgctxt "ui.legend.label"
 msgid "What the colours mean"
-msgstr ""
+msgstr "Xi jfissru l-kuluri"
 
 msgctxt "ui.legend.ok"
 msgid "Open to every crawler"
-msgstr ""
+msgstr "Miftuħ għal kull crawler"
 
 msgctxt "ui.legend.info"
 msgid "Some crawlers restricted"
-msgstr ""
+msgstr "Xi crawlers ristretti"
 
 msgctxt "ui.legend.warning"
 msgid "Served oddly, or not found"
-msgstr ""
+msgstr "Mogħti b’mod strambi, jew ma nstabx"
 
 msgctxt "ui.legend.error"
 msgid "Blocked, or the server failed"
-msgstr ""
+msgstr "Imblukkat, jew is-server falla"
 
 msgctxt "ui.legend.current"
 msgid "this report"
-msgstr ""
+msgstr "dan ir-rapport"
 
 msgctxt "ui.consent.title"
 msgid "Before you start: analytics"
-msgstr ""
+msgstr "Qabel tibda: analitika"
 
 msgctxt "ui.consent.body"
 msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
-msgstr ""
+msgstr "Nixtiequ ngħoddu ż-żjarat bl-Google Analytics, li jpoġġi cookies fil-browser tiegħek u jibgħat lil Google il-paġna li fiha tinsab. Mhux meħtieġ biex tiċċekkja robots.txt, għalhekk l-għażla hija tiegħek, u l-kontroll jaħdem eżattament l-istess fiż-żewġ każi."
 
 msgctxt "ui.consent.never"
 msgid "The address you check is never sent to Google, whichever you choose."
-msgstr ""
+msgstr "L-indirizz li tiċċekkja qatt ma jintbagħat lil Google, ikun x’ikun l-għażla tiegħek."
 
 msgctxt "ui.consent.accept"
 msgid "Allow analytics"
-msgstr ""
+msgstr "Ippermetti l-analitika"
 
 msgctxt "ui.consent.reject"
 msgid "No analytics"
-msgstr ""
+msgstr "Bla analitika"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
-msgstr ""
+msgstr "X’niġbru, u kif tibdel il-fehma"
 
 msgctxt "ui.consent.footer"
 msgid "Analytics choice"
-msgstr ""
+msgstr "Għażla dwar l-analitika"
 
 msgctxt "ui.consent.saved.granted"
 msgid "Analytics allowed. You can change this from the footer at any time."
-msgstr ""
+msgstr "Analitika permessa. Tista’ tibdilha f’kull ħin mill-qiegħ tal-paġna."
 
 msgctxt "ui.consent.saved.denied"
 msgid "No analytics. You can change this from the footer at any time."
-msgstr ""
+msgstr "Bla analitika. Tista’ tibdilha f’kull ħin mill-qiegħ tal-paġna."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
-msgstr ""
+msgstr "Privatezza"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Uri l-crawlers kollha"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Uri inqas crawlers"

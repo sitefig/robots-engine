@@ -30,11 +30,11 @@ msgstr "Farvetema"
 
 msgctxt "ui.theme.toLight"
 msgid "Switch to the light theme"
-msgstr ""
+msgstr "Skift til lyst tema"
 
 msgctxt "ui.theme.toDark"
 msgid "Switch to the dark theme"
-msgstr ""
+msgstr "Skift til mørkt tema"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -3352,11 +3352,11 @@ msgstr ""
 
 msgctxt "ui.export.locked.badge"
 msgid "With a free account"
-msgstr ""
+msgstr "Med en gratis konto"
 
 msgctxt "ui.export.locked.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Opret en gratis konto"
 
 msgctxt "ui.export.locked.note"
 msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
@@ -3364,7 +3364,7 @@ msgstr ""
 
 msgctxt "ui.export.free.badge"
 msgid "No account needed"
-msgstr ""
+msgstr "Ingen konto nødvendig"
 
 msgctxt "ui.export.share.title2"
 msgid "A link to this check"
@@ -3372,64 +3372,72 @@ msgstr ""
 
 msgctxt "ui.legend.label"
 msgid "What the colours mean"
-msgstr ""
+msgstr "Hvad farverne betyder"
 
 msgctxt "ui.legend.ok"
 msgid "Open to every crawler"
-msgstr ""
+msgstr "Åben for alle crawlere"
 
 msgctxt "ui.legend.info"
 msgid "Some crawlers restricted"
-msgstr ""
+msgstr "Nogle crawlere begrænset"
 
 msgctxt "ui.legend.warning"
 msgid "Served oddly, or not found"
-msgstr ""
+msgstr "Leveret underligt, eller ikke fundet"
 
 msgctxt "ui.legend.error"
 msgid "Blocked, or the server failed"
-msgstr ""
+msgstr "Blokeret, eller serveren fejlede"
 
 msgctxt "ui.legend.current"
 msgid "this report"
-msgstr ""
+msgstr "denne rapport"
 
 msgctxt "ui.consent.title"
 msgid "Before you start: analytics"
-msgstr ""
+msgstr "Før du starter: statistik"
 
 msgctxt "ui.consent.body"
 msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
-msgstr ""
+msgstr "Vi vil gerne tælle besøg med Google Analytics, som sætter cookies i din browser og sender Google den side, du er på. Det er ikke nødvendigt for at kontrollere en robots.txt, så det er dit valg, og kontrollen virker præcis det samme i begge tilfælde."
 
 msgctxt "ui.consent.never"
 msgid "The address you check is never sent to Google, whichever you choose."
-msgstr ""
+msgstr "Den adresse, du kontrollerer, sendes aldrig til Google, uanset hvad du vælger."
 
 msgctxt "ui.consent.accept"
 msgid "Allow analytics"
-msgstr ""
+msgstr "Tillad statistik"
 
 msgctxt "ui.consent.reject"
 msgid "No analytics"
-msgstr ""
+msgstr "Ingen statistik"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
-msgstr ""
+msgstr "Hvad vi indsamler, og hvordan du ændrer det"
 
 msgctxt "ui.consent.footer"
 msgid "Analytics choice"
-msgstr ""
+msgstr "Valg om statistik"
 
 msgctxt "ui.consent.saved.granted"
 msgid "Analytics allowed. You can change this from the footer at any time."
-msgstr ""
+msgstr "Statistik tillladt. Du kan altid ændre det i sidefoden."
 
 msgctxt "ui.consent.saved.denied"
 msgid "No analytics. You can change this from the footer at any time."
-msgstr ""
+msgstr "Ingen statistik. Du kan altid ændre det i sidefoden."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
-msgstr ""
+msgstr "Privatliv"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Vis alle crawlere"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Vis færre crawlere"

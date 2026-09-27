@@ -30,11 +30,11 @@ msgstr "Tema boja"
 
 msgctxt "ui.theme.toLight"
 msgid "Switch to the light theme"
-msgstr ""
+msgstr "Prebaci na svijetlu temu"
 
 msgctxt "ui.theme.toDark"
 msgid "Switch to the dark theme"
-msgstr ""
+msgstr "Prebaci na tamnu temu"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -3381,11 +3381,11 @@ msgstr ""
 
 msgctxt "ui.export.locked.badge"
 msgid "With a free account"
-msgstr ""
+msgstr "S besplatnim računom"
 
 msgctxt "ui.export.locked.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Otvorite besplatan račun"
 
 msgctxt "ui.export.locked.note"
 msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
@@ -3393,7 +3393,7 @@ msgstr ""
 
 msgctxt "ui.export.free.badge"
 msgid "No account needed"
-msgstr ""
+msgstr "Račun nije potreban"
 
 msgctxt "ui.export.share.title2"
 msgid "A link to this check"
@@ -3401,64 +3401,72 @@ msgstr ""
 
 msgctxt "ui.legend.label"
 msgid "What the colours mean"
-msgstr ""
+msgstr "Što boje znače"
 
 msgctxt "ui.legend.ok"
 msgid "Open to every crawler"
-msgstr ""
+msgstr "Otvoreno svim crawlerima"
 
 msgctxt "ui.legend.info"
 msgid "Some crawlers restricted"
-msgstr ""
+msgstr "Neki crawleri ograničeni"
 
 msgctxt "ui.legend.warning"
 msgid "Served oddly, or not found"
-msgstr ""
+msgstr "Čudno posluženo ili nije nađeno"
 
 msgctxt "ui.legend.error"
 msgid "Blocked, or the server failed"
-msgstr ""
+msgstr "Blokirano ili je server pao"
 
 msgctxt "ui.legend.current"
 msgid "this report"
-msgstr ""
+msgstr "ovaj izvještaj"
 
 msgctxt "ui.consent.title"
 msgid "Before you start: analytics"
-msgstr ""
+msgstr "Prije nego počnete: analitika"
 
 msgctxt "ui.consent.body"
 msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
-msgstr ""
+msgstr "Željeli bismo brojati posjete uz Google Analytics, koji postavlja kolačiće u vaš pregljednik i Googleu šalje stranicu na kojoj ste. Za provjeru robots.txt nije potreban, pa je izbor vaš, a provjera radi potpuno isto u oba slučaja."
 
 msgctxt "ui.consent.never"
 msgid "The address you check is never sent to Google, whichever you choose."
-msgstr ""
+msgstr "Adresa koju provjeravate nikada se ne šalje Googleu, što god odaberete."
 
 msgctxt "ui.consent.accept"
 msgid "Allow analytics"
-msgstr ""
+msgstr "Dopusti analitiku"
 
 msgctxt "ui.consent.reject"
 msgid "No analytics"
-msgstr ""
+msgstr "Bez analitike"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
-msgstr ""
+msgstr "Što prikupljamo i kako to promijeniti"
 
 msgctxt "ui.consent.footer"
 msgid "Analytics choice"
-msgstr ""
+msgstr "Izbor o analitici"
 
 msgctxt "ui.consent.saved.granted"
 msgid "Analytics allowed. You can change this from the footer at any time."
-msgstr ""
+msgstr "Analitika dopuštena. Možete to promijeniti u svakom trenutku u podnožju."
 
 msgctxt "ui.consent.saved.denied"
 msgid "No analytics. You can change this from the footer at any time."
-msgstr ""
+msgstr "Bez analitike. Možete to promijeniti u svakom trenutku u podnožju."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
-msgstr ""
+msgstr "Privatnost"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Prikaži sve crawlere"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Prikaži manje crawlera"

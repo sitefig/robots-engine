@@ -30,11 +30,11 @@ msgstr "Farebný motív"
 
 msgctxt "ui.theme.toLight"
 msgid "Switch to the light theme"
-msgstr ""
+msgstr "Prepnúť na svetlý vzhľad"
 
 msgctxt "ui.theme.toDark"
 msgid "Switch to the dark theme"
-msgstr ""
+msgstr "Prepnúť na tmavý vzhľad"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -3410,11 +3410,11 @@ msgstr ""
 
 msgctxt "ui.export.locked.badge"
 msgid "With a free account"
-msgstr ""
+msgstr "S bezplatným účtom"
 
 msgctxt "ui.export.locked.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Vytvoriť bezplatný účet"
 
 msgctxt "ui.export.locked.note"
 msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
@@ -3422,7 +3422,7 @@ msgstr ""
 
 msgctxt "ui.export.free.badge"
 msgid "No account needed"
-msgstr ""
+msgstr "Účet nie je potrebný"
 
 msgctxt "ui.export.share.title2"
 msgid "A link to this check"
@@ -3430,64 +3430,72 @@ msgstr ""
 
 msgctxt "ui.legend.label"
 msgid "What the colours mean"
-msgstr ""
+msgstr "Čo znamenajú farby"
 
 msgctxt "ui.legend.ok"
 msgid "Open to every crawler"
-msgstr ""
+msgstr "Otvorené všetkým robotom"
 
 msgctxt "ui.legend.info"
 msgid "Some crawlers restricted"
-msgstr ""
+msgstr "Niektoré roboty obmedzené"
 
 msgctxt "ui.legend.warning"
 msgid "Served oddly, or not found"
-msgstr ""
+msgstr "Podivne doručené alebo nenájdené"
 
 msgctxt "ui.legend.error"
 msgid "Blocked, or the server failed"
-msgstr ""
+msgstr "Blokované alebo server zlyhal"
 
 msgctxt "ui.legend.current"
 msgid "this report"
-msgstr ""
+msgstr "táto správa"
 
 msgctxt "ui.consent.title"
 msgid "Before you start: analytics"
-msgstr ""
+msgstr "Než začnete: analytika"
 
 msgctxt "ui.consent.body"
 msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
-msgstr ""
+msgstr "Radi by sme počítali návštevy pomocou Google Analytics, ktorý ukladá súbory cookie do vášho prehliadača a posiela Googlu stránku, na ktorej ste. Na kontrolu robots.txt to nie je potrebné, takže je to vaša voľba a kontrola funguje v oboch prípadoch úplne rovnako."
 
 msgctxt "ui.consent.never"
 msgid "The address you check is never sent to Google, whichever you choose."
-msgstr ""
+msgstr "Adresa, ktorú kontrolujete, sa Googlu nikdy neposiela, nech si vyberiete čokoľvek."
 
 msgctxt "ui.consent.accept"
 msgid "Allow analytics"
-msgstr ""
+msgstr "Povoliť analytiku"
 
 msgctxt "ui.consent.reject"
 msgid "No analytics"
-msgstr ""
+msgstr "Žiadna analytika"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
-msgstr ""
+msgstr "Čo zbierame a ako to zmeniť"
 
 msgctxt "ui.consent.footer"
 msgid "Analytics choice"
-msgstr ""
+msgstr "Voľba analytiky"
 
 msgctxt "ui.consent.saved.granted"
 msgid "Analytics allowed. You can change this from the footer at any time."
-msgstr ""
+msgstr "Analytika povolená. Môžete to kedykoľvek zmeniť v pätičke."
 
 msgctxt "ui.consent.saved.denied"
 msgid "No analytics. You can change this from the footer at any time."
-msgstr ""
+msgstr "Žiadna analytika. Môžete to kedykoľvek zmeniť v pätičke."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
-msgstr ""
+msgstr "Ochrana súkromia"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Zobraziť všetkých robotov"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Zobraziť menej robotov"

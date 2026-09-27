@@ -30,11 +30,11 @@ msgstr "Tema colore"
 
 msgctxt "ui.theme.toLight"
 msgid "Switch to the light theme"
-msgstr ""
+msgstr "Passa al tema chiaro"
 
 msgctxt "ui.theme.toDark"
 msgid "Switch to the dark theme"
-msgstr ""
+msgstr "Passa al tema scuro"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -3289,176 +3289,184 @@ msgstr "Il crawler"
 
 msgctxt "sales.title"
 msgid "Now keep it that way"
-msgstr ""
+msgstr "Ora mantienilo così"
 
 msgctxt "sales.body"
 msgid "A robots.txt changes when someone deploys, upgrades a plugin or edits a theme. One line can cut a site out of Google or hand every AI crawler the whole archive. You have the picture for today; these are the three ways to keep it."
-msgstr ""
+msgstr "Un robots.txt cambia quando qualcuno fa un deploy, aggiorna un plugin o modifica un tema. Una riga può togliere un sito da Google o consegnare a ogni crawler di IA tutto l'archivio. Hai la fotografia di oggi; questi sono i tre modi per conservarla."
 
 msgctxt "sales.free.title"
 msgid "Free account, free forever"
-msgstr ""
+msgstr "Account gratuito, gratis per sempre"
 
 msgctxt "sales.free.body"
 msgid "Watch one domain and get told when its robots.txt changes. No card, no trial that expires, no call with anyone."
-msgstr ""
+msgstr "Tieni d'occhio un dominio e scopri quando il suo robots.txt cambia. Nessuna carta, nessuna prova che scade, nessuna telefonata con nessuno."
 
 msgctxt "sales.free.f1"
 msgid "One domain, checked every day"
-msgstr ""
+msgstr "Un dominio, controllato ogni giorno"
 
 msgctxt "sales.free.f2"
 msgid "An email when the file changes, with what it does to each crawler"
-msgstr ""
+msgstr "Un'email quando il file cambia, con l'effetto su ogni crawler"
 
 msgctxt "sales.free.f3"
 msgid "The full report and its history, kept"
-msgstr ""
+msgstr "Il rapporto completo e la sua storia, conservati"
 
 msgctxt "sales.free.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Crea un account gratuito"
 
 msgctxt "sales.free.note"
 msgid "Email and a password, or Google. Nothing else is asked."
-msgstr ""
+msgstr "Un'email e una password, oppure Google. Non si chiede altro."
 
 msgctxt "sales.self.title"
 msgid "Or do it yourself"
-msgstr ""
+msgstr "Oppure fallo da te"
 
 msgctxt "sales.self.body"
 msgid "The engine is a command, a GitHub Action and a package. Same checks as this page, running on your machine or in your pipeline, failing the build when the file breaks."
-msgstr ""
+msgstr "Il motore è un comando, una GitHub Action e un pacchetto. Gli stessi controlli di questa pagina, sulla tua macchina o nella tua pipeline, e la build fallisce quando il file si rompe."
 
 msgctxt "sales.self.claude"
 msgid "Claude can run it for you: install the command and ask it to audit a domain, or wire the Action into your repository."
-msgstr ""
+msgstr "Claude può eseguirlo per te: installa il comando e chiedigli di controllare un dominio, o collega l'Action al tuo repository."
 
 msgctxt "sales.self.cta"
 msgid "Read the command line docs"
-msgstr ""
+msgstr "Leggi la documentazione della riga di comando"
 
 msgctxt "sales.watch.title"
 msgid "Or have us watch the market"
-msgstr ""
+msgstr "Oppure teniamo noi d'occhio il mercato"
 
 msgctxt "sales.watch.body"
 msgid "Your domains and your competitors', checked as often as every quarter of an hour, with the alert going wherever your team already reads."
-msgstr ""
+msgstr "I tuoi domini e quelli dei concorrenti, controllati anche ogni quarto d'ora, con l'avviso dove il tuo team già legge."
 
 msgctxt "sales.watch.f1"
 msgid "Competitors side by side, per crawler"
-msgstr ""
+msgstr "I concorrenti affiancati, crawler per crawler"
 
 msgctxt "sales.watch.f2"
 msgid "Slack, Teams, SMS, webhook, on call"
-msgstr ""
+msgstr "Slack, Teams, SMS, webhook, reperibilità"
 
 msgctxt "sales.watch.f3"
 msgid "Reports you can send to a client"
-msgstr ""
+msgstr "Rapporti da mandare a un cliente"
 
 msgctxt "sales.watch.cta"
 msgid "See what that costs"
-msgstr ""
+msgstr "Vedi quanto costa"
 
 msgctxt "sales.after.errors"
 msgid "The errors above are in force now, in the first file a crawler reads. Each one is listed with its fix. What this page cannot show you is the next change, which usually arrives with a deploy."
-msgstr ""
+msgstr "Gli errori qui sopra valgono adesso, nel primo file che un crawler legge. Ognuno è elencato con la sua correzione. Quello che questa pagina non può mostrarti è la prossima modifica, e di solito arriva con un deploy."
 
 msgctxt "sales.after.training"
 msgid "Every AI crawler above is allowed to read this site. If nobody decided that, it is the kind of thing that changes without anyone noticing."
-msgstr ""
+msgstr "Ogni crawler di IA qui sopra può leggere questo sito. Se nessuno l'ha deciso, è proprio il tipo di cosa che cambia senza che nessuno se ne accorga."
 
 msgctxt "sales.after.warnings"
 msgid "Nothing here is broken today, but the warnings above are how it starts. A robots.txt gets worse one line at a time, and nobody reads it between deploys."
-msgstr ""
+msgstr "Oggi qui non è rotto niente, ma è così che comincia, con gli avvisi qui sopra. Un robots.txt peggiora una riga alla volta, e tra un deploy e l'altro nessuno lo legge."
 
 msgctxt "sales.after.clean"
 msgid "This file is in good order today. The next deploy, plugin upgrade or theme edit is the one to worry about, and watching it is what that takes."
-msgstr ""
+msgstr "Questo file è in ordine oggi. Il problema è il prossimo deploy, il prossimo aggiornamento di plugin o la prossima modifica al tema, e per questo va tenuto d'occhio."
 
 msgctxt "ui.export.locked.badge"
 msgid "With a free account"
-msgstr ""
+msgstr "Con un account gratuito"
 
 msgctxt "ui.export.locked.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Crea un account gratuito"
 
 msgctxt "ui.export.locked.note"
 msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
-msgstr ""
+msgstr "Queste esportazioni sono nel tuo account, gratuito per sempre, che richiede un'email e una password. Il rapporto su questa pagina resta gratuito e completo in ogni caso."
 
 msgctxt "ui.export.free.badge"
 msgid "No account needed"
-msgstr ""
+msgstr "Nessun account necessario"
 
 msgctxt "ui.export.share.title2"
 msgid "A link to this check"
-msgstr ""
+msgstr "Un link a questo controllo"
 
 msgctxt "ui.legend.label"
 msgid "What the colours mean"
-msgstr ""
+msgstr "Cosa significano i colori"
 
 msgctxt "ui.legend.ok"
 msgid "Open to every crawler"
-msgstr ""
+msgstr "Aperto a ogni crawler"
 
 msgctxt "ui.legend.info"
 msgid "Some crawlers restricted"
-msgstr ""
+msgstr "Alcuni crawler limitati"
 
 msgctxt "ui.legend.warning"
 msgid "Served oddly, or not found"
-msgstr ""
+msgstr "Servito in modo strano, o non trovato"
 
 msgctxt "ui.legend.error"
 msgid "Blocked, or the server failed"
-msgstr ""
+msgstr "Bloccato, o il server ha fallito"
 
 msgctxt "ui.legend.current"
 msgid "this report"
-msgstr ""
+msgstr "questo rapporto"
 
 msgctxt "ui.consent.title"
 msgid "Before you start: analytics"
-msgstr ""
+msgstr "Prima di iniziare: analisi"
 
 msgctxt "ui.consent.body"
 msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
-msgstr ""
+msgstr "Ci piacerebbe contare le visite con Google Analytics, che mette cookie nel tuo browser e invia a Google la pagina su cui sei. Non serve per controllare un robots.txt, quindi scegli tu, e il controllo funziona esattamente allo stesso modo in entrambi i casi."
 
 msgctxt "ui.consent.never"
 msgid "The address you check is never sent to Google, whichever you choose."
-msgstr ""
+msgstr "L'indirizzo che controlli non viene mai inviato a Google, qualunque cosa scelga."
 
 msgctxt "ui.consent.accept"
 msgid "Allow analytics"
-msgstr ""
+msgstr "Consenti le analisi"
 
 msgctxt "ui.consent.reject"
 msgid "No analytics"
-msgstr ""
+msgstr "Nessuna analisi"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
-msgstr ""
+msgstr "Cosa raccogliamo, e come cambiare idea"
 
 msgctxt "ui.consent.footer"
 msgid "Analytics choice"
-msgstr ""
+msgstr "Scelta sulle analisi"
 
 msgctxt "ui.consent.saved.granted"
 msgid "Analytics allowed. You can change this from the footer at any time."
-msgstr ""
+msgstr "Analisi consentite. Puoi cambiarlo in qualsiasi momento dal piè di pagina."
 
 msgctxt "ui.consent.saved.denied"
 msgid "No analytics. You can change this from the footer at any time."
-msgstr ""
+msgstr "Nessuna analisi. Puoi cambiarlo in qualsiasi momento dal piè di pagina."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
-msgstr ""
+msgstr "Privacy"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Mostra tutti i crawler"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Mostra meno crawler"

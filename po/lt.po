@@ -30,11 +30,11 @@ msgstr "Spalvų tema"
 
 msgctxt "ui.theme.toLight"
 msgid "Switch to the light theme"
-msgstr ""
+msgstr "Perjungti į šviesią temą"
 
 msgctxt "ui.theme.toDark"
 msgid "Switch to the dark theme"
-msgstr ""
+msgstr "Perjungti į tamsią temą"
 
 msgctxt "page.langLabel"
 msgid "Language"
@@ -3410,11 +3410,11 @@ msgstr ""
 
 msgctxt "ui.export.locked.badge"
 msgid "With a free account"
-msgstr ""
+msgstr "Su nemokama paskyra"
 
 msgctxt "ui.export.locked.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Sukurti nemokamą paskyrą"
 
 msgctxt "ui.export.locked.note"
 msgid "These exports live in your account, which is free forever and takes an email and a password. The report on this page stays free and whole either way."
@@ -3422,7 +3422,7 @@ msgstr ""
 
 msgctxt "ui.export.free.badge"
 msgid "No account needed"
-msgstr ""
+msgstr "Paskyros nereikia"
 
 msgctxt "ui.export.share.title2"
 msgid "A link to this check"
@@ -3430,64 +3430,72 @@ msgstr ""
 
 msgctxt "ui.legend.label"
 msgid "What the colours mean"
-msgstr ""
+msgstr "Ką reiškia spalvos"
 
 msgctxt "ui.legend.ok"
 msgid "Open to every crawler"
-msgstr ""
+msgstr "Atvira visiems robotams"
 
 msgctxt "ui.legend.info"
 msgid "Some crawlers restricted"
-msgstr ""
+msgstr "Kai kurie robotai apriboti"
 
 msgctxt "ui.legend.warning"
 msgid "Served oddly, or not found"
-msgstr ""
+msgstr "Pateikta keistai arba nerasta"
 
 msgctxt "ui.legend.error"
 msgid "Blocked, or the server failed"
-msgstr ""
+msgstr "Užblokuota arba serveris nepavyko"
 
 msgctxt "ui.legend.current"
 msgid "this report"
-msgstr ""
+msgstr "ši ataskaita"
 
 msgctxt "ui.consent.title"
 msgid "Before you start: analytics"
-msgstr ""
+msgstr "Prieš pradedant: analitika"
 
 msgctxt "ui.consent.body"
 msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
-msgstr ""
+msgstr "Norėtume skaičiuoti apsilankymus su „Google Analytics“, kuri įrašo slapukus jūsų naršyklėje ir nusiunčia „Google“ puslapį, kuriame esate. Tikrinant robots.txt jos nereikia, todėl pasirinkimas jūsų, o tikrinimas abiem atvejais veikia lygiai taip pat."
 
 msgctxt "ui.consent.never"
 msgid "The address you check is never sent to Google, whichever you choose."
-msgstr ""
+msgstr "Jūsų tikrinamas adresas niekada nesiunčiamas „Google“, kad ir ką pasirinktumėte."
 
 msgctxt "ui.consent.accept"
 msgid "Allow analytics"
-msgstr ""
+msgstr "Leisti analitiką"
 
 msgctxt "ui.consent.reject"
 msgid "No analytics"
-msgstr ""
+msgstr "Be analitikos"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
-msgstr ""
+msgstr "Ką renkame ir kaip tai pakeisti"
 
 msgctxt "ui.consent.footer"
 msgid "Analytics choice"
-msgstr ""
+msgstr "Analitikos pasirinkimas"
 
 msgctxt "ui.consent.saved.granted"
 msgid "Analytics allowed. You can change this from the footer at any time."
-msgstr ""
+msgstr "Analitika leidžiama. Bet kada galite tai pakeisti poraštėje."
 
 msgctxt "ui.consent.saved.denied"
 msgid "No analytics. You can change this from the footer at any time."
-msgstr ""
+msgstr "Be analitikos. Bet kada galite tai pakeisti poraštėje."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
-msgstr ""
+msgstr "Privatumas"
+
+msgctxt "ui.agents.showAll"
+msgid "Show all crawlers"
+msgstr "Rodyti visus robotus"
+
+msgctxt "ui.agents.showFewer"
+msgid "Show fewer crawlers"
+msgstr "Rodyti mažiau robotų"

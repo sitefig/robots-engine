@@ -927,5 +927,7 @@
   "ui.consent.footer": "Analytics choice",
   "ui.consent.saved.granted": "Analytics allowed. You can change this from the footer at any time.",
   "ui.consent.saved.denied": "No analytics. You can change this from the footer at any time.",
-  "ui.privacy.title": "Privacy"
+  "ui.privacy.title": "Privacy",
+  "ui.agents.showAll": "Show all crawlers",
+  "ui.agents.showFewer": "Show fewer crawlers"
 }
