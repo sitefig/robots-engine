@@ -5,7 +5,7 @@
   "page.h1": "Prüfen Sie, welche Crawler Ihre robots.txt hereinlässt",
   "page.themeLabel": "Farbschema",
   "page.langLabel": "Sprache",
-  "page.intro": "Geben Sie eine Website ein. sus.bot lädt ihre <code>robots.txt</code> und zeigt, welche Seiten jede Suchmaschine und jeder KI-Crawler besuchen darf. Außerdem listet es die Pfade auf, die die Datei allen Lesern verrät. Die Prüfung läuft in Ihrem Browser und ist kostenlos.",
+  "page.intro": "Kostenlos, und die Analyse läuft in Ihrem Browser. Sie zeigt außerdem, was die Datei jedem verrät, der sie liest.",
   "page.urlLabel": "Website-URL",
   "page.analyse": "Analysieren",
   "page.urlHint": "Wir rufen <code>/robots.txt</code> vom Ursprung der Website ab. Pfade und Query-Strings werden ignoriert.",

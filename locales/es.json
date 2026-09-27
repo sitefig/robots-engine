@@ -5,7 +5,7 @@
   "page.h1": "Comprueba qué rastreadores deja entrar tu robots.txt",
   "page.themeLabel": "Tema de color",
   "page.langLabel": "Idioma",
-  "page.intro": "Introduce un sitio web. sus.bot descarga su <code>robots.txt</code> y muestra qué páginas puede visitar cada buscador y cada rastreador de IA. También enumera las rutas que el archivo revela a quien lo lea. La comprobación se hace en tu navegador y es gratuita.",
+  "page.intro": "Gratis, y el análisis se ejecuta en tu navegador. También muestra lo que el archivo revela a cualquiera que lo lea.",
   "page.urlLabel": "URL del sitio web",
   "page.analyse": "Analizar",
   "page.urlHint": "Obtenemos <code>/robots.txt</code> desde el origen del sitio. Las rutas y las cadenas de consulta se ignoran.",

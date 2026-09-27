@@ -41,7 +41,7 @@ msgid "Language"
 msgstr "Kalba"
 
 msgctxt "page.intro"
-msgid "Enter a website. sus.bot fetches its <code>robots.txt</code> and shows which pages each search engine and AI crawler may visit. It also lists the paths the file reveals to anyone who reads it. The check runs in your browser and is free."
+msgid "Free, and the analysis runs in your browser. It also lists what the file gives away to anyone who reads it."
 msgstr "Įveskite svetainę. sus.bot atsisiunčia jos <code>robots.txt</code> ir parodo, kuriuos puslapius gali lankyti kiekviena paieškos sistema ir kiekvienas DI robotas. Taip pat išvardija kelius, kuriuos failas atskleidžia bet kuriam skaitytojui. Patikra vyksta jūsų naršyklėje ir yra nemokama."
 
 msgctxt "page.urlLabel"

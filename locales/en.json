@@ -7,7 +7,7 @@
   "ui.theme.toLight": "Switch to the light theme",
   "ui.theme.toDark": "Switch to the dark theme",
   "page.langLabel": "Language",
-  "page.intro": "Enter a website. sus.bot fetches its <code>robots.txt</code> and shows which pages each search engine and AI crawler may visit. It also lists the paths the file reveals to anyone who reads it. The check runs in your browser and is free.",
+  "page.intro": "Free, and the analysis runs in your browser. It also lists what the file gives away to anyone who reads it.",
   "page.urlLabel": "Website URL",
   "page.analyse": "Analyse",
   "page.urlHint": "We fetch <code>/robots.txt</code> from the site's origin. Paths and query strings are ignored.",

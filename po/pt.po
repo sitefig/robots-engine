@@ -41,7 +41,7 @@ msgid "Language"
 msgstr "Idioma"
 
 msgctxt "page.intro"
-msgid "Enter a website. sus.bot fetches its <code>robots.txt</code> and shows which pages each search engine and AI crawler may visit. It also lists the paths the file reveals to anyone who reads it. The check runs in your browser and is free."
+msgid "Free, and the analysis runs in your browser. It also lists what the file gives away to anyone who reads it."
 msgstr "Introduza um site. O sus.bot obtém o seu <code>robots.txt</code> e mostra que páginas cada motor de pesquisa e cada rastreador de IA pode visitar. Também lista os caminhos que o ficheiro revela a quem o ler. A verificação corre no seu navegador e é gratuita."
 
 msgctxt "page.urlLabel"

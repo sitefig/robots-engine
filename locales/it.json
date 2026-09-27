@@ -5,7 +5,7 @@
   "page.h1": "Controlla quali crawler lascia entrare il tuo robots.txt",
   "page.themeLabel": "Tema colore",
   "page.langLabel": "Lingua",
-  "page.intro": "Inserisci un sito. sus.bot scarica il suo <code>robots.txt</code> e mostra quali pagine può visitare ogni motore di ricerca e ogni crawler di IA. Elenca anche i percorsi che il file rivela a chiunque lo legga. Il controllo avviene nel tuo browser ed è gratuito.",
+  "page.intro": "Gratuito, e l'analisi viene eseguita nel tuo browser. Mostra anche cosa il file rivela a chiunque lo legga.",
   "page.urlLabel": "URL del sito",
   "page.analyse": "Analizza",
   "page.urlHint": "Recuperiamo <code>/robots.txt</code> dall'origine del sito. Percorsi e stringhe di query vengono ignorati.",
