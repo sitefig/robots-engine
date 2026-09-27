@@ -45,15 +45,15 @@ msgid "Free, and the analysis runs in your browser. It also lists what the file 
 msgstr "Zadajte web. sus.bot stiahne jeho <code>robots.txt</code> a ukáže, ktoré stránky smie navštíviť každý vyhľadávač a každý AI crawler. Vypíše aj cesty, ktoré súbor prezrádza každému, kto si ho prečíta. Kontrola beží vo vašom prehliadači a je zadarmo."
 
 msgctxt "page.urlLabel"
-msgid "Website URL"
+msgid "Domain, or any address on the site"
 msgstr "URL stránky"
 
 msgctxt "page.analyse"
-msgid "Analyse"
+msgid "Check the robots.txt"
 msgstr "Analyzovať"
 
 msgctxt "page.urlHint"
-msgid "We fetch <code>/robots.txt</code> from the site's origin. Paths and query strings are ignored."
+msgid "Paste whatever you have: a domain, a page, a link from an email, even the <code>robots.txt</code> address itself. We read <code>/robots.txt</code> from that site and ignore the rest."
 msgstr "Sťahujeme <code>/robots.txt</code> z pôvodu stránky. Cesty a reťazce dopytu sa ignorujú."
 
 msgctxt "page.pasteSummary"

@@ -45,15 +45,15 @@ msgid "Free, and the analysis runs in your browser. It also lists what the file 
 msgstr "Anna sivusto. sus.bot hakee sen <code>robots.txt</code>-tiedoston ja näyttää, mitä sivuja kukin hakukone ja tekoälyindeksoija saa käydä läpi. Se luettelee myös polut, jotka tiedosto paljastaa kaikille lukijoille. Tarkistus tehdään selaimessasi ja on ilmainen."
 
 msgctxt "page.urlLabel"
-msgid "Website URL"
+msgid "Domain, or any address on the site"
 msgstr "Sivuston URL"
 
 msgctxt "page.analyse"
-msgid "Analyse"
+msgid "Check the robots.txt"
 msgstr "Analysoi"
 
 msgctxt "page.urlHint"
-msgid "We fetch <code>/robots.txt</code> from the site's origin. Paths and query strings are ignored."
+msgid "Paste whatever you have: a domain, a page, a link from an email, even the <code>robots.txt</code> address itself. We read <code>/robots.txt</code> from that site and ignore the rest."
 msgstr "Haemme tiedoston <code>/robots.txt</code> sivuston alkuperästä. Polut ja kyselymerkkijonot ohitetaan."
 
 msgctxt "page.pasteSummary"

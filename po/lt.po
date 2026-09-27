@@ -45,15 +45,15 @@ msgid "Free, and the analysis runs in your browser. It also lists what the file 
 msgstr "Įveskite svetainę. sus.bot atsisiunčia jos <code>robots.txt</code> ir parodo, kuriuos puslapius gali lankyti kiekviena paieškos sistema ir kiekvienas DI robotas. Taip pat išvardija kelius, kuriuos failas atskleidžia bet kuriam skaitytojui. Patikra vyksta jūsų naršyklėje ir yra nemokama."
 
 msgctxt "page.urlLabel"
-msgid "Website URL"
+msgid "Domain, or any address on the site"
 msgstr "Svetainės URL"
 
 msgctxt "page.analyse"
-msgid "Analyse"
+msgid "Check the robots.txt"
 msgstr "Analizuoti"
 
 msgctxt "page.urlHint"
-msgid "We fetch <code>/robots.txt</code> from the site's origin. Paths and query strings are ignored."
+msgid "Paste whatever you have: a domain, a page, a link from an email, even the <code>robots.txt</code> address itself. We read <code>/robots.txt</code> from that site and ignore the rest."
 msgstr "<code>/robots.txt</code> atsisiunčiame iš svetainės kilmės. Keliai ir užklausos eilutės ignoruojami."
 
 msgctxt "page.pasteSummary"

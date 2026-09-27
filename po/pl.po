@@ -45,15 +45,15 @@ msgid "Free, and the analysis runs in your browser. It also lists what the file 
 msgstr "Wpisz witrynę. sus.bot pobiera jej <code>robots.txt</code> i pokazuje, które strony może odwiedzać każda wyszukiwarka i każdy crawler AI. Wypisuje też ścieżki, które plik zdradza każdemu, kto go przeczyta. Sprawdzanie działa w przeglądarce i jest bezpłatne."
 
 msgctxt "page.urlLabel"
-msgid "Website URL"
+msgid "Domain, or any address on the site"
 msgstr "Adres URL witryny"
 
 msgctxt "page.analyse"
-msgid "Analyse"
+msgid "Check the robots.txt"
 msgstr "Analizuj"
 
 msgctxt "page.urlHint"
-msgid "We fetch <code>/robots.txt</code> from the site's origin. Paths and query strings are ignored."
+msgid "Paste whatever you have: a domain, a page, a link from an email, even the <code>robots.txt</code> address itself. We read <code>/robots.txt</code> from that site and ignore the rest."
 msgstr "Pobieramy <code>/robots.txt</code> z origin witryny. Ścieżki i parametry zapytania są ignorowane."
 
 msgctxt "page.pasteSummary"

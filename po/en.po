@@ -45,16 +45,16 @@ msgid "Free, and the analysis runs in your browser. It also lists what the file 
 msgstr "Free, and the analysis runs in your browser. It also lists what the file gives away to anyone who reads it."
 
 msgctxt "page.urlLabel"
-msgid "Website URL"
-msgstr "Website URL"
+msgid "Domain, or any address on the site"
+msgstr "Domain, or any address on the site"
 
 msgctxt "page.analyse"
-msgid "Analyse"
-msgstr "Analyse"
+msgid "Check the robots.txt"
+msgstr "Check the robots.txt"
 
 msgctxt "page.urlHint"
-msgid "We fetch <code>/robots.txt</code> from the site's origin. Paths and query strings are ignored."
-msgstr "We fetch <code>/robots.txt</code> from the site's origin. Paths and query strings are ignored."
+msgid "Paste whatever you have: a domain, a page, a link from an email, even the <code>robots.txt</code> address itself. We read <code>/robots.txt</code> from that site and ignore the rest."
+msgstr "Paste whatever you have: a domain, a page, a link from an email, even the <code>robots.txt</code> address itself. We read <code>/robots.txt</code> from that site and ignore the rest."
 
 msgctxt "page.pasteSummary"
 msgid "Paste a robots.txt instead"

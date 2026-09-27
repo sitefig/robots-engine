@@ -45,15 +45,15 @@ msgid "Free, and the analysis runs in your browser. It also lists what the file 
 msgstr "Cuir suíomh gréasáin isteach. Faigheann sus.bot a <code>robots.txt</code> agus taispeánann sé cé na leathanaigh ar féidir le gach inneall cuardaigh agus crawler AI cuairt a thabhairt orthu. Liostaíonn sé freisin na cosáin a nochtann an comhad d'aon duine a léann é. Ritheann an seiceáil i do bhrabhsálaí agus tá sí saor in aisce."
 
 msgctxt "page.urlLabel"
-msgid "Website URL"
+msgid "Domain, or any address on the site"
 msgstr "URL an tsuímh"
 
 msgctxt "page.analyse"
-msgid "Analyse"
+msgid "Check the robots.txt"
 msgstr "Anailísigh"
 
 msgctxt "page.urlHint"
-msgid "We fetch <code>/robots.txt</code> from the site's origin. Paths and query strings are ignored."
+msgid "Paste whatever you have: a domain, a page, a link from an email, even the <code>robots.txt</code> address itself. We read <code>/robots.txt</code> from that site and ignore the rest."
 msgstr "Faighimid <code>/robots.txt</code> ó bhunús an tsuímh. Déantar neamhaird de chosáin agus de theaghráin cheiste."
 
 msgctxt "page.pasteSummary"
