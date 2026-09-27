@@ -3392,3 +3392,43 @@ msgstr ""
 msgctxt "ui.legend.current"
 msgid "this report"
 msgstr ""
+
+msgctxt "ui.consent.title"
+msgid "Before you start: analytics"
+msgstr ""
+
+msgctxt "ui.consent.body"
+msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
+msgstr ""
+
+msgctxt "ui.consent.never"
+msgid "The address you check is never sent to Google, whichever you choose."
+msgstr ""
+
+msgctxt "ui.consent.accept"
+msgid "Allow analytics"
+msgstr ""
+
+msgctxt "ui.consent.reject"
+msgid "No analytics"
+msgstr ""
+
+msgctxt "ui.consent.privacy"
+msgid "What we collect, and how to change your mind"
+msgstr ""
+
+msgctxt "ui.consent.footer"
+msgid "Analytics choice"
+msgstr ""
+
+msgctxt "ui.consent.saved.granted"
+msgid "Analytics allowed. You can change this from the footer at any time."
+msgstr ""
+
+msgctxt "ui.consent.saved.denied"
+msgid "No analytics. You can change this from the footer at any time."
+msgstr ""
+
+msgctxt "ui.privacy.title"
+msgid "Privacy"
+msgstr ""

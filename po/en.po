@@ -3393,3 +3393,43 @@ msgstr "Blocked, or the server failed"
 msgctxt "ui.legend.current"
 msgid "this report"
 msgstr "this report"
+
+msgctxt "ui.consent.title"
+msgid "Before you start: analytics"
+msgstr "Before you start: analytics"
+
+msgctxt "ui.consent.body"
+msgid "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
+msgstr "We would like to count visits with Google Analytics, which sets cookies in your browser and sends Google the page you are on. It is not needed to check a robots.txt, so it is your choice, and the check works exactly the same either way."
+
+msgctxt "ui.consent.never"
+msgid "The address you check is never sent to Google, whichever you choose."
+msgstr "The address you check is never sent to Google, whichever you choose."
+
+msgctxt "ui.consent.accept"
+msgid "Allow analytics"
+msgstr "Allow analytics"
+
+msgctxt "ui.consent.reject"
+msgid "No analytics"
+msgstr "No analytics"
+
+msgctxt "ui.consent.privacy"
+msgid "What we collect, and how to change your mind"
+msgstr "What we collect, and how to change your mind"
+
+msgctxt "ui.consent.footer"
+msgid "Analytics choice"
+msgstr "Analytics choice"
+
+msgctxt "ui.consent.saved.granted"
+msgid "Analytics allowed. You can change this from the footer at any time."
+msgstr "Analytics allowed. You can change this from the footer at any time."
+
+msgctxt "ui.consent.saved.denied"
+msgid "No analytics. You can change this from the footer at any time."
+msgstr "No analytics. You can change this from the footer at any time."
+
+msgctxt "ui.privacy.title"
+msgid "Privacy"
+msgstr "Privacy"
