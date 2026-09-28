@@ -2,12 +2,12 @@
   "page.title": "sus.bot | robots.txt-tjek",
   "page.description": "Gratis robots.txt-tjek. Hent et websteds robots.txt, se hvilke søgemaskiner og AI-crawlere der er tilladt eller blokeret, test stier mod reglerne, og tjek hvordan serveren svarer forskellige user-agents.",
   "page.skip": "Gå til indhold",
-  "page.h1": "Se hvilke crawlere din robots.txt lukker ind",
+  "page.h1": "Tjek din robots.txt, før trafikken falder",
   "page.themeLabel": "Farvetema",
   "ui.theme.toLight": "Skift til lyst tema",
   "ui.theme.toDark": "Skift til mørkt tema",
   "page.langLabel": "Sprog",
-  "page.intro": "Indtast et websted. sus.bot henter dets <code>robots.txt</code> og viser, hvilke sider hver søgemaskine og AI-crawler må besøge. Den viser også de stier, filen afslører for alle, der læser den. Tjekket kører i din browser og er gratis.",
+  "page.intro": "Gratis, kører i din browser og viser, hvad din fil afslører.",
   "page.urlLabel": "Webstedets URL",
   "page.analyse": "Analysér",
   "page.urlHint": "Vi henter <code>/robots.txt</code> fra webstedets oprindelse. Stier og forespørgselsstrenge ignoreres.",
@@ -127,5 +127,7 @@
   "ui.consent.saved.denied": "Ingen statistik. Du kan altid ændre det i sidefoden.",
   "ui.privacy.title": "Privatliv",
   "ui.agents.showAll": "Vis alle crawlere",
-  "ui.agents.showFewer": "Vis færre crawlere"
+  "ui.agents.showFewer": "Vis færre crawlere",
+  "sales.nav.monitoring": "Overvågning",
+  "sales.nav.account": "Gratis konto"
 }

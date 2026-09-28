@@ -2,12 +2,12 @@
   "page.title": "sus.bot | provjera robots.txt",
   "page.description": "Besplatna provjera robots.txt. Dohvatite robots.txt bilo koje stranice, vidite koje su tražilice i AI alati za indeksiranje dopušteni ili blokirani, testirajte putanje prema pravilima i provjerite kako poslužitelj odgovara različitim user-agentima.",
   "page.skip": "Preskoči na sadržaj",
-  "page.h1": "Provjerite koje crawlere vaš robots.txt pušta unutra",
+  "page.h1": "Provjerite svoj robots.txt prije nego promet padne",
   "page.themeLabel": "Tema boja",
   "ui.theme.toLight": "Prebaci na svijetlu temu",
   "ui.theme.toDark": "Prebaci na tamnu temu",
   "page.langLabel": "Jezik",
-  "page.intro": "Unesite web-stranicu. sus.bot dohvaća njezin <code>robots.txt</code> i pokazuje koje stranice smije posjetiti svaka tražilica i svaki AI crawler. Navodi i putanje koje datoteka otkriva svakome tko je pročita. Provjera se izvodi u vašem pregledniku i besplatna je.",
+  "page.intro": "Besplatno, radi u vašem pregledniku i pokazuje što vaša datoteka otkriva.",
   "page.urlLabel": "URL stranice",
   "page.analyse": "Analiziraj",
   "page.urlHint": "Dohvaćamo <code>/robots.txt</code> s izvora stranice. Putanje i nizovi upita se zanemaruju.",
@@ -128,5 +128,7 @@
   "ui.consent.saved.denied": "Bez analitike. Možete to promijeniti u svakom trenutku u podnožju.",
   "ui.privacy.title": "Privatnost",
   "ui.agents.showAll": "Prikaži sve crawlere",
-  "ui.agents.showFewer": "Prikaži manje crawlera"
+  "ui.agents.showFewer": "Prikaži manje crawlera",
+  "sales.nav.monitoring": "Nadzor",
+  "sales.nav.account": "Besplatan račun"
 }

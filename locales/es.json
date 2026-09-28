@@ -2,12 +2,12 @@
   "page.title": "sus.bot | comprobador de robots.txt",
   "page.description": "Comprobador gratuito de robots.txt. Obtén el robots.txt de cualquier sitio, mira qué buscadores y rastreadores de IA están permitidos o bloqueados, prueba rutas contra las reglas y comprueba cómo responde el servidor a distintos user-agents.",
   "page.skip": "Saltar al contenido",
-  "page.h1": "Comprueba qué rastreadores deja entrar tu robots.txt",
+  "page.h1": "Comprueba tu robots.txt antes de que caiga el tráfico",
   "page.themeLabel": "Tema de color",
   "ui.theme.toLight": "Cambiar al tema claro",
   "ui.theme.toDark": "Cambiar al tema oscuro",
   "page.langLabel": "Idioma",
-  "page.intro": "Gratis, y el análisis se ejecuta en tu navegador. También muestra lo que el archivo revela a cualquiera que lo lea.",
+  "page.intro": "Gratis, se ejecuta en tu navegador y muestra lo que revela tu archivo.",
   "page.urlLabel": "Dominio, o cualquier dirección del sitio",
   "page.analyse": "Comprobar el robots.txt",
   "page.urlHint": "Pega lo que tengas: un dominio, una página, un enlace de un correo, incluso la dirección del propio <code>robots.txt</code>. Leemos el <code>/robots.txt</code> de ese sitio e ignoramos el resto.",
@@ -958,5 +958,44 @@
   "ui.consent.saved.denied": "Sin analítica. Puedes cambiarlo en cualquier momento desde el pie de página.",
   "ui.privacy.title": "Privacidad",
   "ui.agents.showAll": "Mostrar todos los rastreadores",
-  "ui.agents.showFewer": "Mostrar menos rastreadores"
+  "ui.agents.showFewer": "Mostrar menos rastreadores",
+  "ui.plain.exposure": "Lo que revela el archivo",
+  "ui.plain.exposure.none": "Aquí no se nombra nada privado",
+  "ui.plain.exposure.some": {
+    "one": "Se nombra un lugar privado, y los atacantes leen este archivo primero",
+    "many": "Se nombran {n} lugares privados, y los atacantes leen este archivo primero",
+    "other": "Se nombran {n} lugares privados, y los atacantes leen este archivo primero"
+  },
+  "ui.plain.exposure.unknown": "El servidor no entregó el archivo, así que no hay nada que leer",
+  "ui.plain.exposure.worst": "Lo peor: {what}",
+  "ui.plain.setup": "Tus sistemas",
+  "ui.plain.setup.some": "Cualquiera que lo lea conoce {what}",
+  "ui.plain.setup.none": "Nada que un desconocido pueda aprovechar",
+  "ui.agents.onlyProblems": "Pantalla pequeña: solo se listan los rastreadores excluidos.",
+  "ui.ai.onlyProblems": "Pantalla pequeña: solo se listan los agentes de IA que no están bloqueados.",
+  "ui.ai.showAll": "Mostrar todos los agentes de IA",
+  "ui.ai.showFewer": "Mostrar menos agentes de IA",
+  "ui.plain.setup.platform": "sobre qué está construido tu sitio ({name})",
+  "ui.plain.setup.hosts": {
+    "one": "otro de tus servidores",
+    "many": "{n} otros servidores tuyos",
+    "other": "{n} otros servidores tuyos"
+  },
+  "ui.plain.setup.buckets": {
+    "one": "un almacenamiento en la nube",
+    "many": "{n} almacenamientos en la nube",
+    "other": "{n} almacenamientos en la nube"
+  },
+  "ui.plain.setup.apis": {
+    "one": "una interfaz interna",
+    "many": "{n} interfaces internas",
+    "other": "{n} interfaces internas"
+  },
+  "ui.plain.setup.contacts": {
+    "one": "un nombre, dirección o número de ticket en un comentario",
+    "many": "{n} nombres, direcciones o números de ticket en comentarios",
+    "other": "{n} nombres, direcciones o números de ticket en comentarios"
+  },
+  "sales.nav.monitoring": "Monitorización",
+  "sales.nav.account": "Cuenta gratis"
 }

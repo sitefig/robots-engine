@@ -2,12 +2,12 @@
   "page.title": "sus.bot | robots.txt-checker",
   "page.description": "Gratis robots.txt-checker. Haal de robots.txt van elke site op, zie welke zoekmachines en AI-crawlers zijn toegestaan of geblokkeerd, test paden tegen de regels en controleer hoe de server reageert op verschillende user-agents.",
   "page.skip": "Naar de inhoud",
-  "page.h1": "Controleer welke crawlers je robots.txt binnenlaat",
+  "page.h1": "Controleer je robots.txt voordat je bezoekers verliest",
   "page.themeLabel": "Kleurthema",
   "ui.theme.toLight": "Naar het lichte thema",
   "ui.theme.toDark": "Naar het donkere thema",
   "page.langLabel": "Taal",
-  "page.intro": "Gratis, en de analyse draait in je browser. Het laat ook zien wat het bestand weggeeft aan wie het leest.",
+  "page.intro": "Gratis, werkt in je browser en laat zien wat je bestand weggeeft.",
   "page.urlLabel": "Domein, of een willekeurig adres van de site",
   "page.analyse": "robots.txt controleren",
   "page.urlHint": "Plak wat je hebt: een domein, een pagina, een link uit een e-mail, zelfs het adres van de <code>robots.txt</code> zelf. Wij lezen <code>/robots.txt</code> van die site en negeren de rest.",
@@ -929,5 +929,39 @@
   "ui.consent.saved.denied": "Geen statistieken. Je kunt dit altijd wijzigen via de voettekst.",
   "ui.privacy.title": "Privacy",
   "ui.agents.showAll": "Alle crawlers tonen",
-  "ui.agents.showFewer": "Minder crawlers tonen"
+  "ui.agents.showFewer": "Minder crawlers tonen",
+  "ui.plain.exposure": "Wat het bestand weggeeft",
+  "ui.plain.exposure.none": "Er wordt niets privé genoemd",
+  "ui.plain.exposure.some": {
+    "one": "Eén privélocatie wordt genoemd, en aanvallers lezen dit bestand als eerste",
+    "other": "{n} privélocaties worden genoemd, en aanvallers lezen dit bestand als eerste"
+  },
+  "ui.plain.exposure.unknown": "De server gaf het bestand niet vrij, dus er is niets te lezen",
+  "ui.plain.exposure.worst": "Het ernstigste daarvan: {what}",
+  "ui.plain.setup": "Je systemen",
+  "ui.plain.setup.some": "Wie het leest, ziet {what}",
+  "ui.plain.setup.none": "Niets waar een vreemde iets mee kan",
+  "ui.agents.onlyProblems": "Klein scherm: alleen de buitengesloten crawlers staan in de lijst.",
+  "ui.ai.onlyProblems": "Klein scherm: alleen de AI-agents die niet geblokkeerd zijn staan in de lijst.",
+  "ui.ai.showAll": "Alle AI-agents tonen",
+  "ui.ai.showFewer": "Minder AI-agents tonen",
+  "ui.plain.setup.platform": "waarop je site draait ({name})",
+  "ui.plain.setup.hosts": {
+    "one": "nog een server van je",
+    "other": "{n} andere servers van je"
+  },
+  "ui.plain.setup.buckets": {
+    "one": "een cloudopslagbucket",
+    "other": "{n} cloudopslagbuckets"
+  },
+  "ui.plain.setup.apis": {
+    "one": "een interne koppeling",
+    "other": "{n} interne koppelingen"
+  },
+  "ui.plain.setup.contacts": {
+    "one": "een naam, adres of ticketnummer in een opmerking",
+    "other": "{n} namen, adressen of ticketnummers in opmerkingen"
+  },
+  "sales.nav.monitoring": "Monitoring",
+  "sales.nav.account": "Gratis account"
 }

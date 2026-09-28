@@ -21,8 +21,8 @@ msgid "Skip to content"
 msgstr "Zum Inhalt springen"
 
 msgctxt "page.h1"
-msgid "Check which crawlers your robots.txt lets in"
-msgstr "Prüfen Sie, welche Crawler Ihre robots.txt hereinlässt"
+msgid "Check your robots.txt file before traffic drops"
+msgstr "Prüfen Sie Ihre robots.txt, bevor der Traffic einbricht"
 
 msgctxt "page.themeLabel"
 msgid "Colour theme"
@@ -41,8 +41,8 @@ msgid "Language"
 msgstr "Sprache"
 
 msgctxt "page.intro"
-msgid "Free, and the analysis runs in your browser. It also lists what the file gives away to anyone who reads it."
-msgstr "Kostenlos, und die Analyse läuft in Ihrem Browser. Sie zeigt außerdem, was die Datei jedem verrät, der sie liest."
+msgid "Free, runs in your browser, and shows what your file gives away."
+msgstr "Kostenlos, läuft in Ihrem Browser und zeigt, was Ihre Datei verrät."
 
 msgctxt "page.urlLabel"
 msgid "Domain, or any address on the site"
@@ -3527,3 +3527,89 @@ msgstr ""
 msgctxt "ui.plain.rules.unread"
 msgid "The file could not be read, so none are in force"
 msgstr ""
+
+msgctxt "ui.plain.exposure"
+msgid "What it gives away"
+msgstr "Was die Datei verrät"
+
+msgctxt "ui.plain.exposure.none"
+msgid "Nothing private is named here"
+msgstr "Hier wird nichts Privates genannt"
+
+msgctxt "ui.plain.exposure.some"
+msgid "One private place is named, and attackers read this file first"
+msgid_plural "{n} private places are named, and attackers read this file first"
+msgstr[0] "Ein privater Ort wird genannt, und Angreifer lesen diese Datei zuerst"
+msgstr[1] "{n} private Orte werden genannt, und Angreifer lesen diese Datei zuerst"
+
+msgctxt "ui.plain.exposure.unknown"
+msgid "The server did not hand the file over, so there is nothing to read"
+msgstr "Der Server hat die Datei nicht geliefert, also gibt es nichts zu lesen"
+
+msgctxt "ui.plain.exposure.worst"
+msgid "The worst of them: {what}"
+msgstr "Das Schlimmste davon: {what}"
+
+msgctxt "ui.plain.setup"
+msgid "Your systems"
+msgstr "Ihre Systeme"
+
+msgctxt "ui.plain.setup.some"
+msgid "Anyone reading it learns {what}"
+msgstr "Wer sie liest, erfährt {what}"
+
+msgctxt "ui.plain.setup.none"
+msgid "Nothing a stranger could use"
+msgstr "Nichts, was ein Fremder nutzen könnte"
+
+msgctxt "ui.agents.onlyProblems"
+msgid "Small screen: only the crawlers that are shut out are listed."
+msgstr "Kleiner Bildschirm: aufgeführt sind nur die Crawler, die ausgesperrt sind."
+
+msgctxt "ui.ai.onlyProblems"
+msgid "Small screen: only the AI agents that are not blocked are listed."
+msgstr "Kleiner Bildschirm: aufgeführt sind nur die KI-Agenten, die nicht blockiert sind."
+
+msgctxt "ui.ai.showAll"
+msgid "Show all AI agents"
+msgstr "Alle KI-Agenten anzeigen"
+
+msgctxt "ui.ai.showFewer"
+msgid "Show fewer AI agents"
+msgstr "Weniger KI-Agenten anzeigen"
+
+msgctxt "ui.plain.setup.platform"
+msgid "what you are built on ({name})"
+msgstr "worauf Ihre Website läuft ({name})"
+
+msgctxt "ui.plain.setup.hosts"
+msgid "another server of yours"
+msgid_plural "{n} other servers of yours"
+msgstr[0] "einen weiteren Ihrer Server"
+msgstr[1] "{n} weitere Ihrer Server"
+
+msgctxt "ui.plain.setup.buckets"
+msgid "a cloud storage bucket"
+msgid_plural "{n} cloud storage buckets"
+msgstr[0] "einen Cloud-Speicher"
+msgstr[1] "{n} Cloud-Speicher"
+
+msgctxt "ui.plain.setup.apis"
+msgid "an internal interface"
+msgid_plural "{n} internal interfaces"
+msgstr[0] "eine interne Schnittstelle"
+msgstr[1] "{n} interne Schnittstellen"
+
+msgctxt "ui.plain.setup.contacts"
+msgid "a name, address or ticket number left in a comment"
+msgid_plural "{n} names, addresses or ticket numbers left in comments"
+msgstr[0] "einen Namen, eine Adresse oder eine Ticketnummer in einem Kommentar"
+msgstr[1] "{n} Namen, Adressen oder Ticketnummern in Kommentaren"
+
+msgctxt "sales.nav.monitoring"
+msgid "Monitoring"
+msgstr "Überwachung"
+
+msgctxt "sales.nav.account"
+msgid "Free account"
+msgstr "Kostenloses Konto"

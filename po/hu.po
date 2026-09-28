@@ -21,8 +21,8 @@ msgid "Skip to content"
 msgstr "Ugrás a tartalomra"
 
 msgctxt "page.h1"
-msgid "Check which crawlers your robots.txt lets in"
-msgstr "Nézze meg, mely robotokat enged be a robots.txt"
+msgid "Check your robots.txt file before traffic drops"
+msgstr "Ellenőrizze a robots.txt fájlt, mielőtt visszaesik a forgalom"
 
 msgctxt "page.themeLabel"
 msgid "Colour theme"
@@ -41,8 +41,8 @@ msgid "Language"
 msgstr "Nyelv"
 
 msgctxt "page.intro"
-msgid "Free, and the analysis runs in your browser. It also lists what the file gives away to anyone who reads it."
-msgstr "Adjon meg egy weboldalt. A sus.bot letölti a <code>robots.txt</code> fájlját, és megmutatja, mely oldalakat látogathatja az egyes keresők és AI-robotok. Felsorolja azokat az útvonalakat is, amelyeket a fájl bárkinek elárul. Az ellenőrzés a böngészőjében fut, és ingyenes."
+msgid "Free, runs in your browser, and shows what your file gives away."
+msgstr "Ingyenes, a böngészőjében fut, és megmutatja, mit árul el a fájlja."
 
 msgctxt "page.urlLabel"
 msgid "Domain, or any address on the site"
@@ -3527,3 +3527,89 @@ msgstr ""
 msgctxt "ui.plain.rules.unread"
 msgid "The file could not be read, so none are in force"
 msgstr ""
+
+msgctxt "ui.plain.exposure"
+msgid "What it gives away"
+msgstr ""
+
+msgctxt "ui.plain.exposure.none"
+msgid "Nothing private is named here"
+msgstr ""
+
+msgctxt "ui.plain.exposure.some"
+msgid "One private place is named, and attackers read this file first"
+msgid_plural "{n} private places are named, and attackers read this file first"
+msgstr[0] ""
+msgstr[1] ""
+
+msgctxt "ui.plain.exposure.unknown"
+msgid "The server did not hand the file over, so there is nothing to read"
+msgstr ""
+
+msgctxt "ui.plain.exposure.worst"
+msgid "The worst of them: {what}"
+msgstr ""
+
+msgctxt "ui.plain.setup"
+msgid "Your systems"
+msgstr ""
+
+msgctxt "ui.plain.setup.some"
+msgid "Anyone reading it learns {what}"
+msgstr ""
+
+msgctxt "ui.plain.setup.none"
+msgid "Nothing a stranger could use"
+msgstr ""
+
+msgctxt "ui.agents.onlyProblems"
+msgid "Small screen: only the crawlers that are shut out are listed."
+msgstr ""
+
+msgctxt "ui.ai.onlyProblems"
+msgid "Small screen: only the AI agents that are not blocked are listed."
+msgstr ""
+
+msgctxt "ui.ai.showAll"
+msgid "Show all AI agents"
+msgstr ""
+
+msgctxt "ui.ai.showFewer"
+msgid "Show fewer AI agents"
+msgstr ""
+
+msgctxt "ui.plain.setup.platform"
+msgid "what you are built on ({name})"
+msgstr ""
+
+msgctxt "ui.plain.setup.hosts"
+msgid "another server of yours"
+msgid_plural "{n} other servers of yours"
+msgstr[0] ""
+msgstr[1] ""
+
+msgctxt "ui.plain.setup.buckets"
+msgid "a cloud storage bucket"
+msgid_plural "{n} cloud storage buckets"
+msgstr[0] ""
+msgstr[1] ""
+
+msgctxt "ui.plain.setup.apis"
+msgid "an internal interface"
+msgid_plural "{n} internal interfaces"
+msgstr[0] ""
+msgstr[1] ""
+
+msgctxt "ui.plain.setup.contacts"
+msgid "a name, address or ticket number left in a comment"
+msgid_plural "{n} names, addresses or ticket numbers left in comments"
+msgstr[0] ""
+msgstr[1] ""
+
+msgctxt "sales.nav.monitoring"
+msgid "Monitoring"
+msgstr "Figyelés"
+
+msgctxt "sales.nav.account"
+msgid "Free account"
+msgstr "Ingyenes fiók"

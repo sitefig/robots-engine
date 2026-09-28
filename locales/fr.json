@@ -2,12 +2,12 @@
   "page.title": "sus.bot | vérificateur de robots.txt",
   "page.description": "Vérificateur de robots.txt gratuit. Récupère le robots.txt d'un site, montre quels moteurs de recherche et robots d'IA sont autorisés ou bloqués, teste des chemins contre les règles et vérifie comment le serveur répond aux différents user-agents.",
   "page.skip": "Aller au contenu",
-  "page.h1": "Vérifiez quels robots votre robots.txt laisse entrer",
+  "page.h1": "Vérifiez votre robots.txt avant que le trafic ne chute",
   "page.themeLabel": "Thème de couleurs",
   "ui.theme.toLight": "Passer au thème clair",
   "ui.theme.toDark": "Passer au thème sombre",
   "page.langLabel": "Langue",
-  "page.intro": "Gratuit, et l'analyse s'exécute dans votre navigateur. Elle indique aussi ce que le fichier révèle à quiconque le lit.",
+  "page.intro": "Gratuit, fonctionne dans votre navigateur et montre ce que votre fichier révèle.",
   "page.urlLabel": "Domaine, ou n'importe quelle adresse du site",
   "page.analyse": "Vérifier le robots.txt",
   "page.urlHint": "Collez ce que vous avez : un domaine, une page, un lien reçu par e-mail, même l'adresse du <code>robots.txt</code>. Nous lisons le <code>/robots.txt</code> de ce site et ignorons le reste.",
@@ -958,5 +958,44 @@
   "ui.consent.saved.denied": "Pas de statistiques. Vous pouvez changer cela à tout moment depuis le pied de page.",
   "ui.privacy.title": "Confidentialité",
   "ui.agents.showAll": "Afficher tous les robots",
-  "ui.agents.showFewer": "Afficher moins de robots"
+  "ui.agents.showFewer": "Afficher moins de robots",
+  "ui.plain.exposure": "Ce que le fichier révèle",
+  "ui.plain.exposure.none": "Rien de privé n'est nommé ici",
+  "ui.plain.exposure.some": {
+    "one": "Un emplacement privé est nommé, et les attaquants lisent ce fichier en premier",
+    "many": "{n} emplacements privés sont nommés, et les attaquants lisent ce fichier en premier",
+    "other": "{n} emplacements privés sont nommés, et les attaquants lisent ce fichier en premier"
+  },
+  "ui.plain.exposure.unknown": "Le serveur n'a pas fourni le fichier, il n'y a donc rien à lire",
+  "ui.plain.exposure.worst": "Le plus grave : {what}",
+  "ui.plain.setup": "Vos systèmes",
+  "ui.plain.setup.some": "Quiconque le lit apprend {what}",
+  "ui.plain.setup.none": "Rien qu'un inconnu puisse utiliser",
+  "ui.agents.onlyProblems": "Petit écran : seuls les robots exclus sont listés.",
+  "ui.ai.onlyProblems": "Petit écran : seuls les agents d'IA non bloqués sont listés.",
+  "ui.ai.showAll": "Afficher tous les agents d'IA",
+  "ui.ai.showFewer": "Afficher moins d'agents d'IA",
+  "ui.plain.setup.platform": "sur quoi votre site tourne ({name})",
+  "ui.plain.setup.hosts": {
+    "one": "un autre de vos serveurs",
+    "many": "{n} autres de vos serveurs",
+    "other": "{n} autres de vos serveurs"
+  },
+  "ui.plain.setup.buckets": {
+    "one": "un espace de stockage cloud",
+    "many": "{n} espaces de stockage cloud",
+    "other": "{n} espaces de stockage cloud"
+  },
+  "ui.plain.setup.apis": {
+    "one": "une interface interne",
+    "many": "{n} interfaces internes",
+    "other": "{n} interfaces internes"
+  },
+  "ui.plain.setup.contacts": {
+    "one": "un nom, une adresse ou un numéro de ticket laissé dans un commentaire",
+    "many": "{n} noms, adresses ou numéros de ticket laissés dans des commentaires",
+    "other": "{n} noms, adresses ou numéros de ticket laissés dans des commentaires"
+  },
+  "sales.nav.monitoring": "Surveillance",
+  "sales.nav.account": "Compte gratuit"
 }

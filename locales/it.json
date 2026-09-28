@@ -2,12 +2,12 @@
   "page.title": "sus.bot | verifica robots.txt",
   "page.description": "Verificatore gratuito di robots.txt. Recupera il robots.txt di qualsiasi sito, mostra quali motori di ricerca e crawler IA sono consentiti o bloccati, prova percorsi contro le regole e controlla come il server risponde ai diversi user-agent.",
   "page.skip": "Vai al contenuto",
-  "page.h1": "Controlla quali crawler lascia entrare il tuo robots.txt",
+  "page.h1": "Controlla il tuo robots.txt prima che il traffico cali",
   "page.themeLabel": "Tema colore",
   "ui.theme.toLight": "Passa al tema chiaro",
   "ui.theme.toDark": "Passa al tema scuro",
   "page.langLabel": "Lingua",
-  "page.intro": "Gratuito, e l'analisi viene eseguita nel tuo browser. Mostra anche cosa il file rivela a chiunque lo legga.",
+  "page.intro": "Gratis, funziona nel tuo browser e mostra cosa rivela il tuo file.",
   "page.urlLabel": "Dominio, o un qualsiasi indirizzo del sito",
   "page.analyse": "Controlla il robots.txt",
   "page.urlHint": "Incolla quello che hai: un dominio, una pagina, un link da un'email, anche l'indirizzo del <code>robots.txt</code> stesso. Leggiamo il <code>/robots.txt</code> di quel sito e ignoriamo il resto.",
@@ -958,5 +958,44 @@
   "ui.consent.saved.denied": "Nessuna analisi. Puoi cambiarlo in qualsiasi momento dal piè di pagina.",
   "ui.privacy.title": "Privacy",
   "ui.agents.showAll": "Mostra tutti i crawler",
-  "ui.agents.showFewer": "Mostra meno crawler"
+  "ui.agents.showFewer": "Mostra meno crawler",
+  "ui.plain.exposure": "Cosa rivela il file",
+  "ui.plain.exposure.none": "Non viene indicato nulla di privato",
+  "ui.plain.exposure.some": {
+    "one": "Viene indicato un percorso privato, e chi attacca legge prima questo file",
+    "many": "Vengono indicati {n} percorsi privati, e chi attacca legge prima questo file",
+    "other": "Vengono indicati {n} percorsi privati, e chi attacca legge prima questo file"
+  },
+  "ui.plain.exposure.unknown": "Il server non ha restituito il file, quindi non c’è nulla da leggere",
+  "ui.plain.exposure.worst": "Il peggiore: {what}",
+  "ui.plain.setup": "I tuoi sistemi",
+  "ui.plain.setup.some": "Chi lo legge scopre {what}",
+  "ui.plain.setup.none": "Niente che un estraneo possa sfruttare",
+  "ui.agents.onlyProblems": "Schermo piccolo: sono elencati solo i crawler esclusi.",
+  "ui.ai.onlyProblems": "Schermo piccolo: sono elencati solo gli agenti IA non bloccati.",
+  "ui.ai.showAll": "Mostra tutti gli agenti IA",
+  "ui.ai.showFewer": "Mostra meno agenti IA",
+  "ui.plain.setup.platform": "su cosa gira il tuo sito ({name})",
+  "ui.plain.setup.hosts": {
+    "one": "un altro dei tuoi server",
+    "many": "{n} altri tuoi server",
+    "other": "{n} altri tuoi server"
+  },
+  "ui.plain.setup.buckets": {
+    "one": "un archivio cloud",
+    "many": "{n} archivi cloud",
+    "other": "{n} archivi cloud"
+  },
+  "ui.plain.setup.apis": {
+    "one": "un'interfaccia interna",
+    "many": "{n} interfacce interne",
+    "other": "{n} interfacce interne"
+  },
+  "ui.plain.setup.contacts": {
+    "one": "un nome, un indirizzo o un numero di ticket in un commento",
+    "many": "{n} nomi, indirizzi o numeri di ticket nei commenti",
+    "other": "{n} nomi, indirizzi o numeri di ticket nei commenti"
+  },
+  "sales.nav.monitoring": "Monitoraggio",
+  "sales.nav.account": "Account gratuito"
 }

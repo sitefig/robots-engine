@@ -2,12 +2,12 @@
   "page.title": "sus.bot | seiceálaí robots.txt",
   "page.description": "Seiceálaí robots.txt saor in aisce. Faigh robots.txt suímh ar bith, féach cé na hinnill chuardaigh agus na crawlers IS atá ceadaithe nó blocáilte, tástáil cosáin in aghaidh na rialacha, agus seiceáil conas a fhreagraíonn an freastalaí do user-agents éagsúla.",
   "page.skip": "Léim go dtí an t-ábhar",
-  "page.h1": "Seiceáil cé na crawlers a ligeann do robots.txt isteach",
+  "page.h1": "Seiceáil do chomhad robots.txt sula dtiteann an trácht",
   "page.themeLabel": "Téama datha",
   "ui.theme.toLight": "Athraigh go dtí an téama sorcha",
   "ui.theme.toDark": "Athraigh go dtí an téama dorcha",
   "page.langLabel": "Teanga",
-  "page.intro": "Cuir suíomh gréasáin isteach. Faigheann sus.bot a <code>robots.txt</code> agus taispeánann sé cé na leathanaigh ar féidir le gach inneall cuardaigh agus crawler AI cuairt a thabhairt orthu. Liostaíonn sé freisin na cosáin a nochtann an comhad d'aon duine a léann é. Ritheann an seiceáil i do bhrabhsálaí agus tá sí saor in aisce.",
+  "page.intro": "Saor in aisce, ritheann sé i do bhrabhsálaí agus taispeánann sé an rud a nochtann do chomhad.",
   "page.urlLabel": "URL an tsuímh",
   "page.analyse": "Anailísigh",
   "page.urlHint": "Faighimid <code>/robots.txt</code> ó bhunús an tsuímh. Déantar neamhaird de chosáin agus de theaghráin cheiste.",
@@ -130,5 +130,7 @@
   "ui.consent.saved.denied": "Gan anailís. Is féidir leat é a athrú ag am ar bith ón bhfonóta.",
   "ui.privacy.title": "Príobháideachas",
   "ui.agents.showAll": "Taispeáin gach crawler",
-  "ui.agents.showFewer": "Taispeáin níos lú crawlers"
+  "ui.agents.showFewer": "Taispeáin níos lú crawlers",
+  "sales.nav.monitoring": "Monatóireacht",
+  "sales.nav.account": "Cuntas saor in aisce"
 }

@@ -2,12 +2,12 @@
   "page.title": "sus.bot | robots.txt pārbaudītājs",
   "page.description": "Bezmaksas robots.txt pārbaude. Ielādējiet jebkuras vietnes robots.txt, skatiet, kuras meklētājprogrammas un MI rāpuļprogrammas ir atļautas vai bloķētas, pārbaudiet ceļus pret noteikumiem un uzziniet, kā serveris atbild dažādiem user-agent.",
   "page.skip": "Pāriet uz saturu",
-  "page.h1": "Pārbaudiet, kurus rāpuļus jūsu robots.txt ielaiž",
+  "page.h1": "Pārbaudiet savu robots.txt, pirms samazinās apmeklētība",
   "page.themeLabel": "Krāsu motīvs",
   "ui.theme.toLight": "Pārslēgties uz gaišo tēmu",
   "ui.theme.toDark": "Pārslēgties uz tumšo tēmu",
   "page.langLabel": "Valoda",
-  "page.intro": "Ievadiet vietni. sus.bot ielādē tās <code>robots.txt</code> un parāda, kuras lapas drīkst apmeklēt katra meklētājprogramma un katrs MI rāpulis. Tas uzskaita arī ceļus, ko fails atklāj ikvienam lasītājam. Pārbaude notiek jūsu pārlūkā un ir bez maksas.",
+  "page.intro": "Bez maksas, darbojas jūsu pārlūkā un parāda, ko atklāj jūsu fails.",
   "page.urlLabel": "Vietnes URL",
   "page.analyse": "Analizēt",
   "page.urlHint": "Mēs ielādējam <code>/robots.txt</code> no vietnes izcelsmes. Ceļi un vaicājuma virknes tiek ignorētas.",
@@ -128,5 +128,7 @@
   "ui.consent.saved.denied": "Bez analītikas. Jūs to varat mainīt jebkurā laikā kājenē.",
   "ui.privacy.title": "Privātums",
   "ui.agents.showAll": "Rādīt visus rāpuļus",
-  "ui.agents.showFewer": "Rādīt mazāk rāpuļu"
+  "ui.agents.showFewer": "Rādīt mazāk rāpuļu",
+  "sales.nav.monitoring": "Uzraudzība",
+  "sales.nav.account": "Bezmaksas konts"
 }

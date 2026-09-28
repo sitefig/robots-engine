@@ -2,12 +2,12 @@
   "page.title": "sus.bot | robots.txt-kontroll",
   "page.description": "Gratis robots.txt-kontroll. Hämta valfri webbplats robots.txt, se vilka sökmotorer och AI-crawlers som är tillåtna eller blockerade, testa sökvägar mot reglerna och kontrollera hur servern svarar olika user-agents.",
   "page.skip": "Hoppa till innehåll",
-  "page.h1": "Se vilka sökrobotar din robots.txt släpper in",
+  "page.h1": "Kolla din robots.txt innan trafiken faller",
   "page.themeLabel": "Färgtema",
   "ui.theme.toLight": "Byt till ljust tema",
   "ui.theme.toDark": "Byt till mörkt tema",
   "page.langLabel": "Språk",
-  "page.intro": "Ange en webbplats. sus.bot hämtar dess <code>robots.txt</code> och visar vilka sidor varje sökmotor och AI-sökrobot får besöka. Den listar också de sökvägar som filen avslöjar för alla som läser den. Kontrollen körs i din webbläsare och är gratis.",
+  "page.intro": "Gratis, körs i din webbläsare och visar vad din fil avslöjar.",
   "page.urlLabel": "Webbplatsens URL",
   "page.analyse": "Analysera",
   "page.urlHint": "Vi hämtar <code>/robots.txt</code> från webbplatsens ursprung. Sökvägar och frågesträngar ignoreras.",
@@ -127,5 +127,7 @@
   "ui.consent.saved.denied": "Ingen statistik. Du kan ändra detta när som helst i sidfoten.",
   "ui.privacy.title": "Integritet",
   "ui.agents.showAll": "Visa alla crawlers",
-  "ui.agents.showFewer": "Visa färre crawlers"
+  "ui.agents.showFewer": "Visa färre crawlers",
+  "sales.nav.monitoring": "Bevakning",
+  "sales.nav.account": "Gratiskonto"
 }

@@ -21,8 +21,8 @@ msgid "Skip to content"
 msgstr "Vai al contenuto"
 
 msgctxt "page.h1"
-msgid "Check which crawlers your robots.txt lets in"
-msgstr "Controlla quali crawler lascia entrare il tuo robots.txt"
+msgid "Check your robots.txt file before traffic drops"
+msgstr "Controlla il tuo robots.txt prima che il traffico cali"
 
 msgctxt "page.themeLabel"
 msgid "Colour theme"
@@ -41,8 +41,8 @@ msgid "Language"
 msgstr "Lingua"
 
 msgctxt "page.intro"
-msgid "Free, and the analysis runs in your browser. It also lists what the file gives away to anyone who reads it."
-msgstr "Gratuito, e l'analisi viene eseguita nel tuo browser. Mostra anche cosa il file rivela a chiunque lo legga."
+msgid "Free, runs in your browser, and shows what your file gives away."
+msgstr "Gratis, funziona nel tuo browser e mostra cosa rivela il tuo file."
 
 msgctxt "page.urlLabel"
 msgid "Domain, or any address on the site"
@@ -3557,3 +3557,94 @@ msgstr ""
 msgctxt "ui.plain.rules.unread"
 msgid "The file could not be read, so none are in force"
 msgstr ""
+
+msgctxt "ui.plain.exposure"
+msgid "What it gives away"
+msgstr "Cosa rivela il file"
+
+msgctxt "ui.plain.exposure.none"
+msgid "Nothing private is named here"
+msgstr "Non viene indicato nulla di privato"
+
+msgctxt "ui.plain.exposure.some"
+msgid "One private place is named, and attackers read this file first"
+msgid_plural "{n} private places are named, and attackers read this file first"
+msgstr[0] "Viene indicato un percorso privato, e chi attacca legge prima questo file"
+msgstr[1] "Vengono indicati {n} percorsi privati, e chi attacca legge prima questo file"
+msgstr[2] "Vengono indicati {n} percorsi privati, e chi attacca legge prima questo file"
+
+msgctxt "ui.plain.exposure.unknown"
+msgid "The server did not hand the file over, so there is nothing to read"
+msgstr "Il server non ha restituito il file, quindi non c’è nulla da leggere"
+
+msgctxt "ui.plain.exposure.worst"
+msgid "The worst of them: {what}"
+msgstr "Il peggiore: {what}"
+
+msgctxt "ui.plain.setup"
+msgid "Your systems"
+msgstr "I tuoi sistemi"
+
+msgctxt "ui.plain.setup.some"
+msgid "Anyone reading it learns {what}"
+msgstr "Chi lo legge scopre {what}"
+
+msgctxt "ui.plain.setup.none"
+msgid "Nothing a stranger could use"
+msgstr "Niente che un estraneo possa sfruttare"
+
+msgctxt "ui.agents.onlyProblems"
+msgid "Small screen: only the crawlers that are shut out are listed."
+msgstr "Schermo piccolo: sono elencati solo i crawler esclusi."
+
+msgctxt "ui.ai.onlyProblems"
+msgid "Small screen: only the AI agents that are not blocked are listed."
+msgstr "Schermo piccolo: sono elencati solo gli agenti IA non bloccati."
+
+msgctxt "ui.ai.showAll"
+msgid "Show all AI agents"
+msgstr "Mostra tutti gli agenti IA"
+
+msgctxt "ui.ai.showFewer"
+msgid "Show fewer AI agents"
+msgstr "Mostra meno agenti IA"
+
+msgctxt "ui.plain.setup.platform"
+msgid "what you are built on ({name})"
+msgstr "su cosa gira il tuo sito ({name})"
+
+msgctxt "ui.plain.setup.hosts"
+msgid "another server of yours"
+msgid_plural "{n} other servers of yours"
+msgstr[0] "un altro dei tuoi server"
+msgstr[1] "{n} altri tuoi server"
+msgstr[2] "{n} altri tuoi server"
+
+msgctxt "ui.plain.setup.buckets"
+msgid "a cloud storage bucket"
+msgid_plural "{n} cloud storage buckets"
+msgstr[0] "un archivio cloud"
+msgstr[1] "{n} archivi cloud"
+msgstr[2] "{n} archivi cloud"
+
+msgctxt "ui.plain.setup.apis"
+msgid "an internal interface"
+msgid_plural "{n} internal interfaces"
+msgstr[0] "un'interfaccia interna"
+msgstr[1] "{n} interfacce interne"
+msgstr[2] "{n} interfacce interne"
+
+msgctxt "ui.plain.setup.contacts"
+msgid "a name, address or ticket number left in a comment"
+msgid_plural "{n} names, addresses or ticket numbers left in comments"
+msgstr[0] "un nome, un indirizzo o un numero di ticket in un commento"
+msgstr[1] "{n} nomi, indirizzi o numeri di ticket nei commenti"
+msgstr[2] "{n} nomi, indirizzi o numeri di ticket nei commenti"
+
+msgctxt "sales.nav.monitoring"
+msgid "Monitoring"
+msgstr "Monitoraggio"
+
+msgctxt "sales.nav.account"
+msgid "Free account"
+msgstr "Account gratuito"

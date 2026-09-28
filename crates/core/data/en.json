@@ -2,12 +2,12 @@
   "page.title": "sus.bot | robots.txt checker",
   "page.description": "Free robots.txt checker. Fetch any site's robots.txt, see which search engines and AI crawlers are allowed or blocked, test paths against the rules, and check how the server responds to different user-agents.",
   "page.skip": "Skip to content",
-  "page.h1": "Check which crawlers your robots.txt lets in",
+  "page.h1": "Check your robots.txt file before traffic drops",
   "page.themeLabel": "Colour theme",
   "ui.theme.toLight": "Switch to the light theme",
   "ui.theme.toDark": "Switch to the dark theme",
   "page.langLabel": "Language",
-  "page.intro": "Free, and the analysis runs in your browser. It also lists what the file gives away to anyone who reads it.",
+  "page.intro": "Free, runs in your browser, and shows what your file gives away.",
   "page.urlLabel": "Domain, or any address on the site",
   "page.analyse": "Check the robots.txt",
   "page.urlHint": "Paste whatever you have: a domain, a page, a link from an email, even the <code>robots.txt</code> address itself. We read <code>/robots.txt</code> from that site and ignore the rest.",
@@ -953,5 +953,39 @@
   "ui.plain.rules.some": "{n}",
   "ui.plain.search.serverFail": "Being turned away while the server fails",
   "ui.plain.ai.unknown": "Cannot be told anything until the file loads",
-  "ui.plain.rules.unread": "The file could not be read, so none are in force"
+  "ui.plain.rules.unread": "The file could not be read, so none are in force",
+  "ui.plain.exposure": "What it gives away",
+  "ui.plain.exposure.none": "Nothing private is named here",
+  "ui.plain.exposure.some": {
+    "one": "One private place is named, and attackers read this file first",
+    "other": "{n} private places are named, and attackers read this file first"
+  },
+  "ui.plain.exposure.unknown": "The server did not hand the file over, so there is nothing to read",
+  "ui.plain.exposure.worst": "The worst of them: {what}",
+  "ui.plain.setup": "Your systems",
+  "ui.plain.setup.some": "Anyone reading it learns {what}",
+  "ui.plain.setup.none": "Nothing a stranger could use",
+  "ui.agents.onlyProblems": "Small screen: only the crawlers that are shut out are listed.",
+  "ui.ai.onlyProblems": "Small screen: only the AI agents that are not blocked are listed.",
+  "ui.ai.showAll": "Show all AI agents",
+  "ui.ai.showFewer": "Show fewer AI agents",
+  "ui.plain.setup.platform": "what you are built on ({name})",
+  "ui.plain.setup.hosts": {
+    "one": "another server of yours",
+    "other": "{n} other servers of yours"
+  },
+  "ui.plain.setup.buckets": {
+    "one": "a cloud storage bucket",
+    "other": "{n} cloud storage buckets"
+  },
+  "ui.plain.setup.apis": {
+    "one": "an internal interface",
+    "other": "{n} internal interfaces"
+  },
+  "ui.plain.setup.contacts": {
+    "one": "a name, address or ticket number left in a comment",
+    "other": "{n} names, addresses or ticket numbers left in comments"
+  },
+  "sales.nav.monitoring": "Monitoring",
+  "sales.nav.account": "Free account"
 }

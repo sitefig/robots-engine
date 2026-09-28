@@ -21,8 +21,8 @@ msgid "Skip to content"
 msgstr "Aller au contenu"
 
 msgctxt "page.h1"
-msgid "Check which crawlers your robots.txt lets in"
-msgstr "Vérifiez quels robots votre robots.txt laisse entrer"
+msgid "Check your robots.txt file before traffic drops"
+msgstr "Vérifiez votre robots.txt avant que le trafic ne chute"
 
 msgctxt "page.themeLabel"
 msgid "Colour theme"
@@ -41,8 +41,8 @@ msgid "Language"
 msgstr "Langue"
 
 msgctxt "page.intro"
-msgid "Free, and the analysis runs in your browser. It also lists what the file gives away to anyone who reads it."
-msgstr "Gratuit, et l'analyse s'exécute dans votre navigateur. Elle indique aussi ce que le fichier révèle à quiconque le lit."
+msgid "Free, runs in your browser, and shows what your file gives away."
+msgstr "Gratuit, fonctionne dans votre navigateur et montre ce que votre fichier révèle."
 
 msgctxt "page.urlLabel"
 msgid "Domain, or any address on the site"
@@ -3557,3 +3557,94 @@ msgstr ""
 msgctxt "ui.plain.rules.unread"
 msgid "The file could not be read, so none are in force"
 msgstr ""
+
+msgctxt "ui.plain.exposure"
+msgid "What it gives away"
+msgstr "Ce que le fichier révèle"
+
+msgctxt "ui.plain.exposure.none"
+msgid "Nothing private is named here"
+msgstr "Rien de privé n'est nommé ici"
+
+msgctxt "ui.plain.exposure.some"
+msgid "One private place is named, and attackers read this file first"
+msgid_plural "{n} private places are named, and attackers read this file first"
+msgstr[0] "Un emplacement privé est nommé, et les attaquants lisent ce fichier en premier"
+msgstr[1] "{n} emplacements privés sont nommés, et les attaquants lisent ce fichier en premier"
+msgstr[2] "{n} emplacements privés sont nommés, et les attaquants lisent ce fichier en premier"
+
+msgctxt "ui.plain.exposure.unknown"
+msgid "The server did not hand the file over, so there is nothing to read"
+msgstr "Le serveur n'a pas fourni le fichier, il n'y a donc rien à lire"
+
+msgctxt "ui.plain.exposure.worst"
+msgid "The worst of them: {what}"
+msgstr "Le plus grave : {what}"
+
+msgctxt "ui.plain.setup"
+msgid "Your systems"
+msgstr "Vos systèmes"
+
+msgctxt "ui.plain.setup.some"
+msgid "Anyone reading it learns {what}"
+msgstr "Quiconque le lit apprend {what}"
+
+msgctxt "ui.plain.setup.none"
+msgid "Nothing a stranger could use"
+msgstr "Rien qu'un inconnu puisse utiliser"
+
+msgctxt "ui.agents.onlyProblems"
+msgid "Small screen: only the crawlers that are shut out are listed."
+msgstr "Petit écran : seuls les robots exclus sont listés."
+
+msgctxt "ui.ai.onlyProblems"
+msgid "Small screen: only the AI agents that are not blocked are listed."
+msgstr "Petit écran : seuls les agents d'IA non bloqués sont listés."
+
+msgctxt "ui.ai.showAll"
+msgid "Show all AI agents"
+msgstr "Afficher tous les agents d'IA"
+
+msgctxt "ui.ai.showFewer"
+msgid "Show fewer AI agents"
+msgstr "Afficher moins d'agents d'IA"
+
+msgctxt "ui.plain.setup.platform"
+msgid "what you are built on ({name})"
+msgstr "sur quoi votre site tourne ({name})"
+
+msgctxt "ui.plain.setup.hosts"
+msgid "another server of yours"
+msgid_plural "{n} other servers of yours"
+msgstr[0] "un autre de vos serveurs"
+msgstr[1] "{n} autres de vos serveurs"
+msgstr[2] "{n} autres de vos serveurs"
+
+msgctxt "ui.plain.setup.buckets"
+msgid "a cloud storage bucket"
+msgid_plural "{n} cloud storage buckets"
+msgstr[0] "un espace de stockage cloud"
+msgstr[1] "{n} espaces de stockage cloud"
+msgstr[2] "{n} espaces de stockage cloud"
+
+msgctxt "ui.plain.setup.apis"
+msgid "an internal interface"
+msgid_plural "{n} internal interfaces"
+msgstr[0] "une interface interne"
+msgstr[1] "{n} interfaces internes"
+msgstr[2] "{n} interfaces internes"
+
+msgctxt "ui.plain.setup.contacts"
+msgid "a name, address or ticket number left in a comment"
+msgid_plural "{n} names, addresses or ticket numbers left in comments"
+msgstr[0] "un nom, une adresse ou un numéro de ticket laissé dans un commentaire"
+msgstr[1] "{n} noms, adresses ou numéros de ticket laissés dans des commentaires"
+msgstr[2] "{n} noms, adresses ou numéros de ticket laissés dans des commentaires"
+
+msgctxt "sales.nav.monitoring"
+msgid "Monitoring"
+msgstr "Surveillance"
+
+msgctxt "sales.nav.account"
+msgid "Free account"
+msgstr "Compte gratuit"

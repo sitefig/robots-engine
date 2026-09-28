@@ -2,12 +2,12 @@
   "page.title": "sus.bot | verificator robots.txt",
   "page.description": "Verificator gratuit de robots.txt. Preia robots.txt al oricărui site, vezi ce motoare de căutare și crawlere AI sunt permise sau blocate, testează căi față de reguli și verifică cum răspunde serverul diferiților user-agenți.",
   "page.skip": "Sari la conținut",
-  "page.h1": "Verificați ce crawleri lasă să intre fișierul robots.txt",
+  "page.h1": "Verificați fișierul robots.txt înainte să scadă traficul",
   "page.themeLabel": "Temă de culoare",
   "ui.theme.toLight": "Comută pe tema deschisă",
   "ui.theme.toDark": "Comută pe tema întunecată",
   "page.langLabel": "Limbă",
-  "page.intro": "Introduceți un site. sus.bot descarcă fișierul <code>robots.txt</code> și arată ce pagini poate vizita fiecare motor de căutare și fiecare crawler AI. Enumeră și căile pe care fișierul le dezvăluie oricui îl citește. Verificarea rulează în browser și este gratuită.",
+  "page.intro": "Gratuit, rulează în browserul dvs. și arată ce dezvăluie fișierul dvs.",
   "page.urlLabel": "URL-ul site-ului",
   "page.analyse": "Analizează",
   "page.urlHint": "Preluăm <code>/robots.txt</code> de la originea site-ului. Căile și șirurile de interogare sunt ignorate.",
@@ -128,5 +128,7 @@
   "ui.consent.saved.denied": "Fără analiză. Puteți schimba oricând din subsol.",
   "ui.privacy.title": "Confidențialitate",
   "ui.agents.showAll": "Arată toți roboții",
-  "ui.agents.showFewer": "Arată mai puțini roboți"
+  "ui.agents.showFewer": "Arată mai puțini roboți",
+  "sales.nav.monitoring": "Monitorizare",
+  "sales.nav.account": "Cont gratuit"
 }

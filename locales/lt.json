@@ -2,12 +2,12 @@
   "page.title": "sus.bot | robots.txt tikrintuvas",
   "page.description": "Nemokamas robots.txt tikrintuvas. Atsisiųskite bet kurios svetainės robots.txt, pamatykite, kurios paieškos sistemos ir DI robotai leidžiami ar blokuojami, patikrinkite kelius pagal taisykles ir sužinokite, kaip serveris atsako skirtingiems user-agent.",
   "page.skip": "Pereiti prie turinio",
-  "page.h1": "Patikrinkite, kuriuos robotus įleidžia jūsų robots.txt",
+  "page.h1": "Patikrinkite savo robots.txt, kol srautas dar nenukrito",
   "page.themeLabel": "Spalvų tema",
   "ui.theme.toLight": "Perjungti į šviesią temą",
   "ui.theme.toDark": "Perjungti į tamsią temą",
   "page.langLabel": "Kalba",
-  "page.intro": "Įveskite svetainę. sus.bot atsisiunčia jos <code>robots.txt</code> ir parodo, kuriuos puslapius gali lankyti kiekviena paieškos sistema ir kiekvienas DI robotas. Taip pat išvardija kelius, kuriuos failas atskleidžia bet kuriam skaitytojui. Patikra vyksta jūsų naršyklėje ir yra nemokama.",
+  "page.intro": "Nemokama, veikia jūsų naršyklėje ir parodo, ką atskleidžia jūsų failas.",
   "page.urlLabel": "Svetainės URL",
   "page.analyse": "Analizuoti",
   "page.urlHint": "<code>/robots.txt</code> atsisiunčiame iš svetainės kilmės. Keliai ir užklausos eilutės ignoruojami.",
@@ -129,5 +129,7 @@
   "ui.consent.saved.denied": "Be analitikos. Bet kada galite tai pakeisti poraštėje.",
   "ui.privacy.title": "Privatumas",
   "ui.agents.showAll": "Rodyti visus robotus",
-  "ui.agents.showFewer": "Rodyti mažiau robotų"
+  "ui.agents.showFewer": "Rodyti mažiau robotų",
+  "sales.nav.monitoring": "Stebėjimas",
+  "sales.nav.account": "Nemokama paskyra"
 }

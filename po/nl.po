@@ -21,8 +21,8 @@ msgid "Skip to content"
 msgstr "Naar de inhoud"
 
 msgctxt "page.h1"
-msgid "Check which crawlers your robots.txt lets in"
-msgstr "Controleer welke crawlers je robots.txt binnenlaat"
+msgid "Check your robots.txt file before traffic drops"
+msgstr "Controleer je robots.txt voordat je bezoekers verliest"
 
 msgctxt "page.themeLabel"
 msgid "Colour theme"
@@ -41,8 +41,8 @@ msgid "Language"
 msgstr "Taal"
 
 msgctxt "page.intro"
-msgid "Free, and the analysis runs in your browser. It also lists what the file gives away to anyone who reads it."
-msgstr "Gratis, en de analyse draait in je browser. Het laat ook zien wat het bestand weggeeft aan wie het leest."
+msgid "Free, runs in your browser, and shows what your file gives away."
+msgstr "Gratis, werkt in je browser en laat zien wat je bestand weggeeft."
 
 msgctxt "page.urlLabel"
 msgid "Domain, or any address on the site"
@@ -3527,3 +3527,89 @@ msgstr ""
 msgctxt "ui.plain.rules.unread"
 msgid "The file could not be read, so none are in force"
 msgstr ""
+
+msgctxt "ui.plain.exposure"
+msgid "What it gives away"
+msgstr "Wat het bestand weggeeft"
+
+msgctxt "ui.plain.exposure.none"
+msgid "Nothing private is named here"
+msgstr "Er wordt niets privé genoemd"
+
+msgctxt "ui.plain.exposure.some"
+msgid "One private place is named, and attackers read this file first"
+msgid_plural "{n} private places are named, and attackers read this file first"
+msgstr[0] "Eén privélocatie wordt genoemd, en aanvallers lezen dit bestand als eerste"
+msgstr[1] "{n} privélocaties worden genoemd, en aanvallers lezen dit bestand als eerste"
+
+msgctxt "ui.plain.exposure.unknown"
+msgid "The server did not hand the file over, so there is nothing to read"
+msgstr "De server gaf het bestand niet vrij, dus er is niets te lezen"
+
+msgctxt "ui.plain.exposure.worst"
+msgid "The worst of them: {what}"
+msgstr "Het ernstigste daarvan: {what}"
+
+msgctxt "ui.plain.setup"
+msgid "Your systems"
+msgstr "Je systemen"
+
+msgctxt "ui.plain.setup.some"
+msgid "Anyone reading it learns {what}"
+msgstr "Wie het leest, ziet {what}"
+
+msgctxt "ui.plain.setup.none"
+msgid "Nothing a stranger could use"
+msgstr "Niets waar een vreemde iets mee kan"
+
+msgctxt "ui.agents.onlyProblems"
+msgid "Small screen: only the crawlers that are shut out are listed."
+msgstr "Klein scherm: alleen de buitengesloten crawlers staan in de lijst."
+
+msgctxt "ui.ai.onlyProblems"
+msgid "Small screen: only the AI agents that are not blocked are listed."
+msgstr "Klein scherm: alleen de AI-agents die niet geblokkeerd zijn staan in de lijst."
+
+msgctxt "ui.ai.showAll"
+msgid "Show all AI agents"
+msgstr "Alle AI-agents tonen"
+
+msgctxt "ui.ai.showFewer"
+msgid "Show fewer AI agents"
+msgstr "Minder AI-agents tonen"
+
+msgctxt "ui.plain.setup.platform"
+msgid "what you are built on ({name})"
+msgstr "waarop je site draait ({name})"
+
+msgctxt "ui.plain.setup.hosts"
+msgid "another server of yours"
+msgid_plural "{n} other servers of yours"
+msgstr[0] "nog een server van je"
+msgstr[1] "{n} andere servers van je"
+
+msgctxt "ui.plain.setup.buckets"
+msgid "a cloud storage bucket"
+msgid_plural "{n} cloud storage buckets"
+msgstr[0] "een cloudopslagbucket"
+msgstr[1] "{n} cloudopslagbuckets"
+
+msgctxt "ui.plain.setup.apis"
+msgid "an internal interface"
+msgid_plural "{n} internal interfaces"
+msgstr[0] "een interne koppeling"
+msgstr[1] "{n} interne koppelingen"
+
+msgctxt "ui.plain.setup.contacts"
+msgid "a name, address or ticket number left in a comment"
+msgid_plural "{n} names, addresses or ticket numbers left in comments"
+msgstr[0] "een naam, adres of ticketnummer in een opmerking"
+msgstr[1] "{n} namen, adressen of ticketnummers in opmerkingen"
+
+msgctxt "sales.nav.monitoring"
+msgid "Monitoring"
+msgstr "Monitoring"
+
+msgctxt "sales.nav.account"
+msgid "Free account"
+msgstr "Gratis account"

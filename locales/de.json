@@ -2,12 +2,12 @@
   "page.title": "sus.bot | robots.txt-Prüfung",
   "page.description": "Kostenloser robots.txt-Checker. Ruft die robots.txt einer Website ab, zeigt, welche Suchmaschinen und KI-Crawler erlaubt oder blockiert sind, testet Pfade gegen die Regeln und prüft, wie der Server auf verschiedene User-Agents antwortet.",
   "page.skip": "Zum Inhalt springen",
-  "page.h1": "Prüfen Sie, welche Crawler Ihre robots.txt hereinlässt",
+  "page.h1": "Prüfen Sie Ihre robots.txt, bevor der Traffic einbricht",
   "page.themeLabel": "Farbschema",
   "ui.theme.toLight": "Zum hellen Design wechseln",
   "ui.theme.toDark": "Zum dunklen Design wechseln",
   "page.langLabel": "Sprache",
-  "page.intro": "Kostenlos, und die Analyse läuft in Ihrem Browser. Sie zeigt außerdem, was die Datei jedem verrät, der sie liest.",
+  "page.intro": "Kostenlos, läuft in Ihrem Browser und zeigt, was Ihre Datei verrät.",
   "page.urlLabel": "Domain oder eine beliebige Adresse der Website",
   "page.analyse": "robots.txt prüfen",
   "page.urlHint": "Fügen Sie ein, was Sie haben: eine Domain, eine Seite, einen Link aus einer E-Mail, auch die Adresse der <code>robots.txt</code> selbst. Wir lesen <code>/robots.txt</code> dieser Website und ignorieren den Rest.",
@@ -929,5 +929,39 @@
   "ui.consent.saved.denied": "Keine Analyse. Sie können das jederzeit im Fußbereich ändern.",
   "ui.privacy.title": "Datenschutz",
   "ui.agents.showAll": "Alle Crawler anzeigen",
-  "ui.agents.showFewer": "Weniger Crawler anzeigen"
+  "ui.agents.showFewer": "Weniger Crawler anzeigen",
+  "ui.plain.exposure": "Was die Datei verrät",
+  "ui.plain.exposure.none": "Hier wird nichts Privates genannt",
+  "ui.plain.exposure.some": {
+    "one": "Ein privater Ort wird genannt, und Angreifer lesen diese Datei zuerst",
+    "other": "{n} private Orte werden genannt, und Angreifer lesen diese Datei zuerst"
+  },
+  "ui.plain.exposure.unknown": "Der Server hat die Datei nicht geliefert, also gibt es nichts zu lesen",
+  "ui.plain.exposure.worst": "Das Schlimmste davon: {what}",
+  "ui.plain.setup": "Ihre Systeme",
+  "ui.plain.setup.some": "Wer sie liest, erfährt {what}",
+  "ui.plain.setup.none": "Nichts, was ein Fremder nutzen könnte",
+  "ui.agents.onlyProblems": "Kleiner Bildschirm: aufgeführt sind nur die Crawler, die ausgesperrt sind.",
+  "ui.ai.onlyProblems": "Kleiner Bildschirm: aufgeführt sind nur die KI-Agenten, die nicht blockiert sind.",
+  "ui.ai.showAll": "Alle KI-Agenten anzeigen",
+  "ui.ai.showFewer": "Weniger KI-Agenten anzeigen",
+  "ui.plain.setup.platform": "worauf Ihre Website läuft ({name})",
+  "ui.plain.setup.hosts": {
+    "one": "einen weiteren Ihrer Server",
+    "other": "{n} weitere Ihrer Server"
+  },
+  "ui.plain.setup.buckets": {
+    "one": "einen Cloud-Speicher",
+    "other": "{n} Cloud-Speicher"
+  },
+  "ui.plain.setup.apis": {
+    "one": "eine interne Schnittstelle",
+    "other": "{n} interne Schnittstellen"
+  },
+  "ui.plain.setup.contacts": {
+    "one": "einen Namen, eine Adresse oder eine Ticketnummer in einem Kommentar",
+    "other": "{n} Namen, Adressen oder Ticketnummern in Kommentaren"
+  },
+  "sales.nav.monitoring": "Überwachung",
+  "sales.nav.account": "Kostenloses Konto"
 }

@@ -2,12 +2,12 @@
   "page.title": "sus.bot | verificador de robots.txt",
   "page.description": "Verificador gratuito de robots.txt. Obtenha o robots.txt de qualquer site, veja que motores de busca e rastreadores de IA estão permitidos ou bloqueados, teste caminhos contra as regras e verifique como o servidor responde a diferentes user-agents.",
   "page.skip": "Saltar para o conteúdo",
-  "page.h1": "Verifique que rastreadores o seu robots.txt deixa entrar",
+  "page.h1": "Verifique o seu robots.txt antes de o tráfego cair",
   "page.themeLabel": "Tema de cor",
   "ui.theme.toLight": "Mudar para o tema claro",
   "ui.theme.toDark": "Mudar para o tema escuro",
   "page.langLabel": "Idioma",
-  "page.intro": "Introduza um site. O sus.bot obtém o seu <code>robots.txt</code> e mostra que páginas cada motor de pesquisa e cada rastreador de IA pode visitar. Também lista os caminhos que o ficheiro revela a quem o ler. A verificação corre no seu navegador e é gratuita.",
+  "page.intro": "Gratuito, funciona no seu navegador e mostra o que o seu ficheiro revela.",
   "page.urlLabel": "URL do site",
   "page.analyse": "Analisar",
   "page.urlHint": "Obtemos o <code>/robots.txt</code> a partir da origem do site. Caminhos e cadeias de consulta são ignorados.",
@@ -128,5 +128,7 @@
   "ui.consent.saved.denied": "Sem estatísticas. Pode alterar isto em qualquer momento no fundo da página.",
   "ui.privacy.title": "Privacidade",
   "ui.agents.showAll": "Mostrar todos os rastreadores",
-  "ui.agents.showFewer": "Mostrar menos rastreadores"
+  "ui.agents.showFewer": "Mostrar menos rastreadores",
+  "sales.nav.monitoring": "Monitorização",
+  "sales.nav.account": "Conta gratuita"
 }

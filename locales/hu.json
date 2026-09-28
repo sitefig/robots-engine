@@ -2,12 +2,12 @@
   "page.title": "sus.bot | robots.txt-ellenőrző",
   "page.description": "Ingyenes robots.txt-ellenőrző. Töltsd le bármely webhely robots.txt fájlját, nézd meg, mely keresők és MI-robotok engedélyezettek vagy tiltottak, tesztelj útvonalakat a szabályokkal szemben, és ellenőrizd, hogyan válaszol a szerver a különböző user-agenteknek.",
   "page.skip": "Ugrás a tartalomra",
-  "page.h1": "Nézze meg, mely robotokat enged be a robots.txt",
+  "page.h1": "Ellenőrizze a robots.txt fájlt, mielőtt visszaesik a forgalom",
   "page.themeLabel": "Színséma",
   "ui.theme.toLight": "Váltás világos témára",
   "ui.theme.toDark": "Váltás sötét témára",
   "page.langLabel": "Nyelv",
-  "page.intro": "Adjon meg egy weboldalt. A sus.bot letölti a <code>robots.txt</code> fájlját, és megmutatja, mely oldalakat látogathatja az egyes keresők és AI-robotok. Felsorolja azokat az útvonalakat is, amelyeket a fájl bárkinek elárul. Az ellenőrzés a böngészőjében fut, és ingyenes.",
+  "page.intro": "Ingyenes, a böngészőjében fut, és megmutatja, mit árul el a fájlja.",
   "page.urlLabel": "Webhely URL-je",
   "page.analyse": "Elemzés",
   "page.urlHint": "A <code>/robots.txt</code> fájlt a webhely origójáról töltjük le. Az útvonalakat és a lekérdezési paramétereket figyelmen kívül hagyjuk.",
@@ -127,5 +127,7 @@
   "ui.consent.saved.denied": "Nincs analitika. Ezt bármikor megváltoztathatja a láblécben.",
   "ui.privacy.title": "Adatvédelem",
   "ui.agents.showAll": "Összes robot megjelenítése",
-  "ui.agents.showFewer": "Kevesebb robot megjelenítése"
+  "ui.agents.showFewer": "Kevesebb robot megjelenítése",
+  "sales.nav.monitoring": "Figyelés",
+  "sales.nav.account": "Ingyenes fiók"
 }

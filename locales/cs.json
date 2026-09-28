@@ -2,12 +2,12 @@
   "page.title": "sus.bot | kontrola robots.txt",
   "page.description": "Bezplatná kontrola robots.txt. Stáhněte robots.txt libovolného webu, zjistěte, které vyhledávače a AI roboti jsou povoleni nebo blokováni, otestujte cesty proti pravidlům a ověřte, jak server odpovídá různým user-agentům.",
   "page.skip": "Přejít na obsah",
-  "page.h1": "Zjistěte, které crawlery váš robots.txt pouští dovnitř",
+  "page.h1": "Zkontrolujte svůj robots.txt, než vám klesne návštěvnost",
   "page.themeLabel": "Barevný motiv",
   "ui.theme.toLight": "Přepnout na světlý vzhled",
   "ui.theme.toDark": "Přepnout na tmavý vzhled",
   "page.langLabel": "Jazyk",
-  "page.intro": "Zadejte web. sus.bot stáhne jeho <code>robots.txt</code> a ukáže, které stránky smí navštívit jednotlivé vyhledávače a AI crawlery. Vypíše také cesty, které soubor prozrazuje každému, kdo si ho přečte. Kontrola běží ve vašem prohlížeči a je zdarma.",
+  "page.intro": "Zdarma, běží ve vašem prohlížeči a ukáže, co váš soubor prozrazuje.",
   "page.urlLabel": "URL webu",
   "page.analyse": "Analyzovat",
   "page.urlHint": "Stahujeme <code>/robots.txt</code> z původu webu. Cesty a řetězce dotazu se ignorují.",
@@ -129,5 +129,7 @@
   "ui.consent.saved.denied": "Žádná analytika. Kdykoli to můžete změnit v zápatí.",
   "ui.privacy.title": "Soukromí",
   "ui.agents.showAll": "Zobrazit všechny roboty",
-  "ui.agents.showFewer": "Zobrazit méně robotů"
+  "ui.agents.showFewer": "Zobrazit méně robotů",
+  "sales.nav.monitoring": "Monitorování",
+  "sales.nav.account": "Bezplatný účet"
 }

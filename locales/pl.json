@@ -2,12 +2,12 @@
   "page.title": "sus.bot | sprawdzanie robots.txt",
   "page.description": "Bezpłatne sprawdzanie robots.txt. Pobierz robots.txt dowolnej witryny, zobacz, które wyszukiwarki i roboty AI są dozwolone lub zablokowane, przetestuj ścieżki względem reguł i sprawdź, jak serwer odpowiada różnym user-agentom.",
   "page.skip": "Przejdź do treści",
-  "page.h1": "Sprawdź, które crawlery wpuszcza Twój robots.txt",
+  "page.h1": "Sprawdź swój robots.txt, zanim spadnie ruch",
   "page.themeLabel": "Motyw kolorystyczny",
   "ui.theme.toLight": "Przełącz na jasny motyw",
   "ui.theme.toDark": "Przełącz na ciemny motyw",
   "page.langLabel": "Język",
-  "page.intro": "Wpisz witrynę. sus.bot pobiera jej <code>robots.txt</code> i pokazuje, które strony może odwiedzać każda wyszukiwarka i każdy crawler AI. Wypisuje też ścieżki, które plik zdradza każdemu, kto go przeczyta. Sprawdzanie działa w przeglądarce i jest bezpłatne.",
+  "page.intro": "Bezpłatnie, działa w Twojej przeglądarce i pokazuje, co ujawnia Twój plik.",
   "page.urlLabel": "Adres URL witryny",
   "page.analyse": "Analizuj",
   "page.urlHint": "Pobieramy <code>/robots.txt</code> z origin witryny. Ścieżki i parametry zapytania są ignorowane.",
@@ -129,5 +129,7 @@
   "ui.consent.saved.denied": "Bez analityki. Możesz to zmienić w każdej chwili w stopce.",
   "ui.privacy.title": "Prywatność",
   "ui.agents.showAll": "Pokaż wszystkie roboty",
-  "ui.agents.showFewer": "Pokaż mniej robotów"
+  "ui.agents.showFewer": "Pokaż mniej robotów",
+  "sales.nav.monitoring": "Monitorowanie",
+  "sales.nav.account": "Darmowe konto"
 }
