@@ -3656,3 +3656,382 @@ msgstr "Per chi modifica il file"
 msgctxt "page.forEditors.body"
 msgid "Line numbers, the path tester, the user-agent check and the file itself. Send this to your developer or SEO."
 msgstr "Numeri di riga, il tester dei percorsi, il controllo per User-Agent e il file stesso. Invia questo al tuo sviluppatore o al tuo SEO."
+
+msgctxt "ui.pill.ok"
+msgid "Looks fine"
+msgstr "Sembra a posto"
+
+msgctxt "ui.pill.info"
+msgid "Worth a look"
+msgstr "Da guardare"
+
+msgctxt "ui.pill.warning"
+msgid "Needs attention"
+msgstr "Richiede attenzione"
+
+msgctxt "ui.pill.error"
+msgid "Needs attention now"
+msgstr "Richiede attenzione subito"
+
+msgctxt "ui.tile.social"
+msgid "Link previews"
+msgstr "Anteprime dei link"
+
+msgctxt "ui.tile.social.broken"
+msgid "Shared links show no title or image"
+msgstr "I link condivisi non mostrano né titolo né immagine"
+
+msgctxt "ui.tile.social.fine"
+msgid "Shared links look right"
+msgstr "I link condivisi si vedono bene"
+
+msgctxt "ui.tile.social.all"
+msgid "All {n} link fetchers are let in"
+msgstr "Tutti i {n} raccoglitori di link possono entrare"
+
+msgctxt "ui.tile.searchAll"
+msgid "None of the {n} search engines is shut out"
+msgstr "Nessuno dei {n} motori di ricerca è escluso"
+
+msgctxt "ui.tile.shutOut"
+msgid "Shut out: {names}"
+msgstr "Esclusi: {names}"
+
+msgctxt "ui.tile.aiCounts"
+msgid "{blocked} of {total} are turned away"
+msgstr "{blocked} su {total} vengono respinti"
+
+msgctxt "ui.tile.andMore"
+msgid "{names} and {n} more"
+msgstr "{names} e altri {n}"
+
+msgctxt "ui.checked.pasted"
+msgid "pasted file"
+msgstr "file incollato"
+
+msgctxt "ui.checked.meta"
+msgid "checked just now, {n} line"
+msgid_plural "checked just now, {n} lines"
+msgstr[0] "controllato adesso, {n} riga"
+msgstr[1] "controllato adesso, {n} righe"
+msgstr[2] "controllato adesso, {n} righe"
+
+msgctxt "ui.checked.again"
+msgid "Check again"
+msgstr "Controlla di nuovo"
+
+msgctxt "ui.checked.share"
+msgid "Share this report"
+msgstr "Condividi questo report"
+
+msgctxt "ui.fixes.title"
+msgid "What to fix, in order"
+msgstr "Cosa sistemare, in ordine"
+
+msgctxt "ui.fixes.none"
+msgid "Nothing to fix. The file does what it says, and it gives nothing away."
+msgstr "Niente da sistemare. Il file fa quello che dice e non rivela nulla."
+
+msgctxt "ui.fixes.explainFor"
+msgid "Explain for"
+msgstr "Spiega per"
+
+msgctxt "ui.fixes.business"
+msgid "Business"
+msgstr "Business"
+
+msgctxt "ui.fixes.it"
+msgid "IT"
+msgstr "IT"
+
+msgctxt "ui.fixes.who"
+msgid "Who fixes it:"
+msgstr "Chi lo sistema:"
+
+msgctxt "ui.fixes.decision"
+msgid "Not a mistake, a choice to make"
+msgstr "Non un errore, una scelta da fare"
+
+msgctxt "ui.fixes.ticketLabel"
+msgid "Message for IT"
+msgstr "Messaggio per l'IT"
+
+msgctxt "ui.fixes.copy"
+msgid "Copy message"
+msgstr "Copia il messaggio"
+
+msgctxt "ui.fixes.counts"
+msgid "{now} to fix now, {look} worth a look, {decide} to decide"
+msgstr "{now} da sistemare subito, {look} da guardare, {decide} da decidere"
+
+msgctxt "ui.fixes.linesLabel"
+msgid "Lines in the file"
+msgstr "Righe del file"
+
+msgctxt "ui.fix.area.seo-trap"
+msgid "Search visibility"
+msgstr "Visibilità nella ricerca"
+
+msgctxt "ui.fix.area.security"
+msgid "Security"
+msgstr "Sicurezza"
+
+msgctxt "ui.fix.area.syntax"
+msgid "File quality"
+msgstr "Qualità del file"
+
+msgctxt "ui.fix.area.lint"
+msgid "File quality"
+msgstr "Qualità del file"
+
+msgctxt "ui.fix.area.sitemap"
+msgid "Sitemaps"
+msgstr "Sitemap"
+
+msgctxt "ui.fix.area.fetch"
+msgid "How it is served"
+msgstr "Come viene servito"
+
+msgctxt "ui.fix.area.ai"
+msgid "AI and your content"
+msgstr "L'IA e i tuoi contenuti"
+
+msgctxt "ui.fix.owner.dev"
+msgid "Developer"
+msgstr "Sviluppatore"
+
+msgctxt "ui.fix.owner.devSeo"
+msgid "Developer or SEO"
+msgstr "Sviluppatore o SEO"
+
+msgctxt "ui.fix.owner.devSec"
+msgid "Developer and security"
+msgstr "Sviluppatore e sicurezza"
+
+msgctxt "ui.fix.owner.marketing"
+msgid "Marketing or legal"
+msgstr "Marketing o legale"
+
+msgctxt "ui.fix.sev.decision"
+msgid "Decision"
+msgstr "Decisione"
+
+msgctxt "ui.fix.security.title"
+msgid "{what}: one path named in public"
+msgid_plural "{what}: {n} paths named in public"
+msgstr[0] "{what}: un percorso indicato in pubblico"
+msgstr[1] "{what}: {n} percorsi indicati in pubblico"
+msgstr[2] "{what}: {n} percorsi indicati in pubblico"
+
+msgctxt "ui.fix.comments.title"
+msgid "A comment leaves {n} detail about you in public"
+msgid_plural "Comments leave {n} details about you in public"
+msgstr[0] "Un commento lascia {n} dettaglio su di te in pubblico"
+msgstr[1] "I commenti lasciano {n} dettagli su di te in pubblico"
+msgstr[2] "I commenti lasciano {n} dettagli su di te in pubblico"
+
+msgctxt "ui.fix.comments.body"
+msgid "robots.txt is public, and so are the notes in it. Names, addresses, ticket numbers and internal hostnames left in comments are read by anyone who opens the file."
+msgstr "robots.txt è pubblico, e lo sono anche le note al suo interno. Nomi, indirizzi, numeri di ticket e hostname interni lasciati nei commenti li legge chiunque apra il file."
+
+msgctxt "ui.fix.ai.title"
+msgid "{n} of {total} AI crawler may train on your content"
+msgid_plural "{n} of {total} AI crawlers may train on your content"
+msgstr[0] "{n} crawler IA su {total} può addestrarsi sui tuoi contenuti"
+msgstr[1] "{n} crawler IA su {total} possono addestrarsi sui tuoi contenuti"
+msgstr[2] "{n} crawler IA su {total} possono addestrarsi sui tuoi contenuti"
+
+msgctxt "ui.fix.ai.counts"
+msgid "{label}: {blocked} of {total} turned away"
+msgstr "{label}: {blocked} su {total} respinti"
+
+msgctxt "ui.fix.emptyLine"
+msgid "(empty line)"
+msgstr "(riga vuota)"
+
+msgctxt "ui.ticket.issue"
+msgid ""
+"robots.txt line {line}: {text}\n"
+"{message}"
+msgstr ""
+"robots.txt riga {line}: {text}\n"
+"{message}"
+
+msgctxt "ui.ticket.noLine"
+msgid "robots.txt: {message}"
+msgstr "robots.txt: {message}"
+
+msgctxt "ui.ticket.security"
+msgid ""
+"robots.txt lines {lines} name these paths in public: {paths}\n"
+"{advice}"
+msgstr ""
+"Le righe {lines} di robots.txt indicano questi percorsi in pubblico: {paths}\n"
+"{advice}"
+
+msgctxt "ui.ticket.comments"
+msgid ""
+"The comments on robots.txt lines {lines} say things about this site and the people who run it.\n"
+"Suggested change: delete those comments."
+msgstr ""
+"I commenti alle righe {lines} di robots.txt dicono cose su questo sito e su chi lo gestisce.\n"
+"Modifica suggerita: eliminare quei commenti."
+
+msgctxt "ui.ticket.ai"
+msgid "A decision is needed: which AI crawlers may use this site's content. Right now {n} are not turned away and {blocked} are."
+msgstr "Serve una decisione: quali crawler IA possono usare i contenuti di questo sito. Ora {n} non vengono respinti e {blocked} sì."
+
+msgctxt "ui.file.hint.none"
+msgid "Select a fix to mark its lines"
+msgstr "Scegli un intervento per evidenziare le sue righe"
+
+msgctxt "ui.file.hint.some"
+msgid "Marked below: {title}"
+msgstr "Evidenziato sotto: {title}"
+
+msgctxt "ui.file.hint.line"
+msgid "Marked below: line {n}"
+msgstr "Evidenziato sotto: riga {n}"
+
+msgctxt "ui.file.select"
+msgid "Line {n}, {text}. Show the fix for this line."
+msgstr "Riga {n}, {text}. Mostra l'intervento per questa riga."
+
+msgctxt "ui.file.legend.problem"
+msgid "has a problem"
+msgstr "ha un problema"
+
+msgctxt "ui.file.legend.selected"
+msgid "the fix you selected"
+msgstr "l'intervento scelto"
+
+msgctxt "ui.file.total"
+msgid "{n} line in the file"
+msgid_plural "{n} lines in the file"
+msgstr[0] "{n} riga nel file"
+msgstr[1] "{n} righe nel file"
+msgstr[2] "{n} righe nel file"
+
+msgctxt "ui.handoff.copyAll"
+msgid "Copy every fix"
+msgstr "Copia tutti gli interventi"
+
+msgctxt "ui.handoff.email"
+msgid "Email it to your developer"
+msgstr "Manda una mail al tuo sviluppatore"
+
+msgctxt "ui.handoff.emailSubject"
+msgid "robots.txt: what to fix"
+msgstr "robots.txt: cosa sistemare"
+
+msgctxt "ui.handoff.emailBody"
+msgid ""
+"Here is the check of our robots.txt, with the lines to change:\n"
+"{url}"
+msgstr ""
+"Questo è il controllo del nostro robots.txt, con le righe da cambiare:\n"
+"{url}"
+
+msgctxt "ui.appendix.title"
+msgid "Full technical detail"
+msgstr "Dettaglio tecnico completo"
+
+msgctxt "sales.try.label"
+msgid "No domain handy? Try one of these:"
+msgstr "Nessun dominio a portata di mano? Prova uno di questi:"
+
+msgctxt "sales.trust.free"
+msgid "Free"
+msgstr "Gratis"
+
+msgctxt "sales.trust.noAccount"
+msgid "No account"
+msgstr "Nessun account"
+
+msgctxt "sales.trust.browser"
+msgid "Runs in your browser"
+msgstr "Funziona nel tuo browser"
+
+msgctxt "sales.trust.noProbe"
+msgid "Nothing on your site is touched"
+msgstr "Niente del tuo sito viene toccato"
+
+msgctxt "sales.sample.label"
+msgid "What you get, in a sample report"
+msgstr "Cosa ottieni, in un report di esempio"
+
+msgctxt "sales.sample.headline"
+msgid "Only Google can properly find this site."
+msgstr "Solo Google trova bene questo sito."
+
+msgctxt "sales.sample.row1"
+msgid "Bing and DuckDuckGo cannot see the site"
+msgstr "Bing e DuckDuckGo non vedono il sito"
+
+msgctxt "sales.sample.row2"
+msgid "Backup folders are named in public"
+msgstr "Le cartelle di backup sono indicate in pubblico"
+
+msgctxt "sales.sample.row3"
+msgid "AI companies may train on your content"
+msgstr "Le aziende di IA possono addestrarsi sui tuoi contenuti"
+
+msgctxt "sales.sample.line1"
+msgid "line 123"
+msgstr "riga 123"
+
+msgctxt "sales.sample.line2"
+msgid "line 30"
+msgstr "riga 30"
+
+msgctxt "sales.sample.ticket"
+msgid ""
+"robots.txt line 123: Disallow: *\n"
+"Change: delete line 123."
+msgstr ""
+"robots.txt riga 123: Disallow: *\n"
+"Modifica: eliminare la riga 123."
+
+msgctxt "sales.sample.example"
+msgid "See a full report on the example file"
+msgstr "Vedi un report completo sul file di esempio"
+
+msgctxt "sales.audience.label"
+msgid "Who this is for"
+msgstr "Per chi è"
+
+msgctxt "sales.audience.seo.label"
+msgid "For marketing and SEO"
+msgstr "Per marketing e SEO"
+
+msgctxt "sales.audience.seo.title"
+msgid "See the impact without reading code"
+msgstr "Capire le conseguenze senza leggere codice"
+
+msgctxt "sales.audience.seo.body"
+msgid "Who can find you, which shared links break, and what to decide about AI."
+msgstr "Chi può trovarti, quali link condivisi si rompono e cosa decidere sull'IA."
+
+msgctxt "sales.audience.dev.label"
+msgid "For developers"
+msgstr "Per sviluppatori"
+
+msgctxt "sales.audience.dev.title"
+msgid "The exact line, and the change to make"
+msgstr "La riga esatta e la modifica da fare"
+
+msgctxt "sales.audience.dev.body"
+msgid "Every fix carries its line numbers and a message you can paste into a ticket."
+msgstr "Ogni intervento porta i suoi numeri di riga e un messaggio da incollare in un ticket."
+
+msgctxt "sales.audience.sec.label"
+msgid "For security"
+msgstr "Per la sicurezza"
+
+msgctxt "sales.audience.sec.title"
+msgid "What a stranger learns from your file"
+msgstr "Cosa impara un estraneo dal tuo file"
+
+msgctxt "sales.audience.sec.body"
+msgid "Backup paths, internal hosts and addresses left in comments, read straight from the text."
+msgstr "Percorsi di backup, host interni e indirizzi lasciati nei commenti, letti direttamente dal testo."

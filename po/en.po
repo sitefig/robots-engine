@@ -3621,3 +3621,357 @@ msgstr "For whoever edits the file"
 msgctxt "page.forEditors.body"
 msgid "Line numbers, the path tester, the user-agent check and the file itself. Send this to your developer or SEO."
 msgstr "Line numbers, the path tester, the user-agent check and the file itself. Send this to your developer or SEO."
+
+msgctxt "ui.pill.ok"
+msgid "Looks fine"
+msgstr "Looks fine"
+
+msgctxt "ui.pill.info"
+msgid "Worth a look"
+msgstr "Worth a look"
+
+msgctxt "ui.pill.warning"
+msgid "Needs attention"
+msgstr "Needs attention"
+
+msgctxt "ui.pill.error"
+msgid "Needs attention now"
+msgstr "Needs attention now"
+
+msgctxt "ui.tile.social"
+msgid "Link previews"
+msgstr "Link previews"
+
+msgctxt "ui.tile.social.broken"
+msgid "Shared links show no title or image"
+msgstr "Shared links show no title or image"
+
+msgctxt "ui.tile.social.fine"
+msgid "Shared links look right"
+msgstr "Shared links look right"
+
+msgctxt "ui.tile.social.all"
+msgid "All {n} link fetchers are let in"
+msgstr "All {n} link fetchers are let in"
+
+msgctxt "ui.tile.searchAll"
+msgid "None of the {n} search engines is shut out"
+msgstr "None of the {n} search engines is shut out"
+
+msgctxt "ui.tile.shutOut"
+msgid "Shut out: {names}"
+msgstr "Shut out: {names}"
+
+msgctxt "ui.tile.aiCounts"
+msgid "{blocked} of {total} are turned away"
+msgstr "{blocked} of {total} are turned away"
+
+msgctxt "ui.tile.andMore"
+msgid "{names} and {n} more"
+msgstr "{names} and {n} more"
+
+msgctxt "ui.checked.pasted"
+msgid "pasted file"
+msgstr "pasted file"
+
+msgctxt "ui.checked.meta"
+msgid "checked just now, {n} line"
+msgid_plural "checked just now, {n} lines"
+msgstr[0] "checked just now, {n} line"
+msgstr[1] "checked just now, {n} lines"
+
+msgctxt "ui.checked.again"
+msgid "Check again"
+msgstr "Check again"
+
+msgctxt "ui.checked.share"
+msgid "Share this report"
+msgstr "Share this report"
+
+msgctxt "ui.fixes.title"
+msgid "What to fix, in order"
+msgstr "What to fix, in order"
+
+msgctxt "ui.fixes.none"
+msgid "Nothing to fix. The file does what it says, and it gives nothing away."
+msgstr "Nothing to fix. The file does what it says, and it gives nothing away."
+
+msgctxt "ui.fixes.explainFor"
+msgid "Explain for"
+msgstr "Explain for"
+
+msgctxt "ui.fixes.business"
+msgid "Business"
+msgstr "Business"
+
+msgctxt "ui.fixes.it"
+msgid "IT"
+msgstr "IT"
+
+msgctxt "ui.fixes.who"
+msgid "Who fixes it:"
+msgstr "Who fixes it:"
+
+msgctxt "ui.fixes.decision"
+msgid "Not a mistake, a choice to make"
+msgstr "Not a mistake, a choice to make"
+
+msgctxt "ui.fixes.ticketLabel"
+msgid "Message for IT"
+msgstr "Message for IT"
+
+msgctxt "ui.fixes.copy"
+msgid "Copy message"
+msgstr "Copy message"
+
+msgctxt "ui.fixes.counts"
+msgid "{now} to fix now, {look} worth a look, {decide} to decide"
+msgstr "{now} to fix now, {look} worth a look, {decide} to decide"
+
+msgctxt "ui.fixes.linesLabel"
+msgid "Lines in the file"
+msgstr "Lines in the file"
+
+msgctxt "ui.fix.area.seo-trap"
+msgid "Search visibility"
+msgstr "Search visibility"
+
+msgctxt "ui.fix.area.security"
+msgid "Security"
+msgstr "Security"
+
+msgctxt "ui.fix.area.syntax"
+msgid "File quality"
+msgstr "File quality"
+
+msgctxt "ui.fix.area.lint"
+msgid "File quality"
+msgstr "File quality"
+
+msgctxt "ui.fix.area.sitemap"
+msgid "Sitemaps"
+msgstr "Sitemaps"
+
+msgctxt "ui.fix.area.fetch"
+msgid "How it is served"
+msgstr "How it is served"
+
+msgctxt "ui.fix.area.ai"
+msgid "AI and your content"
+msgstr "AI and your content"
+
+msgctxt "ui.fix.owner.dev"
+msgid "Developer"
+msgstr "Developer"
+
+msgctxt "ui.fix.owner.devSeo"
+msgid "Developer or SEO"
+msgstr "Developer or SEO"
+
+msgctxt "ui.fix.owner.devSec"
+msgid "Developer and security"
+msgstr "Developer and security"
+
+msgctxt "ui.fix.owner.marketing"
+msgid "Marketing or legal"
+msgstr "Marketing or legal"
+
+msgctxt "ui.fix.sev.decision"
+msgid "Decision"
+msgstr "Decision"
+
+msgctxt "ui.fix.security.title"
+msgid "{what}: one path named in public"
+msgid_plural "{what}: {n} paths named in public"
+msgstr[0] "{what}: one path named in public"
+msgstr[1] "{what}: {n} paths named in public"
+
+msgctxt "ui.fix.comments.title"
+msgid "A comment leaves {n} detail about you in public"
+msgid_plural "Comments leave {n} details about you in public"
+msgstr[0] "A comment leaves {n} detail about you in public"
+msgstr[1] "Comments leave {n} details about you in public"
+
+msgctxt "ui.fix.comments.body"
+msgid "robots.txt is public, and so are the notes in it. Names, addresses, ticket numbers and internal hostnames left in comments are read by anyone who opens the file."
+msgstr "robots.txt is public, and so are the notes in it. Names, addresses, ticket numbers and internal hostnames left in comments are read by anyone who opens the file."
+
+msgctxt "ui.fix.ai.title"
+msgid "{n} of {total} AI crawler may train on your content"
+msgid_plural "{n} of {total} AI crawlers may train on your content"
+msgstr[0] "{n} of {total} AI crawler may train on your content"
+msgstr[1] "{n} of {total} AI crawlers may train on your content"
+
+msgctxt "ui.fix.ai.counts"
+msgid "{label}: {blocked} of {total} turned away"
+msgstr "{label}: {blocked} of {total} turned away"
+
+msgctxt "ui.fix.emptyLine"
+msgid "(empty line)"
+msgstr "(empty line)"
+
+msgctxt "ui.ticket.issue"
+msgid "robots.txt line {line}: {text}\n{message}"
+msgstr "robots.txt line {line}: {text}\n{message}"
+
+msgctxt "ui.ticket.noLine"
+msgid "robots.txt: {message}"
+msgstr "robots.txt: {message}"
+
+msgctxt "ui.ticket.security"
+msgid "robots.txt lines {lines} name these paths in public: {paths}\n{advice}"
+msgstr "robots.txt lines {lines} name these paths in public: {paths}\n{advice}"
+
+msgctxt "ui.ticket.comments"
+msgid "The comments on robots.txt lines {lines} say things about this site and the people who run it.\nSuggested change: delete those comments."
+msgstr "The comments on robots.txt lines {lines} say things about this site and the people who run it.\nSuggested change: delete those comments."
+
+msgctxt "ui.ticket.ai"
+msgid "A decision is needed: which AI crawlers may use this site's content. Right now {n} are not turned away and {blocked} are."
+msgstr "A decision is needed: which AI crawlers may use this site's content. Right now {n} are not turned away and {blocked} are."
+
+msgctxt "ui.file.hint.none"
+msgid "Select a fix to mark its lines"
+msgstr "Select a fix to mark its lines"
+
+msgctxt "ui.file.hint.some"
+msgid "Marked below: {title}"
+msgstr "Marked below: {title}"
+
+msgctxt "ui.file.hint.line"
+msgid "Marked below: line {n}"
+msgstr "Marked below: line {n}"
+
+msgctxt "ui.file.select"
+msgid "Line {n}, {text}. Show the fix for this line."
+msgstr "Line {n}, {text}. Show the fix for this line."
+
+msgctxt "ui.file.legend.problem"
+msgid "has a problem"
+msgstr "has a problem"
+
+msgctxt "ui.file.legend.selected"
+msgid "the fix you selected"
+msgstr "the fix you selected"
+
+msgctxt "ui.file.total"
+msgid "{n} line in the file"
+msgid_plural "{n} lines in the file"
+msgstr[0] "{n} line in the file"
+msgstr[1] "{n} lines in the file"
+
+msgctxt "ui.handoff.copyAll"
+msgid "Copy every fix"
+msgstr "Copy every fix"
+
+msgctxt "ui.handoff.email"
+msgid "Email it to your developer"
+msgstr "Email it to your developer"
+
+msgctxt "ui.handoff.emailSubject"
+msgid "robots.txt: what to fix"
+msgstr "robots.txt: what to fix"
+
+msgctxt "ui.handoff.emailBody"
+msgid "Here is the check of our robots.txt, with the lines to change:\n{url}"
+msgstr "Here is the check of our robots.txt, with the lines to change:\n{url}"
+
+msgctxt "ui.appendix.title"
+msgid "Full technical detail"
+msgstr "Full technical detail"
+
+msgctxt "sales.try.label"
+msgid "No domain handy? Try one of these:"
+msgstr "No domain handy? Try one of these:"
+
+msgctxt "sales.trust.free"
+msgid "Free"
+msgstr "Free"
+
+msgctxt "sales.trust.noAccount"
+msgid "No account"
+msgstr "No account"
+
+msgctxt "sales.trust.browser"
+msgid "Runs in your browser"
+msgstr "Runs in your browser"
+
+msgctxt "sales.trust.noProbe"
+msgid "Nothing on your site is touched"
+msgstr "Nothing on your site is touched"
+
+msgctxt "sales.sample.label"
+msgid "What you get, in a sample report"
+msgstr "What you get, in a sample report"
+
+msgctxt "sales.sample.headline"
+msgid "Only Google can properly find this site."
+msgstr "Only Google can properly find this site."
+
+msgctxt "sales.sample.row1"
+msgid "Bing and DuckDuckGo cannot see the site"
+msgstr "Bing and DuckDuckGo cannot see the site"
+
+msgctxt "sales.sample.row2"
+msgid "Backup folders are named in public"
+msgstr "Backup folders are named in public"
+
+msgctxt "sales.sample.row3"
+msgid "AI companies may train on your content"
+msgstr "AI companies may train on your content"
+
+msgctxt "sales.sample.line1"
+msgid "line 123"
+msgstr "line 123"
+
+msgctxt "sales.sample.line2"
+msgid "line 30"
+msgstr "line 30"
+
+msgctxt "sales.sample.ticket"
+msgid "robots.txt line 123: Disallow: *\nChange: delete line 123."
+msgstr "robots.txt line 123: Disallow: *\nChange: delete line 123."
+
+msgctxt "sales.sample.example"
+msgid "See a full report on the example file"
+msgstr "See a full report on the example file"
+
+msgctxt "sales.audience.label"
+msgid "Who this is for"
+msgstr "Who this is for"
+
+msgctxt "sales.audience.seo.label"
+msgid "For marketing and SEO"
+msgstr "For marketing and SEO"
+
+msgctxt "sales.audience.seo.title"
+msgid "See the impact without reading code"
+msgstr "See the impact without reading code"
+
+msgctxt "sales.audience.seo.body"
+msgid "Who can find you, which shared links break, and what to decide about AI."
+msgstr "Who can find you, which shared links break, and what to decide about AI."
+
+msgctxt "sales.audience.dev.label"
+msgid "For developers"
+msgstr "For developers"
+
+msgctxt "sales.audience.dev.title"
+msgid "The exact line, and the change to make"
+msgstr "The exact line, and the change to make"
+
+msgctxt "sales.audience.dev.body"
+msgid "Every fix carries its line numbers and a message you can paste into a ticket."
+msgstr "Every fix carries its line numbers and a message you can paste into a ticket."
+
+msgctxt "sales.audience.sec.label"
+msgid "For security"
+msgstr "For security"
+
+msgctxt "sales.audience.sec.title"
+msgid "What a stranger learns from your file"
+msgstr "What a stranger learns from your file"
+
+msgctxt "sales.audience.sec.body"
+msgid "Backup paths, internal hosts and addresses left in comments, read straight from the text."
+msgstr "Backup paths, internal hosts and addresses left in comments, read straight from the text."
