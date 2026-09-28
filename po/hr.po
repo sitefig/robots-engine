@@ -21,8 +21,8 @@ msgid "Skip to content"
 msgstr "Preskoči na sadržaj"
 
 msgctxt "page.h1"
-msgid "Check your robots.txt file before traffic drops"
-msgstr "Provjerite svoj robots.txt prije nego promet padne"
+msgid "Find out what your robots.txt is costing you"
+msgstr "Otkrijte što vas vaš robots.txt košta"
 
 msgctxt "page.themeLabel"
 msgid "Colour theme"
@@ -41,8 +41,8 @@ msgid "Language"
 msgstr "Jezik"
 
 msgctxt "page.intro"
-msgid "Free, runs in your browser, and shows what your file gives away."
-msgstr "Besplatno, radi u vašem pregledniku i pokazuje što vaša datoteka otkriva."
+msgid "Paste your domain. You get a verdict in plain language, a fix list that links to the exact lines, and a message you can send straight to IT."
+msgstr "Zalijepite svoju domenu. Dobivate presudu običnim jezikom, popis ispravaka koji vodi na točne redove i poruku koju možete poslati ravno IT-u."
 
 msgctxt "page.urlLabel"
 msgid "Domain, or any address on the site"
@@ -3678,7 +3678,7 @@ msgid "Link previews"
 msgstr ""
 
 msgctxt "ui.tile.social.broken"
-msgid "Shared links show no title or image"
+msgid "Shared links on {names} show no image or title."
 msgstr ""
 
 msgctxt "ui.tile.social.fine"
@@ -3761,7 +3761,7 @@ msgid "Copy message"
 msgstr ""
 
 msgctxt "ui.fixes.counts"
-msgid "{now} to fix now, {look} worth a look, {decide} to decide"
+msgid "{critical} critical, {high} high, {medium} medium, {decision} decision for you"
 msgstr ""
 
 msgctxt "ui.fixes.linesLabel"
@@ -3907,11 +3907,11 @@ msgstr[1] ""
 msgstr[2] ""
 
 msgctxt "ui.handoff.copyAll"
-msgid "Copy every fix"
+msgid "Copy all fixes for IT"
 msgstr ""
 
 msgctxt "ui.handoff.email"
-msgid "Email it to your developer"
+msgid "Email to developer"
 msgstr ""
 
 msgctxt "ui.handoff.emailSubject"
@@ -3929,7 +3929,7 @@ msgid "Full technical detail"
 msgstr ""
 
 msgctxt "sales.try.label"
-msgid "No domain handy? Try one of these:"
+msgid "No domain handy? Try:"
 msgstr ""
 
 msgctxt "sales.trust.free"
@@ -3945,11 +3945,11 @@ msgid "Runs in your browser"
 msgstr ""
 
 msgctxt "sales.trust.noProbe"
-msgid "Nothing on your site is touched"
+msgid "Nothing is probed"
 msgstr ""
 
 msgctxt "sales.sample.label"
-msgid "What you get, in a sample report"
+msgid "What you will get, in a sample report"
 msgstr ""
 
 msgctxt "sales.sample.headline"
@@ -3991,15 +3991,15 @@ msgid "Who this is for"
 msgstr ""
 
 msgctxt "sales.audience.seo.label"
-msgid "For marketing and SEO"
+msgid "For SEO and marketing"
 msgstr ""
 
 msgctxt "sales.audience.seo.title"
-msgid "See the impact without reading code"
+msgid "Understand the impact without reading code"
 msgstr ""
 
 msgctxt "sales.audience.seo.body"
-msgid "Who can find you, which shared links break, and what to decide about AI."
+msgid "Who can find you, which links break when shared, and what to decide about AI."
 msgstr ""
 
 msgctxt "sales.audience.dev.label"
@@ -4011,7 +4011,7 @@ msgid "The exact line, and the change to make"
 msgstr ""
 
 msgctxt "sales.audience.dev.body"
-msgid "Every fix carries its line numbers and a message you can paste into a ticket."
+msgid "Every issue links to its line, with a ready-to-paste fix and a way to check it worked."
 msgstr ""
 
 msgctxt "sales.audience.sec.label"
@@ -4023,5 +4023,329 @@ msgid "What a stranger learns from your file"
 msgstr ""
 
 msgctxt "sales.audience.sec.body"
-msgid "Backup paths, internal hosts and addresses left in comments, read straight from the text."
+msgid "Backup paths, internal hosts and emails left in comments, read straight from the text."
+msgstr ""
+
+msgctxt "ui.sev.critical"
+msgid "Critical"
+msgstr ""
+
+msgctxt "ui.sev.high"
+msgid "High"
+msgstr ""
+
+msgctxt "ui.sev.medium"
+msgid "Medium"
+msgstr ""
+
+msgctxt "ui.sev.decision"
+msgid "Decision"
+msgstr ""
+
+msgctxt "ui.effort.line"
+msgid "a one-line change"
+msgstr ""
+
+msgctxt "ui.effort.check"
+msgid "a change and a check"
+msgstr ""
+
+msgctxt "ui.effort.call"
+msgid "your call"
+msgstr ""
+
+msgctxt "ui.verdict.intro"
+msgid "Most fixes below are one-line changes your developer can make in minutes. Each one links to the exact line in your file."
+msgstr ""
+
+msgctxt "ui.tile.searchLabel"
+msgid "Search visibility"
+msgstr ""
+
+msgctxt "ui.tile.search.only"
+msgid "{name} only"
+msgstr ""
+
+msgctxt "ui.tile.search.someShut"
+msgid "{n} shut out"
+msgstr ""
+
+msgctxt "ui.tile.search.none"
+msgid "Nobody"
+msgstr ""
+
+msgctxt "ui.tile.search.parts"
+msgid "Parts hidden"
+msgstr ""
+
+msgctxt "ui.tile.search.all"
+msgid "Everyone"
+msgstr ""
+
+msgctxt "ui.tile.search.failing"
+msgid "Turned away"
+msgstr ""
+
+msgctxt "ui.tile.social.brokenShort"
+msgid "Broken"
+msgstr ""
+
+msgctxt "ui.tile.social.fineShort"
+msgid "Fine"
+msgstr ""
+
+msgctxt "ui.tile.aiLabel"
+msgid "AI use of your content"
+msgstr ""
+
+msgctxt "ui.tile.ai.blocked"
+msgid "All turned away"
+msgstr ""
+
+msgctxt "ui.tile.ai.partly"
+msgid "Partly blocked"
+msgstr ""
+
+msgctxt "ui.tile.ai.notDecided"
+msgid "Not decided"
+msgstr ""
+
+msgctxt "ui.tile.ai.unknown"
+msgid "Unknown"
+msgstr ""
+
+msgctxt "ui.tile.aiNote"
+msgid "{n} of {total} can train on your content"
+msgstr ""
+
+msgctxt "ui.tile.exposureLabel"
+msgid "Security exposure"
+msgstr ""
+
+msgctxt "ui.tile.level.high"
+msgid "High"
+msgstr ""
+
+msgctxt "ui.tile.level.medium"
+msgid "Medium"
+msgstr ""
+
+msgctxt "ui.tile.level.low"
+msgid "Low"
+msgstr ""
+
+msgctxt "ui.tile.level.none"
+msgid "None"
+msgstr ""
+
+msgctxt "ui.handoff.copiedAll"
+msgid "Copied all {n} fixes"
+msgstr ""
+
+msgctxt "ui.handoff.jira"
+msgid "Export for Jira"
+msgstr ""
+
+msgctxt "ui.handoff.watch"
+msgid "Want to know when the fix is live? We check the file every day and email you when it changes. Free, no card."
+msgstr ""
+
+msgctxt "ui.handoff.watchCta"
+msgid "Watch for free"
+msgstr ""
+
+msgctxt "ui.compare.eyebrow"
+msgid "Next: how do you compare?"
+msgstr ""
+
+msgctxt "ui.compare.title"
+msgid "See what your competitor lets search engines and AI read"
+msgstr ""
+
+msgctxt "ui.compare.body"
+msgid "Every robots.txt is public. Compare yours with any competitor once, for free. If a competitor opens up to AI search or hides a category, that is a signal worth knowing about."
+msgstr ""
+
+msgctxt "ui.compare.label"
+msgid "A competitor's domain"
+msgstr ""
+
+msgctxt "ui.compare.run"
+msgid "Compare free"
+msgstr ""
+
+msgctxt "ui.compare.running"
+msgid "Fetching the other file."
+msgstr ""
+
+msgctxt "ui.compare.youAre"
+msgid "{host} vs"
+msgstr ""
+
+msgctxt "ui.compare.th.what"
+msgid "What it means"
+msgstr ""
+
+msgctxt "ui.compare.th.so"
+msgid "So what"
+msgstr ""
+
+msgctxt "ui.compare.row.found"
+msgid "Found by Bing, DuckDuckGo and Apple"
+msgstr ""
+
+msgctxt "ui.compare.row.cited"
+msgid "Cited by AI search"
+msgstr ""
+
+msgctxt "ui.compare.row.training"
+msgid "Content used for AI training"
+msgstr ""
+
+msgctxt "ui.compare.row.exposed"
+msgid "Sensitive locations exposed"
+msgstr ""
+
+msgctxt "ui.compare.row.changed"
+msgid "Last change to the file"
+msgstr ""
+
+msgctxt "ui.compare.so.found"
+msgid "They get search traffic you are missing."
+msgstr ""
+
+msgctxt "ui.compare.so.cited"
+msgid "AI answers will recommend them, not you."
+msgstr ""
+
+msgctxt "ui.compare.so.training"
+msgid "They chose what happens to their content."
+msgstr ""
+
+msgctxt "ui.compare.so.exposed"
+msgid "Your file gives an attacker more to go on."
+msgstr ""
+
+msgctxt "ui.compare.so.changed"
+msgid "Only watching can tell you when theirs changes."
+msgstr ""
+
+msgctxt "ui.compare.yes"
+msgid "Yes"
+msgstr ""
+
+msgctxt "ui.compare.no"
+msgid "No"
+msgstr ""
+
+msgctxt "ui.compare.partly"
+msgid "Partly"
+msgstr ""
+
+msgctxt "ui.compare.unknown"
+msgid "Unknown"
+msgstr ""
+
+msgctxt "ui.compare.ofTotal"
+msgid "{n} of {total}"
+msgstr ""
+
+msgctxt "ui.compare.upsell.title"
+msgid "This is today's snapshot. They will change it next week."
+msgstr ""
+
+msgctxt "ui.compare.upsell.body"
+msgid "Watching keeps your own domains and your competitors under check, and tells you in plain language when one of them blocks or opens up to a crawler, hides a section or puts new pages out."
+msgstr ""
+
+msgctxt "ui.compare.cta"
+msgid "Watch both"
+msgstr ""
+
+msgctxt "ui.appendix.body"
+msgid "For whoever edits the file. Everything the report used to open with is still here, folded away."
+msgstr ""
+
+msgctxt "ui.appendix.issues"
+msgid "Every finding with its line"
+msgstr ""
+
+msgctxt "ui.appendix.agents"
+msgid "Rules resolved per crawler with RFC 9309 matching"
+msgstr ""
+
+msgctxt "ui.appendix.ai"
+msgid "Training and search agents, blocked or allowed"
+msgstr ""
+
+msgctxt "ui.appendix.security"
+msgid "Every sensitive path the file names"
+msgstr ""
+
+msgctxt "ui.appendix.recon"
+msgid "Platform, cloud buckets, other hosts, interfaces, comments and sitemaps"
+msgstr ""
+
+msgctxt "ui.appendix.tester"
+msgid "Check any path against any crawler"
+msgstr ""
+
+msgctxt "ui.appendix.access"
+msgid "Fetch it again with each crawler's real user-agent"
+msgstr ""
+
+msgctxt "ui.appendix.footnote"
+msgid "The analysis runs in your browser. Rule matching follows RFC 9309 and Google's published crawler behaviour. A tool by Sitefig."
+msgstr ""
+
+msgctxt "sales.handoff.title"
+msgid "Hand this to your developer"
+msgstr ""
+
+msgctxt "sales.handoff.body"
+msgid "One message with every fix, the line numbers and the change to make. They will not need to run the check again."
+msgstr ""
+
+msgctxt "sales.compare.title"
+msgid "Or compare with a competitor"
+msgstr ""
+
+msgctxt "sales.compare.body"
+msgid "See side by side who search engines and AI can read. Both files are public. Free, once."
+msgstr ""
+
+msgctxt "sales.compare.yours"
+msgid "Your domain"
+msgstr ""
+
+msgctxt "sales.compare.theirs"
+msgid "A competitor's domain"
+msgstr ""
+
+msgctxt "sales.compare.vs"
+msgid "vs"
+msgstr ""
+
+msgctxt "sales.compare.run"
+msgid "Compare free"
+msgstr ""
+
+msgctxt "sales.tracked.title"
+msgid "What large sites are doing"
+msgstr ""
+
+msgctxt "sales.tracked.link"
+msgid "Browse the gallery"
+msgstr ""
+
+msgctxt "sales.tracked.body"
+msgid "We fetch these files every day and keep the history, so a change is visible the day it happens."
+msgstr ""
+
+msgctxt "sales.tracked.sites"
+msgid "Sites we fetch every day"
+msgstr ""
+
+msgctxt "sales.tracked.gptbot"
+msgid "Of them, blocking GPTBot"
 msgstr ""
