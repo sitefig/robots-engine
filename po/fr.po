@@ -21,8 +21,8 @@ msgid "Skip to content"
 msgstr "Aller au contenu"
 
 msgctxt "page.h1"
-msgid "Find out what your robots.txt is costing you"
-msgstr "Découvrez ce que votre robots.txt vous coûte"
+msgid "Find out what your robots.txt is costing you, in words your whole team understands."
+msgstr "Découvrez ce que votre robots.txt vous coûte, dans des mots que toute votre équipe comprend."
 
 msgctxt "page.themeLabel"
 msgid "Colour theme"
@@ -41,16 +41,16 @@ msgid "Language"
 msgstr "Langue"
 
 msgctxt "page.intro"
-msgid "Paste your domain. You get a verdict in plain language, a fix list that links to the exact lines, and a message you can send straight to IT."
-msgstr "Collez votre domaine. Vous obtenez un verdict en langage clair, une liste de corrections qui renvoie aux lignes exactes, et un message à envoyer directement à l'IT."
+msgid "Enter your domain above. You get a verdict for the business, a fix list that links to the exact lines, and a message you can send straight to IT."
+msgstr "Saisissez votre domaine ci-dessus. Vous obtenez un verdict pour l'entreprise, une liste de corrections qui renvoie aux lignes exactes, et un message à envoyer directement à l'IT."
 
 msgctxt "page.urlLabel"
 msgid "Domain, or any address on the site"
 msgstr "Domaine, ou n'importe quelle adresse du site"
 
 msgctxt "page.analyse"
-msgid "Check the robots.txt"
-msgstr "Vérifier le robots.txt"
+msgid "Check my site"
+msgstr "Vérifier mon site"
 
 msgctxt "page.urlHint"
 msgid "Paste whatever you have: a domain, a page, a link from an email, even the <code>robots.txt</code> address itself. We read <code>/robots.txt</code> from that site and ignore the rest."
@@ -2568,8 +2568,8 @@ msgid "Nothing to show."
 msgstr "Rien à afficher."
 
 msgctxt "ui.raw.copy"
-msgid "Copy"
-msgstr "Copier"
+msgid "Copy file"
+msgstr "Copier le fichier"
 
 msgctxt "ui.raw.copied"
 msgid "Copied"
@@ -3694,8 +3694,8 @@ msgid "None of the {n} search engines is shut out"
 msgstr "Aucun des {n} moteurs de recherche n'est exclu"
 
 msgctxt "ui.tile.shutOut"
-msgid "Shut out: {names}"
-msgstr "Exclus : {names}"
+msgid "{names} are blocked from the whole site"
+msgstr "{names} sont exclus de tout le site"
 
 msgctxt "ui.tile.aiCounts"
 msgid "{blocked} of {total} are turned away"
@@ -3721,8 +3721,8 @@ msgid "Check again"
 msgstr "Vérifier à nouveau"
 
 msgctxt "ui.checked.share"
-msgid "Share this report"
-msgstr "Partager ce rapport"
+msgid "Share report"
+msgstr "Partager le rapport"
 
 msgctxt "ui.fixes.title"
 msgid "What to fix, in order"
@@ -4157,8 +4157,8 @@ msgid "Export for Jira"
 msgstr "Export pour Jira"
 
 msgctxt "ui.handoff.watch"
-msgid "Want to know when the fix is live? We check the file every day and email you when it changes. Free, no card."
-msgstr "Vous voulez savoir quand la correction est en ligne ? Nous vérifions le fichier chaque jour et vous écrivons quand il change. Gratuit, sans carte."
+msgid "Want to know when the fix is live? We check the file every day and email you when it changes. Free, no card. Want to watch competitors too? See below."
+msgstr "Vous voulez savoir quand la correction est en ligne ? Nous vérifions le fichier chaque jour et vous écrivons quand il change. Gratuit, sans carte. Surveiller aussi des concurrents ? Voir plus bas."
 
 msgctxt "ui.handoff.watchCta"
 msgid "Watch for free"
@@ -4359,3 +4359,87 @@ msgstr "Sites récupérés chaque jour"
 msgctxt "sales.tracked.gptbot"
 msgid "Of them, blocking GPTBot"
 msgstr "Parmi eux, bloquent GPTBot"
+
+msgctxt "sales.pasteFile"
+msgid "Paste a file"
+msgstr "Coller un fichier"
+
+msgctxt "sales.tile.search"
+msgid "Which search engines can find you"
+msgstr "Quels moteurs de recherche vous trouvent"
+
+msgctxt "sales.tile.social"
+msgid "Whether shared links show an image and title"
+msgstr "Si les liens partagés affichent une image et un titre"
+
+msgctxt "sales.tile.exposure"
+msgid "What your file tells strangers"
+msgstr "Ce que votre fichier révèle aux inconnus"
+
+msgctxt "sales.tile.ai"
+msgid "Who can train on it, who can cite you"
+msgstr "Qui peut s'entraîner dessus, qui peut vous citer"
+
+msgctxt "sales.example.label"
+msgid "Example of what you will see"
+msgstr "Exemple de ce que vous verrez"
+
+msgctxt "sales.example.area"
+msgid "Example"
+msgstr "Exemple"
+
+msgctxt "sales.example.t1"
+msgid "Bing and DuckDuckGo cannot see your site"
+msgstr "Bing et DuckDuckGo ne voient pas votre site"
+
+msgctxt "sales.example.t2"
+msgid "Your file tells strangers where backups are kept"
+msgstr "Votre fichier indique aux inconnus où sont les sauvegardes"
+
+msgctxt "sales.example.t3"
+msgid "Most AI companies can still train on your content"
+msgstr "La plupart des entreprises d'IA peuvent encore s'entraîner sur vos contenus"
+
+msgctxt "sales.example.ticketLabel"
+msgid "Message for IT, example"
+msgstr "Message pour l'IT, exemple"
+
+msgctxt "sales.file.title"
+msgid "Your robots.txt"
+msgstr "Votre robots.txt"
+
+msgctxt "sales.file.hint"
+msgid "Appears here, with problem lines highlighted"
+msgstr "Apparaît ici, avec les lignes à problème surlignées"
+
+msgctxt "sales.file.paste"
+msgid "Or paste a robots.txt here"
+msgstr "Ou collez un robots.txt ici"
+
+msgctxt "sales.changes.title"
+msgid "Recent changes at large sites"
+msgstr "Changements récents sur de grands sites"
+
+msgctxt "sales.changes.body"
+msgid "From the {tracked} large sites we fetch every day"
+msgstr "Parmi les {tracked} grands sites que nous récupérons chaque jour"
+
+msgctxt "sales.changes.link"
+msgid "See what changed"
+msgstr "Voir ce qui a changé"
+
+msgctxt "ui.appendix.exports"
+msgid "Exports"
+msgstr "Exports"
+
+msgctxt "ui.appendix.exportsWhat"
+msgid "The audit as Markdown, the link to this check, and what an account adds"
+msgstr "L'audit en Markdown, le lien vers cette vérification, et ce qu'un compte ajoute"
+
+msgctxt "ui.appendix.served"
+msgid "How the file was served"
+msgstr "Comment le fichier a été servi"
+
+msgctxt "ui.appendix.servedWhat"
+msgid "Where it came from, the status, the type and the size"
+msgstr "D'où il vient, le statut, le type et la taille"

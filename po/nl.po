@@ -21,8 +21,8 @@ msgid "Skip to content"
 msgstr "Naar de inhoud"
 
 msgctxt "page.h1"
-msgid "Find out what your robots.txt is costing you"
-msgstr "Ontdek wat je robots.txt je kost"
+msgid "Find out what your robots.txt is costing you, in words your whole team understands."
+msgstr "Ontdek wat je robots.txt je kost, in woorden die je hele team begrijpt."
 
 msgctxt "page.themeLabel"
 msgid "Colour theme"
@@ -41,16 +41,16 @@ msgid "Language"
 msgstr "Taal"
 
 msgctxt "page.intro"
-msgid "Paste your domain. You get a verdict in plain language, a fix list that links to the exact lines, and a message you can send straight to IT."
-msgstr "Plak je domein. Je krijgt een oordeel in gewone taal, een lijst met taken die naar de exacte regels linkt, en een bericht dat je meteen naar IT kunt sturen."
+msgid "Enter your domain above. You get a verdict for the business, a fix list that links to the exact lines, and a message you can send straight to IT."
+msgstr "Vul hierboven je domein in. Je krijgt een oordeel voor de business, een lijst met taken die naar de exacte regels linkt, en een bericht dat je meteen naar IT kunt sturen."
 
 msgctxt "page.urlLabel"
 msgid "Domain, or any address on the site"
 msgstr "Domein, of een willekeurig adres van de site"
 
 msgctxt "page.analyse"
-msgid "Check the robots.txt"
-msgstr "robots.txt controleren"
+msgid "Check my site"
+msgstr "Controleer mijn site"
 
 msgctxt "page.urlHint"
 msgid "Paste whatever you have: a domain, a page, a link from an email, even the <code>robots.txt</code> address itself. We read <code>/robots.txt</code> from that site and ignore the rest."
@@ -2543,8 +2543,8 @@ msgid "Nothing to show."
 msgstr "Niets te tonen."
 
 msgctxt "ui.raw.copy"
-msgid "Copy"
-msgstr "Kopiëren"
+msgid "Copy file"
+msgstr "Bestand kopiëren"
 
 msgctxt "ui.raw.copied"
 msgid "Copied"
@@ -3659,8 +3659,8 @@ msgid "None of the {n} search engines is shut out"
 msgstr "Geen van de {n} zoekmachines is buitengesloten"
 
 msgctxt "ui.tile.shutOut"
-msgid "Shut out: {names}"
-msgstr "Buitengesloten: {names}"
+msgid "{names} are blocked from the whole site"
+msgstr "{names} zijn van de hele site buitengesloten"
 
 msgctxt "ui.tile.aiCounts"
 msgid "{blocked} of {total} are turned away"
@@ -3685,8 +3685,8 @@ msgid "Check again"
 msgstr "Opnieuw controleren"
 
 msgctxt "ui.checked.share"
-msgid "Share this report"
-msgstr "Dit rapport delen"
+msgid "Share report"
+msgstr "Rapport delen"
 
 msgctxt "ui.fixes.title"
 msgid "What to fix, in order"
@@ -4117,8 +4117,8 @@ msgid "Export for Jira"
 msgstr "Export voor Jira"
 
 msgctxt "ui.handoff.watch"
-msgid "Want to know when the fix is live? We check the file every day and email you when it changes. Free, no card."
-msgstr "Wil je weten wanneer de wijziging live is? We controleren het bestand elke dag en mailen je als het verandert. Gratis, zonder kaart."
+msgid "Want to know when the fix is live? We check the file every day and email you when it changes. Free, no card. Want to watch competitors too? See below."
+msgstr "Wil je weten wanneer de wijziging live is? We controleren het bestand elke dag en mailen je als het verandert. Gratis, zonder kaart. Ook concurrenten volgen? Zie hieronder."
 
 msgctxt "ui.handoff.watchCta"
 msgid "Watch for free"
@@ -4319,3 +4319,87 @@ msgstr "Sites die we elke dag ophalen"
 msgctxt "sales.tracked.gptbot"
 msgid "Of them, blocking GPTBot"
 msgstr "Daarvan blokkeert GPTBot"
+
+msgctxt "sales.pasteFile"
+msgid "Paste a file"
+msgstr "Bestand plakken"
+
+msgctxt "sales.tile.search"
+msgid "Which search engines can find you"
+msgstr "Welke zoekmachines je vinden"
+
+msgctxt "sales.tile.social"
+msgid "Whether shared links show an image and title"
+msgstr "Of gedeelde links een afbeelding en titel tonen"
+
+msgctxt "sales.tile.exposure"
+msgid "What your file tells strangers"
+msgstr "Wat je bestand aan vreemden verklapt"
+
+msgctxt "sales.tile.ai"
+msgid "Who can train on it, who can cite you"
+msgstr "Wie ermee mag trainen, wie je mag citeren"
+
+msgctxt "sales.example.label"
+msgid "Example of what you will see"
+msgstr "Voorbeeld van wat je ziet"
+
+msgctxt "sales.example.area"
+msgid "Example"
+msgstr "Voorbeeld"
+
+msgctxt "sales.example.t1"
+msgid "Bing and DuckDuckGo cannot see your site"
+msgstr "Bing en DuckDuckGo zien je site niet"
+
+msgctxt "sales.example.t2"
+msgid "Your file tells strangers where backups are kept"
+msgstr "Je bestand verklapt aan vreemden waar de back-ups staan"
+
+msgctxt "sales.example.t3"
+msgid "Most AI companies can still train on your content"
+msgstr "De meeste AI-bedrijven mogen nog met je inhoud trainen"
+
+msgctxt "sales.example.ticketLabel"
+msgid "Message for IT, example"
+msgstr "Bericht voor IT, voorbeeld"
+
+msgctxt "sales.file.title"
+msgid "Your robots.txt"
+msgstr "Je robots.txt"
+
+msgctxt "sales.file.hint"
+msgid "Appears here, with problem lines highlighted"
+msgstr "Verschijnt hier, met probleemregels gemarkeerd"
+
+msgctxt "sales.file.paste"
+msgid "Or paste a robots.txt here"
+msgstr "Of plak hier een robots.txt"
+
+msgctxt "sales.changes.title"
+msgid "Recent changes at large sites"
+msgstr "Recente wijzigingen bij grote sites"
+
+msgctxt "sales.changes.body"
+msgid "From the {tracked} large sites we fetch every day"
+msgstr "Van de {tracked} grote sites die we elke dag ophalen"
+
+msgctxt "sales.changes.link"
+msgid "See what changed"
+msgstr "Bekijk wat er veranderde"
+
+msgctxt "ui.appendix.exports"
+msgid "Exports"
+msgstr "Exports"
+
+msgctxt "ui.appendix.exportsWhat"
+msgid "The audit as Markdown, the link to this check, and what an account adds"
+msgstr "De audit als Markdown, de link naar deze controle, en wat een account toevoegt"
+
+msgctxt "ui.appendix.served"
+msgid "How the file was served"
+msgstr "Hoe het bestand geleverd werd"
+
+msgctxt "ui.appendix.servedWhat"
+msgid "Where it came from, the status, the type and the size"
+msgstr "Waar het vandaan kwam, de status, het type en de grootte"
