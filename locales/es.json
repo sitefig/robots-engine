@@ -972,7 +972,7 @@
   "ui.plain.setup.some": "Cualquiera que lo lea conoce {what}",
   "ui.plain.setup.none": "Nada que un desconocido pueda aprovechar",
   "ui.agents.onlyProblems": "Pantalla pequeña: solo se listan los rastreadores excluidos.",
-  "ui.ai.onlyProblems": "Pantalla pequeña: solo se listan los agentes de IA que no están bloqueados.",
+  "ui.ai.onlyProblems": "Pantalla pequeña: solo se listan los agentes de IA bloqueados.",
   "ui.ai.showAll": "Mostrar todos los agentes de IA",
   "ui.ai.showFewer": "Mostrar menos agentes de IA",
   "ui.plain.setup.platform": "sobre qué está construido tu sitio ({name})",
@@ -997,5 +997,7 @@
     "other": "{n} nombres, direcciones o números de ticket en comentarios"
   },
   "sales.nav.monitoring": "Monitorización",
-  "sales.nav.account": "Cuenta gratis"
+  "sales.nav.account": "Cuenta gratis",
+  "page.forEditors.title": "Para quien edita el archivo",
+  "page.forEditors.body": "Números de línea, el probador de rutas, la comprobación por User-Agent y el archivo en sí. Envía esto a tu desarrollador o a tu SEO."
 }

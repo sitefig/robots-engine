@@ -129,5 +129,7 @@
   "ui.agents.showAll": "Näytä kaikki robotit",
   "ui.agents.showFewer": "Näytä vähemmän robotteja",
   "sales.nav.monitoring": "Seuranta",
-  "sales.nav.account": "Ilmainen tili"
+  "sales.nav.account": "Ilmainen tili",
+  "page.forEditors.title": "Sille, joka muokkaa tiedostoa",
+  "page.forEditors.body": "Rivinumerot, polkujen testaus, User-Agent-tarkistus ja tiedosto itse. Lähetä tämä kehittäjällesi tai SEO-vastaavalle."
 }

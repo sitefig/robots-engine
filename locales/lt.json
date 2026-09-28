@@ -131,5 +131,7 @@
   "ui.agents.showAll": "Rodyti visus robotus",
   "ui.agents.showFewer": "Rodyti mažiau robotų",
   "sales.nav.monitoring": "Stebėjimas",
-  "sales.nav.account": "Nemokama paskyra"
+  "sales.nav.account": "Nemokama paskyra",
+  "page.forEditors.title": "Tam, kas redaguoja failą",
+  "page.forEditors.body": "Eilučių numeriai, kelių tikrinimo įrankis, patikra pagal User-Agent ir pats failas. Nusiųskite tai savo programuotojui arba SEO specialistui."
 }

@@ -130,5 +130,7 @@
   "ui.agents.showAll": "Arată toți roboții",
   "ui.agents.showFewer": "Arată mai puțini roboți",
   "sales.nav.monitoring": "Monitorizare",
-  "sales.nav.account": "Cont gratuit"
+  "sales.nav.account": "Cont gratuit",
+  "page.forEditors.title": "Pentru cine editează fișierul",
+  "page.forEditors.body": "Numerele de linie, testerul de căi, verificarea după User-Agent și fișierul în sine. Trimiteți acestea dezvoltatorului sau specialistului SEO."
 }

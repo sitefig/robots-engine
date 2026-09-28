@@ -966,7 +966,7 @@
   "ui.plain.setup.some": "Anyone reading it learns {what}",
   "ui.plain.setup.none": "Nothing a stranger could use",
   "ui.agents.onlyProblems": "Small screen: only the crawlers that are shut out are listed.",
-  "ui.ai.onlyProblems": "Small screen: only the AI agents that are not blocked are listed.",
+  "ui.ai.onlyProblems": "Small screen: only the AI agents that are blocked are listed.",
   "ui.ai.showAll": "Show all AI agents",
   "ui.ai.showFewer": "Show fewer AI agents",
   "ui.plain.setup.platform": "what you are built on ({name})",
@@ -987,5 +987,7 @@
     "other": "{n} names, addresses or ticket numbers left in comments"
   },
   "sales.nav.monitoring": "Monitoring",
-  "sales.nav.account": "Free account"
+  "sales.nav.account": "Free account",
+  "page.forEditors.title": "For whoever edits the file",
+  "page.forEditors.body": "Line numbers, the path tester, the user-agent check and the file itself. Send this to your developer or SEO."
 }

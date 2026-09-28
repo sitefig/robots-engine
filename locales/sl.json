@@ -131,5 +131,7 @@
   "ui.agents.showAll": "Pokaži vse pajke",
   "ui.agents.showFewer": "Pokaži manj pajkov",
   "sales.nav.monitoring": "Spremljanje",
-  "sales.nav.account": "Brezplačen račun"
+  "sales.nav.account": "Brezplačen račun",
+  "page.forEditors.title": "Za tistega, ki ureja datoteko",
+  "page.forEditors.body": "Številke vrstic, preizkus poti, preverjanje po User-Agentu in sama datoteka. Pošljite to svojemu razvijalcu ali strokovnjaku za SEO."
 }

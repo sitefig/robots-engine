@@ -132,5 +132,7 @@
   "ui.agents.showAll": "Uri l-crawlers kollha",
   "ui.agents.showFewer": "Uri inqas crawlers",
   "sales.nav.monitoring": "Monitoraġġ",
-  "sales.nav.account": "Kont bla ħlas"
+  "sales.nav.account": "Kont bla ħlas",
+  "page.forEditors.title": "Għal min jeditja l-fajl",
+  "page.forEditors.body": "Numri tal-linji, it-tester tal-mogħdijiet, il-verifika bil-User-Agent u l-fajl innifsu. Ibgħat dan lill-iżviluppatur jew lill-espert SEO tiegħek."
 }

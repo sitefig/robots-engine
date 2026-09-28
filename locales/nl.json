@@ -942,7 +942,7 @@
   "ui.plain.setup.some": "Wie het leest, ziet {what}",
   "ui.plain.setup.none": "Niets waar een vreemde iets mee kan",
   "ui.agents.onlyProblems": "Klein scherm: alleen de buitengesloten crawlers staan in de lijst.",
-  "ui.ai.onlyProblems": "Klein scherm: alleen de AI-agents die niet geblokkeerd zijn staan in de lijst.",
+  "ui.ai.onlyProblems": "Klein scherm: alleen de geblokkeerde AI-agents staan in de lijst.",
   "ui.ai.showAll": "Alle AI-agents tonen",
   "ui.ai.showFewer": "Minder AI-agents tonen",
   "ui.plain.setup.platform": "waarop je site draait ({name})",
@@ -963,5 +963,7 @@
     "other": "{n} namen, adressen of ticketnummers in opmerkingen"
   },
   "sales.nav.monitoring": "Monitoring",
-  "sales.nav.account": "Gratis account"
+  "sales.nav.account": "Gratis account",
+  "page.forEditors.title": "Voor wie het bestand aanpast",
+  "page.forEditors.body": "Regelnummers, de padtester, de user-agentcontrole en het bestand zelf. Stuur dit naar je ontwikkelaar of SEO."
 }

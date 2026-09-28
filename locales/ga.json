@@ -132,5 +132,7 @@
   "ui.agents.showAll": "Taispeáin gach crawler",
   "ui.agents.showFewer": "Taispeáin níos lú crawlers",
   "sales.nav.monitoring": "Monatóireacht",
-  "sales.nav.account": "Cuntas saor in aisce"
+  "sales.nav.account": "Cuntas saor in aisce",
+  "page.forEditors.title": "Don duine a dhéanann an comhad a eagrú",
+  "page.forEditors.body": "Uimhreacha líne, an tástálaí cosáin, an seiceáil User-Agent agus an comhad féin. Seol é seo chuig do fhorbróir nó do shaineolaí SEO."
 }

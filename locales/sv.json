@@ -129,5 +129,7 @@
   "ui.agents.showAll": "Visa alla crawlers",
   "ui.agents.showFewer": "Visa färre crawlers",
   "sales.nav.monitoring": "Bevakning",
-  "sales.nav.account": "Gratiskonto"
+  "sales.nav.account": "Gratiskonto",
+  "page.forEditors.title": "Till den som redigerar filen",
+  "page.forEditors.body": "Radnummer, sökvägstestet, User-Agent-kontrollen och själva filen. Skicka det här till din utvecklare eller SEO."
 }

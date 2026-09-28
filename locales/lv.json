@@ -130,5 +130,7 @@
   "ui.agents.showAll": "Rādīt visus rāpuļus",
   "ui.agents.showFewer": "Rādīt mazāk rāpuļu",
   "sales.nav.monitoring": "Uzraudzība",
-  "sales.nav.account": "Bezmaksas konts"
+  "sales.nav.account": "Bezmaksas konts",
+  "page.forEditors.title": "Tam, kas rediģē failu",
+  "page.forEditors.body": "Rindu numuri, ceļu pārbaudes rīks, pārbaude pēc User-Agent un pats fails. Nosūtiet to savam izstrādātājam vai SEO speciālistam."
 }

@@ -3598,8 +3598,8 @@ msgid "Small screen: only the crawlers that are shut out are listed."
 msgstr "Schermo piccolo: sono elencati solo i crawler esclusi."
 
 msgctxt "ui.ai.onlyProblems"
-msgid "Small screen: only the AI agents that are not blocked are listed."
-msgstr "Schermo piccolo: sono elencati solo gli agenti IA non bloccati."
+msgid "Small screen: only the AI agents that are blocked are listed."
+msgstr "Schermo piccolo: sono elencati solo gli agenti IA bloccati."
 
 msgctxt "ui.ai.showAll"
 msgid "Show all AI agents"
@@ -3648,3 +3648,11 @@ msgstr "Monitoraggio"
 msgctxt "sales.nav.account"
 msgid "Free account"
 msgstr "Account gratuito"
+
+msgctxt "page.forEditors.title"
+msgid "For whoever edits the file"
+msgstr "Per chi modifica il file"
+
+msgctxt "page.forEditors.body"
+msgid "Line numbers, the path tester, the user-agent check and the file itself. Send this to your developer or SEO."
+msgstr "Numeri di riga, il tester dei percorsi, il controllo per User-Agent e il file stesso. Invia questo al tuo sviluppatore o al tuo SEO."

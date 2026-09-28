@@ -130,5 +130,7 @@
   "ui.agents.showAll": "Prikaži sve crawlere",
   "ui.agents.showFewer": "Prikaži manje crawlera",
   "sales.nav.monitoring": "Nadzor",
-  "sales.nav.account": "Besplatan račun"
+  "sales.nav.account": "Besplatan račun",
+  "page.forEditors.title": "Za osobu koja uređuje datoteku",
+  "page.forEditors.body": "Brojevi redaka, alat za provjeru putanja, provjera po User-Agentu i sama datoteka. Pošaljite to svom programeru ili SEO stručnjaku."
 }

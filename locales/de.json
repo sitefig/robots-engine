@@ -942,7 +942,7 @@
   "ui.plain.setup.some": "Wer sie liest, erfährt {what}",
   "ui.plain.setup.none": "Nichts, was ein Fremder nutzen könnte",
   "ui.agents.onlyProblems": "Kleiner Bildschirm: aufgeführt sind nur die Crawler, die ausgesperrt sind.",
-  "ui.ai.onlyProblems": "Kleiner Bildschirm: aufgeführt sind nur die KI-Agenten, die nicht blockiert sind.",
+  "ui.ai.onlyProblems": "Kleiner Bildschirm: aufgeführt sind nur die KI-Agenten, die blockiert sind.",
   "ui.ai.showAll": "Alle KI-Agenten anzeigen",
   "ui.ai.showFewer": "Weniger KI-Agenten anzeigen",
   "ui.plain.setup.platform": "worauf Ihre Website läuft ({name})",
@@ -963,5 +963,7 @@
     "other": "{n} Namen, Adressen oder Ticketnummern in Kommentaren"
   },
   "sales.nav.monitoring": "Überwachung",
-  "sales.nav.account": "Kostenloses Konto"
+  "sales.nav.account": "Kostenloses Konto",
+  "page.forEditors.title": "Für die Person, die die Datei bearbeitet",
+  "page.forEditors.body": "Zeilennummern, der Pfad-Test, die User-Agent-Prüfung und die Datei selbst. Schicken Sie das Ihrem Entwickler oder SEO."
 }

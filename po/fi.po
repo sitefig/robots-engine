@@ -3567,7 +3567,7 @@ msgid "Small screen: only the crawlers that are shut out are listed."
 msgstr ""
 
 msgctxt "ui.ai.onlyProblems"
-msgid "Small screen: only the AI agents that are not blocked are listed."
+msgid "Small screen: only the AI agents that are blocked are listed."
 msgstr ""
 
 msgctxt "ui.ai.showAll"
@@ -3613,3 +3613,11 @@ msgstr "Seuranta"
 msgctxt "sales.nav.account"
 msgid "Free account"
 msgstr "Ilmainen tili"
+
+msgctxt "page.forEditors.title"
+msgid "For whoever edits the file"
+msgstr "Sille, joka muokkaa tiedostoa"
+
+msgctxt "page.forEditors.body"
+msgid "Line numbers, the path tester, the user-agent check and the file itself. Send this to your developer or SEO."
+msgstr "Rivinumerot, polkujen testaus, User-Agent-tarkistus ja tiedosto itse. Lähetä tämä kehittäjällesi tai SEO-vastaavalle."

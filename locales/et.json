@@ -129,5 +129,7 @@
   "ui.agents.showAll": "Näita kõiki roboteid",
   "ui.agents.showFewer": "Näita vähem roboteid",
   "sales.nav.monitoring": "Jälgimine",
-  "sales.nav.account": "Tasuta konto"
+  "sales.nav.account": "Tasuta konto",
+  "page.forEditors.title": "Sellele, kes faili muudab",
+  "page.forEditors.body": "Reanumbrid, teede testija, User-Agenti kontroll ja fail ise. Saada see oma arendajale või SEO-inimesele."
 }

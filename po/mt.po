@@ -3660,7 +3660,7 @@ msgid "Small screen: only the crawlers that are shut out are listed."
 msgstr ""
 
 msgctxt "ui.ai.onlyProblems"
-msgid "Small screen: only the AI agents that are not blocked are listed."
+msgid "Small screen: only the AI agents that are blocked are listed."
 msgstr ""
 
 msgctxt "ui.ai.showAll"
@@ -3718,3 +3718,11 @@ msgstr "Monitoraġġ"
 msgctxt "sales.nav.account"
 msgid "Free account"
 msgstr "Kont bla ħlas"
+
+msgctxt "page.forEditors.title"
+msgid "For whoever edits the file"
+msgstr "Għal min jeditja l-fajl"
+
+msgctxt "page.forEditors.body"
+msgid "Line numbers, the path tester, the user-agent check and the file itself. Send this to your developer or SEO."
+msgstr "Numri tal-linji, it-tester tal-mogħdijiet, il-verifika bil-User-Agent u l-fajl innifsu. Ibgħat dan lill-iżviluppatur jew lill-espert SEO tiegħek."

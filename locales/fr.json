@@ -972,7 +972,7 @@
   "ui.plain.setup.some": "Quiconque le lit apprend {what}",
   "ui.plain.setup.none": "Rien qu'un inconnu puisse utiliser",
   "ui.agents.onlyProblems": "Petit écran : seuls les robots exclus sont listés.",
-  "ui.ai.onlyProblems": "Petit écran : seuls les agents d'IA non bloqués sont listés.",
+  "ui.ai.onlyProblems": "Petit écran : seuls les agents d'IA bloqués sont listés.",
   "ui.ai.showAll": "Afficher tous les agents d'IA",
   "ui.ai.showFewer": "Afficher moins d'agents d'IA",
   "ui.plain.setup.platform": "sur quoi votre site tourne ({name})",
@@ -997,5 +997,7 @@
     "other": "{n} noms, adresses ou numéros de ticket laissés dans des commentaires"
   },
   "sales.nav.monitoring": "Surveillance",
-  "sales.nav.account": "Compte gratuit"
+  "sales.nav.account": "Compte gratuit",
+  "page.forEditors.title": "Pour la personne qui modifie le fichier",
+  "page.forEditors.body": "Les numéros de ligne, le testeur de chemin, la vérification par User-Agent et le fichier lui-même. Envoyez cela à votre développeur ou à votre référenceur."
 }

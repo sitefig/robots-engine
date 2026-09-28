@@ -130,5 +130,7 @@
   "ui.agents.showAll": "Mostrar todos os rastreadores",
   "ui.agents.showFewer": "Mostrar menos rastreadores",
   "sales.nav.monitoring": "Monitorização",
-  "sales.nav.account": "Conta gratuita"
+  "sales.nav.account": "Conta gratuita",
+  "page.forEditors.title": "Para quem edita o ficheiro",
+  "page.forEditors.body": "Números de linha, o testador de caminhos, a verificação por User-Agent e o próprio ficheiro. Envie isto ao seu programador ou ao seu SEO."
 }

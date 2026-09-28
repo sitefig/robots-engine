@@ -129,5 +129,7 @@
   "ui.agents.showAll": "Покажи всички роботи",
   "ui.agents.showFewer": "Покажи по-малко роботи",
   "sales.nav.monitoring": "Наблюдение",
-  "sales.nav.account": "Безплатен акаунт"
+  "sales.nav.account": "Безплатен акаунт",
+  "page.forEditors.title": "За човека, който редактира файла",
+  "page.forEditors.body": "Номера на редове, тестът на пътища, проверката по User-Agent и самият файл. Изпратете това на вашия разработчик или SEO специалист."
 }

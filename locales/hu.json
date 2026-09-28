@@ -129,5 +129,7 @@
   "ui.agents.showAll": "Összes robot megjelenítése",
   "ui.agents.showFewer": "Kevesebb robot megjelenítése",
   "sales.nav.monitoring": "Figyelés",
-  "sales.nav.account": "Ingyenes fiók"
+  "sales.nav.account": "Ingyenes fiók",
+  "page.forEditors.title": "Annak, aki a fájlt szerkeszti",
+  "page.forEditors.body": "Sorszámok, az útvonal-tesztelő, a User-Agent szerinti ellenőrzés és maga a fájl. Küldje el ezt a fejlesztőjének vagy SEO-szakértőjének."
 }

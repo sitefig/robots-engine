@@ -131,5 +131,7 @@
   "ui.agents.showAll": "Pokaż wszystkie roboty",
   "ui.agents.showFewer": "Pokaż mniej robotów",
   "sales.nav.monitoring": "Monitorowanie",
-  "sales.nav.account": "Darmowe konto"
+  "sales.nav.account": "Darmowe konto",
+  "page.forEditors.title": "Dla osoby, która edytuje plik",
+  "page.forEditors.body": "Numery wierszy, tester ścieżek, sprawdzenie według User-Agent i sam plik. Wyślij to swojemu programiście lub specjaliście SEO."
 }

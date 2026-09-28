@@ -129,5 +129,7 @@
   "ui.agents.showAll": "Εμφάνιση όλων των crawler",
   "ui.agents.showFewer": "Εμφάνιση λιγότερων crawler",
   "sales.nav.monitoring": "Παρακολούθηση",
-  "sales.nav.account": "Δωρεάν λογαριασμός"
+  "sales.nav.account": "Δωρεάν λογαριασμός",
+  "page.forEditors.title": "Για όποιον επεξεργάζεται το αρχείο",
+  "page.forEditors.body": "Αριθμοί γραμμών, ο ελεγκτής διαδρομών, ο έλεγχος με User-Agent και το αρχείο. Στείλτε τα στον προγραμματιστή ή στον SEO σας."
 }

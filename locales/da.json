@@ -129,5 +129,7 @@
   "ui.agents.showAll": "Vis alle crawlere",
   "ui.agents.showFewer": "Vis færre crawlere",
   "sales.nav.monitoring": "Overvågning",
-  "sales.nav.account": "Gratis konto"
+  "sales.nav.account": "Gratis konto",
+  "page.forEditors.title": "Til den, der redigerer filen",
+  "page.forEditors.body": "Linjenumre, stitesteren, User-Agent-tjekket og selve filen. Send dette til din udvikler eller SEO."
 }

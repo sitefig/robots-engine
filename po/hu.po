@@ -3567,7 +3567,7 @@ msgid "Small screen: only the crawlers that are shut out are listed."
 msgstr ""
 
 msgctxt "ui.ai.onlyProblems"
-msgid "Small screen: only the AI agents that are not blocked are listed."
+msgid "Small screen: only the AI agents that are blocked are listed."
 msgstr ""
 
 msgctxt "ui.ai.showAll"
@@ -3613,3 +3613,11 @@ msgstr "Figyelés"
 msgctxt "sales.nav.account"
 msgid "Free account"
 msgstr "Ingyenes fiók"
+
+msgctxt "page.forEditors.title"
+msgid "For whoever edits the file"
+msgstr "Annak, aki a fájlt szerkeszti"
+
+msgctxt "page.forEditors.body"
+msgid "Line numbers, the path tester, the user-agent check and the file itself. Send this to your developer or SEO."
+msgstr "Sorszámok, az útvonal-tesztelő, a User-Agent szerinti ellenőrzés és maga a fájl. Küldje el ezt a fejlesztőjének vagy SEO-szakértőjének."

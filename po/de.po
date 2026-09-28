@@ -3567,8 +3567,8 @@ msgid "Small screen: only the crawlers that are shut out are listed."
 msgstr "Kleiner Bildschirm: aufgeführt sind nur die Crawler, die ausgesperrt sind."
 
 msgctxt "ui.ai.onlyProblems"
-msgid "Small screen: only the AI agents that are not blocked are listed."
-msgstr "Kleiner Bildschirm: aufgeführt sind nur die KI-Agenten, die nicht blockiert sind."
+msgid "Small screen: only the AI agents that are blocked are listed."
+msgstr "Kleiner Bildschirm: aufgeführt sind nur die KI-Agenten, die blockiert sind."
 
 msgctxt "ui.ai.showAll"
 msgid "Show all AI agents"
@@ -3613,3 +3613,11 @@ msgstr "Überwachung"
 msgctxt "sales.nav.account"
 msgid "Free account"
 msgstr "Kostenloses Konto"
+
+msgctxt "page.forEditors.title"
+msgid "For whoever edits the file"
+msgstr "Für die Person, die die Datei bearbeitet"
+
+msgctxt "page.forEditors.body"
+msgid "Line numbers, the path tester, the user-agent check and the file itself. Send this to your developer or SEO."
+msgstr "Zeilennummern, der Pfad-Test, die User-Agent-Prüfung und die Datei selbst. Schicken Sie das Ihrem Entwickler oder SEO."

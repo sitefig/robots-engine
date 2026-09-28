@@ -131,5 +131,7 @@
   "ui.agents.showAll": "Zobrazit všechny roboty",
   "ui.agents.showFewer": "Zobrazit méně robotů",
   "sales.nav.monitoring": "Monitorování",
-  "sales.nav.account": "Bezplatný účet"
+  "sales.nav.account": "Bezplatný účet",
+  "page.forEditors.title": "Pro toho, kdo soubor upravuje",
+  "page.forEditors.body": "Čísla řádků, test cest, kontrola podle User-Agent a samotný soubor. Pošlete to svému vývojáři nebo SEO specialistovi."
 }
