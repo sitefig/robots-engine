@@ -43,7 +43,7 @@ fn kitchen_sink_report_validates_against_the_schema() {
     assert_eq!(r.summary.platform.as_deref(), Some("WordPress"));
     assert!(r.summary.issues.errors > 0 && r.summary.issues.warnings > 0);
     assert!(r.rules.len() > 50);
-    assert!(r.rules.iter().find(|x| x.path == "/shop").unwrap().notes.iter().any(|n| n.starts_with("Trailing slash trap")));
+    assert!(r.rules.iter().find(|x| x.path == "/shop").unwrap().notes.iter().any(|n| n.starts_with("URLs such as /shops")));
     assert!(r.issues.iter().any(|i| i.kind == susbot_core::model::WarningKind::SeoTrap) && r.issues.iter().any(|i| i.kind == susbot_core::model::WarningKind::Sitemap) && r.issues.iter().any(|i| i.kind == susbot_core::model::WarningKind::Fetch));
     assert!(r.issues.iter().all(|i| i.id.contains('.') && i.message != i.id));
     assert_eq!(susbot_core::report::report_host(r).as_deref(), Some("www.example.com"));
@@ -81,7 +81,7 @@ fn csv_tabs_and_tsv() {
             assert_eq!(row.len(), t.header.len(), "{name} row width");
         }
     }
-    assert_eq!(tabs.rules.header, ["User-agents", "Group", "Rule type", "Path", "Line", "Notes"]);
+    assert_eq!(tabs.rules.header, ["Crawlers", "Group", "Rule type", "Path", "Line", "Notes"]);
     assert_eq!(tabs.sitemaps.rows[0][0], "robots.txt");
     assert_eq!(tabs.sitemaps.rows[0][3], "HTTP 200");
     assert!(tabs.sitemaps.rows[0][5].contains("301"));
@@ -92,7 +92,7 @@ fn csv_tabs_and_tsv() {
     }
     let csv = a.csv_tabs();
     assert_eq!(csv.iter().map(|(k, _)| k.as_str()).collect::<Vec<_>>(), ["rules", "sitemaps", "issues", "recon"]);
-    assert!(csv[0].1.starts_with("User-agents,Group,Rule type,Path,Line,Notes\r\n"));
+    assert!(csv[0].1.starts_with("Crawlers,Group,Rule type,Path,Line,Notes\r\n"));
     assert!(a.tagged_csv().starts_with("Sheet,Item,Type,Value,Line,Status,Notes\r\n"));
     assert!(a.tsv("issues").unwrap().starts_with("Level\tKind\tLine\tMessage\n"));
     assert!(a.tsv("all").unwrap().starts_with("Sheet\tItem\t"));
@@ -113,7 +113,7 @@ fn markdown_audit_and_actions() {
     }
     assert!(md.contains("**Platform detected:** WordPress"));
     assert!(md.contains("| GPTBot | AI training / LLMs | Blocked |"));
-    assert!(md.contains("Trailing slash trap"));
+    assert!(md.contains("is a prefix and matches every URL that starts with it"));
     assert!(md.contains("`Disallow: /.env`"));
     assert!(md.contains("Cloud storage and CDNs"));
     assert!(md.contains("1. "));

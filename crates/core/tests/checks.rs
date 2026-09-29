@@ -21,7 +21,7 @@ fn trailing_slash_trap() {
     assert_eq!(w.iter().map(|x| x.line.unwrap()).collect::<Vec<_>>(), [2, 9]);
     assert!(w[0].message.contains("/shops, /shop-old and /shop2"));
     assert!(w[0].message.contains("\"/shop/\""));
-    assert!(w[1].message.contains("also allows"));
+    assert!(w[1].message.contains("are open too"));
     assert_eq!(w[0].id, "seo.trailingSlash");
 }
 
@@ -34,7 +34,7 @@ fn self_block_and_case() {
     assert_eq!(only(self_blocks, &["Disallow: /admin", "Allow: /robots.txt"]).len(), 0);
     let w = only(case_notes, &["Disallow: /Admin/", "Disallow: /admin/", "Allow: /Files/PDF"]);
     assert_eq!(w.iter().map(|x| x.line.unwrap()).collect::<Vec<_>>(), [2, 4]);
-    assert!(w[0].message.contains("\"/admin/\""));
+    assert!(w[0].message.starts_with("/admin/ is blocked for every crawler, by \"Disallow: /admin/\" on line 3. This line covers only URLs written exactly as \"/Admin/\""), "{}", w[0].message);
 }
 
 #[test]
@@ -112,7 +112,7 @@ fn absolute_urls_and_run_checks() {
     let e = engine();
     let m = model("User-agent: *\nDisallow: /shop\nSitemap: http://example.com/s.xml");
     let w = run_checks(&m, Some("https://example.com/robots.txt"), &e, &en());
-    assert!(w.iter().any(|x| x.id == "seo.trailingSlash" && x.message.starts_with("Trailing slash trap")));
+    assert!(w.iter().any(|x| x.id == "seo.trailingSlash" && x.message.starts_with("URLs such as /shops")));
     assert!(w.iter().any(|x| x.id == "sitemap.protocolMismatch"));
     assert!(run_checks(&model("User-agent: *\nDisallow: /a/\nSitemap: http://other.com/s.xml"), None, &e, &en()).is_empty());
 }

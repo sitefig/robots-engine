@@ -154,7 +154,7 @@ mod tests {
     #[test]
     fn english_and_placeholders() {
         let en = Locale::english();
-        assert_eq!(en.t("parser.unknownDirective", &params! {"field" => "foo"}), "Unknown directive \"foo\" is ignored.");
+        assert_eq!(en.t("parser.unknownDirective", &params! {"field" => "foo"}), "Crawlers ignore this line, because \"foo\" is not a directive they know.");
         assert_eq!(en.s("nope-missing"), "nope-missing");
         assert_eq!(en.t("md.groups", &params! {"n" => 1}), "1 group");
         assert_eq!(en.t("md.groups", &params! {"n" => 2}), "2 groups");

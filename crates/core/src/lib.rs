@@ -21,6 +21,7 @@ pub mod export;
 pub mod fetch;
 pub mod i18n;
 pub mod model;
+pub mod outcome;
 pub mod parser;
 pub mod plural;
 pub mod recon;

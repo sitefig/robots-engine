@@ -10,6 +10,7 @@
 
 use crate::i18n::Locale;
 use crate::model::*;
+use crate::outcome::{self, Scope};
 use crate::params;
 use std::collections::HashMap;
 
@@ -134,15 +135,71 @@ fn clean_field(raw: &str) -> (String, FieldRepairs) {
     (s, r)
 }
 
+/// A finding that opens with what really happens to a path. While the file is
+/// still being read that cannot be said, because a later line can decide it,
+/// so the finding keeps its place in the list and gets its words at the end.
+struct Pending {
+    index: usize,
+    key: String,
+    params: Vec<(&'static str, String)>,
+    /// The path whose outcome opens the finding, or `None` for a finding
+    /// about the group itself, which waits for the group to be complete.
+    path: Option<String>,
+    /// Index of the group the line sits in; `None` before the first group.
+    group: Option<usize>,
+}
+
 pub struct Warner<'a> {
     pub locale: &'a Locale,
     pub kind: WarningKind,
     pub out: Vec<Warning>,
+    pending: Vec<Pending>,
 }
 
 impl<'a> Warner<'a> {
     pub fn new(locale: &'a Locale, kind: WarningKind) -> Self {
-        Warner { locale, kind, out: Vec::new() }
+        Warner { locale, kind, out: Vec::new(), pending: Vec::new() }
+    }
+    /// A finding whose wording is `id.variant` and whose `{outcome}` is what
+    /// happens to `path` for the crawlers of `group`, written by [`Warner::resolve`].
+    pub fn push_outcome(&mut self, level: Level, line: Option<u32>, id: &str, variant: &str, params: Vec<(&'static str, String)>, path: String, group: Option<usize>) {
+        let key = if variant.is_empty() { id.to_string() } else { format!("{id}.{variant}") };
+        self.pending.push(Pending { index: self.out.len(), key, params, path: Some(path), group });
+        self.out.push(Warning { level, kind: self.kind, id: id.to_string(), line, message: String::new() });
+    }
+    /// The same, when the whole file is already known.
+    pub fn push_outcome_now(&mut self, level: Level, line: Option<u32>, id: &str, variant: Option<&str>, mut params: Vec<(&'static str, String)>, groups: &[Group], scope: &Scope, path: &str) {
+        params.push(("outcome", outcome::sentence(self.locale, groups, scope, path)));
+        self.out.push(warning(self.locale, self.kind, level, line, id, &params, variant));
+    }
+    /// A finding about a User-agent line that names no crawler. What it does
+    /// to the rules under it depends on the other names in the group, which
+    /// are only known once the group is complete.
+    fn push_nameless(&mut self, level: Level, line: u32, id: &str, params: Vec<(&'static str, String)>, group: usize) {
+        self.pending.push(Pending { index: self.out.len(), key: id.to_string(), params, path: None, group: Some(group) });
+        self.out.push(Warning { level, kind: self.kind, id: id.to_string(), line: Some(line), message: String::new() });
+    }
+    /// Write the findings that were waiting for the last line of the file.
+    pub fn resolve(&mut self, groups: &[Group]) {
+        for mut p in std::mem::take(&mut self.pending) {
+            let group = p.group.and_then(|i| groups.get(i));
+            let message = match &p.path {
+                Some(path) => {
+                    p.params.push(("outcome", outcome::sentence(self.locale, groups, &outcome::scope_of(group), path)));
+                    self.locale.t(&p.key, &p.params)
+                }
+                None => match outcome::scope_of(group) {
+                    // The group names other crawlers, and its rules are theirs.
+                    Scope::Named { names, .. } => {
+                        p.params.push(("names", names.join(", ")));
+                        self.locale.t(&format!("{}.others", p.key), &p.params)
+                    }
+                    Scope::Default if group.is_some_and(|g| g.agents.iter().any(|a| a.token == "*")) => self.locale.t(&format!("{}.star", p.key), &p.params),
+                    Scope::Default => self.locale.t(&p.key, &p.params),
+                },
+            };
+            self.out[p.index].message = message;
+        }
     }
     pub fn push(&mut self, level: Level, line: Option<u32>, id: &str, params: &crate::i18n::Params) {
         self.out.push(warning(self.locale, self.kind, level, line, id, params, None));
@@ -269,8 +326,9 @@ fn body_checks(lines: &[&str], text: &str, w: &mut Warner) {
 }
 
 /// Directive names hidden in a comment because a line break is missing
-/// before them, so the rule is silently lost.
-fn glued_directive(comment_lower: &str) -> Option<&'static str> {
+/// before them, so the rule is silently lost. Returns the name and where its
+/// value starts in the comment.
+fn glued_directive(comment_lower: &str) -> Option<(&'static str, usize)> {
     const NAMES: [&str; 5] = ["user-agent:", "disallow:", "allow:", "sitemap:", "crawl-delay:"];
     for name in NAMES {
         let mut from = 0;
@@ -282,7 +340,7 @@ fn glued_directive(comment_lower: &str) -> Option<&'static str> {
                 // "disallow:" also ends with "allow:"; report it once, as disallow.
                 let is_dis_tail = name == "allow:" && comment_lower[..at].ends_with("dis");
                 if glued && !is_dis_tail {
-                    return Some(name);
+                    return Some((name, at + name.len()));
                 }
             }
             from = at + name.len();
@@ -362,8 +420,15 @@ pub fn parse(text: &str, locale: &Locale) -> Model {
         if let Some(h) = hash {
             let comment = &raw[h..];
             let comment_lower = comment.to_lowercase();
-            if let Some(directive) = glued_directive(&comment_lower) {
-                w.push(Level::Error, Some(n), "parser.gluedComment", &params! {"directive" => directive.trim_end_matches(':')});
+            if let Some((directive, at)) = glued_directive(&comment_lower) {
+                let name = directive.trim_end_matches(':');
+                // Lowercasing keeps ASCII offsets, and a rule value is where a path starts.
+                let value = comment.get(at..).and_then(|rest| rest.split_whitespace().next()).unwrap_or("");
+                if matches!(name, "allow" | "disallow") && (value.starts_with('/') || value.starts_with('*')) {
+                    w.push_outcome(Level::Error, Some(n), "parser.gluedComment", name, params! {"directive" => name}, outcome::sample_path(value), groups.len().checked_sub(1));
+                } else {
+                    w.push(Level::Error, Some(n), "parser.gluedComment", &params! {"directive" => name});
+                }
             } else if content.is_empty() {
                 if let Some(directive) = commented_rule(comment) {
                     w.push(Level::Info, Some(n), "lint.commentedRule", &params! {"directive" => directive.trim_end_matches(':')});
@@ -423,7 +488,14 @@ pub fn parse(text: &str, locale: &Locale) -> Model {
                 let before = raw[..h].chars().next_back().unwrap_or(' ');
                 if !before.is_whitespace() {
                     let full = format!("{}{}", value, raw[h..].trim_end());
-                    w.push(Level::Warning, Some(n), "parser.hashInValue", &params! {"value" => full, "truncated" => value});
+                    let p = params! {"value" => full, "truncated" => value};
+                    if field == Some("sitemap") {
+                        w.push_variant(Level::Warning, Some(n), "parser.hashInValue", &p, "sitemap");
+                    } else if groups.is_empty() {
+                        // The rule is ignored as a whole, which its own finding says.
+                    } else {
+                        w.push_outcome(Level::Warning, Some(n), "parser.hashInValue", "", p, outcome::sample_path(&value), groups.len().checked_sub(1));
+                    }
                 }
             }
         }
@@ -434,13 +506,14 @@ pub fn parse(text: &str, locale: &Locale) -> Model {
                     groups.push(Group { agents: Vec::new(), rules: Vec::new(), crawl_delay: None, start_line: n, end_line: n });
                     collecting_agents = true;
                 }
+                let index = groups.len() - 1;
                 let group = groups.last_mut().unwrap();
                 group.end_line = n;
                 let token = extract_token(&value);
                 if value.is_empty() {
-                    w.push(Level::Error, Some(n), "parser.emptyUserAgent", &[]);
+                    w.push_nameless(Level::Error, n, "parser.emptyUserAgent", Vec::new(), index);
                 } else if token.is_empty() {
-                    w.push(Level::Warning, Some(n), "parser.invalidToken", &params! {"value" => value});
+                    w.push_nameless(Level::Warning, n, "parser.invalidToken", params! {"value" => value}, index);
                 } else if token != "*" && token != value.to_lowercase() {
                     w.push(Level::Info, Some(n), "parser.tokenTail", &params! {"token" => token, "value" => value});
                 }
@@ -453,17 +526,22 @@ pub fn parse(text: &str, locale: &Locale) -> Model {
                 entry.kind = LineKind::Rule;
                 let rule_type = if f == "allow" { RuleType::Allow } else { RuleType::Disallow };
                 if groups.is_empty() {
-                    w.push(Level::Error, Some(n), "parser.ruleBeforeAgent", &params! {"directive" => rule_type.label()});
+                    if value.is_empty() {
+                        w.push(Level::Error, Some(n), "parser.ruleBeforeAgent", &params! {"directive" => rule_type.label()});
+                    } else {
+                        w.push_outcome(Level::Error, Some(n), "parser.ruleBeforeAgent", variant_of(rule_type), Vec::new(), outcome::sample_path(&value), None);
+                    }
                     lines.push(entry);
                     continue;
                 }
                 collecting_agents = false;
+                let index = groups.len() - 1;
                 let group = groups.last_mut().unwrap();
                 group.end_line = n;
                 if value.is_empty() {
                     w.push(Level::Info, Some(n), if rule_type == RuleType::Allow { "parser.emptyAllow" } else { "parser.emptyDisallow" }, &[]);
                 } else {
-                    rule_value_checks(&value, n, rule_type, &mut w);
+                    rule_value_checks(&value, n, rule_type, index, &mut w);
                 }
                 group.rules.push(Rule { rule_type, path: value, line: n });
             }
@@ -538,14 +616,24 @@ pub fn parse(text: &str, locale: &Locale) -> Model {
     }
 
     post_checks(&groups, &sitemaps, &mut w);
+    w.resolve(&groups);
 
     Model { groups, sitemaps, host, clean_params, lines, warnings: w.out, unknown, size: text.len() }
 }
 
-/// Findings about one Allow/Disallow value.
-fn rule_value_checks(value: &str, n: u32, rule_type: RuleType, w: &mut Warner) {
+/// The wording of a finding about a rule: what the line was meant to do.
+pub fn variant_of(rule_type: RuleType) -> &'static str {
+    match rule_type {
+        RuleType::Allow => "allow",
+        RuleType::Disallow => "disallow",
+    }
+}
+
+/// Findings about one Allow/Disallow value, in the group with this index.
+fn rule_value_checks(value: &str, n: u32, rule_type: RuleType, group: usize, w: &mut Warner) {
     if !value.starts_with('/') && !value.starts_with('*') && !is_absolute_url(value) {
-        w.push(Level::Warning, Some(n), "parser.pathNoSlash", &params! {"value" => value});
+        // The rule matches nothing as written, so the path it was meant for is judged without it.
+        w.push_outcome(Level::Warning, Some(n), "parser.pathNoSlash", variant_of(rule_type), params! {"value" => value}, outcome::sample_path(value), Some(group));
     }
     if rule_type == RuleType::Disallow && value.chars().all(|c| c == '*') {
         w.push(Level::Warning, Some(n), "parser.wildcardOnly", &params! {"value" => value});
@@ -653,7 +741,12 @@ fn post_checks(groups: &[Group], sitemaps: &[Sitemap], w: &mut Warner) {
     }
     for g in groups {
         if g.rules.is_empty() && g.crawl_delay.is_none() {
-            w.push(Level::Info, Some(g.start_line), "parser.emptyGroup", &[]);
+            // The same crawler can have rules in another group, and those still bind it.
+            if outcome::rules_for(groups, &outcome::scope_of(Some(g))).is_empty() {
+                w.push(Level::Info, Some(g.start_line), "parser.emptyGroup", &[]);
+            } else {
+                w.push_variant(Level::Info, Some(g.start_line), "parser.emptyGroup", &[], "merged");
+            }
         }
     }
     let mut seen: HashMap<&str, usize> = HashMap::new();

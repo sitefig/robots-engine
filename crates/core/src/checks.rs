@@ -6,10 +6,20 @@ use crate::analyser::{groups_for_token, path_matches, rule_len};
 use crate::config::Engine;
 use crate::i18n::Locale;
 use crate::model::*;
+use crate::outcome::{decide, sample_path, scope_of, Scope};
 use crate::params;
-use crate::parser::Warner;
+use crate::parser::{variant_of, Warner};
 use crate::url_util::{root_domain, strip_www};
 use url::Url;
+
+/// True when the file really does to `path` what `rule` says, for the crawlers
+/// the rule's group speaks to. Another rule can take it back: a longer Allow
+/// opens what a Disallow closed, and the other way round. A finding that names
+/// a consequence is only reported when the consequence is real.
+fn holds(model: &Model, group: &Group, rule: &Rule, path: &str) -> bool {
+    let (allowed, _) = decide(&model.groups, &scope_of(Some(group)), path);
+    allowed == (rule.rule_type == RuleType::Allow)
+}
 
 /// "Disallow: /shop" is a prefix, so it also hits /shopping and /shop-locator.
 /// A warning when the file itself shows the prefix has siblings (another rule
@@ -25,6 +35,10 @@ pub fn trailing_slash_traps(model: &Model, w: &mut Warner) {
             }
             let last = &p[p.rfind('/').map(|i| i + 1).unwrap_or(0)..];
             if last.is_empty() || last.contains('.') {
+                continue;
+            }
+            // The neighbours the message names have to be caught for real.
+            if !holds(model, group, rule, &format!("{p}-old")) {
                 continue;
             }
             let sibling = all.iter().any(|r| {
@@ -44,6 +58,16 @@ fn star_rules(model: &Model) -> Vec<&Rule> {
     model.groups.iter().filter(|g| g.agents.iter().any(|a| a.token == "*")).flat_map(|g| g.rules.iter()).filter(|r| r.rule_type == RuleType::Disallow && !r.path.is_empty()).collect()
 }
 
+/// True when a crawler without its own group really cannot fetch `path`.
+fn blocked_by_default(model: &Model, path: &str) -> bool {
+    !decide(&model.groups, &Scope::Default, path).0
+}
+
+/// A file a directory rule stands for: the directory with one file in it.
+fn file_in(dir: &str, name: &str) -> String {
+    format!("{}/{name}", dir.trim_end_matches('/'))
+}
+
 /// What the `*` group blocks for everyone: query strings, assets, images.
 /// Only the `*` group, because a rule aimed at one named crawler is a choice.
 pub fn broad_blocks(model: &Model, w: &mut Warner) {
@@ -53,19 +77,31 @@ pub fn broad_blocks(model: &Model, w: &mut Warner) {
     const IMAGE_FILES: [&str; 9] = [".jpg$", ".jpeg$", ".png$", ".gif$", ".webp$", "*.jpg", "*.png", "*.jpeg", "*.gif"];
     for rule in star_rules(model) {
         let p = rule.path.to_lowercase();
+        // Each of these names what is blocked, so each is checked against the
+        // whole group first: an Allow further down can have opened it again.
         if QUERY.contains(&p.as_str()) {
-            w.push(Level::Warning, Some(rule.line), "seo.queryStringBlock", &params! {"path" => rule.path});
+            if blocked_by_default(model, "/?page=2") {
+                w.push(Level::Warning, Some(rule.line), "seo.queryStringBlock", &params! {"path" => rule.path});
+            }
             continue;
         }
         if ASSET_DIRS.contains(&p.as_str()) {
-            w.push(Level::Warning, Some(rule.line), "seo.assetBlock", &params! {"path" => rule.path});
+            if blocked_by_default(model, &file_in(&rule.path, "app.js")) {
+                w.push(Level::Warning, Some(rule.line), "seo.assetBlock", &params! {"path" => rule.path});
+            }
             continue;
         }
         if p.ends_with(".css") || p.ends_with(".js") || p.ends_with(".css$") || p.ends_with(".js$") {
-            w.push(Level::Warning, Some(rule.line), "seo.cssJsBlock", &params! {"path" => rule.path});
+            if blocked_by_default(model, &sample_path(&rule.path)) {
+                w.push(Level::Warning, Some(rule.line), "seo.cssJsBlock", &params! {"path" => rule.path});
+            }
             continue;
         }
-        if IMAGE_DIRS.contains(&p.as_str()) || IMAGE_FILES.iter().any(|s| p.ends_with(s)) {
+        if IMAGE_DIRS.contains(&p.as_str()) {
+            if blocked_by_default(model, &file_in(&rule.path, "photo.jpg")) {
+                w.push(Level::Info, Some(rule.line), "seo.imageBlock", &params! {"path" => rule.path});
+            }
+        } else if IMAGE_FILES.iter().any(|s| p.ends_with(s)) && blocked_by_default(model, &sample_path(&rule.path)) {
             w.push(Level::Info, Some(rule.line), "seo.imageBlock", &params! {"path" => rule.path});
         }
     }
@@ -76,6 +112,10 @@ pub fn self_blocks(model: &Model, w: &mut Warner) {
     for group in &model.groups {
         for rule in &group.rules {
             if rule.rule_type != RuleType::Disallow || rule.path.is_empty() || whole_site(&rule.path) || !path_matches(&rule.path, "/robots.txt") {
+                continue;
+            }
+            // A longer Allow for /robots.txt takes the block back.
+            if !holds(model, group, rule, "/robots.txt") {
                 continue;
             }
             w.push(Level::Warning, Some(rule.line), "seo.selfBlock", &params! {"path" => rule.path});
@@ -90,7 +130,9 @@ pub fn case_notes(model: &Model, w: &mut Warner) {
             if !rule.path.chars().any(|c| c.is_ascii_uppercase()) {
                 continue;
             }
-            w.push(Level::Info, Some(rule.line), "seo.caseSensitive", &params! {"path" => rule.path, "lower" => rule.path.to_lowercase()});
+            // What the reader wants to know is what happens to the lowercase address.
+            let lower = rule.path.to_lowercase();
+            w.push_outcome_now(Level::Info, Some(rule.line), "seo.caseSensitive", None, params! {"path" => rule.path}, &model.groups, &scope_of(Some(group)), &sample_path(&lower));
         }
     }
 }
@@ -144,7 +186,7 @@ pub fn shadowed_rules(model: &Model, w: &mut Warner) {
             }
             let win = winner(candidates);
             let identical = win.rule_type == b.rule_type && win.path == b.path;
-            let p = params! {"rule" => b.label(), "winner" => win.label(), "line" => win.line, "scope" => scope};
+            let p = params! {"rule" => b.label(), "path" => b.path, "winner" => win.label(), "line" => win.line, "scope" => scope};
             if identical {
                 w.push(Level::Info, Some(b.line), "seo.duplicate", &p);
                 seen.push(b.line);
@@ -152,7 +194,8 @@ pub fn shadowed_rules(model: &Model, w: &mut Warner) {
                 w.push(Level::Info, Some(b.line), "seo.redundant", &p);
                 seen.push(b.line);
             } else if rule_len(win) > rule_len(b) || (rule_len(win) == rule_len(b) && win.rule_type == RuleType::Allow) {
-                w.push(Level::Warning, Some(b.line), "seo.overridden", &p);
+                // What stays open or stays blocked is the news, so the wording follows the rule that lost.
+                w.push_variant(Level::Warning, Some(b.line), "seo.overridden", &p, variant_of(b.rule_type));
                 seen.push(b.line);
             }
         }
@@ -264,7 +307,8 @@ pub fn absolute_rule_check(model: &Model, locale: &Locale) -> Vec<Warning> {
         if path_only.is_empty() {
             w.push(Level::Warning, Some(r.rule.line), "lint.absoluteUrl", &p);
         } else {
-            w.push_variant(Level::Warning, Some(r.rule.line), "lint.absoluteUrl", &p, "hint");
+            // The rule matches nothing as written, so the path it names is judged without it.
+            w.push_outcome_now(Level::Warning, Some(r.rule.line), "lint.absoluteUrl", Some(variant_of(r.rule.rule_type)), p, &model.groups, &scope_of(Some(r.group)), &sample_path(&path_only));
         }
     }
     w.out
