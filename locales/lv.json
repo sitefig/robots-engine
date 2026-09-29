@@ -1269,5 +1269,10 @@
   "ui.appendix.exports": "Eksporti",
   "ui.appendix.exportsWhat": "Audits Markdown formātā, saite uz šo pārbaudi un tas, ko papildus dod konts",
   "ui.appendix.served": "Kā fails tika piegādāts",
-  "ui.appendix.servedWhat": "No kurienes tas nāca, statuss, tips un izmērs"
+  "ui.appendix.servedWhat": "No kurienes tas nāca, statuss, tips un izmērs",
+  "ui.summary.restricted.titleSite": "Daļa vietnes {site} ir paslēpta",
+  "ui.summary.allBlocked.titleSite": "Visa vietne {site} ir slēgta meklētājprogrammām",
+  "ui.summary.open.titleSite": "Visa vietne {site} ir atvērta visiem",
+  "ui.summary.notFound.titleSite": "Vietnei {site} nav robots.txt faila vispār",
+  "ui.summary.serverError.titleSite": "Vietnes {site} serveris neizsniedz failu"
 }

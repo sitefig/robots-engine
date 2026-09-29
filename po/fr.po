@@ -4565,3 +4565,27 @@ msgstr "Comment le fichier a été servi"
 msgctxt "ui.appendix.servedWhat"
 msgid "Where it came from, the status, the type and the size"
 msgstr "D'où il vient, le statut, le type et la taille"
+
+msgctxt "ui.summary.restricted.titleSite"
+msgid "Parts of {site} are hidden"
+msgstr "Des parties de {site} sont cachées"
+
+msgctxt "ui.summary.allBlocked.titleSite"
+msgid "All of {site} is closed to search engines"
+msgstr "Tout {site} est fermé aux moteurs de recherche"
+
+msgctxt "ui.summary.open.titleSite"
+msgid "All of {site} is open to everyone"
+msgstr "Tout {site} est ouvert à tout le monde"
+
+msgctxt "ui.summary.notFound.titleSite"
+msgid "{site} has no robots.txt at all"
+msgstr "{site} n'a aucun robots.txt"
+
+msgctxt "ui.summary.serverError.titleSite"
+msgid "The server at {site} is not handing the file over"
+msgstr "Le serveur de {site} ne fournit pas le fichier"
+
+msgctxt "ui.compare.so.changedKnown"
+msgid "These files are fetched every day, so a change shows up the same day."
+msgstr "Ces fichiers sont récupérés chaque jour : un changement se voit le jour même."

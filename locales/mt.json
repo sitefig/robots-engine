@@ -1353,5 +1353,10 @@
   "ui.appendix.exports": "Esportazzjonijiet",
   "ui.appendix.exportsWhat": "L-awditu bħala Markdown, il-link għal din il-verifika, u x’iżid kont",
   "ui.appendix.served": "Kif ingħata l-fajl",
-  "ui.appendix.servedWhat": "Minn fejn ġie, l-istatus, it-tip u d-daqs"
+  "ui.appendix.servedWhat": "Minn fejn ġie, l-istatus, it-tip u d-daqs",
+  "ui.summary.restricted.titleSite": "Partijiet minn {site} huma moħbija",
+  "ui.summary.allBlocked.titleSite": "{site} kollu huwa magħluq għall-magni tat-tiftix",
+  "ui.summary.open.titleSite": "{site} kollu huwa miftuħ għal kulħadd",
+  "ui.summary.notFound.titleSite": "{site} m’għandu l-ebda robots.txt",
+  "ui.summary.serverError.titleSite": "Is-server ta’ {site} mhux qed jagħti l-fajl"
 }

@@ -4523,3 +4523,27 @@ msgstr "A fájl kiszolgálása"
 msgctxt "ui.appendix.servedWhat"
 msgid "Where it came from, the status, the type and the size"
 msgstr "Honnan érkezett, az állapot, a típus és a méret"
+
+msgctxt "ui.summary.restricted.titleSite"
+msgid "Parts of {site} are hidden"
+msgstr "A(z) {site} egyes részei rejtve vannak"
+
+msgctxt "ui.summary.allBlocked.titleSite"
+msgid "All of {site} is closed to search engines"
+msgstr "A(z) {site} teljesen zárva van a keresők előtt"
+
+msgctxt "ui.summary.open.titleSite"
+msgid "All of {site} is open to everyone"
+msgstr "A(z) {site} teljesen nyitva áll mindenki előtt"
+
+msgctxt "ui.summary.notFound.titleSite"
+msgid "{site} has no robots.txt at all"
+msgstr "A(z) {site} egyáltalán nem rendelkezik robots.txt fájllal"
+
+msgctxt "ui.summary.serverError.titleSite"
+msgid "The server at {site} is not handing the file over"
+msgstr "A(z) {site} szervere nem adja ki a fájlt"
+
+msgctxt "ui.compare.so.changedKnown"
+msgid "These files are fetched every day, so a change shows up the same day."
+msgstr ""

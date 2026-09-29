@@ -4523,3 +4523,27 @@ msgstr "Πώς αποστάλθηκε το αρχείο"
 msgctxt "ui.appendix.servedWhat"
 msgid "Where it came from, the status, the type and the size"
 msgstr "Από πού ήρθε, η κατάσταση, ο τύπος και το μέγεθος"
+
+msgctxt "ui.summary.restricted.titleSite"
+msgid "Parts of {site} are hidden"
+msgstr "Μέρη του {site} είναι κρυμμένα"
+
+msgctxt "ui.summary.allBlocked.titleSite"
+msgid "All of {site} is closed to search engines"
+msgstr "Ολόκληρο το {site} είναι κλειστό για τις μηχανές αναζήτησης"
+
+msgctxt "ui.summary.open.titleSite"
+msgid "All of {site} is open to everyone"
+msgstr "Ολόκληρο το {site} είναι ανοιχτό σε όλους"
+
+msgctxt "ui.summary.notFound.titleSite"
+msgid "{site} has no robots.txt at all"
+msgstr "Το {site} δεν έχει καθόλου robots.txt"
+
+msgctxt "ui.summary.serverError.titleSite"
+msgid "The server at {site} is not handing the file over"
+msgstr "Ο διακομιστής του {site} δεν παραδίδει το αρχείο"
+
+msgctxt "ui.compare.so.changedKnown"
+msgid "These files are fetched every day, so a change shows up the same day."
+msgstr ""

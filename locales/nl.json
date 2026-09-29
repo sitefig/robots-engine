@@ -1227,5 +1227,11 @@
   "ui.appendix.exports": "Exports",
   "ui.appendix.exportsWhat": "De audit als Markdown, de link naar deze controle, en wat een account toevoegt",
   "ui.appendix.served": "Hoe het bestand geleverd werd",
-  "ui.appendix.servedWhat": "Waar het vandaan kwam, de status, het type en de grootte"
+  "ui.appendix.servedWhat": "Waar het vandaan kwam, de status, het type en de grootte",
+  "ui.summary.restricted.titleSite": "Delen van {site} zijn verborgen",
+  "ui.summary.allBlocked.titleSite": "Heel {site} is gesloten voor zoekmachines",
+  "ui.summary.open.titleSite": "Heel {site} staat open voor iedereen",
+  "ui.summary.notFound.titleSite": "{site} heeft helemaal geen robots.txt",
+  "ui.summary.serverError.titleSite": "De server van {site} levert het bestand niet",
+  "ui.compare.so.changedKnown": "Deze bestanden worden elke dag opgehaald, dus een wijziging is dezelfde dag te zien."
 }

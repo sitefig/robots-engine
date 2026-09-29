@@ -4649,3 +4649,27 @@ msgstr "Conas a freastalaíodh an comhad"
 msgctxt "ui.appendix.servedWhat"
 msgid "Where it came from, the status, the type and the size"
 msgstr "Cá as ar tháinig sé, an stádas, an cineál agus an méid"
+
+msgctxt "ui.summary.restricted.titleSite"
+msgid "Parts of {site} are hidden"
+msgstr "Tá codanna de {site} i bhfolach"
+
+msgctxt "ui.summary.allBlocked.titleSite"
+msgid "All of {site} is closed to search engines"
+msgstr "Tá {site} ar fad dúnta d'innill chuardaigh"
+
+msgctxt "ui.summary.open.titleSite"
+msgid "All of {site} is open to everyone"
+msgstr "Tá {site} ar fad oscailte do chách"
+
+msgctxt "ui.summary.notFound.titleSite"
+msgid "{site} has no robots.txt at all"
+msgstr "Níl aon robots.txt ag {site}"
+
+msgctxt "ui.summary.serverError.titleSite"
+msgid "The server at {site} is not handing the file over"
+msgstr "Níl freastalaí {site} ag tabhairt an chomhaid uaidh"
+
+msgctxt "ui.compare.so.changedKnown"
+msgid "These files are fetched every day, so a change shows up the same day."
+msgstr ""

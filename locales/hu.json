@@ -1227,5 +1227,10 @@
   "ui.appendix.exports": "Exportok",
   "ui.appendix.exportsWhat": "Az audit Markdownban, az ellenőrzés linkje, és amit egy fiók hozzáad",
   "ui.appendix.served": "A fájl kiszolgálása",
-  "ui.appendix.servedWhat": "Honnan érkezett, az állapot, a típus és a méret"
+  "ui.appendix.servedWhat": "Honnan érkezett, az állapot, a típus és a méret",
+  "ui.summary.restricted.titleSite": "A(z) {site} egyes részei rejtve vannak",
+  "ui.summary.allBlocked.titleSite": "A(z) {site} teljesen zárva van a keresők előtt",
+  "ui.summary.open.titleSite": "A(z) {site} teljesen nyitva áll mindenki előtt",
+  "ui.summary.notFound.titleSite": "A(z) {site} egyáltalán nem rendelkezik robots.txt fájllal",
+  "ui.summary.serverError.titleSite": "A(z) {site} szervere nem adja ki a fájlt"
 }

@@ -1227,5 +1227,10 @@
   "ui.appendix.exports": "Eksporter",
   "ui.appendix.exportsWhat": "Gennemgangen som Markdown, linket til dette tjek, og hvad en konto giver ekstra",
   "ui.appendix.served": "Sådan blev filen leveret",
-  "ui.appendix.servedWhat": "Hvor den kom fra, status, type og størrelse"
+  "ui.appendix.servedWhat": "Hvor den kom fra, status, type og størrelse",
+  "ui.summary.restricted.titleSite": "Dele af {site} er skjult",
+  "ui.summary.allBlocked.titleSite": "Hele {site} er lukket for søgemaskiner",
+  "ui.summary.open.titleSite": "Hele {site} er åbent for alle",
+  "ui.summary.notFound.titleSite": "{site} har slet ingen robots.txt",
+  "ui.summary.serverError.titleSite": "Serveren på {site} udleverer ikke filen"
 }

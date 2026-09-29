@@ -4523,3 +4523,27 @@ msgstr "Hoe het bestand geleverd werd"
 msgctxt "ui.appendix.servedWhat"
 msgid "Where it came from, the status, the type and the size"
 msgstr "Waar het vandaan kwam, de status, het type en de grootte"
+
+msgctxt "ui.summary.restricted.titleSite"
+msgid "Parts of {site} are hidden"
+msgstr "Delen van {site} zijn verborgen"
+
+msgctxt "ui.summary.allBlocked.titleSite"
+msgid "All of {site} is closed to search engines"
+msgstr "Heel {site} is gesloten voor zoekmachines"
+
+msgctxt "ui.summary.open.titleSite"
+msgid "All of {site} is open to everyone"
+msgstr "Heel {site} staat open voor iedereen"
+
+msgctxt "ui.summary.notFound.titleSite"
+msgid "{site} has no robots.txt at all"
+msgstr "{site} heeft helemaal geen robots.txt"
+
+msgctxt "ui.summary.serverError.titleSite"
+msgid "The server at {site} is not handing the file over"
+msgstr "De server van {site} levert het bestand niet"
+
+msgctxt "ui.compare.so.changedKnown"
+msgid "These files are fetched every day, so a change shows up the same day."
+msgstr "Deze bestanden worden elke dag opgehaald, dus een wijziging is dezelfde dag te zien."

@@ -1269,5 +1269,10 @@
   "ui.appendix.exports": "Exportações",
   "ui.appendix.exportsWhat": "A auditoria em Markdown, a ligação para esta verificação e o que uma conta acrescenta",
   "ui.appendix.served": "Como o ficheiro foi servido",
-  "ui.appendix.servedWhat": "De onde veio, o estado, o tipo e o tamanho"
+  "ui.appendix.servedWhat": "De onde veio, o estado, o tipo e o tamanho",
+  "ui.summary.restricted.titleSite": "Há partes de {site} escondidas",
+  "ui.summary.allBlocked.titleSite": "Todo o {site} está fechado aos motores de pesquisa",
+  "ui.summary.open.titleSite": "Todo o {site} está aberto a todos",
+  "ui.summary.notFound.titleSite": "{site} não tem nenhum robots.txt",
+  "ui.summary.serverError.titleSite": "O servidor de {site} não está a entregar o ficheiro"
 }

@@ -1227,5 +1227,10 @@
   "ui.appendix.exports": "Εξαγωγές",
   "ui.appendix.exportsWhat": "Ο έλεγχος σε Markdown, ο σύνδεσμος προς αυτόν τον έλεγχο και τι προσθέτει ένας λογαριασμός",
   "ui.appendix.served": "Πώς αποστάλθηκε το αρχείο",
-  "ui.appendix.servedWhat": "Από πού ήρθε, η κατάσταση, ο τύπος και το μέγεθος"
+  "ui.appendix.servedWhat": "Από πού ήρθε, η κατάσταση, ο τύπος και το μέγεθος",
+  "ui.summary.restricted.titleSite": "Μέρη του {site} είναι κρυμμένα",
+  "ui.summary.allBlocked.titleSite": "Ολόκληρο το {site} είναι κλειστό για τις μηχανές αναζήτησης",
+  "ui.summary.open.titleSite": "Ολόκληρο το {site} είναι ανοιχτό σε όλους",
+  "ui.summary.notFound.titleSite": "Το {site} δεν έχει καθόλου robots.txt",
+  "ui.summary.serverError.titleSite": "Ο διακομιστής του {site} δεν παραδίδει το αρχείο"
 }

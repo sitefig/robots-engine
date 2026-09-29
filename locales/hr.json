@@ -1269,5 +1269,10 @@
   "ui.appendix.exports": "Izvozi",
   "ui.appendix.exportsWhat": "Audit kao Markdown, poveznica na ovu provjeru i što donosi račun",
   "ui.appendix.served": "Kako je datoteka poslužena",
-  "ui.appendix.servedWhat": "Odakle je došla, status, vrsta i veličina"
+  "ui.appendix.servedWhat": "Odakle je došla, status, vrsta i veličina",
+  "ui.summary.restricted.titleSite": "Dijelovi stranice {site} su skriveni",
+  "ui.summary.allBlocked.titleSite": "Cijela stranica {site} zatvorena je za tražilice",
+  "ui.summary.open.titleSite": "Cijela stranica {site} otvorena je svima",
+  "ui.summary.notFound.titleSite": "{site} uopće nema datoteku robots.txt",
+  "ui.summary.serverError.titleSite": "Poslužitelj stranice {site} ne isporučuje datoteku"
 }

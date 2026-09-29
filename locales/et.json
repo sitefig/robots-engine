@@ -1227,5 +1227,10 @@
   "ui.appendix.exports": "Ekspordid",
   "ui.appendix.exportsWhat": "Audit Markdownina, link sellele kontrollile ja see, mida konto juurde annab",
   "ui.appendix.served": "Kuidas faili edastati",
-  "ui.appendix.servedWhat": "Kust see tuli, olek, tüüp ja suurus"
+  "ui.appendix.servedWhat": "Kust see tuli, olek, tüüp ja suurus",
+  "ui.summary.restricted.titleSite": "Osa saidist {site} on peidetud",
+  "ui.summary.allBlocked.titleSite": "Kogu sait {site} on otsingumootoritele suletud",
+  "ui.summary.open.titleSite": "Kogu sait {site} on kõigile avatud",
+  "ui.summary.notFound.titleSite": "Saidil {site} pole üldse robots.txt-faili",
+  "ui.summary.serverError.titleSite": "Saidi {site} server ei anna faili välja"
 }

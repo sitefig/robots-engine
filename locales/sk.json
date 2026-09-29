@@ -1311,5 +1311,10 @@
   "ui.appendix.exports": "Exporty",
   "ui.appendix.exportsWhat": "Audit ako Markdown, odkaz na túto kontrolu a to, čo pridáva účet",
   "ui.appendix.served": "Ako bol súbor doručený",
-  "ui.appendix.servedWhat": "Odkiaľ prišiel, stav, typ a veľkosť"
+  "ui.appendix.servedWhat": "Odkiaľ prišiel, stav, typ a veľkosť",
+  "ui.summary.restricted.titleSite": "Časti webu {site} sú skryté",
+  "ui.summary.allBlocked.titleSite": "Celý web {site} je pre vyhľadávače zatvorený",
+  "ui.summary.open.titleSite": "Celý web {site} je otvorený pre všetkých",
+  "ui.summary.notFound.titleSite": "{site} nemá žiadny súbor robots.txt",
+  "ui.summary.serverError.titleSite": "Server {site} súbor nevydáva"
 }

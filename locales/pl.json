@@ -1311,5 +1311,10 @@
   "ui.appendix.exports": "Eksporty",
   "ui.appendix.exportsWhat": "Audyt w formacie Markdown, link do tego sprawdzenia i to, co dodaje konto",
   "ui.appendix.served": "Jak plik został zaserwowany",
-  "ui.appendix.servedWhat": "Skąd pochodzi, status, typ i rozmiar"
+  "ui.appendix.servedWhat": "Skąd pochodzi, status, typ i rozmiar",
+  "ui.summary.restricted.titleSite": "Części witryny {site} są ukryte",
+  "ui.summary.allBlocked.titleSite": "Cała witryna {site} jest zamknięta dla wyszukiwarek",
+  "ui.summary.open.titleSite": "Cała witryna {site} jest otwarta dla wszystkich",
+  "ui.summary.notFound.titleSite": "{site} w ogóle nie ma pliku robots.txt",
+  "ui.summary.serverError.titleSite": "Serwer {site} nie podaje pliku"
 }

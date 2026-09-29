@@ -1227,5 +1227,11 @@
   "ui.appendix.exports": "Exporte",
   "ui.appendix.exportsWhat": "Das Audit als Markdown, der Link zu dieser Prüfung, und was ein Konto hinzufügt",
   "ui.appendix.served": "Wie die Datei ausgeliefert wurde",
-  "ui.appendix.servedWhat": "Woher sie kam, der Status, der Typ und die Größe"
+  "ui.appendix.servedWhat": "Woher sie kam, der Status, der Typ und die Größe",
+  "ui.summary.restricted.titleSite": "Teile von {site} sind verborgen",
+  "ui.summary.allBlocked.titleSite": "{site} ist komplett für Suchmaschinen geschlossen",
+  "ui.summary.open.titleSite": "{site} steht komplett allen offen",
+  "ui.summary.notFound.titleSite": "{site} hat überhaupt keine robots.txt",
+  "ui.summary.serverError.titleSite": "Der Server von {site} gibt die Datei nicht heraus",
+  "ui.compare.so.changedKnown": "Diese Dateien werden jeden Tag geholt, eine Änderung ist also am selben Tag zu sehen."
 }

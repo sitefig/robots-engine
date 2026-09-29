@@ -1311,5 +1311,10 @@
   "ui.appendix.exports": "Izvozi",
   "ui.appendix.exportsWhat": "Pregled v obliki Markdown, povezava do tega preverjanja in kaj doda račun",
   "ui.appendix.served": "Kako je bila datoteka postrežena",
-  "ui.appendix.servedWhat": "Od kod je prišla, status, vrsta in velikost"
+  "ui.appendix.servedWhat": "Od kod je prišla, status, vrsta in velikost",
+  "ui.summary.restricted.titleSite": "Deli mesta {site} so skriti",
+  "ui.summary.allBlocked.titleSite": "Celotno mesto {site} je zaprto za iskalnike",
+  "ui.summary.open.titleSite": "Celotno mesto {site} je odprto vsem",
+  "ui.summary.notFound.titleSite": "{site} sploh nima datoteke robots.txt",
+  "ui.summary.serverError.titleSite": "Strežnik {site} datoteke ne postreže"
 }

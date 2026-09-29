@@ -1227,5 +1227,10 @@
   "ui.appendix.exports": "Exporter",
   "ui.appendix.exportsWhat": "Granskningen som Markdown, länken till den här kontrollen och vad ett konto lägger till",
   "ui.appendix.served": "Hur filen levererades",
-  "ui.appendix.servedWhat": "Var den kom ifrån, statusen, typen och storleken"
+  "ui.appendix.servedWhat": "Var den kom ifrån, statusen, typen och storleken",
+  "ui.summary.restricted.titleSite": "Delar av {site} är dolda",
+  "ui.summary.allBlocked.titleSite": "Hela {site} är stängd för sökmotorer",
+  "ui.summary.open.titleSite": "Hela {site} är öppen för alla",
+  "ui.summary.notFound.titleSite": "{site} har ingen robots.txt alls",
+  "ui.summary.serverError.titleSite": "Servern för {site} lämnar inte ut filen"
 }

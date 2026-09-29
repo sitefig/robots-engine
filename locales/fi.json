@@ -1227,5 +1227,10 @@
   "ui.appendix.exports": "Viennit",
   "ui.appendix.exportsWhat": "Tarkastus Markdown-muodossa, linkki tähän tarkistukseen ja se, mitä tili tuo lisää",
   "ui.appendix.served": "Miten tiedosto toimitettiin",
-  "ui.appendix.servedWhat": "Mistä se tuli sekä sen tila, tyyppi ja koko"
+  "ui.appendix.servedWhat": "Mistä se tuli sekä sen tila, tyyppi ja koko",
+  "ui.summary.restricted.titleSite": "Osa sivustosta {site} on piilotettu",
+  "ui.summary.allBlocked.titleSite": "Koko sivusto {site} on suljettu hakukoneilta",
+  "ui.summary.open.titleSite": "Koko sivusto {site} on avoinna kaikille",
+  "ui.summary.notFound.titleSite": "Sivustolla {site} ei ole robots.txt-tiedostoa lainkaan",
+  "ui.summary.serverError.titleSite": "Sivuston {site} palvelin ei toimita tiedostoa"
 }

@@ -1269,5 +1269,10 @@
   "ui.appendix.exports": "Exporturi",
   "ui.appendix.exportsWhat": "Auditul ca Markdown, linkul către această verificare și ce adaugă un cont",
   "ui.appendix.served": "Cum a fost servit fișierul",
-  "ui.appendix.servedWhat": "De unde a venit, statusul, tipul și dimensiunea"
+  "ui.appendix.servedWhat": "De unde a venit, statusul, tipul și dimensiunea",
+  "ui.summary.restricted.titleSite": "Unele părți ale {site} sunt ascunse",
+  "ui.summary.allBlocked.titleSite": "Întregul site {site} este închis pentru motoarele de căutare",
+  "ui.summary.open.titleSite": "Întregul site {site} este deschis tuturor",
+  "ui.summary.notFound.titleSite": "{site} nu are niciun robots.txt",
+  "ui.summary.serverError.titleSite": "Serverul {site} nu livrează fișierul"
 }

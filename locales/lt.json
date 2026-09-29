@@ -1311,5 +1311,10 @@
   "ui.appendix.exports": "Eksportas",
   "ui.appendix.exportsWhat": "Auditas Markdown formatu, nuoroda į šį patikrinimą ir ką prideda paskyra",
   "ui.appendix.served": "Kaip failas buvo pateiktas",
-  "ui.appendix.servedWhat": "Iš kur jis gautas, būsena, tipas ir dydis"
+  "ui.appendix.servedWhat": "Iš kur jis gautas, būsena, tipas ir dydis",
+  "ui.summary.restricted.titleSite": "Dalis svetainės {site} paslėpta",
+  "ui.summary.allBlocked.titleSite": "Visa svetainė {site} uždaryta paieškos sistemoms",
+  "ui.summary.open.titleSite": "Visa svetainė {site} atvira visiems",
+  "ui.summary.notFound.titleSite": "{site} visiškai neturi robots.txt failo",
+  "ui.summary.serverError.titleSite": "{site} serveris nepateikia failo"
 }
