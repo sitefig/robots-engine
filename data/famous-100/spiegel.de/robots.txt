@@ -35,6 +35,42 @@ Allow: /stil/
 Allow: /tests/
 Disallow: /
 
+# TLP-7042: Testweise Freischaltung Claude-Web fuer ausgewaehlte Bereiche
+User-agent: Claude-Web
+Allow: /ausland/
+Allow: /partnerschaft/
+Allow: /gesundheit/
+Allow: /familie/
+Allow: /reise/
+Allow: /psychologie/
+Allow: /stil/
+Allow: /tests/
+Disallow: /
+
+# TLP-7042: Testweise Freischaltung Claude-SearchBot fuer ausgewaehlte Bereiche
+User-agent: Claude-SearchBot
+Allow: /ausland/
+Allow: /partnerschaft/
+Allow: /gesundheit/
+Allow: /familie/
+Allow: /reise/
+Allow: /psychologie/
+Allow: /stil/
+Allow: /tests/
+Disallow: /
+
+# TLP-7042: Testweise Freischaltung Claude-User fuer ausgewaehlte Bereiche
+User-agent: Claude-User
+Allow: /ausland/
+Allow: /partnerschaft/
+Allow: /gesundheit/
+Allow: /familie/
+Allow: /reise/
+Allow: /psychologie/
+Allow: /stil/
+Allow: /tests/
+Disallow: /
+
 # ==========================================
 # KI-CRAWLER & KI-TRAINING (SPERRE)
 # ==========================================
@@ -42,13 +78,7 @@ User-agent: GPTBot
 Disallow: /
 User-agent: anthropic-ai
 Disallow: /
-User-agent: Claude-Web
-Disallow: /
 User-agent: ClaudeBot
-Disallow: /
-User-agent: Claude-SearchBot
-Disallow: /
-User-agent: Claude-User
 Disallow: /
 User-agent: CloudVertexBot
 Disallow: /

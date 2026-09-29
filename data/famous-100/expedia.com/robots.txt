@@ -61,6 +61,8 @@ disallow: /*/p/home
 disallow: /auth/
 disallow: /*/auth/
 disallow: /*/sso/
+# /cl/* endpoints removal test
+Disallow: /cl/*
 
 #
 # Ads
@@ -78,6 +80,8 @@ disallow: /trvl-px/
 disallow: /egcs/v2/collect
 disallow: /api/ucs/shortlist/
 disallow: /api/v4/typeahead/
+# /cl/* endpoints removal test
+Disallow: /cl/*
 
 #
 # SemrushBot
@@ -100,3 +104,5 @@ disallow: /*/p/home
 disallow: /auth/
 disallow: /*/auth/
 disallow: /*/sso/
+# /cl/* endpoints removal test
+Disallow: /cl/*
