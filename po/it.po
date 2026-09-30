@@ -4636,28 +4636,28 @@ msgstr "Ogni pagina è aperta a qualsiasi crawler senza regole proprie."
 
 msgctxt "ui.fixes.edit"
 msgid "Edit the message"
-msgstr ""
+msgstr "Modifica il messaggio"
 
 msgctxt "ui.fixes.save"
 msgid "Save"
-msgstr ""
+msgstr "Salva"
 
 msgctxt "ui.fixes.ignore"
 msgid "Ignore this"
-msgstr ""
+msgstr "Ignora"
 
 msgctxt "ui.fixes.editLabel"
 msgid "The message for IT, to edit"
-msgstr ""
+msgstr "Il messaggio per l'IT, da modificare"
 
 msgctxt "ui.fixes.account.title"
 msgid "Keeping this needs a free account"
-msgstr ""
+msgstr "Conservare questo richiede un account gratuito"
 
 msgctxt "ui.fixes.account.body"
 msgid "We are sometimes wrong, and your wording is often better than ours. An account remembers what you have dealt with, what you decided to ignore, and the message as you rewrote it. The report itself stays free and whole either way."
-msgstr ""
+msgstr "A volte sbagliamo, e le tue parole sono spesso migliori delle nostre. Un account ricorda cosa hai sistemato, cosa hai deciso di ignorare e il messaggio come lo hai riscritto. Il report resta gratis e completo in ogni caso."
 
 msgctxt "ui.fixes.account.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Crea un account gratuito"

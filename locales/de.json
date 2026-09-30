@@ -1244,5 +1244,12 @@
   "ui.tile.hidden.some": "{n} blockiert",
   "ui.tile.hidden.none": "Nichts blockiert",
   "ui.tile.hidden.detail": "{path} ist für jeden Crawler gesperrt, einer von {n} Pfaden, die diese Datei verbirgt.",
-  "ui.tile.hidden.detailNone": "Jede Seite ist offen für jeden Crawler, der keine eigenen Regeln hat."
+  "ui.tile.hidden.detailNone": "Jede Seite ist offen für jeden Crawler, der keine eigenen Regeln hat.",
+  "ui.fixes.edit": "Nachricht bearbeiten",
+  "ui.fixes.save": "Speichern",
+  "ui.fixes.ignore": "Das ignorieren",
+  "ui.fixes.editLabel": "Die Nachricht für die IT, zum Bearbeiten",
+  "ui.fixes.account.title": "Das zu behalten braucht ein kostenloses Konto",
+  "ui.fixes.account.body": "Wir liegen manchmal falsch, und Ihre Formulierung ist oft besser als unsere. Ein Konto merkt sich, was Sie erledigt haben, was Sie ignorieren wollten, und die Nachricht, wie Sie sie umgeschrieben haben. Der Bericht selbst bleibt in jedem Fall kostenlos und vollständig.",
+  "ui.fixes.account.cta": "Kostenloses Konto anlegen"
 }

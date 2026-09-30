@@ -1244,5 +1244,12 @@
   "ui.tile.hidden.some": "{n} geblokkeerd",
   "ui.tile.hidden.none": "Niets geblokkeerd",
   "ui.tile.hidden.detail": "{path} is dicht voor elke crawler, een van {n} paden die dit bestand verbergt.",
-  "ui.tile.hidden.detailNone": "Elke pagina is open voor elke crawler zonder eigen regels."
+  "ui.tile.hidden.detailNone": "Elke pagina is open voor elke crawler zonder eigen regels.",
+  "ui.fixes.edit": "Bericht aanpassen",
+  "ui.fixes.save": "Opslaan",
+  "ui.fixes.ignore": "Dit negeren",
+  "ui.fixes.editLabel": "Het bericht voor IT, om aan te passen",
+  "ui.fixes.account.title": "Dit bewaren vraagt een gratis account",
+  "ui.fixes.account.body": "Wij hebben het soms mis, en jouw formulering is vaak beter dan de onze. Een account onthoudt wat je hebt afgehandeld, wat je wilde negeren, en het bericht zoals jij het herschreef. Het rapport zelf blijft hoe dan ook gratis en volledig.",
+  "ui.fixes.account.cta": "Gratis account aanmaken"
 }

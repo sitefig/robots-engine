@@ -4636,28 +4636,28 @@ msgstr "Todas las páginas están abiertas a cualquier rastreador sin reglas pro
 
 msgctxt "ui.fixes.edit"
 msgid "Edit the message"
-msgstr ""
+msgstr "Editar el mensaje"
 
 msgctxt "ui.fixes.save"
 msgid "Save"
-msgstr ""
+msgstr "Guardar"
 
 msgctxt "ui.fixes.ignore"
 msgid "Ignore this"
-msgstr ""
+msgstr "Ignorar esto"
 
 msgctxt "ui.fixes.editLabel"
 msgid "The message for IT, to edit"
-msgstr ""
+msgstr "El mensaje para IT, para editar"
 
 msgctxt "ui.fixes.account.title"
 msgid "Keeping this needs a free account"
-msgstr ""
+msgstr "Guardar esto requiere una cuenta gratis"
 
 msgctxt "ui.fixes.account.body"
 msgid "We are sometimes wrong, and your wording is often better than ours. An account remembers what you have dealt with, what you decided to ignore, and the message as you rewrote it. The report itself stays free and whole either way."
-msgstr ""
+msgstr "A veces nos equivocamos, y tu redacción suele ser mejor que la nuestra. Una cuenta recuerda lo que ya has resuelto, lo que decidiste ignorar y el mensaje tal como lo reescribiste. El informe en sí sigue siendo gratis y completo en cualquier caso."
 
 msgctxt "ui.fixes.account.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Crear una cuenta gratis"

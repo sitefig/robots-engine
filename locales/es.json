@@ -1286,5 +1286,12 @@
   "ui.tile.hidden.some": "{n} bloqueadas",
   "ui.tile.hidden.none": "Nada bloqueado",
   "ui.tile.hidden.detail": "{path} está cerrada a todos los rastreadores, una de {n} rutas que este archivo oculta.",
-  "ui.tile.hidden.detailNone": "Todas las páginas están abiertas a cualquier rastreador sin reglas propias."
+  "ui.tile.hidden.detailNone": "Todas las páginas están abiertas a cualquier rastreador sin reglas propias.",
+  "ui.fixes.edit": "Editar el mensaje",
+  "ui.fixes.save": "Guardar",
+  "ui.fixes.ignore": "Ignorar esto",
+  "ui.fixes.editLabel": "El mensaje para IT, para editar",
+  "ui.fixes.account.title": "Guardar esto requiere una cuenta gratis",
+  "ui.fixes.account.body": "A veces nos equivocamos, y tu redacción suele ser mejor que la nuestra. Una cuenta recuerda lo que ya has resuelto, lo que decidiste ignorar y el mensaje tal como lo reescribiste. El informe en sí sigue siendo gratis y completo en cualquier caso.",
+  "ui.fixes.account.cta": "Crear una cuenta gratis"
 }

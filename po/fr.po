@@ -4636,28 +4636,28 @@ msgstr "Chaque page est ouverte à tout robot qui n'a pas ses propres règles."
 
 msgctxt "ui.fixes.edit"
 msgid "Edit the message"
-msgstr ""
+msgstr "Modifier le message"
 
 msgctxt "ui.fixes.save"
 msgid "Save"
-msgstr ""
+msgstr "Enregistrer"
 
 msgctxt "ui.fixes.ignore"
 msgid "Ignore this"
-msgstr ""
+msgstr "Ignorer"
 
 msgctxt "ui.fixes.editLabel"
 msgid "The message for IT, to edit"
-msgstr ""
+msgstr "Le message pour l'IT, à modifier"
 
 msgctxt "ui.fixes.account.title"
 msgid "Keeping this needs a free account"
-msgstr ""
+msgstr "Garder ceci demande un compte gratuit"
 
 msgctxt "ui.fixes.account.body"
 msgid "We are sometimes wrong, and your wording is often better than ours. An account remembers what you have dealt with, what you decided to ignore, and the message as you rewrote it. The report itself stays free and whole either way."
-msgstr ""
+msgstr "Nous avons parfois tort, et votre formulation est souvent meilleure que la nôtre. Un compte retient ce que vous avez traité, ce que vous avez choisi d'ignorer, et le message tel que vous l'avez réécrit. Le rapport lui-même reste gratuit et complet dans tous les cas."
 
 msgctxt "ui.fixes.account.cta"
 msgid "Create a free account"
-msgstr ""
+msgstr "Créer un compte gratuit"

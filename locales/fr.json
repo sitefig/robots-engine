@@ -1286,5 +1286,12 @@
   "ui.tile.hidden.some": "{n} bloqués",
   "ui.tile.hidden.none": "Rien de bloqué",
   "ui.tile.hidden.detail": "{path} est fermé à tous les robots, l'un des {n} chemins que ce fichier cache.",
-  "ui.tile.hidden.detailNone": "Chaque page est ouverte à tout robot qui n'a pas ses propres règles."
+  "ui.tile.hidden.detailNone": "Chaque page est ouverte à tout robot qui n'a pas ses propres règles.",
+  "ui.fixes.edit": "Modifier le message",
+  "ui.fixes.save": "Enregistrer",
+  "ui.fixes.ignore": "Ignorer",
+  "ui.fixes.editLabel": "Le message pour l'IT, à modifier",
+  "ui.fixes.account.title": "Garder ceci demande un compte gratuit",
+  "ui.fixes.account.body": "Nous avons parfois tort, et votre formulation est souvent meilleure que la nôtre. Un compte retient ce que vous avez traité, ce que vous avez choisi d'ignorer, et le message tel que vous l'avez réécrit. Le rapport lui-même reste gratuit et complet dans tous les cas.",
+  "ui.fixes.account.cta": "Créer un compte gratuit"
 }
