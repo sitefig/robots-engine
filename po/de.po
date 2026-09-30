@@ -4591,3 +4591,31 @@ msgstr "{path} ist für jeden Crawler gesperrt, einer von {n} Pfaden, die diese 
 msgctxt "ui.tile.hidden.detailNone"
 msgid "Every page is open to every crawler that has no rules of its own."
 msgstr "Jede Seite ist offen für jeden Crawler, der keine eigenen Regeln hat."
+
+msgctxt "ui.fixes.edit"
+msgid "Edit the message"
+msgstr ""
+
+msgctxt "ui.fixes.save"
+msgid "Save"
+msgstr ""
+
+msgctxt "ui.fixes.ignore"
+msgid "Ignore this"
+msgstr ""
+
+msgctxt "ui.fixes.editLabel"
+msgid "The message for IT, to edit"
+msgstr ""
+
+msgctxt "ui.fixes.account.title"
+msgid "Keeping this needs a free account"
+msgstr ""
+
+msgctxt "ui.fixes.account.body"
+msgid "We are sometimes wrong, and your wording is often better than ours. An account remembers what you have dealt with, what you decided to ignore, and the message as you rewrote it. The report itself stays free and whole either way."
+msgstr ""
+
+msgctxt "ui.fixes.account.cta"
+msgid "Create a free account"
+msgstr ""

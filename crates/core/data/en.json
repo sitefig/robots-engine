@@ -1244,5 +1244,12 @@
   "ui.tile.hidden.some": "{n} blocked",
   "ui.tile.hidden.none": "Nothing blocked",
   "ui.tile.hidden.detail": "{path} is closed to every crawler, one of {n} paths this file hides.",
-  "ui.tile.hidden.detailNone": "Every page is open to every crawler that has no rules of its own."
+  "ui.tile.hidden.detailNone": "Every page is open to every crawler that has no rules of its own.",
+  "ui.fixes.edit": "Edit the message",
+  "ui.fixes.save": "Save",
+  "ui.fixes.ignore": "Ignore this",
+  "ui.fixes.editLabel": "The message for IT, to edit",
+  "ui.fixes.account.title": "Keeping this needs a free account",
+  "ui.fixes.account.body": "We are sometimes wrong, and your wording is often better than ours. An account remembers what you have dealt with, what you decided to ignore, and the message as you rewrote it. The report itself stays free and whole either way.",
+  "ui.fixes.account.cta": "Create a free account"
 }

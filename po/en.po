@@ -4591,3 +4591,31 @@ msgstr "{path} is closed to every crawler, one of {n} paths this file hides."
 msgctxt "ui.tile.hidden.detailNone"
 msgid "Every page is open to every crawler that has no rules of its own."
 msgstr "Every page is open to every crawler that has no rules of its own."
+
+msgctxt "ui.fixes.edit"
+msgid "Edit the message"
+msgstr "Edit the message"
+
+msgctxt "ui.fixes.save"
+msgid "Save"
+msgstr "Save"
+
+msgctxt "ui.fixes.ignore"
+msgid "Ignore this"
+msgstr "Ignore this"
+
+msgctxt "ui.fixes.editLabel"
+msgid "The message for IT, to edit"
+msgstr "The message for IT, to edit"
+
+msgctxt "ui.fixes.account.title"
+msgid "Keeping this needs a free account"
+msgstr "Keeping this needs a free account"
+
+msgctxt "ui.fixes.account.body"
+msgid "We are sometimes wrong, and your wording is often better than ours. An account remembers what you have dealt with, what you decided to ignore, and the message as you rewrote it. The report itself stays free and whole either way."
+msgstr "We are sometimes wrong, and your wording is often better than ours. An account remembers what you have dealt with, what you decided to ignore, and the message as you rewrote it. The report itself stays free and whole either way."
+
+msgctxt "ui.fixes.account.cta"
+msgid "Create a free account"
+msgstr "Create a free account"
