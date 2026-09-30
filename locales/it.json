@@ -1275,5 +1275,16 @@
   "ui.summary.open.titleSite": "Tutto {site} è aperto a tutti",
   "ui.summary.notFound.titleSite": "{site} non ha nessun robots.txt",
   "ui.summary.serverError.titleSite": "Il server di {site} non consegna il file",
-  "ui.compare.so.changedKnown": "Questi file vengono recuperati ogni giorno, quindi una modifica si vede lo stesso giorno."
+  "ui.compare.so.changedKnown": "Questi file vengono recuperati ogni giorno, quindi una modifica si vede lo stesso giorno.",
+  "ui.tile.andRest": "{first}, e altre {n} cose",
+  "ui.tile.systems.platform": "che il sito gira su {name}",
+  "ui.tile.ai.detail": "{name} può addestrarsi su tutto qui, uno dei {n} crawler IA che questo file non respinge.",
+  "ui.tile.ai.detailNone": "Tutti i {total} crawler IA conosciuti vengono respinti.",
+  "ui.tile.exposure.detail": "{path} è indicato in pubblico, uno dei {n} percorsi sensibili. Il peggiore: {what}.",
+  "ui.tile.systems.detail": "Il file rivela {what}.",
+  "ui.tile.hiddenLabel": "Nascosto ai motori di ricerca",
+  "ui.tile.hidden.some": "{n} bloccati",
+  "ui.tile.hidden.none": "Niente bloccato",
+  "ui.tile.hidden.detail": "{path} è chiuso a ogni crawler, uno dei {n} percorsi che questo file nasconde.",
+  "ui.tile.hidden.detailNone": "Ogni pagina è aperta a qualsiasi crawler senza regole proprie."
 }

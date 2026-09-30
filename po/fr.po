@@ -4592,44 +4592,44 @@ msgstr "Ces fichiers sont récupérés chaque jour : un changement se voit le jo
 
 msgctxt "ui.tile.andRest"
 msgid "{first}, and {n} other things"
-msgstr ""
+msgstr "{first}, et {n} autres choses"
 
 msgctxt "ui.tile.systems.platform"
 msgid "that the site runs on {name}"
-msgstr ""
+msgstr "que le site tourne sur {name}"
 
 msgctxt "ui.tile.ai.detail"
 msgid "{name} may train on everything here, one of {n} AI crawlers this file does not turn away."
-msgstr ""
+msgstr "{name} peut s'entraîner sur tout ici, l'un des {n} robots d'IA que ce fichier ne refuse pas."
 
 msgctxt "ui.tile.ai.detailNone"
 msgid "All {total} known AI crawlers are turned away."
-msgstr ""
+msgstr "Les {total} robots d'IA connus sont tous refusés."
 
 msgctxt "ui.tile.exposure.detail"
 msgid "{path} is named in public, one of {n} sensitive paths. The worst of them: {what}."
-msgstr ""
+msgstr "{path} est nommé en public, l'un des {n} chemins sensibles. Le plus grave : {what}."
 
 msgctxt "ui.tile.systems.detail"
 msgid "The file gives away {what}."
-msgstr ""
+msgstr "Le fichier révèle {what}."
 
 msgctxt "ui.tile.hiddenLabel"
 msgid "Hidden from search"
-msgstr ""
+msgstr "Exclu de la recherche"
 
 msgctxt "ui.tile.hidden.some"
 msgid "{n} blocked"
-msgstr ""
+msgstr "{n} bloqués"
 
 msgctxt "ui.tile.hidden.none"
 msgid "Nothing blocked"
-msgstr ""
+msgstr "Rien de bloqué"
 
 msgctxt "ui.tile.hidden.detail"
 msgid "{path} is closed to every crawler, one of {n} paths this file hides."
-msgstr ""
+msgstr "{path} est fermé à tous les robots, l'un des {n} chemins que ce fichier cache."
 
 msgctxt "ui.tile.hidden.detailNone"
 msgid "Every page is open to every crawler that has no rules of its own."
-msgstr ""
+msgstr "Chaque page est ouverte à tout robot qui n'a pas ses propres règles."

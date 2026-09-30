@@ -1233,5 +1233,16 @@
   "ui.summary.open.titleSite": "{site} steht komplett allen offen",
   "ui.summary.notFound.titleSite": "{site} hat überhaupt keine robots.txt",
   "ui.summary.serverError.titleSite": "Der Server von {site} gibt die Datei nicht heraus",
-  "ui.compare.so.changedKnown": "Diese Dateien werden jeden Tag geholt, eine Änderung ist also am selben Tag zu sehen."
+  "ui.compare.so.changedKnown": "Diese Dateien werden jeden Tag geholt, eine Änderung ist also am selben Tag zu sehen.",
+  "ui.tile.andRest": "{first}, und {n} weitere Dinge",
+  "ui.tile.systems.platform": "dass die Website auf {name} läuft",
+  "ui.tile.ai.detail": "{name} darf hier mit allem trainieren, einer von {n} KI-Crawlern, die diese Datei nicht abweist.",
+  "ui.tile.ai.detailNone": "Alle {total} bekannten KI-Crawler werden abgewiesen.",
+  "ui.tile.exposure.detail": "{path} wird öffentlich genannt, einer von {n} sensiblen Pfaden. Der schlimmste davon: {what}.",
+  "ui.tile.systems.detail": "Die Datei verrät {what}.",
+  "ui.tile.hiddenLabel": "Aus der Suche ausgeschlossen",
+  "ui.tile.hidden.some": "{n} blockiert",
+  "ui.tile.hidden.none": "Nichts blockiert",
+  "ui.tile.hidden.detail": "{path} ist für jeden Crawler gesperrt, einer von {n} Pfaden, die diese Datei verbirgt.",
+  "ui.tile.hidden.detailNone": "Jede Seite ist offen für jeden Crawler, der keine eigenen Regeln hat."
 }

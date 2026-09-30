@@ -1275,5 +1275,16 @@
   "ui.summary.open.titleSite": "Todo {site} está abierto para todos",
   "ui.summary.notFound.titleSite": "{site} no tiene ningún robots.txt",
   "ui.summary.serverError.titleSite": "El servidor de {site} no entrega el archivo",
-  "ui.compare.so.changedKnown": "Estos archivos se obtienen cada día, así que un cambio se ve el mismo día."
+  "ui.compare.so.changedKnown": "Estos archivos se obtienen cada día, así que un cambio se ve el mismo día.",
+  "ui.tile.andRest": "{first}, y {n} cosas más",
+  "ui.tile.systems.platform": "que el sitio funciona con {name}",
+  "ui.tile.ai.detail": "{name} puede entrenar con todo esto, uno de {n} rastreadores de IA que este archivo no rechaza.",
+  "ui.tile.ai.detailNone": "Los {total} rastreadores de IA conocidos están rechazados.",
+  "ui.tile.exposure.detail": "{path} se nombra en público, una de {n} rutas sensibles. La peor: {what}.",
+  "ui.tile.systems.detail": "El archivo revela {what}.",
+  "ui.tile.hiddenLabel": "Oculto a los buscadores",
+  "ui.tile.hidden.some": "{n} bloqueadas",
+  "ui.tile.hidden.none": "Nada bloqueado",
+  "ui.tile.hidden.detail": "{path} está cerrada a todos los rastreadores, una de {n} rutas que este archivo oculta.",
+  "ui.tile.hidden.detailNone": "Todas las páginas están abiertas a cualquier rastreador sin reglas propias."
 }

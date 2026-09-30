@@ -1275,5 +1275,16 @@
   "ui.summary.open.titleSite": "Tout {site} est ouvert à tout le monde",
   "ui.summary.notFound.titleSite": "{site} n'a aucun robots.txt",
   "ui.summary.serverError.titleSite": "Le serveur de {site} ne fournit pas le fichier",
-  "ui.compare.so.changedKnown": "Ces fichiers sont récupérés chaque jour : un changement se voit le jour même."
+  "ui.compare.so.changedKnown": "Ces fichiers sont récupérés chaque jour : un changement se voit le jour même.",
+  "ui.tile.andRest": "{first}, et {n} autres choses",
+  "ui.tile.systems.platform": "que le site tourne sur {name}",
+  "ui.tile.ai.detail": "{name} peut s'entraîner sur tout ici, l'un des {n} robots d'IA que ce fichier ne refuse pas.",
+  "ui.tile.ai.detailNone": "Les {total} robots d'IA connus sont tous refusés.",
+  "ui.tile.exposure.detail": "{path} est nommé en public, l'un des {n} chemins sensibles. Le plus grave : {what}.",
+  "ui.tile.systems.detail": "Le fichier révèle {what}.",
+  "ui.tile.hiddenLabel": "Exclu de la recherche",
+  "ui.tile.hidden.some": "{n} bloqués",
+  "ui.tile.hidden.none": "Rien de bloqué",
+  "ui.tile.hidden.detail": "{path} est fermé à tous les robots, l'un des {n} chemins que ce fichier cache.",
+  "ui.tile.hidden.detailNone": "Chaque page est ouverte à tout robot qui n'a pas ses propres règles."
 }

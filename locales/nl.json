@@ -1233,5 +1233,16 @@
   "ui.summary.open.titleSite": "Heel {site} staat open voor iedereen",
   "ui.summary.notFound.titleSite": "{site} heeft helemaal geen robots.txt",
   "ui.summary.serverError.titleSite": "De server van {site} levert het bestand niet",
-  "ui.compare.so.changedKnown": "Deze bestanden worden elke dag opgehaald, dus een wijziging is dezelfde dag te zien."
+  "ui.compare.so.changedKnown": "Deze bestanden worden elke dag opgehaald, dus een wijziging is dezelfde dag te zien.",
+  "ui.tile.andRest": "{first}, en {n} andere dingen",
+  "ui.tile.systems.platform": "dat de site op {name} draait",
+  "ui.tile.ai.detail": "{name} mag hier met alles trainen, een van {n} AI-crawlers die dit bestand niet weigert.",
+  "ui.tile.ai.detailNone": "Alle {total} bekende AI-crawlers worden geweigerd.",
+  "ui.tile.exposure.detail": "{path} wordt in het openbaar genoemd, een van {n} gevoelige paden. Het ernstigste: {what}.",
+  "ui.tile.systems.detail": "Het bestand geeft {what} weg.",
+  "ui.tile.hiddenLabel": "Verborgen voor zoekmachines",
+  "ui.tile.hidden.some": "{n} geblokkeerd",
+  "ui.tile.hidden.none": "Niets geblokkeerd",
+  "ui.tile.hidden.detail": "{path} is dicht voor elke crawler, een van {n} paden die dit bestand verbergt.",
+  "ui.tile.hidden.detailNone": "Elke pagina is open voor elke crawler zonder eigen regels."
 }

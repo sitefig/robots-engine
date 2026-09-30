@@ -4550,44 +4550,44 @@ msgstr "Diese Dateien werden jeden Tag geholt, eine Änderung ist also am selben
 
 msgctxt "ui.tile.andRest"
 msgid "{first}, and {n} other things"
-msgstr ""
+msgstr "{first}, und {n} weitere Dinge"
 
 msgctxt "ui.tile.systems.platform"
 msgid "that the site runs on {name}"
-msgstr ""
+msgstr "dass die Website auf {name} läuft"
 
 msgctxt "ui.tile.ai.detail"
 msgid "{name} may train on everything here, one of {n} AI crawlers this file does not turn away."
-msgstr ""
+msgstr "{name} darf hier mit allem trainieren, einer von {n} KI-Crawlern, die diese Datei nicht abweist."
 
 msgctxt "ui.tile.ai.detailNone"
 msgid "All {total} known AI crawlers are turned away."
-msgstr ""
+msgstr "Alle {total} bekannten KI-Crawler werden abgewiesen."
 
 msgctxt "ui.tile.exposure.detail"
 msgid "{path} is named in public, one of {n} sensitive paths. The worst of them: {what}."
-msgstr ""
+msgstr "{path} wird öffentlich genannt, einer von {n} sensiblen Pfaden. Der schlimmste davon: {what}."
 
 msgctxt "ui.tile.systems.detail"
 msgid "The file gives away {what}."
-msgstr ""
+msgstr "Die Datei verrät {what}."
 
 msgctxt "ui.tile.hiddenLabel"
 msgid "Hidden from search"
-msgstr ""
+msgstr "Aus der Suche ausgeschlossen"
 
 msgctxt "ui.tile.hidden.some"
 msgid "{n} blocked"
-msgstr ""
+msgstr "{n} blockiert"
 
 msgctxt "ui.tile.hidden.none"
 msgid "Nothing blocked"
-msgstr ""
+msgstr "Nichts blockiert"
 
 msgctxt "ui.tile.hidden.detail"
 msgid "{path} is closed to every crawler, one of {n} paths this file hides."
-msgstr ""
+msgstr "{path} ist für jeden Crawler gesperrt, einer von {n} Pfaden, die diese Datei verbirgt."
 
 msgctxt "ui.tile.hidden.detailNone"
 msgid "Every page is open to every crawler that has no rules of its own."
-msgstr ""
+msgstr "Jede Seite ist offen für jeden Crawler, der keine eigenen Regeln hat."
