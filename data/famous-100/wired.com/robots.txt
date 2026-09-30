@@ -31,6 +31,7 @@ Disallow: /cdn-cgi/
 Disallow: /services.min.js
 Disallow: /com.condenast/yv8
 Disallow: /reject-all
+Disallow: */c_limit/
 
 ###
 Allow: /v2/offers/wira
