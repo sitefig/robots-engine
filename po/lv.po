@@ -4589,3 +4589,47 @@ msgstr "Vietnes {site} serveris neizsniedz failu"
 msgctxt "ui.compare.so.changedKnown"
 msgid "These files are fetched every day, so a change shows up the same day."
 msgstr ""
+
+msgctxt "ui.tile.andRest"
+msgid "{first}, and {n} other things"
+msgstr ""
+
+msgctxt "ui.tile.systems.platform"
+msgid "that the site runs on {name}"
+msgstr ""
+
+msgctxt "ui.tile.ai.detail"
+msgid "{name} may train on everything here, one of {n} AI crawlers this file does not turn away."
+msgstr ""
+
+msgctxt "ui.tile.ai.detailNone"
+msgid "All {total} known AI crawlers are turned away."
+msgstr ""
+
+msgctxt "ui.tile.exposure.detail"
+msgid "{path} is named in public, one of {n} sensitive paths. The worst of them: {what}."
+msgstr ""
+
+msgctxt "ui.tile.systems.detail"
+msgid "The file gives away {what}."
+msgstr ""
+
+msgctxt "ui.tile.hiddenLabel"
+msgid "Hidden from search"
+msgstr ""
+
+msgctxt "ui.tile.hidden.some"
+msgid "{n} blocked"
+msgstr ""
+
+msgctxt "ui.tile.hidden.none"
+msgid "Nothing blocked"
+msgstr ""
+
+msgctxt "ui.tile.hidden.detail"
+msgid "{path} is closed to every crawler, one of {n} paths this file hides."
+msgstr ""
+
+msgctxt "ui.tile.hidden.detailNone"
+msgid "Every page is open to every crawler that has no rules of its own."
+msgstr ""

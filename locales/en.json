@@ -1233,5 +1233,16 @@
   "ui.summary.open.titleSite": "All of {site} is open to everyone",
   "ui.summary.notFound.titleSite": "{site} has no robots.txt at all",
   "ui.summary.serverError.titleSite": "The server at {site} is not handing the file over",
-  "ui.compare.so.changedKnown": "These files are fetched every day, so a change shows up the same day."
+  "ui.compare.so.changedKnown": "These files are fetched every day, so a change shows up the same day.",
+  "ui.tile.andRest": "{first}, and {n} other things",
+  "ui.tile.systems.platform": "that the site runs on {name}",
+  "ui.tile.ai.detail": "{name} may train on everything here, one of {n} AI crawlers this file does not turn away.",
+  "ui.tile.ai.detailNone": "All {total} known AI crawlers are turned away.",
+  "ui.tile.exposure.detail": "{path} is named in public, one of {n} sensitive paths. The worst of them: {what}.",
+  "ui.tile.systems.detail": "The file gives away {what}.",
+  "ui.tile.hiddenLabel": "Hidden from search",
+  "ui.tile.hidden.some": "{n} blocked",
+  "ui.tile.hidden.none": "Nothing blocked",
+  "ui.tile.hidden.detail": "{path} is closed to every crawler, one of {n} paths this file hides.",
+  "ui.tile.hidden.detailNone": "Every page is open to every crawler that has no rules of its own."
 }
