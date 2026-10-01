@@ -59,8 +59,6 @@ Disallow: /adsoverview
 Disallow: /AffiliateWidgets
 Disallow: /AirlineRegistration
 Disallow: /AirlineTips
-Disallow: /AirportFromGeoAjax
-Disallow: /AirportIP
 Disallow: /AITripBuilder
 Disallow: /AllReviews
 Disallow: /analytics
@@ -114,10 +112,6 @@ Disallow: /CauseTeaserPopup
 Disallow: /cds/media
 Disallow: /CDSimp
 Disallow: /CertificateOfExcellenceRequestSupport
-Disallow: /CheapFlightsController
-Disallow: /CheapFlightsPartnerHandoff
-Disallow: /CheapFlightsPartnerPostHandoff
-Disallow: /CheapFlightsRecord
 Disallow: /Civ
 Disallow: /Claim
 Disallow: /claimrewards
@@ -161,15 +155,10 @@ Disallow: /ExperiencesCommerce
 Disallow: /ExperiencesInsights/?s
 Disallow: /ExternalLinkInterstitial
 Disallow: /FacebookConnect
-Disallow: /FareCalendar
 Disallow: /FilterState
 Disallow: /FindRestaurants
 Disallow: /FinishAppInstall
 Disallow: /Flights?
-Disallow: /FlightsComparePartners
-Disallow: /FlightsController
-Disallow: /FlightsPricelink
-Disallow: /FlightsRecord
 Disallow: /ForgotPassword
 Disallow: /ForumFAQ
 Disallow: /ForumPostPreview
@@ -213,7 +202,6 @@ Disallow: /HotelGMCApi
 Disallow: /HotelHighlight
 Disallow: /HotelInterruptersAjax
 Disallow: /HotelsManagementCenter
-Disallow: /HotelsProductCart
 Disallow: /HotelWatchAjax
 Disallow: /HowTheSiteWorks
 Disallow: /ImpressionRecord
@@ -339,12 +327,10 @@ Disallow: /MemberTravelMap
 Disallow: /menu
 Disallow: /Messages
 Disallow: /MessagingOptions
-Disallow: /MetaAirCalendarAjax
 Disallow: /MetaBestPriceCrossSellAjax
 Disallow: /MetaCheckRatesAjax
 Disallow: /MetaJsonAjax
 Disallow: /MetaPlacementAjax
-Disallow: /MetricsAjax
 Disallow: /MicroMetaAjax
 Disallow: /MiniMetaCRAjax
 Disallow: /missingpage
@@ -355,7 +341,6 @@ Disallow: /MobileAdsManager
 Disallow: /MobileAirlineDeals
 Disallow: /MobileAirlines
 Disallow: /MobileAirlineTips
-Disallow: /MobileAirport
 Disallow: /MobileApps
 Disallow: /MobileAttractionSearch
 Disallow: /MobileAttractionsNear
@@ -365,7 +350,6 @@ Disallow: /MobileBookingCustomerSupport
 Disallow: /MobileBookings
 Disallow: /MobileCancelBooking
 Disallow: /MobileCheapFlightsHome
-Disallow: /MobileCheapFlightsPartnerPostHandoff
 Disallow: /MobileCiv
 Disallow: /MobileCookie
 Disallow: /MobileEventRecord
@@ -478,7 +462,6 @@ Disallow: /OpenGraphLander
 Disallow: /OpeningHours
 Disallow: /OverlayWidgetAjax
 Disallow: /overview
-Disallow: /OwnerResponseApi
 Disallow: /Owners-
 Disallow: /OwnersDM
 Disallow: /OwnersNew
@@ -521,6 +504,7 @@ Disallow: /ProductCancellationLogApi
 Disallow: /ProductCart
 Disallow: /ProductError
 Disallow: /ProductPaymentUpdate
+Disallow: /ProductPayNowNewMethod
 Disallow: /Profile
 Disallow: /promotionaltools
 Disallow: /ProxyToolsCustomerSupportForm
@@ -600,7 +584,6 @@ Disallow: /ShowUserReviewsRestaurants
 Disallow: /SingleClickOptOut
 Disallow: /SingleClickSignUp
 Disallow: /SmartDealsHomeAjax
-Disallow: /SmsAjaxServlet
 Disallow: /SocialIapReporting
 Disallow: /SolutionsDisplay
 Disallow: /SortAttractions
@@ -640,7 +623,6 @@ Disallow: /TestEmptyPage
 Disallow: /TestingTravelMaps
 Disallow: /ThirdPartyRedirect
 Disallow: /ThorHammer
-Disallow: /TodaysLowestFaresAjax
 Disallow: /trapdir
 Disallow: /TravelAdvice
 Disallow: /TravelerInterestNotificationEndpoint

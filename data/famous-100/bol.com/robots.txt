@@ -43,12 +43,14 @@ Disallow: /*/rnwy/product/reviews/
 Disallow: /*/rnwy/slots/ajax/*
 Disallow: /*/rnwy/studybooks/
 Disallow: /*/s/
+Disallow: /*/sa/
 Disallow: /*/schrijf-een-review/
 Disallow: /*/sdl/
 Allow: /*/sdl/shop-de-look
 Disallow: /*/select*?*
 Disallow: /*/select-cadeau-sparen/?*
 Disallow: /*/serie/*/
+Disallow: /streaming/
 Disallow: /*/u/
 Disallow: /*/w/*/
 Disallow: /*/v/*/

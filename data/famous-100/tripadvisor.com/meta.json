@@ -3,8 +3,8 @@
   "robots_url": "https://tripadvisor.com/robots.txt",
   "final_url": "https://www.tripadvisor.com/robots.txt",
   "http_status": 200,
-  "bytes": 24267,
-  "fetched_at": "2026-09-17T12:11:41.000Z",
+  "bytes": 23723,
+  "fetched_at": "2026-10-01T10:09:24.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false

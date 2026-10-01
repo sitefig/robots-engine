@@ -1,5 +1,5 @@
 
-# Last refreshed: 2026-09-23T04:00:07.200Z
+# Last refreshed: 2026-10-01T04:00:07.347Z
 
 User-Agent: *
 
@@ -186,7 +186,6 @@ Disallow: /nl/winkelmandje?*
 Disallow: /nl/zekerheidspakketten
 Disallow: /nl/zoeken/*
 Disallow: /nl/zoeken?*
-Disallow: /nl/klantenservice/contact
 
 # Only on Coolblue. domains - English language
 User-agent: *
