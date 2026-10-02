@@ -364,6 +364,7 @@ Sitemap: https://www.threads.com/sitemap/us_quality_tagged_tail_sitemap.xml.gz
 Sitemap: https://www.threads.com/sitemap/us_active_producers_sitemap.xml.gz
 Sitemap: https://www.threads.com/sitemap/us_micro_producers_sitemap.xml.gz
 Sitemap: https://www.threads.com/sitemap/threads_high_potential_posts_v2_sitemap.xml.gz
+Sitemap: https://www.threads.com/sitemap/threads_question_posts_sitemap.xml.gz
 Sitemap: https://www.threads.com/sitemap/threads_tags_hashtag_sitemap.xml.gz
 Sitemap: https://www.threads.com/sitemap/threads_tags_gsc_bulk_keywords_sitemap.xml.gz
 Sitemap: https://www.threads.com/sitemap/threads_tags_typeahead_sitemap.xml.gz

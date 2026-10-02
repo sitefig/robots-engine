@@ -3,8 +3,8 @@
   "robots_url": "https://threads.net/robots.txt",
   "final_url": "https://www.threads.com/robots.txt",
   "http_status": 200,
-  "bytes": 8149,
-  "fetched_at": "2026-09-21T08:53:53.000Z",
+  "bytes": 8228,
+  "fetched_at": "2026-10-02T09:47:24.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false

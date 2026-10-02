@@ -15,6 +15,7 @@ Sitemap: https://lumalabs.ai/comparison/sitemap.xml
 Sitemap: https://lumalabs.ai/create/sitemap.xml
 Sitemap: https://lumalabs.ai/learning-center/sitemap.xml
 Sitemap: https://lumalabs.ai/legal/sitemap.xml
+Sitemap: https://lumalabs.ai/models/sitemap.xml
 Sitemap: https://lumalabs.ai/news/sitemap.xml
 Sitemap: https://lumalabs.ai/reframe/sitemap.xml
 Sitemap: https://lumalabs.ai/use-case/sitemap.xml
