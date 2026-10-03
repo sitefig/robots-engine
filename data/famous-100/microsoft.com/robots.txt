@@ -1,4 +1,4 @@
-# Robots.txt file for www.microsoft.com v2.10
+# Robots.txt file for www.microsoft.com v2.11
 
 User-agent: *
 Disallow: /*?*ep_*
@@ -149,6 +149,18 @@ Allow: /en/microsoft-365/yammer/yammer-overview
 Allow: /en/microsoft-365/publisher
 Allow: /en/microsoft-365/products-apps-services
 Allow: /en/microsoft-365/onenote/digital-note-taking-app
+Allow: /en/microsoft-365/powerpoint
+Allow: /en/microsoft-365/excel
+Allow: /en/microsoft-365/microsoft-office
+Allow: /en/microsoft-365/business/microsoft-365-administration
+Allow: /en/microsoft-365-copilot/microsoft-copilot-studio
+Allow: /en/microsoft-365/project/project-management-software
+Allow: /en/microsoft-365/project/microsoft-project-enterprise-plans-and-pricing
+Allow: /en/microsoft-365/onedrive/online-cloud-storage
+Allow: /en/microsoft-365/business
+Allow: /en/microsoft-365/clipchamp
+Allow: /en/microsoft-viva/engage
+Disallow: /en/microsoft-365/
 Disallow: /es/microsoft-365
 Disallow: /es/microsoft-365/
 Disallow: /fr/microsoft-365

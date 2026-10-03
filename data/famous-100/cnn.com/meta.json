@@ -3,8 +3,8 @@
   "robots_url": "https://cnn.com/robots.txt",
   "final_url": "https://www.cnn.com/robots.txt",
   "http_status": 200,
-  "bytes": 3241,
-  "fetched_at": "2026-10-01T10:09:19.000Z",
+  "bytes": 3498,
+  "fetched_at": "2026-10-03T09:10:18.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false
