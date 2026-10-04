@@ -19,6 +19,8 @@ Disallow: */ab/
 Disallow: /sentry-monitoring
 Disallow: /next/
 Disallow: /v1/
+Disallow: /nl$
+Disallow: /nl/
 Allow: /app/flows
 Disallow: /app/agents
 Disallow: /app/api
@@ -49,6 +51,8 @@ Disallow: */ab/
 Disallow: /sentry-monitoring
 Disallow: /next/
 Disallow: /v1/
+Disallow: /nl$
+Disallow: /nl/
 Disallow: /docs/api/
 Disallow: /app/
 
