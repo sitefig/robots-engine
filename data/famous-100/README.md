@@ -1,6 +1,6 @@
 # Tracked domains: AI crawler leaderboard
 
-*Updated 2026-10-04. Snapshots are in one directory per domain; git history is the change log.*
+*Updated 2026-10-05. Snapshots are in one directory per domain; git history is the change log.*
 
 | Crawler | Blocked | Restricted | Open |
 | --- | ---: | ---: | ---: |
