@@ -528,7 +528,7 @@ category = "ai-training"
 
 [[crawlers.list]]
 name = "iAskSpider"
-tokens = ["iaskspider"]
+tokens = ["iaskspider", "iaskspider/2.0"]
 category = "ai-search"
 
 [[crawlers.list]]
@@ -563,12 +563,12 @@ category = "social"
 
 [[crawlers.list]]
 name = "MistralAI-User"
-tokens = ["mistralai-user"]
+tokens = ["mistralai-user", "mistralai-user/1.0"]
 category = "ai-search"
 
 [[crawlers.list]]
 name = "Google-CloudVertexBot"
-tokens = ["google-cloudvertexbot"]
+tokens = ["google-cloudvertexbot", "cloudvertexbot"]
 category = "ai-training"
 
 [[crawlers.list]]
@@ -817,6 +817,581 @@ name = "Teoma"
 tokens = ["teoma"]
 category = "retired"
 note = "Retired: Ask.com discontinued the Teoma search technology and its crawler."
+
+# The rest of the AI crawlers on the ai.robots.txt list
+# (https://github.com/ai-robots-txt/ai.robots.txt, MIT). That list is where most
+# of the AI blocks in the wild are copied from, so a file that names one of
+# these means it, and a checker that does not know them cannot say what the file
+# does. Category is ours, not theirs: "ai-training" collects content for a
+# model, "ai-search" fetches or indexes pages so an AI product can answer from
+# them, and "ai-scraper" is everything else that crawls, including the coding
+# agents, the browsing agents and the crawl-for-hire platforms, because blocking
+# those stops neither training nor answering.
+#
+# Tokens are lowercase and, where the list writes a name with spaces, the first
+# token is the one word a group line can actually name: a file that copied the
+# list verbatim says "User-agent: Linguee Bot", which "linguee" matches, while
+# nothing can match a two-word product token on its own.
+
+[[crawlers.list]]
+name = "AddSearchBot"
+tokens = ["addsearchbot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "AgentDataBot"
+tokens = ["agentdatabot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "AgentTimes"
+tokens = ["agenttimes"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "AI2Bot-DeepResearchEval"
+tokens = ["ai2bot-deepresearcheval"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "aiHitBot"
+tokens = ["aihitbot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "AIWebIndex"
+tokens = ["aiwebindex"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "amazon-kendra"
+tokens = ["amazon-kendra"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "amazon-QBusiness"
+tokens = ["amazon-qbusiness"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "AmazonBuyForMe"
+tokens = ["amazonbuyforme"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Amzn-User"
+tokens = ["amzn-user"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Andibot"
+tokens = ["andibot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Anomura"
+tokens = ["anomura"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "ApifyBot"
+tokens = ["apifybot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "ApifyWebsiteContentCrawler"
+tokens = ["apifywebsitecontentcrawler"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Aranet-SearchBot"
+tokens = ["aranet-searchbot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "atlassian-bot"
+tokens = ["atlassian-bot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Awario"
+tokens = ["awario"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "AzureAI-SearchBot"
+tokens = ["azureai-searchbot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "bedrockbot"
+tokens = ["bedrockbot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "bigsur.ai"
+tokens = ["bigsur.ai"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "BixelBot"
+tokens = ["bixelbot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Bravebot"
+tokens = ["bravebot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "BuddyBot"
+tokens = ["buddybot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Channel3Bot"
+tokens = ["channel3bot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "ChatGLM-Spider"
+tokens = ["chatglm-spider"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "ChatGPT Agent"
+tokens = ["chatgpt agent"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Claude-Code"
+tokens = ["claude-code"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Cloudflare-AutoRAG"
+tokens = ["cloudflare-autorag"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Code (GitHub Copilot)"
+tokens = ["code"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Cotoyogi"
+tokens = ["cotoyogi"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "CragCrawler"
+tokens = ["cragcrawler"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Crawl4AI"
+tokens = ["crawl4ai"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Crawlspace"
+tokens = ["crawlspace"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Cursor"
+tokens = ["cursor"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Datenbank Crawler"
+tokens = ["datenbank", "datenbank crawler"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "DeepSeekBot"
+tokens = ["deepseekbot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "Devin"
+tokens = ["devin"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Diffbot-User"
+tokens = ["diffbot-user"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "DoubaoBot"
+tokens = ["doubaobot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Echobot Bot"
+tokens = ["echobot", "echobot bot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "EchoboxBot"
+tokens = ["echoboxbot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "ERNIEBot"
+tokens = ["erniebot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "ExaSearchBot"
+tokens = ["exasearchbot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Factset_spyderbot"
+tokens = ["factset_spyderbot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "GeistHaus-PageFetcher"
+tokens = ["geisthaus-pagefetcher"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Google-Agent"
+tokens = ["google-agent"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Google-Firebase"
+tokens = ["google-firebase"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Google-Gemini-CLI"
+tokens = ["google-gemini-cli"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "GoogleAgent-Mariner"
+tokens = ["googleagent-mariner"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "GoogleAgent-URLContext"
+tokens = ["googleagent-urlcontext"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "HenkBot"
+tokens = ["henkbot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "iAskBot"
+tokens = ["iaskbot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "imageSpider"
+tokens = ["imagespider"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "ISSCyberRiskCrawler"
+tokens = ["isscyberriskcrawler"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "kagi-fetcher"
+tokens = ["kagi-fetcher"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "KeenableBot"
+tokens = ["keenablebot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Kimi-Agent"
+tokens = ["kimi-agent"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Kimi-SearchBot"
+tokens = ["kimi-searchbot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Kimi-User"
+tokens = ["kimi-user"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "KimiBot"
+tokens = ["kimibot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "KlaviyoAIBot"
+tokens = ["klaviyoaibot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "KunatoCrawler"
+tokens = ["kunatocrawler"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "laion-huggingface-processor"
+tokens = ["laion-huggingface-processor"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "LAIONDownloader"
+tokens = ["laiondownloader"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "LCC"
+tokens = ["lcc"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Lightpanda"
+tokens = ["lightpanda"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "LinerBot"
+tokens = ["linerbot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Linguee Bot"
+tokens = ["linguee", "linguee bot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "LinkupBot"
+tokens = ["linkupbot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Manus-User"
+tokens = ["manus-user"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "meta-webindexer"
+tokens = ["meta-webindexer"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "MistralAI-Index"
+tokens = ["mistralai-index"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "MistralAI-Training"
+tokens = ["mistralai-training"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "Mozilla-Tabstack"
+tokens = ["mozilla-tabstack"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "MyCentralAIScraperBot"
+tokens = ["mycentralaiscraperbot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "NagetBot"
+tokens = ["nagetbot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "netEstate Imprint Crawler"
+tokens = ["netestate", "netestate imprint crawler"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "newsai"
+tokens = ["newsai"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "NotebookLM"
+tokens = ["notebooklm", "google-notebooklm"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "NovaAct"
+tokens = ["novaact"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "OAI-AdsBot"
+tokens = ["oai-adsbot"]
+category = "ads"
+
+[[crawlers.list]]
+name = "OpenAI"
+tokens = ["openai"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "opencode"
+tokens = ["opencode"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Operator"
+tokens = ["operator"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "Panscient"
+tokens = ["panscient", "panscient.com"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "Poggio-Citations"
+tokens = ["poggio-citations"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Poseidon Research Crawler"
+tokens = ["poseidon", "poseidon research crawler"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "qodercli"
+tokens = ["qodercli"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "QualifiedBot"
+tokens = ["qualifiedbot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Querit-SearchBot"
+tokens = ["querit-searchbot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "QueritBot"
+tokens = ["queritbot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "QuillBot"
+tokens = ["quillbot", "quillbot.com"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "QwenBot"
+tokens = ["qwenbot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "Reflectionbot"
+tokens = ["reflectionbot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "SBIntuitionsBot"
+tokens = ["sbintuitionsbot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "Shap-User"
+tokens = ["shap-user"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "ShapBot"
+tokens = ["shapbot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Spider"
+tokens = ["spider"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "TavilyBot"
+tokens = ["tavilybot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "TerraCotta"
+tokens = ["terracotta", "terra cotta"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Thinkbot"
+tokens = ["thinkbot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "TongyiBot"
+tokens = ["tongyibot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "Trae"
+tokens = ["trae"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "TwinAgent"
+tokens = ["twinagent"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "UseAI"
+tokens = ["useai"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "WARDBot"
+tokens = ["wardbot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "wpbot"
+tokens = ["wpbot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "WRTNBot"
+tokens = ["wrtnbot"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "YaK"
+tokens = ["yak"]
+category = "ai-scraper"
+
+[[crawlers.list]]
+name = "YandexAdditional"
+tokens = ["yandexadditional", "yandexadditionalbot"]
+category = "ai-training"
+
+[[crawlers.list]]
+name = "YiyanBot"
+tokens = ["yiyanbot"]
+category = "ai-search"
+
+[[crawlers.list]]
+name = "ZanistaBot"
+tokens = ["zanistabot"]
+category = "ai-search"
 
 # ---------------------------------------------------------------- security
 # Disallow paths that advertise sensitive locations. `keywords` match on
