@@ -1252,5 +1252,6 @@
   "ui.fixes.account.title": "Das zu behalten braucht ein kostenloses Konto",
   "ui.fixes.account.body": "Wir liegen manchmal falsch, und Ihre Formulierung ist oft besser als unsere. Ein Konto merkt sich, was Sie erledigt haben, was Sie ignorieren wollten, und die Nachricht, wie Sie sie umgeschrieben haben. Der Bericht selbst bleibt in jedem Fall kostenlos und vollständig.",
   "ui.fixes.account.cta": "Kostenloses Konto anlegen",
-  "page.footer.contact": "Kontakt"
+  "page.footer.contact": "Kontakt",
+  "page.footer.crawlers": "Crawler-Liste"
 }

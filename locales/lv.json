@@ -1275,5 +1275,6 @@
   "ui.summary.open.titleSite": "Visa vietne {site} ir atvērta visiem",
   "ui.summary.notFound.titleSite": "Vietnei {site} nav robots.txt faila vispār",
   "ui.summary.serverError.titleSite": "Vietnes {site} serveris neizsniedz failu",
-  "page.footer.contact": "Kontakti"
+  "page.footer.contact": "Kontakti",
+  "page.footer.crawlers": "Rāpuļu saraksts"
 }

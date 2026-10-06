@@ -4665,3 +4665,7 @@ msgstr ""
 msgctxt "page.footer.contact"
 msgid "Contact"
 msgstr "Kontakti"
+
+msgctxt "page.footer.crawlers"
+msgid "Crawler list"
+msgstr "Rāpuļu saraksts"

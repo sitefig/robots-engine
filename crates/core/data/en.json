@@ -1252,5 +1252,6 @@
   "ui.fixes.account.title": "Keeping this needs a free account",
   "ui.fixes.account.body": "We are sometimes wrong, and your wording is often better than ours. An account remembers what you have dealt with, what you decided to ignore, and the message as you rewrote it. The report itself stays free and whole either way.",
   "ui.fixes.account.cta": "Create a free account",
-  "page.footer.contact": "Contact"
+  "page.footer.contact": "Contact",
+  "page.footer.crawlers": "Crawler list"
 }

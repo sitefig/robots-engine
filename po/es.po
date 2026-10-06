@@ -4665,3 +4665,7 @@ msgstr "Crear una cuenta gratis"
 msgctxt "page.footer.contact"
 msgid "Contact"
 msgstr "Contacto"
+
+msgctxt "page.footer.crawlers"
+msgid "Crawler list"
+msgstr "Lista de rastreadores"

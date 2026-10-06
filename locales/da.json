@@ -1233,5 +1233,6 @@
   "ui.summary.open.titleSite": "Hele {site} er åbent for alle",
   "ui.summary.notFound.titleSite": "{site} har slet ingen robots.txt",
   "ui.summary.serverError.titleSite": "Serveren på {site} udleverer ikke filen",
-  "page.footer.contact": "Kontakt"
+  "page.footer.contact": "Kontakt",
+  "page.footer.crawlers": "Liste over crawlere"
 }

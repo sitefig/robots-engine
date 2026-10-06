@@ -1317,5 +1317,6 @@
   "ui.summary.open.titleSite": "Celotno mesto {site} je odprto vsem",
   "ui.summary.notFound.titleSite": "{site} sploh nima datoteke robots.txt",
   "ui.summary.serverError.titleSite": "Strežnik {site} datoteke ne postreže",
-  "page.footer.contact": "Kontakt"
+  "page.footer.contact": "Kontakt",
+  "page.footer.crawlers": "Seznam pajkov"
 }

@@ -4623,3 +4623,7 @@ msgstr ""
 msgctxt "page.footer.contact"
 msgid "Contact"
 msgstr "Επικοινωνία"
+
+msgctxt "page.footer.crawlers"
+msgid "Crawler list"
+msgstr "Λίστα crawlers"

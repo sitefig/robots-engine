@@ -1233,5 +1233,6 @@
   "ui.summary.open.titleSite": "Kogu sait {site} on kõigile avatud",
   "ui.summary.notFound.titleSite": "Saidil {site} pole üldse robots.txt-faili",
   "ui.summary.serverError.titleSite": "Saidi {site} server ei anna faili välja",
-  "page.footer.contact": "Kontakt"
+  "page.footer.contact": "Kontakt",
+  "page.footer.crawlers": "Roomajate loend"
 }

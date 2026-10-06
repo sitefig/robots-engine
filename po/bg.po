@@ -4623,3 +4623,7 @@ msgstr ""
 msgctxt "page.footer.contact"
 msgid "Contact"
 msgstr "Контакт"
+
+msgctxt "page.footer.crawlers"
+msgid "Crawler list"
+msgstr "Списък с роботи"

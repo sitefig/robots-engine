@@ -1294,5 +1294,6 @@
   "ui.fixes.account.title": "Garder ceci demande un compte gratuit",
   "ui.fixes.account.body": "Nous avons parfois tort, et votre formulation est souvent meilleure que la nôtre. Un compte retient ce que vous avez traité, ce que vous avez choisi d'ignorer, et le message tel que vous l'avez réécrit. Le rapport lui-même reste gratuit et complet dans tous les cas.",
   "ui.fixes.account.cta": "Créer un compte gratuit",
-  "page.footer.contact": "Contact"
+  "page.footer.contact": "Contact",
+  "page.footer.crawlers": "Liste des robots"
 }

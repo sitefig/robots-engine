@@ -1359,5 +1359,6 @@
   "ui.summary.open.titleSite": "{site} kollu huwa miftuħ għal kulħadd",
   "ui.summary.notFound.titleSite": "{site} m’għandu l-ebda robots.txt",
   "ui.summary.serverError.titleSite": "Is-server ta’ {site} mhux qed jagħti l-fajl",
-  "page.footer.contact": "Kuntatt"
+  "page.footer.contact": "Kuntatt",
+  "page.footer.crawlers": "Lista tal-crawlers"
 }

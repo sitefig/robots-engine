@@ -4665,3 +4665,7 @@ msgstr "Crea un account gratuito"
 msgctxt "page.footer.contact"
 msgid "Contact"
 msgstr "Contatti"
+
+msgctxt "page.footer.crawlers"
+msgid "Crawler list"
+msgstr "Elenco dei crawler"

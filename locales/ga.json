@@ -1359,5 +1359,6 @@
   "ui.summary.open.titleSite": "Tá {site} ar fad oscailte do chách",
   "ui.summary.notFound.titleSite": "Níl aon robots.txt ag {site}",
   "ui.summary.serverError.titleSite": "Níl freastalaí {site} ag tabhairt an chomhaid uaidh",
-  "page.footer.contact": "Teagmháil"
+  "page.footer.contact": "Teagmháil",
+  "page.footer.crawlers": "Liosta crawlers"
 }

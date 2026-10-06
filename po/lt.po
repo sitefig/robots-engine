@@ -4707,3 +4707,7 @@ msgstr ""
 msgctxt "page.footer.contact"
 msgid "Contact"
 msgstr "Kontaktai"
+
+msgctxt "page.footer.crawlers"
+msgid "Crawler list"
+msgstr "Robotų sąrašas"

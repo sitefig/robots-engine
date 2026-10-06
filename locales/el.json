@@ -1233,5 +1233,6 @@
   "ui.summary.open.titleSite": "Ολόκληρο το {site} είναι ανοιχτό σε όλους",
   "ui.summary.notFound.titleSite": "Το {site} δεν έχει καθόλου robots.txt",
   "ui.summary.serverError.titleSite": "Ο διακομιστής του {site} δεν παραδίδει το αρχείο",
-  "page.footer.contact": "Επικοινωνία"
+  "page.footer.contact": "Επικοινωνία",
+  "page.footer.crawlers": "Λίστα crawlers"
 }
