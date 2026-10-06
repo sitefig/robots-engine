@@ -4661,3 +4661,7 @@ msgstr ""
 msgctxt "ui.fixes.account.cta"
 msgid "Create a free account"
 msgstr ""
+
+msgctxt "page.footer.contact"
+msgid "Contact"
+msgstr "Kontakt"

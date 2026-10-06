@@ -1316,5 +1316,6 @@
   "ui.summary.allBlocked.titleSite": "Visa svetainė {site} uždaryta paieškos sistemoms",
   "ui.summary.open.titleSite": "Visa svetainė {site} atvira visiems",
   "ui.summary.notFound.titleSite": "{site} visiškai neturi robots.txt failo",
-  "ui.summary.serverError.titleSite": "{site} serveris nepateikia failo"
+  "ui.summary.serverError.titleSite": "{site} serveris nepateikia failo",
+  "page.footer.contact": "Kontaktai"
 }

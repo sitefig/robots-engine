@@ -4619,3 +4619,7 @@ msgstr "We are sometimes wrong, and your wording is often better than ours. An a
 msgctxt "ui.fixes.account.cta"
 msgid "Create a free account"
 msgstr "Create a free account"
+
+msgctxt "page.footer.contact"
+msgid "Contact"
+msgstr "Contact"

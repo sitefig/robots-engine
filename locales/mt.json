@@ -1358,5 +1358,6 @@
   "ui.summary.allBlocked.titleSite": "{site} kollu huwa magħluq għall-magni tat-tiftix",
   "ui.summary.open.titleSite": "{site} kollu huwa miftuħ għal kulħadd",
   "ui.summary.notFound.titleSite": "{site} m’għandu l-ebda robots.txt",
-  "ui.summary.serverError.titleSite": "Is-server ta’ {site} mhux qed jagħti l-fajl"
+  "ui.summary.serverError.titleSite": "Is-server ta’ {site} mhux qed jagħti l-fajl",
+  "page.footer.contact": "Kuntatt"
 }

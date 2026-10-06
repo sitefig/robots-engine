@@ -1316,5 +1316,6 @@
   "ui.summary.allBlocked.titleSite": "Celý web {site} je pre vyhľadávače zatvorený",
   "ui.summary.open.titleSite": "Celý web {site} je otvorený pre všetkých",
   "ui.summary.notFound.titleSite": "{site} nemá žiadny súbor robots.txt",
-  "ui.summary.serverError.titleSite": "Server {site} súbor nevydáva"
+  "ui.summary.serverError.titleSite": "Server {site} súbor nevydáva",
+  "page.footer.contact": "Kontakt"
 }

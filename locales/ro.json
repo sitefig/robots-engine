@@ -1274,5 +1274,6 @@
   "ui.summary.allBlocked.titleSite": "Întregul site {site} este închis pentru motoarele de căutare",
   "ui.summary.open.titleSite": "Întregul site {site} este deschis tuturor",
   "ui.summary.notFound.titleSite": "{site} nu are niciun robots.txt",
-  "ui.summary.serverError.titleSite": "Serverul {site} nu livrează fișierul"
+  "ui.summary.serverError.titleSite": "Serverul {site} nu livrează fișierul",
+  "page.footer.contact": "Contact"
 }

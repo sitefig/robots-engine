@@ -4661,3 +4661,7 @@ msgstr "A volte sbagliamo, e le tue parole sono spesso migliori delle nostre. Un
 msgctxt "ui.fixes.account.cta"
 msgid "Create a free account"
 msgstr "Crea un account gratuito"
+
+msgctxt "page.footer.contact"
+msgid "Contact"
+msgstr "Contatti"

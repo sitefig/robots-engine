@@ -1232,5 +1232,6 @@
   "ui.summary.allBlocked.titleSite": "Ολόκληρο το {site} είναι κλειστό για τις μηχανές αναζήτησης",
   "ui.summary.open.titleSite": "Ολόκληρο το {site} είναι ανοιχτό σε όλους",
   "ui.summary.notFound.titleSite": "Το {site} δεν έχει καθόλου robots.txt",
-  "ui.summary.serverError.titleSite": "Ο διακομιστής του {site} δεν παραδίδει το αρχείο"
+  "ui.summary.serverError.titleSite": "Ο διακομιστής του {site} δεν παραδίδει το αρχείο",
+  "page.footer.contact": "Επικοινωνία"
 }

@@ -4619,3 +4619,7 @@ msgstr "Wij hebben het soms mis, en jouw formulering is vaak beter dan de onze. 
 msgctxt "ui.fixes.account.cta"
 msgid "Create a free account"
 msgstr "Gratis account aanmaken"
+
+msgctxt "page.footer.contact"
+msgid "Contact"
+msgstr "Contact"

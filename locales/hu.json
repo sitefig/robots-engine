@@ -1232,5 +1232,6 @@
   "ui.summary.allBlocked.titleSite": "A(z) {site} teljesen zárva van a keresők előtt",
   "ui.summary.open.titleSite": "A(z) {site} teljesen nyitva áll mindenki előtt",
   "ui.summary.notFound.titleSite": "A(z) {site} egyáltalán nem rendelkezik robots.txt fájllal",
-  "ui.summary.serverError.titleSite": "A(z) {site} szervere nem adja ki a fájlt"
+  "ui.summary.serverError.titleSite": "A(z) {site} szervere nem adja ki a fájlt",
+  "page.footer.contact": "Kapcsolat"
 }

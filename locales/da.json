@@ -1232,5 +1232,6 @@
   "ui.summary.allBlocked.titleSite": "Hele {site} er lukket for søgemaskiner",
   "ui.summary.open.titleSite": "Hele {site} er åbent for alle",
   "ui.summary.notFound.titleSite": "{site} har slet ingen robots.txt",
-  "ui.summary.serverError.titleSite": "Serveren på {site} udleverer ikke filen"
+  "ui.summary.serverError.titleSite": "Serveren på {site} udleverer ikke filen",
+  "page.footer.contact": "Kontakt"
 }

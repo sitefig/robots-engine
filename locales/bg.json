@@ -1232,5 +1232,6 @@
   "ui.summary.allBlocked.titleSite": "Целият {site} е затворен за търсачките",
   "ui.summary.open.titleSite": "Целият {site} е отворен за всички",
   "ui.summary.notFound.titleSite": "{site} изобщо няма robots.txt",
-  "ui.summary.serverError.titleSite": "Сървърът на {site} не предава файла"
+  "ui.summary.serverError.titleSite": "Сървърът на {site} не предава файла",
+  "page.footer.contact": "Контакт"
 }

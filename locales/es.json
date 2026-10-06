@@ -1293,5 +1293,6 @@
   "ui.fixes.editLabel": "El mensaje para IT, para editar",
   "ui.fixes.account.title": "Guardar esto requiere una cuenta gratis",
   "ui.fixes.account.body": "A veces nos equivocamos, y tu redacción suele ser mejor que la nuestra. Una cuenta recuerda lo que ya has resuelto, lo que decidiste ignorar y el mensaje tal como lo reescribiste. El informe en sí sigue siendo gratis y completo en cualquier caso.",
-  "ui.fixes.account.cta": "Crear una cuenta gratis"
+  "ui.fixes.account.cta": "Crear una cuenta gratis",
+  "page.footer.contact": "Contacto"
 }

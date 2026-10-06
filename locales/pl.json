@@ -1316,5 +1316,6 @@
   "ui.summary.allBlocked.titleSite": "Cała witryna {site} jest zamknięta dla wyszukiwarek",
   "ui.summary.open.titleSite": "Cała witryna {site} jest otwarta dla wszystkich",
   "ui.summary.notFound.titleSite": "{site} w ogóle nie ma pliku robots.txt",
-  "ui.summary.serverError.titleSite": "Serwer {site} nie podaje pliku"
+  "ui.summary.serverError.titleSite": "Serwer {site} nie podaje pliku",
+  "page.footer.contact": "Kontakt"
 }

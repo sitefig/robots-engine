@@ -1274,5 +1274,6 @@
   "ui.summary.allBlocked.titleSite": "Todo o {site} está fechado aos motores de pesquisa",
   "ui.summary.open.titleSite": "Todo o {site} está aberto a todos",
   "ui.summary.notFound.titleSite": "{site} não tem nenhum robots.txt",
-  "ui.summary.serverError.titleSite": "O servidor de {site} não está a entregar o ficheiro"
+  "ui.summary.serverError.titleSite": "O servidor de {site} não está a entregar o ficheiro",
+  "page.footer.contact": "Contacto"
 }
