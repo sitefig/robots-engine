@@ -716,6 +716,11 @@ Disallow: /
 
 User-agent: OAI-SearchBot
 Disallow: /
+# drinking water
+Allow: /*drinking-water
+Allow: /*Drinking-water
+Allow: /*Drinking-Water
+Allow: /*drinking-Water
 
 
 User-agent: PerplexityBot

@@ -41,12 +41,9 @@ Disallow: *bvstate=
 #Support
 
 Disallow: /support/kbdoc/*/000287599
-Disallow: /support/incidents-online/*/contactus/product/
 Disallow: /support/ips/
 Disallow: /support/*/ru/ru/
 Disallow: /support/order-status/*/packingslip*
-Disallow: /support/search/
-Disallow: /support/Search/
 Disallow: /support/home/cassette.axd/*
 Disallow: /support/home/*/*/*/Diagnostics/*  
 Disallow: /support/home/*/*/*/Drivers/DownloadList/* 
@@ -59,10 +56,7 @@ Disallow: /support/clientconnection/
 Disallow: /support/*/tab_mob/
 Disallow: /support/coveo-dell/*
 Disallow: /support/components/*
-Disallow: /support/article{lwp}/*
 Allow: */home/*/product-support/servicetag/*/configuration*
-Disallow: /support/*/servicetag/*
-Disallow: /support/*/ServiceTag/*
 Disallow: /support/Diagnostics/*
 Disallow: /support/diagnostics/*
 Disallow: /support/*/chat/*
@@ -74,7 +68,6 @@ Disallow: */support/*/ua/ru/
 Disallow: */support/*/ua/uk/
 Disallow: */support/*/ua/en/
 Disallow: /support/*/ips/
-Disallow: /support/productsmfe/
 
 #Sitelite
 Allow: /cs-cz/lp$
@@ -1258,4 +1251,4 @@ Sitemap: https://www.dell.com/index-video-xml-sitemap.xml.gz
 Sitemap: https://www.dell.com/index-downloads-dell-pdfs-sitemap.xml.gz
 Sitemap: https://www.dell.com/index-dt-sitemap.xml.gz
 
-# Last Modified on 2026 Sep 29th, 5am CST
+# Last Modified on 2026 Oct 7th, 3:53AM CST
