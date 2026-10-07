@@ -3499,12 +3499,12 @@ msgid "The address you check is never sent to Google, whichever you choose."
 msgstr "Die Adresse, die Sie prüfen, wird nie an Google gesendet, wie Sie auch entscheiden."
 
 msgctxt "ui.consent.accept"
-msgid "Allow analytics"
-msgstr "Analyse erlauben"
+msgid "Allow cookies"
+msgstr "Cookies erlauben"
 
 msgctxt "ui.consent.reject"
-msgid "No analytics"
-msgstr "Keine Analyse"
+msgid "No cookies"
+msgstr "Keine Cookies"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
@@ -3515,8 +3515,8 @@ msgid "Analytics choice"
 msgstr "Analyse-Einstellung"
 
 msgctxt "ui.consent.saved.denied"
-msgid "No analytics. You can change this from the footer at any time."
-msgstr "Keine Analyse. Sie können das jederzeit im Fußbereich ändern."
+msgid "No cookies. You can change this from the footer at any time."
+msgstr "Keine Cookies. Sie können das jederzeit im Fußbereich ändern."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"

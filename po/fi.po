@@ -3499,12 +3499,12 @@ msgid "The address you check is never sent to Google, whichever you choose."
 msgstr "Tarkistamaasi osoitetta ei koskaan lähetetä Googlelle, kummin tahansa valitset."
 
 msgctxt "ui.consent.accept"
-msgid "Allow analytics"
-msgstr "Salli analytiikka"
+msgid "Allow cookies"
+msgstr "Salli evästeet"
 
 msgctxt "ui.consent.reject"
-msgid "No analytics"
-msgstr "Ei analytiikkaa"
+msgid "No cookies"
+msgstr "Ei evästeitä"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
@@ -3515,8 +3515,8 @@ msgid "Analytics choice"
 msgstr "Analytiikkavalinta"
 
 msgctxt "ui.consent.saved.denied"
-msgid "No analytics. You can change this from the footer at any time."
-msgstr "Ei analytiikkaa. Voit muuttaa tätä milloin tahansa alatunnisteesta."
+msgid "No cookies. You can change this from the footer at any time."
+msgstr "Ei evästeitä. Voit muuttaa tätä milloin tahansa alatunnisteesta."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"

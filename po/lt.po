@@ -3557,12 +3557,12 @@ msgid "The address you check is never sent to Google, whichever you choose."
 msgstr "Jūsų tikrinamas adresas niekada nesiunčiamas „Google“, kad ir ką pasirinktumėte."
 
 msgctxt "ui.consent.accept"
-msgid "Allow analytics"
-msgstr "Leisti analitiką"
+msgid "Allow cookies"
+msgstr "Leisti slapukus"
 
 msgctxt "ui.consent.reject"
-msgid "No analytics"
-msgstr "Be analitikos"
+msgid "No cookies"
+msgstr "Be slapukų"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
@@ -3573,8 +3573,8 @@ msgid "Analytics choice"
 msgstr "Analitikos pasirinkimas"
 
 msgctxt "ui.consent.saved.denied"
-msgid "No analytics. You can change this from the footer at any time."
-msgstr "Be analitikos. Bet kada galite tai pakeisti poraštėje."
+msgid "No cookies. You can change this from the footer at any time."
+msgstr "Be slapukų. Bet kada galite tai pakeisti poraštėje."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"

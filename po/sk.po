@@ -3557,12 +3557,12 @@ msgid "The address you check is never sent to Google, whichever you choose."
 msgstr "Adresa, ktorú kontrolujete, sa Googlu nikdy neposiela, nech si vyberiete čokoľvek."
 
 msgctxt "ui.consent.accept"
-msgid "Allow analytics"
-msgstr "Povoliť analytiku"
+msgid "Allow cookies"
+msgstr "Povoliť cookies"
 
 msgctxt "ui.consent.reject"
-msgid "No analytics"
-msgstr "Žiadna analytika"
+msgid "No cookies"
+msgstr "Žiadne cookies"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
@@ -3573,8 +3573,8 @@ msgid "Analytics choice"
 msgstr "Voľba analytiky"
 
 msgctxt "ui.consent.saved.denied"
-msgid "No analytics. You can change this from the footer at any time."
-msgstr "Žiadna analytika. Môžete to kedykoľvek zmeniť v pätičke."
+msgid "No cookies. You can change this from the footer at any time."
+msgstr "Žiadne cookies. Môžete to kedykoľvek zmeniť v pätičke."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"

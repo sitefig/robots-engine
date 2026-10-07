@@ -3586,12 +3586,12 @@ msgid "The address you check is never sent to Google, whichever you choose."
 msgstr "L-indirizz li tiċċekkja qatt ma jintbagħat lil Google, ikun x’ikun l-għażla tiegħek."
 
 msgctxt "ui.consent.accept"
-msgid "Allow analytics"
-msgstr "Ippermetti l-analitika"
+msgid "Allow cookies"
+msgstr "Ippermetti l-cookies"
 
 msgctxt "ui.consent.reject"
-msgid "No analytics"
-msgstr "Bla analitika"
+msgid "No cookies"
+msgstr "Bla cookies"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
@@ -3602,8 +3602,8 @@ msgid "Analytics choice"
 msgstr "Għażla dwar l-analitika"
 
 msgctxt "ui.consent.saved.denied"
-msgid "No analytics. You can change this from the footer at any time."
-msgstr "Bla analitika. Tista’ tibdilha f’kull ħin mill-qiegħ tal-paġna."
+msgid "No cookies. You can change this from the footer at any time."
+msgstr "Bla cookies. Tista’ tibdilha f’kull ħin mill-qiegħ tal-paġna."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"

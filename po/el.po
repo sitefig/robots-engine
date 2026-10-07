@@ -3499,12 +3499,12 @@ msgid "The address you check is never sent to Google, whichever you choose."
 msgstr "Η διεύθυνση που ελέγχετε δεν στέλνεται ποτέ στην Google, ό,τι κι αν επιλέξετε."
 
 msgctxt "ui.consent.accept"
-msgid "Allow analytics"
-msgstr "Να επιτρέπονται τα στατιστικά"
+msgid "Allow cookies"
+msgstr "Να επιτρέπονται τα cookies"
 
 msgctxt "ui.consent.reject"
-msgid "No analytics"
-msgstr "Χωρίς στατιστικά"
+msgid "No cookies"
+msgstr "Χωρίς cookies"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
@@ -3515,8 +3515,8 @@ msgid "Analytics choice"
 msgstr "Επιλογή για τα στατιστικά"
 
 msgctxt "ui.consent.saved.denied"
-msgid "No analytics. You can change this from the footer at any time."
-msgstr "Χωρίς στατιστικά. Μπορείτε να το αλλάξετε ανά πάσα στιγμή από το υποσέλιδο."
+msgid "No cookies. You can change this from the footer at any time."
+msgstr "Χωρίς cookies. Μπορείτε να το αλλάξετε ανά πάσα στιγμή από το υποσέλιδο."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"

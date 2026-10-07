@@ -3586,12 +3586,12 @@ msgid "The address you check is never sent to Google, whichever you choose."
 msgstr "Ní sheoltar an seoladh a sheiceálann tú chuig Google riamh, cibé rogha a dhéanann tú."
 
 msgctxt "ui.consent.accept"
-msgid "Allow analytics"
-msgstr "Ceadaigh anailís"
+msgid "Allow cookies"
+msgstr "Ceadaigh fianáin"
 
 msgctxt "ui.consent.reject"
-msgid "No analytics"
-msgstr "Gan anailís"
+msgid "No cookies"
+msgstr "Gan fianáin"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
@@ -3602,8 +3602,8 @@ msgid "Analytics choice"
 msgstr "Rogha anailíse"
 
 msgctxt "ui.consent.saved.denied"
-msgid "No analytics. You can change this from the footer at any time."
-msgstr "Gan anailís. Is féidir leat é a athrú ag am ar bith ón bhfonóta."
+msgid "No cookies. You can change this from the footer at any time."
+msgstr "Gan fianáin. Is féidir leat é a athrú ag am ar bith ón bhfonóta."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"

@@ -3499,12 +3499,12 @@ msgid "The address you check is never sent to Google, whichever you choose."
 msgstr "Az ellenőrzött cím soha nem kerül a Google-hez, bármit is választ."
 
 msgctxt "ui.consent.accept"
-msgid "Allow analytics"
-msgstr "Analitika engedélyezése"
+msgid "Allow cookies"
+msgstr "Sütik engedélyezése"
 
 msgctxt "ui.consent.reject"
-msgid "No analytics"
-msgstr "Nincs analitika"
+msgid "No cookies"
+msgstr "Nincsenek sütik"
 
 msgctxt "ui.consent.privacy"
 msgid "What we collect, and how to change your mind"
@@ -3515,8 +3515,8 @@ msgid "Analytics choice"
 msgstr "Analitikai döntés"
 
 msgctxt "ui.consent.saved.denied"
-msgid "No analytics. You can change this from the footer at any time."
-msgstr "Nincs analitika. Ezt bármikor megváltoztathatja a láblécben."
+msgid "No cookies. You can change this from the footer at any time."
+msgstr "Nincsenek sütik. Ezt bármikor megváltoztathatja a láblécben."
 
 msgctxt "ui.privacy.title"
 msgid "Privacy"
