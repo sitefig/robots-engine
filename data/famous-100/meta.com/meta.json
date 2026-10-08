@@ -3,8 +3,8 @@
   "robots_url": "https://meta.com/robots.txt",
   "final_url": "https://www.meta.com/robots.txt",
   "http_status": 200,
-  "bytes": 3495,
-  "fetched_at": "2026-10-07T10:16:42.000Z",
+  "bytes": 3419,
+  "fetched_at": "2026-10-08T10:35:55.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false

@@ -82,6 +82,7 @@ Disallow: /search/?q=*
 Disallow: /time_tout/*
 Disallow: /uncategorized
 Disallow: /time_cover_hub
+Disallow: /c/
 
 User-Agent: BomboraBot
 Allow: /

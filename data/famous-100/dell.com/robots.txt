@@ -37,9 +37,9 @@ Disallow: *boomerang
 Disallow: */apd/*/quickview$
 Disallow: *pr_rd_page=*
 Disallow: *bvstate=
+Allow: /en-gb/blog/
 
 #Support
-
 Disallow: /support/kbdoc/*/000287599
 Disallow: /support/ips/
 Disallow: /support/*/ru/ru/
@@ -1251,4 +1251,4 @@ Sitemap: https://www.dell.com/index-video-xml-sitemap.xml.gz
 Sitemap: https://www.dell.com/index-downloads-dell-pdfs-sitemap.xml.gz
 Sitemap: https://www.dell.com/index-dt-sitemap.xml.gz
 
-# Last Modified on 2026 Oct 7th, 3:53AM CST
+# Last Modified on 2026 Oct 7th, 5:34AM CST
