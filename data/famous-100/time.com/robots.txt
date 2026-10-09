@@ -1,5 +1,6 @@
 User-Agent: *
 Allow: /
+Disallow: /c/
 
 User-Agent: Googlebot
 Allow: /replatform/_next/image*
@@ -82,7 +83,6 @@ Disallow: /search/?q=*
 Disallow: /time_tout/*
 Disallow: /uncategorized
 Disallow: /time_cover_hub
-Disallow: /c/
 
 User-Agent: BomboraBot
 Allow: /

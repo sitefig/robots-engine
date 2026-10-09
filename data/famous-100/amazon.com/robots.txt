@@ -134,6 +134,8 @@ Disallow: /gp/video/search
 Disallow: /gp/video/auth
 Disallow: /gp/video/salp/i
 Disallow: /icdp/
+Disallow: /shoptheshow/*?cat=
+Disallow: /shoptheshow/*&cat=
 
 User-agent: EtaoSpider
 Disallow: /

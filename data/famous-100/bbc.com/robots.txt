@@ -1,5 +1,5 @@
 
-# version: 958ed1a58c8ce418427283859a5538a5ce0eb62d
+# version: 20b91abf30af3b3b076745396ba368978384f4d7
 # The BBC's Terms of Use: https://www.bbc.co.uk/terms
 # - Explain the rules for using our services
 # - Tell you what you can do with our content
@@ -165,6 +165,11 @@ Disallow: /
 Allow: /storyworks
 Allow: /storyworks/
 
+User-agent: OAI-SearchBot
+Disallow: /
+Allow: /storyworks
+Allow: /storyworks/
+
 User-Agent: PerplexityBot
 Disallow: /
 
@@ -175,9 +180,6 @@ User-agent: Google-CloudVertexBot
 Disallow: /
 
 User-agent: meta-externalagent
-Disallow: /
-
-User-agent: OAI-SearchBot
 Disallow: /
 
 User-agent: YandexAdditional

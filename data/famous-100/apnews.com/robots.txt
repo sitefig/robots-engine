@@ -17,6 +17,7 @@ Disallow: /apdata/
 Disallow: /article/border-immigration-election-2182fec11fa008ec96c4202e5656d19e
 Disallow: /api/v2/feed/
 Disallow: /press-release/*
+Disallow: /*/widgets/
 
 Sitemap: https://apnews.com/ap-sitemap.xml
 Sitemap: https://apnews.com/news-sitemap-content.xml

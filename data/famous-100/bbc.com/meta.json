@@ -3,8 +3,8 @@
   "robots_url": "https://bbc.com/robots.txt",
   "final_url": "https://www.bbc.com/robots.txt",
   "http_status": 200,
-  "bytes": 6130,
-  "fetched_at": "2026-09-17T12:11:37.000Z",
+  "bytes": 6169,
+  "fetched_at": "2026-10-09T10:34:19.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false
