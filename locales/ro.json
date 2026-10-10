@@ -1276,5 +1276,6 @@
   "ui.summary.notFound.titleSite": "{site} nu are niciun robots.txt",
   "ui.summary.serverError.titleSite": "Serverul {site} nu livrează fișierul",
   "page.footer.contact": "Contact",
-  "page.footer.crawlers": "Lista crawlerilor"
+  "page.footer.crawlers": "Lista crawlerilor",
+  "page.footer.docs": "Documentație"
 }

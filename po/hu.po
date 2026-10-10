@@ -4627,3 +4627,7 @@ msgstr "Kapcsolat"
 msgctxt "page.footer.crawlers"
 msgid "Crawler list"
 msgstr "Robotok listája"
+
+msgctxt "page.footer.docs"
+msgid "Documentation"
+msgstr "Dokumentáció"

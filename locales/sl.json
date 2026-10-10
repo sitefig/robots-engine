@@ -1318,5 +1318,6 @@
   "ui.summary.notFound.titleSite": "{site} sploh nima datoteke robots.txt",
   "ui.summary.serverError.titleSite": "Strežnik {site} datoteke ne postreže",
   "page.footer.contact": "Kontakt",
-  "page.footer.crawlers": "Seznam pajkov"
+  "page.footer.crawlers": "Seznam pajkov",
+  "page.footer.docs": "Dokumentacija"
 }

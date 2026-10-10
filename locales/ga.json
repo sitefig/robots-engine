@@ -1360,5 +1360,6 @@
   "ui.summary.notFound.titleSite": "Níl aon robots.txt ag {site}",
   "ui.summary.serverError.titleSite": "Níl freastalaí {site} ag tabhairt an chomhaid uaidh",
   "page.footer.contact": "Teagmháil",
-  "page.footer.crawlers": "Liosta crawlers"
+  "page.footer.crawlers": "Liosta crawlers",
+  "page.footer.docs": "Doiciméadú"
 }

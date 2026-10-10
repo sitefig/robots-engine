@@ -1295,5 +1295,6 @@
   "ui.fixes.account.body": "A volte sbagliamo, e le tue parole sono spesso migliori delle nostre. Un account ricorda cosa hai sistemato, cosa hai deciso di ignorare e il messaggio come lo hai riscritto. Il report resta gratis e completo in ogni caso.",
   "ui.fixes.account.cta": "Crea un account gratuito",
   "page.footer.contact": "Contatti",
-  "page.footer.crawlers": "Elenco dei crawler"
+  "page.footer.crawlers": "Elenco dei crawler",
+  "page.footer.docs": "Documentazione"
 }

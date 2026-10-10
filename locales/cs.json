@@ -1318,5 +1318,6 @@
   "ui.summary.notFound.titleSite": "{site} nemá žádný soubor robots.txt",
   "ui.summary.serverError.titleSite": "Server {site} soubor nevydává",
   "page.footer.contact": "Kontakt",
-  "page.footer.crawlers": "Seznam crawlerů"
+  "page.footer.crawlers": "Seznam crawlerů",
+  "page.footer.docs": "Dokumentace"
 }

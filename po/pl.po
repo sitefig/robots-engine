@@ -4711,3 +4711,7 @@ msgstr "Kontakt"
 msgctxt "page.footer.crawlers"
 msgid "Crawler list"
 msgstr "Lista crawlerów"
+
+msgctxt "page.footer.docs"
+msgid "Documentation"
+msgstr "Dokumentacja"

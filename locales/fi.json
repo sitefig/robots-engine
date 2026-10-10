@@ -1234,5 +1234,6 @@
   "ui.summary.notFound.titleSite": "Sivustolla {site} ei ole robots.txt-tiedostoa lainkaan",
   "ui.summary.serverError.titleSite": "Sivuston {site} palvelin ei toimita tiedostoa",
   "page.footer.contact": "Yhteystiedot",
-  "page.footer.crawlers": "Indeksoijien luettelo"
+  "page.footer.crawlers": "Indeksoijien luettelo",
+  "page.footer.docs": "Dokumentaatio"
 }

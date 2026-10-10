@@ -4627,3 +4627,7 @@ msgstr "Контакт"
 msgctxt "page.footer.crawlers"
 msgid "Crawler list"
 msgstr "Списък с роботи"
+
+msgctxt "page.footer.docs"
+msgid "Documentation"
+msgstr "Документация"

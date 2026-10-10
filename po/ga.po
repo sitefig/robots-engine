@@ -4753,3 +4753,7 @@ msgstr "Teagmháil"
 msgctxt "page.footer.crawlers"
 msgid "Crawler list"
 msgstr "Liosta crawlers"
+
+msgctxt "page.footer.docs"
+msgid "Documentation"
+msgstr "Doiciméadú"

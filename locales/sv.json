@@ -1234,5 +1234,6 @@
   "ui.summary.notFound.titleSite": "{site} har ingen robots.txt alls",
   "ui.summary.serverError.titleSite": "Servern för {site} lämnar inte ut filen",
   "page.footer.contact": "Kontakt",
-  "page.footer.crawlers": "Lista över sökrobotar"
+  "page.footer.crawlers": "Lista över sökrobotar",
+  "page.footer.docs": "Dokumentation"
 }

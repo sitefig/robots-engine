@@ -4616,3 +4616,7 @@ msgstr ""
 msgctxt "page.footer.crawlers"
 msgid "Crawler list"
 msgstr ""
+
+msgctxt "page.footer.docs"
+msgid "Documentation"
+msgstr ""

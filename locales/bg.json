@@ -1234,5 +1234,6 @@
   "ui.summary.notFound.titleSite": "{site} изобщо няма robots.txt",
   "ui.summary.serverError.titleSite": "Сървърът на {site} не предава файла",
   "page.footer.contact": "Контакт",
-  "page.footer.crawlers": "Списък с роботи"
+  "page.footer.crawlers": "Списък с роботи",
+  "page.footer.docs": "Документация"
 }

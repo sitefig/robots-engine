@@ -4711,3 +4711,7 @@ msgstr "Kontaktai"
 msgctxt "page.footer.crawlers"
 msgid "Crawler list"
 msgstr "Robotų sąrašas"
+
+msgctxt "page.footer.docs"
+msgid "Documentation"
+msgstr "Dokumentacija"

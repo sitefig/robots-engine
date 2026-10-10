@@ -1318,5 +1318,6 @@
   "ui.summary.notFound.titleSite": "{site} w ogóle nie ma pliku robots.txt",
   "ui.summary.serverError.titleSite": "Serwer {site} nie podaje pliku",
   "page.footer.contact": "Kontakt",
-  "page.footer.crawlers": "Lista crawlerów"
+  "page.footer.crawlers": "Lista crawlerów",
+  "page.footer.docs": "Dokumentacja"
 }

@@ -4627,3 +4627,7 @@ msgstr "Kontakt"
 msgctxt "page.footer.crawlers"
 msgid "Crawler list"
 msgstr "Roomajate loend"
+
+msgctxt "page.footer.docs"
+msgid "Documentation"
+msgstr "Dokumentatsioon"

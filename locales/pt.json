@@ -1276,5 +1276,6 @@
   "ui.summary.notFound.titleSite": "{site} não tem nenhum robots.txt",
   "ui.summary.serverError.titleSite": "O servidor de {site} não está a entregar o ficheiro",
   "page.footer.contact": "Contacto",
-  "page.footer.crawlers": "Lista de rastreadores"
+  "page.footer.crawlers": "Lista de rastreadores",
+  "page.footer.docs": "Documentação"
 }

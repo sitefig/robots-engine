@@ -4627,3 +4627,7 @@ msgstr "Yhteystiedot"
 msgctxt "page.footer.crawlers"
 msgid "Crawler list"
 msgstr "Indeksoijien luettelo"
+
+msgctxt "page.footer.docs"
+msgid "Documentation"
+msgstr "Dokumentaatio"

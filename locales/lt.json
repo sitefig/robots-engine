@@ -1318,5 +1318,6 @@
   "ui.summary.notFound.titleSite": "{site} visiškai neturi robots.txt failo",
   "ui.summary.serverError.titleSite": "{site} serveris nepateikia failo",
   "page.footer.contact": "Kontaktai",
-  "page.footer.crawlers": "Robotų sąrašas"
+  "page.footer.crawlers": "Robotų sąrašas",
+  "page.footer.docs": "Dokumentacija"
 }

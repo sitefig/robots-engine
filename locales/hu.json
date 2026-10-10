@@ -1234,5 +1234,6 @@
   "ui.summary.notFound.titleSite": "A(z) {site} egyáltalán nem rendelkezik robots.txt fájllal",
   "ui.summary.serverError.titleSite": "A(z) {site} szervere nem adja ki a fájlt",
   "page.footer.contact": "Kapcsolat",
-  "page.footer.crawlers": "Robotok listája"
+  "page.footer.crawlers": "Robotok listája",
+  "page.footer.docs": "Dokumentáció"
 }

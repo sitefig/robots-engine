@@ -1276,5 +1276,6 @@
   "ui.summary.notFound.titleSite": "Vietnei {site} nav robots.txt faila vispār",
   "ui.summary.serverError.titleSite": "Vietnes {site} serveris neizsniedz failu",
   "page.footer.contact": "Kontakti",
-  "page.footer.crawlers": "Rāpuļu saraksts"
+  "page.footer.crawlers": "Rāpuļu saraksts",
+  "page.footer.docs": "Dokumentācija"
 }

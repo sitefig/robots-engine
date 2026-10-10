@@ -1234,5 +1234,6 @@
   "ui.summary.notFound.titleSite": "Το {site} δεν έχει καθόλου robots.txt",
   "ui.summary.serverError.titleSite": "Ο διακομιστής του {site} δεν παραδίδει το αρχείο",
   "page.footer.contact": "Επικοινωνία",
-  "page.footer.crawlers": "Λίστα crawlers"
+  "page.footer.crawlers": "Λίστα crawlers",
+  "page.footer.docs": "Τεκμηρίωση"
 }

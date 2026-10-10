@@ -1276,5 +1276,6 @@
   "ui.summary.notFound.titleSite": "{site} uopće nema datoteku robots.txt",
   "ui.summary.serverError.titleSite": "Poslužitelj stranice {site} ne isporučuje datoteku",
   "page.footer.contact": "Kontakt",
-  "page.footer.crawlers": "Popis crawlera"
+  "page.footer.crawlers": "Popis crawlera",
+  "page.footer.docs": "Dokumentacija"
 }
