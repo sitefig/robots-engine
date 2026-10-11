@@ -516,6 +516,30 @@ msgctxt "fetch.warn.notRobotsPath"
 msgid "Crawlers read the content of {path} as your robots.txt, because the redirect ended there and not at /robots.txt."
 msgstr "Crawlery odczytują zawartość {path} jako Twój robots.txt, bo przekierowanie zakończyło się tam, a nie na /robots.txt."
 
+msgctxt "fetch.warn.charset"
+msgid "Crawlers may read this file as something other than what it says, because it is served as {charset}. RFC 9309 requires UTF-8; serve it as \"text/plain; charset=utf-8\"."
+msgstr ""
+
+msgctxt "fetch.warn.cacheNoStore"
+msgid "Crawlers fetch this file again on every visit, because the response says \"{value}\". They expect to cache it for about a day, and Google serves its cached copy when the file is briefly unreachable."
+msgstr ""
+
+msgctxt "fetch.warn.cacheTooLong"
+msgid "A change to this file can go unread for a long time, because the response asks for a {maxage}-second cache and a crawler that honours it will not look again until that runs out."
+msgstr ""
+
+msgctxt "fetch.warn.xRobotsTag"
+msgid "Pages on this server can be kept out of search results with a header, because it already sends \"X-Robots-Tag: {value}\" on this file. A Noindex line inside robots.txt does nothing."
+msgstr ""
+
+msgctxt "fetch.warn.retryAfterLong"
+msgid "The whole site can stay out of search for {seconds} seconds, because robots.txt answered {status} and the response asks crawlers to wait that long before trying again."
+msgstr ""
+
+msgctxt "fetch.warn.varyUserAgent"
+msgid "What you see here is not necessarily what Googlebot or GPTBot is served, because the server says this file depends on who asks (\"Vary: {value}\"). The access check fetches it again as each crawler and compares."
+msgstr ""
+
 msgctxt "fetch.error.empty"
 msgid "Enter a website URL."
 msgstr "Wpisz adres URL witryny."

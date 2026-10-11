@@ -31,6 +31,16 @@ seo_traps = true         # trailing-slash trap, self-block, case notes, shadowed
 sitemaps = true          # protocol, cross-domain, duplicate sitemap lines
 absolute_urls = true     # Allow/Disallow with an absolute URL
 security = true          # sensitive Disallow paths
+headers = true           # cache, X-Robots-Tag, Retry-After and Vary on the response
+
+# Where "too long" starts, in seconds, for the two headers that can keep a whole
+# site out of search. Crawlers cache robots.txt for about a day, so a longer
+# max-age means a change can go unread for as long as it says; a 429 or a 503 is
+# read as "block everything" while it lasts, so a long Retry-After holds the
+# site out for that long.
+[checks.header_limits]
+max_age = 86400
+retry_after = 86400
 
 [checks.recon]
 cms = true

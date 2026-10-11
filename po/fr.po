@@ -516,6 +516,30 @@ msgctxt "fetch.warn.notRobotsPath"
 msgid "Crawlers read the content of {path} as your robots.txt, because the redirect ended there and not at /robots.txt."
 msgstr "Les robots lisent le contenu de {path} comme votre robots.txt, car la redirection s'est terminée là et non sur /robots.txt."
 
+msgctxt "fetch.warn.charset"
+msgid "Crawlers may read this file as something other than what it says, because it is served as {charset}. RFC 9309 requires UTF-8; serve it as \"text/plain; charset=utf-8\"."
+msgstr "Les robots peuvent lire ce fichier autrement qu'il n'est écrit, car il est servi en {charset}. La RFC 9309 impose UTF-8 ; servez-le en « text/plain; charset=utf-8 »."
+
+msgctxt "fetch.warn.cacheNoStore"
+msgid "Crawlers fetch this file again on every visit, because the response says \"{value}\". They expect to cache it for about a day, and Google serves its cached copy when the file is briefly unreachable."
+msgstr "Les robots récupèrent ce fichier à chaque visite, car la réponse indique « {value} ». Ils s'attendent à le garder en cache environ une journée, et Google sert sa copie en cache quand le fichier est brièvement injoignable."
+
+msgctxt "fetch.warn.cacheTooLong"
+msgid "A change to this file can go unread for a long time, because the response asks for a {maxage}-second cache and a crawler that honours it will not look again until that runs out."
+msgstr "Une modification de ce fichier peut rester longtemps ignorée, car la réponse demande un cache de {maxage} secondes et un robot qui le respecte ne reviendra pas avant son expiration."
+
+msgctxt "fetch.warn.xRobotsTag"
+msgid "Pages on this server can be kept out of search results with a header, because it already sends \"X-Robots-Tag: {value}\" on this file. A Noindex line inside robots.txt does nothing."
+msgstr "Les pages de ce serveur peuvent être tenues hors des résultats de recherche par un en-tête, puisqu'il envoie déjà « X-Robots-Tag: {value} » avec ce fichier. Une ligne Noindex dans robots.txt ne fait rien."
+
+msgctxt "fetch.warn.retryAfterLong"
+msgid "The whole site can stay out of search for {seconds} seconds, because robots.txt answered {status} and the response asks crawlers to wait that long before trying again."
+msgstr "Tout le site peut rester hors de la recherche pendant {seconds} secondes, car robots.txt a répondu {status} et la réponse demande aux robots d'attendre ce délai avant de réessayer."
+
+msgctxt "fetch.warn.varyUserAgent"
+msgid "What you see here is not necessarily what Googlebot or GPTBot is served, because the server says this file depends on who asks (\"Vary: {value}\"). The access check fetches it again as each crawler and compares."
+msgstr "Ce que vous voyez ici n'est pas forcément ce que reçoit Googlebot ou GPTBot, car le serveur indique que ce fichier dépend de qui le demande (« Vary: {value} »). La vérification d'accès le récupère à nouveau en tant que chaque robot et compare."
+
 msgctxt "fetch.error.empty"
 msgid "Enter a website URL."
 msgstr "Saisissez l'URL d'un site."

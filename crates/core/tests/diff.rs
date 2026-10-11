@@ -57,7 +57,7 @@ fn issues_keyed_by_message_not_line_and_sitemaps() {
 
 #[test]
 fn fetch_findings_do_not_count_when_both_sides_share_options() {
-    let f = FetchInfo { source: "cli".into(), robots_url: "https://example.com/robots.txt".into(), final_url: SITE.into(), status: 200, status_text: None, content_type: None, bytes: 0, truncated: false, redirects: vec![], redirect_limit: false, text: String::new() };
+    let f = FetchInfo { source: "cli".into(), robots_url: "https://example.com/robots.txt".into(), final_url: SITE.into(), status: 200, status_text: None, content_type: None, bytes: 0, truncated: false, redirects: vec![], redirect_limit: false, text: String::new(), headers: Default::default() };
     let text = "User-agent: *\nDisallow: /a\n";
     let with = Analysis::new(text, Options { site_url: Some(SITE.into()), fetch: Some(f), ..Default::default() }).unwrap();
     let without = a(text);

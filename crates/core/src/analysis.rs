@@ -75,7 +75,7 @@ impl Analysis {
         let mut model = parse(&text, &locale);
         model.warnings.extend(run_checks(&model, site_url.as_deref(), &engine, &locale));
         if let Some(f) = &options.fetch {
-            model.warnings.extend(fetch_warnings(f, &locale));
+            model.warnings.extend(fetch_warnings(f, &engine.config.checks, &locale));
         }
         apply_rule_overrides(&mut model.warnings, &engine);
         let engine_ref: &Engine = &engine;

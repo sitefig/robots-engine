@@ -20,6 +20,7 @@ fn fetch_info() -> FetchInfo {
         redirects: vec![Redirect { from: "https://example.com/robots.txt".into(), status: Some(301), to: SITE.into() }],
         redirect_limit: false,
         text: KITCHEN_SINK.into(),
+        headers: Default::default(),
     }
 }
 

@@ -1,6 +1,7 @@
 //! How the file was served. The engine does no I/O; the CLI and the browser
 //! pass in what they fetched and get the fetch-level findings back.
 
+use crate::config::{Checks, HeaderLimits};
 use crate::i18n::Locale;
 use crate::model::{Level, Warning, WarningKind};
 use crate::params;
@@ -13,6 +14,30 @@ pub struct Redirect {
     pub from: String,
     pub status: Option<u16>,
     pub to: String,
+}
+
+/// Response headers the caller could read, beyond the content type.
+///
+/// A browser fetching another origin directly only sees the CORS-safelisted
+/// headers (content-type, cache-control, expires, last-modified, pragma,
+/// content-language), so the rest arrive only through the proxy or the command
+/// line. An absent header here means "not seen", not "not sent", which is why
+/// every check below fires on a header that is present and never on a missing
+/// one.
+#[derive(Debug, Clone, Default, Serialize, Deserialize)]
+pub struct Headers {
+    #[serde(rename = "cacheControl", default)]
+    pub cache_control: Option<String>,
+    #[serde(default)]
+    pub expires: Option<String>,
+    #[serde(rename = "xRobotsTag", default)]
+    pub x_robots_tag: Option<String>,
+    #[serde(rename = "retryAfter", default)]
+    pub retry_after: Option<String>,
+    #[serde(default)]
+    pub vary: Option<String>,
+    #[serde(rename = "contentEncoding", default)]
+    pub content_encoding: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -39,6 +64,10 @@ pub struct FetchInfo {
     /// Full body as fetched; the engine decides whether crawlers would read it.
     #[serde(default)]
     pub text: String,
+    /// What the response said beyond its body. Empty when the caller could not
+    /// read them, which is the normal case for a direct fetch in a browser.
+    #[serde(default)]
+    pub headers: Headers,
 }
 
 impl FetchInfo {
@@ -83,11 +112,83 @@ fn response_warnings(f: &FetchInfo, locale: &Locale, out: &mut Vec<Warning>) {
     }
 }
 
+/// The charset parameter of the content type, lower-cased.
+fn charset(f: &FetchInfo) -> Option<String> {
+    let ct = f.content_type.as_ref()?;
+    ct.split(';')
+        .skip(1)
+        .map(str::trim)
+        .find_map(|p| p.strip_prefix("charset=").or_else(|| p.strip_prefix("CHARSET=")))
+        .map(|v| v.trim_matches('"').to_lowercase())
+}
+
+/// One directive of a Cache-Control header, by name: `max-age` gives its value.
+fn cache_directive<'a>(header: &'a str, name: &str) -> Option<&'a str> {
+    header
+        .split(',')
+        .map(str::trim)
+        .find(|d| d.to_lowercase() == name || d.to_lowercase().starts_with(&format!("{name}=")))
+        .map(|d| d.split_once('=').map(|(_, v)| v.trim().trim_matches('"')).unwrap_or(""))
+}
+
+/// Findings from the headers of the response rather than from the file.
+///
+/// Each one needs a header that is actually there: a file served with no cache
+/// headers at all is normal and says nothing.
+fn header_warnings(f: &FetchInfo, limits: &HeaderLimits, locale: &Locale, out: &mut Vec<Warning>) {
+    let w = |level, id: &str, p: &crate::i18n::Params| warning(locale, WarningKind::Fetch, level, None, id, p, None);
+    let h = &f.headers;
+
+    // A 429 or a 503 is read as "block everything" while it lasts, so what the
+    // server asks crawlers to wait is how long the site can stay out of search.
+    if matches!(f.status, 429 | 503) {
+        if let Some(seconds) = h.retry_after.as_deref().and_then(|v| v.trim().parse::<u64>().ok()) {
+            if seconds > limits.retry_after {
+                out.push(w(Level::Warning, "fetch.warn.retryAfterLong", &params! {"seconds" => seconds, "status" => f.status}));
+            }
+        }
+    }
+    if !(200..300).contains(&f.status) {
+        return;
+    }
+    // RFC 9309 requires UTF-8. A parser that honours the charset reads a file
+    // in another encoding as something else, and ASCII is a subset of UTF-8.
+    if let Some(cs) = charset(f) {
+        if !matches!(cs.as_str(), "utf-8" | "utf8" | "us-ascii" | "ascii") {
+            out.push(w(Level::Warning, "fetch.warn.charset", &params! {"charset" => cs}));
+        }
+    }
+    if let Some(cc) = h.cache_control.as_deref() {
+        let no_store = ["no-store", "no-cache"].iter().any(|d| cache_directive(cc, d).is_some());
+        let zero = cache_directive(cc, "max-age").map(|v| v.trim() == "0").unwrap_or(false);
+        if no_store || zero {
+            out.push(w(Level::Info, "fetch.warn.cacheNoStore", &params! {"value" => cc.trim()}));
+        } else if let Some(age) = cache_directive(cc, "max-age").and_then(|v| v.trim().parse::<u64>().ok()) {
+            if age > limits.max_age {
+                out.push(w(Level::Warning, "fetch.warn.cacheTooLong", &params! {"maxage" => age}));
+            }
+        }
+    }
+    if let Some(tag) = h.x_robots_tag.as_deref().map(str::trim).filter(|t| !t.is_empty()) {
+        out.push(w(Level::Info, "fetch.warn.xRobotsTag", &params! {"value" => tag}));
+    }
+    // Vary: User-Agent says the answer depends on who asks, which is what the
+    // access check measures by asking as each crawler.
+    if let Some(vary) = h.vary.as_deref() {
+        if vary.split(',').map(|v| v.trim().to_lowercase()).any(|v| v == "user-agent" || v == "*") {
+            out.push(w(Level::Info, "fetch.warn.varyUserAgent", &params! {"value" => vary.trim()}));
+        }
+    }
+}
+
 /// Findings about the redirect chain and the final URL.
-pub fn fetch_warnings(f: &FetchInfo, locale: &Locale) -> Vec<Warning> {
+pub fn fetch_warnings(f: &FetchInfo, checks: &Checks, locale: &Locale) -> Vec<Warning> {
     let mut out = Vec::new();
     let w = |level, id: &str, p: &crate::i18n::Params| warning(locale, WarningKind::Fetch, level, None, id, p, None);
     response_warnings(f, locale, &mut out);
+    if checks.headers {
+        header_warnings(f, &checks.header_limits, locale, &mut out);
+    }
     if f.redirect_limit {
         out.push(w(Level::Error, "fetch.warn.redirectLimit", &[]));
         return out;

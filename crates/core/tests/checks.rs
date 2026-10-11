@@ -180,8 +180,10 @@ fn how_the_file_was_served() {
         redirects: vec![],
         redirect_limit: false,
         text: text.into(),
+        headers: Default::default(),
     };
-    let ids = |f: FetchInfo| fetch_warnings(&f, &en()).into_iter().map(|w| w.id).collect::<Vec<_>>();
+    let checks = susbot_core::config::Config::merged(None).unwrap().checks;
+    let ids = |f: FetchInfo| fetch_warnings(&f, &checks, &en()).into_iter().map(|w| w.id).collect::<Vec<_>>();
     assert!(ids(base(503, "text/plain", "")).contains(&"fetch.warn.serverError".to_string()));
     assert!(ids(base(429, "text/plain", "")).contains(&"fetch.warn.rateLimited".to_string()));
     assert!(ids(base(403, "text/plain", "")).contains(&"fetch.warn.forbidden".to_string()));
@@ -192,4 +194,66 @@ fn how_the_file_was_served() {
     assert_eq!(ids(base(200, "text/plain; charset=utf-8", "User-agent: *\nDisallow: /a\n")), Vec::<String>::new());
     // A status finding still appears when the body is unusable.
     assert!(ids(base(500, "text/html", "<html>error</html>")).contains(&"fetch.warn.serverError".to_string()));
+}
+
+#[test]
+fn what_the_headers_say() {
+    use susbot_core::fetch::{fetch_warnings, FetchInfo, Headers};
+    let checks = susbot_core::config::Config::merged(None).unwrap().checks;
+    let served = |status: u16, content_type: &str, headers: Headers| FetchInfo {
+        source: "cli".into(),
+        robots_url: "https://example.com/robots.txt".into(),
+        final_url: "https://example.com/robots.txt".into(),
+        status,
+        status_text: None,
+        content_type: (!content_type.is_empty()).then(|| content_type.to_string()),
+        bytes: 0,
+        truncated: false,
+        redirects: vec![],
+        redirect_limit: false,
+        text: "User-agent: *\nDisallow: /a\n".into(),
+        headers,
+    };
+    let ids = |f: FetchInfo| fetch_warnings(&f, &checks, &en()).into_iter().map(|w| w.id).collect::<Vec<_>>();
+    let plain = Headers::default;
+
+    // Nothing is said about headers nobody sent: a browser fetching another
+    // origin cannot read most of them, and absent is not the same as wrong.
+    assert_eq!(ids(served(200, "text/plain; charset=utf-8", plain())), Vec::<String>::new());
+
+    // The encoding the file is served in, which RFC 9309 fixes as UTF-8.
+    assert!(ids(served(200, "text/plain; charset=utf-16", plain())).contains(&"fetch.warn.charset".to_string()));
+    assert!(ids(served(200, "text/plain; charset=US-ASCII", plain())).is_empty());
+
+    let cache = |v: &str| Headers { cache_control: Some(v.into()), ..Headers::default() };
+    assert!(ids(served(200, "text/plain", cache("no-store"))).contains(&"fetch.warn.cacheNoStore".to_string()));
+    assert!(ids(served(200, "text/plain", cache("public, max-age=0"))).contains(&"fetch.warn.cacheNoStore".to_string()));
+    assert!(ids(served(200, "text/plain", cache("public, max-age=604800"))).contains(&"fetch.warn.cacheTooLong".to_string()));
+    // A day is what crawlers do anyway, so it is not worth saying.
+    assert_eq!(ids(served(200, "text/plain", cache("max-age=3600"))), Vec::<String>::new());
+
+    let tag = Headers { x_robots_tag: Some("noindex".into()), ..Headers::default() };
+    assert!(ids(served(200, "text/plain", tag)).contains(&"fetch.warn.xRobotsTag".to_string()));
+
+    let vary = |v: &str| Headers { vary: Some(v.into()), ..Headers::default() };
+    assert!(ids(served(200, "text/plain", vary("User-Agent"))).contains(&"fetch.warn.varyUserAgent".to_string()));
+    assert!(ids(served(200, "text/plain", vary("Accept-Encoding, User-Agent"))).contains(&"fetch.warn.varyUserAgent".to_string()));
+    // Varying by something else says nothing about who gets which rules.
+    assert_eq!(ids(served(200, "text/plain", vary("Accept-Encoding"))), Vec::<String>::new());
+
+    // How long a 429 or a 503 holds the site out of search.
+    let wait = |v: &str| Headers { retry_after: Some(v.into()), ..Headers::default() };
+    let long = ids(served(503, "text/plain", wait("259200")));
+    assert!(long.contains(&"fetch.warn.retryAfterLong".to_string()));
+    assert!(long.contains(&"fetch.warn.serverError".to_string()), "the status finding still comes first");
+    assert!(!ids(served(429, "text/plain", wait("120"))).contains(&"fetch.warn.retryAfterLong".to_string()));
+    // An HTTP-date is legal and not a number; saying nothing beats guessing.
+    assert!(!ids(served(503, "text/plain", wait("Wed, 21 Oct 2026 07:28:00 GMT"))).contains(&"fetch.warn.retryAfterLong".to_string()));
+    // Cache headers on an error response say nothing about the file.
+    assert!(!ids(served(503, "text/plain", cache("max-age=604800"))).contains(&"fetch.warn.cacheTooLong".to_string()));
+
+    // The whole family can be switched off like every other check.
+    let mut off = susbot_core::config::Config::merged(None).unwrap().checks;
+    off.headers = false;
+    assert!(fetch_warnings(&served(200, "text/plain", cache("no-store")), &off, &en()).is_empty());
 }

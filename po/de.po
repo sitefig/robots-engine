@@ -516,6 +516,30 @@ msgctxt "fetch.warn.notRobotsPath"
 msgid "Crawlers read the content of {path} as your robots.txt, because the redirect ended there and not at /robots.txt."
 msgstr "Crawler lesen den Inhalt von {path} als Ihre robots.txt, weil die Weiterleitung dort endete und nicht bei /robots.txt."
 
+msgctxt "fetch.warn.charset"
+msgid "Crawlers may read this file as something other than what it says, because it is served as {charset}. RFC 9309 requires UTF-8; serve it as \"text/plain; charset=utf-8\"."
+msgstr "Crawler lesen diese Datei womöglich anders, als sie gemeint ist, weil sie als {charset} ausgeliefert wird. RFC 9309 verlangt UTF-8; liefern Sie sie als „text/plain; charset=utf-8“ aus."
+
+msgctxt "fetch.warn.cacheNoStore"
+msgid "Crawlers fetch this file again on every visit, because the response says \"{value}\". They expect to cache it for about a day, and Google serves its cached copy when the file is briefly unreachable."
+msgstr "Crawler holen diese Datei bei jedem Besuch neu, weil die Antwort „{value}“ sagt. Sie rechnen mit etwa einem Tag Zwischenspeicherung, und Google liefert seine gespeicherte Kopie aus, wenn die Datei kurz nicht erreichbar ist."
+
+msgctxt "fetch.warn.cacheTooLong"
+msgid "A change to this file can go unread for a long time, because the response asks for a {maxage}-second cache and a crawler that honours it will not look again until that runs out."
+msgstr "Eine Änderung an dieser Datei kann lange ungelesen bleiben, weil die Antwort eine Zwischenspeicherung von {maxage} Sekunden verlangt und ein Crawler, der sich daran hält, bis zu deren Ablauf nicht erneut nachsieht."
+
+msgctxt "fetch.warn.xRobotsTag"
+msgid "Pages on this server can be kept out of search results with a header, because it already sends \"X-Robots-Tag: {value}\" on this file. A Noindex line inside robots.txt does nothing."
+msgstr "Seiten auf diesem Server lassen sich per Header aus den Suchergebnissen halten, denn er sendet zu dieser Datei bereits „X-Robots-Tag: {value}“. Eine Noindex-Zeile in der robots.txt bewirkt nichts."
+
+msgctxt "fetch.warn.retryAfterLong"
+msgid "The whole site can stay out of search for {seconds} seconds, because robots.txt answered {status} and the response asks crawlers to wait that long before trying again."
+msgstr "Die gesamte Website kann {seconds} Sekunden lang aus der Suche verschwinden, weil die robots.txt mit {status} geantwortet hat und die Antwort Crawler bittet, so lange bis zum nächsten Versuch zu warten."
+
+msgctxt "fetch.warn.varyUserAgent"
+msgid "What you see here is not necessarily what Googlebot or GPTBot is served, because the server says this file depends on who asks (\"Vary: {value}\"). The access check fetches it again as each crawler and compares."
+msgstr "Was Sie hier sehen, muss nicht das sein, was Googlebot oder GPTBot bekommt, denn der Server sagt, diese Datei hänge davon ab, wer fragt („Vary: {value}“). Die Zugriffsprüfung ruft sie als jeder Crawler erneut ab und vergleicht."
+
 msgctxt "fetch.error.empty"
 msgid "Enter a website URL."
 msgstr "Geben Sie eine Website-URL ein."

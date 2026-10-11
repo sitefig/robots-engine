@@ -44,7 +44,27 @@ pub struct Checks {
     pub sitemaps: bool,
     pub absolute_urls: bool,
     pub security: bool,
+    /// Findings from the response headers rather than from the file.
+    #[serde(default = "yes")]
+    pub headers: bool,
+    #[serde(default)]
+    pub header_limits: HeaderLimits,
     pub recon: ReconChecks,
+}
+
+/// Where "too long" starts for the two headers that can hold a whole site out
+/// of search: how long a crawler is asked to cache robots.txt, and how long it
+/// is asked to wait after a 429 or a 503. Seconds.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct HeaderLimits {
+    pub max_age: u64,
+    pub retry_after: u64,
+}
+
+impl Default for HeaderLimits {
+    fn default() -> Self {
+        Self { max_age: 86_400, retry_after: 86_400 }
+    }
 }
 
 fn yes() -> bool {

@@ -1,7 +1,7 @@
 //! Shared plumbing: fetching with a reported redirect chain, the clock, webhooks.
 
 use std::io::Read;
-use susbot_core::fetch::{FetchInfo, Redirect};
+use susbot_core::fetch::{FetchInfo, Headers, Redirect};
 
 pub const MAX_BYTES: usize = 512 * 1024;
 
@@ -69,7 +69,7 @@ fn fetch_robots_at(origin: &str, ua: &str, timeout: u64) -> Result<FetchInfo, St
                 let next = url::Url::parse(&url).and_then(|u| u.join(loc)).map(|u| u.to_string()).map_err(|e| e.to_string())?;
                 redirects.push(Redirect { from: url.clone(), status: Some(status), to: next.clone() });
                 if redirects.len() > 5 {
-                    return Ok(FetchInfo { source: "cli".into(), robots_url, final_url: url, status, status_text: None, content_type: None, bytes: 0, truncated: false, redirects, redirect_limit: true, text: String::new() });
+                    return Ok(FetchInfo { source: "cli".into(), robots_url, final_url: url, status, status_text: None, content_type: None, bytes: 0, truncated: false, redirects, redirect_limit: true, text: String::new(), headers: Headers::default() });
                 }
                 url = next;
                 continue;
@@ -77,12 +77,22 @@ fn fetch_robots_at(origin: &str, ua: &str, timeout: u64) -> Result<FetchInfo, St
         }
         let content_type = res.header("Content-Type").map(String::from);
         let status_text = Some(res.status_text().to_string());
+        // The command line sees every header, unlike a browser fetching another
+        // origin, so the header findings are at their fullest here.
+        let headers = Headers {
+            cache_control: res.header("Cache-Control").map(String::from),
+            expires: res.header("Expires").map(String::from),
+            x_robots_tag: res.header("X-Robots-Tag").map(String::from),
+            retry_after: res.header("Retry-After").map(String::from),
+            vary: res.header("Vary").map(String::from),
+            content_encoding: res.header("Content-Encoding").map(String::from),
+        };
         let mut buf = Vec::new();
         res.into_reader().take(MAX_BYTES as u64 + 1).read_to_end(&mut buf).map_err(|e| e.to_string())?;
         let truncated = buf.len() > MAX_BYTES;
         buf.truncate(MAX_BYTES);
         let text = String::from_utf8_lossy(&buf).into_owned();
-        return Ok(FetchInfo { source: "cli".into(), robots_url, final_url: url, status, status_text, content_type, bytes: buf.len(), truncated, redirects, redirect_limit: false, text });
+        return Ok(FetchInfo { source: "cli".into(), robots_url, final_url: url, status, status_text, content_type, bytes: buf.len(), truncated, redirects, redirect_limit: false, text, headers });
     }
 }
 
