@@ -3800,6 +3800,22 @@ msgctxt "ui.checked.share"
 msgid "Share report"
 msgstr "Rapport delen"
 
+msgctxt "ui.share.copied"
+msgid "Link copied. It runs a fresh check of {host} when somebody opens it, rather than showing a saved copy of this report."
+msgstr "Link gekopieerd. Wie hem opent, start een nieuwe controle van {host} en ziet geen bewaarde kopie van dit rapport."
+
+msgctxt "ui.share.shared"
+msgid "Link shared."
+msgstr "Link gedeeld."
+
+msgctxt "ui.share.manual"
+msgid "Your browser did not let the page copy it. The link is in the field next to the button, ready to select."
+msgstr "Je browser liet de pagina niet kopiëren. De link staat in het veld naast de knop, klaar om te selecteren."
+
+msgctxt "ui.share.linkLabel"
+msgid "Link to this check"
+msgstr "Link naar deze controle"
+
 msgctxt "ui.fixes.title"
 msgid "What to fix, in order"
 msgstr "Wat je moet oplossen, op volgorde"

@@ -3800,6 +3800,22 @@ msgctxt "ui.checked.share"
 msgid "Share report"
 msgstr "Κοινοποίηση αναφοράς"
 
+msgctxt "ui.share.copied"
+msgid "Link copied. It runs a fresh check of {host} when somebody opens it, rather than showing a saved copy of this report."
+msgstr ""
+
+msgctxt "ui.share.shared"
+msgid "Link shared."
+msgstr ""
+
+msgctxt "ui.share.manual"
+msgid "Your browser did not let the page copy it. The link is in the field next to the button, ready to select."
+msgstr ""
+
+msgctxt "ui.share.linkLabel"
+msgid "Link to this check"
+msgstr ""
+
 msgctxt "ui.fixes.title"
 msgid "What to fix, in order"
 msgstr "Τι να διορθώσετε, με τη σειρά"

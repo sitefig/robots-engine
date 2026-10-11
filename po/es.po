@@ -3836,6 +3836,22 @@ msgctxt "ui.checked.share"
 msgid "Share report"
 msgstr "Compartir el informe"
 
+msgctxt "ui.share.copied"
+msgid "Link copied. It runs a fresh check of {host} when somebody opens it, rather than showing a saved copy of this report."
+msgstr "Enlace copiado. Quien lo abra lanza una comprobación nueva de {host}, en lugar de ver una copia guardada de este informe."
+
+msgctxt "ui.share.shared"
+msgid "Link shared."
+msgstr "Enlace compartido."
+
+msgctxt "ui.share.manual"
+msgid "Your browser did not let the page copy it. The link is in the field next to the button, ready to select."
+msgstr "Tu navegador no ha dejado que la página lo copie. El enlace está en el campo junto al botón, listo para seleccionarlo."
+
+msgctxt "ui.share.linkLabel"
+msgid "Link to this check"
+msgstr "Enlace a esta comprobación"
+
 msgctxt "ui.fixes.title"
 msgid "What to fix, in order"
 msgstr "Qué arreglar, por orden"

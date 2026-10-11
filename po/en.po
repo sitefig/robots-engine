@@ -3800,6 +3800,22 @@ msgctxt "ui.checked.share"
 msgid "Share report"
 msgstr "Share report"
 
+msgctxt "ui.share.copied"
+msgid "Link copied. It runs a fresh check of {host} when somebody opens it, rather than showing a saved copy of this report."
+msgstr "Link copied. It runs a fresh check of {host} when somebody opens it, rather than showing a saved copy of this report."
+
+msgctxt "ui.share.shared"
+msgid "Link shared."
+msgstr "Link shared."
+
+msgctxt "ui.share.manual"
+msgid "Your browser did not let the page copy it. The link is in the field next to the button, ready to select."
+msgstr "Your browser did not let the page copy it. The link is in the field next to the button, ready to select."
+
+msgctxt "ui.share.linkLabel"
+msgid "Link to this check"
+msgstr "Link to this check"
+
 msgctxt "ui.fixes.title"
 msgid "What to fix, in order"
 msgstr "What to fix, in order"
