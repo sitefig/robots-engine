@@ -31,9 +31,6 @@ Sitemap: https://www.walmart.com/sitemap_rp_03.xml
 Sitemap: https://www.walmart.com/sitemap_rp_04.xml
 Sitemap: https://www.walmart.com/sitemap_rp_05.xml
 
-Sitemap: https://www.walmart.com/sitemap_slp_01.xml
-Sitemap: https://www.walmart.com/sitemap_slp_02.xml
-
 Sitemap: https://www.walmart.com/sitemap_auto_dir.xml
 
 Sitemap: https://www.walmart.com/sitemap_brndshp_brand.xml
