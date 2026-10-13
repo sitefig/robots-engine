@@ -3,8 +3,8 @@
   "robots_url": "https://spiegel.de/robots.txt",
   "final_url": "https://www.spiegel.de/robots.txt",
   "http_status": 200,
-  "bytes": 6668,
-  "fetched_at": "2026-09-29T09:50:47.000Z",
+  "bytes": 6634,
+  "fetched_at": "2026-10-13T10:36:33.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false
