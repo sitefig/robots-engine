@@ -9,6 +9,7 @@ Disallow: /*/legal/advertiser-terms-and-conditions/
 Disallow: /*/legal/gdpr-article-15-information/
 Disallow: /*/legal/spotify-controller-data-processing-terms/
 Disallow: /*/legal/podcast-api-terms/
+Disallow: /*/legal/distribution-api-terms/
 Disallow: /*/account/cls/*
 Disallow: /*/starbuckspartners
 Disallow: /starbuckspartners

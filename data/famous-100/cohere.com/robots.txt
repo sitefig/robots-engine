@@ -11,5 +11,6 @@ Disallow: /studio-mops
 Disallow: /studio-blog
 Disallow: /studio-campaign
 Disallow: /studio-events
+Disallow: /studio-legal
 
 Sitemap: https://cohere.com/sitemap.xml

@@ -25,6 +25,8 @@ Disallow: /undefined/
 Disallow: /proplayer
 Disallow: /appchart/*
 Disallow: /search/*
+Disallow: /zephr/*
+Disallow: /blaize/*
 
 User-agent: GPTBot
 User-Agent: PerplexityBot
