@@ -5,6 +5,9 @@
 # All authorized user-agents listed on this page must comply with Meta’s
 # Automated Data Collection Terms available at:
 # https://www.facebook.com/legal/automated_data_collection_terms
+User-agent: Google-Extended
+Disallow: /
+
 User-agent: PetalBot
 Disallow: /
 
@@ -297,17 +300,6 @@ Disallow: /query/
 Allow: /places/c/
 
 User-agent: ClaudeBot
-Disallow: /accounts/login/*?next=
-Disallow: /ajax/
-Disallow: /client_error/
-Disallow: /direct/
-Disallow: /logging/
-Disallow: /publicapi/
-Disallow: /qp/batch_fetch_web/
-Disallow: /query/
-Allow: /places/c/
-
-User-agent: Google-Extended
 Disallow: /accounts/login/*?next=
 Disallow: /ajax/
 Disallow: /client_error/

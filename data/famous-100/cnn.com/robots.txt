@@ -38,10 +38,11 @@ User-agent: Diffbot
 User-agent: DuckAssistBot
 User-agent: EchoboxBot
 User-agent: Exabot
+User-agent: ExaSearchBot
+User-agent: ExaUser
 User-agent: FacebookBot
 User-agent: FriendlyCrawler
 User-agent: GPTBot
-User-agent: Google-Extended
 User-agent: GoogleOther
 User-agent: GoogleOther-Image
 User-agent: GoogleOther-Video
