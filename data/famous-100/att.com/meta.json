@@ -3,8 +3,8 @@
   "robots_url": "https://att.com/robots.txt",
   "final_url": "https://www.att.com/robots.txt",
   "http_status": 200,
-  "bytes": 10677,
-  "fetched_at": "2026-10-14T08:43:55.000Z",
+  "bytes": 10686,
+  "fetched_at": "2026-10-16T08:12:01.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false

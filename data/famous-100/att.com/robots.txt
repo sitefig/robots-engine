@@ -1,21 +1,25 @@
-# Bad Robots!
-
 User-agent: DotBot
 Disallow: /
 
 User-agent: dotbot
 Disallow: /
 
-
 User-agent: *
-Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 # Public AI-agent discovery resources
 Allow: /.well-known/agent-card.json
 Allow: /.well-known/mcp/server-card.json
 Allow: /.well-known/agent-skills/index.json
+Allow: /.well-known/ai-catalog.json
+Allow: /.well-known/api-catalog.txt
 Allow: /ai-instructions/shopping-assistant.md
+Allow: /ai.txt
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /trust.txt
+Allow: /openapi.json
 
 Disallow: /wireless/switch-and-save-b/
 Disallow: /redressG/
@@ -28,26 +32,26 @@ Disallow: /redressC/
 
 # edits 07.29.25 - start
 
-# Allow exact homepage 
-Allow: /es-us/$ 
+# Allow exact homepage
+Allow: /es-us/$
 
-# Allow exact folder roots only (no subfolders/files) 
+# Allow exact folder roots only (no subfolders/files)
 
-Allow: /es-us/local/$ 
-Allow: /es-us/local/internet/$ 
-Allow: /es-us/local/fiber/$ 
-Allow: /es-us/local/cell-phones/$ 
-Allow: /es-us/local/bundles/$ 
-Allow: /es-us/stores/$ 
+Allow: /es-us/local/$
+Allow: /es-us/local/internet/$
+Allow: /es-us/local/fiber/$
+Allow: /es-us/local/cell-phones/$
+Allow: /es-us/local/bundles/$
+Allow: /es-us/stores/$
 
-# Block all subfolders and files inside these folders 
+# Block all subfolders and files inside these folders
 
-Disallow: /es-us/local/* 
-Disallow: /es-us/local/internet/* 
-Disallow: /es-us/local/fiber/* 
-Disallow: /es-us/local/cell-phones/* 
-Disallow: /es-us/local/bundles/* 
-Disallow: /es-us/stores/* 
+Disallow: /es-us/local/*
+Disallow: /es-us/local/internet/*
+Disallow: /es-us/local/fiber/*
+Disallow: /es-us/local/cell-phones/*
+Disallow: /es-us/local/bundles/*
+Disallow: /es-us/stores/*
 
 # edits 07.29.25 - end
 
@@ -67,14 +71,13 @@ Disallow: /buy/login
 
 Disallow: /search/
 Disallow: /cfd/
-Disallow: *bvstate=pg*
-Disallow: */rest/clicktrack?*
-Disallow: */rest/getlist?*
+Disallow: /*bvstate=pg*
+Disallow: /*/rest/clicktrack?*
+Disallow: /*/rest/getlist?*
 Disallow: /buy/postpaid/line-selection
 Disallow: /ssaf/ssafc/
 Disallow: /att-dgt-checkin-e/api/*
-Disallow: */sdattservicesinc/*
-Disallow: https://pre-www.att.com/home-phone/lifeline/
+Disallow: /*/sdattservicesinc/*
 
 # edits 01.25.25 - end
 
@@ -145,7 +148,7 @@ Disallow: /olam/jsp/login/inProgress.jsp*
 
 Disallow: /smallbusiness/404.jsp?
 Disallow: /smallbusiness/b?
-Disallow: /smallbusiness/search 
+Disallow: /smallbusiness/search
 Disallow: /smallbusiness/wireless/buyFlowContainer.jsp
 Disallow: /smallbusiness/i9nvalidParamInput.jsp
 Disallow: /es-us/OLAM_PROD_CMS/*
@@ -191,25 +194,24 @@ Disallow: /es-us/olam/jsp/login/inProgress.jsp*
 
 Disallow: /es-us/smallbusiness/404.jsp?
 Disallow: /es-us/smallbusiness/b?
-Disallow: /es-us/smallbusiness/search 
+Disallow: /es-us/smallbusiness/search
 Disallow: /es-us/smallbusiness/wireless/buyFlowContainer.jsp
 Disallow: /es-us/smallbusiness/i9nvalidParamInput.jsp
 
 User-agent: Googlebot
 
 Disallow: /gtm/
-Disallow: https://pre-www.att.com/home-phone/lifeline/
 
 # edits 05.01.24 - start
 
 Disallow: /search/
 Disallow: /cfd/
-Disallow: *bvstate=pg*
-Disallow: */rest/clicktrack?*
-Disallow: */rest/getlist?*
+Disallow: /*bvstate=pg*
+Disallow: /*/rest/clicktrack?*
+Disallow: /*/rest/getlist?*
 Disallow: /buy/postpaid/line-selection
 Disallow: /ssaf/ssafc/
-Disallow: */sdattservicesinc/*
+Disallow: /*/sdattservicesinc/*
 
 # edits 01.25.25 - end
 
@@ -278,7 +280,7 @@ Disallow: /olam/jsp/login/inProgress.jsp*
 
 Disallow: /smallbusiness/404.jsp?
 Disallow: /smallbusiness/b?
-Disallow: /smallbusiness/search 
+Disallow: /smallbusiness/search
 Disallow: /smallbusiness/wireless/buyFlowContainer.jsp
 Disallow: /smallbusiness/i9nvalidParamInput.jsp
 Disallow: /es-us/OLAM_PROD_CMS/*
@@ -326,19 +328,15 @@ Disallow: /es-us/olam/jsp/login/inProgress.jsp*
 
 Disallow: /es-us/smallbusiness/404.jsp?
 Disallow: /es-us/smallbusiness/b?
-Disallow: /es-us/smallbusiness/search 
+Disallow: /es-us/smallbusiness/search
 Disallow: /es-us/smallbusiness/wireless/buyFlowContainer.jsp
 Disallow: /es-us/smallbusiness/i9nvalidParamInput.jsp
 
-
-#  PROD-34469
+# PROD-34469
 
 Disallow: /u-verse/availability/pending-order.jsp
 Disallow: /u-verse/availability/check-customer-type.jsp
-
-
-#  PROD-34470
-
+# PROD-34470
 Disallow: /shop/unified/availability.html?destination_page=BYOB
 Disallow: /shop/unified/availability/results.html
 Disallow: /shop/unified/availability/calltoorder.html
@@ -348,16 +346,16 @@ Disallow: /shop/unified/availability/calltoorder.html
 Disallow: /myorders/*
 Disallow: /acctmgmt/*
 
-
-# Previous Update 8/14/2023 
-# Last Update 10.13.2026
+# Previous Update 8/14/2023
+# Last Update 10.15.2026
 
 # ====================================================================
-# Global Pointers (Placed at the bottom of the file)
+# Global pointers
 # ====================================================================
 
 Sitemap: https://www.att.com/sitemap.xml
-agent-card: https://www.att.com/.well-known/agent-card.json
-mcp-server: https://www.att.com/.well-known/mcp/server-card.json
-agent-skills: https://www.att.com/.well-known/agent-skills/index.json
-ai-instructions: https://www.att.com/ai-instructions/shopping-assistant.md
+# Agent discovery resources are published through trust.txt and ai.txt.
+# https://www.att.com/.well-known/agent-card.json
+# https://www.att.com/.well-known/mcp/server-card.json
+# https://www.att.com/.well-known/agent-skills/index.json
+# https://www.att.com/ai-instructions/shopping-assistant.md
