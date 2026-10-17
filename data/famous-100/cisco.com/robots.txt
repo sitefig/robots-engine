@@ -7,23 +7,6 @@ Disallow: /univ-src/ccden # will get content through /univercd
 Disallow: /cpropub/univercd # obsolete
 Disallow: /jobs     # temporary entry per performance team
 #--------------------------------
-User-agent: GPTBot
-User-agent: CCBot
-User-agent: Google-Extended
-User-agent: ClaudeBot
-Allow: /site/us/en/
-Allow: /c/us/en/
-Allow: /*.llms.txt$
-Allow: /*.md$
-Allow: https://www.cisco.com/llms.txt
-
-User-agent: Googlebot
-User-agent: Googlebot Smartphone
-User-agent: Google AdsBot
-User-agent: Bingbot
-Disallow: /*.md$
-Disallow:/*.llms.txt$
-#--------------------------------
 User-agent: *
 Disallow: /*.html?cachemode=refresh$
 Disallow: /bug-navigator # Bug Data
@@ -291,8 +274,6 @@ Sitemap: https://www.cisco.com/web/sitemap/www_cisco_com_vi_vn_index.xml
 Sitemap: https://www.cisco.com/web/sitemap/www_cisco_com_zh_cn_index.xml
 Sitemap: https://www.cisco.com/web/sitemap/www_cisco_com_zh_hk_index.xml
 Sitemap: https://www.cisco.com/web/sitemap/www_cisco_com_zh_tw_index.xml
-Sitemap: https://www.cisco.com/web/sitemap/www_cisco_com_migration_at_scale_on_prem_index.xml
-Sitemap: https://www.cisco.com/web/sitemap/www_cisco_com_migration_at_scale_index.xml
 Sitemap: https://www.cisco.com/web/sitemap/rss/rss.xml
 Sitemap: https://www.cisco.com/web/sitemap/rss/rss1.xml
 Sitemap: https://www.cisco.com/web/sitemap/rss/rss2.xml

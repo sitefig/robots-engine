@@ -45,7 +45,6 @@ Disallow: /cart*
 Disallow: /checkout*
 Disallow: /order-confirmation*
 Disallow: /customer/account/v1/citi/renderFormParameters
-Allow: /s/*?CI-5
 Disallow: /list/view/details/*
 
 

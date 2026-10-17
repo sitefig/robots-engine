@@ -3,8 +3,8 @@
   "robots_url": "https://cisco.com/robots.txt",
   "final_url": "https://www.cisco.com/robots.txt",
   "http_status": 200,
-  "bytes": 16189,
-  "fetched_at": "2026-09-21T08:53:58.000Z",
+  "bytes": 15619,
+  "fetched_at": "2026-10-17T07:49:01.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false

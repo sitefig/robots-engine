@@ -1,8 +1,7 @@
 User-agent: DotBot
-Disallow: /
-
 User-agent: dotbot
 Disallow: /
+
 
 User-agent: *
 Content-Signal: search=yes, ai-input=yes, ai-train=no
@@ -13,8 +12,10 @@ Allow: /.well-known/agent-card.json
 Allow: /.well-known/mcp/server-card.json
 Allow: /.well-known/agent-skills/index.json
 Allow: /.well-known/ai-catalog.json
-Allow: /.well-known/api-catalog.txt
+Allow: /.well-known/api-catalog
 Allow: /ai-instructions/shopping-assistant.md
+Allow: /ai-instructions/build-a-plan.md
+Allow: /ai-instructions/build-a-plan.html
 Allow: /ai.txt
 Allow: /llms.txt
 Allow: /llms-full.txt
@@ -32,26 +33,26 @@ Disallow: /redressC/
 
 # edits 07.29.25 - start
 
-# Allow exact homepage
-Allow: /es-us/$
+# Allow exact homepage 
+Allow: /es-us/$ 
 
-# Allow exact folder roots only (no subfolders/files)
+# Allow exact folder roots only (no subfolders/files) 
 
-Allow: /es-us/local/$
-Allow: /es-us/local/internet/$
-Allow: /es-us/local/fiber/$
-Allow: /es-us/local/cell-phones/$
-Allow: /es-us/local/bundles/$
-Allow: /es-us/stores/$
+Allow: /es-us/local/$ 
+Allow: /es-us/local/internet/$ 
+Allow: /es-us/local/fiber/$ 
+Allow: /es-us/local/cell-phones/$ 
+Allow: /es-us/local/bundles/$ 
+Allow: /es-us/stores/$ 
 
-# Block all subfolders and files inside these folders
+# Block all subfolders and files inside these folders 
 
-Disallow: /es-us/local/*
-Disallow: /es-us/local/internet/*
-Disallow: /es-us/local/fiber/*
-Disallow: /es-us/local/cell-phones/*
-Disallow: /es-us/local/bundles/*
-Disallow: /es-us/stores/*
+Disallow: /es-us/local/* 
+Disallow: /es-us/local/internet/* 
+Disallow: /es-us/local/fiber/* 
+Disallow: /es-us/local/cell-phones/* 
+Disallow: /es-us/local/bundles/* 
+Disallow: /es-us/stores/* 
 
 # edits 07.29.25 - end
 
@@ -148,7 +149,7 @@ Disallow: /olam/jsp/login/inProgress.jsp*
 
 Disallow: /smallbusiness/404.jsp?
 Disallow: /smallbusiness/b?
-Disallow: /smallbusiness/search
+Disallow: /smallbusiness/search 
 Disallow: /smallbusiness/wireless/buyFlowContainer.jsp
 Disallow: /smallbusiness/i9nvalidParamInput.jsp
 Disallow: /es-us/OLAM_PROD_CMS/*
@@ -194,11 +195,26 @@ Disallow: /es-us/olam/jsp/login/inProgress.jsp*
 
 Disallow: /es-us/smallbusiness/404.jsp?
 Disallow: /es-us/smallbusiness/b?
-Disallow: /es-us/smallbusiness/search
+Disallow: /es-us/smallbusiness/search 
 Disallow: /es-us/smallbusiness/wireless/buyFlowContainer.jsp
 Disallow: /es-us/smallbusiness/i9nvalidParamInput.jsp
 
 User-agent: Googlebot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+Allow: /.well-known/agent-card.json
+Allow: /.well-known/mcp/server-card.json
+Allow: /.well-known/agent-skills/index.json
+Allow: /.well-known/ai-catalog.json
+Allow: /.well-known/api-catalog
+Allow: /ai-instructions/shopping-assistant.md
+Allow: /ai-instructions/build-a-plan.md
+Allow: /ai-instructions/build-a-plan.html
+Allow: /ai.txt
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /trust.txt
+Allow: /openapi.json
 
 Disallow: /gtm/
 
@@ -280,7 +296,7 @@ Disallow: /olam/jsp/login/inProgress.jsp*
 
 Disallow: /smallbusiness/404.jsp?
 Disallow: /smallbusiness/b?
-Disallow: /smallbusiness/search
+Disallow: /smallbusiness/search 
 Disallow: /smallbusiness/wireless/buyFlowContainer.jsp
 Disallow: /smallbusiness/i9nvalidParamInput.jsp
 Disallow: /es-us/OLAM_PROD_CMS/*
@@ -328,15 +344,19 @@ Disallow: /es-us/olam/jsp/login/inProgress.jsp*
 
 Disallow: /es-us/smallbusiness/404.jsp?
 Disallow: /es-us/smallbusiness/b?
-Disallow: /es-us/smallbusiness/search
+Disallow: /es-us/smallbusiness/search 
 Disallow: /es-us/smallbusiness/wireless/buyFlowContainer.jsp
 Disallow: /es-us/smallbusiness/i9nvalidParamInput.jsp
 
-# PROD-34469
+
+#  PROD-34469
 
 Disallow: /u-verse/availability/pending-order.jsp
 Disallow: /u-verse/availability/check-customer-type.jsp
-# PROD-34470
+
+
+#  PROD-34470
+
 Disallow: /shop/unified/availability.html?destination_page=BYOB
 Disallow: /shop/unified/availability/results.html
 Disallow: /shop/unified/availability/calltoorder.html
@@ -346,7 +366,8 @@ Disallow: /shop/unified/availability/calltoorder.html
 Disallow: /myorders/*
 Disallow: /acctmgmt/*
 
-# Previous Update 8/14/2023
+
+# Previous Update 8/14/2023 
 # Last Update 10.15.2026
 
 # ====================================================================
