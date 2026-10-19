@@ -36,8 +36,6 @@ Disallow: /*.tidy.json$
 Disallow: /*.sysview.xml$
 # If you have specific feeds to allow, add Allow rules before this
 Disallow: /*.feed.xml$
-#RITM0480998
-Disallow: /content/experience-fragments/
 
 # AEM DAM rules
 # Allow specific legal PDFs in English
