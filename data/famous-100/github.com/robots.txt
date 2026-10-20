@@ -1,5 +1,7 @@
 # If you would like to crawl GitHub contact us via https://support.github.com?tags=dotcom-robots
 # We also provide an extensive API: https://docs.github.com
+Sitemap: https://github.com/sitemap_marketing.xml
+
 User-agent: GPTBot
 User-agent: OAI-SearchBot
 User-agent: ClaudeBot

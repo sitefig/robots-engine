@@ -31,6 +31,7 @@ Disallow: /artifacts/c/
 Disallow: /artifacts/v/
 Disallow: /link/prompt
 Disallow: /*/link/prompt
+Allow: /cn/docs/bdk
 Disallow: /*/docs
 Disallow: /*/docs/
 Disallow: /*/learn

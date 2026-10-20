@@ -1,6 +1,7 @@
 Sitemap: https://www.mediamarkt.de/sitemaps/sitemap-index.xml
 
 Sitemap: https://www.mediamarkt.de/sitemaps/magazin-deals-angebote.xml
+Sitemap: https://www.mediamarkt.de/sitemaps/sitemap-black-friday-2026.xml
 
 User-Agent: *
 Disallow: /cdn-cgi/bm/cv/
