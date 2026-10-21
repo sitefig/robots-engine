@@ -89,6 +89,11 @@ User-agent: Webzio-Extended
 User-agent: YandexAdditional
 User-agent: YandexAdditionalBot
 User-agent: YouBot
+User-agent: FirecrawlAgent
+User-agent: Firecrawl
+User-agent: Diffbot-User
+User-agent: TavilyBot
+User-agent: NimbleCrawler
 Disallow: /
 User-agent: *
 Allow: /partners/ipad/live-video.json

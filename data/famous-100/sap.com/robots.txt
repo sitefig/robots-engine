@@ -12,7 +12,7 @@
 #
 # Find your next job: https://www.sap.com/careers
 #
-# Last updated 2026-09-09
+# Last updated 2026-10-20
 
 User-agent: *
 Disallow: /
@@ -147,6 +147,8 @@ Allow: /
 
 Sitemap: https://www.sap.com/sitemap_index.xml
 Sitemap: https://www.sap.com/sitemap-index.xml  
+Sitemap: https://www.sap.com/sitemap-documents-index.xml
+Sitemap: https://www.sap.com/sitemap-videos-index.xml
 Sitemap: https://www.sap.com/sitemap_siteimprove_index.xml
 Sitemap: https://www.sap.com/sitemap_us_int_only_siteimprove_index.xml
 Sitemap: https://www.sap.com/sitemap_us_int_only_siteimprove.xml

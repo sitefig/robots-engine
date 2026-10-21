@@ -31,6 +31,10 @@ Disallow: /redressC/
 
 # edits 03.04.25 - end
 
+# edits 10.20.26 - start
+Disallow: /smart-home-manager/*
+# edits 10.20.26 - end
+
 # edits 07.29.25 - start
 
 # Allow exact homepage 
@@ -375,6 +379,7 @@ Disallow: /acctmgmt/*
 # ====================================================================
 
 Sitemap: https://www.att.com/sitemap.xml
+Agentmap: https://www.att.com/.well-known/ai-catalog.json
 # Agent discovery resources are published through trust.txt and ai.txt.
 # https://www.att.com/.well-known/agent-card.json
 # https://www.att.com/.well-known/mcp/server-card.json
