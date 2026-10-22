@@ -44,6 +44,8 @@ Disallow: /
 
 # General rules for all other bots
 User-agent: *
+# Allow Googlebot to render the indexable homepage; production CSS and JavaScript live here.
+Allow: /unauth-mweb/assets/
 
 # Place allows first to avoid bots skipping after Disallow: /
 # Allow exactly the homepage
@@ -78,9 +80,7 @@ Allow: /backend-anon/
 Allow: /public-api/
 Allow: /sitemap.xml
 Allow: /marketing-sitemap.xml
-Allow: /images-sitemap.xml
 Allow: /writing-tools-sitemap.xml
-Allow: /football-sitemap.xml
 Allow: /acquisition-landing-pages-sitemap.xml
 Allow: /100chats
 Allow: /api/public_content/
@@ -228,7 +228,5 @@ Disallow: /account-link/*
 
 Sitemap: https://chatgpt.com/sitemap.xml
 Sitemap: https://chatgpt.com/marketing-sitemap.xml
-Sitemap: https://chatgpt.com/images-sitemap.xml
 Sitemap: https://chatgpt.com/writing-tools-sitemap.xml
-Sitemap: https://chatgpt.com/football-sitemap.xml
 Sitemap: https://chatgpt.com/acquisition-landing-pages-sitemap.xml

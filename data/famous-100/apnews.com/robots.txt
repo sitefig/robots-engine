@@ -18,7 +18,6 @@ Disallow: /api/v2/feed/
 Disallow: /press-release/*
 Disallow: /*/widgets/
 Disallow: /*/widget/
-Disallow: /*/scripts/
 
 Sitemap: https://apnews.com/ap-sitemap.xml
 Sitemap: https://apnews.com/news-sitemap-content.xml

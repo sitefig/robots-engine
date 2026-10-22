@@ -35,12 +35,15 @@ User-agent: cohere-training-data-crawler
 User-agent: Crawlspace
 User-agent: DataForSeoBot
 User-agent: Diffbot
+User-agent: Diffbot-User
 User-agent: DuckAssistBot
 User-agent: EchoboxBot
 User-agent: Exabot
 User-agent: ExaSearchBot
 User-agent: ExaUser
 User-agent: FacebookBot
+User-agent: Firecrawl
+User-agent: FirecrawlAgent
 User-agent: FriendlyCrawler
 User-agent: GPTBot
 User-agent: GoogleOther
@@ -58,6 +61,7 @@ User-agent: MistralAI-user
 User-agent: MyCentralAIScraperBot
 User-agent: NewsNow
 User-agent: news-please
+User-agent: NimbleCrawler
 User-agent: OAI-SearchBot
 User-agent: omgili
 User-agent: omgilibot
@@ -81,6 +85,7 @@ User-agent: ShapBot
 User-agent: Shap-User
 User-agent: Sidetrade indexer bot
 User-agent: TaraGroup Intelligence Bot
+User-agent: TavilyBot
 User-agent: Timpibot
 User-agent: TurnitinBot
 User-agent: VelenPublicWebCrawler
@@ -89,11 +94,6 @@ User-agent: Webzio-Extended
 User-agent: YandexAdditional
 User-agent: YandexAdditionalBot
 User-agent: YouBot
-User-agent: FirecrawlAgent
-User-agent: Firecrawl
-User-agent: Diffbot-User
-User-agent: TavilyBot
-User-agent: NimbleCrawler
 Disallow: /
 User-agent: *
 Allow: /partners/ipad/live-video.json
@@ -114,6 +114,7 @@ Disallow: /cnnintl_adspaces
 Disallow: /development
 Disallow: /editionssi
 Disallow: /help/cnnx.html
+Disallow: /media/sites/js/bundles
 Disallow: /NewsPass
 Disallow: /NOKIA
 Disallow: /partners/
