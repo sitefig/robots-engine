@@ -3,8 +3,8 @@
   "robots_url": "https://yelp.com/robots.txt",
   "final_url": "https://www.yelp.com/robots.txt",
   "http_status": 200,
-  "bytes": 12697,
-  "fetched_at": "2026-09-17T12:11:41.000Z",
+  "bytes": 12718,
+  "fetched_at": "2026-10-23T08:33:35.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false

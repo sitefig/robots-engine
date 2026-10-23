@@ -111,6 +111,7 @@ Disallow: /advertise?
 Disallow: /answers/*/delete
 Disallow: /answers/*/edit
 Disallow: /answers/*/vote
+Disallow: /assistant
 Disallow: /biz/*?*&translate=1*
 Disallow: /biz/*?*&translate=True*
 Disallow: /biz/*?translate=1*

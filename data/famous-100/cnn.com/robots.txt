@@ -114,6 +114,7 @@ Disallow: /cnnintl_adspaces
 Disallow: /development
 Disallow: /editionssi
 Disallow: /help/cnnx.html
+Disallow: /media/sites/cnn/icons
 Disallow: /media/sites/js/bundles
 Disallow: /NewsPass
 Disallow: /NOKIA
