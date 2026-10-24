@@ -18,6 +18,9 @@ Disallow: /api/v2/feed/
 Disallow: /press-release/*
 Disallow: /*/widgets/
 Disallow: /*/widget/
+Disallow: /scripts/CustomNews.js
+
+# Monitoring Test
 
 Sitemap: https://apnews.com/ap-sitemap.xml
 Sitemap: https://apnews.com/news-sitemap-content.xml

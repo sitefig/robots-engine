@@ -35,6 +35,7 @@ Disallow: /s/
 Disallow: /sh/
 Disallow: /scl/
 Disallow: /sc/
+Disallow: /?q=
 
 
 Sitemap: https://www.dropbox.com/sitemapindex.xml
