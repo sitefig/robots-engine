@@ -549,6 +549,7 @@ Disallow: /flexiproduct
 Disallow: /purge_cookies
 Disallow: /searchbox.html
 Disallow: /hotelfeaturedreviews/
+Disallow: /*?*no_scraping_cache_key=
 
 User-agent: AdsBot-Google-Mobile
 Disallow: /s/
@@ -576,6 +577,7 @@ Disallow: /flexiproduct
 Disallow: /purge_cookies
 Disallow: /searchbox.html
 Disallow: /hotelfeaturedreviews/
+Disallow: /*?*no_scraping_cache_key=
 
 User-agent: YaDirectFetcher
 Disallow: /s/
@@ -667,6 +669,7 @@ Allow: /cars/index.hi.*
 Allow: /flights/index.hi.*
 Allow: /attractions/index.hi.*
 Allow: /taxi/index.hi.*
+Disallow: /*?*no_scraping_cache_key=
 
 User-agent: Baiduspider
 Sitemap: https://www.booking.com/sitembk-zh-index-https.xml

@@ -302,6 +302,7 @@ Sitemap: https://scale.com/blog/author/sitemap.xml
 Sitemap: https://scale.com/customers/sitemap.xml
 Sitemap: https://scale.com/guides/sitemap.xml
 Sitemap: https://scale.com/partnership/sitemap.xml
+Sitemap: https://scale.com/government-innovation/sitemap.xml
 Sitemap: https://scale.com/legal/sitemap.xml
 Sitemap: https://scale.com/events/sitemap.xml
 Sitemap: https://scale.com/docs/sitemap.xml

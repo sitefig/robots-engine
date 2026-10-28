@@ -1,3 +1,5 @@
 Sitemap: https://you.com/sitemap.xml
+Sitemap: https://you.com/sitemaps/marketing/sitemap.xml
+Sitemap: https://you.com/sitemaps/docs/sitemap.xml
 User-agent: *
 Allow: /

@@ -169,6 +169,7 @@ Allow: /alerts/$
 Disallow: /phone/compare/?
 Disallow: /travel/clk
 Disallow: /travel/lodging/clk
+Disallow: /travel/lodging/imp
 Disallow: /travel/entity
 Disallow: /travel/search
 Disallow: /travel/flights/booking

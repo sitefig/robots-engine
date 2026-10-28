@@ -40,6 +40,9 @@ Allow: */gcbalance/*
 User-agent: AmazonProductDiscoverybot
 Disallow: /
 
+User-agent: Amazonbot
+Disallow: /
+
 User-agent: *
 Disallow: */search/?q=*
 Disallow: */search/products/?q=*

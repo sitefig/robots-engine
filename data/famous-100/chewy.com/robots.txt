@@ -71,6 +71,7 @@ Disallow: /shops/*
 Disallow: /pethealth/connect-with-a-vet/guest/
 Disallow: /pethealth/connect-with-a-vet/schedule-tele*
 Disallow: /pethealth/connect-with-a-vet/schedule-chat*
+Disallow: /plp/sheets/
 
 User-agent: Amazonbot
 Disallow: /
