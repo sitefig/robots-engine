@@ -79,6 +79,8 @@ User-agent: IsoxyTrader
 User-agent: Neo Trading Bot
 User-agent: MerlinChartWizard
 User-agent: investment-dashboard
+User-agent: Claude-SearchBot
+User-agent: Perplexity-User
 Allow: /select/
 Disallow: /
 

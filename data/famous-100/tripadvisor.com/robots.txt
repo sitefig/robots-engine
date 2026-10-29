@@ -54,7 +54,8 @@ Disallow: /ActionRecord
 Disallow: /AddForumUser
 Disallow: /AddListing
 Disallow: /AdRequestEventLogApi
-Disallow: /AdsManager
+Disallow: /AdsManagerAjax
+Disallow: /AdsManagerLanderAjax
 Disallow: /adsoverview
 Disallow: /AirlineRegistration
 Disallow: /AirlineTips
@@ -183,13 +184,7 @@ Disallow: /GPointCampaign
 Disallow: /GroupHomeApi
 Disallow: /GroupManagementCenter
 Disallow: /GSSAjax
-Disallow: /GuideAjax
-Disallow: /GuideEditor
-Disallow: /GuideRatingAjax
-Disallow: /GuideRequested
-Disallow: /GuideRequestor
 Disallow: /HandleHotelSuperPortal
-Disallow: /HelpProxy
 Disallow: /Home-
 Disallow: /Hotel_ReviewHAC
 Disallow: /HotelGMCApi
@@ -212,7 +207,6 @@ Disallow: /js2/
 Disallow: /js3/
 Disallow: /JSErrorRecord
 Disallow: /JsonServiceController
-Disallow: /JustForYouGuide
 Disallow: /LanderLogger
 Disallow: /LandingPage
 Disallow: /Leaderboard
@@ -233,7 +227,6 @@ Disallow: /LogMediaClick
 Disallow: /MachineTranslation
 Disallow: /ManageListingApi
 Disallow: /ManagementCenter
-Disallow: /ManageOwnersTopReasonsApi
 Disallow: /ManagePhotos
 Disallow: /ManageShopListingApi
 Disallow: /ManageStoryboard
@@ -329,7 +322,6 @@ Disallow: /missingpage
 Disallow: /mobile
 Disallow: /MobileAddPoi
 Disallow: /MobileAddressLookupAjax
-Disallow: /MobileAdsManager
 Disallow: /MobileAirlineDeals
 Disallow: /MobileAirlines
 Disallow: /MobileAirlineTips
@@ -351,7 +343,6 @@ Disallow: /MobileForgotPassword
 Disallow: /MobileForumRedirect
 Disallow: /MobileForumSetSortCookie
 Disallow: /MobileGetMobileApp
-Disallow: /MobileGuide
 Disallow: /MobileHeaderCss
 Disallow: /MobileHotelBookingAuthorization
 Disallow: /MobileHotelBookingRecordThreatIdAjax
@@ -360,7 +351,6 @@ Disallow: /MobileImpressionRecord
 Disallow: /MobileImproveThisListing
 Disallow: /MobileJSErrorRecord
 Disallow: /MobileJson
-Disallow: /MobileJustForYouGuide
 Disallow: /MobileListForums
 Disallow: /MobileLocationPhotoDirectLink
 Disallow: /MobileLocationPhotos
@@ -405,7 +395,6 @@ Disallow: /MobileShowUserReviews
 Disallow: /MobileStreetView
 Disallow: /MobileTaggingAjax
 Disallow: /MobileTools
-Disallow: /MobileTravel_Guide
 Disallow: /MobileUberEstimateAjax
 Disallow: /MobileUpdateListing
 Disallow: /MobileUserReviewSearchAjax
@@ -467,21 +456,17 @@ Disallow: /PhoneTrackingOptOuts
 Disallow: /photosandvideos
 Disallow: /PhotoUpload
 Disallow: /Pin_Lander
+Disallow: /PlanModeTools
 Disallow: /PlusCommerce
 Disallow: /PoiArea
 Disallow: /PoiDetails
-Disallow: /PoiRecommendationDashboard
-Disallow: /PoiRecommendationEditor
-Disallow: /PoiRecommendationList
 Disallow: /PoiReviewDetail
-Disallow: /PoiTipDashboard
 Disallow: /PostPhotosHAC
 Disallow: /PostReply
 Disallow: /PostVideo
 Disallow: /Premium-
 Disallow: /PreviewImage
 Disallow: /PrintGuide
-Disallow: /ProductCancellationLogApi
 Disallow: /ProductCart
 Disallow: /ProductError
 Disallow: /ProductPaymentUpdate

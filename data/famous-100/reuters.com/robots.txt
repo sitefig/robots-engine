@@ -51,7 +51,6 @@ User-agent: Iframely
 User-agent: leiki
 User-agent: LinkedInBot
 User-agent: LinkTiger
-User-agent: Mantisbot
 User-agent: Mediapartners-Google
 User-agent: meta-externalads
 User-agent: meta-webindexer

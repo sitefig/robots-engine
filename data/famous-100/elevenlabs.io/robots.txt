@@ -16,7 +16,6 @@ Disallow: /app/sign-up?
 Disallow: */abtest/
 Disallow: */p/
 Disallow: */ab/
-Disallow: /sentry-monitoring
 Disallow: /next/
 Disallow: */page-template-preview/
 Disallow: /v1/
@@ -46,7 +45,6 @@ Disallow: /app/sign-up?
 Disallow: */abtest/
 Disallow: */p/
 Disallow: */ab/
-Disallow: /sentry-monitoring
 Disallow: /next/
 Disallow: */page-template-preview/
 Disallow: /v1/
@@ -76,7 +74,6 @@ Disallow: /app/sign-up?
 Disallow: */abtest/
 Disallow: */p/
 Disallow: */ab/
-Disallow: /sentry-monitoring
 Disallow: /next/
 Disallow: */page-template-preview/
 Disallow: /v1/
@@ -106,7 +103,6 @@ Disallow: /app/sign-up?
 Disallow: */abtest/
 Disallow: */p/
 Disallow: */ab/
-Disallow: /sentry-monitoring
 Disallow: /next/
 Disallow: */page-template-preview/
 Disallow: /v1/
@@ -137,7 +133,6 @@ Disallow: /app/sign-up?
 Disallow: */abtest/
 Disallow: */p/
 Disallow: */ab/
-Disallow: /sentry-monitoring
 Disallow: /next/
 Disallow: */page-template-preview/
 Disallow: /v1/
