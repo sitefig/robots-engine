@@ -292,4 +292,5 @@ Sitemap: https://www.instagram.com/sitemap/ig_seo_profile_sitemap.xml.gz
 Sitemap: https://www.instagram.com/sitemap/ig_seo_profile_sitemap_non_media_eligible.xml.gz
 Sitemap: https://www.instagram.com/sitemap/dim_ig_logged_out_web_keyword_ent.xml.gz
 Sitemap: https://www.instagram.com/sitemap/ig_seo_profile_sitemap_v2.xml.gz
+Sitemap: https://www.instagram.com/sitemap/ig_seo_historical_reels_mvp_video_rows.xml.gz
 

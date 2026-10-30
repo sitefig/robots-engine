@@ -43,6 +43,7 @@ User-agent: facebookexternalhit
 
 Allow: /*?lang=
 Allow: /*?s=
+Allow: /*&s=
 Allow: /*?t=
 Allow: /*?ref_src=
 Allow: /hashtag/*?src=

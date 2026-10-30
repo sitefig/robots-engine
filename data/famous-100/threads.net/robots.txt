@@ -349,6 +349,20 @@ Disallow: /qp/batch_fetch_web/
 Disallow: /query/
 Disallow: /settings/
 
+User-agent: redditbot
+Disallow: /accounts/
+Disallow: /activity/
+Disallow: /ajax/
+Disallow: /client_error/
+Disallow: /deck/
+Disallow: /intent/
+Disallow: /logging/
+Disallow: /onboarding/
+Disallow: /publicapi/
+Disallow: /qp/batch_fetch_web/
+Disallow: /query/
+Disallow: /settings/
+
 User-agent: *
 Disallow: /
 
