@@ -95,6 +95,13 @@ Disallow: *
 User-agent: meta-externalfetcher
 Disallow: *
 
+# Shared AI training preference (IETF draft-kelley-aipref-training-preference-signal),
+# honored by Microsoft, Google, OpenAI, and Anthropic. This is a usage policy
+# token, not a crawler: it does not change crawl access, and `User-agent: *`
+# never matches it.
+User-agent: __usage_ai-training
+Disallow: /
+
 # Every bot that might possibly read and respect this file
 # ========================================================
 User-agent: *

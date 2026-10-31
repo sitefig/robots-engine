@@ -86,3 +86,6 @@ Disallow: /
 
 User-agent: Meta-ExternalFetcher
 Disallow: /
+
+User-agent: Meta-WebIndexer
+Disallow: /
