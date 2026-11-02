@@ -1,5 +1,5 @@
 
-# version: 20b91abf30af3b3b076745396ba368978384f4d7
+# version: 2323e66fcb22a9568be0b7ab535fafcd2bf666ad
 # The BBC's Terms of Use: https://www.bbc.co.uk/terms
 # - Explain the rules for using our services
 # - Tell you what you can do with our content
@@ -234,4 +234,10 @@ User-agent: CloudflareBrowserRenderingCrawler
 Disallow: /
 
 User-agent: AhrefsBot
+Disallow: /
+
+User-agent: Claude-SearchBot
+Disallow: /
+
+User-agent: DuckAssistBot
 Disallow: /
