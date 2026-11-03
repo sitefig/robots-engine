@@ -165,10 +165,12 @@ Allow: /el-GR/$
 Allow: /es-ES/$
 Allow: /es-419/$
 Allow: /et-EE/$
+Allow: /fa-IR/$
 Allow: /fi-FI/$
 Allow: /fr-FR/$
 Allow: /fr-CA/$
 Allow: /gu-IN/$
+Allow: /he-IL/$
 Allow: /hi-IN/$
 Allow: /hr-HR/$
 Allow: /hu-HU/$
