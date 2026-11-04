@@ -54,7 +54,7 @@ Disallow: /us/business/new/*
 Allow: /in/multistore/*
 Allow: /hu/multistore/diakkedvezmenyek/
 Allow: /es/multistore/es_samsungdeals/
-Allow: /sg/multistore/sg_eppfinancing/offers_epp/sc_premium/
+Allow: /sg/multistore/sg_eppfinancing/offers_epp/
 Allow: /es/multistore/es_canary_islands/
 Allow: /co/multistore/co_epp_members/
 Allow: /co/multistore/co_epp_corp_gointegro/
@@ -345,4 +345,5 @@ Sitemap:https://www.samsung.com/sec/sustainability/main/sitemap.xml
 Sitemap:https://www.samsung.com/global/sustainability/main/sitemap.xml
 
 Host: www.samsung.com
+
 
