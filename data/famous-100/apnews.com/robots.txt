@@ -52,6 +52,9 @@ Disallow: /
 User-agent: PerplexityBot
 Disallow: /
 
+User-agent: Perplexity-User
+Disallow: /
+
 User-agent: Amazonbot
 Disallow: /
 

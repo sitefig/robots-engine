@@ -43,6 +43,12 @@ Disallow: /ph/search/
 User-agent: *
 Disallow: /alliances/
 
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Amzn-SearchBot
+Disallow: /
+
 # URL parameters blocking for SEO
 User-agent: *
 Disallow: /*?colorSelected=
@@ -100,6 +106,8 @@ Disallow: *search.flipkart.com*
 Disallow: */ratings-reviews-details-page
 Disallow: */affiliate/displayWidget
 Disallow: */product-reviews/*
+Disallow: */all/*
+Disallow: */filters
 
 # AMP Pages
 User-agent: *
