@@ -48,6 +48,14 @@ Sitemap: https://www.lemonde.fr/en/sitemap_index.xml
 User-agent: Googlebot-Image
 Allow: /image/
 
+User-agent: Google-Extended
+Allow: /innovation-et-mobilite/
+Allow: /les-conseils-pour-entreprendre/
+Allow: /mutuelle-sante-bien-choisir-sa-couverture/
+Allow: /prevoir-demain/
+Allow: /de-l-impact-aux-responsabilites/
+Disallow: /
+
 User-agent: Googlebot-News
 Disallow: /archives/
 
@@ -183,9 +191,6 @@ User-agent: omgili
 Disallow: /
 
 User-agent: CCBot
-Disallow: /
-
-User-agent: Google-Extended
 Disallow: /
 
 User-agent: anthropic-ai
@@ -956,4 +961,133 @@ User-agent: YandexAdditionalBot
 Disallow: /
 
 User-agent: YiyanBot
+Disallow: /
+
+User-agent: AgentDataBot
+Disallow: /
+
+User-agent: AGI Agent
+Disallow: /
+
+User-agent: AIWebIndex-Agent
+Disallow: /
+
+User-agent: AndiAgent
+Disallow: /
+
+User-agent: artsdata-crawler
+Disallow: /
+
+User-agent: BeansLLM-CorpusBot
+Disallow: /
+
+User-agent: BixelBot
+Disallow: /
+
+User-agent: CartAI Agentic Commerce
+Disallow: /
+
+User-agent: CledaraBot
+Disallow: /
+
+User-agent: Cloudflare-AI-Search
+Disallow: /
+
+User-agent: Cloudflare-AI-Search-External
+Disallow: /
+
+User-agent: CloudflareBrowserRenderingCrawler
+Disallow: /
+
+User-agent: DesearchBot
+Disallow: /
+
+User-agent: Dola-SearchBot
+Disallow: /
+
+User-agent: Dot
+Disallow: /
+
+User-agent: ElevenlabsBot
+Disallow: /
+
+User-agent: ElevenlabsCrawler
+Disallow: /
+
+User-agent: ExaSearchBot
+Disallow: /
+
+User-agent: ExaUser
+Disallow: /
+
+User-agent: Grok Bot
+Disallow: /
+
+User-agent: grok-agent
+Disallow: /
+
+User-agent: GrokBot
+Disallow: /
+
+User-agent: HarkBot
+Disallow: /
+
+User-agent: Hunyuan
+Disallow: /
+
+User-agent: ImageBot
+Disallow: /
+
+User-agent: Instinct
+Disallow: /
+
+User-agent: Keenable-User
+Disallow: /
+
+User-agent: KeenableBot
+Disallow: /
+
+User-agent: Kimi-Agent
+Disallow: /
+
+User-agent: Muse
+Disallow: /
+
+User-agent: Payhawk Invoice Fetching Agent
+Disallow: /
+
+User-agent: Quartr Crawler
+Disallow: /
+
+User-agent: recraft-image-dataset
+Disallow: /
+
+User-agent: ReflectionBot
+Disallow: /
+
+User-agent: ScryBot
+Disallow: /
+
+User-agent: SofyaBot
+Disallow: /
+
+User-agent: SomethinggBot
+Disallow: /
+
+User-agent: TalarionFrontierCrawler
+Disallow: /
+
+User-agent: TalarionSearchBot
+Disallow: /
+
+User-agent: xAI-Grok
+Disallow: /
+
+User-agent: YepBot
+Disallow: /
+
+User-agent: YiBot
+Disallow: /
+
+User-agent: Claude-Agent
 Disallow: /

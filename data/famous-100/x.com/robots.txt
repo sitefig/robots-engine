@@ -119,3 +119,4 @@ Crawl-delay: 1
 # Independent of user agent. Links in the sitemap are full URLs using https://
 # and need to match the protocol of the sitemap.
 Sitemap: https://x.com/sitemap.xml
+Sitemap: https://x.com/sitemaps/finance0

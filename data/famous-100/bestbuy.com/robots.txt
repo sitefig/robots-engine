@@ -10,17 +10,28 @@
 # ==================================================
 User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
-User-agent: Perplexity-User
+User-agent: perplexity-user
 User-agent: GPTBot
 User-agent: Claude-User
 User-agent: Claudebot
 User-agent: PerplexityBot
 User-agent: Applebot
+User-agent: Applebot-Extended
 User-agent: Google-Extended
-User-agent: Gemeni-AI
+User-agent: Gemini-AI
 User-agent: Gemini-Deep-Research
+User-agent: GoogleAgent-Mariner
 User-agent: AmazonBot
+User-agent: GrokBot
+User-agent: xAI-Grok
+User-agent: Diffbot
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+User-agent: DuckAssistBot
+User-agent: Brightbot
+User-agent: webzio
 
+Allow: /
 Allow: /site/
 Allow: /discover-learn/
 
@@ -182,7 +193,6 @@ User-agent: CCBot
 User-agent: Anthropic-AI
 User-agent: Claude-Web
 User-agent: Bytespider
-Disallow: /[1.1]
 
 # ==================================================
 # BUCKET 3: UNIFIED WEB ENGINES & UNIVERSAL DEFAULTS
@@ -417,7 +427,7 @@ User-agent: thesis-research-bot
 User-agent: TerraCotta
 User-agent: BigSurAI
 User-agent: MyCentralAIScraper
-Disallow: / [2.1]
+Disallow: /
 
 # ==================================================
 # DATA SITEMAPS

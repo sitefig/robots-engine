@@ -67,3 +67,6 @@ Sitemap: https://www.doordash.com/sitemap-product_categories-doordash-index.xml
 Sitemap: https://www.doordash.com/sitemap-block_party-doordash-index.xml
 Sitemap: https://www.doordash.com/sitemap-nv_categories-doordash-index.xml
 Sitemap: https://www.doordash.com/sitemap-gift_card-doordash-index.xml
+Sitemap: https://www.doordash.com/sitemap-reservation_store-doordash-index.xml
+Sitemap: https://www.doordash.com/sitemap-reservation_city-doordash-index.xml
+Sitemap: https://www.doordash.com/sitemap-brand_landing_pages-doordash-index.xml

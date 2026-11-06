@@ -5,6 +5,9 @@
 # All authorized user-agents listed on this page must comply with Meta’s
 # Automated Data Collection Terms available at:
 # https://www.facebook.com/legal/automated_data_collection_terms
+User-agent: __usage_ai-training
+Disallow: /
+
 User-agent: Amazonbot
 Disallow: /
 
