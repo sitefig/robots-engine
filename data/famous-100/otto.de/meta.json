@@ -3,8 +3,8 @@
   "robots_url": "https://otto.de/robots.txt",
   "final_url": "https://www.otto.de/robots.txt",
   "http_status": 200,
-  "bytes": 2148,
-  "fetched_at": "2026-09-18T09:44:01.000Z",
+  "bytes": 1944,
+  "fetched_at": "2026-11-07T10:09:12.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false

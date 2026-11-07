@@ -3,8 +3,8 @@
   "robots_url": "https://wsj.com/robots.txt",
   "final_url": "https://www.wsj.com/robots.txt",
   "http_status": 200,
-  "bytes": 4298,
-  "fetched_at": "2026-09-17T12:11:37.000Z",
+  "bytes": 4320,
+  "fetched_at": "2026-11-07T10:09:04.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false

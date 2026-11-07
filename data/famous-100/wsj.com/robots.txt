@@ -56,7 +56,7 @@ User-agent: IllumaBot/1.0
 User-agent: Publication-Access-for-Facebook
 User-agent: Wallie
 User-agent: mediapartners-google
-
+User-agent: NewsRoom.BI
 
 User-agent: Screaming Frog SEO Spider
 User-agent: AhrefsBot
@@ -84,7 +84,6 @@ User-agent: Vocabtracker
 User-agent: EpvzCrawl6194680250
 User-agent: Citoid
 User-agent: ZoteroTranslationServer
-
 
 
 Allow: /
