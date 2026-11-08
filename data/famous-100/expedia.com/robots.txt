@@ -62,7 +62,7 @@ disallow: /auth/
 disallow: /*/auth/
 disallow: /*/sso/
 # /cl/* endpoints removal test
-Disallow: /cl/*
+disallow: /cl/*
 
 #
 # Ads
@@ -81,7 +81,7 @@ disallow: /egcs/v2/collect
 disallow: /api/ucs/shortlist/
 disallow: /api/v4/typeahead/
 # /cl/* endpoints removal test
-Disallow: /cl/*
+disallow: /cl/*
 
 #
 # SemrushBot
@@ -98,6 +98,8 @@ user-agent: PerplexityBot
 user-agent: Perplexity-User
 user-agent: Claude-User
 user-agent: Claude-SearchBot
+user-agent: meta-webindexer
+user-agent: meta-externalagent
 allow: /
 disallow: /p/home
 disallow: /*/p/home
@@ -105,4 +107,4 @@ disallow: /auth/
 disallow: /*/auth/
 disallow: /*/sso/
 # /cl/* endpoints removal test
-Disallow: /cl/*
+disallow: /cl/*

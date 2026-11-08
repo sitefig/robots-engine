@@ -143,6 +143,15 @@ Allow: /remote
 Allow: /*/remote
 Allow: /work
 Allow: /*/work
+# Allow crawlers to read the campaign page's noindex directive.
+Allow: /get-dot$
+Allow: /get-dot/$
+Allow: /get-dot?
+Allow: /get-dot/?
+Allow: /*/get-dot$
+Allow: /*/get-dot/$
+Allow: /*/get-dot?
+Allow: /*/get-dot/?
 Allow: /dots
 Allow: /*/dots
 Allow: /sites
