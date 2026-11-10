@@ -8,5 +8,4 @@ Disallow: /voice/
 Sitemap: https://suno.com/sitemap.xml
 Sitemap: https://suno.com/public-site-sitemap/sitemap.xml
 Sitemap: https://suno.com/music-library-sitemap/sitemap.xml
-Sitemap: https://suno.com/products-sitemap/sitemap.xml
 Sitemap: https://suno.com/tools-sitemap/sitemap.xml

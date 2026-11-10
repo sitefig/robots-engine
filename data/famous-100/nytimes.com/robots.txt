@@ -329,10 +329,31 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /*?*smid=
 
+User-agent: Facebot
+Allow: /*?*smid=
+
 User-agent: Twitterbot
 Allow: /*?*smid=
 
 User-agent: RedditBot
+Allow: /*?*smid=
+
+User-agent: LinkedInBot
+Allow: /*?*smid=
+
+User-agent: Bluesky
+Allow: /*?*smid=
+
+User-agent: TelegramBot
+Allow: /*?*smid=
+
+User-agent: WhatsApp
+Allow: /*?*smid=
+
+User-agent: Discordbot
+Allow: /*?*smid=
+
+User-agent: Mastodon
 Allow: /*?*smid=
 
 # Sitemaps

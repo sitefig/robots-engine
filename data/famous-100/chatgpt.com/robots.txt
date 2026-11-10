@@ -81,7 +81,6 @@ Allow: /public-api/
 Allow: /sitemap.xml
 Allow: /marketing-sitemap.xml
 Allow: /writing-tools-sitemap.xml
-Allow: /acquisition-landing-pages-sitemap.xml
 Allow: /100chats
 Allow: /api/public_content/
 Allow: /backend-api/public_content/
@@ -91,6 +90,9 @@ Allow: /overview
 Allow: /*/overview
 Allow: /features
 Allow: /*/features
+Allow: /redeem$
+Allow: /redeem/
+Allow: /redeem?
 Allow: /health$
 Allow: /health/$
 Allow: /*/health$
@@ -240,4 +242,3 @@ Disallow: /account-link/*
 Sitemap: https://chatgpt.com/sitemap.xml
 Sitemap: https://chatgpt.com/marketing-sitemap.xml
 Sitemap: https://chatgpt.com/writing-tools-sitemap.xml
-Sitemap: https://chatgpt.com/acquisition-landing-pages-sitemap.xml

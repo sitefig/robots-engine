@@ -976,6 +976,9 @@ Allow: /
 User-agent: NewsBank.com
 Allow: /obituaries/
 
+User-agent: NFBNewslineRobot
+Allow: /obituaries/
+
 Sitemap: https://www.usatoday.com/news-sitemap.xml
 Sitemap: https://www.usatoday.com/web-sitemap-index.xml
 Sitemap: https://www.usatoday.com/video-sitemap-index.xml

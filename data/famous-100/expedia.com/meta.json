@@ -3,8 +3,8 @@
   "robots_url": "https://expedia.com/robots.txt",
   "final_url": "https://www.expedia.com/robots.txt",
   "http_status": 200,
-  "bytes": 2210,
-  "fetched_at": "2026-11-09T11:31:31.000Z",
+  "bytes": 2269,
+  "fetched_at": "2026-11-10T11:12:54.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false
