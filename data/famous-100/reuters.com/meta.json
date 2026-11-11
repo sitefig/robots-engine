@@ -3,8 +3,8 @@
   "robots_url": "https://reuters.com/robots.txt",
   "final_url": "https://www.reuters.com/robots.txt",
   "http_status": 200,
-  "bytes": 4605,
-  "fetched_at": "2026-10-29T09:58:39.000Z",
+  "bytes": 5190,
+  "fetched_at": "2026-11-11T10:58:42.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false

@@ -721,6 +721,180 @@ Allow: /*drinking-water
 Allow: /*Drinking-water
 Allow: /*Drinking-Water
 Allow: /*drinking-Water
+# stainless steel
+Allow: /*stainless-steel
+Allow: /*Stainless-steel
+Allow: /*Stainless-Steel
+Allow: /*stainless-Steel
+# tech companies
+Allow: /*tech-companies
+Allow: /*Tech-companies
+Allow: /*Tech-Companies
+Allow: /*tech-Companies
+# marvel comics
+Allow: /*marvel-comics
+Allow: /*Marvel-comics
+Allow: /*Marvel-Comics
+Allow: /*marvel-Comics
+# natural gas
+Allow: /*natural-gas
+Allow: /*Natural-gas
+Allow: /*Natural-Gas
+Allow: /*natural-Gas
+# super bowl
+Allow: /*super-bowl
+Allow: /*Super-bowl
+Allow: /*Super-Bowl
+Allow: /*super-Bowl
+# supply chain
+Allow: /*supply-chain
+Allow: /*Supply-chain
+Allow: /*Supply-Chain
+Allow: /*supply-Chain
+# graphics card
+Allow: /*graphics-card
+Allow: /*Graphics-card
+Allow: /*Graphics-Card
+Allow: /*graphics-Card
+# ice cream
+Allow: /*ice-cream
+Allow: /*Ice-cream
+Allow: /*Ice-Cream
+Allow: /*ice-Cream
+# customer service
+Allow: /*customer-service
+Allow: /*Customer-service
+Allow: /*Customer-Service
+Allow: /*customer-Service
+# student visa
+Allow: /*student-visa
+Allow: /*Student-visa
+Allow: /*Student-Visa
+Allow: /*student-Visa
+# silicon valley
+Allow: /*silicon-valley
+Allow: /*Silicon-valley
+Allow: /*Silicon-Valley
+Allow: /*silicon-Valley
+# electrical engineering
+Allow: /*electrical-engineering
+Allow: /*Electrical-engineering
+Allow: /*Electrical-Engineering
+Allow: /*electrical-Engineering
+# job interview
+Allow: /*job-interview
+Allow: /*Job-interview
+Allow: /*Job-Interview
+Allow: /*job-Interview
+# android phone
+Allow: /*android-phone
+Allow: /*Android-phone
+Allow: /*Android-Phone
+Allow: /*android-Phone
+# open source
+Allow: /*open-source
+Allow: /*Open-source
+Allow: /*Open-Source
+Allow: /*open-Source
+# sci fi
+Allow: /*sci-fi
+Allow: /*Sci-fi
+Allow: /*Sci-Fi
+Allow: /*sci-Fi
+# captain america
+Allow: /*captain-america
+Allow: /*Captain-america
+Allow: /*Captain-America
+Allow: /*captain-America
+# ip address
+Allow: /*ip-address
+Allow: /*Ip-address
+Allow: /*Ip-Address
+Allow: /*ip-Address
+Allow: /*IP-address
+Allow: /*IP-Address
+# speak english
+Allow: /*speak-english
+Allow: /*Speak-english
+Allow: /*Speak-English
+Allow: /*speak-English
+# civil engineering
+Allow: /*civil-engineering
+Allow: /*Civil-engineering
+Allow: /*Civil-Engineering
+Allow: /*civil-Engineering
+# nuclear power
+Allow: /*nuclear-power
+Allow: /*Nuclear-power
+Allow: /*Nuclear-Power
+Allow: /*nuclear-Power
+# grammatically correct
+Allow: /*grammatically-correct
+Allow: /*Grammatically-correct
+Allow: /*Grammatically-Correct
+Allow: /*grammatically-Correct
+# electric vehicles
+Allow: /*electric-vehicles
+Allow: /*Electric-vehicles
+Allow: /*Electric-Vehicles
+Allow: /*electric-Vehicles
+# youtube channel
+Allow: /*youtube-channel
+Allow: /*Youtube-channel
+Allow: /*Youtube-Channel
+Allow: /*youtube-Channel
+Allow: /*YouTube-channel
+Allow: /*YouTube-Channel
+# ivy league
+Allow: /*ivy-league
+Allow: /*Ivy-league
+Allow: /*Ivy-League
+Allow: /*ivy-League
+# san francisco
+Allow: /*san-francisco
+Allow: /*San-francisco
+Allow: /*San-Francisco
+Allow: /*san-Francisco
+# los angeles
+Allow: /*los-angeles
+Allow: /*Los-angeles
+Allow: /*Los-Angeles
+Allow: /*los-Angeles
+# machine learning
+Allow: /*machine-learning
+Allow: /*Machine-learning
+Allow: /*Machine-Learning
+Allow: /*machine-Learning
+# video games
+Allow: /*video-games
+Allow: /*Video-games
+Allow: /*Video-Games
+Allow: /*video-Games
+# royal family
+Allow: /*royal-family
+Allow: /*Royal-family
+Allow: /*Royal-Family
+Allow: /*royal-Family
+# prince harry
+Allow: /*prince-harry
+Allow: /*Prince-harry
+Allow: /*Prince-Harry
+Allow: /*prince-Harry
+# air force
+Allow: /*air-force
+Allow: /*Air-force
+Allow: /*Air-Force
+Allow: /*air-Force
+# meghan markle
+Allow: /*meghan-markle
+Allow: /*Meghan-markle
+Allow: /*Meghan-Markle
+Allow: /*meghan-Markle
+# personality disorder
+Allow: /*personality-disorder
+Allow: /*Personality-disorder
+Allow: /*Personality-Disorder
+Allow: /*personality-Disorder
 
 
 User-agent: PerplexityBot

@@ -176,9 +176,6 @@ Disallow: /
 User-agent: Ai2Bot-Dolma
 Disallow: /
 
-User-agent: Applebot
-Disallow: /
-
 User-agent: Arquivo-web-crawler
 Disallow: /
 
@@ -978,6 +975,9 @@ Allow: /obituaries/
 
 User-agent: NFBNewslineRobot
 Allow: /obituaries/
+
+User-agent: Applebot
+Allow: /
 
 Sitemap: https://www.usatoday.com/news-sitemap.xml
 Sitemap: https://www.usatoday.com/web-sitemap-index.xml

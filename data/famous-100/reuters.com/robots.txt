@@ -7,7 +7,7 @@
 #
 # If you would like to seek permission to license the content and/or other materials 
 # of Reuters, please contact https://reutersagency.com/contact-us/enquire/
-
+ 
 User-agent: AASA-Bot
 User-agent: ADmantX
 User-agent: AdmiralBot
@@ -17,7 +17,6 @@ User-agent: AmazonAdBot
 User-agent: Amzn-User
 User-agent: Applebot
 User-agent: AppleNewsBot
-User-agent: Bingbot
 User-agent: BingPreview
 User-agent: BrightEdge
 User-agent: BrightEdgeOnCrawl
@@ -120,14 +119,36 @@ Disallow: /latam/
 Disallow: /account/subscribe/payment
 Disallow: /*/site-search/
 
+User-agent: Bingbot
+Disallow: /finance/stocks/option
+Disallow: /finance/stocks/financialHighlights
+Disallow: /search
+Disallow: /site-search/
+Disallow: /beta
+Disallow: /designtech
+Disallow: /featured-optimize
+Disallow: /energy-test
+Disallow: /article/beta
+Disallow: /sponsored/previewcampaign
+Disallow: /sponsored/previewarticle
+Disallow: /test/
+Disallow: /news/archive/commentary
+Disallow: /brandfeatures/venture-capital
+Disallow: /assets/siteindex
+Disallow: /article/api/
+Disallow: /practical-law-the-journal/search/
+Disallow: /pf/api/
+Disallow: /account/subscribe/payment
+Disallow: /*/site-search/
+ 
 User-agent: Applebot-Extended
 Disallow: /
-
+ 
 # Block all other bots
 User-agent: *
 Allow: /plus/
 Disallow: /
-
+ 
 SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
 SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-jp-index/?outputType=xml
 SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml

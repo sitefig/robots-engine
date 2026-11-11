@@ -137,6 +137,7 @@ Allow: /*/translate
 Allow: /writing
 Allow: /*/writing
 Allow: /ask/
+Allow: /*/ask
 Allow: /futures
 Allow: /*/futures
 Allow: /football

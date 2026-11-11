@@ -49,6 +49,7 @@ Disallow: /locale/overlay_secure
 Disallow: /guest-pass/
 Disallow: /mailinglist/
 Disallow: /mini.php
+Disallow: /update_check.php
 Disallow: /invites/buy
 Disallow: /share
 Disallow: /bcn
@@ -524,6 +525,35 @@ Disallow: /jp/mini.php
 Disallow: /pl/mini.php
 Disallow: /pt/mini.php
 Disallow: /se/mini.php
+Disallow: /uk/update_check.php
+Disallow: /au/update_check.php
+Disallow: /ca/update_check.php
+Disallow: /de-en/update_check.php
+Disallow: /dk-en/update_check.php
+Disallow: /fi-en/update_check.php
+Disallow: /hk-en/update_check.php
+Disallow: /ie/update_check.php
+Disallow: /il-en/update_check.php
+Disallow: /in-en/update_check.php
+Disallow: /no-en/update_check.php
+Disallow: /nz/update_check.php
+Disallow: /se-en/update_check.php
+Disallow: /sg-en/update_check.php
+Disallow: /es/update_check.php
+Disallow: /mx/update_check.php
+Disallow: /us-es/update_check.php
+Disallow: /de/update_check.php
+Disallow: /at/update_check.php
+Disallow: /ch/update_check.php
+Disallow: /fr/update_check.php
+Disallow: /ca-fr/update_check.php
+Disallow: /it/update_check.php
+Disallow: /nl/update_check.php
+Disallow: /be/update_check.php
+Disallow: /jp/update_check.php
+Disallow: /pl/update_check.php
+Disallow: /pt/update_check.php
+Disallow: /se/update_check.php
 Disallow: /uk/invites/buy
 Disallow: /au/invites/buy
 Disallow: /ca/invites/buy
@@ -1804,8 +1834,11 @@ Allow: /jp/search/shops
 Allow: /pl/search/shops
 Allow: /pt/search/shops
 Allow: /se/search/shops
+
+# llms.txt: https://www.etsy.com/llms.txt
+
 #
-# ¿Qué te pasa, calabaza?#   \
+# Hallöchen!#   \
 #
 #    -----
 #   | . . |

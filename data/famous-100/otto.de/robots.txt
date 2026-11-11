@@ -3,6 +3,12 @@ Disallow: /gate/
 Disallow: /onex/
 Disallow: /cdn-cgi/
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-image
+Allow: /
+
 User-agent: bingbot
 Disallow: /suche/
 Disallow: /gate/
