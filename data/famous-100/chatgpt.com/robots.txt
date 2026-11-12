@@ -113,6 +113,7 @@ Allow: /learn
 Allow: /*/learn
 Allow: /business
 Allow: /*/business
+Allow: /*/business-hub
 Allow: /pricing
 Allow: /*/pricing
 Allow: /download

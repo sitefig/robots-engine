@@ -3,8 +3,8 @@
   "robots_url": "https://pinterest.com/robots.txt",
   "final_url": "https://www.pinterest.com/robots.txt",
   "http_status": 200,
-  "bytes": 44019,
-  "fetched_at": "2026-11-10T11:12:51.000Z",
+  "bytes": 32989,
+  "fetched_at": "2026-11-12T11:09:34.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false

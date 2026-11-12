@@ -60,7 +60,16 @@ Sitemap: https://www.booking.com/sitembk-flights-to-city-index.xml
 Sitemap: https://www.booking.com/sitembk-flights-to-region-index.xml
 Sitemap: https://www.booking.com/sitembk-fraud-index.xml
 Sitemap: https://www.booking.com/sitembk-holidays-city-index.xml
-Sitemap: https://www.booking.com/sitembk-hotel-index.xml
+Sitemap: https://www.booking.com/sitembk-hotel-1-index.xml
+Sitemap: https://www.booking.com/sitembk-hotel-2-index.xml
+Sitemap: https://www.booking.com/sitembk-hotel-3-index.xml
+Sitemap: https://www.booking.com/sitembk-hotel-4-index.xml
+Sitemap: https://www.booking.com/sitembk-hotel-5-index.xml
+Sitemap: https://www.booking.com/sitembk-hotel-6-index.xml
+Sitemap: https://www.booking.com/sitembk-hotel-7-index.xml
+Sitemap: https://www.booking.com/sitembk-hotel-8-index.xml
+Sitemap: https://www.booking.com/sitembk-hotel-9-index.xml
+Sitemap: https://www.booking.com/sitembk-hotel-10-index.xml
 Sitemap: https://www.booking.com/sitembk-hotel-review-index.xml
 Sitemap: https://www.booking.com/sitembk-landmark-index.xml
 Sitemap: https://www.booking.com/sitembk-newly-opened-index.xml

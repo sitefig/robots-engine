@@ -4,6 +4,7 @@ Disallow: /*?*q=
 Disallow: /search/new
 Disallow: /search?*/
 Disallow: /marketing/prerelease/
+Disallow: /external-edit/
 Disallow: /onboarding/
 Disallow: /join/
 User-agent: Googlebot
@@ -11,6 +12,7 @@ Disallow: /*?*q=
 Disallow: /search*
 Disallow: /search?*/
 Disallow: /marketing/prerelease/
+Disallow: /external-edit/
 Disallow: /onboarding/
 Disallow: /join/
 Sitemap: https://www.perplexity.ai/sitemap.xml

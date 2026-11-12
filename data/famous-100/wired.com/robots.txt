@@ -68,6 +68,9 @@ User-agent: cohere-ai
 User-agent: cohere-training-data-crawler
 User-agent: Diffbot
 User-agent: DuckAssistBot
+User-agent: ExaBot
+User-agent: ExaSearchBot
+User-agent: ExaUser
 User-agent: factset_spyderbot
 User-agent: FirecrawlAgent
 User-agent: Google-CloudVertexBot

@@ -196,6 +196,7 @@ Disallow: /shopping/reviewer
 Disallow: /shopping/search
 Disallow: /shopping/deals
 Allow: /shopping?udm=28$
+Allow: /shopping?udm=shop$
 Disallow: /storefront
 Disallow: /storepicker
 Disallow: /about/careers/applications/candidate-prep
