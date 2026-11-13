@@ -22,3 +22,4 @@ Sitemap: https://www.fedex.com/global/sitemap_index.xml
 Disallow: /content/fedex-com/global/en_us/*
 Disallow: /content/fedex-com/sites/us/*
 Disallow: /content/fedex-com/sites/*
+Disallow: /content/fedex-com/global/*
