@@ -25,6 +25,8 @@ Allow: /topics/*?q=*
 Allow: /topics/*?*&q=*
 Allow: /orgs/*/repositories?q=*
 Allow: /orgs/*/repositories?*&q=*
+Allow: /open-source/github-secure-open-source-fund/projects$
+Allow: /open-source/github-secure-open-source-fund/projects?*
 Disallow: /account-login
 Disallow: /copilot/
 Disallow: /copilot/c/
@@ -313,6 +315,8 @@ Disallow: /
 
 User-agent: AdsBot-Google
 User-agent: AdsBot-Google-Mobile
+Allow: /open-source/github-secure-open-source-fund/projects$
+Allow: /open-source/github-secure-open-source-fund/projects?*
 Disallow: /account-login
 Disallow: /copilot/
 Disallow: /copilot/c/
@@ -626,6 +630,8 @@ Allow: /topics/*?q=*
 Allow: /topics/*?*&q=*
 Allow: /orgs/*/repositories?q=*
 Allow: /orgs/*/repositories?*&q=*
+Allow: /open-source/github-secure-open-source-fund/projects$
+Allow: /open-source/github-secure-open-source-fund/projects?*
 Disallow: /account-login
 Disallow: /copilot/
 Disallow: /copilot/c/

@@ -9,6 +9,26 @@ User-Agent: ChatGPT-User
 User-Agent: Google-Extended
 Disallow: /
 
+User-Agent: AdsBot-Google
+User-Agent: AdsBot-Google-Mobile
+Disallow: /artifact/
+Disallow: /artifacts/
+Disallow: /code/artifact/
+Disallow: /code/frame/
+Disallow: /public/artifacts/
+Disallow: /share/
+
+User-Agent: adidxbot
+Allow: /api/desktop/
+Disallow: /api/*
+Disallow: /lti/*
+Disallow: /artifact/
+Disallow: /artifacts/
+Disallow: /code/artifact/
+Disallow: /code/frame/
+Disallow: /public/artifacts/
+Disallow: /share/
+
 User-Agent: *
 Allow: /api/desktop/
 Disallow: /api/*
