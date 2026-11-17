@@ -54,6 +54,7 @@ Allow: /les-conseils-pour-entreprendre/
 Allow: /mutuelle-sante-bien-choisir-sa-couverture/
 Allow: /prevoir-demain/
 Allow: /de-l-impact-aux-responsabilites/
+Allow: /assurance-vie-faire-les-bons-choix-par-abeille-assurances/
 Disallow: /
 
 User-agent: Googlebot-News
@@ -1090,4 +1091,67 @@ User-agent: YiBot
 Disallow: /
 
 User-agent: Claude-Agent
+Disallow: /
+
+User-agent: amazon-bedrock-knowledgebase
+Disallow: /
+
+User-agent: amazon-Quick
+Disallow: /
+
+User-agent: AndiBot
+Disallow: /
+
+User-agent: Context7-Crawler
+Disallow: /
+
+User-agent: Diffbot-User
+Disallow: /
+
+User-agent: DigitalOceanGradientAICrawler
+Disallow: /
+
+User-agent: Element451Bot
+Disallow: /
+
+User-agent: Google-GeminiNotebook
+Disallow: /
+
+User-agent: GoogleOther-Image
+Disallow: /
+
+User-agent: GoogleOther-Video
+Disallow: /
+
+User-agent: Haiku-SearchBot
+Disallow: /
+
+User-agent: HaikuBot
+Disallow: /
+
+User-agent: KarlaCrawler
+Disallow: /
+
+User-agent: KernelSearchBot
+Disallow: /
+
+User-agent: Liner-User
+Disallow: /
+
+User-agent: MiniMaxAgent
+Disallow: /
+
+User-agent: MistralAI-Training
+Disallow: /
+
+User-agent: NavuBot
+Disallow: /
+
+User-agent: OnirocoCrawler
+Disallow: /
+
+User-agent: ProRataInc
+Disallow: /
+
+User-agent: Reflectionbot
 Disallow: /

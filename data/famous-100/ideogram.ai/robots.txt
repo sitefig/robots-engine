@@ -26,11 +26,29 @@ Allow: /g/
 #            allow rules above carve out the unfurling case)
 #   /t/    — gallery / feed / explore
 #   /u/    — user profile pages
+# Query-string copies of app entry points: website CTAs (src/lib/cta.ts) and
+# developer.ideogram.ai links (/platform, /platform/api-keys) add sign-up
+# attribution (?intent=&source=) and plan choices to these URLs, and each copy
+# is an app shell with no canonical. The bare paths stay crawlable.
+# Googlebot reads only its own group above, so Google Search is unchanged
+# (Googlebot-Image and Applebot follow that group too). Other Google crawlers,
+# such as GoogleOther and Storebot-Google, read this group. Do not copy these
+# lines into the Googlebot group.
+# AI search crawlers are named so they match this group explicitly.
+User-agent: OAI-SearchBot
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /g/
 Disallow: /t/
 Disallow: /u/
+Disallow: /login?
+Disallow: /signup?
+Disallow: /plans?
+Disallow: /platform?
+Disallow: /platform/api-keys?
+Disallow: /apps/*?demo_login=
 
 Sitemap: https://ideogram.ai/sitemap-index.xml

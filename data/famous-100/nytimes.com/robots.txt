@@ -103,7 +103,6 @@ Disallow: /wirecutter/*.zip$
 Disallow: /wirecutter/*.csv$
 Disallow: /wirecutter/deals/beta
 Disallow: /wirecutter/data-requests
-Disallow: /wirecutter/search
 Disallow: /wirecutter/*?s=
 Disallow: /wirecutter/*&xid=
 Disallow: /wirecutter/*?q=
@@ -116,6 +115,8 @@ Disallow: /subscription/*?*onboarded=
 Disallow: /*?*smid=
 Disallow: /*?*partner=
 Disallow: /*?*utm_source=
+Allow: /wirecutter/search
+Allow: /wirecutter/gifts/search
 Allow: /wirecutter/*?*utm_source=
 Allow: /ads/public/
 Allow: /svc/news/v3/all/pshb.rss

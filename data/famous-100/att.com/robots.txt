@@ -140,6 +140,7 @@ Disallow: /maps/not-available.html
 Disallow: /privacy/policy/
 Disallow: /global-search/search*
 Disallow: /mktg/
+Disallow: /mktgtg1/
 
 Allow: /mktg/v1/_next/
 
@@ -379,6 +380,8 @@ Disallow: /acctmgmt/*
 # ====================================================================
 
 Sitemap: https://www.att.com/sitemap.xml
+
+# Custom AI catalog directive
 Agentmap: https://www.att.com/.well-known/ai-catalog.json
 # Agent discovery resources are published through trust.txt and ai.txt.
 # https://www.att.com/.well-known/agent-card.json
