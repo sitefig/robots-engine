@@ -3,8 +3,8 @@
   "robots_url": "https://usatoday.com/robots.txt",
   "final_url": "https://www.usatoday.com/robots.txt",
   "http_status": 200,
-  "bytes": 16397,
-  "fetched_at": "2026-11-11T10:58:42.000Z",
+  "bytes": 16442,
+  "fetched_at": "2026-11-18T11:42:04.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false

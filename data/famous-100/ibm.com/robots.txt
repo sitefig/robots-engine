@@ -71,6 +71,7 @@ sitemap: https://www.ibm.com/content/dam/adobe-cms/IBM_Adobe_Sitemap.xml
 sitemap: https://www.ibm.com/mysupport/s/sitemap.xml
 sitemap: https://www.ibm.com/us-en.sitemap.news-sitemap.xml
 sitemap: https://www.ibm.com/docs/en/sitemap.xml
+sitemap: https://www.ibm.com/quantum/sitemap.xml
 
 User-agent: Fast corporate crawler
 Disallow: //
