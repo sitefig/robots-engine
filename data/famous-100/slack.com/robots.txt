@@ -17,3 +17,4 @@ Disallow: /files-pri/
 Sitemap: https://slack.com/sitemap.xml
 Sitemap: https://slack.com/sitemap_marketplace.xml
 Sitemap: https://slack.com/sitemaps/blog/news/sitemap.xml
+Sitemap: https://slack.com/sitemap_help.xml
