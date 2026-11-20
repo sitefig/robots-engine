@@ -5,7 +5,13 @@ Disallow: /*shop/browse/overlay/*
 Disallow: /*shop/iphone/payments/overlay/*
 Disallow: /cn/*/aow/*
 Disallow: /tmall*
-Allow: /ac/globalnav/2.0/*/images/ac-globalnav/globalnav/search/* 	
+Allow: /ac/globalnav/2.0/*/images/ac-globalnav/globalnav/search/*
+
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+Allow: /*shop/browse/overlay/*
+Allow: /*shop/iphone/payments/overlay/*
 
 User-agent: Baiduspider
 Disallow: /*

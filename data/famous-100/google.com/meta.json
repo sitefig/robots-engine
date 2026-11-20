@@ -3,8 +3,8 @@
   "robots_url": "https://google.com/robots.txt",
   "final_url": "https://www.google.com/robots.txt",
   "http_status": 200,
-  "bytes": 6681,
-  "fetched_at": "2026-11-12T11:09:35.000Z",
+  "bytes": 12510,
+  "fetched_at": "2026-11-20T11:40:07.000Z",
   "redirects": 1,
   "unavailable": false,
   "html": false

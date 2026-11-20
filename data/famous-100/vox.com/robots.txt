@@ -529,7 +529,6 @@ Disallow: /auth/*
 Disallow: /chorus_auth
 Disallow: /sso
 Disallow: /search
-Disallow: /the-highlight$
 Disallow: /share$
 Disallow: /share/*
 Disallow: /share?*
