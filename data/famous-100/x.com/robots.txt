@@ -75,6 +75,9 @@ Disallow: /*/photo?
 User-Agent: Google-Extended
 Disallow: *
 
+User-Agent: Applebot-Extended
+Disallow: *
+
 User-Agent: FacebookBot
 Disallow: *
 

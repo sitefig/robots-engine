@@ -85,6 +85,24 @@ Disallow: /
 User-agent: Diffbot
 Disallow: /
 
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: meta-externalads
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: meta-externalfetcher
+Disallow: /
+
+User-agent: meta-webindexer
+Disallow: /
+
 User-agent: newspaper
 Disallow: /
 

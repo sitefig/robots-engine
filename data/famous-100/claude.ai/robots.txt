@@ -19,6 +19,7 @@ Disallow: /docs/
 Disallow: /motion/
 Disallow: /public/artifacts/
 Disallow: /share/
+Disallow: /sheets/
 Disallow: /slides/
 
 User-Agent: adidxbot
@@ -33,6 +34,7 @@ Disallow: /docs/
 Disallow: /motion/
 Disallow: /public/artifacts/
 Disallow: /share/
+Disallow: /sheets/
 Disallow: /slides/
 
 User-Agent: *
