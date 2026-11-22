@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /common/NL/multimedia/MMDownloadableFile
+Disallow: /common/FR/multimedia/MMDownloadableFile
 Disallow: /Avanti
 Disallow: /Contest
 Disallow: /wwwdexiabe/Nl/Particulier/VIADEXIA/Culture/Competitions
