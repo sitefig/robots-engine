@@ -163,9 +163,33 @@ Disallow: /
 
 User-agent: Claude-User
 Disallow: /
+Allow: /branded-story/
+Allow: /contributor-content/
+Allow: /interactives/sponsor-story/
+Allow: /money/money-management/
+Allow: /shopping/
+Allow: /sponsor-story/
+Allow: /story/branded-story/
+Allow: /story/money-management/
+Allow: /story/money/money-management/
+Allow: /story/shopping/
+Allow: /story/special/contributor-content/
+Allow: /story/sponsor-story/
 
 User-agent: Claude-SearchBot
 Disallow: /
+Allow: /branded-story/
+Allow: /contributor-content/
+Allow: /interactives/sponsor-story/
+Allow: /money/money-management/
+Allow: /shopping/
+Allow: /sponsor-story/
+Allow: /story/branded-story/
+Allow: /story/money-management/
+Allow: /story/money/money-management/
+Allow: /story/shopping/
+Allow: /story/special/contributor-content/
+Allow: /story/sponsor-story/
 
 User-agent: AI2Bot
 Disallow: /
@@ -259,6 +283,18 @@ Disallow: /
 
 User-agent: Meta-ExternalFetcher
 Disallow: /
+Allow: /branded-story/
+Allow: /contributor-content/
+Allow: /interactives/sponsor-story/
+Allow: /money/money-management/
+Allow: /shopping/
+Allow: /sponsor-story/
+Allow: /story/branded-story/
+Allow: /story/money-management/
+Allow: /story/money/money-management/
+Allow: /story/shopping/
+Allow: /story/special/contributor-content/
+Allow: /story/sponsor-story/
 
 User-agent: MJ12bot
 Disallow: /
@@ -488,6 +524,18 @@ Disallow: /
 
 User-agent: Google-Agent
 Disallow: /
+Allow: /branded-story/
+Allow: /contributor-content/
+Allow: /interactives/sponsor-story/
+Allow: /money/money-management/
+Allow: /shopping/
+Allow: /sponsor-story/
+Allow: /story/branded-story/
+Allow: /story/money-management/
+Allow: /story/money/money-management/
+Allow: /story/shopping/
+Allow: /story/special/contributor-content/
+Allow: /story/sponsor-story/
 
 User-agent: shapbot
 Disallow: /
@@ -521,6 +569,18 @@ Disallow: /
 
 User-agent: meta-webindexer
 Disallow: /
+Allow: /branded-story/
+Allow: /contributor-content/
+Allow: /interactives/sponsor-story/
+Allow: /money/money-management/
+Allow: /shopping/
+Allow: /sponsor-story/
+Allow: /story/branded-story/
+Allow: /story/money-management/
+Allow: /story/money/money-management/
+Allow: /story/shopping/
+Allow: /story/special/contributor-content/
+Allow: /story/sponsor-story/
 
 User-agent: Bravebot
 Disallow: /
@@ -970,6 +1030,9 @@ Disallow: /money/blueprint/transfer?pname=
 User-agent: AmazonAdBot
 Allow: /
 
+User-agent: Applebot
+Allow: /
+
 User-agent: NewsBank.com
 Allow: /obituaries/
 
@@ -978,9 +1041,6 @@ Allow: /obituaries/
 
 User-agent: AhrefsSiteAudit
 Crawl-delay: 10
-
-User-agent: Applebot
-Allow: /
 
 Sitemap: https://www.usatoday.com/news-sitemap.xml
 Sitemap: https://www.usatoday.com/web-sitemap-index.xml

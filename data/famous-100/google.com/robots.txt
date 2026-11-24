@@ -136,7 +136,9 @@ Disallow: /musics
 Disallow: /urchin_test/
 Disallow: /movies?
 Disallow: /wapsearch?
-Disallow: /reviews/search?
+Disallow: /reviews
+Disallow: /a/reviews
+Disallow: /bookmarks
 Disallow: /cbk
 Disallow: /profiles/me
 Disallow: /s2/profiles/me
@@ -150,7 +152,6 @@ Disallow: /transconsole/portal/
 Disallow: /aclk
 Disallow: /tbproxy/
 Disallow: /support/forum/search?
-Disallow: /reviews/polls/
 Disallow: /hosted/images/
 Disallow: /accounts/ClientLogin
 Disallow: /accounts/ClientAuth
@@ -405,7 +406,9 @@ Disallow: /musics
 Disallow: /urchin_test/
 Disallow: /movies?
 Disallow: /wapsearch?
-Disallow: /reviews/search?
+Disallow: /reviews
+Disallow: /a/reviews
+Disallow: /bookmarks
 Disallow: /cbk
 Disallow: /profiles/me
 Disallow: /s2/profiles/me
@@ -419,7 +422,6 @@ Disallow: /transconsole/portal/
 Disallow: /aclk
 Disallow: /tbproxy/
 Disallow: /support/forum/search?
-Disallow: /reviews/polls/
 Disallow: /hosted/images/
 Disallow: /accounts/ClientLogin
 Disallow: /accounts/ClientAuth
