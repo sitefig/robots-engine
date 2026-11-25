@@ -163,6 +163,16 @@ Disallow: /
 
 User-agent: Claude-User
 Disallow: /
+Disallow: /interactives/sponsor-story/astrazeneca/what-a-former-teacher-learned-from-liver-cancer/
+Disallow: /interactives/sponsor-story/incyte/moving-forward-with-a-rare-blood-cancer/
+Disallow: /story/sponsor-story/astrazeneca-immunotherapy/
+Disallow: /story/sponsor-story/bayer-2026/
+Disallow: /story/sponsor-story/boehringer-ingelheim/
+Disallow: /story/sponsor-story/content/
+Disallow: /story/sponsor-story/eli-lilly-and-company/
+Disallow: /story/sponsor-story/eli-lilly-video/
+Disallow: /story/sponsor-story/pfizer-covid19/
+Disallow: /story/sponsor-story/pfizer-oncology/
 Allow: /branded-story/
 Allow: /contributor-content/
 Allow: /interactives/sponsor-story/
@@ -178,6 +188,16 @@ Allow: /story/sponsor-story/
 
 User-agent: Claude-SearchBot
 Disallow: /
+Disallow: /interactives/sponsor-story/astrazeneca/what-a-former-teacher-learned-from-liver-cancer/
+Disallow: /interactives/sponsor-story/incyte/moving-forward-with-a-rare-blood-cancer/
+Disallow: /story/sponsor-story/astrazeneca-immunotherapy/
+Disallow: /story/sponsor-story/bayer-2026/
+Disallow: /story/sponsor-story/boehringer-ingelheim/
+Disallow: /story/sponsor-story/content/
+Disallow: /story/sponsor-story/eli-lilly-and-company/
+Disallow: /story/sponsor-story/eli-lilly-video/
+Disallow: /story/sponsor-story/pfizer-covid19/
+Disallow: /story/sponsor-story/pfizer-oncology/
 Allow: /branded-story/
 Allow: /contributor-content/
 Allow: /interactives/sponsor-story/
@@ -199,6 +219,19 @@ Disallow: /
 
 User-agent: Ai2Bot-Dolma
 Disallow: /
+
+User-agent: Applebot
+Disallow: /interactives/sponsor-story/astrazeneca/what-a-former-teacher-learned-from-liver-cancer/
+Disallow: /interactives/sponsor-story/incyte/moving-forward-with-a-rare-blood-cancer/
+Disallow: /story/sponsor-story/astrazeneca-immunotherapy/
+Disallow: /story/sponsor-story/bayer-2026/
+Disallow: /story/sponsor-story/boehringer-ingelheim/
+Disallow: /story/sponsor-story/content/
+Disallow: /story/sponsor-story/eli-lilly-and-company/
+Disallow: /story/sponsor-story/eli-lilly-video/
+Disallow: /story/sponsor-story/pfizer-covid19/
+Disallow: /story/sponsor-story/pfizer-oncology/
+Allow: /
 
 User-agent: Arquivo-web-crawler
 Disallow: /
@@ -283,6 +316,16 @@ Disallow: /
 
 User-agent: Meta-ExternalFetcher
 Disallow: /
+Disallow: /interactives/sponsor-story/astrazeneca/what-a-former-teacher-learned-from-liver-cancer/
+Disallow: /interactives/sponsor-story/incyte/moving-forward-with-a-rare-blood-cancer/
+Disallow: /story/sponsor-story/astrazeneca-immunotherapy/
+Disallow: /story/sponsor-story/bayer-2026/
+Disallow: /story/sponsor-story/boehringer-ingelheim/
+Disallow: /story/sponsor-story/content/
+Disallow: /story/sponsor-story/eli-lilly-and-company/
+Disallow: /story/sponsor-story/eli-lilly-video/
+Disallow: /story/sponsor-story/pfizer-covid19/
+Disallow: /story/sponsor-story/pfizer-oncology/
 Allow: /branded-story/
 Allow: /contributor-content/
 Allow: /interactives/sponsor-story/
@@ -524,6 +567,16 @@ Disallow: /
 
 User-agent: Google-Agent
 Disallow: /
+Disallow: /interactives/sponsor-story/astrazeneca/what-a-former-teacher-learned-from-liver-cancer/
+Disallow: /interactives/sponsor-story/incyte/moving-forward-with-a-rare-blood-cancer/
+Disallow: /story/sponsor-story/astrazeneca-immunotherapy/
+Disallow: /story/sponsor-story/bayer-2026/
+Disallow: /story/sponsor-story/boehringer-ingelheim/
+Disallow: /story/sponsor-story/content/
+Disallow: /story/sponsor-story/eli-lilly-and-company/
+Disallow: /story/sponsor-story/eli-lilly-video/
+Disallow: /story/sponsor-story/pfizer-covid19/
+Disallow: /story/sponsor-story/pfizer-oncology/
 Allow: /branded-story/
 Allow: /contributor-content/
 Allow: /interactives/sponsor-story/
@@ -569,6 +622,16 @@ Disallow: /
 
 User-agent: meta-webindexer
 Disallow: /
+Disallow: /interactives/sponsor-story/astrazeneca/what-a-former-teacher-learned-from-liver-cancer/
+Disallow: /interactives/sponsor-story/incyte/moving-forward-with-a-rare-blood-cancer/
+Disallow: /story/sponsor-story/astrazeneca-immunotherapy/
+Disallow: /story/sponsor-story/bayer-2026/
+Disallow: /story/sponsor-story/boehringer-ingelheim/
+Disallow: /story/sponsor-story/content/
+Disallow: /story/sponsor-story/eli-lilly-and-company/
+Disallow: /story/sponsor-story/eli-lilly-video/
+Disallow: /story/sponsor-story/pfizer-covid19/
+Disallow: /story/sponsor-story/pfizer-oncology/
 Allow: /branded-story/
 Allow: /contributor-content/
 Allow: /interactives/sponsor-story/
@@ -1028,9 +1091,6 @@ Disallow: /money/blueprint/archive/
 Disallow: /money/blueprint/transfer?pname=
 
 User-agent: AmazonAdBot
-Allow: /
-
-User-agent: Applebot
 Allow: /
 
 User-agent: NewsBank.com

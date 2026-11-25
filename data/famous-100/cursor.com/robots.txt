@@ -15,6 +15,8 @@ Disallow: /*/marketplace/publish$
 Disallow: /team/accept-invite
 Disallow: /*/team/accept-invite
 Disallow: /team/free-trial
+Disallow: /team/signed-contract
+Disallow: /*/team/signed-contract
 Disallow: /team/new-team
 Disallow: /*/team/new-team
 Disallow: /failure

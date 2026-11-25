@@ -46,3 +46,5 @@ Sitemap: https://www.otto.de/variations-sitemap/sitemap_mobilitaet-kfz_index.xml
 Sitemap: https://www.otto.de/variations-sitemap/sitemap_sonstige_index.xml
 Sitemap: https://www.otto.de/variations-sitemap/sitemap_sport-freizeit_index.xml
 Sitemap: https://www.otto.de/variations-sitemap/sitemap_technik-medien_index.xml
+Sitemap: https://www.otto.de/unternehmen/sitemap.xml
+Sitemap: https://www.otto.de/jobs/de/google-sitemap2/
