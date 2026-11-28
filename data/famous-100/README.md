@@ -1,114 +1,114 @@
 # Tracked domains: AI crawler leaderboard
 
-*Updated 2026-11-27. Snapshots are in one directory per domain; git history is the change log.*
+*Updated 2026-11-28. Snapshots are in one directory per domain; git history is the change log.*
 
 | Crawler | Blocked | Restricted | Open |
 | --- | ---: | ---: | ---: |
-| GPTBot | 25 (13%) | 122 | 49 |
-| ClaudeBot | 33 (17%) | 117 | 46 |
-| Google-Extended | 20 (10%) | 130 | 46 |
-| Applebot-Extended | 27 (14%) | 125 | 44 |
-| CCBot | 34 (17%) | 118 | 44 |
-| Bytespider | 34 (17%) | 118 | 44 |
-| meta-externalagent | 24 (12%) | 127 | 45 |
-| Amazonbot | 26 (13%) | 123 | 47 |
-| Diffbot | 27 (14%) | 125 | 44 |
-| cohere-ai | 26 (13%) | 126 | 44 |
-| Omgilibot | 27 (14%) | 125 | 44 |
-| OAI-SearchBot (SearchGPT) | 12 (6%) | 138 | 46 |
-| ChatGPT-User | 14 (7%) | 135 | 47 |
-| Claude-SearchBot | 19 (10%) | 132 | 45 |
-| Claude-User | 19 (10%) | 132 | 45 |
-| PerplexityBot | 21 (11%) | 129 | 46 |
-| Perplexity-User | 20 (10%) | 130 | 46 |
-| DuckAssistBot | 20 (10%) | 132 | 44 |
-| YouBot | 23 (12%) | 129 | 44 |
-| Claude-Web | 21 (11%) | 130 | 45 |
-| Facebookbot | 22 (11%) | 131 | 43 |
-| GoogleOther | 15 (8%) | 137 | 44 |
-| ImageSiftBot | 19 (10%) | 133 | 44 |
-| meta-externalfetcher | 17 (9%) | 134 | 45 |
-| TimpiBot | 22 (11%) | 130 | 44 |
-| AI2Bot | 18 (9%) | 134 | 44 |
-| VelenPublicWebCrawler | 14 (7%) | 138 | 44 |
-| Webzio-Extended | 18 (9%) | 134 | 44 |
-| ICC-Crawler | 15 (8%) | 137 | 44 |
-| img2dataset | 16 (8%) | 136 | 44 |
-| AI2Bot-Dolma | 19 (10%) | 133 | 44 |
-| FriendlyCrawler | 16 (8%) | 136 | 44 |
-| Kangaroo Bot | 15 (8%) | 137 | 44 |
-| iAskSpider | 16 (8%) | 136 | 44 |
-| Sidetrade Indexer Bot | 14 (7%) | 138 | 44 |
-| MistralAI-User | 18 (9%) | 134 | 44 |
-| Google-CloudVertexBot | 19 (10%) | 132 | 45 |
-| PanguBot | 19 (10%) | 133 | 44 |
-| Cohere-Training-Data-Crawler | 17 (9%) | 135 | 44 |
-| TikTokSpider | 11 (6%) | 139 | 46 |
-| PhindBot | 13 (7%) | 139 | 44 |
-| Brightbot | 18 (9%) | 134 | 44 |
-| Novellum | 10 (5%) | 142 | 44 |
-| Gemini-Deep-Research | 14 (7%) | 138 | 44 |
-| GoogleOther-Image | 15 (8%) | 137 | 44 |
-| GoogleOther-Video | 15 (8%) | 137 | 44 |
-| amzn-SearchBot | 15 (8%) | 136 | 45 |
-| AddSearchBot | 13 (7%) | 139 | 44 |
-| AI2Bot-DeepResearchEval | 13 (7%) | 139 | 44 |
-| aiHitBot | 13 (7%) | 139 | 44 |
-| AIWebIndex | 11 (6%) | 141 | 44 |
-| amazon-kendra | 11 (6%) | 141 | 44 |
-| amazon-QBusiness | 12 (6%) | 140 | 44 |
-| Amzn-User | 13 (7%) | 138 | 45 |
-| Andibot | 13 (7%) | 139 | 44 |
-| Anomura | 13 (7%) | 139 | 44 |
-| atlassian-bot | 13 (7%) | 139 | 44 |
-| AzureAI-SearchBot | 11 (6%) | 141 | 44 |
-| Bravebot | 13 (7%) | 139 | 44 |
-| Channel3Bot | 13 (7%) | 139 | 44 |
-| ChatGLM-Spider | 13 (7%) | 139 | 44 |
-| Cloudflare-AutoRAG | 13 (7%) | 139 | 44 |
-| Cotoyogi | 14 (7%) | 138 | 44 |
-| DeepSeekBot | 14 (7%) | 138 | 44 |
-| Diffbot-User | 15 (8%) | 137 | 44 |
-| DoubaoBot | 11 (6%) | 141 | 44 |
-| ERNIEBot | 11 (6%) | 141 | 44 |
-| ExaSearchBot | 14 (7%) | 138 | 44 |
-| Factset_spyderbot | 14 (7%) | 138 | 44 |
-| GeistHaus-PageFetcher | 11 (6%) | 141 | 44 |
-| GoogleAgent-URLContext | 11 (6%) | 141 | 44 |
-| HenkBot | 11 (6%) | 141 | 44 |
-| ISSCyberRiskCrawler | 14 (7%) | 138 | 44 |
-| kagi-fetcher | 11 (6%) | 141 | 44 |
-| KeenableBot | 11 (6%) | 141 | 44 |
-| Kimi-SearchBot | 11 (6%) | 141 | 44 |
-| Kimi-User | 11 (6%) | 141 | 44 |
-| KimiBot | 11 (6%) | 141 | 44 |
-| KlaviyoAIBot | 13 (7%) | 139 | 44 |
-| laion-huggingface-processor | 13 (7%) | 139 | 44 |
-| LAIONDownloader | 10 (5%) | 142 | 44 |
-| LinerBot | 13 (7%) | 139 | 44 |
-| Linguee Bot | 10 (5%) | 142 | 44 |
-| LinkupBot | 13 (7%) | 139 | 44 |
-| meta-webindexer | 16 (8%) | 136 | 44 |
-| MistralAI-Index | 11 (6%) | 141 | 44 |
-| MistralAI-Training | 12 (6%) | 140 | 44 |
-| NotebookLM | 13 (7%) | 139 | 44 |
-| Panscient | 12 (6%) | 140 | 44 |
-| Poggio-Citations | 13 (7%) | 139 | 44 |
-| Poseidon Research Crawler | 13 (7%) | 139 | 44 |
-| QualifiedBot | 12 (6%) | 140 | 44 |
-| Querit-SearchBot | 11 (6%) | 141 | 44 |
-| QueritBot | 11 (6%) | 141 | 44 |
-| QwenBot | 11 (6%) | 141 | 44 |
-| SBIntuitionsBot | 14 (7%) | 138 | 44 |
-| Shap-User | 13 (7%) | 139 | 44 |
-| ShapBot | 17 (9%) | 135 | 44 |
-| TavilyBot | 15 (8%) | 137 | 44 |
-| TerraCotta | 13 (7%) | 139 | 44 |
-| TongyiBot | 11 (6%) | 141 | 44 |
-| UseAI | 11 (6%) | 141 | 44 |
-| YandexAdditional | 15 (8%) | 137 | 44 |
-| YiyanBot | 11 (6%) | 141 | 44 |
-| ZanistaBot | 13 (7%) | 139 | 44 |
+| GPTBot | 26 (13%) | 123 | 47 |
+| ClaudeBot | 34 (17%) | 118 | 44 |
+| Google-Extended | 20 (10%) | 132 | 44 |
+| Applebot-Extended | 28 (14%) | 126 | 42 |
+| CCBot | 35 (18%) | 119 | 42 |
+| Bytespider | 35 (18%) | 119 | 42 |
+| meta-externalagent | 25 (13%) | 128 | 43 |
+| Amazonbot | 27 (14%) | 124 | 45 |
+| Diffbot | 28 (14%) | 126 | 42 |
+| cohere-ai | 27 (14%) | 127 | 42 |
+| Omgilibot | 28 (14%) | 126 | 42 |
+| OAI-SearchBot (SearchGPT) | 12 (6%) | 139 | 45 |
+| ChatGPT-User | 14 (7%) | 137 | 45 |
+| Claude-SearchBot | 19 (10%) | 133 | 44 |
+| Claude-User | 19 (10%) | 133 | 44 |
+| PerplexityBot | 22 (11%) | 130 | 44 |
+| Perplexity-User | 20 (10%) | 132 | 44 |
+| DuckAssistBot | 20 (10%) | 134 | 42 |
+| YouBot | 23 (12%) | 131 | 42 |
+| Claude-Web | 21 (11%) | 132 | 43 |
+| Facebookbot | 23 (12%) | 132 | 41 |
+| GoogleOther | 15 (8%) | 139 | 42 |
+| ImageSiftBot | 20 (10%) | 134 | 42 |
+| meta-externalfetcher | 17 (9%) | 136 | 43 |
+| TimpiBot | 22 (11%) | 132 | 42 |
+| AI2Bot | 18 (9%) | 136 | 42 |
+| VelenPublicWebCrawler | 14 (7%) | 140 | 42 |
+| Webzio-Extended | 18 (9%) | 136 | 42 |
+| ICC-Crawler | 15 (8%) | 139 | 42 |
+| img2dataset | 16 (8%) | 138 | 42 |
+| AI2Bot-Dolma | 19 (10%) | 135 | 42 |
+| FriendlyCrawler | 17 (9%) | 137 | 42 |
+| Kangaroo Bot | 15 (8%) | 139 | 42 |
+| iAskSpider | 16 (8%) | 138 | 42 |
+| Sidetrade Indexer Bot | 14 (7%) | 140 | 42 |
+| MistralAI-User | 18 (9%) | 136 | 42 |
+| Google-CloudVertexBot | 19 (10%) | 134 | 43 |
+| PanguBot | 19 (10%) | 135 | 42 |
+| Cohere-Training-Data-Crawler | 17 (9%) | 137 | 42 |
+| TikTokSpider | 11 (6%) | 141 | 44 |
+| PhindBot | 13 (7%) | 141 | 42 |
+| Brightbot | 18 (9%) | 136 | 42 |
+| Novellum | 10 (5%) | 144 | 42 |
+| Gemini-Deep-Research | 14 (7%) | 140 | 42 |
+| GoogleOther-Image | 15 (8%) | 139 | 42 |
+| GoogleOther-Video | 15 (8%) | 139 | 42 |
+| amzn-SearchBot | 15 (8%) | 138 | 43 |
+| AddSearchBot | 13 (7%) | 141 | 42 |
+| AI2Bot-DeepResearchEval | 13 (7%) | 141 | 42 |
+| aiHitBot | 13 (7%) | 141 | 42 |
+| AIWebIndex | 11 (6%) | 143 | 42 |
+| amazon-kendra | 11 (6%) | 143 | 42 |
+| amazon-QBusiness | 12 (6%) | 142 | 42 |
+| Amzn-User | 13 (7%) | 140 | 43 |
+| Andibot | 13 (7%) | 141 | 42 |
+| Anomura | 13 (7%) | 141 | 42 |
+| atlassian-bot | 13 (7%) | 141 | 42 |
+| AzureAI-SearchBot | 11 (6%) | 143 | 42 |
+| Bravebot | 13 (7%) | 141 | 42 |
+| Channel3Bot | 13 (7%) | 141 | 42 |
+| ChatGLM-Spider | 13 (7%) | 141 | 42 |
+| Cloudflare-AutoRAG | 13 (7%) | 141 | 42 |
+| Cotoyogi | 14 (7%) | 140 | 42 |
+| DeepSeekBot | 14 (7%) | 140 | 42 |
+| Diffbot-User | 15 (8%) | 139 | 42 |
+| DoubaoBot | 11 (6%) | 143 | 42 |
+| ERNIEBot | 11 (6%) | 143 | 42 |
+| ExaSearchBot | 14 (7%) | 140 | 42 |
+| Factset_spyderbot | 14 (7%) | 140 | 42 |
+| GeistHaus-PageFetcher | 11 (6%) | 143 | 42 |
+| GoogleAgent-URLContext | 11 (6%) | 143 | 42 |
+| HenkBot | 11 (6%) | 143 | 42 |
+| ISSCyberRiskCrawler | 14 (7%) | 140 | 42 |
+| kagi-fetcher | 11 (6%) | 143 | 42 |
+| KeenableBot | 11 (6%) | 143 | 42 |
+| Kimi-SearchBot | 11 (6%) | 143 | 42 |
+| Kimi-User | 11 (6%) | 143 | 42 |
+| KimiBot | 11 (6%) | 143 | 42 |
+| KlaviyoAIBot | 13 (7%) | 141 | 42 |
+| laion-huggingface-processor | 13 (7%) | 141 | 42 |
+| LAIONDownloader | 10 (5%) | 144 | 42 |
+| LinerBot | 13 (7%) | 141 | 42 |
+| Linguee Bot | 10 (5%) | 144 | 42 |
+| LinkupBot | 13 (7%) | 141 | 42 |
+| meta-webindexer | 16 (8%) | 138 | 42 |
+| MistralAI-Index | 11 (6%) | 143 | 42 |
+| MistralAI-Training | 12 (6%) | 142 | 42 |
+| NotebookLM | 13 (7%) | 141 | 42 |
+| Panscient | 12 (6%) | 142 | 42 |
+| Poggio-Citations | 13 (7%) | 141 | 42 |
+| Poseidon Research Crawler | 13 (7%) | 141 | 42 |
+| QualifiedBot | 12 (6%) | 142 | 42 |
+| Querit-SearchBot | 11 (6%) | 143 | 42 |
+| QueritBot | 11 (6%) | 143 | 42 |
+| QwenBot | 11 (6%) | 143 | 42 |
+| SBIntuitionsBot | 14 (7%) | 140 | 42 |
+| Shap-User | 13 (7%) | 141 | 42 |
+| ShapBot | 17 (9%) | 137 | 42 |
+| TavilyBot | 15 (8%) | 139 | 42 |
+| TerraCotta | 13 (7%) | 141 | 42 |
+| TongyiBot | 11 (6%) | 143 | 42 |
+| UseAI | 11 (6%) | 143 | 42 |
+| YandexAdditional | 15 (8%) | 139 | 42 |
+| YiyanBot | 11 (6%) | 143 | 42 |
+| ZanistaBot | 13 (7%) | 141 | 42 |
 
 | Domain | Category | GPTBot | ClaudeBot | Google-Extended | Applebot-Extended | CCBot | Bytespider | meta-externalagent | Amazonbot | Diffbot | cohere-ai | Omgilibot | OAI-SearchBot (SearchGPT) | ChatGPT-User | Claude-SearchBot | Claude-User | PerplexityBot | Perplexity-User | DuckAssistBot | YouBot | Claude-Web | Facebookbot | GoogleOther | ImageSiftBot | meta-externalfetcher | TimpiBot | AI2Bot | VelenPublicWebCrawler | Webzio-Extended | ICC-Crawler | img2dataset | AI2Bot-Dolma | FriendlyCrawler | Kangaroo Bot | iAskSpider | Sidetrade Indexer Bot | MistralAI-User | Google-CloudVertexBot | PanguBot | Cohere-Training-Data-Crawler | TikTokSpider | PhindBot | Brightbot | Novellum | Gemini-Deep-Research | GoogleOther-Image | GoogleOther-Video | amzn-SearchBot | AddSearchBot | AI2Bot-DeepResearchEval | aiHitBot | AIWebIndex | amazon-kendra | amazon-QBusiness | Amzn-User | Andibot | Anomura | atlassian-bot | AzureAI-SearchBot | Bravebot | Channel3Bot | ChatGLM-Spider | Cloudflare-AutoRAG | Cotoyogi | DeepSeekBot | Diffbot-User | DoubaoBot | ERNIEBot | ExaSearchBot | Factset_spyderbot | GeistHaus-PageFetcher | GoogleAgent-URLContext | HenkBot | ISSCyberRiskCrawler | kagi-fetcher | KeenableBot | Kimi-SearchBot | Kimi-User | KimiBot | KlaviyoAIBot | laion-huggingface-processor | LAIONDownloader | LinerBot | Linguee Bot | LinkupBot | meta-webindexer | MistralAI-Index | MistralAI-Training | NotebookLM | Panscient | Poggio-Citations | Poseidon Research Crawler | QualifiedBot | Querit-SearchBot | QueritBot | QwenBot | SBIntuitionsBot | Shap-User | ShapBot | TavilyBot | TerraCotta | TongyiBot | UseAI | YandexAdditional | YiyanBot | ZanistaBot | Issues | Sensitive paths |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---: | ---: |
@@ -120,7 +120,7 @@
 | [Reuters (reuters.com)](./reuters.com/robots.txt) | media | Restricted | Restricted | Restricted | Blocked | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 8 |
 | [Bloomberg (bloomberg.com)](./bloomberg.com/robots.txt) | media | Restricted | Restricted | Restricted | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Blocked | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Blocked | Restricted | Restricted | Restricted | Restricted | Blocked | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 2 |
 | [The Wall Street Journal (wsj.com)](./wsj.com/robots.txt) | media | Restricted | Blocked | Blocked | Restricted | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Restricted | Restricted | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Restricted | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Restricted | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Restricted | Restricted | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | 1 | 2 |
-| [Forbes (forbes.com)](./forbes.com/robots.txt) | media | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | 61 | 0 |
+| [Forbes (forbes.com)](./forbes.com/robots.txt) | media | Blocked | Blocked | Restricted | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Blocked | Open | Restricted | Open | Open | Blocked | Restricted | Restricted | Restricted | Restricted | Blocked | Restricted | Blocked | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Blocked | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 13 | 5 |
 | [Financial Times (ft.com)](./ft.com/robots.txt) | media | Restricted | Blocked | Restricted | Blocked | Blocked | Blocked | Blocked | Restricted | Blocked | Blocked | Blocked | Restricted | Restricted | Restricted | Restricted | Blocked | Blocked | Restricted | Restricted | Blocked | Blocked | Blocked | Restricted | Blocked | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Blocked | Blocked | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Blocked | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 1 | 0 |
 | [The Economist (economist.com)](./economist.com/robots.txt) | media | Blocked | Blocked | Restricted | Blocked | Blocked | Blocked | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 1 |
 | [Associated Press (apnews.com)](./apnews.com/robots.txt) | media | Blocked | Blocked | Restricted | Blocked | Blocked | Restricted | Restricted | Blocked | Restricted | Blocked | Restricted | Restricted | Restricted | Blocked | Blocked | Blocked | Blocked | Restricted | Restricted | Blocked | Restricted | Restricted | Restricted | Restricted | Blocked | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 1 | 1 |
@@ -183,7 +183,7 @@
 | [Mistral AI (mistral.ai)](./mistral.ai/robots.txt) | ai | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | 0 | 0 |
 | [Google DeepMind (deepmind.google)](./deepmind.google/robots.txt) | ai | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | 0 | 0 |
 | [Runway (runwayml.com)](./runwayml.com/robots.txt) | ai | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 1 | 0 |
-| [Shopify (shopify.com)](./shopify.com/robots.txt) (HTML page) | ecommerce | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | Open | 0 | 0 |
+| [Shopify (shopify.com)](./shopify.com/robots.txt) | ecommerce | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 0 |
 | [Walmart (walmart.com)](./walmart.com/robots.txt) | ecommerce | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 0 | 1 |
 | [eBay (ebay.com)](./ebay.com/robots.txt) | ecommerce | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 35 | 6 |
 | [Etsy (etsy.com)](./etsy.com/robots.txt) | ecommerce | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | Restricted | 30 | 0 |
